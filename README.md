@@ -36,3 +36,9 @@ to run the frontend:
 cd client
 npm start
 ```
+
+to delete database on docker:
+
+```
+docker-compose down --volumes
+```

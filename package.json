@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "practica-lsv-server",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "nodemon": "^2.0.15"
   },
   "keywords": [],
-  "author": "",
+  "author": "jesusdpp96@gmail.com",
   "license": "ISC",
   "description": ""
 }

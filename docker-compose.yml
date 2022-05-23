@@ -12,28 +12,29 @@ services:
       - db
     environment:
       - DB_USER=postgres
-      - DB_PASSWORD=faztpassword
+      - DB_PASSWORD=pr4ct1c4_15v_pwd
       - DB_HOST=db
       - DB_PORT=5432
-      - DB_DATABASE=tasksdb
+      - DB_DATABASE=practica_lsv_db
 
   db:
-    container_name: postgresdb
+    container_name: practica_lsv_postgresdb
     image: postgres
     restart: always
     ports:
       - 5432:5432
     environment:
-      POSTGRES_PASSWORD: faztpassword
-      POSTGRES_DB: tasksdb
+      POSTGRES_PASSWORD: practica_lsv
+      POSTGRES_DB: practica_lsv_db
     volumes: 
+      - ./database/build.sql:/docker-entrypoint-initdb.d/build.sql
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   ui:
-    container_name: pgadmin
+    container_name: practica_lsv_pgadmin
     image: dpage/pgadmin4
     ports:
       - 8080:80
     environment:
-      - PGADMIN_DEFAULT_EMAIL=fazt@fazt.com
-      - PGADMIN_DEFAULT_PASSWORD=faztpassword
+      - PGADMIN_DEFAULT_EMAIL=admin@practicalsv.com
+      - PGADMIN_DEFAULT_PASSWORD=pr4ct1c4_15v_pwd
