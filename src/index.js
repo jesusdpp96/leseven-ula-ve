@@ -1,7 +1,14 @@
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
-const router = require("./routes/tasks.routes");
+const authRouter = require("./routes/jwtAuth.routes");
+const gradosRouter = require("./routes/grados.routes");
+const temasRouter = require("./routes/temas.routes");
+const vocablosRouter = require("./routes/vocablos.routes");
+const logsRouter = require("./routes/logs.routes");
+const dashboardRouter = require("./routes/dashboard.routes");
+const usuariosRouter = require("./routes/usuarios.routes");
+const practicasRouter = require("./routes/practicas.routes");
 
 const app = express();
 
@@ -15,7 +22,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Routes
-app.use(router);
+app.use(authRouter);
+app.use(usuariosRouter);
+app.use(gradosRouter);
+app.use(temasRouter);
+app.use(vocablosRouter);
+app.use(logsRouter);
+app.use(dashboardRouter);
+app.use(practicasRouter);
 
 // handling errors
 app.use((err, req, res, next) => {

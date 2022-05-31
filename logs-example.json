@@ -1,0 +1,147 @@
+[
+ {
+   "log_name": "Aprendiz: Inicia sesión",
+   "timestamp": "2022-04-04T01:36:03.704Z"
+ },
+ {
+   "log_name": "Aprendiz: Visualiza lista de grados",
+   "timestamp": "2022-04-04T01:36:03.704Z"
+ },
+ {
+   "log_name": "Aprendiz: Visualiza lista de temas",
+   "timestamp": "2022-04-04T01:36:03.704Z",
+   "grado": "primer grado"
+ },
+ {
+   "log_name": "Aprendiz: Vizualiza tema",
+   "timestamp": "2022-04-04T01:36:03.704Z",
+   "grado": "primer grado",
+   "tema": "Cuerpo humano"
+ },
+ {
+   "log_name": "Aprendiz: Inicia una práctica",
+   "timestamp": "2022-04-04T01:36:03.704Z",
+   "grado":"primer grado",
+   "tema": "Cuerpo humano"
+ },
+ {
+   "log_name": "Practica",
+   "timestamp": "2022-04-04T01:36:03.704Z",
+   "grado":"primer grado",
+   "tema": "Cuerpo humano",
+   "total_consultas": 10,
+   "total_correctas": 8,
+   "logs": [
+     {
+       "log_name": "Sistema: Inicia una consulta",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "tipo_consulta": "imagen",
+       "palabras": ["mano", "pierna", "cabeza"],
+       "respuesta_correcta": "mano"
+     },
+     {
+       "log_name": "Aprendiz: Responde una consulta",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "respuesta_es_correcta": true,
+       "respuesta_usuario": "mano",
+     },
+     {
+       "log_name": "Sistema: Muestra gamificación por respuesta correcta",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "mensaje": "¡Fantastico!, lo estas haciendo muy bien",
+       "gif": "felicitar001.gif"
+     },
+     {
+       "log_name": "Sistema: Suma puntos a la practica",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "puntos": 100
+     },
+     {
+       "log_name": "Sistema: Inicia una consulta",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "tipo_consulta": "imagen",
+       "palabras": ["dedo", "pie", "oreja"],
+       "respuesta_correcta": "oreja"
+     },
+     {
+       "log_name": "Aprendiz: Responde una consulta",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "respuesta_es_correcta": false,
+       "respuesta_usuario": "pie"
+ 
+     },
+     {
+       "log_name": "Sistema: Muestra gamificación por respuesta incorrecta",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "mensaje": "¡No te preocupes nombre!, esa era realmente dificil",
+       "gif": "animar001.gif"
+     },
+     {
+       "log_name": "Sistema: Muestra corrección",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "respuesta_correcta": "oreja"
+     },
+     {
+       "log_name": "Aprendiz: OK",
+       "timestamp": "2022-04-04T01:36:03.704Z"
+     },
+     {
+       "log_name": "Sistema: Inicia una consulta",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "tipo_consulta": "imagen",
+       "palabras": ["dedo", "pie", "oreja"],
+       "respuesta_correcta": "oreja"
+     },
+     {
+       "log_name": "Aprendiz: Responde una consulta",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "respuesta_es_correcta": true
+     },
+ 
+     {
+       "log_name": "Sistema: Inicia una consulta",
+       "timestamp": "2022-04-04T01:36:03.704Z",
+       "tipo_consulta": "imagen",
+       "palabras": ["ojo", "boca", "nariz"],
+       "respuesta_correcta": "boca"
+     },
+     {...},
+     {...},
+     {...},
+     {...}
+   ]
+ },
+ {
+   "log_name": "Aprendiz: Termina una práctica",
+   "timestamp": "2022-04-04T01:36:03.704Z",
+   "grado":"primer grado",
+   "tema": "Cuerpo humano"
+ },
+ {
+   "log_name": "Sistema: Muestra gamificación al finalizar práctica",
+   "timestamp": "2022-04-04T01:36:03.704Z",
+   "mensaje": "!Impresionante nombre!, lograste un puntaje muy alto en el desafio ¡sigue asi!",
+   "gif": "felicitar002.gif"
+ },
+ {
+   "log_name": "Sistema: Suma puntos al total del aprendiz",
+   "timestamp": "2022-04-04T01:36:03.704Z",
+   "puntos": 800
+ },
+ {
+   "log_name": "Aprendiz: OK",
+   "timestamp": "2022-04-04T01:36:03.704Z"
+ },
+ {
+   "log_name": "Aprendiz: Visualiza lista de temas",
+   "timestamp": "2022-04-04T01:36:03.704Z",
+   "grado": "primer grado"
+ },
+ {...},
+ {...},
+ {...},
+ {
+   "log_name": "Aprendiz: Cierra sesión",
+   "timestamp": "2022-04-04T01:36:03.704Z"
+ }
+]

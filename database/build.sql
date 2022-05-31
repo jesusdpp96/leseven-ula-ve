@@ -1,17 +1,36 @@
 --
--- Name: consulta; Type: TABLE; Schema: public; Owner: postgres
+-- Name: ciudad; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public.consulta (
+CREATE TABLE public.ciudad (
     id integer NOT NULL,
-    tipo character varying(20) NOT NULL,
-    vocablo_correcto_id integer NOT NULL,
-    vocablo_respuesta_id integer,
-    practica_id integer
+    nombre character varying(80) NOT NULL
 );
 
 
-ALTER TABLE public.consulta OWNER TO postgres;
+ALTER TABLE public.ciudad OWNER TO postgres;
+
+--
+-- Name: ciudad_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.ciudad_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.ciudad_id_seq OWNER TO postgres;
+
+--
+-- Name: ciudad_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.ciudad_id_seq OWNED BY public.ciudad.id;
+
 
 --
 -- Name: consulta_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -26,6 +45,55 @@ CREATE SEQUENCE public.consulta_id_seq
 
 
 ALTER TABLE public.consulta_id_seq OWNER TO postgres;
+
+--
+-- Name: consulta; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.consulta (
+    id integer DEFAULT nextval('public.consulta_id_seq'::regclass) NOT NULL,
+    tipo character varying(20) NOT NULL,
+    vocablo_correcto_id integer NOT NULL,
+    vocablo_respuesta_id integer,
+    practica_id integer
+);
+
+
+ALTER TABLE public.consulta OWNER TO postgres;
+
+--
+-- Name: escuela; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.escuela (
+    id integer NOT NULL,
+    nombre character varying(140) NOT NULL
+);
+
+
+ALTER TABLE public.escuela OWNER TO postgres;
+
+--
+-- Name: escuela_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.escuela_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.escuela_id_seq OWNER TO postgres;
+
+--
+-- Name: escuela_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.escuela_id_seq OWNED BY public.escuela.id;
+
 
 --
 -- Name: funcionalidad_sistema; Type: TABLE; Schema: public; Owner: postgres
@@ -78,6 +146,40 @@ CREATE TABLE public.grado_tema_vocablo (
 ALTER TABLE public.grado_tema_vocablo OWNER TO postgres;
 
 --
+-- Name: pais; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.pais (
+    id integer NOT NULL,
+    nombre character varying(80) NOT NULL
+);
+
+
+ALTER TABLE public.pais OWNER TO postgres;
+
+--
+-- Name: pais_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.pais_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.pais_id_seq OWNER TO postgres;
+
+--
+-- Name: pais_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.pais_id_seq OWNED BY public.pais.id;
+
+
+--
 -- Name: practica_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -101,7 +203,8 @@ CREATE TABLE public.practica (
     total_consultas integer NOT NULL,
     total_correctas integer NOT NULL,
     usuario_id integer NOT NULL,
-    tema_id integer
+    tema_id integer NOT NULL,
+    grado_id integer NOT NULL
 );
 
 
@@ -234,7 +337,8 @@ CREATE TABLE public.usuario (
     fecha_nacimiento date NOT NULL,
     rol_usuario_id integer NOT NULL,
     fecha_registro character varying(30) NOT NULL,
-    usuario_metadatos_id integer NOT NULL
+    usuario_metadatos_id integer NOT NULL,
+    genero character varying(20) NOT NULL
 );
 
 
@@ -252,6 +356,19 @@ CREATE TABLE public.usuario_grado_vocablo_visto (
 
 
 ALTER TABLE public.usuario_grado_vocablo_visto OWNER TO postgres;
+
+--
+-- Name: usuario_log; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.usuario_log (
+    usuario_id integer NOT NULL,
+    fecha date NOT NULL,
+    data jsonb NOT NULL
+);
+
+
+ALTER TABLE public.usuario_log OWNER TO postgres;
 
 --
 -- Name: usuario_metadatos_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -327,6 +444,34 @@ CREATE TABLE public.vocablo (
 ALTER TABLE public.vocablo OWNER TO postgres;
 
 --
+-- Name: ciudad id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.ciudad ALTER COLUMN id SET DEFAULT nextval('public.ciudad_id_seq'::regclass);
+
+
+--
+-- Name: escuela id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.escuela ALTER COLUMN id SET DEFAULT nextval('public.escuela_id_seq'::regclass);
+
+
+--
+-- Name: pais id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.pais ALTER COLUMN id SET DEFAULT nextval('public.pais_id_seq'::regclass);
+
+
+--
+-- Name: ciudad_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.ciudad_id_seq', 1, true);
+
+
+--
 -- Name: consulta_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -334,10 +479,24 @@ SELECT pg_catalog.setval('public.consulta_id_seq', 1, false);
 
 
 --
+-- Name: escuela_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.escuela_id_seq', 1, true);
+
+
+--
+-- Name: pais_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.pais_id_seq', 197, true);
+
+
+--
 -- Name: practica_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.practica_id_seq', 1, false);
+SELECT pg_catalog.setval('public.practica_id_seq', 1, true);
 
 
 --
@@ -365,14 +524,14 @@ SELECT pg_catalog.setval('public.tema_id_seq', 500, true);
 -- Name: usuario_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.usuario_id_seq', 100, true);
+SELECT pg_catalog.setval('public.usuario_id_seq', 101, true);
 
 
 --
 -- Name: usuario_metadatos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.usuario_metadatos_id_seq', 100, true);
+SELECT pg_catalog.setval('public.usuario_metadatos_id_seq', 101, true);
 
 
 --
@@ -383,11 +542,27 @@ SELECT pg_catalog.setval('public.vocablo_id_seq', 2000, true);
 
 
 --
+-- Name: ciudad ciudad_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.ciudad
+    ADD CONSTRAINT ciudad_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: consulta consulta_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.consulta
     ADD CONSTRAINT consulta_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: escuela escuela_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.escuela
+    ADD CONSTRAINT escuela_pkey PRIMARY KEY (id);
 
 
 --
@@ -420,6 +595,14 @@ ALTER TABLE ONLY public.grado_tema
 
 ALTER TABLE ONLY public.grado_tema_vocablo
     ADD CONSTRAINT grado_tema_vocablo_pkey PRIMARY KEY (grado_id, tema_id, vocablo_id);
+
+
+--
+-- Name: pais pais_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.pais
+    ADD CONSTRAINT pais_pkey PRIMARY KEY (id);
 
 
 --
@@ -460,6 +643,14 @@ ALTER TABLE ONLY public.rol_usuario
 
 ALTER TABLE ONLY public.tema
     ADD CONSTRAINT tema_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: usuario_log usuario_log_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.usuario_log
+    ADD CONSTRAINT usuario_log_pkey PRIMARY KEY (usuario_id, fecha);
 
 
 --
@@ -540,6 +731,14 @@ ALTER TABLE ONLY public.grado_tema
 
 ALTER TABLE ONLY public.grado_tema_vocablo
     ADD CONSTRAINT fk_grado FOREIGN KEY (grado_id) REFERENCES public.grado(id);
+
+
+--
+-- Name: practica fk_grado; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.practica
+    ADD CONSTRAINT fk_grado FOREIGN KEY (grado_id) REFERENCES public.grado(id) NOT VALID;
 
 
 --
@@ -631,6 +830,14 @@ ALTER TABLE ONLY public.usuario_tema_vocablo_correcto
 
 
 --
+-- Name: usuario_log fk_usuario; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.usuario_log
+    ADD CONSTRAINT fk_usuario FOREIGN KEY (usuario_id) REFERENCES public.usuario(id);
+
+
+--
 -- Name: usuario fk_usuario_metadatos; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -689,8 +896,3 @@ ALTER TABLE ONLY public.consulta
 --
 -- PostgreSQL database dump complete
 --
-
---
--- PostgreSQL database cluster dump complete
---
-
