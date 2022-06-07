@@ -28,7 +28,7 @@ import {
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import sendLogs from '../utlis/sendLogs';
+import sendLogs from '../utils/sendLogs';
 
 
 function Copyright(props) {
@@ -185,7 +185,8 @@ function DashboardContent({setAuth}) {
     e.preventDefault();
     try {
       localStorage.removeItem("token");
-      toast.success("Logout successfully");
+      // toast.success("Logout successfully");
+      toast.success("Sesión cerrada");
       setAuth(false); 
 
       sendLogs({

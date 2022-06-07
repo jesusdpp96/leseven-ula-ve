@@ -1,0 +1,364 @@
+[
+  {
+    "grado": "Sexto grado",
+    "tema": "Arboles",
+    "palabra": "Ficus",
+    "image": "/assets/images/ficus.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Arboles",
+    "palabra": "Cactus",
+    "image": "/assets/images/cactus.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Arboles",
+    "palabra": "Caujaro",
+    "image": "/assets/images/caujaro.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Dinosaurios",
+    "image": "/assets/images/dinosaurios.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Cunaguaro",
+    "image": "/assets/images/cunaguaro.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Afeitadora",
+    "image": "/assets/images/afeitadora.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Corta uña",
+    "image": "/assets/images/corta-una.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Jabón",
+    "image": "/assets/images/jabon.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Peine",
+    "image": "/assets/images/Peine.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Papel Sanitario",
+    "image": "/assets/images/Papel-Sanitario.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+
+  {
+    "grado": "Sexto grado",
+    "tema": "Dulces/Postres/Golosinas",
+    "palabra": "Bocadillo",
+    "image": "/assets/images/Bocadillo.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Dulces/Postres/Golosinas",
+    "palabra": "Mermelada",
+    "image": "/assets/images/Mermelada.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Dulces/Postres/Golosinas",
+    "palabra": "Cremas",
+    "image": "/assets/images/Cremas.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Dulces/Postres/Golosinas",
+    "palabra": "Batidos",
+    "image": "/assets/images/Batidos.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+
+  {
+    "grado": "Sexto grado",
+    "tema": "Enfermedades",
+    "palabra": "Gastritis",
+    "image": "/assets/images/Gastritis.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Enfermedades",
+    "palabra": "Peritonitis",
+    "image": "/assets/images/Peritonitis.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Enfermedades",
+    "palabra": "Amigdalitis",
+    "image": "/assets/images/Amigdalitis.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Enfermedades",
+    "palabra": "Apendicitis",
+    "image": "/assets/images/Apendicitis.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  
+  {
+    "grado": "Sexto grado",
+    "tema": "Figuras geométricas",
+    "palabra": "Poliedro",
+    "image": "/assets/images/Poliedro.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Figuras geométricas",
+    "palabra": "Piramides",
+    "image": "/assets/images/Piramides.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado":"Sexto grado",
+    "tema":"Lugares de merida",
+    "palabra":"Momumento del Perro",
+    "image":"/assets/images/Momumento-del-Perro.png",
+    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado":"Sexto grado",
+    "tema":"Lugares de merida",
+    "palabra":"Tisure",
+    "image":"/assets/images/Tisure.png",
+    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado":"Sexto grado",
+    "tema":"Lugares de merida",
+    "palabra":"Los Nevados",
+    "image":"/assets/images/Los-Nevados.png",
+    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado":"Sexto grado",
+    "tema":"Lugares de merida",
+    "palabra":"La Loca Luz Caraballo",
+    "image":"/assets/images/La-Loca-Luz-Caraballo.png",
+    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado":"Sexto grado",
+    "tema":"Lugares de merida",
+    "palabra":"La Mucuy",
+    "image":"/assets/images/La-Mucuy.png",
+    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado":"Sexto grado",
+    "tema":"Lugares de merida",
+    "palabra":"La Laguna",
+    "image":"/assets/images/La-Laguna.png",
+    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado":"Sexto grado",
+    "tema":"Lugares de merida",
+    "palabra":"Lagunillas",
+    "image":"/assets/images/Lagunillas.png",
+    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  
+
+  {
+    "grado":"Sexto grado",
+    "tema":"Numeros",
+    "palabra":"Billones",
+    "image":"/assets/images/Billones.png",
+    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado": "Sexto grado",
+    "tema": "Personajes historicos",
+    "palabra": "Andres Bello",
+    "image": "/assets/images/Andres-Bello.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personajes historicos",
+    "palabra": "Manuel Gual",
+    "image": "/assets/images/Manuel-Gual.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personajes historicos",
+    "palabra": "Jose Maria España",
+    "image": "/assets/images/Jose-Maria-España.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personajes historicos",
+    "palabra": "Vicente de Emparan",
+    "image": "/assets/images/Vicente-de-Emparan.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personajes historicos",
+    "palabra": "Jose Leonardo Chirinos",
+    "image": "/assets/images/Jose-Leonardo-Chirinos.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Diputado",
+    "image": "/assets/images/Diputado.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Senador",
+    "image": "/assets/images/Senador.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Embajador",
+    "image": "/assets/images/Embajador.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Cónsul",
+    "image": "/assets/images/Cónsul.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Sacerdote",
+    "image": "/assets/images/Sacerdote.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Papa",
+    "image": "/assets/images/Papa.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Pastor",
+    "image": "/assets/images/Pastor.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado": "Sexto grado",
+    "tema": "Ropa",
+    "palabra": "Pinta uñas",
+    "image": "/assets/images/Pinta-uñas.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Ropa",
+    "palabra": "Lápiz-labial",
+    "image": "/assets/images/Lápiz-labial.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Ropa",
+    "palabra": "Colonia",
+    "image": "/assets/images/Colonia.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Ropa",
+    "palabra": "Aretes",
+    "image": "/assets/images/Aretes.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Ropa",
+    "palabra": "Cintillo",
+    "image": "/assets/images/Cintillo.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  
+  
+  {
+    "grado": "Sexto grado",
+    "tema": "Sintomas",
+    "palabra": "Acidez",
+    "image": "/assets/images/Acidez.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Sintomas",
+    "palabra": "Reflujo",
+    "image": "/assets/images/Reflujo.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Sintomas",
+    "palabra": "Inflamacion",
+    "image": "/assets/images/Inflamacion.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Sintomas",
+    "palabra": "Abceso",
+    "image": "/assets/images/Abceso.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  }
+]

@@ -9,7 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import VocabloModal from './VocabloModal';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import sendLogs from '../utlis/sendLogs';
+import sendLogs from '../utils/sendLogs';
 
 const ItemList = ({vocablos, setQuery}) => {
 
@@ -28,7 +28,7 @@ const ItemList = ({vocablos, setQuery}) => {
       <Card sx={{ display: 'flex', justifyContent: "space-between", backgroundColor: '#fff',   }}>
         <CardMedia
           component="img"
-          sx={{ width: 130, height: 130 }}
+          sx={{ width: 130, height: 130, objectFit: 'contain' }}
           image={imageSrc}
           alt="Live from space album cover"
         />

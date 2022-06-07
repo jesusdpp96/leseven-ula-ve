@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "Preescolar",
+    "image": "/assets/images/preescolar.png"
+  },
+  {
+    "nombre": "Primer grado",
+    "image": "/assets/images/primer-grado.png"
+  },
+  {
+    "nombre": "Segundo grado",
+    "image": "/assets/images/segundo-grado.png"
+  },
+  {
+    "nombre": "Tercer Grado",
+    "image": "/assets/images/tercer-grado.png"
+  },
+  {
+    "nombre": "Cuarto Grado",
+    "image": "/assets/images/cuarto-grado.png"
+  },
+  {
+    "nombre": "Quinto Grado",
+    "image": "/assets/images/quinto-grado.png"
+  },
+  {
+    "nombre": "Sexto Grado",
+    "image": "/assets/images/sexto-grado.png"
+  }
+]

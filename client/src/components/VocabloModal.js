@@ -65,6 +65,32 @@ export default function VocabloModal({buttonText, vocablo, onlyModal}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const handleCloseAprendido = async () => {
+
+    try {
+      const response = await fetch("http://localhost:4000/vocablo-visto", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+          "token": localStorage.token,
+        },
+        body: JSON.stringify({grado_id: vocablo.grado_id, tema_id: vocablo.tema_id, vocablo_id: vocablo.vocablo_id}),
+      });
+
+      if (response.status === 204) {
+        console.info("vocablo visto");
+
+      } else {
+        console.error("Unknown errors sending vocablo-visto");
+      }
+
+    } catch(err) {
+      // code to error action
+      console.error("Connection error sending vocablo-visto");
+    }
+    
+    setOpen(false)
+  };
 
   const indexImage = vocablo && vocablo.recursos ? vocablo.recursos.findIndex(elem => elem.tipo === 'image') : -1;
   let imageSrc;
@@ -123,7 +149,7 @@ export default function VocabloModal({buttonText, vocablo, onlyModal}) {
             </Grid>
             <Grid item xs={4} sm={4} md={4} style={{minHeight: "150px", display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', alignSelf: "stretch"}}>
               <Button variant="text" color="error" onClick={handleClose}>Cerrar</Button>
-              <Button variant="contained" color="success" onClick={handleClose} style={{marginLeft: '24px'}}>Aprendido</Button>
+              <Button variant="contained" color="success" onClick={handleCloseAprendido} style={{marginLeft: '24px'}}>Aprendido</Button>
             </Grid>
           </Grid>
           {/* <Grid container spacing={{ xs: 5, md: 3 }} columns={{ xs: 4, sm: 8, md: 8 }} style={{alignSelf: "stretch"}}>

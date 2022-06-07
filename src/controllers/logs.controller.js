@@ -1,3 +1,5 @@
+const getDateYYYYMMDD = require("../utils/getDateYYYYMMDD");
+
 const pool = require("../db");
 
 const addLogs = async (req, res, next) => {
@@ -15,15 +17,7 @@ const addLogs = async (req, res, next) => {
       throw new Error ("logs needed");
     }
 
-    const date = new Date();
-    const year = `${date.getFullYear()}`;
-    let month = `${date.getMonth()}`;
-    month = month.length === 1 ? `0${month}`: month;
-
-    let day = `${date.getDay()}`;
-    day = day.length === 1 ? `0${day}`: day;
-    const fecha = `${year}-${month}-${day}`;
-
+    const fecha = getDateYYYYMMDD(new Date());
     const result = await pool.query("SELECT * FROM usuario_log WHERE usuario_id = $1 AND fecha=$2 ", [usuario_id, fecha]);
 
     let arrJSONLog;

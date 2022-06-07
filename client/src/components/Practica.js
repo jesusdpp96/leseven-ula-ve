@@ -24,9 +24,90 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ScoreIcon from '@mui/icons-material/Score';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import { YoutubeEmbed, styleVocabloModal } from './VocabloModal';
-import sendLogs from '../utlis/sendLogs';
+import sendLogs from '../utils/sendLogs';
+
+import CustomToast from './CustomToast';
+
+const REWARD_GOOD_RESPONSE = [
+  {
+    message: '¡Bien hecho!',
+    imageSrc: '/assets/trofeos/good-response.png',
+  },
+  {
+    message: '¡Buen trabajo!',
+    imageSrc: '/assets/trofeos/good-response.png',
+  },
+  {
+    message: '¡Genial!',
+    imageSrc: '/assets/trofeos/good-response.png',
+  },
+  {
+    message: '¡Excelente!',
+    imageSrc: '/assets/trofeos/good-response.png',
+  },
+  {
+    message: '¡Perfecto!',
+    imageSrc: '/assets/trofeos/good-response.png',
+  },
+];
+
+const REWARD_BAD_RESPONSE = [
+  {
+    message: '¡Sigue intentando!',
+    imageSrc: '/assets/trofeos/bad-response.png',
+  },
+  {
+    message: '¡Vamos! Tu puedes',
+    imageSrc: '/assets/trofeos/bad-response.png',
+  },
+  {
+    message: 'No es correcto.',
+    imageSrc: '/assets/trofeos/bad-response.png',
+  },
+  {
+    message: '¡Puedes hacerlo!',
+    imageSrc: '/assets/trofeos/bad-response.png',
+  },
+];
+
+const REWARD_CORRECTED_RESPONSE = [
+  {
+    message: '¡Lo lograste!',
+    imageSrc: '/assets/trofeos/corrected-response.png',
+  },
+  {
+    message: '¡Asi es!',
+    imageSrc: '/assets/trofeos/corrected-response.png',
+  },
+  {
+    message: '¡Eso era todo!',
+    imageSrc: '/assets/trofeos/corrected-response.png',
+  },
+  {
+    message: '¡Sigue asi!',
+    imageSrc: '/assets/trofeos/corrected-response.png',
+  },
+];
+
 
 // const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+
+export const styleTrofeoModal = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '300px',
+  minHeight: '300px',
+  bgcolor: 'background.paper',
+  border: '1px solid #666',
+  borderRadius: '16px',
+  boxShadow: 24,
+  p: 4,
+  display:'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+};
 
 function generateConsultas({vocablos, numeroConsultas}) {
 
@@ -97,6 +178,39 @@ function generateConsultas({vocablos, numeroConsultas}) {
   return consultas;
 }
 
+function hasTrofeoAgil({consultas, secondsByConsulta = 5}) {
+
+  if (!consultas || consultas.length === 0) {
+    return false;
+  }
+
+  const totalConsultas = consultas.length;
+  let totalConsultasCorrectas = 0;
+
+  for (const consulta of consultas) {
+    if (consulta.vocablo_palabra === consulta.responses[0]) {
+      totalConsultasCorrectas += 1;
+    }
+    
+    if (!consulta.responses || !consulta.logs) {
+      return false;
+    }
+  }
+
+  const firstLog = consultas[0].logs[0];
+  const lastLog = consultas[consultas.length - 1].logs[consultas[consultas.length - 1].logs.length - 1];
+
+  const firstTimestamp = new Date(firstLog.timestamp).getTime();
+  const lastTimestamp = new Date(lastLog.timestamp).getTime();
+  const diff = lastTimestamp - firstTimestamp;
+
+  if (diff > 0 && diff <= secondsByConsulta * 1000 && totalConsultas === totalConsultasCorrectas) {
+    return true;
+  }
+  
+  return false;
+}
+
 function getResultsFunc({consultas}) {
 
   if (!consultas || consultas.length === 0) {
@@ -120,6 +234,8 @@ function getResultsFunc({consultas}) {
       totalConsultas,
       totalConsultasCorrectas,
       points,
+      trofeos_imparables: totalConsultas === totalConsultasCorrectas ? 1 : 0,
+      trofeos_agil: hasTrofeoAgil({consultas}) ? 1 : 0,
     }
 
   } catch(err) {
@@ -193,7 +309,13 @@ function getPracticaDataFunc({consultas, vocablos}) {
   practicaData.total_consultas = totalConsultas;
   practicaData.total_correctas = totalConsultasCorrectas;
   
-  return {practica: practicaData, consultas: consultasData }
+  return {
+    practica: practicaData,
+    consultas: consultasData,
+    puntos: totalConsultasCorrectas * 100,
+    trofeos_imparables: totalConsultas === totalConsultasCorrectas ? 1 : 0,
+    trofeos_agil: hasTrofeoAgil({consultas}) ? 1 : 0,
+  }
 
 }
 
@@ -420,9 +542,13 @@ export default function HorizontalNonLinearStepper() {
 
     if (consulta.vocablo_palabra === palabra) {      
 
-      const gamificacion = {
-        mensaje: 'Bien hecho!',
+      let reward;
+      if (consulta.responses && consulta.responses[0] === consulta.vocablo_palabra) {
+        reward =  REWARD_GOOD_RESPONSE[(Math.floor((Math.random() * REWARD_GOOD_RESPONSE.length)))];
+      } else {
+        reward =  REWARD_CORRECTED_RESPONSE[(Math.floor((Math.random() * REWARD_CORRECTED_RESPONSE.length)))];
       }
+
       
       addLogsToActiveStep({
         logs: [
@@ -435,20 +561,19 @@ export default function HorizontalNonLinearStepper() {
           {
             "log_name": "Sistema: Muestra gamificación por respuesta correcta",
             "timestamp": new Date().toISOString(),
-            "mensaje": gamificacion.mensaje,
-            // "gif": "felicitar001.gif"
+            "mensaje": reward.message,
+            "image": reward.imageSrc
           },
         ]
       });
 
-      const id = toast.success(gamificacion.mensaje, {autoClose: 2000});
+      // const id = toast.success(reward.mensaje, {autoClose: 2000});
+      const id = toast(<CustomToast imageSrc={reward.imageSrc} message={reward.message} />, {autoClose: 2000});
       setCurrentToastId(id);
       handleComplete();
     } else {
 
-      const gamificacion = {
-        mensaje: "Sigue intentando!",
-      }
+     const reward =  REWARD_BAD_RESPONSE[(Math.floor((Math.random() * REWARD_BAD_RESPONSE.length)))];
 
       addLogsToActiveStep({
         logs: [
@@ -461,8 +586,8 @@ export default function HorizontalNonLinearStepper() {
           {
             "log_name": "Sistema: Muestra gamificación por respuesta incorrecta",
             "timestamp": new Date().toISOString(),
-            "mensaje": gamificacion.mensaje,
-            // "gif": "felicitar001.gif"
+            "mensaje": reward.message,
+            "image": reward.imageSrc
           },
           {
             "log_name": "Sistema: Muestra corrección",
@@ -472,7 +597,7 @@ export default function HorizontalNonLinearStepper() {
         ]
       });
 
-      const id = toast.error(gamificacion.mensaje, {autoClose: 2000});
+      const id = toast(<CustomToast imageSrc={reward.imageSrc} message={reward.message} />, {autoClose: 2000});
       setCurrentToastId(id);
       handleOpen();
     }
@@ -662,6 +787,86 @@ export default function HorizontalNonLinearStepper() {
     );
   }
 
+  // Trofeo
+
+  const [openTrofeo, setOpenTrofeo] = React.useState(false);
+  const [trofeoData, setTrofeoData] = React.useState();
+
+  const handleCloseTrofeo = () => {
+    const trofeoAux = trofeoData;
+    setOpenTrofeo(false);
+    setTrofeoData(undefined);
+
+    if (trofeoAux.type === 'imparable') {
+      setResults({...results, trofeos_imparables_showed: true, trofeo_showing: false});
+    } else if (trofeoAux.type === 'agil') {
+      setResults({...results, trofeos_agil_showed: true, trofeo_showing: false});
+    }
+  }
+
+  if (results && results.trofeos_imparables && !results.trofeos_imparables_showed && !results.trofeo_showing) {
+    setResults({...results, trofeo_showing: true});
+    setTrofeoData({type: 'imparable', title: 'Ganaste un trofeo Imparable', message: ''});
+    setOpenTrofeo(true);
+  } else if (results && results.trofeos_agil && !results.trofeos_agil_showed && !results.trofeo_showing) {
+    setResults({...results, trofeo_showing: true});
+    setTrofeoData({type: 'agil', title: 'Ganaste un trofeo Agil', message: ''});
+    setOpenTrofeo(true);
+  }
+
+
+  console.log({results, trofeoData})
+
+
+  const TrofeoModal  = ({ trofeo }) => {
+
+    if (!trofeo) {
+      return null;
+    }
+    
+    let imageSrc;
+    if (trofeo.type === 'imparable') {
+      imageSrc = '/assets/trofeos/imparable.png';
+    } else if (trofeo.type === 'agil') {
+      imageSrc = '/assets/trofeos/agil.png';
+    }
+  
+    return (
+      <div>
+        {
+          trofeo ? (
+          <Modal
+            // keepMounted
+            open={openTrofeo}
+            onClose={handleCloseTrofeo}
+            aria-labelledby="keep-mounted-modal-title"
+            aria-describedby="keep-mounted-modal-description"
+          >
+            <Box sx={styleTrofeoModal}>
+              <CardMedia
+                component="img"
+                sx={{ maxWidth: 300, maxHeight: 300 }}
+                image={imageSrc}
+                alt={`trofeo ${trofeo.type}`}
+              />
+              <Typography id="keep-mounted-modal-title" variant="h5" color="success">
+                {trofeo.title}
+              </Typography>
+              <Typography id="keep-mounted-modal-title" variant="subtitle2" >
+                {trofeo.message}
+              </Typography>
+              <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+                <Box sx={{ flex: '1 1 auto' }} />
+                <Button aria-label="close modal" onClick={handleCloseTrofeo}>Ok</Button>
+              </Box>
+            </Box>
+          </Modal>
+          ): null
+        }
+      </div>
+    );
+  }
+
   return (
     loading ?
     (<Grid container direction="row" justifyContent="center"><CircularProgress color="inherit" size={25} /></Grid>) :
@@ -729,7 +934,7 @@ export default function HorizontalNonLinearStepper() {
                   <CardMedia
                     component="img"
                     sx={{ maxWidth: 200, maxHeight: 200 }}
-                    image="/assets/images/image10.png"
+                    image="/assets/trofeos/reward-practica.png"
                   />
                   <Typography variant="h4" sx={{ mt: 2, mb: 1 }}>
                     Muy bien!
@@ -796,6 +1001,7 @@ export default function HorizontalNonLinearStepper() {
           )}
         </div>
         <VocabloModal vocablo={steps[activeStep]} />
+        <TrofeoModal trofeo={trofeoData} />
       </Box>
     )
   ) 

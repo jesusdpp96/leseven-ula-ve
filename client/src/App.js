@@ -26,7 +26,6 @@ import "react-toastify/dist/ReactToastify.css";
 import {
   BrowserRouter, Route, Routes, Navigate, Outlet
 } from "react-router-dom";
-import Typography from '@mui/material/Typography';
 import { ToastContainer } from "react-toastify";
 
 import SignIn from "./components/SignIn";
@@ -34,6 +33,7 @@ import SignUp from "./components/SignUp";
 import Dashboard from "./components/Dashboard";
 import Explorar from "./components/Explorar";
 import Practica from "./components/Practica";
+import AprendicesMonitor from "./components/AprendicesMonitor";
 
 // toast.configure();
 
@@ -130,9 +130,7 @@ export const Body = ({ isAuthenticated, setAuth }) => (
           <Practica />
       } />
       <Route path="aprendices" element={
-        <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
-          Aprendicez-Info
-        </Typography>
+        <AprendicesMonitor />
       } />
     </Route>
   </Routes>

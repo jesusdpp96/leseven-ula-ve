@@ -55,7 +55,48 @@ const getVocablosByGradoTema = async (req, res, next) => {
 };
 
 
+const postVocabloVisto = async (req, res, next) => {
+
+  try {
+    const { grado_id, tema_id, vocablo_id } = req.body;
+
+    if (typeof tema_id !== 'number') {
+      throw new Error("tema_id is required");
+    }
+
+    if (typeof vocablo_id !== 'number') {
+      throw new Error("vocablo_id is required");
+    }
+
+    const usuario_id = req.user;
+
+    if (typeof usuario_id !== 'number') {
+      throw new Error("authentification is required");
+    }
+
+    
+    await pool.query(
+      `INSERT INTO public.vocablo_visto(usuario_id, grado_id, tema_id, vocablo_id, fecha)
+        VALUES ($1, $2, $3, $4, $5)`,
+      [usuario_id, grado_id, tema_id, vocablo_id, new Date().toISOString()]
+    );
+    
+    return res.sendStatus(204);
+  } catch(err) {
+
+    if (err.message.includes("duplicate key value violates unique constraint")) {
+      return res.sendStatus(204);
+    } else {
+      next(err);
+    }
+    
+  }
+
+  
+};
+
 module.exports = {
   getAllVocablos,
-  getVocablosByGradoTema
+  getVocablosByGradoTema,
+  postVocabloVisto
 };

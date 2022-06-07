@@ -29,6 +29,7 @@ services:
     volumes: 
       - ./database/build.sql:/docker-entrypoint-initdb.d/build.sql
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./database/init-vocablos.sql:/docker-entrypoint-initdb.d/init-vocablos.sql
 
   ui:
     container_name: practica_lsv_pgadmin

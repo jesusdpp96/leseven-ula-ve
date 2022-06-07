@@ -2,7 +2,6 @@ const router = require("express").Router();
 const pool = require("../db");
 const bcrypt = require("bcrypt");
 const jwtGenerator = require("../utils/jwtGenerator");
-const getDateYYYYMMDD = require("../utils/getDateYYYYMMDD");
 const validInfo = require("../middleware/validinfo");
 const authorization = require("../middleware/authorization");
 
@@ -69,9 +68,9 @@ router.post("/auth/register", validInfo, async (req, res) => {
       VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *`,
       [0, 0, 0, 0, 0, 0, 0]
     );
-
-    const fecha_registro = getDateYYYYMMDD(new Date());
     
+    const fecha_registro = new Date().toISOString();
+
     // enter new user inside database
     const newLogin = await pool.query(
       `INSERT INTO usuario(nombre, apellido, correo, contrasena, escuela, ciudad, pais, tipo_aprendiz, grado_instruccion_aprendiz, fecha_nacimiento, rol_usuario_id, fecha_registro, usuario_metadatos_id, genero)

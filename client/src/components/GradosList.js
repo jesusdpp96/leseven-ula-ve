@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { experimentalStyled as styled } from '@mui/material/styles';
 import { Avatar, Box, Grid, ListItemButton, ListItemAvatar, ListItemText,CircularProgress } from '@mui/material';
 import ImageIcon from '@mui/icons-material/Image';
-import sendLogs from '../utlis/sendLogs';
+import sendLogs from '../utils/sendLogs';
 
 
 const AccountStyle = styled('div')(({ theme }) => ({
@@ -26,8 +26,7 @@ const ItemList = ({grados, setQuery}) => {
       <AccountStyle>
         <ListItemButton onClick={()=> {setQuery({grado: elem.id})}}>
           <ListItemAvatar>
-            <Avatar>
-              <ImageIcon />
+            <Avatar src={elem.image_src}>
             </Avatar>
           </ListItemAvatar>
           <ListItemText primary={elem.nombre}/>

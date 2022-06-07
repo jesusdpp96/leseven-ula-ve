@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import sendLogs from '../utlis/sendLogs';
+import sendLogs from '../utils/sendLogs';
 
 
 const ItemList = ({temas, setQuery}) => {
@@ -20,7 +20,7 @@ const ItemList = ({temas, setQuery}) => {
       <Card sx={{ display: 'flex', justifyContent: "space-between", backgroundColor: '#e3e4fa',   }}>
         <CardMedia
           component="img"
-          sx={{ width: 130, height: 130 }}
+          sx={{ width: 130, height: 130, objectFit: 'contain' }}
           image={elem.tema_image_src}
           alt="Live from space album cover"
         />

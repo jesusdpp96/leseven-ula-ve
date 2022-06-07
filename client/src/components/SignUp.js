@@ -24,6 +24,7 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import { toast } from "react-toastify";
 import CircularProgress from '@mui/material/CircularProgress'
+import validateEmail from '../utils/validateEmail';
 
 
 
@@ -148,13 +149,6 @@ export default function SignUp({ setAuth }) {
     }
   };
   
-  const validateEmail = (email) => {
-    return String(email)
-      .toLowerCase()
-      .match(
-        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      );
-  };
   
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -206,7 +200,8 @@ export default function SignUp({ setAuth }) {
       if (parseRes.token) {
         localStorage.setItem("token", parseRes.token);
         setAuth(true);
-        toast.success("Logged in Successfully");
+        // toast.success("Logged in Successfully");
+        toast.success("Cuenta creada correctamente");
       } else {
         setAuth(false);
         toast.error(parseRes);

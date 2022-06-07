@@ -14,7 +14,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import CircularProgress from '@mui/material/CircularProgress'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import sendLogs from '../utlis/sendLogs';
+import sendLogs from '../utils/sendLogs';
 
 
 function Copyright(props) {
@@ -68,7 +68,9 @@ export default function SignIn({ setAuth }) {
       if (parseRes.token) {
         localStorage.setItem("token", parseRes.token);
         setAuth(true);
-        toast.success("Logged in Successfully");
+        // toast.success("Logged in Successfully");
+        toast.success("Sesión iniciada correctamente");
+        //sesión
 
         sendLogs({
           logs: [

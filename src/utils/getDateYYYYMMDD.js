@@ -5,7 +5,7 @@ function getDateYYYYMMDD(date) {
     let month = `${date.getMonth()}`;
     month = month.length === 1 ? `0${month}`: month;
 
-    let day = `${date.getDay()}`;
+    let day = `${date.getDate()}`;
     day = day.length === 1 ? `0${day}`: day;
     const fecha = `${year}-${month}-${day}`;
 

@@ -9,6 +9,7 @@ const logsRouter = require("./routes/logs.routes");
 const dashboardRouter = require("./routes/dashboard.routes");
 const usuariosRouter = require("./routes/usuarios.routes");
 const practicasRouter = require("./routes/practicas.routes");
+const aprendicesMonitorRouter = require("./routes/aprendices-monitor.routes");
 
 const app = express();
 
@@ -30,6 +31,7 @@ app.use(vocablosRouter);
 app.use(logsRouter);
 app.use(dashboardRouter);
 app.use(practicasRouter);
+app.use(aprendicesMonitorRouter);
 
 // handling errors
 app.use((err, req, res, next) => {
