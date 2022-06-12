@@ -37,17 +37,17 @@ import AprendicesMonitor from "./components/AprendicesMonitor";
 
 // toast.configure();
 
-const ProtectedRoute = ({
-  isAllowed,
-  redirectPath = '/login',
-  children,
-}) => {
-  if (!isAllowed) {
-    return <Navigate to={redirectPath} replace />;
-  }
+// const ProtectedRoute = ({
+//   isAllowed,
+//   redirectPath = '/login',
+//   children,
+// }) => {
+//   if (!isAllowed) {
+//     return <Navigate to={redirectPath} replace />;
+//   }
 
-  return children ? children : <Outlet />;
-};
+//   return children ? children : <Outlet />;
+// };
 
 
 function App() {

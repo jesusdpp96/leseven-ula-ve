@@ -118,7 +118,7 @@ export default function UserMonitorModal({ usuarioRowData, setOpenModal }) {
   };
 
 
-  const handleOpen = () => setOpen(true);
+  // const handleOpen = () => setOpen(true);
   const handleClose = () => {
     setOpen(false);
     setOpenModal(false);
