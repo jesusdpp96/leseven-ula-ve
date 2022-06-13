@@ -42,3 +42,18 @@ to delete database on docker:
 ```
 docker-compose down --volumes
 ```
+
+
+### Para crear la base de datos
+
+```
+cat database/build.sql | heroku pg:psql -a leseven
+```
+
+```
+cat database/init.sql | heroku pg:psql -a leseven
+```
+
+```
+cat database/init-vocablos.sql | heroku pg:psql -a leseven
+```

@@ -14,6 +14,15 @@ const aprendicesMonitorRouter = require("./routes/aprendices-monitor.routes");
 
 const app = express();
 
+// Settings
+app.set("port", process.env.PORT || 4000);
+
+// Middlewares
+app.use(cors());
+app.use(morgan("dev"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 if (process.env.NODE_ENV === 'production') {
   // server static content
   // npm run build
@@ -23,15 +32,6 @@ if (process.env.NODE_ENV === 'production') {
   // dev mode
   app.use(express.static("./client/build"));
 }
-
-// Settings
-app.set("port", process.env.PORT || 4000);
-
-// Middlewares
-app.use(cors());
-app.use(morgan("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 
 // Routes
 app.use(authRouter);
