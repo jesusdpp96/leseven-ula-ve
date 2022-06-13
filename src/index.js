@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
+const path = require("path");
 const authRouter = require("./routes/jwtAuth.routes");
 const gradosRouter = require("./routes/grados.routes");
 const temasRouter = require("./routes/temas.routes");
@@ -12,6 +13,16 @@ const practicasRouter = require("./routes/practicas.routes");
 const aprendicesMonitorRouter = require("./routes/aprendices-monitor.routes");
 
 const app = express();
+
+if (process.env.NODE_ENV === 'production') {
+  // server static content
+  // npm run build
+
+  app.use(express.static(path.join(__dirname,"client/build")));
+} else {
+  // dev mode
+  app.use(express.static("./client/build"));
+}
 
 // Settings
 app.set("port", process.env.PORT || 4000);
@@ -39,6 +50,10 @@ app.use((err, req, res, next) => {
     status: "error",
     message: err.message,
   });
+});
+
+app.get("*", (req,res) => {
+  res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
 app.listen(app.get("port"));

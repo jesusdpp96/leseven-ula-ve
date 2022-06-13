@@ -65,7 +65,7 @@ export default function TemaVocablosList({grado, tema}) {
   const getVocablos = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:4000/vocablos-by-grado-tema/${grado}/${tema}`, {
+      const response = await fetch(`/vocablos-by-grado-tema/${grado}/${tema}`, {
           method: "GET",
           headers: {
             "Content-type": "application/json",

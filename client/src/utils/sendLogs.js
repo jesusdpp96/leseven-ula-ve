@@ -3,7 +3,7 @@ async function sendLogs({logs}) {
 
   if (logs && logs.length > 0) {
     try {
-      const response = await fetch("http://localhost:4000/logs", {
+      const response = await fetch("/logs", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

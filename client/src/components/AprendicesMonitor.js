@@ -49,7 +49,7 @@ export default function AprendicesMonitor() {
     try {
       setAddLoading(true);
       const body = { correo };
-      const response = await fetch("http://localhost:4000/aprendices-monitor/add", {
+      const response = await fetch("/aprendices-monitor/add", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -92,7 +92,7 @@ export default function AprendicesMonitor() {
 
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:4000/aprendices-monitor/users", {
+      const response = await fetch("/aprendices-monitor/users", {
         method: "GET",
         headers: {
           "Content-type": "application/json",
@@ -122,7 +122,7 @@ export default function AprendicesMonitor() {
     try {
       setRemoveLoading(correo);
       const body = { correo };
-      const response = await fetch("http://localhost:4000/aprendices-monitor/remove", {
+      const response = await fetch("/aprendices-monitor/remove", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

@@ -1,12 +1,17 @@
 const { Pool } = require("pg");
-const { db } = require("./config");
 
-const pool = new Pool({
-  user: db.user,
-  password: db.password,
-  host: db.host,
-  port: db.port,
-  database: db.database,
-});
+const devConfig = {
+  user: process.env.DB_USER || "postgres",
+  password: process.env.DB_PASSWORD || "",
+  host: process.env.DB_HOST || "localhost",
+  port: process.env.DB_PORT || 5432,
+  database: process.env.DB_DATABASE || "practica_lsv_db",
+}
+
+const proConfig = {
+  connectionString: process.env.DATABASE_URL, // heroku-addons
+}
+
+const pool = new Pool(process.env.NODE_ENV === 'production' ? proConfig : devConfig);
 
 module.exports = pool;

@@ -44,7 +44,7 @@ export default function GradosList() {
   const getGrados = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:4000/grados", {
+      const response = await fetch("/grados", {
           method: "GET",
           headers: {
             "Content-type": "application/json",

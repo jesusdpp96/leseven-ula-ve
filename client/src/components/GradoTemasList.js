@@ -55,7 +55,7 @@ export default function GradoTemasList({grado}) {
   const getTemas = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:4000/temas-by-grado/${grado}`, {
+      const response = await fetch(`/temas-by-grado/${grado}`, {
           method: "GET",
           headers: {
             "Content-type": "application/json",

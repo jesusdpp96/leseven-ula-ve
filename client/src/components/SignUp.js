@@ -96,7 +96,7 @@ export default function SignUp({ setAuth }) {
   
   const getMetadata = async () => {
     try {
-      const response = await fetch("http://localhost:4000/auth/register-metadata", {
+      const response = await fetch("/auth/register-metadata", {
           method: "GET",
           headers: {
             "Content-type": "application/json",
@@ -185,7 +185,7 @@ export default function SignUp({ setAuth }) {
       const fnDate = new Date(inputs.fecha_nacimiento);
       const fecha_nacimiento = `${fnDate.getFullYear()}-${fnDate.getMonth()}-${fnDate.getDay()}`;
       const body = {...inputs, fecha_nacimiento};
-      const response = await fetch("http://localhost:4000/auth/register", {
+      const response = await fetch("/auth/register", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

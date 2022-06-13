@@ -163,7 +163,7 @@ function DashboardContent({setAuth}) {
 
   const getUserData = async () => {
     try {
-      const response = await fetch("http://localhost:4000/usuario", {
+      const response = await fetch("/usuario", {
           method: "GET",
           headers: {
             "Content-type": "application/json",

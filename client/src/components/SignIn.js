@@ -53,7 +53,7 @@ export default function SignIn({ setAuth }) {
     try {
       setLoading(true);
       const body = { correo: inputs.email, contrasena: inputs.password };
-      const response = await fetch("http://localhost:4000/auth/login", {
+      const response = await fetch("/auth/login", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

@@ -68,7 +68,7 @@ export default function VocabloModal({buttonText, vocablo, onlyModal}) {
   const handleCloseAprendido = async () => {
 
     try {
-      const response = await fetch("http://localhost:4000/vocablo-visto", {
+      const response = await fetch("/vocablo-visto", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

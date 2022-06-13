@@ -128,7 +128,7 @@ export default function UserMonitorModal({ usuarioRowData, setOpenModal }) {
     try {
       setLoading(true);
 
-      let route = `http://localhost:4000/aprendices-monitor/user/${usuarioTargetId}`;
+      let route = `/aprendices-monitor/user/${usuarioTargetId}`;
 
       if (typeof grado === 'number' && !range) {
         route = `${route}?grado=${grado}`;
