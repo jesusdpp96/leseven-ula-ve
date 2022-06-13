@@ -57,3 +57,9 @@ cat database/init.sql | heroku pg:psql -a leseven
 ```
 cat database/init-vocablos.sql | heroku pg:psql -a leseven
 ```
+
+### Establecer la variable de entorno jwtSecret
+
+```
+heroku config:set jwtSecret=pr4ct1c4_15v_pwd -a leseven
+```
