@@ -104,6 +104,9 @@ router.post("/auth/register", validInfo, async (req, res) => {
 
 // login route
 router.post("/auth/login", validInfo, async (req, res) => {
+
+  console.log(JSON.stringify(process.env));
+
   try {
     // destructure the req.body
     const { correo, contrasena } = req.body;
