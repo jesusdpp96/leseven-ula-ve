@@ -253,7 +253,7 @@ function DashboardContent({setAuth}) {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Practica LSV
+              LeSeVEN - Lengua de Señas Venezolana
             </Typography>
             {/* <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">

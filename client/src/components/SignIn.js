@@ -1,6 +1,7 @@
 // import * as React from 'react';
 import React, { useState } from 'react';
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
@@ -33,6 +34,8 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignIn({ setAuth }) {
+
+  const navigate = useNavigate();
 
   const [inputs, setInputs] = useState({
     email: "",
@@ -158,7 +161,7 @@ export default function SignIn({ setAuth }) {
                 </Link>
               </Grid> */}
               <Grid item>
-                <Link href="/register" variant="body2">
+                <Link component="button" variant="body2" onClick={() => {navigate('/register')}}>
                   {"¿No tienes una cuenta? Registrate"}
                 </Link>
               </Grid>

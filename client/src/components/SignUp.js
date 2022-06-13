@@ -17,6 +17,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import Stack from '@mui/material/Stack';
+import { useNavigate } from "react-router-dom";
 
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -68,6 +69,9 @@ const theme = createTheme();
 
 
 export default function SignUp({ setAuth }) {
+
+  const navigate = useNavigate();
+
   const [inputs, setInputs] = React.useState({
     nombre: null,
     apellido: null,
@@ -406,7 +410,7 @@ export default function SignUp({ setAuth }) {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="/login" variant="body2">
+                <Link component="button" variant="body2" onClick={() => {navigate("/login")}}>
                 ¿Tienes una cuenta? Inicia sesión
                 </Link>
               </Grid>

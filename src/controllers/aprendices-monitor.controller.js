@@ -166,6 +166,10 @@ const getAllData = async (req, res, next) => {
       if (existTemaVocabloCorrectoObj[`${vc.tema_id}${vc.vocablo_id}`]) {
         continue;
       }
+
+      if (!vc.correcto) {
+        continue;
+      }
       
       if (temasDataObj[vc.tema_id]) {
         if (temasDataObj[vc.tema_id].vocablos_correctos_counter) {
@@ -337,6 +341,10 @@ const getDataByGrado = async (req, res, next) => {
       if (existTemaVocabloCorrectoObj[`${vc.tema_id}${vc.vocablo_id}`]) {
         continue;
       }
+
+      if (!vc.correcto) {
+        continue;
+      }
       
       if (temasDataObj[vc.tema_id]) {
         if (temasDataObj[vc.tema_id].vocablos_correctos_counter) {
@@ -501,6 +509,10 @@ const getDataByRange = async (req, res, next) => {
     for (const vc of vocablosCorrectosQuery.rows) {
 
       if (existTemaVocabloCorrectoObj[`${vc.tema_id}${vc.vocablo_id}`]) {
+        continue;
+      }
+
+      if (!vc.correcto) {
         continue;
       }
       
@@ -680,6 +692,10 @@ const getDataByGradoRange = async (req, res, next) => {
       }
       
       if (existTemaVocabloCorrectoObj[`${vc.tema_id}${vc.vocablo_id}`]) {
+        continue;
+      }
+
+      if (!vc.correcto) {
         continue;
       }
       
