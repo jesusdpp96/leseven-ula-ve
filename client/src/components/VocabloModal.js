@@ -61,7 +61,7 @@ export const styleVocabloModal = {
   p: 4,
 };
 
-export default function VocabloModal({buttonText, vocablo, onlyModal}) {
+export default function VocabloModal({buttonText, vocablo, onlyModal, updateVocablos}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -87,6 +87,10 @@ export default function VocabloModal({buttonText, vocablo, onlyModal}) {
     } catch(err) {
       // code to error action
       console.error("Connection error sending vocablo-visto");
+    }
+
+    if (updateVocablos) {
+      updateVocablos();
     }
     
     setOpen(false)

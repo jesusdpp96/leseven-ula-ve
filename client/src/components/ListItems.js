@@ -21,7 +21,7 @@ export const mainListItems = (
         <ListItemText primary="Practica" />
       </ListItemButton>
     </Link>
-    <Link href="/dashboard/aprendices">
+    <Link href="/dashboard/supervisar">
       <ListItemButton>
         <ListItemIcon>
           <PeopleIcon />

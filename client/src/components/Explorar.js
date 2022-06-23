@@ -1,21 +1,15 @@
 import * as React from 'react';
 import { useSearchParams } from 'react-router-dom';
-import GradosList from './GradosList';
-import GradoTemasList from './GradoTemasList';
-import TemaVocablosList from './TemaVocablosList';
+import GradoTemasListExplorar from './GradoTemasListExplorar';
+import TemaVocablosListExplorar from './TemaVocablosListExplorar';
 
-export default function Explorar() {
-  let view = 'grados';
+export default function Practicar() {
+  let view = 'temas';
 
   const [query, setQuery] = useSearchParams();
 
-  const gradoQuery = query.get('grado');
 
   const temaQuery = query.get('tema');
-
-  if (typeof gradoQuery === 'string') {
-    view = 'temas';
-  }
 
   if (view === 'temas' && typeof temaQuery === 'string') {
     view = 'vocablos';
@@ -24,8 +18,8 @@ export default function Explorar() {
   // console.log({gradoQuery, typeof: typeof gradoQuery});
 
   return (view === 'temas' ? 
-          <GradoTemasList grado={Number(gradoQuery)} /> :
+          <GradoTemasListExplorar /> :
           view === 'vocablos' ?
-          <TemaVocablosList grado={Number(gradoQuery)} tema={Number(temaQuery)}/> :
-          <GradosList />)
+          <TemaVocablosListExplorar tema={Number(temaQuery)}/> :
+          null)
 }

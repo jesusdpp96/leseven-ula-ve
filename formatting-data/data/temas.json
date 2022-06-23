@@ -1,168 +1,168 @@
 [
   {
     "nombre": "Alimentos",
-    "image": "/assets/images/alimentos.png"
-
+    "image": "/assets/images/alimentos.png",
+    "es_categoria": true
   },
   {
     "nombre": "Animales",
-    "image": "/assets/images/animales.png"
-
+    "image": "/assets/images/animales.png",
+    "es_categoria": true
   },
   {
     "nombre": "Arboles",
-    "image": "/assets/images/arboles.png"
-
+    "image": "/assets/images/arboles.png",
+    "es_categoria": true
   },
   {
     "nombre": "Articulos de uso Personal",
-    "image": "/assets/images/articulos-de-uso-personal.png"
-
+    "image": "/assets/images/articulos-de-uso-personal.png",
+    "es_categoria": true
   },
   {
     "nombre": "Colores",
-    "image": "/assets/images/colores.png"
-
+    "image": "/assets/images/colores.png",
+    "es_categoria": true
   },
   {
     "nombre": "Días de la semana",
-    "image": "/assets/images/dias-de-la-semana.png"
-
+    "image": "/assets/images/días-de-la-semana.png",
+    "es_categoria": true
   },
   {
     "nombre": "Dulces/Postres/Golosinas",
-    "image": "/assets/images/dulces-postres-golosinas.png"
-
+    "image": "/assets/images/dulces-postres-golosinas.png",
+    "es_categoria": true
   },
   {
     "nombre": "Enfermedades",
-    "image": "/assets/images/enfermedades.png"
-
+    "image": "/assets/images/enfermedades.png",
+    "es_categoria": true
   },
   {
     "nombre": "Figuras geométricas",
-    "image": "/assets/images/figuras.png"
-
+    "image": "/assets/images/figuras.png",
+    "es_categoria": true
   },
   {
     "nombre": "Frutas",
-    "image": "/assets/images/frutas.png"
-
+    "image": "/assets/images/frutas.png",
+    "es_categoria": true
   },
   {
     "nombre": "Flores",
-    "image": "/assets/images/flores.png"
-
+    "image": "/assets/images/flores.png",
+    "es_categoria": true
   },
   {
     "nombre": "Juguetes/Juegos/Deportes",
-    "image": "/assets/images/juegos.png"
-
+    "image": "/assets/images/juegos.png",
+    "es_categoria": true
   },
   {
     "nombre": "Lugares",
-    "image": "/assets/images/lugares.png"
-
+    "image": "/assets/images/lugares.png",
+    "es_categoria": true
   },
   {
     "nombre": "Lugares de Mérida",
-    "image": "/assets/images/lugares-de-merida.png"
-
+    "image": "/assets/images/lugares-de-merida.png",
+    "es_categoria": true
   },
   {
     "nombre": "Medios de transporte",
-    "image": "/assets/images/medios-de-transporte.png"
-
+    "image": "/assets/images/medios-de-transporte.png",
+    "es_categoria": true
   },
   {
     "nombre": "Meses del año",
-    "image": "/assets/images/meses-del-ano.png"
-
+    "image": "/assets/images/meses-del-ano.png",
+    "es_categoria": true
   },
   {
     "nombre": "Noción de cantidad",
-    "image": "/assets/images/nocion-de-cantidad.png"
-
+    "image": "/assets/images/nocion-de-cantidad.png",
+    "es_categoria": true
   },
   {
     "nombre": "Noción de tamaño",
-    "image": "/assets/images/nocion-de-tamano.png"
-
+    "image": "/assets/images/nocion-de-tamano.png",
+    "es_categoria": true
   },
   {
     "nombre": "Noción espacial",
-    "image": "/assets/images/nocion-espacial.png"
-
+    "image": "/assets/images/nocion-espacial.png",
+    "es_categoria": true
   },
 
 
   {
     "nombre": "Noción temporal",
-    "image": "/assets/images/nocion-temporal.png"
-
+    "image": "/assets/images/nocion-temporal.png",
+    "es_categoria": true
   },
   {
     "nombre": "Numeros",
-    "image": "/assets/images/numeros.png"
-
+    "image": "/assets/images/numeros.png",
+    "es_categoria": false
   },
 
 
   {
     "nombre": "Objetos del hogar",
-    "image": "/assets/images/objetos-del-hogar.png"
-
+    "image": "/assets/images/objetos-del-hogar.png",
+    "es_categoria": true
   },
   {
     "nombre": "Oficios y Profesiones",
-    "image": "/assets/images/oficios-y-profesiones.png"
-
+    "image": "/assets/images/oficios-y-profesiones.png",
+    "es_categoria": true
   },
   {
     "nombre": "Partes del cuerpo",
-    "image": "/assets/images/partes-del-cuerpo.png"
-
+    "image": "/assets/images/partes-del-cuerpo.png",
+    "es_categoria": true
   },
 
 
   {
     "nombre": "Personajes historicos",
-    "image": "/assets/images/personajes-historicos.png"
-
+    "image": "/assets/images/personajes-historicos.png",
+    "es_categoria": false
   },
   {
     "nombre": "Personas",
-    "image": "/assets/images/personas.png"
-
+    "image": "/assets/images/personas.png",
+    "es_categoria": true
   },
   {
     "nombre": "Ropa",
-    "image": "/assets/images/ropa.png"
-
+    "image": "/assets/images/ropa.png",
+    "es_categoria": true
   },
   {
     "nombre": "Simbolos",
-    "image": "/assets/images/simbolos.png"
-
+    "image": "/assets/images/simbolos.png",
+    "es_categoria": false
   },
   {
     "nombre": "Sintomas",
-    "image": "/assets/images/sintomas.png"
-    
+    "image": "/assets/images/sintomas.png",
+    "es_categoria": true
   },
   {
     "nombre": "Utensilios de cocina",
-    "image": "/assets/images/utensilios-de-cocina.png"
-
+    "image": "/assets/images/utensilios-de-cocina.png",
+    "es_categoria": true
   },
   {
     "nombre": "Utiles escolares",
-    "image": "/assets/images/utiles-escolares.png"
-
+    "image": "/assets/images/utiles-escolares.png",
+    "es_categoria": true
   },
   {
     "nombre": "Verduras y hortalizas",
-    "image": "/assets/images/verduras-y-hortalizas.png"
-
+    "image": "/assets/images/verduras-y-hortalizas.png",
+    "es_categoria": true
   }
 ]

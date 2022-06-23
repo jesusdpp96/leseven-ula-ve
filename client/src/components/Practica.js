@@ -753,7 +753,7 @@ export default function HorizontalNonLinearStepper() {
                   </Typography>
                   <CardMedia
                     component="img"
-                    sx={{ maxWidth: 350, maxHeight: 300 }}
+                    sx={{ width: 350, height: 300, objectFit: 'contain' }}
                     // image={elem.tema_image_src}
                     image={imageSrc}
                     alt={`imagen del vocablo ${vocablo.vocablo_palabra}`}
@@ -942,8 +942,8 @@ export default function HorizontalNonLinearStepper() {
                 </Box>
               </Box>
               <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginTop: '24px'}}>
-                <Button variant="outlined" color="secondary" startIcon={<ChevronLeftIcon />} onClick={() => {navigate(`/dashboard/explorar?grado=${grado}&tema=${tema}`, {replace: true})}}>
-                  Volvar al tema
+                <Button variant="outlined" color="secondary" startIcon={<ChevronLeftIcon />} onClick={() => {navigate(`/dashboard/practicar?grado=${grado}`, {replace: true})}}>
+                  Volvar a {gradoTitle}
                 </Button>
                 <Button variant="contained" color="primary" endIcon={<RestartAltIcon />} onClick={() => {handleReset()}} style={{marginLeft: '24px'}}>
                   Comenzar otra practica
@@ -959,7 +959,7 @@ export default function HorizontalNonLinearStepper() {
                   </Typography>*/}
                   <CardMedia
                     component="img"
-                    sx={{ maxWidth: 350, maxHeight: 300 }}
+                    sx={{ maxWidth: 350, maxHeight: 300, objectFit: 'contain' }}
                     image={steps[activeStep].imageSrc}
                     alt={`imagen del vocablo ${steps[activeStep].vocablo_palabra}`}
                   />

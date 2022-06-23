@@ -1,13 +1,3 @@
-
-
---
--- Database "practica_lsv_db" dump
---
-
---
--- PostgreSQL database dump
---
-
 --
 -- Name: ciudad; Type: TABLE; Schema: public; Owner: postgres
 --
@@ -310,7 +300,8 @@ ALTER TABLE public.tema_id_seq OWNER TO postgres;
 CREATE TABLE public.tema (
     id integer DEFAULT nextval('public.tema_id_seq'::regclass) NOT NULL,
     nombre character varying(140) NOT NULL,
-    image_src character varying(140) NOT NULL
+    image_src character varying(140) NOT NULL,
+    es_categoria boolean
 );
 
 
@@ -387,7 +378,8 @@ CREATE TABLE public.usuario (
     rol_usuario_id integer NOT NULL,
     fecha_registro character varying(30) NOT NULL,
     usuario_metadatos_id integer NOT NULL,
-    genero character varying(20) NOT NULL
+    genero character varying(20) NOT NULL,
+    grado_actual integer
 );
 
 
@@ -524,40 +516,39 @@ ALTER TABLE ONLY public.pais ALTER COLUMN id SET DEFAULT nextval('public.pais_id
 
 ALTER TABLE ONLY public.trofeos ALTER COLUMN id SET DEFAULT nextval('public.trofeos_id_seq'::regclass);
 
-
 --
 -- Name: ciudad_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.ciudad_id_seq', 2, true);
+SELECT pg_catalog.setval('public.ciudad_id_seq', 3, true);
 
 
 --
 -- Name: consulta_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.consulta_id_seq', 212, true);
+SELECT pg_catalog.setval('public.consulta_id_seq', 296, true);
 
 
 --
 -- Name: escuela_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.escuela_id_seq', 2, true);
+SELECT pg_catalog.setval('public.escuela_id_seq', 3, true);
 
 
 --
 -- Name: pais_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.pais_id_seq', 392, true);
+SELECT pg_catalog.setval('public.pais_id_seq', 587, true);
 
 
 --
 -- Name: practica_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.practica_id_seq', 71, true);
+SELECT pg_catalog.setval('public.practica_id_seq', 100, true);
 
 
 --
@@ -585,21 +576,21 @@ SELECT pg_catalog.setval('public.tema_id_seq', 500, true);
 -- Name: trofeos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.trofeos_id_seq', 6, true);
+SELECT pg_catalog.setval('public.trofeos_id_seq', 24, true);
 
 
 --
 -- Name: usuario_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.usuario_id_seq', 106, true);
+SELECT pg_catalog.setval('public.usuario_id_seq', 107, true);
 
 
 --
 -- Name: usuario_metadatos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.usuario_metadatos_id_seq', 106, true);
+SELECT pg_catalog.setval('public.usuario_metadatos_id_seq', 107, true);
 
 
 --
@@ -826,6 +817,14 @@ ALTER TABLE ONLY public.trofeos
 
 
 --
+-- Name: usuario fk_grado_actual; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.usuario
+    ADD CONSTRAINT fk_grado_actual FOREIGN KEY (grado_actual) REFERENCES public.grado(id) NOT VALID;
+
+
+--
 -- Name: consulta fk_practica; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1016,3 +1015,4 @@ ALTER TABLE ONLY public.consulta
 --
 -- PostgreSQL database cluster dump complete
 --
+

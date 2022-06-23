@@ -17,7 +17,7 @@
     "grado": "Primer grado",
     "tema": "Alimentos",
     "palabra": "Pollo",
-    "image": "/assets/images/Pollo.png",
+    "image": "/assets/images/pollo-alimento.png",
     "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
   },
   {
@@ -68,7 +68,7 @@
     "grado": "Primer grado",
     "tema": "Animales",
     "palabra": "Pollo",
-    "image": "/assets/images/Pollo.png",
+    "image": "/assets/images/pollo-animal.png",
     "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
   },
   {
@@ -740,8 +740,8 @@
   {
     "grado": "Primer grado",
     "tema": "Personajes historicos",
-    "palabra": "Francisco de Mirando",
-    "image": "/assets/images/Francisco de Mirando.png",
+    "palabra": "Francisco de Miranda",
+    "image": "/assets/images/Francisco de Miranda.png",
     "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
   },
   {

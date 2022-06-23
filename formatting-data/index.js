@@ -137,8 +137,8 @@ Object.values(gradosHash).forEach(elem => {
 Object.values(temasHash).forEach(elem => {
 
   temasSQL = `${temasSQL}
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (${elem.id}, '${elem.nombre}', '${elem.image}');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (${elem.id}, '${elem.nombre}', '${elem.image}', ${Boolean(elem.es_categoria)});
   
   `
 });

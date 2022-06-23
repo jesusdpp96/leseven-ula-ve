@@ -3,6 +3,7 @@ const {
   getAllVocablos,
   getVocablosByGradoTema,
   postVocabloVisto,
+  getVocablosByTema,
 } = require("../controllers/vocablos.controller");
 const authorization = require("../middleware/authorization");
 
@@ -12,7 +13,8 @@ const router = Router();
 
 router.get("/vocablos", getAllVocablos);
 
-router.get("/vocablos-by-grado-tema/:grado_id/:tema_id", getVocablosByGradoTema);
+router.get("/vocablos-by-grado-tema/:grado_id/:tema_id", authorization, getVocablosByGradoTema);
+router.get("/vocablos-by-tema/:tema_id", authorization, getVocablosByTema);
 
 
 // TODO: Vocablos vistos

@@ -35,132 +35,132 @@
 --
 -- Temas
 --
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (0, 'Alimentos', '/assets/images/alimentos.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (0, 'Alimentos', '/assets/images/alimentos.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (1, 'Animales', '/assets/images/animales.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (1, 'Animales', '/assets/images/animales.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (2, 'Arboles', '/assets/images/arboles.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (2, 'Arboles', '/assets/images/arboles.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (3, 'Articulos de uso Personal', '/assets/images/articulos-de-uso-personal.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (3, 'Articulos de uso Personal', '/assets/images/articulos-de-uso-personal.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (4, 'Colores', '/assets/images/colores.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (4, 'Colores', '/assets/images/colores.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (5, 'Días de la semana', '/assets/images/dias-de-la-semana.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (5, 'Días de la semana', '/assets/images/días-de-la-semana.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (6, 'Dulces/Postres/Golosinas', '/assets/images/dulces-postres-golosinas.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (6, 'Dulces/Postres/Golosinas', '/assets/images/dulces-postres-golosinas.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (7, 'Enfermedades', '/assets/images/enfermedades.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (7, 'Enfermedades', '/assets/images/enfermedades.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (8, 'Figuras geométricas', '/assets/images/figuras.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (8, 'Figuras geométricas', '/assets/images/figuras.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (9, 'Frutas', '/assets/images/frutas.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (9, 'Frutas', '/assets/images/frutas.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (10, 'Flores', '/assets/images/flores.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (10, 'Flores', '/assets/images/flores.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (11, 'Juguetes/Juegos/Deportes', '/assets/images/juegos.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (11, 'Juguetes/Juegos/Deportes', '/assets/images/juegos.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (12, 'Lugares', '/assets/images/lugares.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (12, 'Lugares', '/assets/images/lugares.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (13, 'Lugares de Mérida', '/assets/images/lugares-de-merida.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (13, 'Lugares de Mérida', '/assets/images/lugares-de-merida.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (14, 'Medios de transporte', '/assets/images/medios-de-transporte.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (14, 'Medios de transporte', '/assets/images/medios-de-transporte.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (15, 'Meses del año', '/assets/images/meses-del-ano.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (15, 'Meses del año', '/assets/images/meses-del-ano.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (16, 'Noción de cantidad', '/assets/images/nocion-de-cantidad.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (16, 'Noción de cantidad', '/assets/images/nocion-de-cantidad.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (17, 'Noción de tamaño', '/assets/images/nocion-de-tamano.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (17, 'Noción de tamaño', '/assets/images/nocion-de-tamano.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (18, 'Noción espacial', '/assets/images/nocion-espacial.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (18, 'Noción espacial', '/assets/images/nocion-espacial.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (19, 'Noción temporal', '/assets/images/nocion-temporal.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (19, 'Noción temporal', '/assets/images/nocion-temporal.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (20, 'Numeros', '/assets/images/numeros.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (20, 'Numeros', '/assets/images/numeros.png', false);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (21, 'Objetos del hogar', '/assets/images/objetos-del-hogar.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (21, 'Objetos del hogar', '/assets/images/objetos-del-hogar.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (22, 'Oficios y Profesiones', '/assets/images/oficios-y-profesiones.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (22, 'Oficios y Profesiones', '/assets/images/oficios-y-profesiones.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (23, 'Partes del cuerpo', '/assets/images/partes-del-cuerpo.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (23, 'Partes del cuerpo', '/assets/images/partes-del-cuerpo.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (24, 'Personajes historicos', '/assets/images/personajes-historicos.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (24, 'Personajes historicos', '/assets/images/personajes-historicos.png', false);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (25, 'Personas', '/assets/images/personas.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (25, 'Personas', '/assets/images/personas.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (26, 'Ropa', '/assets/images/ropa.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (26, 'Ropa', '/assets/images/ropa.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (27, 'Simbolos', '/assets/images/simbolos.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (27, 'Simbolos', '/assets/images/simbolos.png', false);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (28, 'Sintomas', '/assets/images/sintomas.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (28, 'Sintomas', '/assets/images/sintomas.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (29, 'Utensilios de cocina', '/assets/images/utensilios-de-cocina.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (29, 'Utensilios de cocina', '/assets/images/utensilios-de-cocina.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (30, 'Utiles escolares', '/assets/images/utiles-escolares.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (30, 'Utiles escolares', '/assets/images/utiles-escolares.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src)
-    VALUES (31, 'Verduras y hortalizas', '/assets/images/verduras-y-hortalizas.png');
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (31, 'Verduras y hortalizas', '/assets/images/verduras-y-hortalizas.png', true);
   
   
 
@@ -2266,10 +2266,10 @@
       VALUES (1, 24, 55);
     
     INSERT INTO public.vocablo(id, palabra, tema_id)
-      VALUES (140, 'Francisco de Mirando', 24);
+      VALUES (140, 'Francisco de Miranda', 24);
     
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (280, 'image', '/assets/images/francisco-de-mirando.png', 140);
+      VALUES (280, 'image', '/assets/images/francisco-de-miranda.png', 140);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
       VALUES (281, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 140);

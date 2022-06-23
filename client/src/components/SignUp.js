@@ -92,7 +92,7 @@ export default function SignUp({ setAuth }) {
     paises: [],
     ciudades: [],
     escuelas: [],
-    tipoAprendiz: ['Estudiante', 'Familiar', 'A fin a la institución', 'Otro'],
+    tipoAprendiz: ['Estudiante', 'Familiar', 'Afín a la institución', 'Otro'],
     nivelInstruccion: ['Primario', 'Profesional', 'Secundario', 'Medio-superior', 'Superior'],
   });
 

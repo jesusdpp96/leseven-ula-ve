@@ -202,7 +202,7 @@ export default function AprendicesMonitor() {
               <TableRow>
                 <TableCell>Nombre</TableCell>
                 <TableCell align="right">Correo</TableCell>
-                <TableCell align="right">Practicas{<br/>}realizadas</TableCell>
+                <TableCell align="right">Prácticas{<br/>}realizadas</TableCell>
                 <TableCell align="right">Consultas{<br/>}correctas</TableCell>
                 <TableCell align="right">Consultas{<br/>}incorrectas</TableCell>
                 <TableCell align="right">Puntos</TableCell>

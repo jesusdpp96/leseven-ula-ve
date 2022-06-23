@@ -208,6 +208,33 @@ const getAllData = async (req, res, next) => {
       if (practicaTime >= last7DaysTime) {
         practicas_last_7days += 1;
       }
+
+      if (temasDataObj[practica.tema_id]) {
+        if (temasDataObj[practica.tema_id].practicas_hechas) {
+          temasDataObj[practica.tema_id].practicas_hechas += 1;
+        } else {
+          temasDataObj[practica.tema_id].practicas_hechas = 1;
+        }
+
+        if (temasDataObj[practica.tema_id].total_consultas) {
+          temasDataObj[practica.tema_id].total_consultas += practica.total_consultas;
+        } else {
+          temasDataObj[practica.tema_id].total_consultas = practica.total_consultas;
+        }
+
+        if (temasDataObj[practica.tema_id].total_correctas) {
+          temasDataObj[practica.tema_id].total_correctas += practica.total_correctas;
+        } else {
+          temasDataObj[practica.tema_id].total_correctas = practica.total_correctas;
+        }
+      } else {
+
+        temasDataObj[practica.tema_id] = {
+          practicas_hechas: 1,
+          total_consultas: practica.total_consultas,
+          total_correctas: practica.total_correctas,
+        };
+      }
       
     }
 
@@ -384,6 +411,33 @@ const getDataByGrado = async (req, res, next) => {
         practicas_last_7days += 1;
       }
       
+      if (temasDataObj[practica.tema_id]) {
+        if (temasDataObj[practica.tema_id].practicas_hechas) {
+          temasDataObj[practica.tema_id].practicas_hechas += 1;
+        } else {
+          temasDataObj[practica.tema_id].practicas_hechas = 1;
+        }
+
+        if (temasDataObj[practica.tema_id].total_consultas) {
+          temasDataObj[practica.tema_id].total_consultas += practica.total_consultas;
+        } else {
+          temasDataObj[practica.tema_id].total_consultas = practica.total_consultas;
+        }
+
+        if (temasDataObj[practica.tema_id].total_correctas) {
+          temasDataObj[practica.tema_id].total_correctas += practica.total_correctas;
+        } else {
+          temasDataObj[practica.tema_id].total_correctas = practica.total_correctas;
+        }
+      } else {
+
+        temasDataObj[practica.tema_id] = {
+          practicas_hechas: 1,
+          total_consultas: practica.total_consultas,
+          total_correctas: practica.total_correctas,
+        };
+      }
+      
     }
 
     const gradoQuery = await pool.query(`SELECT * FROM grado`);
@@ -551,6 +605,32 @@ const getDataByRange = async (req, res, next) => {
         total_consultas += practica.total_consultas;
         total_correctas += practica.total_correctas;
 
+        if (temasDataObj[practica.tema_id]) {
+          if (temasDataObj[practica.tema_id].practicas_hechas) {
+            temasDataObj[practica.tema_id].practicas_hechas += 1;
+          } else {
+            temasDataObj[practica.tema_id].practicas_hechas = 1;
+          }
+  
+          if (temasDataObj[practica.tema_id].total_consultas) {
+            temasDataObj[practica.tema_id].total_consultas += practica.total_consultas;
+          } else {
+            temasDataObj[practica.tema_id].total_consultas = practica.total_consultas;
+          }
+  
+          if (temasDataObj[practica.tema_id].total_correctas) {
+            temasDataObj[practica.tema_id].total_correctas += practica.total_correctas;
+          } else {
+            temasDataObj[practica.tema_id].total_correctas = practica.total_correctas;
+          }
+        } else {
+  
+          temasDataObj[practica.tema_id] = {
+            practicas_hechas: 1,
+            total_consultas: practica.total_consultas,
+            total_correctas: practica.total_correctas,
+          };
+        }
       }
       
     }
@@ -734,6 +814,32 @@ const getDataByGradoRange = async (req, res, next) => {
         total_consultas += practica.total_consultas;
         total_correctas += practica.total_correctas;
 
+        if (temasDataObj[practica.tema_id]) {
+          if (temasDataObj[practica.tema_id].practicas_hechas) {
+            temasDataObj[practica.tema_id].practicas_hechas += 1;
+          } else {
+            temasDataObj[practica.tema_id].practicas_hechas = 1;
+          }
+  
+          if (temasDataObj[practica.tema_id].total_consultas) {
+            temasDataObj[practica.tema_id].total_consultas += practica.total_consultas;
+          } else {
+            temasDataObj[practica.tema_id].total_consultas = practica.total_consultas;
+          }
+  
+          if (temasDataObj[practica.tema_id].total_correctas) {
+            temasDataObj[practica.tema_id].total_correctas += practica.total_correctas;
+          } else {
+            temasDataObj[practica.tema_id].total_correctas = practica.total_correctas;
+          }
+        } else {
+  
+          temasDataObj[practica.tema_id] = {
+            practicas_hechas: 1,
+            total_consultas: practica.total_consultas,
+            total_correctas: practica.total_correctas,
+          };
+        }
       }
       
     }

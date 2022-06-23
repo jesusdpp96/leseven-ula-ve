@@ -3,6 +3,7 @@ const {
   getAllTemas,
   getTemasByGrado
 } = require("../controllers/temas.controller");
+const authorization = require("../middleware/authorization");
 
 const router = Router();
 
@@ -10,7 +11,7 @@ const router = Router();
 
 router.get("/temas", getAllTemas);
 
-router.get("/temas-by-grado/:grado_id", getTemasByGrado);
+router.get("/temas-by-grado/:grado_id", authorization ,getTemasByGrado);
 
 
 module.exports = router;

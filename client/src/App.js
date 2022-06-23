@@ -31,6 +31,7 @@ import { ToastContainer } from "react-toastify";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Dashboard from "./components/Dashboard";
+import Practicar from "./components/Practicar";
 import Explorar from "./components/Explorar";
 import Practica from "./components/Practica";
 import AprendicesMonitor from "./components/AprendicesMonitor";
@@ -123,13 +124,16 @@ export const Body = ({ isAuthenticated, setAuth }) => (
     />
     <Route path="/dashboard" element={ isAuthenticated ? (<Dashboard setAuth={setAuth}/>) : <Navigate to="/login" />}>
       
+      <Route path="practicar" element={
+          <Practicar />
+      } />
       <Route path="explorar" element={
           <Explorar />
       } />
       <Route path="practica" element={
           <Practica />
       } />
-      <Route path="aprendices" element={
+      <Route path="supervisar" element={
         <AprendicesMonitor />
       } />
     </Route>

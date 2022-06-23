@@ -21,29 +21,28 @@ const postPractica = async (req, res, next) => {
         [consulta.tipo, consulta.vocablo_correcto_id, consulta.vocablo_respuesta_id, practica_id]
       );
 
-      if (consulta.vocablo_correcto_id === consulta.vocablo_respuesta_id) {
+      const correcto = consulta.vocablo_correcto_id === consulta.vocablo_respuesta_id;
+      
+      try {
+        await pool.query(
+          `INSERT INTO public.vocablo_correcto(usuario_id, grado_id, tema_id, vocablo_id, fecha, correcto)
+          VALUES ($1, $2, $3, $4, $5, $6)`,
+          [usuario_id, practica.grado_id, practica.tema_id, consulta.vocablo_correcto_id, practica.fecha, correcto]
+        );
+
+      } catch (err) {
+
         try {
-          await pool.query(
-            `INSERT INTO public.vocablo_correcto(usuario_id, grado_id, tema_id, vocablo_id, fecha, correcto)
-            VALUES ($1, $2, $3, $4, $5, $6)`,
-            [usuario_id, practica.grado_id, practica.tema_id, consulta.vocablo_correcto_id, practica.fecha, true]
+          const result = await pool.query(
+            `UPDATE public.vocablo_correcto  SET correcto=$6
+            WHERE usuario_id=$1 AND grado_id=$2 AND tema_id=$3 AND vocablo_id=$4 AND fecha=$5 RETURNING *`,
+            [usuario_id, practica.grado_id, practica.tema_id, consulta.vocablo_correcto_id, practica.fecha, correcto]
           );
 
-        } catch (err) {
+          console.log({result});
+        } catch (err2) {
           // nothing
-          console.log(err);
-        }
-      } else {
-        try {
-          await pool.query(
-            `INSERT INTO public.vocablo_correcto(usuario_id, grado_id, tema_id, vocablo_id, fecha, correcto)
-              VALUES ($1, $2, $3, $4, $5, $6)`,
-            [usuario_id, practica.grado_id, practica.tema_id, consulta.vocablo_correcto_id, practica.fecha, false]
-          );
-
-        } catch (err) {
-          // nothing
-          console.log(err);
+          console.log(err2);
         }
       }
     }

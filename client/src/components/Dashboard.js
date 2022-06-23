@@ -21,6 +21,7 @@ import { toast } from "react-toastify";
 import LogoutIcon from '@mui/icons-material/Logout';
 import PeopleIcon from '@mui/icons-material/People';
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import {
   Outlet,
   useNavigate
@@ -113,16 +114,33 @@ function PanelItems({funcionalidad_sistema}) {
   const goTo1 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
-    navigate("explorar");
+    navigate("practicar");
   }
 
   const goTo2 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
-    navigate("aprendices");
+    navigate("supervisar");
+  }
+
+  const goTo3 = () => {
+    // console.log({event:e, name: e.target.name})
+    // navigate(e.target.name);
+    navigate("explorar");
   }
 
   const elements = [
+    {
+      funcionalidad: 'panel-practica',
+      element: (
+        <ListItemButton onClick={goTo3} key="pp003">
+          <ListItemIcon>
+            <TravelExploreIcon />
+          </ListItemIcon>
+          <ListItemText primary="Explorar" />
+        </ListItemButton>
+      )
+    },
     {
       funcionalidad: 'panel-practica',
       element: (
@@ -130,7 +148,7 @@ function PanelItems({funcionalidad_sistema}) {
           <ListItemIcon>
             <DashboardIcon />
           </ListItemIcon>
-          <ListItemText primary="Explora y practica" />
+          <ListItemText primary="Practicar" />
         </ListItemButton>
       )
     },
@@ -142,7 +160,7 @@ function PanelItems({funcionalidad_sistema}) {
           <ListItemIcon>
             <PeopleIcon />
           </ListItemIcon>
-          <ListItemText primary="Aprendices" />
+          <ListItemText primary="Supervisar" />
         </ListItemButton>
       )
     },
@@ -329,36 +347,6 @@ function DashboardContent({setAuth}) {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Outlet />
-            {/* <Grid container spacing={3}>
-              <Grid item xs={12} md={8} lg={9}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    height: 240,
-                  }}
-                >
-                  <Chart />
-                </Paper>
-              </Grid>
-              <Grid item xs={12} md={4} lg={3}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    height: 240,
-                  }}
-                >
-                </Paper>
-              </Grid>
-              <Grid item xs={12}>
-                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                  <Orders />
-                </Paper>
-              </Grid>
-            </Grid> */}
             <Copyright sx={{ pt: 4 }} />
           </Container>
         </Box>
