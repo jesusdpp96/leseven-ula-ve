@@ -34,7 +34,7 @@ function Copyright(props) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="http://www.ula.ve">
-        Universidad de los Andes
+        Universidad de Los Andes
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -43,29 +43,6 @@ function Copyright(props) {
 }
 
 const theme = createTheme();
-
-// function RoleOptions({roles, setUserRoleValue}) {
-  
-//   const rolesTags = roles.map(elem => (
-//     <FormControlLabel key={elem.id} value={elem.id} control={<Radio />} label={elem.nombre} />
-//   ))
-
-//   const handleChange = (e) => {console.log({event: e, name: e.target.name, value: e.target.value})};
-
-//   return (
-//     <FormControl onChange={handleChange}>
-//       <FormLabel id="user-rol">Rol</FormLabel>
-//       <RadioGroup
-//         aria-labelledby="user-rol"
-//         name="radio-buttons-group"
-//       >
-//        {rolesTags}
-//       </RadioGroup>
-//     </FormControl>
-//   );
-
-
-// }
 
 
 export default function SignUp({ setAuth }) {
@@ -97,6 +74,7 @@ export default function SignUp({ setAuth }) {
   });
 
   const [isAprendiz, setIsAprendiz] = React.useState(false);
+  const [isEstudiante, setIsEstudiante] = React.useState(false);
   
   const getMetadata = async () => {
     try {
@@ -119,6 +97,7 @@ export default function SignUp({ setAuth }) {
   const [loading, setLoading] = React.useState(false);
 
   const [error, setError] = React.useState(false);
+
 
 
   useEffect(() => {
@@ -144,13 +123,37 @@ export default function SignUp({ setAuth }) {
     if (e.target.localName === 'input') {
 
       setTimeout(() => {
+
         setInputs({ ...inputs, [e.target.name]: e.target.value })
       }, 400);
 
     } else {
       const name = e.target.id.split("-")[0];
-      setInputs({ ...inputs, [name]: e.target.textContent })
+      const value = e.target.textContent;
+      console.log({event:e, name, value})
+
+      
+      
+      if (name === 'tipo_aprendiz') {
+        setIsEstudiante(value === 'Estudiante' ? true : false);
+        setInputs({ ...inputs, [name]: value })
+
+      } else if (name === 'grado_actual') {
+        const gradosObj = metadata.grados.reduce((prev, current)=> {
+          prev[current.nombre] = current.id;
+          return prev;
+        }, {});
+        const grado = gradosObj[value];
+
+        console.log({name, value, grado});
+        setInputs({ ...inputs, [name]: grado })
+      } else {
+        setInputs({ ...inputs, [name]: value })
+      }
+
     }
+
+    // console.log({inputs})
   };
   
   
@@ -370,6 +373,19 @@ export default function SignUp({ setAuth }) {
                   name="tipo_aprendiz"
                   onChange={handleChangeAutocomplete}
                   renderInput={(params) => <TextField {...params} name="tipo_aprendiz" label="Tipo de Aprendiz" />}
+                />
+              ) : ('')
+              }
+            </Grid>
+            <Grid item xs={12} style={{ padding: isAprendiz ? '16px 0px 0px 0px' : '0px' }}>
+              { isAprendiz && isEstudiante ? (
+                <Autocomplete
+                  disablePortal
+                  id="grado_actual"
+                  options={metadata.grados.map(elem => elem.nombre)}
+                  name="grado_actual"
+                  onChange={handleChangeAutocomplete}
+                  renderInput={(params) => <TextField {...params} name="grado_actual" label="Grado actual" />}
                 />
               ) : ('')
               }

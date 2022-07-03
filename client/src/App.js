@@ -32,8 +32,10 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Dashboard from "./components/Dashboard";
 import Practicar from "./components/Practicar";
-import Explorar from "./components/Explorar";
+import ExplorarVocabularioTemas from "./components/ExplorarVocabularioTemas";
+import ExplorarVocabularioCategorias from "./components/ExplorarVocabularioCategorias";
 import Practica from "./components/Practica";
+import Inicio from "./components/Inicio";
 import AprendicesMonitor from "./components/AprendicesMonitor";
 
 // toast.configure();
@@ -99,7 +101,7 @@ export const Body = ({ isAuthenticated, setAuth }) => (
   <Routes>
     <Route index path="/" element={
       isAuthenticated ? (
-        <Navigate to="/dashboard" />
+        <Navigate to="/dashboard/inicio" />
       ) : (
         <SignIn  setAuth={setAuth} />
       )
@@ -109,7 +111,7 @@ export const Body = ({ isAuthenticated, setAuth }) => (
       element={!isAuthenticated ? (
         <SignIn  setAuth={setAuth} />
       ) : (
-        <Navigate to="/dashboard" />
+        <Navigate to="/dashboard/inicio" />
       )}
     />
     <Route
@@ -118,17 +120,24 @@ export const Body = ({ isAuthenticated, setAuth }) => (
         !isAuthenticated ? (
           <SignUp setAuth={setAuth} />
         ) : (
-          <Navigate to="/dashboard" />
+          <Navigate to="/dashboard/inicio" />
         )
       }
     />
     <Route path="/dashboard" element={ isAuthenticated ? (<Dashboard setAuth={setAuth}/>) : <Navigate to="/login" />}>
       
+      <Route path="inicio" element={
+          <Inicio />
+      } />
+      
       <Route path="practicar" element={
           <Practicar />
       } />
-      <Route path="explorar" element={
-          <Explorar />
+      <Route path="explorar-vocabulario-temas" element={
+          <ExplorarVocabularioTemas />
+      } />
+      <Route path="explorar-vocabulario-categorias" element={
+          <ExplorarVocabularioCategorias />
       } />
       <Route path="practica" element={
           <Practica />

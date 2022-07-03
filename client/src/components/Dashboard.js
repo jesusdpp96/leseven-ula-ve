@@ -21,7 +21,9 @@ import { toast } from "react-toastify";
 import LogoutIcon from '@mui/icons-material/Logout';
 import PeopleIcon from '@mui/icons-material/People';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import TravelExploreIcon from '@mui/icons-material/TravelExplore';
+import CategoryIcon from '@mui/icons-material/Category';
+import ClassIcon from '@mui/icons-material/Class';
+import HomeIcon from '@mui/icons-material/Home';
 import {
   Outlet,
   useNavigate
@@ -126,18 +128,71 @@ function PanelItems({funcionalidad_sistema}) {
   const goTo3 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
-    navigate("explorar");
+    navigate("explorar-vocabulario-temas");
+  }
+
+  const goTo4 = () => {
+    // console.log({event:e, name: e.target.name})
+    // navigate(e.target.name);
+    navigate("explorar-vocabulario-categorias");
+  }
+
+  const goTo5 = () => {
+    // console.log({event:e, name: e.target.name})
+    // navigate(e.target.name);
+    navigate("inicio");
   }
 
   const elements = [
     {
       funcionalidad: 'panel-practica',
       element: (
+        <ListItemButton onClick={goTo5} key="pp005">
+          <ListItemIcon>
+            <HomeIcon />
+          </ListItemIcon>
+          <ListItemText primary={"Inicio"} />
+        </ListItemButton>
+      )
+    },
+    {
+      funcionalidad: 'panel-practica',
+      element: (
         <ListItemButton onClick={goTo3} key="pp003">
           <ListItemIcon>
-            <TravelExploreIcon />
+            <ClassIcon />
           </ListItemIcon>
-          <ListItemText primary="Explorar" />
+          <ListItemText
+            primary={"Vocabulario por Temas"} 
+            primaryTypographyProps={{ 
+              style: { 
+                whiteSpace: 'normal',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis'
+
+              }
+          }}
+          />
+        </ListItemButton>
+      )
+    },
+    {
+      funcionalidad: 'panel-practica',
+      element: (
+        <ListItemButton onClick={goTo4} key="pp004">
+          <ListItemIcon>
+            <CategoryIcon />
+          </ListItemIcon>
+          <ListItemText
+            primary={"Vocabulario por Categorias"}
+            primaryTypographyProps={{ 
+                style: { 
+                  whiteSpace: 'normal',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis'
+                }
+            }}
+           />
         </ListItemButton>
       )
     },
@@ -271,7 +326,8 @@ function DashboardContent({setAuth}) {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              LeSeVEN - Lengua de Señas Venezolana
+              {/* LSVMérida - Lengua de Señas Venezolana */}
+              LSVMérida
             </Typography>
             {/* <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -289,19 +345,6 @@ function DashboardContent({setAuth}) {
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open} sx={{backgraundColor: '#1976d2', color: "#fff"}}>
-          {/* <Toolbar
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'flex-end',
-              px: [1],
-            }}
-          >
-            <IconButton onClick={toggleDrawer}>
-              <ChevronLeftIcon />
-            </IconButton>
-          </Toolbar>
-          <Divider /> */}
           <Box sx={{ mb: 2, mx: 1.5 }} style={{marginTop:"16px"}}>
             {
               open ? (
@@ -311,9 +354,6 @@ function DashboardContent({setAuth}) {
                     <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
                       {`${userData.nombre} ${userData.apellido}`}
                     </Typography>
-                    {/* <Typography variant="body2" noWrap={true} style={{width:"100%", fontSize: "80%"}} sx={{ color: 'text.primary' }}>
-                      {userData.correo}
-                    </Typography> */}
                     <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                       {userData.rol_usuario}
                     </Typography>
@@ -327,9 +367,6 @@ function DashboardContent({setAuth}) {
           <Divider sx={{ my: 1 }} />
           <List component="nav">
             <PanelItems funcionalidad_sistema={userData.funcionalidad_sistema} />
-            {/* {mainListItems}
-            <Divider sx={{ my: 1 }} />
-            {secondaryListItems} */}
           </List>
         </Drawer>
         <Box

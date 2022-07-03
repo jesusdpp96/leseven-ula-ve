@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import GradoTemasListExplorar from './GradoTemasListExplorar';
 import TemaVocablosListExplorar from './TemaVocablosListExplorar';
 
-export default function Practicar() {
+export default function ExplorarVocabularioTemas() {
   let view = 'temas';
 
   const [query, setQuery] = useSearchParams();

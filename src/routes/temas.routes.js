@@ -9,7 +9,7 @@ const router = Router();
 
 // create a task
 
-router.get("/temas", getAllTemas);
+router.get("/temas", authorization, getAllTemas);
 
 router.get("/temas-by-grado/:grado_id", authorization ,getTemasByGrado);
 

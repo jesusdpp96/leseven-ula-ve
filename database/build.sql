@@ -205,7 +205,8 @@ CREATE TABLE public.practica (
     total_correctas integer NOT NULL,
     usuario_id integer NOT NULL,
     tema_id integer NOT NULL,
-    grado_id integer NOT NULL
+    grado_id integer NOT NULL,
+    cancelada boolean
 );
 
 

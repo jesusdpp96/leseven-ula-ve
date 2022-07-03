@@ -31,7 +31,6 @@ export function YoutubeEmbed({ embedLink }) {
             backgroundColor: 'red',
             position: 'relative',
             width: '100%',
-            maxWidth: '450px',
             height: '300px',
             paddingTtop: '60.93%',
           }}>
@@ -59,13 +58,11 @@ export const styleVocabloModal = {
   border: '1px solid #666',
   borderRadius: '16px',
   boxShadow: 24,
-  justifyContent: 'center',
   p: 4,
 };
 
 export default function VocabloModal({buttonText, vocablo, onlyModal, updateVocablos}) {
   const [open, setOpen] = React.useState(false);
-  const [element, setElement] = React.useState('sena');
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const handleCloseAprendido = async () => {
@@ -127,55 +124,40 @@ export default function VocabloModal({buttonText, vocablo, onlyModal, updateVoca
         aria-describedby="keep-mounted-modal-description"
       >
         <Box sx={styleVocabloModal}>
-          <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '24px'}}>
-            {
-              element === 'imagen' ? (
-                <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center',  minHeight:350}}>
-                  <Typography id="keep-mounted-modal-title" variant="body2" >
-                    Imagen
-                  </Typography>
-                  <CardMedia
-                    component="img"
-                    sx={{ maxWidth: 350, maxHeight: 300, objectFit:'contain' }}
-                    // image={elem.tema_image_src}
-                    image={imageSrc}
-                    alt={`imagen del vocablo ${vocablo.vocablo_palabra}`}
-                  />
-                </Box>
-              ): null
-            }
-            {
-              element === 'sena' ? (
-                <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center',  minHeight:350}}>
-                  <Typography id="keep-mounted-modal-title" variant="body2">
-                      Video
-                  </Typography>
-                  <YoutubeEmbed embedLink={videoSrc} />
-                </Box>
-              ) : null
-            }
-            {
-              element === 'palabra' ? (
-                <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', minHeight:350}}>
-                  <Typography id="keep-mounted-modal-description" variant="body2">
-                    Palabra
-                  </Typography>
-                  <Typography id="keep-mounted-modal-title" variant="h3" component="h1" sx={{fontSize: 100}}>
-                    {vocablo.vocablo_palabra}
-                  </Typography>
-                </Box>
-              ): null
-            }
-            <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
-              <Button variant={element ==='sena' ? 'contained' : 'outlined'} color="primary" onClick={() => setElement('sena')}>Seña</Button>
-              <Button variant={element ==='palabra' ? 'contained' : 'outlined'}  color="primary" onClick={() => setElement('palabra')}>Palabra</Button>
-              <Button variant={element ==='imagen' ? 'contained' : 'outlined'}  color="primary" onClick={() => setElement('imagen')}>Imagen</Button>
-            </Box>
-            <Box style={{minHeight: "60px", display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', alignSelf: "stretch"}}>
+          <Grid container spacing={{ xs: 2, sm: 3, md: 3 }} columns={{ xs: 4, sm: 8, md: 8 }}>
+            <Grid item xs={4} sm={4} md={4} >
+              <Typography id="keep-mounted-modal-title" variant="subtitle2">
+                Imagen
+              </Typography>
+              <CardMedia
+                component="img"
+                sx={{ maxWidth: 350, maxHeight: 300 }}
+                // image={elem.tema_image_src}
+                image={imageSrc}
+                alt={`imagen del vocablo ${vocablo.vocablo_palabra}`}
+              />
+            </Grid>
+            <Grid item xs={4} sm={4} md={4} >
+              <Typography id="keep-mounted-modal-title" variant="subtitle2">
+                  Video
+              </Typography>
+              <YoutubeEmbed embedLink={videoSrc} />
+            </Grid>
+            <Grid item xs={4} sm={4} md={4} >
+              <Typography id="keep-mounted-modal-description" variant="subtitle2">
+                Palabra
+              </Typography>
+              <Typography id="keep-mounted-modal-title" variant="h3" component="h2">
+                {vocablo.vocablo_palabra}
+              </Typography>
+            </Grid>
+            <Grid item xs={4} sm={4} md={4} style={{minHeight: "150px", display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', alignSelf: "stretch"}}>
               <Button variant="text" color="error" onClick={handleClose}>Cerrar</Button>
               <Button variant="contained" color="success" onClick={handleCloseAprendido} style={{marginLeft: '24px'}}>Aprendido</Button>
-            </Box>
-          </Box>
+            </Grid>
+          </Grid>
+          {/* <Grid container spacing={{ xs: 5, md: 3 }} columns={{ xs: 4, sm: 8, md: 8 }} style={{alignSelf: "stretch"}}>
+          </Grid> */}
         </Box>
       </Modal>
     </div>

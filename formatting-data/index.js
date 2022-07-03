@@ -38,6 +38,27 @@ let gradosArr = JSON.parse(gradosJSON);
 let temasJSON = fs.readFileSync('./data/temas.json');
 let temasArr = JSON.parse(temasJSON);
 
+let preescolarJSON2 = fs.readFileSync('./data/pruebas-preescolar.json');
+let preescolarArr2 = JSON.parse(preescolarJSON2);
+
+let primerGradoJSON2 = fs.readFileSync('./data/pruebas-primer-grado.json');
+let primerGradoArr2 = JSON.parse(primerGradoJSON2);
+
+let segundoGradoJSON2 = fs.readFileSync('./data/pruebas-segundo-grado.json');
+let segundoGradoArr2 = JSON.parse(segundoGradoJSON2);
+
+let tercerGradoJSON2 = fs.readFileSync('./data/pruebas-tercer-grado.json');
+let tercerGradoArr2 = JSON.parse(tercerGradoJSON2);
+
+let cuartoGradoJSON2 = fs.readFileSync('./data/pruebas-cuarto-grado.json');
+let cuartoGradoArr2 = JSON.parse(cuartoGradoJSON2);
+
+let quintoGradoJSON2 = fs.readFileSync('./data/pruebas-quinto-grado.json');
+let quintoGradoArr2 = JSON.parse(quintoGradoJSON2);
+
+let sextoGradoJSON2 = fs.readFileSync('./data/pruebas-sexto-grado.json');
+let sextoGradoArr2 = JSON.parse(sextoGradoJSON2);
+
 let preescolarJSON = fs.readFileSync('./data/preescolar.json');
 let preescolarArr = JSON.parse(preescolarJSON);
 
@@ -147,7 +168,496 @@ Object.values(temasHash).forEach(elem => {
  * Preescolar
  */
 
-Object.values(preescolarArr).forEach(elem => {
+Object.values(preescolarArr2).forEach(elem => {
+
+  const gradoHash = sanatizeStr(elem.grado);
+  let grado = gradosHash[gradoHash];
+
+  if (!grado){
+    console.error({grado: 'preescolar', elem});
+    throw new Error('Grado no existe');
+  }
+
+  const temaHash = sanatizeStr(elem.tema);
+
+  const tema = temasHash[temaHash];
+
+  if (!tema) {
+    console.error({grado: 'preescolar', tema: elem.tema , elem});
+    throw new Error(`Tema '${elem.tema}' no existe`);
+  }
+
+  const vocabloHash = sanatizeStr(elem.palabra);
+  let vocablo = vocablosHash[vocabloHash];
+
+  if (!vocablo) {
+    recursosIndex += 2;
+    vocablosArr.push(elem);
+    vocablosHash[vocabloHash] = {...elem, id: vocablosArr.length - 1, image_id: recursosIndex - 2, video_id: recursosIndex - 1};
+    vocablo = vocablosHash[vocabloHash];
+
+    const image = sanatizeImageName(elem.image);
+
+    preescolarSQL = `${preescolarSQL}
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.image_id}, 'image', '${image}', ${vocablo.id});
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.video_id}, 'video', '${elem.video}', ${vocablo.id});
+    `;
+    
+  }
+
+  if (!gradoTemaExistObj[`${grado.id}-${tema.id}`]) {
+    
+    preescolarSQL = `${preescolarSQL}
+
+    INSERT INTO public.grado_tema(grado_id, tema_id)
+      VALUES (${grado.id}, ${tema.id});
+    `;
+    
+    gradoTemaExistObj[`${grado.id}-${tema.id}`] = true;
+  }
+
+  if (!gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`]) {
+    
+    preescolarSQL = `${preescolarSQL}
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (${grado.id}, ${tema.id}, ${vocablo.id});
+    `;
+    
+    gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`] = true;
+  }
+  
+    
+});
+
+/**
+ * Primer Grado
+ */
+
+Object.values(primerGradoArr2).forEach(elem => {
+
+  const gradoHash = sanatizeStr(elem.grado);
+  let grado = gradosHash[gradoHash];
+
+  if (!grado){
+    console.error({grado: 'primer grado', elem});
+    throw new Error('Grado no existe');
+  }
+
+  const temaHash = sanatizeStr(elem.tema);
+
+  const tema = temasHash[temaHash];
+
+  if (!tema) {
+    console.error({grado: 'primer grado', tema: elem.tema , elem});
+    throw new Error(`Tema '${elem.tema}' no existe`);
+  }
+
+  const vocabloHash = sanatizeStr(elem.palabra);
+  let vocablo = vocablosHash[vocabloHash];
+
+  if (!vocablo) {
+    recursosIndex += 2;
+    vocablosArr.push(elem);
+    vocablosHash[vocabloHash] = {...elem, id: vocablosArr.length - 1, image_id: recursosIndex - 2, video_id: recursosIndex - 1};
+    vocablo = vocablosHash[vocabloHash];
+
+    const image = sanatizeImageName(elem.image);
+
+    
+    primerGradoSQL = `${primerGradoSQL}
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.image_id}, 'image', '${image}', ${vocablo.id});
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.video_id}, 'video', '${elem.video}', ${vocablo.id});
+    `;
+  }
+    
+  if (!gradoTemaExistObj[`${grado.id}-${tema.id}`]) {
+    
+    primerGradoSQL = `${primerGradoSQL}
+
+    INSERT INTO public.grado_tema(grado_id, tema_id)
+      VALUES (${grado.id}, ${tema.id});
+    `;
+    
+    gradoTemaExistObj[`${grado.id}-${tema.id}`] = true;
+  }
+
+  if (!gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`]) {
+    
+    primerGradoSQL = `${primerGradoSQL}
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (${grado.id}, ${tema.id}, ${vocablo.id});
+    `;
+    
+    gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`] = true;
+  }
+});
+
+/**
+ * Segundo Grado
+ */
+
+ Object.values(segundoGradoArr2).forEach(elem => {
+
+  const gradoHash = sanatizeStr(elem.grado);
+  let grado = gradosHash[gradoHash];
+
+  if (!grado){
+    console.error({grado: 'segundo grado', elem});
+    throw new Error('Grado no existe');
+  }
+
+  const temaHash = sanatizeStr(elem.tema);
+
+  const tema = temasHash[temaHash];
+
+  if (!tema) {
+    console.error({grado: 'segundo grado', tema: elem.tema , elem});
+    throw new Error(`Tema '${elem.tema}' no existe`);
+  }
+
+  const vocabloHash = sanatizeStr(elem.palabra);
+  let vocablo = vocablosHash[vocabloHash];
+
+  if (!vocablo) {
+    recursosIndex += 2;
+    vocablosArr.push(elem);
+    vocablosHash[vocabloHash] = {...elem, id: vocablosArr.length - 1, image_id: recursosIndex - 2, video_id: recursosIndex - 1};
+    vocablo = vocablosHash[vocabloHash];
+
+    const image = sanatizeImageName(elem.image);
+
+    segundoGradoSQL = `${segundoGradoSQL}
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.image_id}, 'image', '${image}', ${vocablo.id});
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.video_id}, 'video', '${elem.video}', ${vocablo.id});
+    `;
+  }
+    
+  if (!gradoTemaExistObj[`${grado.id}-${tema.id}`]) {
+    
+    segundoGradoSQL = `${segundoGradoSQL}
+
+    INSERT INTO public.grado_tema(grado_id, tema_id)
+      VALUES (${grado.id}, ${tema.id});
+    `;
+    
+    gradoTemaExistObj[`${grado.id}-${tema.id}`] = true;
+  }
+
+  if (!gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`]) {
+    
+    segundoGradoSQL = `${segundoGradoSQL}
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (${grado.id}, ${tema.id}, ${vocablo.id});
+    `;
+    
+    gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`] = true;
+  }
+});
+
+/**
+ * Tercer Grado
+ */
+
+ Object.values(tercerGradoArr2).forEach(elem => {
+
+  const gradoHash = sanatizeStr(elem.grado);
+  let grado = gradosHash[gradoHash];
+
+  if (!grado){
+    console.error({grado: 'tercer grado', elem});
+    throw new Error('Grado no existe');
+  }
+
+  const temaHash = sanatizeStr(elem.tema);
+
+  const tema = temasHash[temaHash];
+
+  if (!tema) {
+    console.error({grado: 'tercer grado', tema: elem.tema , elem});
+    throw new Error(`Tema '${elem.tema}' no existe`);
+  }
+
+  const vocabloHash = sanatizeStr(elem.palabra);
+  let vocablo = vocablosHash[vocabloHash];
+
+  if (!vocablo) {
+    recursosIndex += 2;
+    vocablosArr.push(elem);
+    vocablosHash[vocabloHash] = {...elem, id: vocablosArr.length - 1, image_id: recursosIndex - 2, video_id: recursosIndex - 1};
+    vocablo = vocablosHash[vocabloHash];
+
+    const image = sanatizeImageName(elem.image);
+
+    tercerGradoSQL = `${tercerGradoSQL}
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.image_id}, 'image', '${image}', ${vocablo.id});
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.video_id}, 'video', '${elem.video}', ${vocablo.id});
+    `;
+  }
+    
+  if (!gradoTemaExistObj[`${grado.id}-${tema.id}`]) {
+    
+    tercerGradoSQL = `${tercerGradoSQL}
+
+    INSERT INTO public.grado_tema(grado_id, tema_id)
+      VALUES (${grado.id}, ${tema.id});
+    `;
+    
+    gradoTemaExistObj[`${grado.id}-${tema.id}`] = true;
+  }
+
+  if (!gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`]) {
+    
+    tercerGradoSQL = `${tercerGradoSQL}
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (${grado.id}, ${tema.id}, ${vocablo.id});
+    `;
+    
+    gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`] = true;
+  }
+});
+
+/**
+ * Cuarto Grado
+ */
+
+ Object.values(cuartoGradoArr2).forEach(elem => {
+
+  const gradoHash = sanatizeStr(elem.grado);
+  let grado = gradosHash[gradoHash];
+
+  if (!grado){
+    console.error({grado: 'cuarto grado', elem});
+    throw new Error('Grado no existe');
+  }
+
+  const temaHash = sanatizeStr(elem.tema);
+
+  const tema = temasHash[temaHash];
+
+  if (!tema) {
+    console.error({grado: 'cuarto grado', tema: elem.tema , elem});
+    throw new Error(`Tema '${elem.tema}' no existe`);
+  }
+
+  const vocabloHash = sanatizeStr(elem.palabra);
+  let vocablo = vocablosHash[vocabloHash];
+
+  if (!vocablo) {
+    recursosIndex += 2;
+    vocablosArr.push(elem);
+    vocablosHash[vocabloHash] = {...elem, id: vocablosArr.length - 1, image_id: recursosIndex - 2, video_id: recursosIndex - 1};
+    vocablo = vocablosHash[vocabloHash];
+
+    const image = sanatizeImageName(elem.image);
+
+    cuartoGradoSQL = `${cuartoGradoSQL}
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.image_id}, 'image', '${image}', ${vocablo.id});
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.video_id}, 'video', '${elem.video}', ${vocablo.id});
+    `;
+  }
+    
+  if (!gradoTemaExistObj[`${grado.id}-${tema.id}`]) {
+    
+    cuartoGradoSQL = `${cuartoGradoSQL}
+
+    INSERT INTO public.grado_tema(grado_id, tema_id)
+      VALUES (${grado.id}, ${tema.id});
+    `;
+    
+    gradoTemaExistObj[`${grado.id}-${tema.id}`] = true;
+  }
+
+  if (!gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`]) {
+    
+    cuartoGradoSQL = `${cuartoGradoSQL}
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (${grado.id}, ${tema.id}, ${vocablo.id});
+    `;
+    
+    gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`] = true;
+  }
+});
+
+
+/**
+ * Quinto Grado
+ */
+
+ Object.values(quintoGradoArr2).forEach(elem => {
+
+  const gradoHash = sanatizeStr(elem.grado);
+  let grado = gradosHash[gradoHash];
+
+  if (!grado){
+    console.error({grado: 'quinto grado', elem});
+    throw new Error('Grado no existe');
+  }
+
+  const temaHash = sanatizeStr(elem.tema);
+
+  const tema = temasHash[temaHash];
+
+  if (!tema) {
+    console.error({grado: 'quinto grado', tema: elem.tema , elem});
+    throw new Error(`Tema '${elem.tema}' no existe`);
+  }
+
+  const vocabloHash = sanatizeStr(elem.palabra);
+  let vocablo = vocablosHash[vocabloHash];
+
+  if (!vocablo) {
+    recursosIndex += 2;
+    vocablosArr.push(elem);
+    vocablosHash[vocabloHash] = {...elem, id: vocablosArr.length - 1, image_id: recursosIndex - 2, video_id: recursosIndex - 1};
+    vocablo = vocablosHash[vocabloHash];
+
+    const image = sanatizeImageName(elem.image);
+
+    quintoGradoSQL = `${quintoGradoSQL}
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.image_id}, 'image', '${image}', ${vocablo.id});
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.video_id}, 'video', '${elem.video}', ${vocablo.id});
+    `;
+  }
+    
+  if (!gradoTemaExistObj[`${grado.id}-${tema.id}`]) {
+    
+    quintoGradoSQL = `${quintoGradoSQL}
+
+    INSERT INTO public.grado_tema(grado_id, tema_id)
+      VALUES (${grado.id}, ${tema.id});
+    `;
+    
+    gradoTemaExistObj[`${grado.id}-${tema.id}`] = true;
+  }
+
+  if (!gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`]) {
+    
+    quintoGradoSQL = `${quintoGradoSQL}
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (${grado.id}, ${tema.id}, ${vocablo.id});
+    `;
+    
+    gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`] = true;
+  }
+});
+
+/**
+ * Sexto Grado
+ */
+
+ Object.values(sextoGradoArr2).forEach(elem => {
+
+  const gradoHash = sanatizeStr(elem.grado);
+  let grado = gradosHash[gradoHash];
+
+  if (!grado){
+    console.error({grado: 'sexto grado', elem});
+    throw new Error('Grado no existe');
+  }
+
+  const temaHash = sanatizeStr(elem.tema);
+
+  const tema = temasHash[temaHash];
+
+  if (!tema) {
+    console.error({grado: 'sexto grado', tema: elem.tema , elem});
+    throw new Error(`Tema '${elem.tema}' no existe`);
+  }
+
+  const vocabloHash = sanatizeStr(elem.palabra);
+  let vocablo = vocablosHash[vocabloHash];
+
+  if (!vocablo) {
+    recursosIndex += 2;
+    vocablosArr.push(elem);
+    vocablosHash[vocabloHash] = {...elem, id: vocablosArr.length - 1, image_id: recursosIndex - 2, video_id: recursosIndex - 1};
+    vocablo = vocablosHash[vocabloHash];
+
+    const image = sanatizeImageName(elem.image);
+    
+    sextoGradoSQL = `${sextoGradoSQL}
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.image_id}, 'image', '${image}', ${vocablo.id});
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (${vocablo.video_id}, 'video', '${elem.video}', ${vocablo.id});
+    `;
+  }
+  
+  
+  if (!gradoTemaExistObj[`${grado.id}-${tema.id}`]) {
+    
+    sextoGradoSQL = `${sextoGradoSQL}
+
+    INSERT INTO public.grado_tema(grado_id, tema_id)
+      VALUES (${grado.id}, ${tema.id});
+    `;
+    
+    gradoTemaExistObj[`${grado.id}-${tema.id}`] = true;
+  }
+
+  if (!gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`]) {
+    
+    sextoGradoSQL = `${sextoGradoSQL}
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (${grado.id}, ${tema.id}, ${vocablo.id});
+    `;
+    
+    gradoTemaVocabloExistObj[`${grado.id}-${tema.id}-${vocablo.id}`] = true;
+  }
+});
+
+/**
+ * Preescolar
+ */
+
+ Object.values(preescolarArr).forEach(elem => {
 
   const gradoHash = sanatizeStr(elem.grado);
   let grado = gradosHash[gradoHash];

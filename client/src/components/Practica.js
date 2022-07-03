@@ -30,62 +30,38 @@ import CustomToast from './CustomToast';
 
 const REWARD_GOOD_RESPONSE = [
   {
-    message: '¡Bien hecho!',
-    imageSrc: '/assets/trofeos/good-response.png',
+    message: 'Bien',
+    imageSrc: '/assets/rewards/reward-bien.png',
   },
   {
-    message: '¡Buen trabajo!',
-    imageSrc: '/assets/trofeos/good-response.png',
+    message: 'Aprobado',
+    imageSrc: '/assets/rewards/reward-aprobado.png',
   },
   {
-    message: '¡Genial!',
-    imageSrc: '/assets/trofeos/good-response.png',
-  },
-  {
-    message: '¡Excelente!',
-    imageSrc: '/assets/trofeos/good-response.png',
-  },
-  {
-    message: '¡Perfecto!',
-    imageSrc: '/assets/trofeos/good-response.png',
+    message: 'Perfecto',
+    imageSrc: '/assets/rewards/reward-perfecto.png',
   },
 ];
 
 const REWARD_BAD_RESPONSE = [
   {
-    message: '¡Sigue intentando!',
-    imageSrc: '/assets/trofeos/bad-response.png',
+    message: 'Incorrecto',
+    imageSrc: '/assets/rewards/reward-incorrecto.png',
   },
   {
-    message: '¡Vamos! Tu puedes',
-    imageSrc: '/assets/trofeos/bad-response.png',
+    message: 'Te Equivocaste',
+    imageSrc: '/assets/rewards/reward-te-equivocaste.png',
   },
   {
-    message: 'No es correcto.',
-    imageSrc: '/assets/trofeos/bad-response.png',
-  },
-  {
-    message: '¡Puedes hacerlo!',
-    imageSrc: '/assets/trofeos/bad-response.png',
+    message: 'Te Confundiste',
+    imageSrc: '/assets/rewards/reward-te-confundiste.png',
   },
 ];
 
 const REWARD_CORRECTED_RESPONSE = [
   {
-    message: '¡Lo lograste!',
-    imageSrc: '/assets/trofeos/corrected-response.png',
-  },
-  {
-    message: '¡Asi es!',
-    imageSrc: '/assets/trofeos/corrected-response.png',
-  },
-  {
-    message: '¡Eso era todo!',
-    imageSrc: '/assets/trofeos/corrected-response.png',
-  },
-  {
-    message: '¡Sigue asi!',
-    imageSrc: '/assets/trofeos/corrected-response.png',
+    message: 'Bien',
+    imageSrc: '/assets/rewards/reward-bien.png',
   },
 ];
 
@@ -277,6 +253,7 @@ function getPracticaDataFunc({consultas, vocablos}) {
     usuario_id: null,
     tema_id: consultas[0].tema_id,
     grado_id: consultas[0].grado_id,
+    cancelada: false,
   };
 
   const consultasData = [];
@@ -362,6 +339,143 @@ function getPracticaLogsFunc({consultas}) {
     logPractica,
     {
       "log_name": "Aprendiz: Termina una práctica",
+      "timestamp": new Date().toISOString(),
+      "grado": consultas[0].grado_nombre,
+      "tema": consultas[0].tema_grado,
+    },
+    // {
+    //   "log_name": "Sistema: Muestra gamificación al finalizar práctica",
+    //   "timestamp": new Date().toISOString(),
+    //   "mensaje": "!Impresionante nombre!, lograste un puntaje muy alto en el desafio ¡sigue asi!",
+    //   "gif": "felicitar002.gif"
+    // },
+  ]
+
+}
+
+function getPracticaCanceladaDataFunc({consultas, vocablos}) {
+
+  if (!consultas || consultas.length === 0) {
+    return undefined;
+  }
+
+  if (!vocablos || vocablos.length === 0) {
+    return undefined;
+  }
+
+  // for (const consulta of consultas) {
+    
+  //   if (!consulta.responses) {
+  //     return undefined;
+  //   }
+  // }
+
+  const voablosObj = vocablos.reduce((prev, current) => {
+    prev[current.vocablo_palabra] = current;
+
+    return prev;
+  } , {});
+
+  const practicaData = {
+    id: undefined,
+    fecha: new Date().toISOString(),
+    total_consultas: 0,
+    total_correctas: 0,
+    usuario_id: null,
+    tema_id: consultas[0].tema_id,
+    grado_id: consultas[0].grado_id,
+    cancelada: true,
+  };
+
+  const consultasData = [];
+
+  const totalConsultas = consultas.length;
+  let totalConsultasCorrectas = 0;
+
+  
+  for (const consulta of consultas) {
+    
+    if (!consulta.responses) {
+      continue;
+    }
+    
+    if (consulta.vocablo_palabra === consulta.responses[0]) {
+      totalConsultasCorrectas += 1;
+    }
+
+    const consultaRespuesta = voablosObj[consulta.responses[0]]
+
+    console.log({voablosObj, consulta, response: consulta.responses});
+    
+    consultasData.push({
+      id: undefined,
+      tipo: consulta.tipo_consulta,
+      vocablo_correcto_id: consulta.vocablo_id,
+      vocablo_respuesta_id: consultaRespuesta.vocablo_id,
+      practica_id: null,
+    })
+
+    
+  }
+
+  practicaData.total_consultas = totalConsultas;
+  practicaData.total_correctas = totalConsultasCorrectas;
+  
+  return {
+    practica: practicaData,
+    consultas: consultasData,
+    puntos: 0,
+    trofeos_imparables: 0,
+    trofeos_agil:  0,
+  }
+
+}
+
+function getPracticaCanceladaLogsFunc({consultas}) {
+
+  if (!consultas || consultas.length === 0) {
+    return undefined;
+  }
+
+  // for (const consulta of consultas) {
+    
+  //   if (!consulta.responses) {
+  //     return undefined;
+  //   }
+  // }
+
+  const logPractica = {
+    "log_name": "Practica",
+    "timestamp": new Date().toISOString(),
+    "grado": consultas[0].grado_nombre,
+    "tema": consultas[0].tema_nombre,
+    "total_consultas": 0,
+    "total_correctas": 0,
+    "cancelada": true,
+    "logs": []
+  }
+
+  const totalConsultas = consultas.length;
+  let totalConsultasCorrectas = 0;
+
+  for (const consulta of consultas) {
+    if (!consulta.responses && !consulta.logs) {
+      continue;
+    }
+
+
+    if (consulta.logs && consulta.logs.length > 0) {
+      logPractica.logs.push(...consulta.logs.slice(0));
+    }
+  }
+
+  logPractica.total_consultas = totalConsultas;
+  logPractica.total_correctas = totalConsultasCorrectas;
+
+  return [
+    logPractica,
+    {
+      "log_name": "Aprendiz: Cancela la práctica",
       "timestamp": new Date().toISOString(),
       "grado": consultas[0].grado_nombre,
       "tema": consultas[0].tema_grado,
@@ -517,6 +631,42 @@ export default function HorizontalNonLinearStepper() {
     setCompleted({});
     getVocablos();
   };
+
+  const handleCancelPractica = async () => {
+    const logs = getPracticaCanceladaLogsFunc({consultas: steps});
+
+
+    if (logs) {
+      sendLogs({logs});
+    }
+
+    const data = getPracticaCanceladaDataFunc({consultas: steps, vocablos});
+
+    if (data) {
+      try {
+        const response = await fetch("/practica", {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json",
+            "token": localStorage.token,
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (response.status === 204) {
+          toast.success("Practica cancelada");
+          navigate(`/dashboard/practicar?grado=${grado}&tema=${tema}`)
+        } else {
+          toast.error("Error desconocido");
+        }
+
+      } catch(err) {
+        // code to error action
+        toast.error("Error de conexion");
+      }
+
+    }
+  }
 
   console.log({steps: steps.slice(0), completed, activeStep});
 
@@ -966,8 +1116,12 @@ export default function HorizontalNonLinearStepper() {
                 </Box>
                 <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginTop: '24px'}}>
                   {steps[activeStep].palabras_consulta.map(p => (
-                      <Button variant="outlined" color="success" onClick={() => setResponse({palabra: p})}>{p}</Button>
+                      <Button key={p} variant="outlined" color="success" onClick={() => setResponse({palabra: p})}>{p}</Button>
                   ))}
+                </Box>
+
+                <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', marginTop: '24px'}}>
+                  <Button variant="outlined" color="error" onClick={() => handleCancelPractica()}>Cancelar practica</Button>
                 </Box>
 
               </Box>

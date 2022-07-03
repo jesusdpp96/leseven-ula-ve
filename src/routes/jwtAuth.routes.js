@@ -12,12 +12,14 @@ router.get("/auth/register-metadata", async (req,res) => {
   const paises = await pool.query("SELECT nombre FROM pais");
   const ciudades = await pool.query("SELECT nombre FROM ciudad");
   const escuelas = await pool.query("SELECT nombre FROM escuela");
+  const grados = await pool.query("SELECT * FROM grado");
 
   const metada = {
     roles: roles.rows || [],
     paises: paises.rows ? paises.rows.map(elem => elem.nombre) : [],
     ciudades: ciudades.rows ? ciudades.rows.map(elem => elem.nombre) : [],
     escuelas: escuelas.rows ? escuelas.rows.map(elem => elem.nombre) : [],
+    grados: grados.rows ? grados.rows : [],
   }
 
 
@@ -41,9 +43,10 @@ router.post("/auth/register", validInfo, async (req, res) => {
       grado_instruccion_aprendiz,
       fecha_nacimiento,
       rol_usuario_id,
-      genero
+      genero,
       // fecha_registro,
       // usuario_metadatos_id,
+      grado_actual,
 
      } = req.body;
 
@@ -73,8 +76,8 @@ router.post("/auth/register", validInfo, async (req, res) => {
 
     // enter new user inside database
     const newLogin = await pool.query(
-      `INSERT INTO usuario(nombre, apellido, correo, contrasena, escuela, ciudad, pais, tipo_aprendiz, grado_instruccion_aprendiz, fecha_nacimiento, rol_usuario_id, fecha_registro, usuario_metadatos_id, genero)
-      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING *`,
+      `INSERT INTO usuario(nombre, apellido, correo, contrasena, escuela, ciudad, pais, tipo_aprendiz, grado_instruccion_aprendiz, fecha_nacimiento, rol_usuario_id, fecha_registro, usuario_metadatos_id, genero, grado_actual)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING *`,
       [
         nombre,
         apellido,
@@ -89,7 +92,8 @@ router.post("/auth/register", validInfo, async (req, res) => {
         rol_usuario_id,
         fecha_registro,
         usuarioMetadatos.rows[0].id,
-        genero
+        genero,
+        grado_actual
       ]
     );
 

@@ -1,0 +1,30 @@
+[
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Afeitadora",
+    "image": "/assets/images/afeitadora.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Jabón",
+    "image": "/assets/images/jabon.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Peine",
+    "image": "/assets/images/Peine.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado":"Sexto grado",
+    "tema":"Prueba Exploratoria - Sexto Grado",
+    "palabra":"Lagunillas",
+    "image":"/assets/images/Lagunillas.png",
+    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  }
+]

@@ -23,7 +23,7 @@ function Copyright(props) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="http://www.ula.ve">
-        Universidad de los Andes
+        Universidad de Los Andes
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

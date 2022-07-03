@@ -79,7 +79,7 @@ const CircularProgressWithLabel = (props) => {
   );
 }
 
-export default function GradoTemasListExplorar() {
+export default function GradoTemasListExplorar2() {
 
   const [query, setQuery] = useSearchParams();
   const [temas, setTemas] = React.useState([]);
@@ -135,14 +135,14 @@ export default function GradoTemasListExplorar() {
           <Button variant="outlined" color="warning" startIcon={<ChevronLeftIcon />} onClick={() => {setQuery({})}}>Volver</Button>
         </Box> */}
         <Typography variant="h4" sx={{ color: 'text.primary', padding: '16px' }}>
-          Temas
+          Categorias
         </Typography>
         <Grid
           container
           spacing={{ xs: 2, md: 4 }}
           columns={{ xs: 4, sm: 8, md: 8 }}
         >
-          <ItemList temas={temas} setQuery={setQuery} />
+          <ItemList temas={temas} setQuery={setQuery} showCategorias={true} />
         </Grid>
       </Box>
     )

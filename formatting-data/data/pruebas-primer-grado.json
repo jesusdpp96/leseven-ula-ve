@@ -1,0 +1,109 @@
+[
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Carne",
+    "image": "/assets/images/Carne.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "pasta",
+    "image": "/assets/images/pasta.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Queso",
+    "image": "/assets/images/Queso.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Pollo",
+    "image": "/assets/images/pollo-animal.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Verde",
+    "image": "/assets/images/Verde.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Cambur",
+    "image": "/assets/images/Cambur.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Mango",
+    "image": "/assets/images/Mango.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Mora",
+    "image": "/assets/images/Mora.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Patilla",
+    "image": "/assets/images/Patilla.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Mueble",
+    "image": "/assets/images/Mueble.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Tenedor",
+    "image": "/assets/images/Tenedor.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Borrador",
+    "image": "/assets/images/Borrador.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Cuaderno",
+    "image": "/assets/images/Cuaderno.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Lápiz",
+    "image": "/assets/images/Lápiz.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  },
+  {
+    "grado": "Primer grado",
+    "tema": "Prueba Exploratoria - Primer Grado",
+    "palabra": "Piña",
+    "image": "/assets/images/Piña.png",
+    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+  }
+]

@@ -1,0 +1,224 @@
+Preescolar >>> arepa
+Preescolar >>> leche
+Preescolar >>> azul
+Preescolar >>> amarillo
+Preescolar >>> rojo
+Preescolar >>> coco
+Preescolar >>> silla
+Preescolar >>> mesa
+Preescolar >>> bano
+Preescolar >>> doctor
+Preescolar >>> avion
+Preescolar >>> bus
+Preescolar >>> moto
+Preescolar >>> carro
+Preescolar >>> uno
+Preescolar >>> dos
+Preescolar >>> tres
+Preescolar >>> bebe
+Preescolar >>> nino
+Preescolar >>> boca
+Preescolar >>> mano
+Preescolar >>> nariz
+Preescolar >>> arriba
+Preescolar >>> abajo
+Preescolar >>> hoy
+Preescolar >>> lunes
+Preescolar >>> martes
+Preescolar >>> papa
+
+
+Primer grado >>> carne
+Primer grado >>> pollo
+Primer grado >>> queso
+Primer grado >>> verde
+Primer grado >>> pina
+Primer grado >>> mora
+Primer grado >>> cambur
+Primer grado >>> patilla
+Primer grado >>> mango
+Primer grado >>> mueble
+Primer grado >>> tenedor
+Primer grado >>> cuaderno
+Primer grado >>> lapiz
+Primer grado >>> borrador
+Primer grado >>> pasta
+Primer grado >>> policia
+Primer grado >>> cohete
+Primer grado >>> helicoptero
+Primer grado >>> bicicleta
+Primer grado >>> cuatro
+Primer grado >>> cinco
+Primer grado >>> seis
+Primer grado >>> siete
+Primer grado >>> ocho
+Primer grado >>> nueve
+Primer grado >>> diez
+Primer grado >>> abuelo
+Primer grado >>> hermano
+Primer grado >>> hombre
+Primer grado >>> mujer
+Primer grado >>> brazo
+Primer grado >>> cabeza
+Primer grado >>> diente
+Primer grado >>> pie
+Primer grado >>> pierna
+Primer grado >>> antes
+Primer grado >>> debajo
+Primer grado >>> delante
+Primer grado >>> detras
+Primer grado >>> viernes
+Primer grado >>> enero
+Primer grado >>> mayo
+Primer grado >>> junio
+Primer grado >>> julio
+
+
+
+
+
+
+Segundo grado >>> negro
+Segundo grado >>> limon
+Segundo grado >>> melon
+Segundo grado >>> lampara
+Segundo grado >>> televisor
+Segundo grado >>> cuchillo
+Segundo grado >>> sarten
+Segundo grado >>> plaza-bolivar
+Segundo grado >>> libro
+Segundo grado >>> albanil
+Segundo grado >>> mecanico
+Segundo grado >>> camion
+Segundo grado >>> buseta
+Segundo grado >>> trolcable
+Segundo grado >>> trolebus
+Segundo grado >>> cebolla
+Segundo grado >>> zanahoria
+Segundo grado >>> remolacha
+Segundo grado >>> hijo
+Segundo grado >>> tio
+Segundo grado >>> dedos
+Segundo grado >>> oreja
+Segundo grado >>> cabello
+Segundo grado >>> miercoles
+Segundo grado >>> domingo
+Segundo grado >>> patio
+Segundo grado >>> febrero
+Segundo grado >>> agosto
+Segundo grado >>> octubre
+Segundo grado >>> diciembre
+
+
+
+
+
+
+
+
+
+
+Tercer grado >>> arroz
+Tercer grado >>> caraota
+Tercer grado >>> jamon
+Tercer grado >>> mantequilla
+Tercer grado >>> tequeno
+Tercer grado >>> rosado
+Tercer grado >>> anaranjado
+Tercer grado >>> dorado
+Tercer grado >>> pera
+Tercer grado >>> manzana
+Tercer grado >>> parchita
+Tercer grado >>> sala
+Tercer grado >>> microondas
+Tercer grado >>> nevera
+Tercer grado >>> cucharon
+Tercer grado >>> budare
+Tercer grado >>> lavadora
+Tercer grado >>> pincel
+Tercer grado >>> carpeta
+Tercer grado >>> bombero
+Tercer grado >>> tren
+Tercer grado >>> dieciseis
+Tercer grado >>> tomate
+Tercer grado >>> pimenton
+Tercer grado >>> aji
+Tercer grado >>> ajo
+Tercer grado >>> repollo
+Tercer grado >>> lechuga
+Tercer grado >>> cebollin
+Tercer grado >>> leon
+Tercer grado >>> elefante
+Tercer grado >>> nieto
+Tercer grado >>> sobrino
+Tercer grado >>> senor
+Tercer grado >>> pestanas
+Tercer grado >>> septiembre
+Tercer grado >>> noviembre
+Tercer grado >>> fucsia
+
+
+Cuarto grado >>> mortadela
+Cuarto grado >>> pasticho
+Cuarto grado >>> beige
+Cuarto grado >>> turquesa
+Cuarto grado >>> durazno
+Cuarto grado >>> mandarina
+Cuarto grado >>> guanabana
+Cuarto grado >>> aguacate
+Cuarto grado >>> dvd
+Cuarto grado >>> horno
+Cuarto grado >>> plaza-de-toros
+Cuarto grado >>> diccionario
+Cuarto grado >>> jardinero
+Cuarto grado >>> chef
+Cuarto grado >>> metro
+Cuarto grado >>> teleferico
+Cuarto grado >>> maiz
+Cuarto grado >>> berenjena
+Cuarto grado >>> pepino
+Cuarto grado >>> calabacin
+Cuarto grado >>> cilantro
+Cuarto grado >>> perejil
+Cuarto grado >>> coliflor
+Cuarto grado >>> brocoli
+Cuarto grado >>> yuca
+Cuarto grado >>> cocodrilo
+Cuarto grado >>> tigre
+Cuarto grado >>> hipopotamo
+Cuarto grado >>> tiburon
+Cuarto grado >>> delfin
+Cuarto grado >>> estomago
+Cuarto grado >>> tamarindo
+Cuarto grado >>> higo
+
+
+
+
+
+
+
+Quinto grado >>> hamburguesa
+Quinto grado >>> pizza
+Quinto grado >>> refresco
+Quinto grado >>> parrilla
+Quinto grado >>> granada
+Quinto grado >>> mamon
+Quinto grado >>> sistema-digestivo
+Quinto grado >>> sistema-respiratorio
+Quinto grado >>> sistema-oseo
+Quinto grado >>> sistema-nervioso
+Quinto grado >>> sistema-circulatorio
+Quinto grado >>> champu
+Quinto grado >>> crema-dental
+Quinto grado >>> perfume
+Quinto grado >>> hojas-de-examen
+Quinto grado >>> cocinero
+Quinto grado >>> espinaca
+Quinto grado >>> culebra
+
+
+Sexto grado >>> jabon
+Sexto grado >>> peine
+Sexto grado >>> afeitadora
+Sexto grado >>> lagunillas

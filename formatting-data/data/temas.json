@@ -104,7 +104,7 @@
   {
     "nombre": "Numeros",
     "image": "/assets/images/numeros.png",
-    "es_categoria": false
+    "es_categoria": true
   },
 
 
@@ -128,7 +128,7 @@
   {
     "nombre": "Personajes historicos",
     "image": "/assets/images/personajes-historicos.png",
-    "es_categoria": false
+    "es_categoria": true
   },
   {
     "nombre": "Personas",
@@ -143,7 +143,7 @@
   {
     "nombre": "Simbolos",
     "image": "/assets/images/simbolos.png",
-    "es_categoria": false
+    "es_categoria": true
   },
   {
     "nombre": "Sintomas",
@@ -164,5 +164,43 @@
     "nombre": "Verduras y hortalizas",
     "image": "/assets/images/verduras-y-hortalizas.png",
     "es_categoria": true
+  },
+
+
+  
+  {
+    "nombre": "Prueba Exploratoria - Preescolar",
+    "image": "/assets/images/prueba-exploratoria.png",
+    "es_categoria": false
+  },
+  {
+    "nombre": "Prueba Exploratoria - Primer Grado",
+    "image": "/assets/images/prueba-exploratoria.png",
+    "es_categoria": false
+  },
+  {
+    "nombre": "Prueba Exploratoria - Segundo Grado",
+    "image": "/assets/images/prueba-exploratoria.png",
+    "es_categoria": false
+  },
+  {
+    "nombre": "Prueba Exploratoria - Tercer Grado",
+    "image": "/assets/images/prueba-exploratoria.png",
+    "es_categoria": false
+  },
+  {
+    "nombre": "Prueba Exploratoria - Cuarto Grado",
+    "image": "/assets/images/prueba-exploratoria.png",
+    "es_categoria": false
+  },
+  {
+    "nombre": "Prueba Exploratoria - Quinto Grado",
+    "image": "/assets/images/prueba-exploratoria.png",
+    "es_categoria": false
+  },
+  {
+    "nombre": "Prueba Exploratoria - Sexto Grado",
+    "image": "/assets/images/prueba-exploratoria.png",
+    "es_categoria": false
   }
 ]
