@@ -4,27 +4,104 @@
     "tema": "Prueba Exploratoria - Sexto Grado",
     "palabra": "Afeitadora",
     "image": "/assets/images/afeitadora.png",
-    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+    "video": "https://www.youtube.com/watch?v=q9L_NKfD5GM"
   },
   {
     "grado": "Sexto grado",
     "tema": "Prueba Exploratoria - Sexto Grado",
     "palabra": "Jabón",
     "image": "/assets/images/jabon.png",
-    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+    "video": "https://www.youtube.com/watch?v=dPJJdKATJrA"
   },
   {
     "grado": "Sexto grado",
     "tema": "Prueba Exploratoria - Sexto Grado",
     "palabra": "Peine",
     "image": "/assets/images/Peine.png",
-    "video": "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+    "video": "https://www.youtube.com/watch?v=u92CvDA3vEM"
   },
   {
     "grado":"Sexto grado",
     "tema":"Prueba Exploratoria - Sexto Grado",
-    "palabra":"Lagunillas",
+    "palabra": "Lagunillas",
     "image":"/assets/images/Lagunillas.png",
-    "video":"https://www.youtube.com/watch?v=urpJuQ9IfHc"
+    "video":"https://www.youtube.com/watch?v=poyiYoiHivo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Corta uña",
+    "image": "/assets/images/corta-una.png",
+    "video": "https://www.youtube.com/watch?v=agex6cTY-WU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Papel Sanitario",
+    "image": "/assets/images/Papel-Sanitario.png",
+    "video": "https://www.youtube.com/watch?v=ZaoK9E-Zd8g"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Gastritis",
+    "image": "/assets/images/Gastritis.png",
+    "video": "https://www.youtube.com/watch?v=jSZ76KZ-sWQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Piramides",
+    "image": "/assets/images/Piramides.png",
+    "video": "https://www.youtube.com/watch?v=xr0W2zqEvc4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Andres Bello",
+    "image": "/assets/images/Andres-Bello.png",
+    "video": "https://www.youtube.com/watch?v=mNLPOJP2xew"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Papá",
+    "image": "/assets/images/papa-personas.png",
+    "video": "https://www.youtube.com/watch?v=vSAcUnQXFdM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Sacerdote",
+    "image": "/assets/images/Sacerdote.png",
+    "video": "https://www.youtube.com/watch?v=B4_Vob0OExE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Pinta uñas",
+    "image": "/assets/images/Pinta-uñas.png",
+    "video": "https://www.youtube.com/watch?v=mtwNlENYcJs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Lápiz-labial",
+    "image": "/assets/images/Lápiz-labial.png",
+    "video": "https://www.youtube.com/watch?v=mmuEcWXARlc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Colonia",
+    "image": "/assets/images/Colonia.png",
+    "video": "https://www.youtube.com/watch?v=vmydFSt4F3A"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Aretes",
+    "image": "/assets/images/Aretes.png",
+    "video": "https://www.youtube.com/watch?v=OS9Jjj58xEE"
   }
 ]

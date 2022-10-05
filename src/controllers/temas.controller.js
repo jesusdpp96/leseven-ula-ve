@@ -21,11 +21,11 @@ const getAllTemas = async (req, res, next) => {
 
     for (const vocablo of gtvQuery.rows) {
 
-      if (vocabloExistsObj[vocablo.vocablo_id]) {
+      if (vocabloExistsObj[`${vocablo.vocablo_id}-${vocablo.tema_id}`]) {
         continue;
       }
 
-      vocabloExistsObj[vocablo.vocablo_id] = true;
+      vocabloExistsObj[`${vocablo.vocablo_id}-${vocablo.tema_id}`] = true;
 
       if (temasDataObj[vocablo.tema_id] && temasDataObj[vocablo.tema_id].vocablos_counter) {
         temasDataObj[vocablo.tema_id].vocablos_counter += 1;

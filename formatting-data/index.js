@@ -98,6 +98,11 @@ let temasSQL = `
 --
 -- Temas
 --`;
+
+let vocablosSQL = `
+--
+-- Vocablos
+--`;
 let preescolarSQL = `
 --
 -- Preescolar
@@ -198,7 +203,7 @@ Object.values(preescolarArr2).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    preescolarSQL = `${preescolarSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -271,7 +276,7 @@ Object.values(primerGradoArr2).forEach(elem => {
     const image = sanatizeImageName(elem.image);
 
     
-    primerGradoSQL = `${primerGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -340,7 +345,7 @@ Object.values(primerGradoArr2).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    segundoGradoSQL = `${segundoGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -409,7 +414,7 @@ Object.values(primerGradoArr2).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    tercerGradoSQL = `${tercerGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -478,7 +483,7 @@ Object.values(primerGradoArr2).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    cuartoGradoSQL = `${cuartoGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -548,7 +553,7 @@ Object.values(primerGradoArr2).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    quintoGradoSQL = `${quintoGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -617,7 +622,7 @@ Object.values(primerGradoArr2).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
     
-    sextoGradoSQL = `${sextoGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -687,7 +692,7 @@ Object.values(primerGradoArr2).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    preescolarSQL = `${preescolarSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -760,7 +765,7 @@ Object.values(primerGradoArr).forEach(elem => {
     const image = sanatizeImageName(elem.image);
 
     
-    primerGradoSQL = `${primerGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -829,7 +834,7 @@ Object.values(primerGradoArr).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    segundoGradoSQL = `${segundoGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -898,7 +903,7 @@ Object.values(primerGradoArr).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    tercerGradoSQL = `${tercerGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -967,7 +972,7 @@ Object.values(primerGradoArr).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    cuartoGradoSQL = `${cuartoGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -1037,7 +1042,7 @@ Object.values(primerGradoArr).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
 
-    quintoGradoSQL = `${quintoGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -1106,7 +1111,7 @@ Object.values(primerGradoArr).forEach(elem => {
 
     const image = sanatizeImageName(elem.image);
     
-    sextoGradoSQL = `${sextoGradoSQL}
+    vocablosSQL = `${vocablosSQL}
     INSERT INTO public.vocablo(id, palabra, tema_id)
       VALUES (${vocablo.id}, '${vocablo.palabra}', ${tema.id});
     
@@ -1142,7 +1147,7 @@ Object.values(primerGradoArr).forEach(elem => {
   }
 });
 
-const data = `${gradosSQL}\n\n${temasSQL}\n\n${preescolarSQL}\n\n${primerGradoSQL}\n\n${segundoGradoSQL}\n\n${tercerGradoSQL}\n\n${cuartoGradoSQL}\n\n${quintoGradoSQL}\n\n${sextoGradoSQL}`;
+const data = `${gradosSQL}\n\n${temasSQL}\n\n${vocablosSQL}\n\n${preescolarSQL}\n\n${primerGradoSQL}\n\n${segundoGradoSQL}\n\n${tercerGradoSQL}\n\n${cuartoGradoSQL}\n\n${quintoGradoSQL}\n\n${sextoGradoSQL}`;
 
 // const dataToSave = JSON.stringify(data, null, 2);
 fs.writeFileSync('./init-vocablos.sql', data);
