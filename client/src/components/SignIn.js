@@ -83,9 +83,12 @@ export default function SignIn({ setAuth }) {
             }
           ]
         });
+      } else if (parseRes.status === 'error') {
+        setAuth(false);
+        toast.error(`Error - ${parseRes.message}`);
       } else {
         setAuth(false);
-        toast.error(parseRes);
+        toast.error("Error desconocido");
       }
     } catch (err) {
       console.error(err.message);

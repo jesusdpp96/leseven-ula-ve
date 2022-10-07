@@ -17,6 +17,12 @@ const getUsuario = async (req, res, next) => {
       data.funcionalidad_sistema = result2.rows.map (elem => elem.nombre);
     } 
 
+    const userMetadaQuery = await pool.query(`SELECT * FROM usuario_metadatos WHERE id = $1`, [data.usuario_metadatos_id]);
+
+    if (userMetadaQuery.rows[0]) {
+      data.user_metadata = userMetadaQuery.rows[0];
+    }
+
     res.json(data);
   } catch (error) {
     next(error);

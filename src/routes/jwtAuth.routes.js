@@ -58,7 +58,7 @@ router.post("/auth/register", validInfo, async (req, res) => {
     ]);
 
     if (login.rows.length !== 0) {
-      return res.status(401).send("User already exist.");
+      return res.status(401).send({status: "error", message:"EJA001: User already exist."});
     }
 
     // bcrypt user password
@@ -102,7 +102,7 @@ router.post("/auth/register", validInfo, async (req, res) => {
     res.json({ token });
   } catch (error) {
     console.error(error.message);
-    res.status(500).send("Server Error");
+    res.status(500).send({status: "error", message:"EJA004: Server Error"});
   }
 });
 
@@ -124,7 +124,7 @@ router.post("/auth/login", validInfo, async (req, res) => {
     ]);
 
     if (login.rows.length === 0) {
-      return res.status(401).json("Password or email is incorrect.");
+      return res.status(401).json({status: "error", message:"EJA002: Password or email is incorrect."});
     }
 
     // check if incoming password is the same as the database password
@@ -133,7 +133,7 @@ router.post("/auth/login", validInfo, async (req, res) => {
       login.rows[0].contrasena
     );
     if (!validPassword) {
-      return res.status(401).json("Password or email is incorrect.");
+      return res.status(401).json({status: "error", message:"EJA003: Password or email is incorrect."});
     }
 
     // give jwt token
@@ -141,7 +141,7 @@ router.post("/auth/login", validInfo, async (req, res) => {
     res.json({ token });
   } catch (error) {
     console.error(error.message);
-    res.status(500).send("Server Error");
+    res.status(500).send({status: "error", message:"EJA005: Server Error"});
   }
 });
 
@@ -150,7 +150,7 @@ router.post("/auth/verify", authorization, async (req, res) => {
     res.json(true);
   } catch (err) {
     console.error(err.message);
-    res.status(500).send("Server Error");
+    res.status(500).send({status: "error", message:"EJA006: Server Error"});
   }
 });
 

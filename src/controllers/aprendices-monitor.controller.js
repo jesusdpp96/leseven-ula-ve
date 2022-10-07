@@ -102,7 +102,7 @@ const getAllData = async (req, res, next) => {
     );
 
     if (authorizationQuery.length === 0) {
-      throw new Error("Not authorized");
+      throw new Error("EAM001: Not authorized");
     }
 
     const vocablosQuery = await pool.query(`SELECT * FROM vocablo`);
@@ -291,7 +291,7 @@ const getDataByGrado = async (req, res, next) => {
     );
 
     if (authorizationQuery.length === 0) {
-      throw new Error("Not authorized");
+      throw new Error("EAM002: Not authorized");
     }
 
     const gtvQuery = await pool.query(`SELECT * FROM grado_tema_vocablo`);
@@ -491,7 +491,7 @@ const getDataByRange = async (req, res, next) => {
     );
 
     if (authorizationQuery.length === 0) {
-      throw new Error("Not authorized");
+      throw new Error("EAM003: Not authorized");
     }
 
     const vocablosQuery = await pool.query(`SELECT * FROM vocablo`);
@@ -688,7 +688,7 @@ const getDataByGradoRange = async (req, res, next) => {
     );
 
     if (authorizationQuery.length === 0) {
-      throw new Error("Not authorized");
+      throw new Error("EAM004: Not authorized");
     }
 
     const gtvQuery = await pool.query(`SELECT * FROM grado_tema_vocablo`);

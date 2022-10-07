@@ -749,7 +749,9 @@ export default function HorizontalNonLinearStepper() {
 
       const id = toast(<CustomToast imageSrc={reward.imageSrc} message={reward.message} />, {autoClose: 2000});
       setCurrentToastId(id);
-      handleOpen();
+      // handleOpen(); // TODO: FIXME: uncomment to show Correction Vocablo-Modal
+      handleComplete(); // TODO: FIXME: Remove to show Correction Vocablo-Modal
+      
     }
     
   };
@@ -956,11 +958,11 @@ export default function HorizontalNonLinearStepper() {
 
   if (results && results.trofeos_imparables && !results.trofeos_imparables_showed && !results.trofeo_showing) {
     setResults({...results, trofeo_showing: true});
-    setTrofeoData({type: 'imparable', title: 'Ganaste un trofeo Imparable', message: ''});
+    setTrofeoData({type: 'imparable', title: 'Ganaste una Estrella Imparable', message: ''});
     setOpenTrofeo(true);
   } else if (results && results.trofeos_agil && !results.trofeos_agil_showed && !results.trofeo_showing) {
     setResults({...results, trofeo_showing: true});
-    setTrofeoData({type: 'agil', title: 'Ganaste un trofeo Agil', message: ''});
+    setTrofeoData({type: 'agil', title: 'Ganaste una Estrella Agil', message: ''});
     setOpenTrofeo(true);
   }
 

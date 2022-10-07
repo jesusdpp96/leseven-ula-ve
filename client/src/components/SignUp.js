@@ -209,14 +209,19 @@ export default function SignUp({ setAuth }) {
         setAuth(true);
         // toast.success("Logged in Successfully");
         toast.success("Cuenta creada correctamente");
+      } else if (parseRes.status === 'error') {
+        setAuth(false);
+        toast.error(`Error - ${parseRes.message}`);
+        console.log({parseRes});
       } else {
         setAuth(false);
-        toast.error(parseRes);
+        toast.error(`Error desconocido`);
+        console.log({parseRes});
       }
     } catch (err) {
-      toast.error("Error de conexion.");
+      toast.error(`Error de conexion.`);
       setLoading(false);
-      console.error(err.message);
+      console.error({err});
     }
   };
 
