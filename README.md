@@ -27,7 +27,6 @@ git clone https://github.com/FaztWeb/pern-stack
 to run the backend you can use docker:
 
 ```
-cd server
 docker-compose up
 ```
 
