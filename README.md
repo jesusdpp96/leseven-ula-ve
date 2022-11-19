@@ -44,7 +44,7 @@ docker-compose down --volumes
 ```
 
 
-### Para crear la base de datos
+### Para crear la base de datos /Nueva en heroku
 
 ```
 cat database/build.sql | heroku pg:psql -a leseven
@@ -67,4 +67,11 @@ cat database/init-vocablos.sql | heroku pg:psql -a leseven
 ```
 heroku config:set jwtSecret=pr4ct1c4_15v_pwd -a leseven
 ```
+### Agregar vocablos
 
+Ir a /formatting-data/y llenar a mano los .json por seccion y grado.
+
+### Comando para ejecutar el script
+
+/formatting-data
+node index.js
