@@ -67,4 +67,7 @@ cat database/init-vocablos.sql | heroku pg:psql -a leseven
 ```
 heroku config:set jwtSecret=pr4ct1c4_15v_pwd -a leseven
 ```
+## Versiones compatibles
 
+Node: 14.18.1
+npm: 8.11.0
