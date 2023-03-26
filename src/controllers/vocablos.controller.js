@@ -11,22 +11,23 @@ const getAllVocablos = async (req, res, next) => {
 
 const getVocablosByGradoTema = async (req, res, next) => {
   try {
-    const { grado_id, tema_id } = req.params;
+    const { grado_id, tema_id, vocablos_number } = req.params;
     const result = await pool.query(`
       SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
       V.palabra AS vocablo_palabra
-      FROM grado_tema_vocablo GTV
+      FROM grado_tema_vocablo GTV 
       INNER JOIN grado G ON G.id = GTV.grado_id
       INNER JOIN tema T ON T.id = GTV.tema_id
       INNER JOIN vocablo V ON V.id = GTV.vocablo_id
-      WHERE GTV.grado_id = $1 AND GTV.tema_id = $2;
+      WHERE GTV.grado_id = $1 AND GTV.tema_id = $2
+      LIMIT ${vocablos_number};
     `, [grado_id, tema_id]);
 
     const result2 = await pool.query(`
       SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id, R.tipo, R.enlace
-      FROM grado_tema_vocablo GTV
-      INNER JOIN recurso R ON R.vocablo_id = GTV.vocablo_id 
-      WHERE GTV.grado_id = $1 AND GTV.tema_id = $2;
+      FROM grado_tema_vocablo GTV 
+      INNER JOIN recurso R ON R.vocablo_id = GTV.vocablo_id
+      WHERE GTV.grado_id = $1 AND GTV.tema_id = $2
     `, [grado_id, tema_id]);
 
     const data = {};
@@ -46,7 +47,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
         data[id].recursos.push(row);
       }
     }
-
+ 
     const vocablosVistosQuery = await pool.query(
       `SELECT * FROM vocablo_visto WHERE usuario_id = $1 AND grado_id = $2 AND tema_id = $3`,
       [req.user, grado_id, tema_id]
@@ -79,7 +80,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
       }
     }
 
-
+    
     res.json(Object.values(data));
   } catch (error) {
     next(error);

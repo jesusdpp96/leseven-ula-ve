@@ -28,6 +28,25 @@ import sendLogs from '../utils/sendLogs';
 
 import CustomToast from './CustomToast';
 
+const consultas_por_grado = [
+  3, // preescolar
+  4, // 1er grado
+  4, // 2do grado
+  2, // tercer grado
+  4, // 4to grado
+  5, // 5to grado
+  10 // 6to grado
+]
+
+const opciones_por_grado = [
+  5, // preescolar
+  5, // 1er grado
+  6, // 2do grado
+  4, // tercer grado
+  5, // 4to grado
+  10, // 5to grado
+  20 // 6to grado
+]
 const REWARD_GOOD_RESPONSE = [
   {
     message: 'Bien',
@@ -509,7 +528,7 @@ export default function HorizontalNonLinearStepper() {
   const getVocablos = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`/vocablos-by-grado-tema/${grado}/${tema}`, {
+      const response = await fetch(`/vocablos-by-grado-tema/${grado}/${tema}/${opciones_por_grado[grado]}`, {
           method: "GET",
           headers: {
             "Content-type": "application/json",
@@ -526,7 +545,7 @@ export default function HorizontalNonLinearStepper() {
       setGradoTitle(gradoTitle);
       setTemaTitle(temaTitle);
 
-      const consultas = generateConsultas({vocablos: responseData, numeroConsultas: 10});
+      const consultas = generateConsultas({vocablos: responseData, numeroConsultas: consultas_por_grado[grado]});
       const newConsultas = addLogsToConsulta({
         logs: [
           {

@@ -11,9 +11,21 @@ import Typography from '@mui/material/Typography';
 import VocabloModal from './VocabloModal';
 import sendLogs from '../utils/sendLogs';
 
-const ItemList = ({vocablos, setQuery, updateVocablos}) => {
+const ItemList = ({vocablos, setQuery, updateVocablos,searchText}) => {
 
-
+  // const [vocablosFiltered, setVocablosFIltered] = useState([]);
+  
+  // function filterVocablo(){
+  //   const vovocablos.filter(elem => {
+  //     if (elem.vocablo_id]) {
+  //       return false;
+  //     }
+  //     existsObj[elem.vocablo_id] = true;
+      
+  //     return true;
+  //   })
+  // }
+ 
   return vocablos.map((elem, index) => {
     
     const indexImage = elem && elem.recursos ? elem.recursos.findIndex(elem => elem.tipo === 'image') : -1;
@@ -71,11 +83,11 @@ const SearchBar = ({doSearch}) => (
       label="Introduce una palabra"
       variant="outlined"
       placeholder="Buscar..."
-      sx={{ m: 2 }}
+      sx={{ m: 1 }}
     />
-    <IconButton type="submit" aria-label="search" sx={{ m: 2 }}>
+    {/* <IconButton type="submit" aria-label="search" sx={{ m: 1 }}>
       <SearchIcon style={{ fill: "blue" }} />
-    </IconButton>
+    </IconButton> */}
   </form>
 );
 export default function Glosario() {
@@ -91,6 +103,7 @@ export default function Glosario() {
   const getVocablos = async () => {
     try {
       setLoading(true);
+      // const response = await fetch('/vocablos', {
       const response = await fetch(`/vocablos-by-tema/${tema}`, {
           method: "GET",
           headers: {
@@ -101,6 +114,18 @@ export default function Glosario() {
   
       const responseData = await response.json();
       const existsObj = {};
+
+      // const dataFiltered = responseData.map((item) => {
+      //   item.filter(elem => {
+      //     if (existsObj[elem.vocablo_id]) {
+      //       return false;
+      //     }
+      //     existsObj[elem.vocablo_id] = true;
+          
+      //     return true;
+      //   })
+      // })
+
       const dataFiltered = responseData.filter(elem => {
         if (existsObj[elem.vocablo_id]) {
           return false;
@@ -109,7 +134,7 @@ export default function Glosario() {
         
         return true;
       })
-      
+      console.log('responseData', responseData, dataFiltered)
       setVocablos(dataFiltered);
       setLoading(false);
       // const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
@@ -120,7 +145,7 @@ export default function Glosario() {
       sendLogs({
         logs: [
           {
-            "log_name": "Aprendiz: Vizualiza tema",
+            "log_name": "Profesor: Vizualiza glosario",
             "timestamp": new Date().toISOString(),
             // "grado": gradoTitle,
             "tema": temaTitle
@@ -147,7 +172,7 @@ export default function Glosario() {
     (<Grid container direction="row" justifyContent="center"><CircularProgress color="inherit" size={25} /></Grid>) :(
       <Box sx={{ flexGrow: 1 }}>
         <SearchBar doSearch={Search}/>
-        <ItemList vocablos={vocablos} setQuery={setQuery} updateVocablos={() => {getVocablos()}} />
+        <ItemList vocablos={vocablos} setQuery={setQuery} updateVocablos={() => {getVocablos()}} searchText={searchQuery}/>
       </Box>
     )
   );
