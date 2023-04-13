@@ -2,8 +2,18 @@ const pool = require("../db");
 
 const getAllVocablos = async (req, res, next) => {
   try {
-    const allVocablos = await pool.query("SELECT * FROM vocablo");
-    res.json(allVocablos.rows);
+    console.log("vocablos")
+    const allVocablos = await pool.query("SELECT * FROM grado_tema_vocablo");
+    console.log("allVocablos",allVocablos)
+
+    const data = {};
+
+    for (const row of allVocablos.rows) {
+      const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
+      data[id] = row;
+    }
+    // res.json(allVocablos.rows);
+    res.json(Object.values(data));
   } catch (error) {
     next(error);
   }

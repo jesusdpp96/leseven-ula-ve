@@ -104,7 +104,7 @@ export default function Glosario() {
     try {
       setLoading(true);
       // const response = await fetch('/vocablos', {
-      const response = await fetch(`/vocablos-by-tema/${tema}`, {
+      const response = await fetch(`/vocablos`, {
           method: "GET",
           headers: {
             "Content-type": "application/json",
@@ -134,7 +134,7 @@ export default function Glosario() {
         
         return true;
       })
-      console.log('responseData', responseData, dataFiltered)
+      console.log('responseData', responseData)
       setVocablos(dataFiltered);
       setLoading(false);
       // const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
@@ -172,7 +172,7 @@ export default function Glosario() {
     (<Grid container direction="row" justifyContent="center"><CircularProgress color="inherit" size={25} /></Grid>) :(
       <Box sx={{ flexGrow: 1 }}>
         <SearchBar doSearch={Search}/>
-        <ItemList vocablos={vocablos} setQuery={setQuery} updateVocablos={() => {getVocablos()}} searchText={searchQuery}/>
+        {/* <ItemList vocablos={vocablos} setQuery={setQuery} updateVocablos={() => {getVocablos()}} searchText={searchQuery}/> */}
       </Box>
     )
   );
