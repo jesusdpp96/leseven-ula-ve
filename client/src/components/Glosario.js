@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Grid,CircularProgress, IconButton } from '@mui/material';
+import { Box, Grid,CircularProgress, IconButton, Button } from '@mui/material';
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import { toast } from "react-toastify";
@@ -83,7 +83,7 @@ const SearchBar = ({doSearch}) => (
       label="Introduce una palabra"
       variant="outlined"
       placeholder="Buscar..."
-      sx={{ m: 1 }}
+      sx={{ m: 2 }}
     />
     {/* <IconButton type="submit" aria-label="search" sx={{ m: 1 }}>
       <SearchIcon style={{ fill: "blue" }} />
@@ -160,7 +160,21 @@ export default function Glosario() {
   return ( loading ?
     (<Grid container direction="row" justifyContent="center"><CircularProgress color="inherit" size={25} /></Grid>) :(
       <>
-        <SearchBar doSearch={Search}/>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 2 }}
+            columns={{ xs: 2, sm: 2, md: 2 }}
+          >
+            <SearchBar doSearch={Search}/>
+            <Button 
+              sx={{ m: 2 }}
+              type="submit"
+              variant="contained"
+              color="primary"
+            ><SearchIcon/></Button>
+          </Grid>
+        </Box>
         <Box sx={{ flexGrow: 1 }}>
           <Grid
             container
