@@ -103,39 +103,28 @@ export default function Glosario() {
   const getVocablos = async () => {
     try {
       setLoading(true);
-      // const response = await fetch('/vocablos', {
-      const response = await fetch(`/vocablos`, {
+      let page =1
+      const response = await fetch(`/vocablos/${page}`, {
           method: "GET",
           headers: {
             "Content-type": "application/json",
             "token": localStorage.token,
           },
         });
-  
       const responseData = await response.json();
       const existsObj = {};
 
-      // const dataFiltered = responseData.map((item) => {
-      //   item.filter(elem => {
-      //     if (existsObj[elem.vocablo_id]) {
-      //       return false;
-      //     }
-      //     existsObj[elem.vocablo_id] = true;
-          
-      //     return true;
-      //   })
-      // })
-
-      const dataFiltered = responseData.filter(elem => {
+      const dataFiltered = responseData?.rows?.filter(elem => {
         if (existsObj[elem.vocablo_id]) {
           return false;
         }
         existsObj[elem.vocablo_id] = true;
-        
+    
         return true;
       })
-      console.log('responseData', responseData)
+      console.log('dataFiltered', dataFiltered)
       setVocablos(dataFiltered);
+      
       setLoading(false);
       // const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
       const temaTitle = responseData && responseData[0] ? responseData[0].tema_nombre : null;
@@ -172,7 +161,7 @@ export default function Glosario() {
     (<Grid container direction="row" justifyContent="center"><CircularProgress color="inherit" size={25} /></Grid>) :(
       <Box sx={{ flexGrow: 1 }}>
         <SearchBar doSearch={Search}/>
-        {/* <ItemList vocablos={vocablos} setQuery={setQuery} updateVocablos={() => {getVocablos()}} searchText={searchQuery}/> */}
+        <ItemList vocablos={vocablos} setQuery={setQuery} updateVocablos={() => {getVocablos()}} searchText={searchQuery}/>
       </Box>
     )
   );
