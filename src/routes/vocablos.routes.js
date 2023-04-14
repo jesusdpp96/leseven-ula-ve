@@ -11,7 +11,7 @@ const router = Router();
 
 // create a task
 
-router.get("/vocablos/:page_number", authorization,getAllVocablos);
+router.get("/vocablos/:page_number/:word_search", authorization,getAllVocablos);
 
 router.get("/vocablos-by-grado-tema/:grado_id/:tema_id/:vocablos_number", authorization, getVocablosByGradoTema);
 router.get("/vocablos-by-tema/:tema_id", authorization, getVocablosByTema);
