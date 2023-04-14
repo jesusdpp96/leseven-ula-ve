@@ -141,12 +141,13 @@ export default function Glosario() {
   // const [gradoTitle, setGradoTitle] = React.useState();
   const [temaTitle, setTemaTitle] = React.useState();
   const [searchQuery, setSearchQuery] = React.useState("");
-
-  const getVocablos = async (word) => {
+  const [page, setPage] = React.useState(1);
+  const [total, setTotal] = React.useState(1);
+  const getVocablos = async (word, pageS) => {
     try {
       setLoading(true);
-      let page = 1;
-      let word = searchQuery!="" ? searchQuery : "-1";
+      let page = pageS;
+      let word = searchQuery != "" ? searchQuery : "-1";
       const response = await fetch(`/vocablos/${page}/${word}`, {
         method: "GET",
         headers: {
@@ -166,7 +167,8 @@ export default function Glosario() {
         return true;
       });
       setVocablos(dataFiltered);
-
+      setPage(parseInt(responseData?.page));
+      setTotal(responseData?.total);
       setLoading(false);
       // const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
       const temaTitle =
@@ -192,7 +194,7 @@ export default function Glosario() {
   };
 
   React.useEffect(() => {
-    getVocablos('-1');
+    getVocablos("-1",1);
   }, []);
 
   function Search(text) {
@@ -216,8 +218,8 @@ export default function Glosario() {
             type="submit"
             variant="contained"
             color="primary"
-            onClick={()=>{
-              getVocablos(searchQuery)
+            onClick={() => {
+              getVocablos(searchQuery, 1);
             }}
           >
             <SearchIcon />
@@ -225,22 +227,59 @@ export default function Glosario() {
         </Grid>
       </Box>
       {vocablos.length > 0 ? (
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid
-            container
-            spacing={{ xs: 2, md: 4 }}
-            columns={{ xs: 4, sm: 8, md: 8 }}
-          >
-            <ItemList
-              vocablos={vocablos}
-              setQuery={setQuery}
-              updateVocablos={() => {
-                getVocablos();
-              }}
-              searchText={searchQuery}
-            />
-          </Grid>
-        </Box>
+        <>
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid
+              container
+              spacing={{ xs: 2, md: 4 }}
+              columns={{ xs: 4, sm: 8, md: 8 }}
+            >
+              <ItemList
+                vocablos={vocablos}
+                setQuery={setQuery}
+                updateVocablos={() => {
+                  getVocablos();
+                }}
+                searchText={searchQuery}
+              />
+            </Grid>
+          </Box>
+          <Box sx={{ flexGrow: 1 }} justifyContent="center">
+            <Grid
+              container
+              columns={{ xs: 3, sm: 3, md: 3 }}
+              justifyContent="center"
+            >
+              {page > 1 && (
+                <Button
+                  sx={{ m: 4 }}
+                  type="submit"
+                  variant="contained"
+                  color="primary"
+                  onClick={() => {
+                    getVocablos(searchQuery, page-1);
+                  }}
+                >
+                  {"<"}
+                </Button>
+              )}
+              <Typography sx={{ m: 4 }}>Pagina {page}</Typography>
+              {page < total && (
+                <Button
+                  sx={{ m: 4 }}
+                  type="submit"
+                  variant="contained"
+                  color="primary"
+                  onClick={() => {
+                    getVocablos(searchQuery, page+1);
+                  }}
+                >
+                  {">"}
+                </Button>
+              )}
+            </Grid>
+          </Box>
+        </>
       ) : (
         <Typography spacing={{ xs: 2, md: 4 }}>
           No se encontraron palabras que coincidan con la busqueda!
