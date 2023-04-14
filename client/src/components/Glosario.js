@@ -142,11 +142,11 @@ export default function Glosario() {
   const [temaTitle, setTemaTitle] = React.useState();
   const [searchQuery, setSearchQuery] = React.useState("");
 
-  const getVocablos = async () => {
+  const getVocablos = async (word) => {
     try {
       setLoading(true);
       let page = 1;
-      let word = "una";
+      let word = searchQuery!="" ? searchQuery : "-1";
       const response = await fetch(`/vocablos/${page}/${word}`, {
         method: "GET",
         headers: {
@@ -165,7 +165,6 @@ export default function Glosario() {
 
         return true;
       });
-      console.log("dataFiltered", dataFiltered);
       setVocablos(dataFiltered);
 
       setLoading(false);
@@ -193,7 +192,7 @@ export default function Glosario() {
   };
 
   React.useEffect(() => {
-    getVocablos();
+    getVocablos('-1');
   }, []);
 
   function Search(text) {
@@ -217,6 +216,9 @@ export default function Glosario() {
             type="submit"
             variant="contained"
             color="primary"
+            onClick={()=>{
+              getVocablos(searchQuery)
+            }}
           >
             <SearchIcon />
           </Button>
