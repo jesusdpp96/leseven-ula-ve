@@ -159,10 +159,18 @@ export default function Glosario() {
   }
   return ( loading ?
     (<Grid container direction="row" justifyContent="center"><CircularProgress color="inherit" size={25} /></Grid>) :(
-      <Box sx={{ flexGrow: 1 }}>
+      <>
         <SearchBar doSearch={Search}/>
-        <ItemList vocablos={vocablos} setQuery={setQuery} updateVocablos={() => {getVocablos()}} searchText={searchQuery}/>
-      </Box>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 4 }}
+            columns={{ xs: 4, sm: 8, md: 8 }}
+          >
+            <ItemList vocablos={vocablos} setQuery={setQuery} updateVocablos={() => {getVocablos()}} searchText={searchQuery}/>
+          </Grid>
+        </Box>
+      </>
     )
   );
 }
