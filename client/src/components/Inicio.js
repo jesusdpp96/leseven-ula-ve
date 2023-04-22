@@ -51,37 +51,18 @@ export default function Inicio() {
 
   return (
 
-    <Grid container spacing={{ xs: 2, sm: 3, md: 3 }} columns={{ xs: 4, sm: 8, md: 8 }}>
-
-      <Grid item xs={4} sm={8} md={8} >
-        <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
-          Inicio
-        </Typography>
-        <YoutubeEmbed embedLink={"https://www.youtube.com/watch?v=urpJuQ9IfHc"} />
-      </Grid>
-
-      <Grid item xs={2} sm={4} md={4} >
-
+    <Grid container spacing={{ xs: 2, sm: 3, md: 3 }} >
+      <Grid item xs={12} ml={6} mr={6}>
         <CardMedia
           component="img"
-          sx={{ maxWidth: 270, maxHeight: 270, objectFit: 'contain' }}
-          // image={elem.tema_image_src}
-          image={"/assets/inicio/escuela.png"}
-          alt={`Escuela`}
-        />
-
-      </Grid>
-
-      <Grid item xs={2} sm={4} md={4} >
-        <CardMedia
-          component="img"
-          sx={{ maxWidth: 270, maxHeight: 270, objectFit: 'contain' }}
-          // image={elem.tema_image_src}
-          image={"/assets/inicio/ula.png"}
+          sx={{ objectFit: 'contain' }}
+          image={"/assets/inicio/Logos.png"}
           alt={`ULA`}
         />
       </Grid>
-
+      <Grid item xs={12} ml={6} mr={6}>
+        <YoutubeEmbed embedLink={"https://www.youtube.com/watch?v=urpJuQ9IfHc"} />
+      </Grid>
 
     </Grid>
   )

@@ -27,7 +27,6 @@ git clone https://github.com/FaztWeb/pern-stack
 to run the backend you can use docker:
 
 ```
-cd server
 docker-compose up
 ```
 
@@ -46,6 +45,9 @@ docker-compose down --volumes
 
 ### Para crear la base de datos
 
+Sino existe base de datos actualmente:
+ heroku addons:create heroku-postgresql:mini
+ 
 ```
 cat database/build.sql | heroku pg:psql -a leseven
 ```

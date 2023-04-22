@@ -24,6 +24,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import CategoryIcon from '@mui/icons-material/Category';
 import ClassIcon from '@mui/icons-material/Class';
 import HomeIcon from '@mui/icons-material/Home';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import {
   Outlet,
   useNavigate
@@ -143,6 +144,11 @@ function PanelItems({funcionalidad_sistema}) {
     navigate("inicio");
   }
 
+  const goTo6 = () => {
+    // console.log({event:e, name: e.target.name})
+    // navigate(e.target.name);
+    navigate("glosario");
+  }
   const elements = [
     {
       funcionalidad: 'panel-practica',
@@ -216,6 +222,17 @@ function PanelItems({funcionalidad_sistema}) {
             <PeopleIcon />
           </ListItemIcon>
           <ListItemText primary="Supervisar" />
+        </ListItemButton>
+      )
+    },
+    {
+      funcionalidad: 'panel-profesor',
+      element: (
+        <ListItemButton onClick={goTo6} key="pp006">
+          <ListItemIcon>
+            <AutoStoriesIcon />
+          </ListItemIcon>
+          <ListItemText primary={"Glosario"} />
         </ListItemButton>
       )
     },
@@ -327,7 +344,7 @@ function DashboardContent({setAuth}) {
               sx={{ flexGrow: 1 }}
             >
               {/* LSVMérida - Lengua de Señas Venezolana */}
-              LSVMérida
+              LeSeVen
             </Typography>
             {/* <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">

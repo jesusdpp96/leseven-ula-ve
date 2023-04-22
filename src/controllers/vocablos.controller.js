@@ -1,9 +1,114 @@
 const pool = require("../db");
 
+function quitarAcentos(cadena){
+	const acentos = {'á':'a','é':'e','í':'i','ó':'o','ú':'u','Á':'A','É':'E','Í':'I','Ó':'O','Ú':'U'};
+	return cadena.split('').map( letra => acentos[letra] || letra).join('').toString().replace('ñ','n');	
+}
 const getAllVocablos = async (req, res, next) => {
   try {
-    const allVocablos = await pool.query("SELECT * FROM vocablo");
-    res.json(allVocablos.rows);
+    const { page_number, word_search } = req.params;
+    let _limit = 10;
+    let list = [];
+    if (word_search === "-1") {
+      const allVocablos = await pool.query(`
+      SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
+      V.palabra AS vocablo_palabra
+      FROM grado_tema_vocablo GTV 
+      INNER JOIN grado G ON G.id = GTV.grado_id
+      INNER JOIN tema T ON T.id = GTV.tema_id
+      INNER JOIN vocablo V ON V.id = GTV.vocablo_id
+      ORDER BY vocablo_palabra ASC;
+    `);
+      const result2 = await pool.query(`
+    SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id, R.tipo, R.enlace
+    FROM grado_tema_vocablo GTV 
+    INNER JOIN recurso R ON R.vocablo_id = GTV.vocablo_id;
+  `);
+      let index = 0;
+      const data = {};
+      for (const row of allVocablos.rows) {
+        const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
+        data[id] = row;
+        data[id].id2 = index;
+        list.push(row);
+        index += 1;
+      }
+      // console.log("list", list)
+      for (const row of result2.rows) {
+        const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
+        if (data[id]) {
+          if (!data[id].recursos) {
+            data[id].recursos = [];
+          }
+          data[id].recursos.push(row);
+          list[data[id].id2].recursos.push(row);
+        }
+      }
+
+      let total = list.length;
+      start = page_number * _limit - _limit;
+      end = page_number * _limit;
+      pages = parseInt(list.length / _limit);
+      newData = list.slice(start, end);
+      newData.sort((a,b) => a > b)
+      
+      res.json({
+        total: total,
+        rows: Object.values(newData),
+        page: page_number,
+        pages: pages,
+      });
+    } else {
+      const allVocablos = await pool.query(`
+      SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
+      V.palabra AS vocablo_palabra
+      FROM grado_tema_vocablo GTV 
+      INNER JOIN grado G ON G.id = GTV.grado_id
+      INNER JOIN tema T ON T.id = GTV.tema_id
+      INNER JOIN vocablo V ON V.id = GTV.vocablo_id;
+    `);
+      const result2 = await pool.query(`
+    SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id, R.tipo, R.enlace
+    FROM grado_tema_vocablo GTV 
+    INNER JOIN recurso R ON R.vocablo_id = GTV.vocablo_id;
+  `);
+      let index = 0;
+      const data = {};
+      for (const row of allVocablos.rows) {
+        const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
+        wordRow = quitarAcentos(row.vocablo_palabra.toLowerCase());
+        if(wordRow.includes(quitarAcentos(word_search.toLowerCase()))){
+          data[id] = row;
+          data[id].id2 = index;
+          list.push(row);
+          index += 1;
+        }
+ 
+      }
+      for (const row of result2.rows) {
+        const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
+        if (data[id]) {
+          if (!data[id].recursos) {
+            data[id].recursos = [];
+          }
+
+          data[id].recursos.push(row);
+          list[data[id].id2].recursos.push(row);
+        }
+      }
+      let total = list.length;
+      start = page_number * _limit - _limit;
+      end = page_number * _limit;
+      pages = parseInt(list.length / _limit);
+      newData = list.slice(start, end);
+
+      res.json({
+        total: total,
+        rows: Object.values(newData),
+        page: page_number,
+        pages: pages,
+      });
+    }
   } catch (error) {
     next(error);
   }
@@ -11,23 +116,30 @@ const getAllVocablos = async (req, res, next) => {
 
 const getVocablosByGradoTema = async (req, res, next) => {
   try {
-    const { grado_id, tema_id } = req.params;
-    const result = await pool.query(`
+    const { grado_id, tema_id, vocablos_number } = req.params;
+    const result = await pool.query(
+      `
       SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
       V.palabra AS vocablo_palabra
-      FROM grado_tema_vocablo GTV
+      FROM grado_tema_vocablo GTV 
       INNER JOIN grado G ON G.id = GTV.grado_id
       INNER JOIN tema T ON T.id = GTV.tema_id
       INNER JOIN vocablo V ON V.id = GTV.vocablo_id
-      WHERE GTV.grado_id = $1 AND GTV.tema_id = $2;
-    `, [grado_id, tema_id]);
+      WHERE GTV.grado_id = $1 AND GTV.tema_id = $2
+      LIMIT ${vocablos_number};
+    `,
+      [grado_id, tema_id]
+    );
 
-    const result2 = await pool.query(`
+    const result2 = await pool.query(
+      `
       SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id, R.tipo, R.enlace
-      FROM grado_tema_vocablo GTV
-      INNER JOIN recurso R ON R.vocablo_id = GTV.vocablo_id 
-      WHERE GTV.grado_id = $1 AND GTV.tema_id = $2;
-    `, [grado_id, tema_id]);
+      FROM grado_tema_vocablo GTV 
+      INNER JOIN recurso R ON R.vocablo_id = GTV.vocablo_id
+      WHERE GTV.grado_id = $1 AND GTV.tema_id = $2
+    `,
+      [grado_id, tema_id]
+    );
 
     const data = {};
 
@@ -40,9 +152,9 @@ const getVocablosByGradoTema = async (req, res, next) => {
       const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
       if (data[id]) {
         if (!data[id].recursos) {
-          data[id].recursos = []
+          data[id].recursos = [];
         }
-        
+
         data[id].recursos.push(row);
       }
     }
@@ -59,7 +171,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
       } else {
         data[id] = {
           visto: true,
-        }
+        };
       }
     }
 
@@ -75,10 +187,9 @@ const getVocablosByGradoTema = async (req, res, next) => {
       } else {
         data[id] = {
           correcto: Boolean(vc.correcto),
-        }
+        };
       }
     }
-
 
     res.json(Object.values(data));
   } catch (error) {
@@ -91,7 +202,8 @@ const getVocablosByGradoTema = async (req, res, next) => {
 const getVocablosByTema = async (req, res, next) => {
   try {
     const { tema_id } = req.params;
-    const result = await pool.query(`
+    const result = await pool.query(
+      `
       SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
       V.palabra AS vocablo_palabra
       FROM grado_tema_vocablo GTV
@@ -99,14 +211,19 @@ const getVocablosByTema = async (req, res, next) => {
       INNER JOIN tema T ON T.id = GTV.tema_id
       INNER JOIN vocablo V ON V.id = GTV.vocablo_id
       WHERE GTV.tema_id = $1;
-    `, [tema_id]);
+    `,
+      [tema_id]
+    );
 
-    const result2 = await pool.query(`
+    const result2 = await pool.query(
+      `
       SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id, R.tipo, R.enlace
       FROM grado_tema_vocablo GTV
       INNER JOIN recurso R ON R.vocablo_id = GTV.vocablo_id 
       WHERE GTV.tema_id = $1;
-    `, [tema_id]);
+    `,
+      [tema_id]
+    );
 
     const data = {};
 
@@ -119,9 +236,9 @@ const getVocablosByTema = async (req, res, next) => {
       const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
       if (data[id]) {
         if (!data[id].recursos) {
-          data[id].recursos = []
+          data[id].recursos = [];
         }
-        
+
         data[id].recursos.push(row);
       }
     }
@@ -138,7 +255,7 @@ const getVocablosByTema = async (req, res, next) => {
       } else {
         data[id] = {
           visto: true,
-        }
+        };
       }
     }
 
@@ -154,10 +271,9 @@ const getVocablosByTema = async (req, res, next) => {
       } else {
         data[id] = {
           correcto: Boolean(vc.correcto),
-        }
+        };
       }
     }
-
 
     res.json(Object.values(data));
   } catch (error) {
@@ -165,50 +281,45 @@ const getVocablosByTema = async (req, res, next) => {
   }
 };
 
-
 const postVocabloVisto = async (req, res, next) => {
-
   try {
     const { grado_id, tema_id, vocablo_id } = req.body;
 
-    if (typeof tema_id !== 'number') {
+    if (typeof tema_id !== "number") {
       throw new Error("tema_id is required");
     }
 
-    if (typeof vocablo_id !== 'number') {
+    if (typeof vocablo_id !== "number") {
       throw new Error("vocablo_id is required");
     }
 
     const usuario_id = req.user;
 
-    if (typeof usuario_id !== 'number') {
+    if (typeof usuario_id !== "number") {
       throw new Error("authentification is required");
     }
 
-    
     await pool.query(
       `INSERT INTO public.vocablo_visto(usuario_id, grado_id, tema_id, vocablo_id, fecha)
         VALUES ($1, $2, $3, $4, $5)`,
       [usuario_id, grado_id, tema_id, vocablo_id, new Date().toISOString()]
     );
-    
-    return res.sendStatus(204);
-  } catch(err) {
 
-    if (err.message.includes("duplicate key value violates unique constraint")) {
+    return res.sendStatus(204);
+  } catch (err) {
+    if (
+      err.message.includes("duplicate key value violates unique constraint")
+    ) {
       return res.sendStatus(204);
     } else {
       next(err);
     }
-    
   }
-
-  
 };
 
 module.exports = {
   getAllVocablos,
   getVocablosByGradoTema,
   getVocablosByTema,
-  postVocabloVisto
+  postVocabloVisto,
 };

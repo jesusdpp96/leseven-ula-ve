@@ -37,7 +37,7 @@ import ExplorarVocabularioCategorias from "./components/ExplorarVocabularioCateg
 import Practica from "./components/Practica";
 import Inicio from "./components/Inicio";
 import AprendicesMonitor from "./components/AprendicesMonitor";
-
+import Glosario from "./components/Glosario"
 // toast.configure();
 
 // const ProtectedRoute = ({
@@ -144,6 +144,9 @@ export const Body = ({ isAuthenticated, setAuth }) => (
       } />
       <Route path="supervisar" element={
         <AprendicesMonitor />
+      } />
+           <Route path="glosario" element={
+        <Glosario />
       } />
     </Route>
   </Routes>

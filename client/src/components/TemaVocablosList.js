@@ -60,7 +60,15 @@ const ItemList = ({vocablos, setQuery, updateVocablos}) => {
     </Grid>
   )});
 };
-
+const opciones_por_grado = [
+  5, // preescolar
+  5, // 1er grado
+  6, // 2do grado
+  4, // tercer grado
+  5, // 4to grado
+  10, // 5to grado
+  20 // 6to grado
+]
 export default function TemaVocablosList({grado, tema}) {
 
   const [query, setQuery] = useSearchParams();
@@ -75,7 +83,7 @@ export default function TemaVocablosList({grado, tema}) {
   const getVocablos = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`/vocablos-by-grado-tema/${grado}/${tema}`, {
+      const response = await fetch(`/vocablos-by-grado-tema/${grado}/${tema}/${opciones_por_grado[grado]}`, {
           method: "GET",
           headers: {
             "Content-type": "application/json",
