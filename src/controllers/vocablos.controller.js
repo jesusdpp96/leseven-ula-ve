@@ -9,6 +9,7 @@ const getAllVocablos = async (req, res, next) => {
     const { page_number, word_search } = req.params;
     let _limit = 10;
     let list = [];
+    let list2 = [];
     if (word_search === "-1") {
       const allVocablos = await pool.query(`
       SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
@@ -44,12 +45,25 @@ const getAllVocablos = async (req, res, next) => {
           list[data[id].id2].recursos.push(row);
         }
       }
+      const existsObj = {};
 
-      let total = list.length;
+      list?.filter((elem) => {
+        if (existsObj[elem.vocablo_id]) {
+          return false;
+        }
+        if(elem.recursos.length >0){
+          list2.push(elem)
+        }
+        existsObj[elem.vocablo_id] = true;
+
+        return true;
+      });
+
+      let total = list2.length;
       start = page_number * _limit - _limit;
       end = page_number * _limit;
-      pages = parseInt(list.length / _limit);
-      newData = list.slice(start, end);
+      pages = parseInt(list2.length / _limit);
+      newData = list2.slice(start, end);
       newData.sort((a,b) => a > b)
       
       res.json({
