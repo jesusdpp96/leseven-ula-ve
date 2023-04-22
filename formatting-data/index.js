@@ -31,7 +31,7 @@ function sanatizeImageName(str) {
   .replace(/'/g,'')
   .replace(/\s+/g,'-');
 }
-
+console.log('Ejecutado')
 let gradosJSON = fs.readFileSync('./data/grados.json');
 let gradosArr = JSON.parse(gradosJSON);
 

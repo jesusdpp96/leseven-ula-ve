@@ -57,7 +57,7 @@ export default function Inicio() {
           component="img"
           sx={{ objectFit: 'contain' }}
           image={"/assets/inicio/Logos.png"}
-          alt={`ULA`}
+          alt={`ULA`}F
         />
       </Grid>
       <Grid item xs={12} ml={6} mr={6}>

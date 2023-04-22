@@ -128,14 +128,13 @@ export default function Glosario() {
         },
       });
       const responseData = await response.json();
-      const existsObj = {};
+      // const existsObj = {};
 
       const dataFiltered = responseData?.rows?.filter((elem) => {
         // if (existsObj[elem.vocablo_id]) {
         //   return false;
         // }
         // existsObj[elem.vocablo_id] = true;
-
         return true;
       });
       setVocablos(dataFiltered);
