@@ -16,7 +16,8 @@ const getAllVocablos = async (req, res, next) => {
       FROM grado_tema_vocablo GTV 
       INNER JOIN grado G ON G.id = GTV.grado_id
       INNER JOIN tema T ON T.id = GTV.tema_id
-      INNER JOIN vocablo V ON V.id = GTV.vocablo_id;
+      INNER JOIN vocablo V ON V.id = GTV.vocablo_id
+      ORDER BY vocablo_palabra ASC;
     `);
       const result2 = await pool.query(`
     SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id, R.tipo, R.enlace
@@ -32,6 +33,7 @@ const getAllVocablos = async (req, res, next) => {
         list.push(row);
         index += 1;
       }
+      // console.log("list", list)
       for (const row of result2.rows) {
         const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
         if (data[id]) {
@@ -42,12 +44,14 @@ const getAllVocablos = async (req, res, next) => {
           list[data[id].id2].recursos.push(row);
         }
       }
+
       let total = list.length;
       start = page_number * _limit - _limit;
       end = page_number * _limit;
       pages = parseInt(list.length / _limit);
       newData = list.slice(start, end);
-
+      newData.sort((a,b) => a > b)
+      
       res.json({
         total: total,
         rows: Object.values(newData),

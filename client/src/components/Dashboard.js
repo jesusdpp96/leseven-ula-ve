@@ -344,7 +344,7 @@ function DashboardContent({setAuth}) {
               sx={{ flexGrow: 1 }}
             >
               {/* LSVMérida - Lengua de Señas Venezolana */}
-              LSVMérida
+              LeSeVen
             </Typography>
             {/* <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">

@@ -147,7 +147,7 @@ export default function Glosario() {
     try {
       setLoading(true);
       let page = pageS;
-      let word = searchQuery != "" ? searchQuery : "-1";
+      let word = searchQuery !== "" ? searchQuery : "-1";
       const response = await fetch(`/vocablos/${page}/${word}`, {
         method: "GET",
         headers: {
@@ -168,7 +168,7 @@ export default function Glosario() {
       });
       setVocablos(dataFiltered);
       setPage(parseInt(responseData?.page));
-      setTotal(responseData?.total);
+      setTotal(responseData?.pages);
       setLoading(false);
       // const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
       const temaTitle =
@@ -181,7 +181,6 @@ export default function Glosario() {
           {
             log_name: "Profesor: Vizualiza glosario",
             timestamp: new Date().toISOString(),
-            // "grado": gradoTitle,
             tema: temaTitle,
           },
         ],
@@ -200,6 +199,7 @@ export default function Glosario() {
   function Search(text) {
     setSearchQuery(text);
   }
+
   return loading ? (
     <Grid container direction="row" justifyContent="center">
       <CircularProgress color="inherit" size={25} />
@@ -226,7 +226,7 @@ export default function Glosario() {
           </Button>
         </Grid>
       </Box>
-      {vocablos.length > 0 ? (
+      {vocablos?.length > 0 ? (
         <>
           <Box sx={{ flexGrow: 1 }}>
             <Grid
@@ -263,7 +263,7 @@ export default function Glosario() {
                   {"<"}
                 </Button>
               )}
-              <Typography sx={{ m: 4 }}>Pagina {page}</Typography>
+              <Typography sx={{ m: 4 }}>Página {page}</Typography>
               {page < total && (
                 <Button
                   sx={{ m: 4 }}
