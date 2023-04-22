@@ -95,6 +95,7 @@ export default function VocabloModal({buttonText, vocablo, onlyModal, updateVoca
     
     setOpen(false)
   };
+  const route = window.location.pathname === '/dashboard/glosario' ? true : false;
 
   const indexImage = vocablo && vocablo.recursos ? vocablo.recursos.findIndex(elem => elem.tipo === 'image') : -1;
   let imageSrc;
@@ -153,6 +154,7 @@ export default function VocabloModal({buttonText, vocablo, onlyModal, updateVoca
             </Grid>
             <Grid item xs={4} sm={4} md={4} style={{minHeight: "150px", display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', alignSelf: "stretch"}}>
               <Button variant="text" color="error" onClick={handleClose}>Cerrar</Button>
+              {!route && <Button variant="contained" color="success" onClick={handleCloseAprendido} style={{marginLeft: '24px'}}>Aprendido</Button>}
               <Button variant="contained" color="success" onClick={handleCloseAprendido} style={{marginLeft: '24px'}}>Aprendido</Button>
             </Grid>
           </Grid>

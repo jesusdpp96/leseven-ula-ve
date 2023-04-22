@@ -98,6 +98,7 @@ export default function VocabloModal({buttonText, vocablo, onlyModal, updateVoca
     
     setOpen(false)
   };
+  const route = window.location.pathname === '/dashboard/glosario' ? true : false;
 
   const indexImage = vocablo && vocablo.recursos ? vocablo.recursos.findIndex(elem => elem.tipo === 'image') : -1;
   let imageSrc;
@@ -115,7 +116,7 @@ export default function VocabloModal({buttonText, vocablo, onlyModal, updateVoca
   if (onlyModal) {
     setOpen(true);
   }
-
+  
   return (
     <div>
       {!onlyModal ? (<Button variant="outlined" onClick={handleOpen}>{buttonText}</Button>) : null}
@@ -173,7 +174,8 @@ export default function VocabloModal({buttonText, vocablo, onlyModal, updateVoca
             </Box>
             <Box style={{minHeight: "60px", display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', alignSelf: "stretch"}}>
               <Button variant="text" color="error" onClick={handleClose}>Cerrar</Button>
-              <Button variant="contained" color="success" onClick={handleCloseAprendido} style={{marginLeft: '24px'}}>Aprendido</Button>
+              {!route && <Button variant="contained" color="success" onClick={handleCloseAprendido} style={{marginLeft: '24px'}}>Aprendido</Button>}
+              
             </Box>
           </Box>
         </Box>

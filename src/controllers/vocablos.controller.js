@@ -9,7 +9,8 @@ const getAllVocablos = async (req, res, next) => {
     const { page_number, word_search } = req.params;
     let _limit = 10;
     let list = [];
-    if (word_search === "-1") {
+    let list2 = [];
+    if (word_search === "-1" || word_search ==='') {
       const allVocablos = await pool.query(`
       SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
       V.palabra AS vocablo_palabra
@@ -44,13 +45,33 @@ const getAllVocablos = async (req, res, next) => {
           list[data[id].id2].recursos.push(row);
         }
       }
+      const existsObj = {};
 
-      let total = list.length;
+      list?.filter((elem) => {
+        if (existsObj[elem.vocablo_id]) {
+          return false;
+        }
+        if(elem.recursos.length >0 ){
+          itemAgregado = false
+          elem.recursos.map((item) =>{
+            if(item.tipo === 'video' && !itemAgregado){
+              if(item.enlace !== '' && item.enlace !== 'https://www.youtube.com/watch?v=urpJuQ9IfHc'){
+                itemAgregado = true  
+                list2.push(elem)
+              }
+            }
+          })
+        }
+        existsObj[elem.vocablo_id] = true;
+
+        return true;
+      });
+
+      let total = list2.length;
       start = page_number * _limit - _limit;
       end = page_number * _limit;
-      pages = parseInt(list.length / _limit);
-      newData = list.slice(start, end);
-      newData.sort((a,b) => a > b)
+      pages = parseInt(list2.length / _limit);
+      newData = list2.slice(start, end);
       
       res.json({
         total: total,
@@ -65,7 +86,8 @@ const getAllVocablos = async (req, res, next) => {
       FROM grado_tema_vocablo GTV 
       INNER JOIN grado G ON G.id = GTV.grado_id
       INNER JOIN tema T ON T.id = GTV.tema_id
-      INNER JOIN vocablo V ON V.id = GTV.vocablo_id;
+      INNER JOIN vocablo V ON V.id = GTV.vocablo_id
+      ORDER BY vocablo_palabra ASC;
     `);
       const result2 = await pool.query(`
     SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id, R.tipo, R.enlace
@@ -96,11 +118,32 @@ const getAllVocablos = async (req, res, next) => {
           list[data[id].id2].recursos.push(row);
         }
       }
-      let total = list.length;
+      const existsObj = {};
+      list?.filter((elem) => {
+        if (existsObj[elem.vocablo_id]) {
+          return false;
+        }
+        if(elem.recursos.length >0 ){
+          itemAgregado = false
+          elem.recursos.map((item) =>{
+            if(item.tipo === 'video' && !itemAgregado){
+              if(item.enlace !== '' && item.enlace !== 'https://www.youtube.com/watch?v=urpJuQ9IfHc'){
+                itemAgregado = true  
+                list2.push(elem)
+              }
+            }
+          })
+        }
+        existsObj[elem.vocablo_id] = true;
+
+        return true;
+      });
+
+      let total = list2.length;
       start = page_number * _limit - _limit;
       end = page_number * _limit;
-      pages = parseInt(list.length / _limit);
-      newData = list.slice(start, end);
+      pages = parseInt(list2.length / _limit);
+      newData = list2.slice(start, end);
 
       res.json({
         total: total,

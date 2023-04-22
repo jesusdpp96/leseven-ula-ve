@@ -12,18 +12,6 @@ import VocabloModal from "./VocabloModal";
 import sendLogs from "../utils/sendLogs";
 
 const ItemList = ({ vocablos, setQuery, updateVocablos, searchText }) => {
-  // const [vocablosFiltered, setVocablosFIltered] = useState([]);
-
-  // function filterVocablo(){
-  //   const vovocablos.filter(elem => {
-  //     if (elem.vocablo_id]) {
-  //       return false;
-  //     }
-  //     existsObj[elem.vocablo_id] = true;
-
-  //     return true;
-  //   })
-  // }
 
   return vocablos.map((elem, index) => {
     const indexImage =
@@ -115,24 +103,7 @@ const ItemList = ({ vocablos, setQuery, updateVocablos, searchText }) => {
     );
   });
 };
-const SearchBar = ({ doSearch }) => (
-  <form>
-    <TextField
-      id="search-bar"
-      className="text"
-      onInput={(e) => {
-        doSearch(e.target.value);
-      }}
-      label="Introduce una palabra"
-      variant="outlined"
-      placeholder="Buscar..."
-      sx={{ m: 2 }}
-    />
-    {/* <IconButton type="submit" aria-label="search" sx={{ m: 1 }}>
-      <SearchIcon style={{ fill: "blue" }} />
-    </IconButton> */}
-  </form>
-);
+
 export default function Glosario() {
   const tema = 1;
   const [query, setQuery] = useSearchParams();
@@ -143,6 +114,7 @@ export default function Glosario() {
   const [searchQuery, setSearchQuery] = React.useState("");
   const [page, setPage] = React.useState(1);
   const [total, setTotal] = React.useState(1);
+  
   const getVocablos = async (word, pageS) => {
     try {
       setLoading(true);
@@ -156,14 +128,13 @@ export default function Glosario() {
         },
       });
       const responseData = await response.json();
-      const existsObj = {};
+      // const existsObj = {};
 
       const dataFiltered = responseData?.rows?.filter((elem) => {
-        if (existsObj[elem.vocablo_id]) {
-          return false;
-        }
-        existsObj[elem.vocablo_id] = true;
-
+        // if (existsObj[elem.vocablo_id]) {
+        //   return false;
+        // }
+        // existsObj[elem.vocablo_id] = true;
         return true;
       });
       setVocablos(dataFiltered);
@@ -175,7 +146,6 @@ export default function Glosario() {
         responseData && responseData[0] ? responseData[0].tema_nombre : null;
       // setGradoTitle(gradoTitle);
       setTemaTitle(temaTitle);
-
       sendLogs({
         logs: [
           {
@@ -196,7 +166,7 @@ export default function Glosario() {
     getVocablos("-1",1);
   }, []);
 
-  function Search(text) {
+  async function Search(text) {
     setSearchQuery(text);
   }
 
@@ -212,10 +182,21 @@ export default function Glosario() {
           spacing={{ xs: 2, md: 2 }}
           columns={{ xs: 2, sm: 2, md: 2 }}
         >
-          <SearchBar doSearch={Search} />
+          <TextField
+            id="search-bar"
+            className="text"
+            onInput={(e) => {
+              Search(e.target.value);
+            }}
+            label="Introduce una palabra"
+            variant="outlined"
+            placeholder="Buscar..."
+            value={searchQuery}
+            sx={{ m: 2 }}
+          />
           <Button
             sx={{ m: 2 }}
-            type="submit"
+            type="button"
             variant="contained"
             color="primary"
             onClick={() => {
@@ -253,7 +234,7 @@ export default function Glosario() {
               {page > 1 && (
                 <Button
                   sx={{ m: 4 }}
-                  type="submit"
+                  type="button"
                   variant="contained"
                   color="primary"
                   onClick={() => {
@@ -267,7 +248,7 @@ export default function Glosario() {
               {page < total && (
                 <Button
                   sx={{ m: 4 }}
-                  type="submit"
+                  type="button"
                   variant="contained"
                   color="primary"
                   onClick={() => {
