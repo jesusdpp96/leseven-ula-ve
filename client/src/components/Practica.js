@@ -45,7 +45,7 @@ const opciones_por_grado = [
   4, // tercer grado
   5, // 4to grado
   10, // 5to grado
-  20 // 6to grado
+  15 // 6to grado
 ]
 const REWARD_GOOD_RESPONSE = [
   {
