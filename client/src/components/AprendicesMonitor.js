@@ -170,7 +170,7 @@ export default function AprendicesMonitor() {
           error={error}
           required
           id="email"
-          label="Correo electronico"
+          label="Correo electrónico"
           name="email"
           type="email"
           onChange={handleChange}

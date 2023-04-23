@@ -135,7 +135,7 @@ export default function GradoTemasList({grado}) {
           <Button variant="outlined" color="warning" startIcon={<ChevronLeftIcon />} onClick={() => {setQuery({})}}>Volver</Button>
         </Box>
         <Typography variant="h4" sx={{ color: 'text.primary', padding: '16px' }}>
-          Temas - {<b>{gradoTitle}</b>}
+          Grados - {<b>{gradoTitle}</b>}
         </Typography>
         <Grid
           container
@@ -145,7 +145,7 @@ export default function GradoTemasList({grado}) {
           <ItemList temas={temas} setQuery={setQuery} />
         </Grid>
         <Typography variant="h4" sx={{ color: 'text.primary', padding: '16px' }}>
-          Categorias - {<b>{gradoTitle}</b>}
+          Temas - {<b>{gradoTitle}</b>}
         </Typography>
         <Grid
           container

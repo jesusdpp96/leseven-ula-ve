@@ -128,7 +128,7 @@ export default function TemaVocablosList({grado, tema}) {
       <Box sx={{ flexGrow: 1 }}>
         <Box style={{display: 'flex', justifyContent: 'space-between'}}>
           <Button variant="outlined" color="warning" startIcon={<ChevronLeftIcon />} onClick={() => {setQuery({grado})}}>Volver</Button>
-          <Button variant="contained" color="primary" size="large" onClick={() => {navigate(`/dashboard/practica?grado=${grado}&tema=${tema}`)}}>Comenzar Practica</Button>
+          <Button variant="contained" color="primary" size="large" onClick={() => {navigate(`/dashboard/practica?grado=${grado}&tema=${tema}`)}}>Comenzar Práctica</Button>
         </Box>
         <Typography variant="h4" sx={{ color: 'text.primary', padding: '16px' }}>
           Vocablos de {<b>{temaTitle}</b>} - {<span style={{color: "#999"}}>{gradoTitle}</span>}
@@ -141,7 +141,7 @@ export default function TemaVocablosList({grado, tema}) {
         >
           <Grid item xs={4} sm={4} md={4} key="item-12312">
           <Button variant="contained" color="secundary">
-            Comenzar una Practica
+            Comenzar una Práctica
           </Button>
           </Grid>
         </Grid> */}

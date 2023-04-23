@@ -169,7 +169,7 @@ function PanelItems({funcionalidad_sistema}) {
             <ClassIcon />
           </ListItemIcon>
           <ListItemText
-            primary={"Vocabulario por Temas"} 
+            primary={"Vocabulario por Grado"} 
             primaryTypographyProps={{ 
               style: { 
                 whiteSpace: 'normal',
@@ -190,7 +190,7 @@ function PanelItems({funcionalidad_sistema}) {
             <CategoryIcon />
           </ListItemIcon>
           <ListItemText
-            primary={"Vocabulario por Categorias"}
+            primary={"Vocabulario por Tema"}
             primaryTypographyProps={{ 
                 style: { 
                   whiteSpace: 'normal',

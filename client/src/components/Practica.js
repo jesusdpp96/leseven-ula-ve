@@ -329,7 +329,7 @@ function getPracticaLogsFunc({consultas}) {
   }
 
   const logPractica = {
-    "log_name": "Practica",
+    "log_name": "Práctica",
     "timestamp": new Date().toISOString(),
     "grado": consultas[0].grado_nombre,
     "tema": consultas[0].tema_nombre,
@@ -464,7 +464,7 @@ function getPracticaCanceladaLogsFunc({consultas}) {
   // }
 
   const logPractica = {
-    "log_name": "Practica",
+    "log_name": "Práctica",
     "timestamp": new Date().toISOString(),
     "grado": consultas[0].grado_nombre,
     "tema": consultas[0].tema_nombre,
@@ -673,7 +673,7 @@ export default function HorizontalNonLinearStepper() {
         });
 
         if (response.status === 204) {
-          toast.success("Practica cancelada");
+          toast.success("Práctica cancelada");
           navigate(`/dashboard/practicar?grado=${grado}&tema=${tema}`)
         } else {
           toast.error("Error desconocido");
@@ -798,7 +798,7 @@ export default function HorizontalNonLinearStepper() {
         });
 
         if (response.status === 204) {
-          toast.success("Practica terminada correctamente");
+          toast.success("Práctica terminada correctamente");
         } else {
           toast.error("Error desconocido");
 
@@ -1059,7 +1059,7 @@ export default function HorizontalNonLinearStepper() {
           {allStepsCompleted() ? (
             <React.Fragment>
               <Typography variant="h4" sx={{ mt: 2, mb: 1 }}>
-                Practica Finalizada
+              Práctica Finalizada
               </Typography>
               <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginTop: '24px'}}>
                 {/*<Box sx={{ flex: '1 1 auto' }} />*/}
