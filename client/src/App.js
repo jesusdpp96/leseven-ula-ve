@@ -32,6 +32,7 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Dashboard from "./components/Dashboard";
 import Practicar from "./components/Practicar";
+import Estudiar from "./components/Estudiar";
 import ExplorarVocabularioTemas from "./components/ExplorarVocabularioTemas";
 import ExplorarVocabularioCategorias from "./components/ExplorarVocabularioCategorias";
 import Practica from "./components/Practica";
@@ -130,7 +131,10 @@ export const Body = ({ isAuthenticated, setAuth }) => (
           <Inicio />
       } />
       
-      <Route path="practicar" element={
+      <Route path="estudiar" element={
+          <Estudiar />
+      } />
+      <Route path="prueba" element={
           <Practicar />
       } />
       <Route path="explorar-vocabulario-temas" element={
@@ -140,6 +144,9 @@ export const Body = ({ isAuthenticated, setAuth }) => (
           <ExplorarVocabularioCategorias />
       } />
       <Route path="practica" element={
+          <Practica />
+      } />
+      <Route path="/dashboard/prueba/practica" element={
           <Practica />
       } />
       <Route path="supervisar" element={
