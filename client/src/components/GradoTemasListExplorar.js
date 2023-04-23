@@ -135,7 +135,7 @@ export default function GradoTemasListExplorar() {
           <Button variant="outlined" color="warning" startIcon={<ChevronLeftIcon />} onClick={() => {setQuery({})}}>Volver</Button>
         </Box> */}
         <Typography variant="h4" sx={{ color: 'text.primary', padding: '16px' }}>
-          Temas
+          Grados
         </Typography>
         <Grid
           container

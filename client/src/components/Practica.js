@@ -45,7 +45,7 @@ const opciones_por_grado = [
   4, // tercer grado
   5, // 4to grado
   10, // 5to grado
-  20 // 6to grado
+  15 // 6to grado
 ]
 const REWARD_GOOD_RESPONSE = [
   {
@@ -329,7 +329,7 @@ function getPracticaLogsFunc({consultas}) {
   }
 
   const logPractica = {
-    "log_name": "Practica",
+    "log_name": "Práctica",
     "timestamp": new Date().toISOString(),
     "grado": consultas[0].grado_nombre,
     "tema": consultas[0].tema_nombre,
@@ -464,7 +464,7 @@ function getPracticaCanceladaLogsFunc({consultas}) {
   // }
 
   const logPractica = {
-    "log_name": "Practica",
+    "log_name": "Práctica",
     "timestamp": new Date().toISOString(),
     "grado": consultas[0].grado_nombre,
     "tema": consultas[0].tema_nombre,
@@ -673,8 +673,14 @@ export default function HorizontalNonLinearStepper() {
         });
 
         if (response.status === 204) {
-          toast.success("Practica cancelada");
-          navigate(`/dashboard/practicar?grado=${grado}&tema=${tema}`)
+          const route = window.location.pathname.includes("prueba")
+          if(route){
+            toast.success("Prueba cancelada");
+            navigate(`/dashboard/prueba?grado=${grado}&tema=${tema}`)
+          }else{
+            toast.success("Práctica cancelada");
+            navigate(`/dashboard/estudiar?grado=${grado}&tema=${tema}`)
+          }
         } else {
           toast.error("Error desconocido");
         }
@@ -798,7 +804,7 @@ export default function HorizontalNonLinearStepper() {
         });
 
         if (response.status === 204) {
-          toast.success("Practica terminada correctamente");
+          toast.success("Práctica terminada correctamente");
         } else {
           toast.error("Error desconocido");
 
@@ -988,7 +994,10 @@ export default function HorizontalNonLinearStepper() {
 
   console.log({results, trofeoData})
 
-
+  const title = window.location.pathname.includes("prueba") ? "Prueba Finalizada" : "Práctica Finalizada"
+  const title2 = window.location.pathname.includes("prueba") ? "Comenzar otra Prueba" : "Comenzar otra Práctica"
+  const title3 = window.location.pathname.includes("prueba") ? "Cancelar Prueba" : "Cancelar Práctica"
+  const temaTitle1 = window.location.pathname.includes("prueba") ? `Prueba Exploratoria - ${gradoTitle}` : `Práctica - ${gradoTitle}`
   const TrofeoModal  = ({ trofeo }) => {
 
     if (!trofeo) {
@@ -1059,7 +1068,7 @@ export default function HorizontalNonLinearStepper() {
           {allStepsCompleted() ? (
             <React.Fragment>
               <Typography variant="h4" sx={{ mt: 2, mb: 1 }}>
-                Practica Finalizada
+              {title}
               </Typography>
               <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginTop: '24px'}}>
                 {/*<Box sx={{ flex: '1 1 auto' }} />*/}
@@ -1085,7 +1094,7 @@ export default function HorizontalNonLinearStepper() {
                       <ListItemIcon>
                         <CategoryIcon color="primary" />
                       </ListItemIcon>
-                      <ListItemText primary={temaTitle} secondary="Tema"/>
+                      <ListItemText primary={temaTitle1} secondary="Tema"/>
                     </ListItemButton>
                     <ListItemButton  key="list-3">
                       <ListItemIcon>
@@ -1113,11 +1122,11 @@ export default function HorizontalNonLinearStepper() {
                 </Box>
               </Box>
               <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginTop: '24px'}}>
-                <Button variant="outlined" color="secondary" startIcon={<ChevronLeftIcon />} onClick={() => {navigate(`/dashboard/practicar?grado=${grado}`, {replace: true})}}>
+                <Button variant="outlined" color="secondary" startIcon={<ChevronLeftIcon />} onClick={() => {navigate(`/dashboard/prueba?grado=${grado}`, {replace: true})}}>
                   Volvar a {gradoTitle}
                 </Button>
                 <Button variant="contained" color="primary" endIcon={<RestartAltIcon />} onClick={() => {handleReset()}} style={{marginLeft: '24px'}}>
-                  Comenzar otra practica
+                  {title2}
                 </Button>
               </Box>
             </React.Fragment>
@@ -1142,7 +1151,7 @@ export default function HorizontalNonLinearStepper() {
                 </Box>
 
                 <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', marginTop: '24px'}}>
-                  <Button variant="outlined" color="error" onClick={() => handleCancelPractica()}>Cancelar practica</Button>
+                  <Button variant="outlined" color="error" onClick={() => handleCancelPractica()}>{title3}</Button>
                 </Box>
 
               </Box>

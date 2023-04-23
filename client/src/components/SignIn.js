@@ -122,7 +122,7 @@ export default function SignIn({ setAuth }) {
               required
               fullWidth
               id="email"
-              label="Correo electronico"
+              label="Correo electrónico"
               name="email"
               type="email"
               onChange={handleChange}

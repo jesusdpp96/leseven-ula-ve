@@ -25,6 +25,7 @@ import CategoryIcon from '@mui/icons-material/Category';
 import ClassIcon from '@mui/icons-material/Class';
 import HomeIcon from '@mui/icons-material/Home';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import {
   Outlet,
   useNavigate
@@ -117,7 +118,13 @@ function PanelItems({funcionalidad_sistema}) {
   const goTo1 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
-    navigate("practicar");
+    navigate("prueba");
+  }
+
+  const goTo7 = () => {
+    // console.log({event:e, name: e.target.name})
+    // navigate(e.target.name);
+    navigate("estudiar");
   }
 
   const goTo2 = () => {
@@ -169,7 +176,7 @@ function PanelItems({funcionalidad_sistema}) {
             <ClassIcon />
           </ListItemIcon>
           <ListItemText
-            primary={"Vocabulario por Temas"} 
+            primary={"Vocabulario por Grado"} 
             primaryTypographyProps={{ 
               style: { 
                 whiteSpace: 'normal',
@@ -190,7 +197,7 @@ function PanelItems({funcionalidad_sistema}) {
             <CategoryIcon />
           </ListItemIcon>
           <ListItemText
-            primary={"Vocabulario por Categorias"}
+            primary={"Vocabulario por Tema"}
             primaryTypographyProps={{ 
                 style: { 
                   whiteSpace: 'normal',
@@ -209,11 +216,21 @@ function PanelItems({funcionalidad_sistema}) {
           <ListItemIcon>
             <DashboardIcon />
           </ListItemIcon>
-          <ListItemText primary="Practicar" />
+          <ListItemText primary="Prueba" />
         </ListItemButton>
       )
     },
-
+    {
+      funcionalidad: 'panel-practica',
+      element: (
+        <ListItemButton onClick={goTo7} key="pp001">
+          <ListItemIcon>
+            <LibraryBooksIcon />
+          </ListItemIcon>
+          <ListItemText primary="Estudiar" />
+        </ListItemButton>
+      )
+    },
     {
       funcionalidad: 'panel-profesor',
       element: (
