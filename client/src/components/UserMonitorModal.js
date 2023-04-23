@@ -340,7 +340,7 @@ export default function UserMonitorModal({ usuarioRowData, setOpenModal }) {
                {data && data.temas_data ? data.temas_data.map((elem, index) => {
                   const correctos = elem.vocablos_correctos_counter || 0;
                   const vistos = elem.vocablos_vistos_counter || 0;
-                  const total = elem.vocablos_counter || 0;
+                  let total = elem.vocablos_counter || 0;
                   const total_consultas = elem.total_consultas || 0;
                   const total_correctas = elem.total_correctas || 0;
                   const consultas_correctas = total_correctas/total_consultas || 0;
@@ -348,7 +348,29 @@ export default function UserMonitorModal({ usuarioRowData, setOpenModal }) {
                   if (total === 0) {
                     return null;
                   }
-
+                  // if(elem.data.nombre.includes("Prueba")){
+                  //   if(elem.data.nombre.includes("Preescolar")){
+                  //     total = 5
+                  //   }
+                  //   if(elem.data.nombre.includes("Primer")){
+                  //     total = 5
+                  //   }
+                  //   if(elem.data.nombre.includes("Segundo")){
+                  //     total = 6
+                  //   }
+                  //   if(elem.data.nombre.includes("Tercero")){
+                  //     total = 4
+                  //   }
+                  //   if(elem.data.nombre.includes("Cuarto")){
+                  //     total = 5
+                  //   }
+                  //   if(elem.data.nombre.includes("Quinto")){
+                  //     total = 10
+                  //   }
+                  //   if(elem.data.nombre.includes("Sexto")){
+                  //     total = 15
+                  //   }
+                  // }
                   return (
                     <Grid item xs={4} sm={4} md={4} key={index}>
                       <ListItem key={elem.tema_id}>

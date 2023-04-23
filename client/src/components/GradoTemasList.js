@@ -12,6 +12,9 @@ import sendLogs from "../utils/sendLogs";
 
 const ItemList = ({ temas, setQuery, showCategorias }) => {
   // const temas2 = temas.map((elem) => ({...elem, tema_image_src: `/assets/images/image${Math.floor(Math.random() * 58)}.png` }));
+  const buttonTitle = window.location.pathname.includes("prueba")
+    ? "Prueba"
+    : "Estudiar";
 
   return temas
     .filter(
@@ -93,7 +96,7 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
                     setQuery({ grado: elem.grado_id, tema: elem.tema_id });
                   }}
                 >
-                  Practicar
+                  {buttonTitle}
                 </Button>
               </Box>
             </Box>
@@ -113,15 +116,37 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
         (!Boolean(elem.es_categoria) && !Boolean(showCategorias))
     )
     .map((elem, index) => {
-      const vocablos_counter = elem.vocablos_counter || 0;
+      let vocablos_counter = elem.vocablos_counter || 0;
+      // if (gradoTitle.includes("Preescolar")) {
+      //   vocablos_counter = 5;
+      // }
+      // if (gradoTitle.includes("Primer")) {
+      //   vocablos_counter = 5;
+      // }
+      // if (gradoTitle.includes("Segundo")) {
+      //   vocablos_counter = 6;
+      // }
+      // if (gradoTitle.includes("Tercero")) {
+      //   vocablos_counter = 4;
+      // }
+      // if (gradoTitle.includes("Cuarto")) {
+      //   vocablos_counter = 5;
+      // }
+      // if (gradoTitle.includes("Quinto")) {
+      //   vocablos_counter = 10;
+      // }
+      // if (gradoTitle.includes("Sexto")) {
+      //   vocablos_counter = 15;
+      // }
       const vocablos_vistos = elem.vocablos_vistos || 0;
       const percentage = Math.ceil((vocablos_vistos / vocablos_counter) * 100);
-      console.log({ percentage });
       const backgroundImage = `linear-gradient(to right, rgba(0,128,0,${
         percentage / 200
       }) ${percentage}%, rgba(0,128,0,${percentage / 1000}))`;
       const route = window.location.pathname === "/dashboard/prueba";
-      const buttonTitle = window.location.pathname.includes("prueba") ? "Prueba" : "Practicar";
+      const buttonTitle = window.location.pathname.includes("prueba")
+        ? "Prueba"
+        : "Estudiar";
       return (
         <Grid item xs={4} sm={4} md={4} key={index}>
           <Card

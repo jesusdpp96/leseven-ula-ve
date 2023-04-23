@@ -266,8 +266,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
         INNER JOIN grado G ON G.id = GTV.grado_id
         INNER JOIN tema T ON T.id = GTV.tema_id
         INNER JOIN vocablo V ON V.id = GTV.vocablo_id
-        WHERE GTV.grado_id = $1 AND GTV.tema_id = $2
-        LIMIT ${15};
+        WHERE GTV.grado_id = $1 AND GTV.tema_id = $2;
       `,
         [grado_id, tema_id]
       );
@@ -334,7 +333,8 @@ const getVocablosByGradoTema = async (req, res, next) => {
         }
       }
       let randomNumbers = [];
-      while (randomNumbers.length < vocablos_number) {
+      maxVocablos = result.rows.length > vocablos_number ? vocablos_number : result.rows.length-1> 0 ? result.rows.length-1 : 1
+      while (randomNumbers.length < maxVocablos) {
         const randomNumber = getRandomInt(result.rows.length - 1);
         if (!randomNumbers.includes(randomNumber)) {
           randomNumbers.push(randomNumber);
@@ -342,7 +342,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
       }
       let i = 0;
       let data2 = {};
-      for (i = 0; i < vocablos_number; i++) {
+      for (i = 0; i < maxVocablos; i++) {
         // data2[`${ids[randomNumbers[i]]}`] = data[`${ids[randomNumbers[i]]}`];
         data2[`${ids[randomNumbers[i]]}`] = data[`${ids[i]}`];
       }

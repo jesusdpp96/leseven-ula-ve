@@ -184,29 +184,6 @@ export default function TemaVocablosList({ grado, tema }) {
         >
           Volver
         </Button>
-        {route ? (
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            onClick={() => {
-              navigate(`/dashboard/practica?grado=${grado}&tema=${tema}`);
-            }}
-          >
-            Comenzar Práctica
-          </Button>
-        ) : (
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            onClick={() => {
-              navigate(`/dashboard/prueba/practica?grado=${grado}&tema=${tema}`);
-            }}
-          >
-            Comenzar Prueba
-          </Button>
-        )}
       </Box>
       <Typography variant="h4" sx={{ color: "text.primary", padding: "16px" }}>
         Vocablos de {<b>{temaTitle}</b>} -{" "}
@@ -244,18 +221,7 @@ export default function TemaVocablosList({ grado, tema }) {
           marginTop: "16px",
         }}
       >
-        {route ? (
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            onClick={() => {
-              navigate(`/dashboard/practica?grado=${grado}&tema=${tema}`);
-            }}
-          >
-            Comenzar Práctica
-          </Button>
-        ) : (
+        {!route && (
           <Button
             variant="contained"
             color="primary"
