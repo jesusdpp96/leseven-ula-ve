@@ -64,9 +64,6 @@ export default function Inicio() {
           F
         />
       </Grid>
-      {/* <Grid item xs={12} ml={6} mr={6}>
-        <YoutubeEmbed embedLink={"https://www.youtube.com/watch?v=urpJuQ9IfHc"} />
-      </Grid> */}
       <Grid item xs={6}>
         <CardMedia
           component="img"
