@@ -264,6 +264,7 @@ export default function GradoTemasList({ grado }) {
   const [temas, setTemas] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [gradoTitle, setGradoTitle] = React.useState();
+  const route = window.location.pathname === "/dashboard/prueba";
 
   const getTemas = async () => {
     try {
@@ -322,26 +323,47 @@ export default function GradoTemasList({ grado }) {
           Volver
         </Button>
       </Box>
-      <Typography variant="h4" sx={{ color: "text.primary", padding: "16px" }}>
-        Grados - {<b>{gradoTitle}</b>}
-      </Typography>
-      <Grid
-        container
-        spacing={{ xs: 2, md: 4 }}
-        columns={{ xs: 4, sm: 8, md: 8 }}
-      >
-        <ItemList2 temas={temas} setQuery={setQuery} gradoTitle={gradoTitle} />
-      </Grid>
-      <Typography variant="h4" sx={{ color: "text.primary", padding: "16px" }}>
-        Temas - {<b>{gradoTitle}</b>}
-      </Typography>
-      <Grid
-        container
-        spacing={{ xs: 2, md: 4 }}
-        columns={{ xs: 4, sm: 8, md: 8 }}
-      >
-        <ItemList temas={temas} setQuery={setQuery} showCategorias={true} />
-      </Grid>
+
+      {route && (
+        <>
+          <Typography
+            variant="h4"
+            sx={{ color: "text.primary", padding: "16px" }}
+          >
+            Grados - {<b>{gradoTitle}</b>}
+          </Typography>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 4 }}
+            columns={{ xs: 4, sm: 8, md: 8 }}
+          >
+            <ItemList2
+              temas={temas}
+              setQuery={setQuery}
+              gradoTitle={gradoTitle}
+            />
+          </Grid>
+        </>
+      )}
+
+      {!route && (
+        <>
+          {" "}
+          <Typography
+            variant="h4"
+            sx={{ color: "text.primary", padding: "16px" }}
+          >
+            Temas - {<b>{gradoTitle}</b>}
+          </Typography>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 4 }}
+            columns={{ xs: 4, sm: 8, md: 8 }}
+          >
+            <ItemList temas={temas} setQuery={setQuery} showCategorias={true} />
+          </Grid>
+        </>
+      )}
     </Box>
   );
 }
