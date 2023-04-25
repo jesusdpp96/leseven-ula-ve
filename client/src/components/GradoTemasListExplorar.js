@@ -10,6 +10,25 @@ import Typography from '@mui/material/Typography';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import sendLogs from '../utils/sendLogs';
 
+function quitarAcentos(cadena) {
+  const acentos = {
+    á: "a",
+    é: "e",
+    í: "i",
+    ó: "o",
+    ú: "u",
+    Á: "A",
+    É: "E",
+    Í: "I",
+    Ó: "O",
+    Ú: "U",
+  };
+  return cadena
+    .split("")
+    .map((letra) => acentos[letra] || letra)
+    .join("")
+    .toString()
+}
 
 const ItemList = ({temas, setQuery, showCategorias}) => {
 
@@ -20,7 +39,6 @@ const ItemList = ({temas, setQuery, showCategorias}) => {
     const vocablos_counter = elem.vocablos_counter || 0;
     const vocablos_vistos = elem.vocablos_vistos || 0
     const percentage = Math.ceil(vocablos_vistos/vocablos_counter * 100);
-    console.log({percentage});
     const backgroundImage = `linear-gradient(to right, rgba(0,128,0,${percentage/200}) ${percentage}%, rgba(0,128,0,${percentage/1000}))`;
 
     return (
@@ -29,7 +47,7 @@ const ItemList = ({temas, setQuery, showCategorias}) => {
           <CardMedia
             component="img"
             sx={{ width: 130, height: 130, objectFit: 'contain' }}
-            image={elem.tema_image_src}
+            image={quitarAcentos(elem.tema_image_src)}
             alt="Live from space album cover"
           />
           <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1}}>

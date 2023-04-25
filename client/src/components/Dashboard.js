@@ -197,7 +197,7 @@ function PanelItems({funcionalidad_sistema}) {
             <CategoryIcon />
           </ListItemIcon>
           <ListItemText
-            primary={"Vocabulario por Tema"}
+            primary={"Vocabulario por Categoría"}
             primaryTypographyProps={{ 
                 style: { 
                   whiteSpace: 'normal',
@@ -361,7 +361,7 @@ function DashboardContent({setAuth}) {
               sx={{ flexGrow: 1 }}
             >
               {/* LSVMérida - Lengua de Señas Venezolana */}
-              LeSeVen
+              LeSeVen Mérida
             </Typography>
             {/* <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">

@@ -11,96 +11,136 @@ import VocabloModal from "./VocabloModal";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import sendLogs from "../utils/sendLogs";
 
+function quitarAcentos(cadena) {
+  const acentos = {
+    á: "a",
+    é: "e",
+    í: "i",
+    ó: "o",
+    ú: "u",
+    Á: "A",
+    É: "E",
+    Í: "I",
+    Ó: "O",
+    Ú: "U",
+  };
+  return cadena
+    .split("")
+    .map((letra) => acentos[letra] || letra)
+    .join("")
+    .toString()
+}
+
+
 const ItemList = ({ vocablos, setQuery, updateVocablos }) => {
-  return vocablos.map((elem, index) => {
-    const indexImage =
-      elem && elem.recursos
-        ? elem.recursos.findIndex((elem) => elem.tipo === "image")
-        : -1;
-    let imageSrc;
+  if (vocablos.length > 0) {
+    return vocablos?.map((elem, index) => {
+      const indexImage =
+        elem && elem.recursos
+          ? elem.recursos.findIndex((elem) => elem.tipo === "image")
+          : -1;
+      let imageSrc;
 
-    if (indexImage !== -1) {
-      imageSrc = elem.recursos[indexImage].enlace;
-    }
+      if (indexImage !== -1) {
+        imageSrc = elem.recursos[indexImage].enlace;
+      }
 
-    const visto = elem.visto;
-    const correcto = elem.correcto;
+      const visto = elem.visto;
+      const correcto = elem.correcto;
 
-    let backgroundColor = "#fff";
-    backgroundColor = visto ? "rgba(245, 240, 142, 0.7)" : backgroundColor;
-    backgroundColor = correcto ? "rgba(0, 128, 0, 0.3)" : backgroundColor;
+      let backgroundColor = "#fff";
+      backgroundColor = visto ? "rgba(245, 240, 142, 0.7)" : backgroundColor;
+      backgroundColor = correcto ? "rgba(0, 128, 0, 0.3)" : backgroundColor;
 
-    return (
-      <Grid item xs={4} sm={4} md={4} key={index}>
-        <Card
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            backgroundColor,
-          }}
-        >
-          <CardMedia
-            component="img"
-            sx={{ width: 130, height: 130, objectFit: "contain" }}
-            image={imageSrc}
-            alt="Live from space album cover"
-          />
-          <Box sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
-            <CardContent
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-start",
-                justifyContent: "flex-start",
-              }}
-            >
-              <Typography
-                variant="subtitle1"
-                color="text.secondary"
-                component="div"
+      return (
+        <Grid item xs={4} sm={4} md={4} key={index}>
+          <Card
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              backgroundColor,
+            }}
+          >
+            <CardMedia
+              component="img"
+              sx={{ width: 130, height: 130, objectFit: "contain" }}
+              image={quitarAcentos(imageSrc)}
+              alt="Live from space album cover"
+            />
+            <Box sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
+              <CardContent
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                }}
               >
-                {elem.vocablo_palabra}
-              </Typography>
-              <Typography
-                variant="string"
-                color="text.secondary"
-                component="div"
-                style={{ color: "#999999", fontSize: "12px" }}
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="div"
+                >
+                  {elem.vocablo_palabra}
+                </Typography>
+                <Typography
+                  variant="string"
+                  color="text.secondary"
+                  component="div"
+                  style={{ color: "#999999", fontSize: "12px" }}
+                >
+                  Vocablo
+                </Typography>
+                <Typography
+                  variant="string"
+                  color="text.secondary"
+                  component="div"
+                  style={{ color: "#999999", fontSize: "12px" }}
+                >
+                  {visto ? "Visto " : null} {visto && correcto ? " • " : null}{" "}
+                  {correcto ? " Correcto" : null}
+                </Typography>
+              </CardContent>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "flex-end",
+                  pl: 1,
+                  pb: 1,
+                  padding: "16px",
+                }}
               >
-                Vocablo
-              </Typography>
-              <Typography
-                variant="string"
-                color="text.secondary"
-                component="div"
-                style={{ color: "#999999", fontSize: "12px" }}
-              >
-                {visto ? "Visto " : null} {visto && correcto ? " • " : null}{" "}
-                {correcto ? " Correcto" : null}
-              </Typography>
-            </CardContent>
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "flex-end",
-                pl: 1,
-                pb: 1,
-                padding: "16px",
-              }}
-            >
-              {/* <Button variant="outlined" size="small" onClick={() => {setQuery({grado: elem.grado_id, tema: elem.tema_id})}}>Estudiar vocablo</Button> */}
-              <VocabloModal
-                buttonText="Estudiar vocablo"
-                vocablo={elem}
-                updateVocablos={updateVocablos}
-              />
+                {/* <Button variant="outlined" size="small" onClick={() => {setQuery({grado: elem.grado_id, tema: elem.tema_id})}}>Estudiar vocablo</Button> */}
+                <VocabloModal
+                  buttonText="Estudiar vocablo"
+                  vocablo={elem}
+                  updateVocablos={updateVocablos}
+                />
+              </Box>
             </Box>
-          </Box>
-        </Card>
+          </Card>
+        </Grid>
+      );
+    });
+  } else {
+    return (
+      <Grid
+        container
+        spacing={{ xs: 2, md: 4 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+      >
+        <Typography
+          variant="h5"
+          sx={{ color: "text.primary", padding: "32px" }}
+          mt={5}
+          ml={6}
+        >
+          No hay vocablos disponibles en este tema.
+        </Typography>
       </Grid>
     );
-  });
+  }
 };
 const opciones_por_grado = [
   5, // preescolar
@@ -125,7 +165,7 @@ export default function TemaVocablosList({ grado, tema }) {
     try {
       setLoading(true);
       const response = await fetch(
-        `/vocablos-by-grado-tema/${grado}/${tema}/${opciones_por_grado[grado]}`,
+        `/vocablos-by-grado-tema/${grado}/${tema}/100`,
         {
           method: "GET",
           headers: {
@@ -185,35 +225,46 @@ export default function TemaVocablosList({ grado, tema }) {
           Volver
         </Button>
       </Box>
-      <Typography variant="h4" sx={{ color: "text.primary", padding: "16px" }}>
-        Vocablos de {<b>{temaTitle}</b>} -{" "}
-        {<span style={{ color: "#999" }}>{gradoTitle}</span>}
-      </Typography>
-      {/* <Grid
+
+      {vocablos.length > 0 ? (
+        <>
+          <Typography
+            variant="h4"
+            sx={{ color: "text.primary", padding: "16px" }}
+          >
+            Vocablos de {<b>{temaTitle}</b>} -{" "}
+            {<span style={{ color: "#999" }}>{gradoTitle}</span>}
+          </Typography>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 4 }}
+            columns={{ xs: 4, sm: 8, md: 12 }}
+          >
+            <ItemList
+              vocablos={vocablos}
+              setQuery={setQuery}
+              updateVocablos={() => {
+                getVocablos();
+              }}
+            />
+          </Grid>
+        </>
+      ) : (
+        <Grid
           container
           spacing={{ xs: 2, md: 4 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
-          justifyContent="flex-end"
         >
-          <Grid item xs={4} sm={4} md={4} key="item-12312">
-          <Button variant="contained" color="secundary">
-            Comenzar una Práctica
-          </Button>
-          </Grid>
-        </Grid> */}
-      <Grid
-        container
-        spacing={{ xs: 2, md: 4 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
-      >
-        <ItemList
-          vocablos={vocablos}
-          setQuery={setQuery}
-          updateVocablos={() => {
-            getVocablos();
-          }}
-        />
-      </Grid>
+          <Typography
+            variant="h5"
+            sx={{ color: "text.primary", padding: "32px" }}
+            mt={5}
+          >
+            No hay vocablos disponibles en este tema.
+          </Typography>
+        </Grid>
+      )}
+
       <Box
         style={{
           display: "flex",
@@ -227,7 +278,9 @@ export default function TemaVocablosList({ grado, tema }) {
             color="primary"
             size="large"
             onClick={() => {
-              navigate(`/dashboard/prueba/practica?grado=${grado}&tema=${tema}`);
+              navigate(
+                `/dashboard/prueba/practica?grado=${grado}&tema=${tema}`
+              );
             }}
           >
             Comenzar Prueba

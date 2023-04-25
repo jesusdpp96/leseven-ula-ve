@@ -55,19 +55,26 @@ export function YoutubeEmbed({ embedLink }) {
 export default function Inicio() {
   return (
     <Grid container spacing={{ xs: 2, sm: 3, md: 3 }}>
-      <Grid item xs={12} ml={6} mr={6}>
+      <Grid item xs={6}>
         <CardMedia
           component="img"
-          sx={{ objectFit: "contain" }}
-          image={"/assets/inicio/Logos.png"}
+          sx={{maxHeight:250, objectFit: "contain" }}
+          image={"/assets/inicio/ula.png"}
           alt={`ULA`}
-          F
         />
       </Grid>
       <Grid item xs={6}>
         <CardMedia
           component="img"
-          sx={{ maxHeight:600,objectFit: "contain" }}
+          sx={{maxHeight:250, objectFit: "contain" }}
+          image={"/assets/inicio/escuela.jpg"}
+          alt={`Escuela`}
+        />
+      </Grid>
+      <Grid item xs={6}>
+        <CardMedia
+          component="img"
+          sx={{ maxHeight:400,objectFit: "contain" }}
           image={"/assets/images/nina.png"}
           alt={`ULA`}
           F
@@ -76,7 +83,7 @@ export default function Inicio() {
       <Grid item xs={6} >
         <CardMedia
           component="img"
-          sx={{maxHeight:600, objectFit: "contain" }}
+          sx={{maxHeight:400, objectFit: "contain" }}
           image={"/assets/images/nino.png"}
           alt={`ULA`}
           F

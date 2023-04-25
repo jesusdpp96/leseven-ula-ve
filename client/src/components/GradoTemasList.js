@@ -10,6 +10,27 @@ import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import sendLogs from "../utils/sendLogs";
 
+
+function quitarAcentos(cadena) {
+  const acentos = {
+    á: "a",
+    é: "e",
+    í: "i",
+    ó: "o",
+    ú: "u",
+    Á: "A",
+    É: "E",
+    Í: "I",
+    Ó: "O",
+    Ú: "U",
+  };
+  return cadena
+    .split("")
+    .map((letra) => acentos[letra] || letra)
+    .join("")
+    .toString()
+}
+
 const ItemList = ({ temas, setQuery, showCategorias }) => {
   // const temas2 = temas.map((elem) => ({...elem, tema_image_src: `/assets/images/image${Math.floor(Math.random() * 58)}.png` }));
   const buttonTitle = window.location.pathname.includes("prueba")
@@ -26,11 +47,9 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
       const vocablos_counter = elem.vocablos_counter || 0;
       const vocablos_vistos = elem.vocablos_vistos || 0;
       const percentage = Math.ceil((vocablos_vistos / vocablos_counter) * 100);
-      console.log({ percentage });
       const backgroundImage = `linear-gradient(to right, rgba(0,128,0,${
         percentage / 200
       }) ${percentage}%, rgba(0,128,0,${percentage / 1000}))`;
-
       return (
         <Grid item xs={4} sm={4} md={4} key={index}>
           <Card
@@ -43,7 +62,7 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
             <CardMedia
               component="img"
               sx={{ width: 130, height: 130, objectFit: "contain" }}
-              image={elem.tema_image_src}
+              image={quitarAcentos(elem.tema_image_src)}
               alt="Live from space album cover"
             />
             <Box sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
@@ -108,7 +127,6 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
 
 const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
   // const temas2 = temas.map((elem) => ({...elem, tema_image_src: `/assets/images/image${Math.floor(Math.random() * 58)}.png` }));
-
   return temas
     .filter(
       (elem) =>
@@ -147,6 +165,7 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
       const buttonTitle = window.location.pathname.includes("prueba")
         ? "Prueba"
         : "Estudiar";
+      console.log("quitarAcentos(elem.tema_image_src)",quitarAcentos(elem.tema_image_src))
       return (
         <Grid item xs={4} sm={4} md={4} key={index}>
           <Card
@@ -159,7 +178,7 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
             <CardMedia
               component="img"
               sx={{ width: 130, height: 130, objectFit: "contain" }}
-              image={elem.tema_image_src}
+              image={quitarAcentos(elem.tema_image_src)}
               alt="Live from space album cover"
             />
             <Box sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
@@ -353,7 +372,7 @@ export default function GradoTemasList({ grado }) {
             variant="h4"
             sx={{ color: "text.primary", padding: "16px" }}
           >
-            Temas - {<b>{gradoTitle}</b>}
+            Categorías - {<b>{gradoTitle}</b>}
           </Typography>
           <Grid
             container

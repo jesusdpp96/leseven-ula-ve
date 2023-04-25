@@ -183,7 +183,9 @@ function getRandomInt(max) {
 const getVocablosByGradoTema = async (req, res, next) => {
   try {
     const { grado_id, tema_id, vocablos_number } = req.params;
-    if(grado_id == 6){
+    let list = [];
+    let list2 = [];
+    if (grado_id == 6) {
       const result = await pool.query(
         `
         SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
@@ -206,22 +208,23 @@ const getVocablosByGradoTema = async (req, res, next) => {
       `,
         [grado_id, tema_id]
       );
-  
+      let index = 0;
       const data = {};
-  
+      const data2 = {};
       for (const row of result.rows) {
         const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
         data[id] = row;
+        data[id].id2 = index;
+        list.push(row);
+        index += 1;
       }
-      let ids = [];
-  
       for (const row of result2.rows) {
         const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
         if (data[id]) {
           if (!data[id].recursos) {
             data[id].recursos = [];
           }
-  
+          list[data[id].id2].recursos.push(row);
           data[id].recursos.push(row);
         }
       }
@@ -229,10 +232,11 @@ const getVocablosByGradoTema = async (req, res, next) => {
         `SELECT * FROM vocablo_visto WHERE usuario_id = $1 AND grado_id = $2 AND tema_id = $3`,
         [req.user, grado_id, tema_id]
       );
-  
+
       for (const vv of vocablosVistosQuery.rows) {
         const id = `${vv.grado_id}${vv.tema_id}${vv.vocablo_id}`;
         if (data[id]) {
+          list[data[id].id2].visto = true;
           data[id].visto = true;
         } else {
           data[id] = {
@@ -240,15 +244,16 @@ const getVocablosByGradoTema = async (req, res, next) => {
           };
         }
       }
-  
+
       const vocablosCorrectosQuery = await pool.query(
         `SELECT * FROM vocablo_correcto WHERE usuario_id = $1 AND grado_id = $2 AND tema_id = $3`,
         [req.user, grado_id, tema_id]
       );
-  
+
       for (const vc of vocablosCorrectosQuery.rows) {
         const id = `${vc.grado_id}${vc.tema_id}${vc.vocablo_id}`;
         if (data[id]) {
+          list[data[id].id2].correcto = Boolean(vc.correcto);
           data[id].correcto = Boolean(vc.correcto);
         } else {
           data[id] = {
@@ -256,8 +261,37 @@ const getVocablosByGradoTema = async (req, res, next) => {
           };
         }
       }
-      res.json(Object.values(data));
-    }else{
+      const existsObj = {};
+
+      list?.filter((elem) => {
+        if (existsObj[elem.vocablo_id]) {
+          return false;
+        }
+        if (elem?.recursos?.length > 0) {
+          itemAgregado = false;
+          elem.recursos.map((item) => {
+            if (item.tipo === "video" && !itemAgregado) {
+              if (
+                item.enlace !== "" &&
+                item.enlace !== "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+              ) {
+                itemAgregado = true;
+                list2.push(elem);
+              }
+            }
+          });
+        }
+        existsObj[elem.vocablo_id] = true;
+
+        return true;
+      });
+
+      list2?.map((item) => {
+        data2[item.vocablo_id] = item;
+      });
+
+      res.json(Object.values(data2));
+    } else {
       const result = await pool.query(
         `
         SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
@@ -279,15 +313,14 @@ const getVocablosByGradoTema = async (req, res, next) => {
       `,
         [grado_id, tema_id]
       );
-  
+
       const data = {};
-  
       for (const row of result.rows) {
         const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
         data[id] = row;
       }
       let ids = [];
-  
+
       for (const row of result2.rows) {
         const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
         if (!ids.includes(id)) {
@@ -297,7 +330,6 @@ const getVocablosByGradoTema = async (req, res, next) => {
           if (!data[id].recursos) {
             data[id].recursos = [];
           }
-  
           data[id].recursos.push(row);
         }
       }
@@ -305,7 +337,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
         `SELECT * FROM vocablo_visto WHERE usuario_id = $1 AND grado_id = $2 AND tema_id = $3`,
         [req.user, grado_id, tema_id]
       );
-  
+
       for (const vv of vocablosVistosQuery.rows) {
         const id = `${vv.grado_id}${vv.tema_id}${vv.vocablo_id}`;
         if (data[id]) {
@@ -316,12 +348,12 @@ const getVocablosByGradoTema = async (req, res, next) => {
           };
         }
       }
-  
+
       const vocablosCorrectosQuery = await pool.query(
         `SELECT * FROM vocablo_correcto WHERE usuario_id = $1 AND grado_id = $2 AND tema_id = $3`,
         [req.user, grado_id, tema_id]
       );
-  
+
       for (const vc of vocablosCorrectosQuery.rows) {
         const id = `${vc.grado_id}${vc.tema_id}${vc.vocablo_id}`;
         if (data[id]) {
@@ -333,7 +365,12 @@ const getVocablosByGradoTema = async (req, res, next) => {
         }
       }
       let randomNumbers = [];
-      maxVocablos = result.rows.length > vocablos_number ? vocablos_number : result.rows.length-1> 0 ? result.rows.length-1 : 1
+      maxVocablos =
+        result.rows.length > vocablos_number
+          ? vocablos_number
+          : result.rows.length - 1 > 0
+          ? result.rows.length - 1
+          : 1;
       while (randomNumbers.length < maxVocablos) {
         const randomNumber = getRandomInt(result.rows.length - 1);
         if (!randomNumbers.includes(randomNumber)) {
@@ -343,13 +380,22 @@ const getVocablosByGradoTema = async (req, res, next) => {
       let i = 0;
       let data2 = {};
       for (i = 0; i < maxVocablos; i++) {
-        // data2[`${ids[randomNumbers[i]]}`] = data[`${ids[randomNumbers[i]]}`];
-        data2[`${ids[randomNumbers[i]]}`] = data[`${ids[i]}`];
+        itemAgregado = false;
+        data[`${ids[i]}`].recursos.map((item) => {
+          if (item.tipo === "video" && !itemAgregado) {
+            if (
+              item.enlace !== "" &&
+              item.enlace !== "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+            ) {
+              itemAgregado = true;
+              data2[`${ids[randomNumbers[i]]}`] = data[`${ids[i]}`];
+            }
+          }
+        });
       }
+      console.log('data2',data2)
       res.json(Object.values(data2));
     }
-
-
   } catch (error) {
     next(error);
   }
@@ -359,6 +405,8 @@ const getVocablosByGradoTema = async (req, res, next) => {
 
 const getVocablosByTema = async (req, res, next) => {
   try {
+    let list = [];
+    let list2 = [];
     const { tema_id } = req.params;
     const result = await pool.query(
       `
@@ -382,12 +430,15 @@ const getVocablosByTema = async (req, res, next) => {
     `,
       [tema_id]
     );
-
+    let index = 0;
     const data = {};
-
+    const data2 = {};
     for (const row of result.rows) {
       const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
       data[id] = row;
+      data[id].id2 = index;
+      list.push(row);
+      index += 1;
     }
 
     for (const row of result2.rows) {
@@ -397,6 +448,7 @@ const getVocablosByTema = async (req, res, next) => {
           data[id].recursos = [];
         }
 
+        list[data[id].id2].recursos.push(row);
         data[id].recursos.push(row);
       }
     }
@@ -409,6 +461,7 @@ const getVocablosByTema = async (req, res, next) => {
     for (const vv of vocablosVistosQuery.rows) {
       const id = `${vv.grado_id}${vv.tema_id}${vv.vocablo_id}`;
       if (data[id]) {
+        list[data[id].id2].visto = true;
         data[id].visto = true;
       } else {
         data[id] = {
@@ -425,6 +478,7 @@ const getVocablosByTema = async (req, res, next) => {
     for (const vc of vocablosCorrectosQuery.rows) {
       const id = `${vc.grado_id}${vc.tema_id}${vc.vocablo_id}`;
       if (data[id]) {
+        list[data[id].id2].correcto = Boolean(vc.correcto);
         data[id].correcto = Boolean(vc.correcto);
       } else {
         data[id] = {
@@ -432,8 +486,36 @@ const getVocablosByTema = async (req, res, next) => {
         };
       }
     }
+    const existsObj = {};
+    list?.filter((elem) => {
+      if (existsObj[elem.vocablo_id]) {
+        return false;
+      }
+      if (elem.recursos.length > 0) {
+        itemAgregado = false;
+        elem.recursos.map((item) => {
+          if (item.tipo === "video" && !itemAgregado) {
+            if (
+              item.enlace !== "" &&
+              item.enlace !== "https://www.youtube.com/watch?v=urpJuQ9IfHc"
+            ) {
+              itemAgregado = true;
+              list2.push(elem);
+            }
+          }
+        });
+      }
+      existsObj[elem.vocablo_id] = true;
 
-    res.json(Object.values(data));
+      return true;
+    });
+
+    list2?.map((item) => {
+      data2[item.vocablo_id] = item;
+    });
+    console.log('data2',data2)
+
+    res.json(Object.values(data2));
   } catch (error) {
     next(error);
   }
