@@ -77,6 +77,9 @@ const getAllVocablos = async (req, res, next) => {
               ) {
                 itemAgregado = true;
                 list2.push(elem);
+              }else{
+                console.log('palabra',elem.vocablo_palabra)
+                // palabrasFaltantes.push(elem.vocablo_palabra)
               }
             }
           });
