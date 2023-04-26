@@ -26,6 +26,7 @@ const getAllVocablos = async (req, res, next) => {
     let _limit = 10;
     let list = [];
     let list2 = [];
+    let faltantes = [];
     if (word_search === "-1" || word_search === "") {
       const allVocablos = await pool.query(`
       SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
@@ -77,9 +78,10 @@ const getAllVocablos = async (req, res, next) => {
               ) {
                 itemAgregado = true;
                 list2.push(elem);
-              }else{
-                console.log('palabra',elem.vocablo_palabra)
-                // palabrasFaltantes.push(elem.vocablo_palabra)
+              } else {
+                // console.log("palabra", elem.vocablo_palabra);
+                if (!faltantes.includes(elem.vocablo_palabra))
+                  faltantes.push(elem.vocablo_palabra);
               }
             }
           });
@@ -88,6 +90,8 @@ const getAllVocablos = async (req, res, next) => {
 
         return true;
       });
+      console.log("Existentes", list2.length);
+      console.log("faltantes", faltantes.length);
 
       let total = list2.length;
       start = page_number * _limit - _limit;
@@ -97,6 +101,7 @@ const getAllVocablos = async (req, res, next) => {
 
       res.json({
         total: total,
+        faltantes:faltantes,
         rows: Object.values(newData),
         page: page_number,
         pages: pages,
@@ -154,6 +159,10 @@ const getAllVocablos = async (req, res, next) => {
               ) {
                 itemAgregado = true;
                 list2.push(elem);
+              }else {
+                // console.log("palabra", elem.vocablo_palabra);
+                if (!faltantes.includes(elem.vocablo_palabra))
+                  faltantes.push(elem.vocablo_palabra);
               }
             }
           });
@@ -171,6 +180,7 @@ const getAllVocablos = async (req, res, next) => {
 
       res.json({
         total: total,
+        faltantes: faltantes,
         rows: Object.values(newData),
         page: page_number,
         pages: pages,
@@ -396,7 +406,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
           }
         });
       }
-      console.log('data2',data2)
+      console.log("data2", data2);
       res.json(Object.values(data2));
     }
   } catch (error) {
@@ -516,7 +526,7 @@ const getVocablosByTema = async (req, res, next) => {
     list2?.map((item) => {
       data2[item.vocablo_id] = item;
     });
-    console.log('data2',data2)
+    console.log("data2", data2);
 
     res.json(Object.values(data2));
   } catch (error) {

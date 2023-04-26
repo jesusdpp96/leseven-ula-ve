@@ -129,7 +129,9 @@ export default function Glosario() {
       });
       const responseData = await response.json();
       // const existsObj = {};
-
+      console.log('Faltantes', responseData?.faltantes)
+      console.log('Numero de Faltantes', responseData?.faltantes.length)
+      console.log('Palabras completadas', responseData?.total)
       const dataFiltered = responseData?.rows?.filter((elem) => {
         // if (existsObj[elem.vocablo_id]) {
         //   return false;
