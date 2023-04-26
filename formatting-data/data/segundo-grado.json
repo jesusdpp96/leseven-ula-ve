@@ -46,21 +46,21 @@
      "tema":"Animales",
      "palabra":"Burro",
      "image":"/assets/images/burro.png",
-     "video":""
+     "video":"https://youtu.be/QS6Glqh-YrY"
   },
   {
      "grado":"Segundo grado",
      "tema":"Animales",
      "palabra":"Cochino",
      "image":"/assets/images/cochino.png",
-     "video":""
+     "video":"https://youtu.be/yW1DpXdIPlg"
   },
   {
      "grado":"Segundo grado",
      "tema":"Animales",
      "palabra":"Oveja",
      "image":"/assets/images/oveja.png",
-     "video":""
+     "video":"https://youtu.be/v9Q4XrKlKVM"
   },
   {
      "grado":"Segundo grado",
@@ -81,42 +81,42 @@
      "tema":"Colores",
      "palabra":"Amarillo",
      "image":"/assets/images/amarillo.png",
-     "video":""
+     "video":"https://youtu.be/w6mNcISiSmg"
   },
   {
      "grado":"Segundo grado",
      "tema":"Colores",
      "palabra":"Azul",
      "image":"/assets/images/azul.png",
-     "video":""
+     "video":"https://youtu.be/sQP0UeO_ta8"
   },
   {
      "grado":"Segundo grado",
      "tema":"Colores",
      "palabra":"Morado",
      "image":"/assets/images/morado.png",
-     "video":""
+     "video":"https://youtu.be/p-ASmKkSYCM"
   },
   {
      "grado":"Segundo grado",
      "tema":"Colores",
      "palabra":"Negro",
      "image":"/assets/images/negro.png",
-     "video":""
+     "video":"https://youtu.be/eflrccjM1DQ"
   },
   {
      "grado":"Segundo grado",
      "tema":"Colores",
      "palabra":"Verde",
      "image":"/assets/images/verde.png",
-     "video":""
+     "video":"https://youtu.be/GhLzHYXTkI8"
   },
   {
      "grado":"Segundo grado",
      "tema":"Días de la semana",
      "palabra":"Domingo",
      "image":"/assets/images/domingo.png",
-     "video":""
+     "video":"https://youtu.be/IDuJh0W59cM"
   },
   {
      "grado":"Segundo grado",
@@ -137,14 +137,14 @@
      "tema":"Días de la semana",
      "palabra":"Miercoles",
      "image":"/assets/images/miercoles.png",
-     "video":""
+     "video":"https://youtu.be/JT2CsVLRnZ0"
   },
   {
      "grado":"Segundo grado",
      "tema":"Días de la semana",
      "palabra":"Viernes",
      "image":"/assets/images/viernes.png",
-     "video":""
+     "video":"https://youtu.be/hvZBmEt1gwQ"
   },
   {
      "grado":"Segundo grado",
@@ -207,28 +207,28 @@
      "tema":"Frutas",
      "palabra":"Cambur",
      "image":"/assets/images/cambur.png",
-     "video":""
+     "video":"https://youtu.be/lyypmRh4I7M"
   },
   {
      "grado":"Segundo grado",
      "tema":"Frutas",
      "palabra":"Coco",
      "image":"/assets/images/coco.png",
-     "video":""
+     "video":"https://youtu.be/KAgVXliO79o"
   },
   {
      "grado":"Segundo grado",
      "tema":"Frutas",
      "palabra":"Limon",
      "image":"/assets/images/limon.png",
-     "video":""
+     "video":"https://youtu.be/1FrsnuMclN4"
   },
   {
      "grado":"Segundo grado",
      "tema":"Frutas",
      "palabra":"Melon",
      "image":"/assets/images/melon.png",
-     "video":""
+     "video":"https://youtu.be/r6HDQiHTmjE"
   },
   {
      "grado":"Segundo grado",
@@ -298,7 +298,7 @@
      "tema":"Lugares",
      "palabra":"Patio",
      "image":"/assets/images/patio.png",
-     "video":""
+     "video":"https://youtu.be/dlSi7ZicpPg"
   },
   {
      "grado":"Segundo grado",
@@ -326,7 +326,7 @@
      "tema":"Lugares de merida",
      "palabra":"Plaza bolivar",
      "image":"/assets/images/plaza-bolivar.png",
-     "video":""
+     "video":"https://youtu.be/JblGzPmscGU"
   },
   {
      "grado":"Segundo grado",
@@ -340,28 +340,28 @@
      "tema":"Medios de transporte",
      "palabra":"Buseta",
      "image":"/assets/images/buseta.png",
-     "video":""
+     "video":"https://youtu.be/j0OTrptZaVQ"
   },
   {
      "grado":"Segundo grado",
      "tema":"Medios de transporte",
      "palabra":"Camion",
      "image":"/assets/images/camion.png",
-     "video":""
+     "video":"https://youtu.be/rFVhDBsxT5U"
   },
   {
      "grado":"Segundo grado",
      "tema":"Medios de transporte",
      "palabra":"Trolcable",
      "image":"/assets/images/trolcable.png",
-     "video":""
+     "video":"https://youtu.be/OQ7hBKuukOo"
   },
   {
      "grado":"Segundo grado",
      "tema":"Medios de transporte",
      "palabra":"Trolebus",
      "image":"/assets/images/trolebus.png",
-     "video":""
+     "video":"https://youtu.be/9JQzoLFGmHA"
   },
   {
      "grado":"Segundo grado",
@@ -375,28 +375,28 @@
      "tema":"Meses del año",
      "palabra":"Diciembre",
      "image":"/assets/images/diciembre.png",
-     "video":""
+     "video":"https://youtu.be/uvgOVLoAxEo"
   },
   {
      "grado":"Segundo grado",
      "tema":"Meses del año",
      "palabra":"Enero",
      "image":"/assets/images/enero.png",
-     "video":""
+     "video":"https://youtu.be/rOQXEBThhTY"
   },
   {
      "grado":"Segundo grado",
      "tema":"Meses del año",
      "palabra":"Febrero",
      "image":"/assets/images/febrero.png",
-     "video":""
+     "video":"https://youtu.be/MrX_vJ_H4bE"
   },
   {
      "grado":"Segundo grado",
      "tema":"Meses del año",
      "palabra":"Octubre",
      "image":"/assets/images/octubre.png",
-     "video":""
+     "video":"https://youtu.be/WI6IjDhr9Vs"
   },
   {
      "grado":"Segundo grado",
@@ -515,14 +515,14 @@
      "tema":"Nocion temporal",
      "palabra":"Despues",
      "image":"/assets/images/despues.png",
-     "video":""
+     "video":"https://youtu.be/-UY25i5EQmw"
   },
   {
      "grado":"Segundo grado",
      "tema":"Nocion temporal",
      "palabra":"Hoy",
      "image":"/assets/images/hoy.png",
-     "video":""
+     "video":"https://youtu.be/d14MOlJ29Tw"
   },
   {
      "grado":"Segundo grado",
@@ -543,21 +543,21 @@
      "tema":"Numeros",
      "palabra":"Cinco",
      "image":"/assets/images/cinco.png",
-     "video":""
+     "video":"https://youtu.be/yA1oyUGvAU0"
   },
   {
      "grado":"Segundo grado",
      "tema":"Numeros",
      "palabra":"Nueve",
      "image":"/assets/images/nueve.png",
-     "video":""
+     "video":"https://youtu.be/XotNlw8FaPo"
   },
   {
      "grado":"Segundo grado",
      "tema":"Numeros",
      "palabra":"Ocho",
      "image":"/assets/images/ocho.png",
-     "video":""
+     "video":"https://youtu.be/YYr_VIQLprM"
   },
   {
      "grado":"Segundo grado",
@@ -571,7 +571,7 @@
      "tema":"Numeros",
      "palabra":"Uno",
      "image":"/assets/images/uno.png",
-     "video":""
+     "video":"https://youtu.be/tY1J669yyps"
   },
   {
      "grado":"Segundo grado",
@@ -585,7 +585,7 @@
      "tema":"Objetos del hogar",
      "palabra":"Lampara",
      "image":"/assets/images/lampara.png",
-     "video":""
+     "video":"https://youtu.be/tmrIUUJy1gE"
   },
   {
      "grado":"Segundo grado",
@@ -599,21 +599,21 @@
      "tema":"Objetos del hogar",
      "palabra":"Silla",
      "image":"/assets/images/silla.png",
-     "video":""
+     "video":"https://youtu.be/sex8IV3UdBA"
   },
   {
      "grado":"Segundo grado",
      "tema":"Objetos del hogar",
      "palabra":"Televisor",
      "image":"/assets/images/televisor.png",
-     "video":""
+     "video":"https://youtu.be/zgzaZCprR-4"
   },
   {
      "grado":"Segundo grado",
      "tema":"Oficios y profesiones",
      "palabra":"Albañil",
      "image":"/assets/images/albanil.png",
-     "video":""
+     "video":"https://youtu.be/kNLfzp_lKjk"
   },
   {
      "grado":"Segundo grado",
@@ -634,7 +634,7 @@
      "tema":"Oficios y profesiones",
      "palabra":"Mecanico",
      "image":"/assets/images/mecanico.png",
-     "video":""
+     "video":"https://youtu.be/R709LFAd7hQ"
   },
   {
      "grado":"Segundo grado",
@@ -648,14 +648,14 @@
      "tema":"Partes del cuerpo",
      "palabra":"Cabello",
      "image":"/assets/images/cabello.png",
-     "video":""
+     "video":"https://youtu.be/7LWKLhC7Gvs"
   },
   {
      "grado":"Segundo grado",
      "tema":"Partes del cuerpo",
      "palabra":"Dedos",
      "image":"/assets/images/dedos.png",
-     "video":""
+     "video":"https://youtu.be/UWua2PTe-vw"
   },
   {
      "grado":"Segundo grado",
@@ -669,7 +669,7 @@
      "tema":"Partes del cuerpo",
      "palabra":"Oreja",
      "image":"/assets/images/oreja.png",
-     "video":""
+     "video":"https://youtu.be/K0hxPGd9qik"
   },
   {
      "grado":"Segundo grado",
@@ -683,7 +683,7 @@
      "tema":"Personajes historicos",
      "palabra":"Andres bello",
      "image":"/assets/images/andres-bello.png",
-     "video":""
+     "video":"https://youtu.be/mNLPOJP2xew"
   },
   {
      "grado":"Segundo grado",
@@ -732,7 +732,7 @@
      "tema":"Personas",
      "palabra":"Hijo",
      "image":"/assets/images/hijo.png",
-     "video":""
+     "video":"https://youtu.be/X__iXqiT4qg"
   },
   {
      "grado":"Segundo grado",
@@ -746,7 +746,7 @@
      "tema":"Personas",
      "palabra":"Tio",
      "image":"/assets/images/tio.png",
-     "video":""
+     "video":"https://youtu.be/lZFhV-5_PA4"
   },
   {
      "grado":"Segundo grado",
@@ -851,7 +851,7 @@
      "tema":"Utensilios de  cocina",
      "palabra":"Cuchillo",
      "image":"/assets/images/cuchillo.png",
-     "video":""
+     "video":"https://youtu.be/I3iUc_kSzoM"
   },
   {
      "grado":"Segundo grado",
@@ -865,7 +865,7 @@
      "tema":"Utensilios de  cocina",
      "palabra":"Sarten",
      "image":"/assets/images/sarten.png",
-     "video":""
+     "video":"https://youtu.be/SOiL8MFHWpU"
   },
   {
      "grado":"Segundo grado",
@@ -879,7 +879,7 @@
      "tema":"Utiles escolares",
      "palabra":"Libro",
      "image":"/assets/images/libro.png",
-     "video":""
+     "video":"https://youtu.be/w0aMLylYsbE"
   },
   {
      "grado":"Segundo grado",
@@ -907,7 +907,7 @@
      "tema":"Verduras y hortalizas",
      "palabra":"Cebolla",
      "image":"/assets/images/cebolla.png",
-     "video":""
+     "video":"Cebolla"
   },
   {
      "grado":"Segundo grado",
@@ -921,7 +921,7 @@
      "tema":"Verduras y hortalizas",
      "palabra":"Remolacha",
      "image":"/assets/images/remolacha.png",
-     "video":""
+     "video":"https://youtu.be/CuFkrmk_sTM"
   },
   {
      "grado":"Segundo grado",
@@ -935,6 +935,6 @@
      "tema":"Verduras y hortalizas",
      "palabra":"Zanahoria",
      "image":"/assets/images/zanahoria.png",
-     "video":""
+     "video":"https://youtu.be/JEuax_dE1Vc"
   }
 ]
