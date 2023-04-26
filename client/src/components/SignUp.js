@@ -293,7 +293,7 @@ export default function SignUp({ setAuth }) {
                   required
                   fullWidth
                   id="correo"
-                  label="Correo electronico"
+                  label="Correo electrónico"
                   name="correo"
                   type="email"
                   onChange={handleChange}
@@ -319,7 +319,7 @@ export default function SignUp({ setAuth }) {
                     options={metadata.paises}
                     name="pais"
                     onChange={handleChangeAutocomplete}
-                    renderInput={(params) => <TextField {...params} name="pais" label="Pais" />}
+                    renderInput={(params) => <TextField {...params} name="pais" label="País" />}
                   />
               </Grid>
               <Grid  item xs={12} sm={6}>
@@ -344,7 +344,7 @@ export default function SignUp({ setAuth }) {
               </Grid>
               <Grid item xs={12} sm={6}>
                 <FormControl onChange={handleChange}>
-                  <FormLabel id="gender-options">Genero</FormLabel>
+                  <FormLabel id="gender-options">Género</FormLabel>
                   <RadioGroup
                     aria-labelledby="gender-options"
                     name="genero"

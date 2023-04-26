@@ -24,6 +24,8 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import CategoryIcon from '@mui/icons-material/Category';
 import ClassIcon from '@mui/icons-material/Class';
 import HomeIcon from '@mui/icons-material/Home';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import {
   Outlet,
   useNavigate
@@ -116,7 +118,13 @@ function PanelItems({funcionalidad_sistema}) {
   const goTo1 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
-    navigate("practicar");
+    navigate("prueba");
+  }
+
+  const goTo7 = () => {
+    // console.log({event:e, name: e.target.name})
+    // navigate(e.target.name);
+    navigate("estudiar");
   }
 
   const goTo2 = () => {
@@ -143,6 +151,11 @@ function PanelItems({funcionalidad_sistema}) {
     navigate("inicio");
   }
 
+  const goTo6 = () => {
+    // console.log({event:e, name: e.target.name})
+    // navigate(e.target.name);
+    navigate("glosario");
+  }
   const elements = [
     {
       funcionalidad: 'panel-practica',
@@ -163,7 +176,7 @@ function PanelItems({funcionalidad_sistema}) {
             <ClassIcon />
           </ListItemIcon>
           <ListItemText
-            primary={"Vocabulario por Temas"} 
+            primary={"Vocabulario por Grado"} 
             primaryTypographyProps={{ 
               style: { 
                 whiteSpace: 'normal',
@@ -184,7 +197,7 @@ function PanelItems({funcionalidad_sistema}) {
             <CategoryIcon />
           </ListItemIcon>
           <ListItemText
-            primary={"Vocabulario por Categorias"}
+            primary={"Vocabulario por Categoría"}
             primaryTypographyProps={{ 
                 style: { 
                   whiteSpace: 'normal',
@@ -203,11 +216,21 @@ function PanelItems({funcionalidad_sistema}) {
           <ListItemIcon>
             <DashboardIcon />
           </ListItemIcon>
-          <ListItemText primary="Practicar" />
+          <ListItemText primary="Prueba" />
         </ListItemButton>
       )
     },
-
+    {
+      funcionalidad: 'panel-practica',
+      element: (
+        <ListItemButton onClick={goTo7} key="pp001">
+          <ListItemIcon>
+            <LibraryBooksIcon />
+          </ListItemIcon>
+          <ListItemText primary="Estudiar" />
+        </ListItemButton>
+      )
+    },
     {
       funcionalidad: 'panel-profesor',
       element: (
@@ -216,6 +239,17 @@ function PanelItems({funcionalidad_sistema}) {
             <PeopleIcon />
           </ListItemIcon>
           <ListItemText primary="Supervisar" />
+        </ListItemButton>
+      )
+    },
+    {
+      funcionalidad: 'panel-profesor',
+      element: (
+        <ListItemButton onClick={goTo6} key="pp006">
+          <ListItemIcon>
+            <AutoStoriesIcon />
+          </ListItemIcon>
+          <ListItemText primary={"Glosario"} />
         </ListItemButton>
       )
     },
@@ -327,7 +361,7 @@ function DashboardContent({setAuth}) {
               sx={{ flexGrow: 1 }}
             >
               {/* LSVMérida - Lengua de Señas Venezolana */}
-              LSVMérida
+              LeSeVen Mérida
             </Typography>
             {/* <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -384,7 +418,7 @@ function DashboardContent({setAuth}) {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Outlet />
-            <Copyright sx={{ pt: 4 }} />
+            {/* <Copyright sx={{ pt: 4 }} /> */}
           </Container>
         </Box>
       </Box>

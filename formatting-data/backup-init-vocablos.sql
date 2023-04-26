@@ -175,7 +175,7 @@
       VALUES (0, 'image', '/assets/images/agua.png', 0);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 0);
+      VALUES (1, 'video', '', 0);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -192,7 +192,7 @@
       VALUES (2, 'image', '/assets/images/arepa.png', 1);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (3, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 1);
+      VALUES (3, 'video', '', 1);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -205,7 +205,7 @@
       VALUES (4, 'image', '/assets/images/jugo.png', 2);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (5, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 2);
+      VALUES (5, 'video', '', 2);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -218,7 +218,7 @@
       VALUES (6, 'image', '/assets/images/leche.png', 3);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (7, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 3);
+      VALUES (7, 'video', '', 3);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -231,7 +231,7 @@
       VALUES (8, 'image', '/assets/images/pan.png', 4);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (9, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 4);
+      VALUES (9, 'video', '', 4);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -244,7 +244,7 @@
       VALUES (10, 'image', '/assets/images/gato.png', 5);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (11, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 5);
+      VALUES (11, 'video', '', 5);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -261,7 +261,7 @@
       VALUES (12, 'image', '/assets/images/perro.png', 6);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (13, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 6);
+      VALUES (13, 'video', '', 6);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -274,7 +274,7 @@
       VALUES (14, 'image', '/assets/images/pato.png', 7);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (15, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 7);
+      VALUES (15, 'video', '', 7);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -287,7 +287,7 @@
       VALUES (16, 'image', '/assets/images/oso.png', 8);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (17, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 8);
+      VALUES (17, 'video', '', 8);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -300,7 +300,7 @@
       VALUES (18, 'image', '/assets/images/amarillo.png', 9);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (19, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 9);
+      VALUES (19, 'video', '', 9);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -317,7 +317,7 @@
       VALUES (20, 'image', '/assets/images/azul.png', 10);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (21, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 10);
+      VALUES (21, 'video', '', 10);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -330,7 +330,7 @@
       VALUES (22, 'image', '/assets/images/rojo.png', 11);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (23, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 11);
+      VALUES (23, 'video', '', 11);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -343,7 +343,7 @@
       VALUES (24, 'image', '/assets/images/lunes.png', 12);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (25, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 12);
+      VALUES (25, 'video', '', 12);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -360,7 +360,7 @@
       VALUES (26, 'image', '/assets/images/martes.png', 13);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (27, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 13);
+      VALUES (27, 'video', '', 13);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -373,7 +373,7 @@
       VALUES (28, 'image', '/assets/images/circulo.png', 14);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (29, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 14);
+      VALUES (29, 'video', '', 14);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -390,7 +390,7 @@
       VALUES (30, 'image', '/assets/images/uva.png', 15);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (31, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 15);
+      VALUES (31, 'video', '', 15);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -407,7 +407,7 @@
       VALUES (32, 'image', '/assets/images/coco.png', 16);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (33, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 16);
+      VALUES (33, 'video', '', 16);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -420,7 +420,7 @@
       VALUES (34, 'image', '/assets/images/pelota.png', 17);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (35, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 17);
+      VALUES (35, 'video', '', 17);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -437,7 +437,7 @@
       VALUES (36, 'image', '/assets/images/muneca.png', 18);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (37, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 18);
+      VALUES (37, 'video', '', 18);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -450,7 +450,7 @@
       VALUES (38, 'image', '/assets/images/bano.png', 19);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (39, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 19);
+      VALUES (39, 'video', '', 19);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -467,7 +467,7 @@
       VALUES (40, 'image', '/assets/images/casa.png', 20);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (41, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 20);
+      VALUES (41, 'video', '', 20);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -480,7 +480,7 @@
       VALUES (42, 'image', '/assets/images/escuela.png', 21);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (43, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 21);
+      VALUES (43, 'video', '', 21);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -493,7 +493,7 @@
       VALUES (44, 'image', '/assets/images/parque.png', 22);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (45, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 22);
+      VALUES (45, 'video', '', 22);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -506,7 +506,7 @@
       VALUES (46, 'image', '/assets/images/escuela-ofelia-tancredi.png', 23);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (47, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 23);
+      VALUES (47, 'video', '', 23);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -523,7 +523,7 @@
       VALUES (48, 'image', '/assets/images/zoologico.png', 24);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (49, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 24);
+      VALUES (49, 'video', '', 24);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -536,7 +536,7 @@
       VALUES (50, 'image', '/assets/images/avion.png', 25);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (51, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 25);
+      VALUES (51, 'video', '', 25);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -553,7 +553,7 @@
       VALUES (52, 'image', '/assets/images/bus.png', 26);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (53, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 26);
+      VALUES (53, 'video', '', 26);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -566,7 +566,7 @@
       VALUES (54, 'image', '/assets/images/carro.png', 27);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (55, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 27);
+      VALUES (55, 'video', '', 27);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -579,7 +579,7 @@
       VALUES (56, 'image', '/assets/images/moto.png', 28);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (57, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 28);
+      VALUES (57, 'video', '', 28);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -592,7 +592,7 @@
       VALUES (58, 'image', '/assets/images/poco.png', 29);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (59, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 29);
+      VALUES (59, 'video', '', 29);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -609,7 +609,7 @@
       VALUES (60, 'image', '/assets/images/mucho.png', 30);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (61, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 30);
+      VALUES (61, 'video', '', 30);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -622,7 +622,7 @@
       VALUES (62, 'image', '/assets/images/nada.png', 31);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (63, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 31);
+      VALUES (63, 'video', '', 31);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -635,7 +635,7 @@
       VALUES (64, 'image', '/assets/images/grande.png', 32);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (65, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 32);
+      VALUES (65, 'video', '', 32);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -652,7 +652,7 @@
       VALUES (66, 'image', '/assets/images/pequeno.png', 33);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (67, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 33);
+      VALUES (67, 'video', '', 33);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -665,7 +665,7 @@
       VALUES (68, 'image', '/assets/images/mediano.png', 34);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (69, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 34);
+      VALUES (69, 'video', '', 34);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -678,7 +678,7 @@
       VALUES (70, 'image', '/assets/images/corto.png', 35);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (71, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 35);
+      VALUES (71, 'video', '', 35);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -691,7 +691,7 @@
       VALUES (72, 'image', '/assets/images/largo.png', 36);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (73, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 36);
+      VALUES (73, 'video', '', 36);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -704,7 +704,7 @@
       VALUES (74, 'image', '/assets/images/alto.png', 37);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (75, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 37);
+      VALUES (75, 'video', '', 37);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -717,7 +717,7 @@
       VALUES (76, 'image', '/assets/images/bajo.png', 38);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (77, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 38);
+      VALUES (77, 'video', '', 38);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -730,7 +730,7 @@
       VALUES (78, 'image', '/assets/images/arriba.png', 39);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (79, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 39);
+      VALUES (79, 'video', '', 39);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -747,7 +747,7 @@
       VALUES (80, 'image', '/assets/images/abajo.png', 40);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (81, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 40);
+      VALUES (81, 'video', '', 40);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -760,7 +760,7 @@
       VALUES (82, 'image', '/assets/images/ayer.png', 41);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (83, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 41);
+      VALUES (83, 'video', '', 41);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -777,7 +777,7 @@
       VALUES (84, 'image', '/assets/images/hoy.png', 42);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (85, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 42);
+      VALUES (85, 'video', '', 42);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -790,7 +790,7 @@
       VALUES (86, 'image', '/assets/images/manana.png', 43);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (87, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 43);
+      VALUES (87, 'video', '', 43);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -803,7 +803,7 @@
       VALUES (88, 'image', '/assets/images/uno.png', 44);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (89, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 44);
+      VALUES (89, 'video', '', 44);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -820,7 +820,7 @@
       VALUES (90, 'image', '/assets/images/dos.png', 45);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (91, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 45);
+      VALUES (91, 'video', '', 45);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -833,7 +833,7 @@
       VALUES (92, 'image', '/assets/images/tres.png', 46);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (93, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 46);
+      VALUES (93, 'video', '', 46);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -846,7 +846,7 @@
       VALUES (94, 'image', '/assets/images/mesa.png', 47);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (95, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 47);
+      VALUES (95, 'video', '', 47);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -863,7 +863,7 @@
       VALUES (96, 'image', '/assets/images/silla.png', 48);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (97, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 48);
+      VALUES (97, 'video', '', 48);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -876,7 +876,7 @@
       VALUES (98, 'image', '/assets/images/doctor.png', 49);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (99, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 49);
+      VALUES (99, 'video', '', 49);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -893,7 +893,7 @@
       VALUES (100, 'image', '/assets/images/maestra.png', 50);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (101, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 50);
+      VALUES (101, 'video', '', 50);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -906,7 +906,7 @@
       VALUES (102, 'image', '/assets/images/boca.png', 51);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (103, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 51);
+      VALUES (103, 'video', '', 51);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -923,7 +923,7 @@
       VALUES (104, 'image', '/assets/images/mano.png', 52);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (105, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 52);
+      VALUES (105, 'video', '', 52);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -936,7 +936,7 @@
       VALUES (106, 'image', '/assets/images/nariz.png', 53);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (107, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 53);
+      VALUES (107, 'video', '', 53);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -949,7 +949,7 @@
       VALUES (108, 'image', '/assets/images/ojos.png', 54);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (109, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 54);
+      VALUES (109, 'video', '', 54);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -962,7 +962,7 @@
       VALUES (110, 'image', '/assets/images/simon-bolivar.png', 55);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (111, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 55);
+      VALUES (111, 'video', '', 55);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -979,7 +979,7 @@
       VALUES (112, 'image', '/assets/images/mama.png', 56);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (113, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 56);
+      VALUES (113, 'video', '', 56);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -996,7 +996,7 @@
       VALUES (114, 'image', '/assets/images/papa.png', 57);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (115, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 57);
+      VALUES (115, 'video', '', 57);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1009,7 +1009,7 @@
       VALUES (116, 'image', '/assets/images/bebe.png', 58);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (117, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 58);
+      VALUES (117, 'video', '', 58);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1022,7 +1022,7 @@
       VALUES (118, 'image', '/assets/images/nino.png', 59);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (119, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 59);
+      VALUES (119, 'video', '', 59);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1035,7 +1035,7 @@
       VALUES (120, 'image', '/assets/images/nina.png', 60);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (121, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 60);
+      VALUES (121, 'video', '', 60);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1048,7 +1048,7 @@
       VALUES (122, 'image', '/assets/images/camisa.png', 61);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (123, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 61);
+      VALUES (123, 'video', '', 61);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1065,7 +1065,7 @@
       VALUES (124, 'image', '/assets/images/medias.png', 62);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (125, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 62);
+      VALUES (125, 'video', '', 62);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1078,7 +1078,7 @@
       VALUES (126, 'image', '/assets/images/pantalones.png', 63);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (127, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 63);
+      VALUES (127, 'video', '', 63);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1091,7 +1091,7 @@
       VALUES (128, 'image', '/assets/images/zapatos.png', 64);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (129, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 64);
+      VALUES (129, 'video', '', 64);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1104,7 +1104,7 @@
       VALUES (130, 'image', '/assets/images/bandera.png', 65);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (131, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 65);
+      VALUES (131, 'video', '', 65);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1126,7 +1126,7 @@
       VALUES (132, 'image', '/assets/images/carne.png', 66);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (133, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 66);
+      VALUES (133, 'video', '', 66);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1143,7 +1143,7 @@
       VALUES (134, 'image', '/assets/images/pasta.png', 67);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (135, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 67);
+      VALUES (135, 'video', '', 67);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1156,7 +1156,7 @@
       VALUES (136, 'image', '/assets/images/pollo.png', 68);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (137, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 68);
+      VALUES (137, 'video', '', 68);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1169,7 +1169,7 @@
       VALUES (138, 'image', '/assets/images/queso.png', 69);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (139, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 69);
+      VALUES (139, 'video', '', 69);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1182,7 +1182,7 @@
       VALUES (140, 'image', '/assets/images/torta.png', 70);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (141, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 70);
+      VALUES (141, 'video', '', 70);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1195,7 +1195,7 @@
       VALUES (142, 'image', '/assets/images/condor.png', 71);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (143, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 71);
+      VALUES (143, 'video', '', 71);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1212,7 +1212,7 @@
       VALUES (144, 'image', '/assets/images/gallina.png', 72);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (145, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 72);
+      VALUES (145, 'video', '', 72);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1225,7 +1225,7 @@
       VALUES (146, 'image', '/assets/images/gallo.png', 73);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (147, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 73);
+      VALUES (147, 'video', '', 73);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1238,7 +1238,7 @@
       VALUES (148, 'image', '/assets/images/pajaro.png', 74);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (149, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 74);
+      VALUES (149, 'video', '', 74);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1255,7 +1255,7 @@
       VALUES (150, 'image', '/assets/images/raton.png', 75);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (151, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 75);
+      VALUES (151, 'video', '', 75);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1268,7 +1268,7 @@
       VALUES (152, 'image', '/assets/images/sapo.png', 76);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (153, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 76);
+      VALUES (153, 'video', '', 76);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1281,7 +1281,7 @@
       VALUES (154, 'image', '/assets/images/vaca.png', 77);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (155, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 77);
+      VALUES (155, 'video', '', 77);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1294,7 +1294,7 @@
       VALUES (156, 'image', '/assets/images/araguaney.png', 78);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (157, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 78);
+      VALUES (157, 'video', '', 78);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1327,7 +1327,7 @@
       VALUES (158, 'image', '/assets/images/verde.png', 79);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (159, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 79);
+      VALUES (159, 'video', '', 79);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1352,7 +1352,7 @@
       VALUES (160, 'image', '/assets/images/viernes.png', 80);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (161, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 80);
+      VALUES (161, 'video', '', 80);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1365,7 +1365,7 @@
       VALUES (162, 'image', '/assets/images/colera.png', 81);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (163, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 81);
+      VALUES (163, 'video', '', 81);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1382,7 +1382,7 @@
       VALUES (164, 'image', '/assets/images/dengue.png', 82);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (165, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 82);
+      VALUES (165, 'video', '', 82);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1395,7 +1395,7 @@
       VALUES (166, 'image', '/assets/images/gripe.png', 83);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (167, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 83);
+      VALUES (167, 'video', '', 83);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1416,7 +1416,7 @@
       VALUES (168, 'image', '/assets/images/triangulo.png', 84);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (169, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 84);
+      VALUES (169, 'video', '', 84);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1429,7 +1429,7 @@
       VALUES (170, 'image', '/assets/images/cuadrado.png', 85);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (171, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 85);
+      VALUES (171, 'video', '', 85);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1442,7 +1442,7 @@
       VALUES (172, 'image', '/assets/images/cambur.png', 86);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (173, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 86);
+      VALUES (173, 'video', '', 86);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1459,7 +1459,7 @@
       VALUES (174, 'image', '/assets/images/mango.png', 87);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (175, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 87);
+      VALUES (175, 'video', '', 87);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1472,7 +1472,7 @@
       VALUES (176, 'image', '/assets/images/mora.png', 88);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (177, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 88);
+      VALUES (177, 'video', '', 88);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1485,7 +1485,7 @@
       VALUES (178, 'image', '/assets/images/pina.png', 89);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (179, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 89);
+      VALUES (179, 'video', '', 89);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1498,7 +1498,7 @@
       VALUES (180, 'image', '/assets/images/patilla.png', 90);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (181, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 90);
+      VALUES (181, 'video', '', 90);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1511,7 +1511,7 @@
       VALUES (182, 'image', '/assets/images/metra.png', 91);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (183, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 91);
+      VALUES (183, 'video', '', 91);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1528,7 +1528,7 @@
       VALUES (184, 'image', '/assets/images/pito.png', 92);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (185, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 92);
+      VALUES (185, 'video', '', 92);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1541,7 +1541,7 @@
       VALUES (186, 'image', '/assets/images/trompo.png', 93);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (187, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 93);
+      VALUES (187, 'video', '', 93);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1554,7 +1554,7 @@
       VALUES (188, 'image', '/assets/images/plaza.png', 94);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (189, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 94);
+      VALUES (189, 'video', '', 94);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1571,7 +1571,7 @@
       VALUES (190, 'image', '/assets/images/cocina.png', 95);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (191, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 95);
+      VALUES (191, 'video', '', 95);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1588,7 +1588,7 @@
       VALUES (192, 'image', '/assets/images/cancha.png', 96);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (193, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 96);
+      VALUES (193, 'video', '', 96);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1601,7 +1601,7 @@
       VALUES (194, 'image', '/assets/images/cbit.png', 97);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (195, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 97);
+      VALUES (195, 'video', '', 97);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1622,7 +1622,7 @@
       VALUES (196, 'image', '/assets/images/zoologico-chorros-de-milla.png', 98);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (197, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 98);
+      VALUES (197, 'video', '', 98);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1635,7 +1635,7 @@
       VALUES (198, 'image', '/assets/images/parque-la-isla.png', 99);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (199, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 99);
+      VALUES (199, 'video', '', 99);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1648,7 +1648,7 @@
       VALUES (200, 'image', '/assets/images/barco.png', 100);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (201, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 100);
+      VALUES (201, 'video', '', 100);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1665,7 +1665,7 @@
       VALUES (202, 'image', '/assets/images/bicicleta.png', 101);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (203, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 101);
+      VALUES (203, 'video', '', 101);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1678,7 +1678,7 @@
       VALUES (204, 'image', '/assets/images/cohete.png', 102);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (205, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 102);
+      VALUES (205, 'video', '', 102);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1691,7 +1691,7 @@
       VALUES (206, 'image', '/assets/images/helicoptero.png', 103);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (207, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 103);
+      VALUES (207, 'video', '', 103);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1704,7 +1704,7 @@
       VALUES (208, 'image', '/assets/images/enero.png', 104);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (209, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 104);
+      VALUES (209, 'video', '', 104);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1721,7 +1721,7 @@
       VALUES (210, 'image', '/assets/images/mayo.png', 105);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (211, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 105);
+      VALUES (211, 'video', '', 105);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1734,7 +1734,7 @@
       VALUES (212, 'image', '/assets/images/junio.png', 106);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (213, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 106);
+      VALUES (213, 'video', '', 106);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1747,7 +1747,7 @@
       VALUES (214, 'image', '/assets/images/julio.png', 107);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (215, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 107);
+      VALUES (215, 'video', '', 107);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1772,7 +1772,7 @@
       VALUES (216, 'image', '/assets/images/numero.png', 108);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (217, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 108);
+      VALUES (217, 'video', '', 108);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1833,7 +1833,7 @@
       VALUES (218, 'image', '/assets/images/cerca.png', 109);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (219, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 109);
+      VALUES (219, 'video', '', 109);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1846,7 +1846,7 @@
       VALUES (220, 'image', '/assets/images/debajo.png', 110);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (221, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 110);
+      VALUES (221, 'video', '', 110);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1859,7 +1859,7 @@
       VALUES (222, 'image', '/assets/images/delante.png', 111);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (223, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 111);
+      VALUES (223, 'video', '', 111);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1872,7 +1872,7 @@
       VALUES (224, 'image', '/assets/images/detras.png', 112);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (225, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 112);
+      VALUES (225, 'video', '', 112);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1885,7 +1885,7 @@
       VALUES (226, 'image', '/assets/images/lejos.png', 113);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (227, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 113);
+      VALUES (227, 'video', '', 113);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1898,7 +1898,7 @@
       VALUES (228, 'image', '/assets/images/sobre.png', 114);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (229, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 114);
+      VALUES (229, 'video', '', 114);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1911,7 +1911,7 @@
       VALUES (230, 'image', '/assets/images/ahora.png', 115);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (231, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 115);
+      VALUES (231, 'video', '', 115);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1928,7 +1928,7 @@
       VALUES (232, 'image', '/assets/images/anteayer.png', 116);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (233, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 116);
+      VALUES (233, 'video', '', 116);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1941,7 +1941,7 @@
       VALUES (234, 'image', '/assets/images/antes.png', 117);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (235, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 117);
+      VALUES (235, 'video', '', 117);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1954,7 +1954,7 @@
       VALUES (236, 'image', '/assets/images/despues.png', 118);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (237, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 118);
+      VALUES (237, 'video', '', 118);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1967,7 +1967,7 @@
       VALUES (238, 'image', '/assets/images/pasado-manana.png', 119);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (239, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 119);
+      VALUES (239, 'video', '', 119);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -1980,7 +1980,7 @@
       VALUES (240, 'image', '/assets/images/cuatro.png', 120);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (241, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 120);
+      VALUES (241, 'video', '', 120);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -1997,7 +1997,7 @@
       VALUES (242, 'image', '/assets/images/cinco.png', 121);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (243, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 121);
+      VALUES (243, 'video', '', 121);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2010,7 +2010,7 @@
       VALUES (244, 'image', '/assets/images/seis.png', 122);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (245, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 122);
+      VALUES (245, 'video', '', 122);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2023,7 +2023,7 @@
       VALUES (246, 'image', '/assets/images/siete.png', 123);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (247, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 123);
+      VALUES (247, 'video', '', 123);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2036,7 +2036,7 @@
       VALUES (248, 'image', '/assets/images/ocho.png', 124);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (249, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 124);
+      VALUES (249, 'video', '', 124);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2049,7 +2049,7 @@
       VALUES (250, 'image', '/assets/images/nueve.png', 125);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (251, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 125);
+      VALUES (251, 'video', '', 125);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2062,7 +2062,7 @@
       VALUES (252, 'image', '/assets/images/diez.png', 126);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (253, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 126);
+      VALUES (253, 'video', '', 126);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2075,7 +2075,7 @@
       VALUES (254, 'image', '/assets/images/cama,.png', 127);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (255, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 127);
+      VALUES (255, 'video', '', 127);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2092,7 +2092,7 @@
       VALUES (256, 'image', '/assets/images/mueble.png', 128);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (257, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 128);
+      VALUES (257, 'video', '', 128);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2105,7 +2105,7 @@
       VALUES (258, 'image', '/assets/images/bomberos.png', 129);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (259, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 129);
+      VALUES (259, 'video', '', 129);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2130,7 +2130,7 @@
       VALUES (260, 'image', '/assets/images/obrero.png', 130);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (261, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 130);
+      VALUES (261, 'video', '', 130);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2143,7 +2143,7 @@
       VALUES (262, 'image', '/assets/images/policia.png', 131);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (263, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 131);
+      VALUES (263, 'video', '', 131);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2156,7 +2156,7 @@
       VALUES (264, 'image', '/assets/images/panadera.png', 132);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (265, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 132);
+      VALUES (265, 'video', '', 132);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2169,7 +2169,7 @@
       VALUES (266, 'image', '/assets/images/brazo.png', 133);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (267, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 133);
+      VALUES (267, 'video', '', 133);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2186,7 +2186,7 @@
       VALUES (268, 'image', '/assets/images/cabeza.png', 134);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (269, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 134);
+      VALUES (269, 'video', '', 134);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2199,7 +2199,7 @@
       VALUES (270, 'image', '/assets/images/cara.png', 135);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (271, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 135);
+      VALUES (271, 'video', '', 135);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2212,7 +2212,7 @@
       VALUES (272, 'image', '/assets/images/diente.png', 136);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (273, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 136);
+      VALUES (273, 'video', '', 136);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2225,7 +2225,7 @@
       VALUES (274, 'image', '/assets/images/pelo.png', 137);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (275, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 137);
+      VALUES (275, 'video', '', 137);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2238,7 +2238,7 @@
       VALUES (276, 'image', '/assets/images/pie.png', 138);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (277, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 138);
+      VALUES (277, 'video', '', 138);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2251,7 +2251,7 @@
       VALUES (278, 'image', '/assets/images/pierna.png', 139);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (279, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 139);
+      VALUES (279, 'video', '', 139);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2272,7 +2272,7 @@
       VALUES (280, 'image', '/assets/images/francisco-de-miranda.png', 140);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (281, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 140);
+      VALUES (281, 'video', '', 140);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2285,7 +2285,7 @@
       VALUES (282, 'image', '/assets/images/simon-rodriguez.png', 141);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (283, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 141);
+      VALUES (283, 'video', '', 141);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2298,7 +2298,7 @@
       VALUES (284, 'image', '/assets/images/abuelo.png', 142);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (285, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 142);
+      VALUES (285, 'video', '', 142);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2315,7 +2315,7 @@
       VALUES (286, 'image', '/assets/images/abuela.png', 143);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (287, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 143);
+      VALUES (287, 'video', '', 143);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2328,7 +2328,7 @@
       VALUES (288, 'image', '/assets/images/hermano.png', 144);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (289, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 144);
+      VALUES (289, 'video', '', 144);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2341,7 +2341,7 @@
       VALUES (290, 'image', '/assets/images/hermana.png', 145);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (291, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 145);
+      VALUES (291, 'video', '', 145);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2354,7 +2354,7 @@
       VALUES (292, 'image', '/assets/images/hombre.png', 146);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (293, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 146);
+      VALUES (293, 'video', '', 146);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2367,7 +2367,7 @@
       VALUES (294, 'image', '/assets/images/mujer.png', 147);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (295, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 147);
+      VALUES (295, 'video', '', 147);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2400,7 +2400,7 @@
       VALUES (296, 'image', '/assets/images/escudo.png', 148);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (297, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 148);
+      VALUES (297, 'video', '', 148);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2417,7 +2417,7 @@
       VALUES (298, 'image', '/assets/images/himno-nacional.png', 149);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (299, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 149);
+      VALUES (299, 'video', '', 149);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2430,7 +2430,7 @@
       VALUES (300, 'image', '/assets/images/diarrea.png', 150);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (301, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 150);
+      VALUES (301, 'video', '', 150);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2447,7 +2447,7 @@
       VALUES (302, 'image', '/assets/images/dolor.png', 151);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (303, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 151);
+      VALUES (303, 'video', '', 151);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2460,7 +2460,7 @@
       VALUES (304, 'image', '/assets/images/tos.png', 152);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (305, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 152);
+      VALUES (305, 'video', '', 152);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2473,7 +2473,7 @@
       VALUES (306, 'image', '/assets/images/vomito.png', 153);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (307, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 153);
+      VALUES (307, 'video', '', 153);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2486,7 +2486,7 @@
       VALUES (308, 'image', '/assets/images/olla.png', 154);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (309, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 154);
+      VALUES (309, 'video', '', 154);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2503,7 +2503,7 @@
       VALUES (310, 'image', '/assets/images/taza.png', 155);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (311, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 155);
+      VALUES (311, 'video', '', 155);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2516,7 +2516,7 @@
       VALUES (312, 'image', '/assets/images/tenedor.png', 156);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (313, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 156);
+      VALUES (313, 'video', '', 156);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2529,7 +2529,7 @@
       VALUES (314, 'image', '/assets/images/borrador.png', 157);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (315, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 157);
+      VALUES (315, 'video', '', 157);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2546,7 +2546,7 @@
       VALUES (316, 'image', '/assets/images/cuaderno.png', 158);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (317, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 158);
+      VALUES (317, 'video', '', 158);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2559,7 +2559,7 @@
       VALUES (318, 'image', '/assets/images/lapiz.png', 159);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (319, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 159);
+      VALUES (319, 'video', '', 159);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2572,7 +2572,7 @@
       VALUES (320, 'image', '/assets/images/sacapunta.png', 160);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (321, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 160);
+      VALUES (321, 'video', '', 160);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2593,7 +2593,7 @@
       VALUES (322, 'image', '/assets/images/auyama.png', 161);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (323, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 161);
+      VALUES (323, 'video', '', 161);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2606,7 +2606,7 @@
       VALUES (324, 'image', '/assets/images/apio.png', 162);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (325, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 162);
+      VALUES (325, 'video', '', 162);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2624,7 +2624,7 @@
       VALUES (326, 'image', '/assets/images/cafe.png', 163);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (327, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 163);
+      VALUES (327, 'video', '', 163);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2641,7 +2641,7 @@
       VALUES (328, 'image', '/assets/images/gelatina.png', 164);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (329, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 164);
+      VALUES (329, 'video', '', 164);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2654,7 +2654,7 @@
       VALUES (330, 'image', '/assets/images/ponque.png', 165);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (331, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 165);
+      VALUES (331, 'video', '', 165);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2667,7 +2667,7 @@
       VALUES (332, 'image', '/assets/images/sopa.png', 166);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (333, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 166);
+      VALUES (333, 'video', '', 166);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2680,7 +2680,7 @@
       VALUES (334, 'image', '/assets/images/te.png', 167);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (335, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 167);
+      VALUES (335, 'video', '', 167);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2693,7 +2693,7 @@
       VALUES (336, 'image', '/assets/images/abeja.png', 168);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (337, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 168);
+      VALUES (337, 'video', '', 168);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2710,7 +2710,7 @@
       VALUES (338, 'image', '/assets/images/burro.png', 169);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (339, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 169);
+      VALUES (339, 'video', '', 169);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2723,7 +2723,7 @@
       VALUES (340, 'image', '/assets/images/cochino.png', 170);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (341, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 170);
+      VALUES (341, 'video', '', 170);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2736,7 +2736,7 @@
       VALUES (342, 'image', '/assets/images/oveja.png', 171);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (343, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 171);
+      VALUES (343, 'video', '', 171);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2749,7 +2749,7 @@
       VALUES (344, 'image', '/assets/images/paloma.png', 172);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (345, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 172);
+      VALUES (345, 'video', '', 172);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2762,7 +2762,7 @@
       VALUES (346, 'image', '/assets/images/bucare-ceibo.png', 173);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (347, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 173);
+      VALUES (347, 'video', '', 173);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2791,7 +2791,7 @@
       VALUES (348, 'image', '/assets/images/morado.png', 174);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (349, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 174);
+      VALUES (349, 'video', '', 174);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2804,7 +2804,7 @@
       VALUES (350, 'image', '/assets/images/negro.png', 175);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (351, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 175);
+      VALUES (351, 'video', '', 175);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2821,7 +2821,7 @@
       VALUES (352, 'image', '/assets/images/domingo.png', 176);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (353, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 176);
+      VALUES (353, 'video', '', 176);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2846,7 +2846,7 @@
       VALUES (354, 'image', '/assets/images/miercoles.png', 177);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (355, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 177);
+      VALUES (355, 'video', '', 177);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2863,7 +2863,7 @@
       VALUES (356, 'image', '/assets/images/ah1n1.png', 178);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (357, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 178);
+      VALUES (357, 'video', '', 178);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -2880,7 +2880,7 @@
       VALUES (358, 'image', '/assets/images/chikungunya.png', 179);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (359, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 179);
+      VALUES (359, 'video', '', 179);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2893,7 +2893,7 @@
       VALUES (360, 'image', '/assets/images/otitis.png', 180);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (361, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 180);
+      VALUES (361, 'video', '', 180);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2918,7 +2918,7 @@
       VALUES (362, 'image', '/assets/images/esfera.png', 181);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (363, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 181);
+      VALUES (363, 'video', '', 181);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2931,7 +2931,7 @@
       VALUES (364, 'image', '/assets/images/rectangulo.png', 182);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (365, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 182);
+      VALUES (365, 'video', '', 182);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2960,7 +2960,7 @@
       VALUES (366, 'image', '/assets/images/limon.png', 183);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (367, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 183);
+      VALUES (367, 'video', '', 183);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2973,7 +2973,7 @@
       VALUES (368, 'image', '/assets/images/melon.png', 184);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (369, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 184);
+      VALUES (369, 'video', '', 184);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -2990,7 +2990,7 @@
       VALUES (370, 'image', '/assets/images/bate.png', 185);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (371, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 185);
+      VALUES (371, 'video', '', 185);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3007,7 +3007,7 @@
       VALUES (372, 'image', '/assets/images/futbol.png', 186);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (373, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 186);
+      VALUES (373, 'video', '', 186);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3020,7 +3020,7 @@
       VALUES (374, 'image', '/assets/images/natacion.png', 187);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (375, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 187);
+      VALUES (375, 'video', '', 187);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3033,7 +3033,7 @@
       VALUES (376, 'image', '/assets/images/perinola.png', 188);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (377, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 188);
+      VALUES (377, 'video', '', 188);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3046,7 +3046,7 @@
       VALUES (378, 'image', '/assets/images/yoyo.png', 189);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (379, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 189);
+      VALUES (379, 'video', '', 189);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3059,7 +3059,7 @@
       VALUES (380, 'image', '/assets/images/comedor.png', 190);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (381, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 190);
+      VALUES (381, 'video', '', 190);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3076,7 +3076,7 @@
       VALUES (382, 'image', '/assets/images/heladeria.png', 191);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (383, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 191);
+      VALUES (383, 'video', '', 191);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3089,7 +3089,7 @@
       VALUES (384, 'image', '/assets/images/mercado.png', 192);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (385, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 192);
+      VALUES (385, 'video', '', 192);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3102,7 +3102,7 @@
       VALUES (386, 'image', '/assets/images/patio.png', 193);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (387, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 193);
+      VALUES (387, 'video', '', 193);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3115,7 +3115,7 @@
       VALUES (388, 'image', '/assets/images/salon.png', 194);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (389, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 194);
+      VALUES (389, 'video', '', 194);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3128,7 +3128,7 @@
       VALUES (390, 'image', '/assets/images/acuario.png', 195);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (391, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 195);
+      VALUES (391, 'video', '', 195);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3145,7 +3145,7 @@
       VALUES (392, 'image', '/assets/images/catedral.png', 196);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (393, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 196);
+      VALUES (393, 'video', '', 196);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3158,7 +3158,7 @@
       VALUES (394, 'image', '/assets/images/plaza-bolivar.png', 197);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (395, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 197);
+      VALUES (395, 'video', '', 197);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3179,7 +3179,7 @@
       VALUES (396, 'image', '/assets/images/buseta.png', 198);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (397, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 198);
+      VALUES (397, 'video', '', 198);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3192,7 +3192,7 @@
       VALUES (398, 'image', '/assets/images/camion.png', 199);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (399, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 199);
+      VALUES (399, 'video', '', 199);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3205,7 +3205,7 @@
       VALUES (400, 'image', '/assets/images/trolcable.png', 200);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (401, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 200);
+      VALUES (401, 'video', '', 200);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3218,7 +3218,7 @@
       VALUES (402, 'image', '/assets/images/trolebus.png', 201);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (403, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 201);
+      VALUES (403, 'video', '', 201);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3231,7 +3231,7 @@
       VALUES (404, 'image', '/assets/images/agosto.png', 202);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (405, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 202);
+      VALUES (405, 'video', '', 202);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3248,7 +3248,7 @@
       VALUES (406, 'image', '/assets/images/diciembre.png', 203);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (407, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 203);
+      VALUES (407, 'video', '', 203);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3265,7 +3265,7 @@
       VALUES (408, 'image', '/assets/images/febrero.png', 204);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (409, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 204);
+      VALUES (409, 'video', '', 204);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3278,7 +3278,7 @@
       VALUES (410, 'image', '/assets/images/octubre.png', 205);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (411, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 205);
+      VALUES (411, 'video', '', 205);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3291,7 +3291,7 @@
       VALUES (412, 'image', '/assets/images/cantidad.png', 206);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (413, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 206);
+      VALUES (413, 'video', '', 206);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3308,7 +3308,7 @@
       VALUES (414, 'image', '/assets/images/cifra.png', 207);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (415, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 207);
+      VALUES (415, 'video', '', 207);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3321,7 +3321,7 @@
       VALUES (416, 'image', '/assets/images/igual-que.png', 208);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (417, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 208);
+      VALUES (417, 'video', '', 208);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3334,7 +3334,7 @@
       VALUES (418, 'image', '/assets/images/mayor-que.png', 209);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (419, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 209);
+      VALUES (419, 'video', '', 209);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3347,7 +3347,7 @@
       VALUES (420, 'image', '/assets/images/menos-que.png', 210);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (421, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 210);
+      VALUES (421, 'video', '', 210);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3384,7 +3384,7 @@
       VALUES (422, 'image', '/assets/images/fuera.png', 211);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (423, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 211);
+      VALUES (423, 'video', '', 211);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3401,7 +3401,7 @@
       VALUES (424, 'image', '/assets/images/alla.png', 212);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (425, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 212);
+      VALUES (425, 'video', '', 212);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3414,7 +3414,7 @@
       VALUES (426, 'image', '/assets/images/anterior.png', 213);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (427, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 213);
+      VALUES (427, 'video', '', 213);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3427,7 +3427,7 @@
       VALUES (428, 'image', '/assets/images/aqui.png', 214);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (429, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 214);
+      VALUES (429, 'video', '', 214);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3440,7 +3440,7 @@
       VALUES (430, 'image', '/assets/images/dentro.png', 215);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (431, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 215);
+      VALUES (431, 'video', '', 215);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3501,7 +3501,7 @@
       VALUES (432, 'image', '/assets/images/celular.png', 216);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (433, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 216);
+      VALUES (433, 'video', '', 216);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3518,7 +3518,7 @@
       VALUES (434, 'image', '/assets/images/lampara.png', 217);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (435, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 217);
+      VALUES (435, 'video', '', 217);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3531,7 +3531,7 @@
       VALUES (436, 'image', '/assets/images/radio.png', 218);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (437, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 218);
+      VALUES (437, 'video', '', 218);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3548,7 +3548,7 @@
       VALUES (438, 'image', '/assets/images/televisor.png', 219);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (439, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 219);
+      VALUES (439, 'video', '', 219);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3561,7 +3561,7 @@
       VALUES (440, 'image', '/assets/images/albanil.png', 220);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (441, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 220);
+      VALUES (441, 'video', '', 220);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3578,7 +3578,7 @@
       VALUES (442, 'image', '/assets/images/carnicero.png', 221);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (443, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 221);
+      VALUES (443, 'video', '', 221);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3591,7 +3591,7 @@
       VALUES (444, 'image', '/assets/images/enfermera.png', 222);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (445, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 222);
+      VALUES (445, 'video', '', 222);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3604,7 +3604,7 @@
       VALUES (446, 'image', '/assets/images/mecanico.png', 223);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (447, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 223);
+      VALUES (447, 'video', '', 223);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3617,7 +3617,7 @@
       VALUES (448, 'image', '/assets/images/odontologo.png', 224);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (449, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 224);
+      VALUES (449, 'video', '', 224);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3630,7 +3630,7 @@
       VALUES (450, 'image', '/assets/images/cabello.png', 225);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (451, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 225);
+      VALUES (451, 'video', '', 225);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3647,7 +3647,7 @@
       VALUES (452, 'image', '/assets/images/dedos.png', 226);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (453, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 226);
+      VALUES (453, 'video', '', 226);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3660,7 +3660,7 @@
       VALUES (454, 'image', '/assets/images/lengua.png', 227);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (455, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 227);
+      VALUES (455, 'video', '', 227);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3673,7 +3673,7 @@
       VALUES (456, 'image', '/assets/images/oreja.png', 228);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (457, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 228);
+      VALUES (457, 'video', '', 228);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3686,7 +3686,7 @@
       VALUES (458, 'image', '/assets/images/pene.png', 229);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (459, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 229);
+      VALUES (459, 'video', '', 229);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3699,7 +3699,7 @@
       VALUES (460, 'image', '/assets/images/andres-bello.png', 230);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (461, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 230);
+      VALUES (461, 'video', '', 230);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3716,7 +3716,7 @@
       VALUES (462, 'image', '/assets/images/antonio-jose-de-sucre.png', 231);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (463, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 231);
+      VALUES (463, 'video', '', 231);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3729,7 +3729,7 @@
       VALUES (464, 'image', '/assets/images/josefa-camejo.png', 232);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (465, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 232);
+      VALUES (465, 'video', '', 232);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3742,7 +3742,7 @@
       VALUES (466, 'image', '/assets/images/negro-primero.png', 233);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (467, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 233);
+      VALUES (467, 'video', '', 233);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3767,7 +3767,7 @@
       VALUES (468, 'image', '/assets/images/hija.png', 234);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (469, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 234);
+      VALUES (469, 'video', '', 234);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3780,7 +3780,7 @@
       VALUES (470, 'image', '/assets/images/hijo.png', 235);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (471, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 235);
+      VALUES (471, 'video', '', 235);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3793,7 +3793,7 @@
       VALUES (472, 'image', '/assets/images/tia.png', 236);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (473, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 236);
+      VALUES (473, 'video', '', 236);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3806,7 +3806,7 @@
       VALUES (474, 'image', '/assets/images/tio.png', 237);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (475, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 237);
+      VALUES (475, 'video', '', 237);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3819,7 +3819,7 @@
       VALUES (476, 'image', '/assets/images/bota.png', 238);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (477, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 238);
+      VALUES (477, 'video', '', 238);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3836,7 +3836,7 @@
       VALUES (478, 'image', '/assets/images/falda.png', 239);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (479, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 239);
+      VALUES (479, 'video', '', 239);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3849,7 +3849,7 @@
       VALUES (480, 'image', '/assets/images/franela.png', 240);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (481, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 240);
+      VALUES (481, 'video', '', 240);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3862,7 +3862,7 @@
       VALUES (482, 'image', '/assets/images/gorra.png', 241);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (483, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 241);
+      VALUES (483, 'video', '', 241);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3875,7 +3875,7 @@
       VALUES (484, 'image', '/assets/images/vestidos.png', 242);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (485, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 242);
+      VALUES (485, 'video', '', 242);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3900,7 +3900,7 @@
       VALUES (486, 'image', '/assets/images/orquidea.png', 243);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (487, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 243);
+      VALUES (487, 'video', '', 243);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3913,7 +3913,7 @@
       VALUES (488, 'image', '/assets/images/turpial.png', 244);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (489, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 244);
+      VALUES (489, 'video', '', 244);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3926,7 +3926,7 @@
       VALUES (490, 'image', '/assets/images/dolor-de-cabeza.png', 245);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (491, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 245);
+      VALUES (491, 'video', '', 245);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -3943,7 +3943,7 @@
       VALUES (492, 'image', '/assets/images/fiebre.png', 246);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (493, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 246);
+      VALUES (493, 'video', '', 246);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3956,7 +3956,7 @@
       VALUES (494, 'image', '/assets/images/mareo.png', 247);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (495, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 247);
+      VALUES (495, 'video', '', 247);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3969,7 +3969,7 @@
       VALUES (496, 'image', '/assets/images/picazon.png', 248);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (497, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 248);
+      VALUES (497, 'video', '', 248);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -3986,7 +3986,7 @@
       VALUES (498, 'image', '/assets/images/cuchillo.png', 249);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (499, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 249);
+      VALUES (499, 'video', '', 249);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4003,7 +4003,7 @@
       VALUES (500, 'image', '/assets/images/jarra.png', 250);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (501, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 250);
+      VALUES (501, 'video', '', 250);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4016,7 +4016,7 @@
       VALUES (502, 'image', '/assets/images/sarten.png', 251);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (503, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 251);
+      VALUES (503, 'video', '', 251);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4029,7 +4029,7 @@
       VALUES (504, 'image', '/assets/images/canaima.png', 252);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (505, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 252);
+      VALUES (505, 'video', '', 252);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4046,7 +4046,7 @@
       VALUES (506, 'image', '/assets/images/libro.png', 253);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (507, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 253);
+      VALUES (507, 'video', '', 253);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4059,7 +4059,7 @@
       VALUES (508, 'image', '/assets/images/morral.png', 254);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (509, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 254);
+      VALUES (509, 'video', '', 254);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4072,7 +4072,7 @@
       VALUES (510, 'image', '/assets/images/pega.png', 255);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (511, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 255);
+      VALUES (511, 'video', '', 255);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4085,7 +4085,7 @@
       VALUES (512, 'image', '/assets/images/regla.png', 256);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (513, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 256);
+      VALUES (513, 'video', '', 256);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4098,7 +4098,7 @@
       VALUES (514, 'image', '/assets/images/cebolla.png', 257);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (515, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 257);
+      VALUES (515, 'video', '', 257);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4115,7 +4115,7 @@
       VALUES (516, 'image', '/assets/images/jojoto.png', 258);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (517, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 258);
+      VALUES (517, 'video', '', 258);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4128,7 +4128,7 @@
       VALUES (518, 'image', '/assets/images/remolacha.png', 259);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (519, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 259);
+      VALUES (519, 'video', '', 259);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4141,7 +4141,7 @@
       VALUES (520, 'image', '/assets/images/vainita.png', 260);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (521, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 260);
+      VALUES (521, 'video', '', 260);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4154,7 +4154,7 @@
       VALUES (522, 'image', '/assets/images/zanahoria.png', 261);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (523, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 261);
+      VALUES (523, 'video', '', 261);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4172,7 +4172,7 @@
       VALUES (524, 'image', '/assets/images/arroz.png', 262);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (525, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 262);
+      VALUES (525, 'video', '', 262);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4189,7 +4189,7 @@
       VALUES (526, 'image', '/assets/images/caraota.png', 263);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (527, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 263);
+      VALUES (527, 'video', '', 263);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4202,7 +4202,7 @@
       VALUES (528, 'image', '/assets/images/ensalada.png', 264);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (529, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 264);
+      VALUES (529, 'video', '', 264);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4215,7 +4215,7 @@
       VALUES (530, 'image', '/assets/images/jamon.png', 265);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (531, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 265);
+      VALUES (531, 'video', '', 265);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4228,7 +4228,7 @@
       VALUES (532, 'image', '/assets/images/mantequilla.png', 266);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (533, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 266);
+      VALUES (533, 'video', '', 266);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4241,7 +4241,7 @@
       VALUES (534, 'image', '/assets/images/pescados.png', 267);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (535, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 267);
+      VALUES (535, 'video', '', 267);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4254,7 +4254,7 @@
       VALUES (536, 'image', '/assets/images/platano.png', 268);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (537, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 268);
+      VALUES (537, 'video', '', 268);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4267,7 +4267,7 @@
       VALUES (538, 'image', '/assets/images/salchicha.png', 269);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (539, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 269);
+      VALUES (539, 'video', '', 269);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4280,7 +4280,7 @@
       VALUES (540, 'image', '/assets/images/tequeno.png', 270);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (541, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 270);
+      VALUES (541, 'video', '', 270);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4293,7 +4293,7 @@
       VALUES (542, 'image', '/assets/images/conejo.png', 271);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (543, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 271);
+      VALUES (543, 'video', '', 271);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4310,7 +4310,7 @@
       VALUES (544, 'image', '/assets/images/elefante.png', 272);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (545, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 272);
+      VALUES (545, 'video', '', 272);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4323,7 +4323,7 @@
       VALUES (546, 'image', '/assets/images/leon.png', 273);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (547, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 273);
+      VALUES (547, 'video', '', 273);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4336,7 +4336,7 @@
       VALUES (548, 'image', '/assets/images/mariposa.png', 274);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (549, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 274);
+      VALUES (549, 'video', '', 274);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4349,7 +4349,7 @@
       VALUES (550, 'image', '/assets/images/pavo.png', 275);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (551, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 275);
+      VALUES (551, 'video', '', 275);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4362,7 +4362,7 @@
       VALUES (552, 'image', '/assets/images/zancudo.png', 276);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (553, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 276);
+      VALUES (553, 'video', '', 276);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4375,7 +4375,7 @@
       VALUES (554, 'image', '/assets/images/anaranjado.png', 277);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (555, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 277);
+      VALUES (555, 'video', '', 277);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4392,7 +4392,7 @@
       VALUES (556, 'image', '/assets/images/dorado.png', 278);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (557, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 278);
+      VALUES (557, 'video', '', 278);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4405,7 +4405,7 @@
       VALUES (558, 'image', '/assets/images/fucsia.png', 279);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (559, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 279);
+      VALUES (559, 'video', '', 279);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4418,7 +4418,7 @@
       VALUES (560, 'image', '/assets/images/plateado.png', 280);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (561, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 280);
+      VALUES (561, 'video', '', 280);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4431,7 +4431,7 @@
       VALUES (562, 'image', '/assets/images/rosado.png', 281);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (563, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 281);
+      VALUES (563, 'video', '', 281);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4444,7 +4444,7 @@
       VALUES (564, 'image', '/assets/images/bandeja.png', 282);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (565, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 282);
+      VALUES (565, 'video', '', 282);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4461,7 +4461,7 @@
       VALUES (566, 'image', '/assets/images/budare.png', 283);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (567, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 283);
+      VALUES (567, 'video', '', 283);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4474,7 +4474,7 @@
       VALUES (568, 'image', '/assets/images/cucharon.png', 284);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (569, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 284);
+      VALUES (569, 'video', '', 284);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4487,7 +4487,7 @@
       VALUES (570, 'image', '/assets/images/rallo.png', 285);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (571, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 285);
+      VALUES (571, 'video', '', 285);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4500,7 +4500,7 @@
       VALUES (572, 'image', '/assets/images/servilletas.png', 286);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (573, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 286);
+      VALUES (573, 'video', '', 286);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4513,7 +4513,7 @@
       VALUES (574, 'image', '/assets/images/h1n1.png', 287);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (575, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 287);
+      VALUES (575, 'video', '', 287);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4538,7 +4538,7 @@
       VALUES (576, 'image', '/assets/images/conjutivitis.png', 288);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (577, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 288);
+      VALUES (577, 'video', '', 288);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4563,7 +4563,7 @@
       VALUES (578, 'image', '/assets/images/paperas.png', 289);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (579, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 289);
+      VALUES (579, 'video', '', 289);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4576,7 +4576,7 @@
       VALUES (580, 'image', '/assets/images/cilindro.png', 290);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (581, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 290);
+      VALUES (581, 'video', '', 290);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4593,7 +4593,7 @@
       VALUES (582, 'image', '/assets/images/cubo.png', 291);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (583, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 291);
+      VALUES (583, 'video', '', 291);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4606,7 +4606,7 @@
       VALUES (584, 'image', '/assets/images/prisma.png', 292);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (585, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 292);
+      VALUES (585, 'video', '', 292);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4619,7 +4619,7 @@
       VALUES (586, 'image', '/assets/images/rombo.png', 293);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (587, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 293);
+      VALUES (587, 'video', '', 293);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4632,7 +4632,7 @@
       VALUES (588, 'image', '/assets/images/fresas.png', 294);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (589, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 294);
+      VALUES (589, 'video', '', 294);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4649,7 +4649,7 @@
       VALUES (590, 'image', '/assets/images/manzana.png', 295);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (591, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 295);
+      VALUES (591, 'video', '', 295);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4662,7 +4662,7 @@
       VALUES (592, 'image', '/assets/images/parchita.png', 296);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (593, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 296);
+      VALUES (593, 'video', '', 296);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4675,7 +4675,7 @@
       VALUES (594, 'image', '/assets/images/pera.png', 297);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (595, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 297);
+      VALUES (595, 'video', '', 297);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4688,7 +4688,7 @@
       VALUES (596, 'image', '/assets/images/tomate.png', 298);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (597, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 298);
+      VALUES (597, 'video', '', 298);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4701,7 +4701,7 @@
       VALUES (598, 'image', '/assets/images/ds.png', 299);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (599, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 299);
+      VALUES (599, 'video', '', 299);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4718,7 +4718,7 @@
       VALUES (600, 'image', '/assets/images/balon.png', 300);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (601, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 300);
+      VALUES (601, 'video', '', 300);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4731,7 +4731,7 @@
       VALUES (602, 'image', '/assets/images/cometa.png', 301);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (603, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 301);
+      VALUES (603, 'video', '', 301);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4744,7 +4744,7 @@
       VALUES (604, 'image', '/assets/images/monopatin.png', 302);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (605, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 302);
+      VALUES (605, 'video', '', 302);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4757,7 +4757,7 @@
       VALUES (606, 'image', '/assets/images/patin.png', 303);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (607, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 303);
+      VALUES (607, 'video', '', 303);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4770,7 +4770,7 @@
       VALUES (608, 'image', '/assets/images/patineta.png', 304);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (609, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 304);
+      VALUES (609, 'video', '', 304);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4783,7 +4783,7 @@
       VALUES (610, 'image', '/assets/images/abasto.png', 305);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (611, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 305);
+      VALUES (611, 'video', '', 305);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4800,7 +4800,7 @@
       VALUES (612, 'image', '/assets/images/avenida.png', 306);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (613, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 306);
+      VALUES (613, 'video', '', 306);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4813,7 +4813,7 @@
       VALUES (614, 'image', '/assets/images/biblioteca.png', 307);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (615, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 307);
+      VALUES (615, 'video', '', 307);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4826,7 +4826,7 @@
       VALUES (616, 'image', '/assets/images/calle.png', 308);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (617, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 308);
+      VALUES (617, 'video', '', 308);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4839,7 +4839,7 @@
       VALUES (618, 'image', '/assets/images/consultorio.png', 309);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (619, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 309);
+      VALUES (619, 'video', '', 309);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4852,7 +4852,7 @@
       VALUES (620, 'image', '/assets/images/cuarto.png', 310);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (621, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 310);
+      VALUES (621, 'video', '', 310);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4865,7 +4865,7 @@
       VALUES (622, 'image', '/assets/images/hospital.png', 311);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (623, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 311);
+      VALUES (623, 'video', '', 311);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4878,7 +4878,7 @@
       VALUES (624, 'image', '/assets/images/sala.png', 312);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (625, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 312);
+      VALUES (625, 'video', '', 312);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4891,7 +4891,7 @@
       VALUES (626, 'image', '/assets/images/supermercado.png', 313);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (627, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 313);
+      VALUES (627, 'video', '', 313);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4904,7 +4904,7 @@
       VALUES (628, 'image', '/assets/images/cine.png', 314);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (629, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 314);
+      VALUES (629, 'video', '', 314);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -4921,7 +4921,7 @@
       VALUES (630, 'image', '/assets/images/jardin-botanico.png', 315);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (631, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 315);
+      VALUES (631, 'video', '', 315);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4934,7 +4934,7 @@
       VALUES (632, 'image', '/assets/images/museo-ciencias.png', 316);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (633, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 316);
+      VALUES (633, 'video', '', 316);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4947,7 +4947,7 @@
       VALUES (634, 'image', '/assets/images/teatro.png', 317);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (635, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 317);
+      VALUES (635, 'video', '', 317);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4968,7 +4968,7 @@
       VALUES (636, 'image', '/assets/images/noviembre.png', 318);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (637, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 318);
+      VALUES (637, 'video', '', 318);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4985,7 +4985,7 @@
       VALUES (638, 'image', '/assets/images/septiembre.png', 319);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (639, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 319);
+      VALUES (639, 'video', '', 319);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -4998,7 +4998,7 @@
       VALUES (640, 'image', '/assets/images/bastante.png', 320);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (641, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 320);
+      VALUES (641, 'video', '', 320);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5015,7 +5015,7 @@
       VALUES (642, 'image', '/assets/images/demasiado.png', 321);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (643, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 321);
+      VALUES (643, 'video', '', 321);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5028,7 +5028,7 @@
       VALUES (644, 'image', '/assets/images/muy-grande.png', 322);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (645, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 322);
+      VALUES (645, 'video', '', 322);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5093,7 +5093,7 @@
       VALUES (646, 'image', '/assets/images/posterior.png', 323);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (647, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 323);
+      VALUES (647, 'video', '', 323);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5110,7 +5110,7 @@
       VALUES (648, 'image', '/assets/images/enorme.png', 324);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (649, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 324);
+      VALUES (649, 'video', '', 324);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5127,7 +5127,7 @@
       VALUES (650, 'image', '/assets/images/gigante.png', 325);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (651, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 325);
+      VALUES (651, 'video', '', 325);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5140,7 +5140,7 @@
       VALUES (652, 'image', '/assets/images/inmenso.png', 326);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (653, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 326);
+      VALUES (653, 'video', '', 326);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5153,7 +5153,7 @@
       VALUES (654, 'image', '/assets/images/durante.png', 327);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (655, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 327);
+      VALUES (655, 'video', '', 327);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5170,7 +5170,7 @@
       VALUES (656, 'image', '/assets/images/proximo.png', 328);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (657, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 328);
+      VALUES (657, 'video', '', 328);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5183,7 +5183,7 @@
       VALUES (658, 'image', '/assets/images/cien.png', 329);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (659, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 329);
+      VALUES (659, 'video', '', 329);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5200,7 +5200,7 @@
       VALUES (660, 'image', '/assets/images/dieciseis.png', 330);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (661, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 330);
+      VALUES (661, 'video', '', 330);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5213,7 +5213,7 @@
       VALUES (662, 'image', '/assets/images/noventa-y-siete.png', 331);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (663, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 331);
+      VALUES (663, 'video', '', 331);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5226,7 +5226,7 @@
       VALUES (664, 'image', '/assets/images/noventa-y-tres.png', 332);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (665, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 332);
+      VALUES (665, 'video', '', 332);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5239,7 +5239,7 @@
       VALUES (666, 'image', '/assets/images/ochenta-y-cinco.png', 333);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (667, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 333);
+      VALUES (667, 'video', '', 333);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5252,7 +5252,7 @@
       VALUES (668, 'image', '/assets/images/treinta-y-dos.png', 334);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (669, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 334);
+      VALUES (669, 'video', '', 334);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5265,7 +5265,7 @@
       VALUES (670, 'image', '/assets/images/veintiocho.png', 335);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (671, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 335);
+      VALUES (671, 'video', '', 335);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5278,7 +5278,7 @@
       VALUES (672, 'image', '/assets/images/lavadora.png', 336);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (673, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 336);
+      VALUES (673, 'video', '', 336);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5295,7 +5295,7 @@
       VALUES (674, 'image', '/assets/images/microondas.png', 337);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (675, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 337);
+      VALUES (675, 'video', '', 337);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5308,7 +5308,7 @@
       VALUES (676, 'image', '/assets/images/nevera.png', 338);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (677, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 338);
+      VALUES (677, 'video', '', 338);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5321,7 +5321,7 @@
       VALUES (678, 'image', '/assets/images/plancha.png', 339);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (679, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 339);
+      VALUES (679, 'video', '', 339);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5334,7 +5334,7 @@
       VALUES (680, 'image', '/assets/images/secadora.png', 340);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (681, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 340);
+      VALUES (681, 'video', '', 340);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5347,7 +5347,7 @@
       VALUES (682, 'image', '/assets/images/cejas.png', 341);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (683, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 341);
+      VALUES (683, 'video', '', 341);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5364,7 +5364,7 @@
       VALUES (684, 'image', '/assets/images/cerebro.png', 342);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (685, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 342);
+      VALUES (685, 'video', '', 342);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5377,7 +5377,7 @@
       VALUES (686, 'image', '/assets/images/codo.png', 343);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (687, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 343);
+      VALUES (687, 'video', '', 343);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5390,7 +5390,7 @@
       VALUES (688, 'image', '/assets/images/corazon.png', 344);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (689, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 344);
+      VALUES (689, 'video', '', 344);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5403,7 +5403,7 @@
       VALUES (690, 'image', '/assets/images/cuello.png', 345);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (691, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 345);
+      VALUES (691, 'video', '', 345);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5416,7 +5416,7 @@
       VALUES (692, 'image', '/assets/images/gluteos.png', 346);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (693, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 346);
+      VALUES (693, 'video', '', 346);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5429,7 +5429,7 @@
       VALUES (694, 'image', '/assets/images/huesos.png', 347);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (695, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 347);
+      VALUES (695, 'video', '', 347);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5442,7 +5442,7 @@
       VALUES (696, 'image', '/assets/images/oido.png', 348);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (697, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 348);
+      VALUES (697, 'video', '', 348);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5455,7 +5455,7 @@
       VALUES (698, 'image', '/assets/images/pestanas.png', 349);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (699, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 349);
+      VALUES (699, 'video', '', 349);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5468,7 +5468,7 @@
       VALUES (700, 'image', '/assets/images/rodillas.png', 350);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (701, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 350);
+      VALUES (701, 'video', '', 350);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5481,7 +5481,7 @@
       VALUES (702, 'image', '/assets/images/senos.png', 351);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (703, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 351);
+      VALUES (703, 'video', '', 351);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5494,7 +5494,7 @@
       VALUES (704, 'image', '/assets/images/unas.png', 352);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (705, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 352);
+      VALUES (705, 'video', '', 352);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5507,7 +5507,7 @@
       VALUES (706, 'image', '/assets/images/ezequiel-zamora.png', 353);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (707, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 353);
+      VALUES (707, 'video', '', 353);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5524,7 +5524,7 @@
       VALUES (708, 'image', '/assets/images/francisco-de-miranda.png', 354);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (709, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 354);
+      VALUES (709, 'video', '', 354);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5553,7 +5553,7 @@
       VALUES (710, 'image', '/assets/images/amiga.png', 355);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (711, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 355);
+      VALUES (711, 'video', '', 355);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5570,7 +5570,7 @@
       VALUES (712, 'image', '/assets/images/amigo.png', 356);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (713, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 356);
+      VALUES (713, 'video', '', 356);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5583,7 +5583,7 @@
       VALUES (714, 'image', '/assets/images/esposos.png', 357);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (715, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 357);
+      VALUES (715, 'video', '', 357);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5596,7 +5596,7 @@
       VALUES (716, 'image', '/assets/images/nieta.png', 358);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (717, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 358);
+      VALUES (717, 'video', '', 358);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5609,7 +5609,7 @@
       VALUES (718, 'image', '/assets/images/nieto.png', 359);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (719, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 359);
+      VALUES (719, 'video', '', 359);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5622,7 +5622,7 @@
       VALUES (720, 'image', '/assets/images/primos.png', 360);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (721, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 360);
+      VALUES (721, 'video', '', 360);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5635,7 +5635,7 @@
       VALUES (722, 'image', '/assets/images/senor.png', 361);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (723, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 361);
+      VALUES (723, 'video', '', 361);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5648,7 +5648,7 @@
       VALUES (724, 'image', '/assets/images/senora.png', 362);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (725, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 362);
+      VALUES (725, 'video', '', 362);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5661,7 +5661,7 @@
       VALUES (726, 'image', '/assets/images/sobrino.png', 363);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (727, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 363);
+      VALUES (727, 'video', '', 363);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5686,7 +5686,7 @@
       VALUES (728, 'image', '/assets/images/bombero.png', 364);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (729, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 364);
+      VALUES (729, 'video', '', 364);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5703,7 +5703,7 @@
       VALUES (730, 'image', '/assets/images/directora.png', 365);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (731, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 365);
+      VALUES (731, 'video', '', 365);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5736,7 +5736,7 @@
       VALUES (732, 'image', '/assets/images/panadero.png', 366);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (733, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 366);
+      VALUES (733, 'video', '', 366);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5749,7 +5749,7 @@
       VALUES (734, 'image', '/assets/images/profesora.png', 367);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (735, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 367);
+      VALUES (735, 'video', '', 367);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5762,7 +5762,7 @@
       VALUES (736, 'image', '/assets/images/secretaria.png', 368);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (737, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 368);
+      VALUES (737, 'video', '', 368);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5775,7 +5775,7 @@
       VALUES (738, 'image', '/assets/images/verdulero.png', 369);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (739, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 369);
+      VALUES (739, 'video', '', 369);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5788,7 +5788,7 @@
       VALUES (740, 'image', '/assets/images/correa.png', 370);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (741, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 370);
+      VALUES (741, 'video', '', 370);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5805,7 +5805,7 @@
       VALUES (742, 'image', '/assets/images/guante.png', 371);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (743, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 371);
+      VALUES (743, 'video', '', 371);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5818,7 +5818,7 @@
       VALUES (744, 'image', '/assets/images/sosten.png', 372);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (745, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 372);
+      VALUES (745, 'video', '', 372);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5831,7 +5831,7 @@
       VALUES (746, 'image', '/assets/images/sueter.png', 373);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (747, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 373);
+      VALUES (747, 'video', '', 373);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5844,7 +5844,7 @@
       VALUES (748, 'image', '/assets/images/uniforme.png', 374);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (749, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 374);
+      VALUES (749, 'video', '', 374);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5857,7 +5857,7 @@
       VALUES (750, 'image', '/assets/images/zapato-deportivo.png', 375);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (751, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 375);
+      VALUES (751, 'video', '', 375);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5870,7 +5870,7 @@
       VALUES (752, 'image', '/assets/images/bandera-de-merida.png', 376);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (753, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 376);
+      VALUES (753, 'video', '', 376);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5891,7 +5891,7 @@
       VALUES (754, 'image', '/assets/images/frailejon.png', 377);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (755, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 377);
+      VALUES (755, 'video', '', 377);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5904,7 +5904,7 @@
       VALUES (756, 'image', '/assets/images/oso-frontino.png', 378);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (757, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 378);
+      VALUES (757, 'video', '', 378);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5957,7 +5957,7 @@
       VALUES (758, 'image', '/assets/images/avioneta.png', 379);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (759, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 379);
+      VALUES (759, 'video', '', 379);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -5974,7 +5974,7 @@
       VALUES (760, 'image', '/assets/images/lancha.png', 380);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (761, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 380);
+      VALUES (761, 'video', '', 380);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -5987,7 +5987,7 @@
       VALUES (762, 'image', '/assets/images/tren.png', 381);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (763, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 381);
+      VALUES (763, 'video', '', 381);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6000,7 +6000,7 @@
       VALUES (764, 'image', '/assets/images/carpeta.png', 382);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (765, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 382);
+      VALUES (765, 'video', '', 382);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6017,7 +6017,7 @@
       VALUES (766, 'image', '/assets/images/cartuchera.png', 383);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (767, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 383);
+      VALUES (767, 'video', '', 383);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6030,7 +6030,7 @@
       VALUES (768, 'image', '/assets/images/compas.png', 384);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (769, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 384);
+      VALUES (769, 'video', '', 384);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6043,7 +6043,7 @@
       VALUES (770, 'image', '/assets/images/hoja-de-papel.png', 385);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (771, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 385);
+      VALUES (771, 'video', '', 385);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6056,7 +6056,7 @@
       VALUES (772, 'image', '/assets/images/pincel.png', 386);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (773, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 386);
+      VALUES (773, 'video', '', 386);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6069,7 +6069,7 @@
       VALUES (774, 'image', '/assets/images/pinturas.png', 387);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (775, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 387);
+      VALUES (775, 'video', '', 387);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6082,7 +6082,7 @@
       VALUES (776, 'image', '/assets/images/tijera.png', 388);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (777, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 388);
+      VALUES (777, 'video', '', 388);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6095,7 +6095,7 @@
       VALUES (778, 'image', '/assets/images/tirro.png', 389);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (779, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 389);
+      VALUES (779, 'video', '', 389);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6108,7 +6108,7 @@
       VALUES (780, 'image', '/assets/images/aji.png', 390);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (781, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 390);
+      VALUES (781, 'video', '', 390);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6125,7 +6125,7 @@
       VALUES (782, 'image', '/assets/images/ajo.png', 391);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (783, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 391);
+      VALUES (783, 'video', '', 391);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6138,7 +6138,7 @@
       VALUES (784, 'image', '/assets/images/cebollin.png', 392);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (785, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 392);
+      VALUES (785, 'video', '', 392);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6151,7 +6151,7 @@
       VALUES (786, 'image', '/assets/images/lechuga.png', 393);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (787, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 393);
+      VALUES (787, 'video', '', 393);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6164,7 +6164,7 @@
       VALUES (788, 'image', '/assets/images/pimenton.png', 394);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (789, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 394);
+      VALUES (789, 'video', '', 394);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6177,7 +6177,7 @@
       VALUES (790, 'image', '/assets/images/repollo.png', 395);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (791, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 395);
+      VALUES (791, 'video', '', 395);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6195,7 +6195,7 @@
       VALUES (792, 'image', '/assets/images/pino.png', 396);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (793, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 396);
+      VALUES (793, 'video', '', 396);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6212,7 +6212,7 @@
       VALUES (794, 'image', '/assets/images/bambu.png', 397);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (795, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 397);
+      VALUES (795, 'video', '', 397);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6225,7 +6225,7 @@
       VALUES (796, 'image', '/assets/images/pabellon.png', 398);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (797, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 398);
+      VALUES (797, 'video', '', 398);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6242,7 +6242,7 @@
       VALUES (798, 'image', '/assets/images/hervido.png', 399);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (799, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 399);
+      VALUES (799, 'video', '', 399);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6255,7 +6255,7 @@
       VALUES (800, 'image', '/assets/images/parilla.png', 400);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (801, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 400);
+      VALUES (801, 'video', '', 400);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6268,7 +6268,7 @@
       VALUES (802, 'image', '/assets/images/mortadela.png', 401);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (803, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 401);
+      VALUES (803, 'video', '', 401);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6281,7 +6281,7 @@
       VALUES (804, 'image', '/assets/images/pasticho.png', 402);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (805, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 402);
+      VALUES (805, 'video', '', 402);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6294,7 +6294,7 @@
       VALUES (806, 'image', '/assets/images/hayaca.png', 403);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (807, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 403);
+      VALUES (807, 'video', '', 403);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6307,7 +6307,7 @@
       VALUES (808, 'image', '/assets/images/casabe.png', 404);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (809, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 404);
+      VALUES (809, 'video', '', 404);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6320,7 +6320,7 @@
       VALUES (810, 'image', '/assets/images/granos.png', 405);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (811, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 405);
+      VALUES (811, 'video', '', 405);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6333,7 +6333,7 @@
       VALUES (812, 'image', '/assets/images/tiburon.png', 406);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (813, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 406);
+      VALUES (813, 'video', '', 406);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6350,7 +6350,7 @@
       VALUES (814, 'image', '/assets/images/delfin.png', 407);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (815, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 407);
+      VALUES (815, 'video', '', 407);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6363,7 +6363,7 @@
       VALUES (816, 'image', '/assets/images/cocodrilo.png', 408);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (817, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 408);
+      VALUES (817, 'video', '', 408);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6376,7 +6376,7 @@
       VALUES (818, 'image', '/assets/images/iguana.png', 409);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (819, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 409);
+      VALUES (819, 'video', '', 409);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6389,7 +6389,7 @@
       VALUES (820, 'image', '/assets/images/hipopotamo.png', 410);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (821, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 410);
+      VALUES (821, 'video', '', 410);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6402,7 +6402,7 @@
       VALUES (822, 'image', '/assets/images/chiguire.png', 411);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (823, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 411);
+      VALUES (823, 'video', '', 411);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6415,7 +6415,7 @@
       VALUES (824, 'image', '/assets/images/loro.png', 412);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (825, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 412);
+      VALUES (825, 'video', '', 412);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6428,7 +6428,7 @@
       VALUES (826, 'image', '/assets/images/tucan.png', 413);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (827, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 413);
+      VALUES (827, 'video', '', 413);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6441,7 +6441,7 @@
       VALUES (828, 'image', '/assets/images/arana.png', 414);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (829, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 414);
+      VALUES (829, 'video', '', 414);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6454,7 +6454,7 @@
       VALUES (830, 'image', '/assets/images/tortuga.png', 415);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (831, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 415);
+      VALUES (831, 'video', '', 415);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6467,7 +6467,7 @@
       VALUES (832, 'image', '/assets/images/hormiga.png', 416);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (833, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 416);
+      VALUES (833, 'video', '', 416);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6480,7 +6480,7 @@
       VALUES (834, 'image', '/assets/images/tigre.png', 417);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (835, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 417);
+      VALUES (835, 'video', '', 417);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6493,7 +6493,7 @@
       VALUES (836, 'image', '/assets/images/pupura.png', 418);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (837, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 418);
+      VALUES (837, 'video', '', 418);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6510,7 +6510,7 @@
       VALUES (838, 'image', '/assets/images/violeta.png', 419);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (839, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 419);
+      VALUES (839, 'video', '', 419);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6523,7 +6523,7 @@
       VALUES (840, 'image', '/assets/images/marfil.png', 420);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (841, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 420);
+      VALUES (841, 'video', '', 420);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6536,7 +6536,7 @@
       VALUES (842, 'image', '/assets/images/cobre.png', 421);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (843, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 421);
+      VALUES (843, 'video', '', 421);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6549,7 +6549,7 @@
       VALUES (844, 'image', '/assets/images/bronce.png', 422);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (845, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 422);
+      VALUES (845, 'video', '', 422);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6562,7 +6562,7 @@
       VALUES (846, 'image', '/assets/images/piel.png', 423);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (847, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 423);
+      VALUES (847, 'video', '', 423);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6575,7 +6575,7 @@
       VALUES (848, 'image', '/assets/images/lila.png', 424);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (849, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 424);
+      VALUES (849, 'video', '', 424);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6588,7 +6588,7 @@
       VALUES (850, 'image', '/assets/images/turquesa.png', 425);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (851, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 425);
+      VALUES (851, 'video', '', 425);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6601,7 +6601,7 @@
       VALUES (852, 'image', '/assets/images/beige.png', 426);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (853, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 426);
+      VALUES (853, 'video', '', 426);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6614,7 +6614,7 @@
       VALUES (854, 'image', '/assets/images/arroz-con-leche.png', 427);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (855, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 427);
+      VALUES (855, 'video', '', 427);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6631,7 +6631,7 @@
       VALUES (856, 'image', '/assets/images/quesillo.png', 428);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (857, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 428);
+      VALUES (857, 'video', '', 428);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6644,7 +6644,7 @@
       VALUES (858, 'image', '/assets/images/refrezco.png', 429);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (859, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 429);
+      VALUES (859, 'video', '', 429);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6657,7 +6657,7 @@
       VALUES (860, 'image', '/assets/images/tizana.png', 430);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (861, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 430);
+      VALUES (861, 'video', '', 430);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6670,7 +6670,7 @@
       VALUES (862, 'image', '/assets/images/caramelo.png', 431);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (863, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 431);
+      VALUES (863, 'video', '', 431);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6683,7 +6683,7 @@
       VALUES (864, 'image', '/assets/images/chupeta.png', 432);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (865, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 432);
+      VALUES (865, 'video', '', 432);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6696,7 +6696,7 @@
       VALUES (866, 'image', '/assets/images/chicle.png', 433);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (867, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 433);
+      VALUES (867, 'video', '', 433);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6709,7 +6709,7 @@
       VALUES (868, 'image', '/assets/images/ebola.png', 434);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (869, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 434);
+      VALUES (869, 'video', '', 434);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6726,7 +6726,7 @@
       VALUES (870, 'image', '/assets/images/lechina.png', 435);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (871, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 435);
+      VALUES (871, 'video', '', 435);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6739,7 +6739,7 @@
       VALUES (872, 'image', '/assets/images/diabetes.png', 436);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (873, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 436);
+      VALUES (873, 'video', '', 436);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6752,7 +6752,7 @@
       VALUES (874, 'image', '/assets/images/sarampion.png', 437);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (875, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 437);
+      VALUES (875, 'video', '', 437);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6765,7 +6765,7 @@
       VALUES (876, 'image', '/assets/images/guanabana.png', 438);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (877, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 438);
+      VALUES (877, 'video', '', 438);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6782,7 +6782,7 @@
       VALUES (878, 'image', '/assets/images/mandarina.png', 439);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (879, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 439);
+      VALUES (879, 'video', '', 439);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6795,7 +6795,7 @@
       VALUES (880, 'image', '/assets/images/durazno.png', 440);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (881, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 440);
+      VALUES (881, 'video', '', 440);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6808,7 +6808,7 @@
       VALUES (882, 'image', '/assets/images/aguacate.png', 441);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (883, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 441);
+      VALUES (883, 'video', '', 441);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6821,7 +6821,7 @@
       VALUES (884, 'image', '/assets/images/tamarindo.png', 442);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (885, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 442);
+      VALUES (885, 'video', '', 442);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6834,7 +6834,7 @@
       VALUES (886, 'image', '/assets/images/higo.png', 443);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (887, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 443);
+      VALUES (887, 'video', '', 443);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6859,7 +6859,7 @@
       VALUES (888, 'image', '/assets/images/atletismo.png', 444);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (889, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 444);
+      VALUES (889, 'video', '', 444);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6872,7 +6872,7 @@
       VALUES (890, 'image', '/assets/images/baloncesto.png', 445);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (891, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 445);
+      VALUES (891, 'video', '', 445);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6885,7 +6885,7 @@
       VALUES (892, 'image', '/assets/images/voliebol.png', 446);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (893, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 446);
+      VALUES (893, 'video', '', 446);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6898,7 +6898,7 @@
       VALUES (894, 'image', '/assets/images/ciclismo.png', 447);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (895, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 447);
+      VALUES (895, 'video', '', 447);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6911,7 +6911,7 @@
       VALUES (896, 'image', '/assets/images/museo.png', 448);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (897, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 448);
+      VALUES (897, 'video', '', 448);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -6928,7 +6928,7 @@
       VALUES (898, 'image', '/assets/images/edificio.png', 449);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (899, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 449);
+      VALUES (899, 'video', '', 449);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6941,7 +6941,7 @@
       VALUES (900, 'image', '/assets/images/pasillo.png', 450);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (901, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 450);
+      VALUES (901, 'video', '', 450);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6954,7 +6954,7 @@
       VALUES (902, 'image', '/assets/images/gradas.png', 451);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (903, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 451);
+      VALUES (903, 'video', '', 451);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6967,7 +6967,7 @@
       VALUES (904, 'image', '/assets/images/estacionamiento.png', 452);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (905, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 452);
+      VALUES (905, 'video', '', 452);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6980,7 +6980,7 @@
       VALUES (906, 'image', '/assets/images/vivienda.png', 453);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (907, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 453);
+      VALUES (907, 'video', '', 453);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -6993,7 +6993,7 @@
       VALUES (908, 'image', '/assets/images/choza.png', 454);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (909, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 454);
+      VALUES (909, 'video', '', 454);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7006,7 +7006,7 @@
       VALUES (910, 'image', '/assets/images/shabono.png', 455);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (911, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 455);
+      VALUES (911, 'video', '', 455);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7019,7 +7019,7 @@
       VALUES (912, 'image', '/assets/images/los-aleros.png', 456);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (913, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 456);
+      VALUES (913, 'video', '', 456);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -7036,7 +7036,7 @@
       VALUES (914, 'image', '/assets/images/plaza-de-toros.png', 457);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (915, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 457);
+      VALUES (915, 'video', '', 457);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7049,7 +7049,7 @@
       VALUES (916, 'image', '/assets/images/la-culata.png', 458);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (917, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 458);
+      VALUES (917, 'video', '', 458);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7062,7 +7062,7 @@
       VALUES (918, 'image', '/assets/images/paramo.png', 459);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (919, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 459);
+      VALUES (919, 'video', '', 459);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7075,7 +7075,7 @@
       VALUES (920, 'image', '/assets/images/venezuela-de-antier.png', 460);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (921, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 460);
+      VALUES (921, 'video', '', 460);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7088,7 +7088,7 @@
       VALUES (922, 'image', '/assets/images/metrobus.png', 461);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (923, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 461);
+      VALUES (923, 'video', '', 461);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -7105,7 +7105,7 @@
       VALUES (924, 'image', '/assets/images/metro.png', 462);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (925, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 462);
+      VALUES (925, 'video', '', 462);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7118,7 +7118,7 @@
       VALUES (926, 'image', '/assets/images/ferry.png', 463);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (927, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 463);
+      VALUES (927, 'video', '', 463);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7131,7 +7131,7 @@
       VALUES (928, 'image', '/assets/images/submarino.png', 464);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (929, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 464);
+      VALUES (929, 'video', '', 464);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7144,7 +7144,7 @@
       VALUES (930, 'image', '/assets/images/teleferico.png', 465);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (931, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 465);
+      VALUES (931, 'video', '', 465);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7157,7 +7157,7 @@
       VALUES (932, 'image', '/assets/images/horno.png', 466);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (933, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 466);
+      VALUES (933, 'video', '', 466);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -7174,7 +7174,7 @@
       VALUES (934, 'image', '/assets/images/aspiradora.png', 467);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (935, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 467);
+      VALUES (935, 'video', '', 467);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7187,7 +7187,7 @@
       VALUES (936, 'image', '/assets/images/pulidora.png', 468);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (937, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 468);
+      VALUES (937, 'video', '', 468);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7200,7 +7200,7 @@
       VALUES (938, 'image', '/assets/images/dvd.png', 469);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (939, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 469);
+      VALUES (939, 'video', '', 469);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7213,7 +7213,7 @@
       VALUES (940, 'image', '/assets/images/tablet.png', 470);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (941, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 470);
+      VALUES (941, 'video', '', 470);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7226,7 +7226,7 @@
       VALUES (942, 'image', '/assets/images/laptop.png', 471);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (943, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 471);
+      VALUES (943, 'video', '', 471);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7239,7 +7239,7 @@
       VALUES (944, 'image', '/assets/images/arquitecto.png', 472);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (945, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 472);
+      VALUES (945, 'video', '', 472);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -7256,7 +7256,7 @@
       VALUES (946, 'image', '/assets/images/ingeniero.png', 473);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (947, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 473);
+      VALUES (947, 'video', '', 473);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7269,7 +7269,7 @@
       VALUES (948, 'image', '/assets/images/abogado.png', 474);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (949, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 474);
+      VALUES (949, 'video', '', 474);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7282,7 +7282,7 @@
       VALUES (950, 'image', '/assets/images/jardinero.png', 475);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (951, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 475);
+      VALUES (951, 'video', '', 475);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7295,7 +7295,7 @@
       VALUES (952, 'image', '/assets/images/chef.png', 476);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (953, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 476);
+      VALUES (953, 'video', '', 476);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7308,7 +7308,7 @@
       VALUES (954, 'image', '/assets/images/labios.png', 477);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (955, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 477);
+      VALUES (955, 'video', '', 477);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -7325,7 +7325,7 @@
       VALUES (956, 'image', '/assets/images/tronco.png', 478);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (957, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 478);
+      VALUES (957, 'video', '', 478);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7338,7 +7338,7 @@
       VALUES (958, 'image', '/assets/images/tobillo.png', 479);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (959, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 479);
+      VALUES (959, 'video', '', 479);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7351,7 +7351,7 @@
       VALUES (960, 'image', '/assets/images/mejilla.png', 480);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (961, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 480);
+      VALUES (961, 'video', '', 480);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7364,7 +7364,7 @@
       VALUES (962, 'image', '/assets/images/parpados.png', 481);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (963, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 481);
+      VALUES (963, 'video', '', 481);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7377,7 +7377,7 @@
       VALUES (964, 'image', '/assets/images/axila.png', 482);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (965, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 482);
+      VALUES (965, 'video', '', 482);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7390,7 +7390,7 @@
       VALUES (966, 'image', '/assets/images/pulmon.png', 483);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (967, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 483);
+      VALUES (967, 'video', '', 483);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7403,7 +7403,7 @@
       VALUES (968, 'image', '/assets/images/rinon.png', 484);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (969, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 484);
+      VALUES (969, 'video', '', 484);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7416,7 +7416,7 @@
       VALUES (970, 'image', '/assets/images/estomago.png', 485);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (971, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 485);
+      VALUES (971, 'video', '', 485);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7429,7 +7429,7 @@
       VALUES (972, 'image', '/assets/images/intestino.png', 486);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (973, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 486);
+      VALUES (973, 'video', '', 486);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7442,7 +7442,7 @@
       VALUES (974, 'image', '/assets/images/muela.png', 487);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (975, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 487);
+      VALUES (975, 'video', '', 487);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7455,7 +7455,7 @@
       VALUES (976, 'image', '/assets/images/vagina.png', 488);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (977, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 488);
+      VALUES (977, 'video', '', 488);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7468,7 +7468,7 @@
       VALUES (978, 'image', '/assets/images/testiculos.png', 489);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (979, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 489);
+      VALUES (979, 'video', '', 489);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7489,7 +7489,7 @@
       VALUES (980, 'image', '/assets/images/guaicaipuro.png', 490);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (981, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 490);
+      VALUES (981, 'video', '', 490);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7502,7 +7502,7 @@
       VALUES (982, 'image', '/assets/images/manuelita-saenz.png', 491);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (983, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 491);
+      VALUES (983, 'video', '', 491);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7515,7 +7515,7 @@
       VALUES (984, 'image', '/assets/images/negra-hipolita.png', 492);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (985, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 492);
+      VALUES (985, 'video', '', 492);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7528,7 +7528,7 @@
       VALUES (986, 'image', '/assets/images/luisa-caceres-de-arismendi.png', 493);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (987, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 493);
+      VALUES (987, 'video', '', 493);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7541,7 +7541,7 @@
       VALUES (988, 'image', '/assets/images/ana-maria-campos.png', 494);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (989, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 494);
+      VALUES (989, 'video', '', 494);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7554,7 +7554,7 @@
       VALUES (990, 'image', '/assets/images/mono-deportivo.png', 495);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (991, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 495);
+      VALUES (991, 'video', '', 495);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -7571,7 +7571,7 @@
       VALUES (992, 'image', '/assets/images/chaqueta.png', 496);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (993, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 496);
+      VALUES (993, 'video', '', 496);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7584,7 +7584,7 @@
       VALUES (994, 'image', '/assets/images/franelilla.png', 497);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (995, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 497);
+      VALUES (995, 'video', '', 497);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7597,7 +7597,7 @@
       VALUES (996, 'image', '/assets/images/bufanda.png', 498);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (997, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 498);
+      VALUES (997, 'video', '', 498);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7610,7 +7610,7 @@
       VALUES (998, 'image', '/assets/images/blusa.png', 499);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (999, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 499);
+      VALUES (999, 'video', '', 499);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7623,7 +7623,7 @@
       VALUES (1000, 'image', '/assets/images/erupcion.png', 500);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1001, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 500);
+      VALUES (1001, 'video', '', 500);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -7640,7 +7640,7 @@
       VALUES (1002, 'image', '/assets/images/ardor.png', 501);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1003, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 501);
+      VALUES (1003, 'video', '', 501);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7653,7 +7653,7 @@
       VALUES (1004, 'image', '/assets/images/absceso.png', 502);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1005, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 502);
+      VALUES (1005, 'video', '', 502);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7666,7 +7666,7 @@
       VALUES (1006, 'image', '/assets/images/colico.png', 503);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1007, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 503);
+      VALUES (1007, 'video', '', 503);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7679,7 +7679,7 @@
       VALUES (1008, 'image', '/assets/images/diccionario.png', 504);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1009, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 504);
+      VALUES (1009, 'video', '', 504);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -7696,7 +7696,7 @@
       VALUES (1010, 'image', '/assets/images/atlas.png', 505);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1011, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 505);
+      VALUES (1011, 'video', '', 505);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7709,7 +7709,7 @@
       VALUES (1012, 'image', '/assets/images/enciclopedia.png', 506);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1013, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 506);
+      VALUES (1013, 'video', '', 506);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7722,7 +7722,7 @@
       VALUES (1014, 'image', '/assets/images/revistas.png', 507);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1015, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 507);
+      VALUES (1015, 'video', '', 507);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7735,7 +7735,7 @@
       VALUES (1016, 'image', '/assets/images/folletos.png', 508);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1017, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 508);
+      VALUES (1017, 'video', '', 508);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7748,7 +7748,7 @@
       VALUES (1018, 'image', '/assets/images/escuadras.png', 509);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1019, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 509);
+      VALUES (1019, 'video', '', 509);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7761,7 +7761,7 @@
       VALUES (1020, 'image', '/assets/images/silicon.png', 510);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1021, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 510);
+      VALUES (1021, 'video', '', 510);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7774,7 +7774,7 @@
       VALUES (1022, 'image', '/assets/images/block.png', 511);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1023, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 511);
+      VALUES (1023, 'video', '', 511);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7787,7 +7787,7 @@
       VALUES (1024, 'image', '/assets/images/hoja-de-examen.png', 512);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1025, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 512);
+      VALUES (1025, 'video', '', 512);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7800,7 +7800,7 @@
       VALUES (1026, 'image', '/assets/images/cilantro.png', 513);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1027, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 513);
+      VALUES (1027, 'video', '', 513);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -7817,7 +7817,7 @@
       VALUES (1028, 'image', '/assets/images/yuca.png', 514);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1029, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 514);
+      VALUES (1029, 'video', '', 514);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7830,7 +7830,7 @@
       VALUES (1030, 'image', '/assets/images/maiz.png', 515);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1031, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 515);
+      VALUES (1031, 'video', '', 515);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7843,7 +7843,7 @@
       VALUES (1032, 'image', '/assets/images/trigo.png', 516);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1033, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 516);
+      VALUES (1033, 'video', '', 516);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7856,7 +7856,7 @@
       VALUES (1034, 'image', '/assets/images/perejil.png', 517);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1035, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 517);
+      VALUES (1035, 'video', '', 517);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7869,7 +7869,7 @@
       VALUES (1036, 'image', '/assets/images/calabacin.png', 518);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1037, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 518);
+      VALUES (1037, 'video', '', 518);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7882,7 +7882,7 @@
       VALUES (1038, 'image', '/assets/images/pepino.png', 519);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1039, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 519);
+      VALUES (1039, 'video', '', 519);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7895,7 +7895,7 @@
       VALUES (1040, 'image', '/assets/images/brocoli.png', 520);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1041, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 520);
+      VALUES (1041, 'video', '', 520);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7908,7 +7908,7 @@
       VALUES (1042, 'image', '/assets/images/coliflor.png', 521);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1043, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 521);
+      VALUES (1043, 'video', '', 521);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7921,7 +7921,7 @@
       VALUES (1044, 'image', '/assets/images/apio-espana.png', 522);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1045, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 522);
+      VALUES (1045, 'video', '', 522);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7934,7 +7934,7 @@
       VALUES (1046, 'image', '/assets/images/berenjena.png', 523);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1047, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 523);
+      VALUES (1047, 'video', '', 523);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7980,7 +7980,7 @@
       VALUES (1048, 'image', '/assets/images/bucare.png', 524);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1049, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 524);
+      VALUES (1049, 'video', '', 524);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -7993,7 +7993,7 @@
       VALUES (1050, 'image', '/assets/images/coloradito.png', 525);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1051, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 525);
+      VALUES (1051, 'video', '', 525);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8010,7 +8010,7 @@
       VALUES (1052, 'image', '/assets/images/saman.png', 526);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1053, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 526);
+      VALUES (1053, 'video', '', 526);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8023,7 +8023,7 @@
       VALUES (1054, 'image', '/assets/images/arvejas.png', 527);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1055, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 527);
+      VALUES (1055, 'video', '', 527);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -8044,7 +8044,7 @@
       VALUES (1056, 'image', '/assets/images/frijoles.png', 528);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1057, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 528);
+      VALUES (1057, 'video', '', 528);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8061,7 +8061,7 @@
       VALUES (1058, 'image', '/assets/images/hallacas.png', 529);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1059, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 529);
+      VALUES (1059, 'video', '', 529);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8074,7 +8074,7 @@
       VALUES (1060, 'image', '/assets/images/hamburguesa.png', 530);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1061, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 530);
+      VALUES (1061, 'video', '', 530);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8099,7 +8099,7 @@
       VALUES (1062, 'image', '/assets/images/parrilla.png', 531);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1063, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 531);
+      VALUES (1063, 'video', '', 531);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8116,7 +8116,7 @@
       VALUES (1064, 'image', '/assets/images/pizza.png', 532);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1065, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 532);
+      VALUES (1065, 'video', '', 532);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8137,7 +8137,7 @@
       VALUES (1066, 'image', '/assets/images/cardenal.png', 533);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1067, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 533);
+      VALUES (1067, 'video', '', 533);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8150,7 +8150,7 @@
       VALUES (1068, 'image', '/assets/images/cascabel.png', 534);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1069, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 534);
+      VALUES (1069, 'video', '', 534);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8171,7 +8171,7 @@
       VALUES (1070, 'image', '/assets/images/coral.png', 535);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1071, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 535);
+      VALUES (1071, 'video', '', 535);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8184,7 +8184,7 @@
       VALUES (1072, 'image', '/assets/images/culebra.png', 536);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1073, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 536);
+      VALUES (1073, 'video', '', 536);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8201,7 +8201,7 @@
       VALUES (1074, 'image', '/assets/images/gavilan.png', 537);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1075, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 537);
+      VALUES (1075, 'video', '', 537);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8214,7 +8214,7 @@
       VALUES (1076, 'image', '/assets/images/gaviota.png', 538);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1077, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 538);
+      VALUES (1077, 'video', '', 538);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8227,7 +8227,7 @@
       VALUES (1078, 'image', '/assets/images/guacamaya.png', 539);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1079, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 539);
+      VALUES (1079, 'video', '', 539);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8256,7 +8256,7 @@
       VALUES (1080, 'image', '/assets/images/mapanare.png', 540);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1081, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 540);
+      VALUES (1081, 'video', '', 540);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8269,7 +8269,7 @@
       VALUES (1082, 'image', '/assets/images/pavo-real.png', 541);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1083, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 541);
+      VALUES (1083, 'video', '', 541);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8282,7 +8282,7 @@
       VALUES (1084, 'image', '/assets/images/perico.png', 542);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1085, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 542);
+      VALUES (1085, 'video', '', 542);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8311,7 +8311,7 @@
       VALUES (1086, 'image', '/assets/images/zamuro.png', 543);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1087, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 543);
+      VALUES (1087, 'video', '', 543);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8324,7 +8324,7 @@
       VALUES (1088, 'image', '/assets/images/champu.png', 544);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1089, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 544);
+      VALUES (1089, 'video', '', 544);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -8341,7 +8341,7 @@
       VALUES (1090, 'image', '/assets/images/crema-dental.png', 545);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1091, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 545);
+      VALUES (1091, 'video', '', 545);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8354,7 +8354,7 @@
       VALUES (1092, 'image', '/assets/images/desodorante.png', 546);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1093, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 546);
+      VALUES (1093, 'video', '', 546);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8367,7 +8367,7 @@
       VALUES (1094, 'image', '/assets/images/enjuague.png', 547);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1095, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 547);
+      VALUES (1095, 'video', '', 547);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8380,7 +8380,7 @@
       VALUES (1096, 'image', '/assets/images/perfume.png', 548);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1097, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 548);
+      VALUES (1097, 'video', '', 548);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8393,7 +8393,7 @@
       VALUES (1098, 'image', '/assets/images/talco.png', 549);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1099, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 549);
+      VALUES (1099, 'video', '', 549);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8406,7 +8406,7 @@
       VALUES (1100, 'image', '/assets/images/toalla-sanitaria.png', 550);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1101, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 550);
+      VALUES (1101, 'video', '', 550);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8447,7 +8447,7 @@
       VALUES (1102, 'image', '/assets/images/purpura.png', 551);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1103, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 551);
+      VALUES (1103, 'video', '', 551);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8484,7 +8484,7 @@
       VALUES (1104, 'image', '/assets/images/chocolate.png', 552);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1105, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 552);
+      VALUES (1105, 'video', '', 552);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8501,7 +8501,7 @@
       VALUES (1106, 'image', '/assets/images/cotufa.png', 553);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1107, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 553);
+      VALUES (1107, 'video', '', 553);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8514,7 +8514,7 @@
       VALUES (1108, 'image', '/assets/images/malta.png', 554);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1109, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 554);
+      VALUES (1109, 'video', '', 554);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8527,7 +8527,7 @@
       VALUES (1110, 'image', '/assets/images/pepito.png', 555);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1111, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 555);
+      VALUES (1111, 'video', '', 555);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8544,7 +8544,7 @@
       VALUES (1112, 'image', '/assets/images/refresco.png', 556);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1113, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 556);
+      VALUES (1113, 'video', '', 556);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8561,7 +8561,7 @@
       VALUES (1114, 'image', '/assets/images/cancer.png', 557);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1115, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 557);
+      VALUES (1115, 'video', '', 557);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -8578,7 +8578,7 @@
       VALUES (1116, 'image', '/assets/images/diabete.png', 558);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1117, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 558);
+      VALUES (1117, 'video', '', 558);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8595,7 +8595,7 @@
       VALUES (1118, 'image', '/assets/images/gonorrea.png', 559);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1119, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 559);
+      VALUES (1119, 'video', '', 559);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8608,7 +8608,7 @@
       VALUES (1120, 'image', '/assets/images/herpes.png', 560);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1121, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 560);
+      VALUES (1121, 'video', '', 560);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8629,7 +8629,7 @@
       VALUES (1122, 'image', '/assets/images/sida.png', 561);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1123, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 561);
+      VALUES (1123, 'video', '', 561);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8642,7 +8642,7 @@
       VALUES (1124, 'image', '/assets/images/sifilis.png', 562);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1125, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 562);
+      VALUES (1125, 'video', '', 562);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8655,7 +8655,7 @@
       VALUES (1126, 'image', '/assets/images/vph.png', 563);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1127, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 563);
+      VALUES (1127, 'video', '', 563);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8680,7 +8680,7 @@
       VALUES (1128, 'image', '/assets/images/granada.png', 564);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1129, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 564);
+      VALUES (1129, 'video', '', 564);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8693,7 +8693,7 @@
       VALUES (1130, 'image', '/assets/images/guama.png', 565);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1131, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 565);
+      VALUES (1131, 'video', '', 565);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8710,7 +8710,7 @@
       VALUES (1132, 'image', '/assets/images/hicaco.png', 566);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1133, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 566);
+      VALUES (1133, 'video', '', 566);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8727,7 +8727,7 @@
       VALUES (1134, 'image', '/assets/images/mamon.png', 567);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1135, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 567);
+      VALUES (1135, 'video', '', 567);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8744,7 +8744,7 @@
       VALUES (1136, 'image', '/assets/images/nispero.png', 568);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1137, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 568);
+      VALUES (1137, 'video', '', 568);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8777,7 +8777,7 @@
       VALUES (1138, 'image', '/assets/images/deportes-extremos.png', 569);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1139, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 569);
+      VALUES (1139, 'video', '', 569);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8798,7 +8798,7 @@
       VALUES (1140, 'image', '/assets/images/voleibol.png', 570);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1141, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 570);
+      VALUES (1141, 'video', '', 570);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8811,7 +8811,7 @@
       VALUES (1142, 'image', '/assets/images/ambulatorio.png', 571);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1143, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 571);
+      VALUES (1143, 'video', '', 571);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -8828,7 +8828,7 @@
       VALUES (1144, 'image', '/assets/images/apartamento.png', 572);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1145, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 572);
+      VALUES (1145, 'video', '', 572);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8841,7 +8841,7 @@
       VALUES (1146, 'image', '/assets/images/bodega.png', 573);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1147, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 573);
+      VALUES (1147, 'video', '', 573);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8858,7 +8858,7 @@
       VALUES (1148, 'image', '/assets/images/centro-comercial.png', 574);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1149, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 574);
+      VALUES (1149, 'video', '', 574);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8879,7 +8879,7 @@
       VALUES (1150, 'image', '/assets/images/escaleras.png', 575);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1151, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 575);
+      VALUES (1151, 'video', '', 575);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8896,7 +8896,7 @@
       VALUES (1152, 'image', '/assets/images/farmacia.png', 576);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1153, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 576);
+      VALUES (1153, 'video', '', 576);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8917,7 +8917,7 @@
       VALUES (1154, 'image', '/assets/images/iglesia.png', 577);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1155, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 577);
+      VALUES (1155, 'video', '', 577);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8942,7 +8942,7 @@
       VALUES (1156, 'image', '/assets/images/aguas-termales.png', 578);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1157, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 578);
+      VALUES (1157, 'video', '', 578);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -8959,7 +8959,7 @@
       VALUES (1158, 'image', '/assets/images/aleros.png', 579);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1159, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 579);
+      VALUES (1159, 'video', '', 579);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8972,7 +8972,7 @@
       VALUES (1160, 'image', '/assets/images/estadio-metropolitano.png', 580);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1161, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 580);
+      VALUES (1161, 'video', '', 580);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -8989,7 +8989,7 @@
       VALUES (1162, 'image', '/assets/images/la-venezuela-de-antier.png', 581);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1163, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 581);
+      VALUES (1163, 'video', '', 581);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9002,7 +9002,7 @@
       VALUES (1164, 'image', '/assets/images/montana-de-los-suenos.png', 582);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1165, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 582);
+      VALUES (1165, 'video', '', 582);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9015,7 +9015,7 @@
       VALUES (1166, 'image', '/assets/images/observatorio.png', 583);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1167, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 583);
+      VALUES (1167, 'video', '', 583);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9032,7 +9032,7 @@
       VALUES (1168, 'image', '/assets/images/picos-de-la-sierra-nevada.png', 584);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1169, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 584);
+      VALUES (1169, 'video', '', 584);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9045,7 +9045,7 @@
       VALUES (1170, 'image', '/assets/images/plaza-de-toro.png', 585);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1171, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 585);
+      VALUES (1171, 'video', '', 585);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9058,7 +9058,7 @@
       VALUES (1172, 'image', '/assets/images/soto-rosa.png', 586);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1173, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 586);
+      VALUES (1173, 'video', '', 586);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9079,7 +9079,7 @@
       VALUES (1174, 'image', '/assets/images/globo-aerostatico.png', 587);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1175, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 587);
+      VALUES (1175, 'video', '', 587);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9092,7 +9092,7 @@
       VALUES (1176, 'image', '/assets/images/jet.png', 588);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1177, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 588);
+      VALUES (1177, 'video', '', 588);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9105,7 +9105,7 @@
       VALUES (1178, 'image', '/assets/images/metrop.png', 589);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1179, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 589);
+      VALUES (1179, 'video', '', 589);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9122,7 +9122,7 @@
       VALUES (1180, 'image', '/assets/images/nave-espacial.png', 590);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1181, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 590);
+      VALUES (1181, 'video', '', 590);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9135,7 +9135,7 @@
       VALUES (1182, 'image', '/assets/images/sudmarino.png', 591);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1183, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 591);
+      VALUES (1183, 'video', '', 591);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9152,7 +9152,7 @@
       VALUES (1184, 'image', '/assets/images/yate.png', 592);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1185, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 592);
+      VALUES (1185, 'video', '', 592);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9173,7 +9173,7 @@
       VALUES (1186, 'image', '/assets/images/camara.png', 593);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1187, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 593);
+      VALUES (1187, 'video', '', 593);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9190,7 +9190,7 @@
       VALUES (1188, 'image', '/assets/images/filmadora.png', 594);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1189, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 594);
+      VALUES (1189, 'video', '', 594);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9203,7 +9203,7 @@
       VALUES (1190, 'image', '/assets/images/fotocopiadora.png', 595);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1191, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 595);
+      VALUES (1191, 'video', '', 595);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9220,7 +9220,7 @@
       VALUES (1192, 'image', '/assets/images/impresora.png', 596);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1193, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 596);
+      VALUES (1193, 'video', '', 596);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9245,7 +9245,7 @@
       VALUES (1194, 'image', '/assets/images/teclado.png', 597);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1195, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 597);
+      VALUES (1195, 'video', '', 597);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9266,7 +9266,7 @@
       VALUES (1196, 'image', '/assets/images/administrador.png', 598);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1197, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 598);
+      VALUES (1197, 'video', '', 598);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9283,7 +9283,7 @@
       VALUES (1198, 'image', '/assets/images/cajero.png', 599);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1199, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 599);
+      VALUES (1199, 'video', '', 599);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9300,7 +9300,7 @@
       VALUES (1200, 'image', '/assets/images/cocinero.png', 600);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1201, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 600);
+      VALUES (1201, 'video', '', 600);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9313,7 +9313,7 @@
       VALUES (1202, 'image', '/assets/images/construtor.png', 601);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1203, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 601);
+      VALUES (1203, 'video', '', 601);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9326,7 +9326,7 @@
       VALUES (1204, 'image', '/assets/images/contador.png', 602);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1205, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 602);
+      VALUES (1205, 'video', '', 602);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9339,7 +9339,7 @@
       VALUES (1206, 'image', '/assets/images/farmaceutico.png', 603);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1207, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 603);
+      VALUES (1207, 'video', '', 603);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9360,7 +9360,7 @@
       VALUES (1208, 'image', '/assets/images/portero.png', 604);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1209, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 604);
+      VALUES (1209, 'video', '', 604);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9373,7 +9373,7 @@
       VALUES (1210, 'image', '/assets/images/seguridad.png', 605);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1211, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 605);
+      VALUES (1211, 'video', '', 605);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9398,7 +9398,7 @@
       VALUES (1212, 'image', '/assets/images/extremidadas.png', 606);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1213, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 606);
+      VALUES (1213, 'video', '', 606);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9435,7 +9435,7 @@
       VALUES (1214, 'image', '/assets/images/sistema-circulatorio.png', 607);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1215, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 607);
+      VALUES (1215, 'video', '', 607);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9448,7 +9448,7 @@
       VALUES (1216, 'image', '/assets/images/sistema-digestivo.png', 608);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1217, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 608);
+      VALUES (1217, 'video', '', 608);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9461,7 +9461,7 @@
       VALUES (1218, 'image', '/assets/images/sistema-endocrino.png', 609);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1219, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 609);
+      VALUES (1219, 'video', '', 609);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9474,7 +9474,7 @@
       VALUES (1220, 'image', '/assets/images/sistema-nervioso.png', 610);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1221, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 610);
+      VALUES (1221, 'video', '', 610);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9487,7 +9487,7 @@
       VALUES (1222, 'image', '/assets/images/sistema-oseo.png', 611);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1223, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 611);
+      VALUES (1223, 'video', '', 611);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9500,7 +9500,7 @@
       VALUES (1224, 'image', '/assets/images/sistema-reproductivos.png', 612);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1225, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 612);
+      VALUES (1225, 'video', '', 612);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9513,7 +9513,7 @@
       VALUES (1226, 'image', '/assets/images/sistema-respiratorio.png', 613);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1227, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 613);
+      VALUES (1227, 'video', '', 613);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9526,7 +9526,7 @@
       VALUES (1228, 'image', '/assets/images/sistema-urinario.png', 614);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1229, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 614);
+      VALUES (1229, 'video', '', 614);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9567,7 +9567,7 @@
       VALUES (1230, 'image', '/assets/images/caciques.png', 615);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1231, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 615);
+      VALUES (1231, 'video', '', 615);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9580,7 +9580,7 @@
       VALUES (1232, 'image', '/assets/images/cesar-rendifo.png', 616);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1233, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 616);
+      VALUES (1233, 'video', '', 616);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9597,7 +9597,7 @@
       VALUES (1234, 'image', '/assets/images/heroinas.png', 617);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1235, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 617);
+      VALUES (1235, 'video', '', 617);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9610,7 +9610,7 @@
       VALUES (1236, 'image', '/assets/images/luisa-caceres.png', 618);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1237, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 618);
+      VALUES (1237, 'video', '', 618);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9627,7 +9627,7 @@
       VALUES (1238, 'image', '/assets/images/negra-matea.png', 619);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1239, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 619);
+      VALUES (1239, 'video', '', 619);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9640,7 +9640,7 @@
       VALUES (1240, 'image', '/assets/images/pablo-morillo.png', 620);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1241, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 620);
+      VALUES (1241, 'video', '', 620);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9653,7 +9653,7 @@
       VALUES (1242, 'image', '/assets/images/piar.png', 621);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1243, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 621);
+      VALUES (1243, 'video', '', 621);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9666,7 +9666,7 @@
       VALUES (1244, 'image', '/assets/images/proceres.png', 622);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1245, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 622);
+      VALUES (1245, 'video', '', 622);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9679,7 +9679,7 @@
       VALUES (1246, 'image', '/assets/images/tulio-febres-cordero.png', 623);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1247, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 623);
+      VALUES (1247, 'video', '', 623);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9692,7 +9692,7 @@
       VALUES (1248, 'image', '/assets/images/alcalde.png', 624);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1249, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 624);
+      VALUES (1249, 'video', '', 624);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -9709,7 +9709,7 @@
       VALUES (1250, 'image', '/assets/images/gobernador.png', 625);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1251, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 625);
+      VALUES (1251, 'video', '', 625);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9722,7 +9722,7 @@
       VALUES (1252, 'image', '/assets/images/presidente.png', 626);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1253, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 626);
+      VALUES (1253, 'video', '', 626);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9735,7 +9735,7 @@
       VALUES (1254, 'image', '/assets/images/profesor.png', 627);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1255, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 627);
+      VALUES (1255, 'video', '', 627);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9748,7 +9748,7 @@
       VALUES (1256, 'image', '/assets/images/alparpatas.png', 628);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1257, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 628);
+      VALUES (1257, 'video', '', 628);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -9765,7 +9765,7 @@
       VALUES (1258, 'image', '/assets/images/bermudas.png', 629);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1259, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 629);
+      VALUES (1259, 'video', '', 629);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9790,7 +9790,7 @@
       VALUES (1260, 'image', '/assets/images/estraple.png', 630);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1261, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 630);
+      VALUES (1261, 'video', '', 630);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9807,7 +9807,7 @@
       VALUES (1262, 'image', '/assets/images/guayabera.png', 631);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1263, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 631);
+      VALUES (1263, 'video', '', 631);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9824,7 +9824,7 @@
       VALUES (1264, 'image', '/assets/images/ruana.png', 632);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1265, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 632);
+      VALUES (1265, 'video', '', 632);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9837,7 +9837,7 @@
       VALUES (1266, 'image', '/assets/images/sombrero.png', 633);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1267, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 633);
+      VALUES (1267, 'video', '', 633);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9850,7 +9850,7 @@
       VALUES (1268, 'image', '/assets/images/cayena.png', 634);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1269, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 634);
+      VALUES (1269, 'video', '', 634);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -9867,7 +9867,7 @@
       VALUES (1270, 'image', '/assets/images/clavel.png', 635);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1271, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 635);
+      VALUES (1271, 'video', '', 635);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9884,7 +9884,7 @@
       VALUES (1272, 'image', '/assets/images/girasol.png', 636);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1273, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 636);
+      VALUES (1273, 'video', '', 636);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9897,7 +9897,7 @@
       VALUES (1274, 'image', '/assets/images/lirio.png', 637);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1275, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 637);
+      VALUES (1275, 'video', '', 637);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9910,7 +9910,7 @@
       VALUES (1276, 'image', '/assets/images/margarita.png', 638);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1277, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 638);
+      VALUES (1277, 'video', '', 638);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9927,7 +9927,7 @@
       VALUES (1278, 'image', '/assets/images/rosa.png', 639);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1279, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 639);
+      VALUES (1279, 'video', '', 639);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9940,7 +9940,7 @@
       VALUES (1280, 'image', '/assets/images/trinitaria.png', 640);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1281, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 640);
+      VALUES (1281, 'video', '', 640);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9953,7 +9953,7 @@
       VALUES (1282, 'image', '/assets/images/tulipan.png', 641);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1283, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 641);
+      VALUES (1283, 'video', '', 641);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9974,7 +9974,7 @@
       VALUES (1284, 'image', '/assets/images/colicos.png', 642);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1285, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 642);
+      VALUES (1285, 'video', '', 642);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -9987,7 +9987,7 @@
       VALUES (1286, 'image', '/assets/images/dolor-de-estomago.png', 643);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1287, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 643);
+      VALUES (1287, 'video', '', 643);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10004,7 +10004,7 @@
       VALUES (1288, 'image', '/assets/images/pus.png', 644);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1289, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 644);
+      VALUES (1289, 'video', '', 644);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10025,7 +10025,7 @@
       VALUES (1290, 'image', '/assets/images/brocha.png', 645);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1291, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 645);
+      VALUES (1291, 'video', '', 645);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10038,7 +10038,7 @@
       VALUES (1292, 'image', '/assets/images/cartulina.png', 646);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1293, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 646);
+      VALUES (1293, 'video', '', 646);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10067,7 +10067,7 @@
       VALUES (1294, 'image', '/assets/images/hojas-de-examen.png', 647);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1295, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 647);
+      VALUES (1295, 'video', '', 647);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10080,7 +10080,7 @@
       VALUES (1296, 'image', '/assets/images/lapiceros.png', 648);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1297, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 648);
+      VALUES (1297, 'video', '', 648);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10093,7 +10093,7 @@
       VALUES (1298, 'image', '/assets/images/lija.png', 649);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1299, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 649);
+      VALUES (1299, 'video', '', 649);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10106,7 +10106,7 @@
       VALUES (1300, 'image', '/assets/images/marcadores.png', 650);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1301, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 650);
+      VALUES (1301, 'video', '', 650);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10127,7 +10127,7 @@
       VALUES (1302, 'image', '/assets/images/alcelga.png', 651);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1303, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 651);
+      VALUES (1303, 'video', '', 651);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10148,7 +10148,7 @@
       VALUES (1304, 'image', '/assets/images/batata.png', 652);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1305, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 652);
+      VALUES (1305, 'video', '', 652);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10165,7 +10165,7 @@
       VALUES (1306, 'image', '/assets/images/berros.png', 653);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1307, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 653);
+      VALUES (1307, 'video', '', 653);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10194,7 +10194,7 @@
       VALUES (1308, 'image', '/assets/images/espinaca.png', 654);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1309, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 654);
+      VALUES (1309, 'video', '', 654);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10211,7 +10211,7 @@
       VALUES (1310, 'image', '/assets/images/ocumo.png', 655);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1311, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 655);
+      VALUES (1311, 'video', '', 655);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10232,7 +10232,7 @@
       VALUES (1312, 'image', '/assets/images/radicchio.png', 656);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1313, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 656);
+      VALUES (1313, 'video', '', 656);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10245,7 +10245,7 @@
       VALUES (1314, 'image', '/assets/images/rucula.png', 657);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1315, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 657);
+      VALUES (1315, 'video', '', 657);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10275,7 +10275,7 @@
       VALUES (1316, 'image', '/assets/images/ficus.png', 658);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1317, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 658);
+      VALUES (1317, 'video', '', 658);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10292,7 +10292,7 @@
       VALUES (1318, 'image', '/assets/images/cactus.png', 659);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1319, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 659);
+      VALUES (1319, 'video', '', 659);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10305,7 +10305,7 @@
       VALUES (1320, 'image', '/assets/images/caujaro.png', 660);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1321, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 660);
+      VALUES (1321, 'video', '', 660);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10318,7 +10318,7 @@
       VALUES (1322, 'image', '/assets/images/dinosaurios.png', 661);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1323, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 661);
+      VALUES (1323, 'video', '', 661);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10335,7 +10335,7 @@
       VALUES (1324, 'image', '/assets/images/cunaguaro.png', 662);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1325, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 662);
+      VALUES (1325, 'video', '', 662);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10348,7 +10348,7 @@
       VALUES (1326, 'image', '/assets/images/afeitadora.png', 663);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1327, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 663);
+      VALUES (1327, 'video', '', 663);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10365,7 +10365,7 @@
       VALUES (1328, 'image', '/assets/images/corta-una.png', 664);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1329, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 664);
+      VALUES (1329, 'video', '', 664);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10378,7 +10378,7 @@
       VALUES (1330, 'image', '/assets/images/jabon.png', 665);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1331, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 665);
+      VALUES (1331, 'video', '', 665);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10391,7 +10391,7 @@
       VALUES (1332, 'image', '/assets/images/peine.png', 666);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1333, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 666);
+      VALUES (1333, 'video', '', 666);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10404,7 +10404,7 @@
       VALUES (1334, 'image', '/assets/images/papel-sanitario.png', 667);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1335, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 667);
+      VALUES (1335, 'video', '', 667);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10417,7 +10417,7 @@
       VALUES (1336, 'image', '/assets/images/bocadillo.png', 668);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1337, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 668);
+      VALUES (1337, 'video', '', 668);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10434,7 +10434,7 @@
       VALUES (1338, 'image', '/assets/images/mermelada.png', 669);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1339, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 669);
+      VALUES (1339, 'video', '', 669);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10447,7 +10447,7 @@
       VALUES (1340, 'image', '/assets/images/cremas.png', 670);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1341, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 670);
+      VALUES (1341, 'video', '', 670);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10460,7 +10460,7 @@
       VALUES (1342, 'image', '/assets/images/batidos.png', 671);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1343, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 671);
+      VALUES (1343, 'video', '', 671);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10473,7 +10473,7 @@
       VALUES (1344, 'image', '/assets/images/gastritis.png', 672);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1345, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 672);
+      VALUES (1345, 'video', '', 672);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10490,7 +10490,7 @@
       VALUES (1346, 'image', '/assets/images/peritonitis.png', 673);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1347, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 673);
+      VALUES (1347, 'video', '', 673);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10503,7 +10503,7 @@
       VALUES (1348, 'image', '/assets/images/amigdalitis.png', 674);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1349, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 674);
+      VALUES (1349, 'video', '', 674);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10516,7 +10516,7 @@
       VALUES (1350, 'image', '/assets/images/apendicitis.png', 675);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1351, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 675);
+      VALUES (1351, 'video', '', 675);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10529,7 +10529,7 @@
       VALUES (1352, 'image', '/assets/images/poliedro.png', 676);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1353, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 676);
+      VALUES (1353, 'video', '', 676);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10546,7 +10546,7 @@
       VALUES (1354, 'image', '/assets/images/piramides.png', 677);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1355, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 677);
+      VALUES (1355, 'video', '', 677);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10559,7 +10559,7 @@
       VALUES (1356, 'image', '/assets/images/momumento-del-perro.png', 678);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1357, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 678);
+      VALUES (1357, 'video', '', 678);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10576,7 +10576,7 @@
       VALUES (1358, 'image', '/assets/images/tisure.png', 679);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1359, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 679);
+      VALUES (1359, 'video', '', 679);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10589,7 +10589,7 @@
       VALUES (1360, 'image', '/assets/images/los-nevados.png', 680);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1361, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 680);
+      VALUES (1361, 'video', '', 680);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10602,7 +10602,7 @@
       VALUES (1362, 'image', '/assets/images/la-loca-luz-caraballo.png', 681);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1363, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 681);
+      VALUES (1363, 'video', '', 681);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10615,7 +10615,7 @@
       VALUES (1364, 'image', '/assets/images/la-mucuy.png', 682);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1365, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 682);
+      VALUES (1365, 'video', '', 682);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10628,7 +10628,7 @@
       VALUES (1366, 'image', '/assets/images/la-laguna.png', 683);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1367, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 683);
+      VALUES (1367, 'video', '', 683);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10641,7 +10641,7 @@
       VALUES (1368, 'image', '/assets/images/lagunillas.png', 684);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1369, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 684);
+      VALUES (1369, 'video', '', 684);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10654,7 +10654,7 @@
       VALUES (1370, 'image', '/assets/images/billones.png', 685);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1371, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 685);
+      VALUES (1371, 'video', '', 685);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10679,7 +10679,7 @@
       VALUES (1372, 'image', '/assets/images/manuel-gual.png', 686);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1373, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 686);
+      VALUES (1373, 'video', '', 686);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10692,7 +10692,7 @@
       VALUES (1374, 'image', '/assets/images/jose-maria-espana.png', 687);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1375, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 687);
+      VALUES (1375, 'video', '', 687);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10705,7 +10705,7 @@
       VALUES (1376, 'image', '/assets/images/vicente-de-emparan.png', 688);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1377, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 688);
+      VALUES (1377, 'video', '', 688);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10718,7 +10718,7 @@
       VALUES (1378, 'image', '/assets/images/jose-leonardo-chirinos.png', 689);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1379, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 689);
+      VALUES (1379, 'video', '', 689);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10731,7 +10731,7 @@
       VALUES (1380, 'image', '/assets/images/diputado.png', 690);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1381, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 690);
+      VALUES (1381, 'video', '', 690);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10748,7 +10748,7 @@
       VALUES (1382, 'image', '/assets/images/senador.png', 691);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1383, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 691);
+      VALUES (1383, 'video', '', 691);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10761,7 +10761,7 @@
       VALUES (1384, 'image', '/assets/images/embajador.png', 692);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1385, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 692);
+      VALUES (1385, 'video', '', 692);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10774,7 +10774,7 @@
       VALUES (1386, 'image', '/assets/images/consul.png', 693);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1387, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 693);
+      VALUES (1387, 'video', '', 693);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10787,7 +10787,7 @@
       VALUES (1388, 'image', '/assets/images/sacerdote.png', 694);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1389, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 694);
+      VALUES (1389, 'video', '', 694);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10804,7 +10804,7 @@
       VALUES (1390, 'image', '/assets/images/pastor.png', 695);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1391, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 695);
+      VALUES (1391, 'video', '', 695);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10817,7 +10817,7 @@
       VALUES (1392, 'image', '/assets/images/pinta-unas.png', 696);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1393, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 696);
+      VALUES (1393, 'video', '', 696);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10834,7 +10834,7 @@
       VALUES (1394, 'image', '/assets/images/lapiz-labial.png', 697);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1395, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 697);
+      VALUES (1395, 'video', '', 697);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10847,7 +10847,7 @@
       VALUES (1396, 'image', '/assets/images/colonia.png', 698);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1397, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 698);
+      VALUES (1397, 'video', '', 698);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10860,7 +10860,7 @@
       VALUES (1398, 'image', '/assets/images/aretes.png', 699);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1399, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 699);
+      VALUES (1399, 'video', '', 699);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10873,7 +10873,7 @@
       VALUES (1400, 'image', '/assets/images/cintillo.png', 700);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1401, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 700);
+      VALUES (1401, 'video', '', 700);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10886,7 +10886,7 @@
       VALUES (1402, 'image', '/assets/images/acidez.png', 701);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1403, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 701);
+      VALUES (1403, 'video', '', 701);
     
 
     INSERT INTO public.grado_tema(grado_id, tema_id)
@@ -10903,7 +10903,7 @@
       VALUES (1404, 'image', '/assets/images/reflujo.png', 702);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1405, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 702);
+      VALUES (1405, 'video', '', 702);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10916,7 +10916,7 @@
       VALUES (1406, 'image', '/assets/images/inflamacion.png', 703);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1407, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 703);
+      VALUES (1407, 'video', '', 703);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
@@ -10929,7 +10929,7 @@
       VALUES (1408, 'image', '/assets/images/abceso.png', 704);
 
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
-      VALUES (1409, 'video', 'https://www.youtube.com/watch?v=urpJuQ9IfHc', 704);
+      VALUES (1409, 'video', '', 704);
     
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)

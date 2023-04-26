@@ -1,111 +1,135 @@
-import * as React from 'react';
+import * as React from "react";
 import { toast } from "react-toastify";
-import { useSearchParams, useNavigate } from 'react-router-dom'
+import { useSearchParams, useNavigate } from "react-router-dom";
 
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Grid from '@mui/material/Grid';
-import CircularProgress from '@mui/material/CircularProgress';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepButton from '@mui/material/StepButton';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import CardMedia from '@mui/material/CardMedia';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ListSubheader from '@mui/material/ListSubheader';
-import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import SchoolIcon from '@mui/icons-material/School';
-import CategoryIcon from '@mui/icons-material/Category';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import ScoreIcon from '@mui/icons-material/Score';
-import RestartAltIcon from '@mui/icons-material/RestartAlt';
-import { YoutubeEmbed, styleVocabloModal } from './VocabloModal';
-import sendLogs from '../utils/sendLogs';
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Grid from "@mui/material/Grid";
+import CircularProgress from "@mui/material/CircularProgress";
+import Stepper from "@mui/material/Stepper";
+import Step from "@mui/material/Step";
+import StepButton from "@mui/material/StepButton";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import CardMedia from "@mui/material/CardMedia";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ListSubheader from "@mui/material/ListSubheader";
+import List from "@mui/material/List";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import SchoolIcon from "@mui/icons-material/School";
+import CategoryIcon from "@mui/icons-material/Category";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import ScoreIcon from "@mui/icons-material/Score";
+import RestartAltIcon from "@mui/icons-material/RestartAlt";
+import { YoutubeEmbed, styleVocabloModal } from "./VocabloModal";
+import sendLogs from "../utils/sendLogs";
 
-import CustomToast from './CustomToast';
+import CustomToast from "./CustomToast";
 
+const consultas_por_grado = [
+  3, // preescolar
+  4, // 1er grado
+  4, // 2do grado
+  2, // tercer grado
+  4, // 4to grado
+  5, // 5to grado
+  10, // 6to grado
+];
+
+const opciones_por_grado = [
+  5, // preescolar
+  5, // 1er grado
+  6, // 2do grado
+  4, // tercer grado
+  5, // 4to grado
+  10, // 5to grado
+  15, // 6to grado
+];
 const REWARD_GOOD_RESPONSE = [
   {
-    message: 'Bien',
-    imageSrc: '/assets/rewards/reward-bien.png',
+    message: "Bien",
+    imageSrc: "/assets/rewards/reward-bien.png",
   },
   {
-    message: 'Aprobado',
-    imageSrc: '/assets/rewards/reward-aprobado.png',
+    message: "Aprobado",
+    imageSrc: "/assets/rewards/reward-aprobado.png",
   },
   {
-    message: 'Perfecto',
-    imageSrc: '/assets/rewards/reward-perfecto.png',
+    message: "Perfecto",
+    imageSrc: "/assets/rewards/reward-perfecto.png",
   },
 ];
 
 const REWARD_BAD_RESPONSE = [
   {
-    message: 'Incorrecto',
-    imageSrc: '/assets/rewards/reward-incorrecto.png',
+    message: "Incorrecto",
+    imageSrc: "/assets/rewards/reward-incorrecto.png",
   },
   {
-    message: 'Te Equivocaste',
-    imageSrc: '/assets/rewards/reward-te-equivocaste.png',
+    message: "Te Equivocaste",
+    imageSrc: "/assets/rewards/reward-te-equivocaste.png",
   },
   {
-    message: 'Te Confundiste',
-    imageSrc: '/assets/rewards/reward-te-confundiste.png',
+    message: "Te Confundiste",
+    imageSrc: "/assets/rewards/reward-te-confundiste.png",
   },
 ];
 
 const REWARD_CORRECTED_RESPONSE = [
   {
-    message: 'Bien',
-    imageSrc: '/assets/rewards/reward-bien.png',
+    message: "Bien",
+    imageSrc: "/assets/rewards/reward-bien.png",
   },
 ];
-
 
 // const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
 export const styleTrofeoModal = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '300px',
-  minHeight: '300px',
-  bgcolor: 'background.paper',
-  border: '1px solid #666',
-  borderRadius: '16px',
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "300px",
+  minHeight: "300px",
+  bgcolor: "background.paper",
+  border: "1px solid #666",
+  borderRadius: "16px",
   boxShadow: 24,
   p: 4,
-  display:'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
 };
 
-function generateConsultas({vocablos, numeroConsultas}) {
+function generateConsultas({ vocablos, numeroConsultas }) {
+  const palabras = vocablos.map((elem) => elem.vocablo_palabra);
 
-  const palabras = vocablos.map(elem => elem.vocablo_palabra);
-
-  const n = numeroConsultas <= vocablos.length ? numeroConsultas : vocablos.length;
+  const n =
+    numeroConsultas <= vocablos.length ? numeroConsultas : vocablos.length;
 
   const vocablosCopy = vocablos.slice(0);
 
   const consultas = [];
 
   // const tiposConsultas = ['image', 'video'];
-  const tiposConsulta = ['image', 'video'];
+  const tiposConsulta = ["image", "video"];
 
   for (let i = 0; i < n; i++) {
     // const element = array[i];
     const randomIndex = Math.floor(Math.random() * vocablosCopy.length);
     const vocablo = vocablosCopy.splice(randomIndex, 1)[0];
 
-    const indexImage = vocablo && vocablo.recursos ? vocablo.recursos.findIndex(elem => elem.tipo === 'image') : -1;
+    const indexImage =
+      vocablo && vocablo.recursos
+        ? vocablo.recursos.findIndex((elem) => elem.tipo === "image")
+        : -1;
     let imageSrc;
-    const indexVideo = vocablo && vocablo.recursos ? vocablo.recursos.findIndex(elem => elem.tipo === 'video') : -1;
+    const indexVideo =
+      vocablo && vocablo.recursos
+        ? vocablo.recursos.findIndex((elem) => elem.tipo === "video")
+        : -1;
     let videoSrc;
 
     if (indexImage !== -1) {
@@ -122,14 +146,15 @@ function generateConsultas({vocablos, numeroConsultas}) {
     const randomIndex2 = Math.floor(Math.random() * tiposConsulta.length);
     vocablo.tipo_consulta = tiposConsulta[randomIndex2];
 
-
     consultas.push(vocablo);
   }
 
   for (let i = 0; i < consultas.length; i++) {
     const consulta = consultas[i];
     const currentPalabra = consulta.vocablo_palabra;
-    const palabrasCopy = palabras.filter(palabra => palabra !== currentPalabra);
+    const palabrasCopy = palabras.filter(
+      (palabra) => palabra !== currentPalabra
+    );
 
     const palabrasConsulta = [currentPalabra];
 
@@ -139,10 +164,10 @@ function generateConsultas({vocablos, numeroConsultas}) {
     palabrasConsulta.push(palabrasCopy.splice(randomIndex2, 1)[0]);
 
     const palabras_consulta = [];
-    
+
     const randomIndex3 = Math.floor(Math.random() * palabrasConsulta.length);
     palabras_consulta.push(palabrasConsulta.splice(randomIndex3, 1)[0]);
-    
+
     const randomIndex4 = Math.floor(Math.random() * palabrasConsulta.length);
     palabras_consulta.push(palabrasConsulta.splice(randomIndex4, 1)[0]);
 
@@ -154,8 +179,7 @@ function generateConsultas({vocablos, numeroConsultas}) {
   return consultas;
 }
 
-function hasTrofeoAgil({consultas, secondsByConsulta = 5}) {
-
+function hasTrofeoAgil({ consultas, secondsByConsulta = 5 }) {
   if (!consultas || consultas.length === 0) {
     return false;
   }
@@ -167,63 +191,66 @@ function hasTrofeoAgil({consultas, secondsByConsulta = 5}) {
     if (consulta.vocablo_palabra === consulta.responses[0]) {
       totalConsultasCorrectas += 1;
     }
-    
+
     if (!consulta.responses || !consulta.logs) {
       return false;
     }
   }
 
   const firstLog = consultas[0].logs[0];
-  const lastLog = consultas[consultas.length - 1].logs[consultas[consultas.length - 1].logs.length - 1];
+  const lastLog =
+    consultas[consultas.length - 1].logs[
+      consultas[consultas.length - 1].logs.length - 1
+    ];
 
   const firstTimestamp = new Date(firstLog.timestamp).getTime();
   const lastTimestamp = new Date(lastLog.timestamp).getTime();
   const diff = lastTimestamp - firstTimestamp;
 
-  if (diff > 0 && diff <= secondsByConsulta * 1000 && totalConsultas === totalConsultasCorrectas) {
+  if (
+    diff > 0 &&
+    diff <= secondsByConsulta * 1000 &&
+    totalConsultas === totalConsultasCorrectas
+  ) {
     return true;
   }
-  
+
   return false;
 }
 
-function getResultsFunc({consultas}) {
-
+function getResultsFunc({ consultas }) {
   if (!consultas || consultas.length === 0) {
     return undefined;
   }
-  
+
   try {
     const totalConsultas = consultas.length;
     let totalConsultasCorrectas = 0;
     let points = 0;
-  
-    consultas.forEach(elem => {
+
+    consultas.forEach((elem) => {
       if (elem.vocablo_palabra === elem.responses[0]) {
         totalConsultasCorrectas += 1;
       }
     });
-  
+
     points = totalConsultasCorrectas * 100;
-  
+
     return {
       totalConsultas,
       totalConsultasCorrectas,
       points,
       trofeos_imparables: totalConsultas === totalConsultasCorrectas ? 1 : 0,
-      trofeos_agil: hasTrofeoAgil({consultas}) ? 1 : 0,
-    }
-
-  } catch(err) {
+      trofeos_agil: hasTrofeoAgil({ consultas }) ? 1 : 0,
+    };
+  } catch (err) {
     // Las consultas no estan completas
   }
 
-  return  undefined;
-
+  return undefined;
 }
 
-function getPracticaDataFunc({consultas, vocablos}) {
-
+function getPracticaDataFunc({ consultas, vocablos }) {
   if (!consultas || consultas.length === 0) {
     return undefined;
   }
@@ -233,7 +260,6 @@ function getPracticaDataFunc({consultas, vocablos}) {
   }
 
   for (const consulta of consultas) {
-    
     if (!consulta.responses) {
       return undefined;
     }
@@ -243,7 +269,7 @@ function getPracticaDataFunc({consultas, vocablos}) {
     prev[current.vocablo_palabra] = current;
 
     return prev;
-  } , {});
+  }, {});
 
   const practicaData = {
     id: undefined,
@@ -261,69 +287,62 @@ function getPracticaDataFunc({consultas, vocablos}) {
   const totalConsultas = consultas.length;
   let totalConsultasCorrectas = 0;
 
-  
   for (const consulta of consultas) {
-    
     if (consulta.vocablo_palabra === consulta.responses[0]) {
       totalConsultasCorrectas += 1;
     }
 
-    const consultaRespuesta = voablosObj[consulta.responses[0]]
+    const consultaRespuesta = voablosObj[consulta.responses[0]];
 
-    console.log({voablosObj, consulta, response: consulta.responses});
-    
+    console.log({ voablosObj, consulta, response: consulta.responses });
+
     consultasData.push({
       id: undefined,
       tipo: consulta.tipo_consulta,
       vocablo_correcto_id: consulta.vocablo_id,
       vocablo_respuesta_id: consultaRespuesta.vocablo_id,
       practica_id: null,
-    })
-
-    
+    });
   }
 
   practicaData.total_consultas = totalConsultas;
   practicaData.total_correctas = totalConsultasCorrectas;
-  
+
   return {
     practica: practicaData,
     consultas: consultasData,
     puntos: totalConsultasCorrectas * 100,
     trofeos_imparables: totalConsultas === totalConsultasCorrectas ? 1 : 0,
-    trofeos_agil: hasTrofeoAgil({consultas}) ? 1 : 0,
-  }
-
+    trofeos_agil: hasTrofeoAgil({ consultas }) ? 1 : 0,
+  };
 }
 
-function getPracticaLogsFunc({consultas}) {
-
+function getPracticaLogsFunc({ consultas }) {
   if (!consultas || consultas.length === 0) {
     return undefined;
   }
 
   for (const consulta of consultas) {
-    
     if (!consulta.responses) {
       return undefined;
     }
   }
 
   const logPractica = {
-    "log_name": "Practica",
-    "timestamp": new Date().toISOString(),
-    "grado": consultas[0].grado_nombre,
-    "tema": consultas[0].tema_nombre,
-    "total_consultas": 0,
-    "total_correctas": 0,
-    "logs": []
-  }
+    log_name: "Práctica",
+    timestamp: new Date().toISOString(),
+    grado: consultas[0].grado_nombre,
+    tema: consultas[0].tema_nombre,
+    total_consultas: 0,
+    total_correctas: 0,
+    logs: [],
+  };
 
   const totalConsultas = consultas.length;
   let totalConsultasCorrectas = 0;
 
   for (const consulta of consultas) {
-    if (consulta.vocablo_palabra === consulta.responses[0]){
+    if (consulta.vocablo_palabra === consulta.responses[0]) {
       totalConsultasCorrectas += 1;
     }
 
@@ -338,10 +357,10 @@ function getPracticaLogsFunc({consultas}) {
   return [
     logPractica,
     {
-      "log_name": "Aprendiz: Termina una práctica",
-      "timestamp": new Date().toISOString(),
-      "grado": consultas[0].grado_nombre,
-      "tema": consultas[0].tema_grado,
+      log_name: "Aprendiz: Termina una práctica",
+      timestamp: new Date().toISOString(),
+      grado: consultas[0].grado_nombre,
+      tema: consultas[0].tema_grado,
     },
     // {
     //   "log_name": "Sistema: Muestra gamificación al finalizar práctica",
@@ -349,12 +368,10 @@ function getPracticaLogsFunc({consultas}) {
     //   "mensaje": "!Impresionante nombre!, lograste un puntaje muy alto en el desafio ¡sigue asi!",
     //   "gif": "felicitar002.gif"
     // },
-  ]
-
+  ];
 }
 
-function getPracticaCanceladaDataFunc({consultas, vocablos}) {
-
+function getPracticaCanceladaDataFunc({ consultas, vocablos }) {
   if (!consultas || consultas.length === 0) {
     return undefined;
   }
@@ -364,7 +381,7 @@ function getPracticaCanceladaDataFunc({consultas, vocablos}) {
   }
 
   // for (const consulta of consultas) {
-    
+
   //   if (!consulta.responses) {
   //     return undefined;
   //   }
@@ -374,7 +391,7 @@ function getPracticaCanceladaDataFunc({consultas, vocablos}) {
     prev[current.vocablo_palabra] = current;
 
     return prev;
-  } , {});
+  }, {});
 
   const practicaData = {
     id: undefined,
@@ -392,68 +409,62 @@ function getPracticaCanceladaDataFunc({consultas, vocablos}) {
   const totalConsultas = consultas.length;
   let totalConsultasCorrectas = 0;
 
-  
   for (const consulta of consultas) {
-    
     if (!consulta.responses) {
       continue;
     }
-    
+
     if (consulta.vocablo_palabra === consulta.responses[0]) {
       totalConsultasCorrectas += 1;
     }
 
-    const consultaRespuesta = voablosObj[consulta.responses[0]]
+    const consultaRespuesta = voablosObj[consulta.responses[0]];
 
-    console.log({voablosObj, consulta, response: consulta.responses});
-    
+    console.log({ voablosObj, consulta, response: consulta.responses });
+
     consultasData.push({
       id: undefined,
       tipo: consulta.tipo_consulta,
       vocablo_correcto_id: consulta.vocablo_id,
       vocablo_respuesta_id: consultaRespuesta.vocablo_id,
       practica_id: null,
-    })
-
-    
+    });
   }
 
   practicaData.total_consultas = totalConsultas;
   practicaData.total_correctas = totalConsultasCorrectas;
-  
+
   return {
     practica: practicaData,
     consultas: consultasData,
     puntos: 0,
     trofeos_imparables: 0,
-    trofeos_agil:  0,
-  }
-
+    trofeos_agil: 0,
+  };
 }
 
-function getPracticaCanceladaLogsFunc({consultas}) {
-
+function getPracticaCanceladaLogsFunc({ consultas }) {
   if (!consultas || consultas.length === 0) {
     return undefined;
   }
 
   // for (const consulta of consultas) {
-    
+
   //   if (!consulta.responses) {
   //     return undefined;
   //   }
   // }
 
   const logPractica = {
-    "log_name": "Practica",
-    "timestamp": new Date().toISOString(),
-    "grado": consultas[0].grado_nombre,
-    "tema": consultas[0].tema_nombre,
-    "total_consultas": 0,
-    "total_correctas": 0,
-    "cancelada": true,
-    "logs": []
-  }
+    log_name: "Práctica",
+    timestamp: new Date().toISOString(),
+    grado: consultas[0].grado_nombre,
+    tema: consultas[0].tema_nombre,
+    total_consultas: 0,
+    total_correctas: 0,
+    cancelada: true,
+    logs: [],
+  };
 
   const totalConsultas = consultas.length;
   let totalConsultasCorrectas = 0;
@@ -462,7 +473,6 @@ function getPracticaCanceladaLogsFunc({consultas}) {
     if (!consulta.responses && !consulta.logs) {
       continue;
     }
-
 
     if (consulta.logs && consulta.logs.length > 0) {
       logPractica.logs.push(...consulta.logs.slice(0));
@@ -475,10 +485,10 @@ function getPracticaCanceladaLogsFunc({consultas}) {
   return [
     logPractica,
     {
-      "log_name": "Aprendiz: Cancela la práctica",
-      "timestamp": new Date().toISOString(),
-      "grado": consultas[0].grado_nombre,
-      "tema": consultas[0].tema_grado,
+      log_name: "Aprendiz: Cancela la práctica",
+      timestamp: new Date().toISOString(),
+      grado: consultas[0].grado_nombre,
+      tema: consultas[0].tema_grado,
     },
     // {
     //   "log_name": "Sistema: Muestra gamificación al finalizar práctica",
@@ -486,8 +496,7 @@ function getPracticaCanceladaLogsFunc({consultas}) {
     //   "mensaje": "!Impresionante nombre!, lograste un puntaje muy alto en el desafio ¡sigue asi!",
     //   "gif": "felicitar002.gif"
     // },
-  ]
-
+  ];
 }
 
 export default function HorizontalNonLinearStepper() {
@@ -502,40 +511,48 @@ export default function HorizontalNonLinearStepper() {
   const [gradoTitle, setGradoTitle] = React.useState();
   const [temaTitle, setTemaTitle] = React.useState();
 
-  const grado = query.get('grado');
-  const tema = query.get('tema');
+  const grado = query.get("grado");
+  const tema = query.get("tema");
   const navigate = useNavigate();
 
   const getVocablos = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`/vocablos-by-grado-tema/${grado}/${tema}`, {
+      const response = await fetch(
+        `/vocablos-by-grado-tema/${grado}/${tema}/${opciones_por_grado[grado]}`,
+        {
           method: "GET",
           headers: {
             "Content-type": "application/json",
-            "token": localStorage.token,
+            token: localStorage.token,
           },
-        });
-  
+        }
+      );
+
       const responseData = await response.json();
-  
+
       setVocablos(responseData);
       setLoading(false);
-      const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
-      const temaTitle = responseData && responseData[0] ? responseData[0].tema_nombre : null;
+      const gradoTitle =
+        responseData && responseData[0] ? responseData[0].grado_nombre : null;
+      const temaTitle =
+        responseData && responseData[0] ? responseData[0].tema_nombre : null;
       setGradoTitle(gradoTitle);
       setTemaTitle(temaTitle);
 
-      const consultas = generateConsultas({vocablos: responseData, numeroConsultas: 10});
+      const consultas = generateConsultas({
+        vocablos: responseData,
+        numeroConsultas: consultas_por_grado[grado],
+      });
       const newConsultas = addLogsToConsulta({
         logs: [
           {
-            "log_name": "Sistema: Inicia una consulta",
-            "timestamp": new Date().toISOString(),
-            "tipo_consulta": consultas[0].tipo_consulta,
-            "palabras": consultas[0].palabras_consulta.slice(0),
-            "respuesta_correcta": consultas[0].vocablo_palabra,
-          }
+            log_name: "Sistema: Inicia una consulta",
+            timestamp: new Date().toISOString(),
+            tipo_consulta: consultas[0].tipo_consulta,
+            palabras: consultas[0].palabras_consulta.slice(0),
+            respuesta_correcta: consultas[0].vocablo_palabra,
+          },
         ],
         consultas,
         index: 0,
@@ -543,21 +560,22 @@ export default function HorizontalNonLinearStepper() {
 
       setSteps(newConsultas);
 
-      sendLogs({logs: [
-        {
-          "log_name": "Aprendiz: Inicia una práctica",
-          "timestamp": new Date().toISOString(),
-          "grado": newConsultas[0].grado_nombre,
-          "tema": newConsultas[0].tema_nombre,
-        },
-      ]})
-
-    } catch(err) {
+      sendLogs({
+        logs: [
+          {
+            log_name: "Aprendiz: Inicia una práctica",
+            timestamp: new Date().toISOString(),
+            grado: newConsultas[0].grado_nombre,
+            tema: newConsultas[0].tema_nombre,
+          },
+        ],
+      });
+    } catch (err) {
       setLoading(false);
       console.error(err);
       toast.error("Error de red");
     }
-  }
+  };
 
   React.useEffect(() => {
     getVocablos();
@@ -576,7 +594,6 @@ export default function HorizontalNonLinearStepper() {
   };
 
   const allStepsCompleted = () => {
-    
     return completedSteps() === totalSteps();
   };
 
@@ -587,28 +604,28 @@ export default function HorizontalNonLinearStepper() {
           // find the first step that has been completed
           steps.findIndex((step, i) => !(i in completed))
         : activeStep + 1;
-        
+
     if (steps[newActiveStep] && !steps[newActiveStep].logs) {
       const newConsultas = addLogsToConsulta({
         logs: [
           {
-            "log_name": "Sistema: Inicia una consulta",
-            "timestamp": new Date().toISOString(),
-            "tipo_consulta": steps[newActiveStep].tipo_consulta,
-            "palabras": steps[newActiveStep].palabras_consulta.slice(0),
-            "respuesta_correcta": steps[newActiveStep].vocablo_palabra,
-          }
+            log_name: "Sistema: Inicia una consulta",
+            timestamp: new Date().toISOString(),
+            tipo_consulta: steps[newActiveStep].tipo_consulta,
+            palabras: steps[newActiveStep].palabras_consulta.slice(0),
+            respuesta_correcta: steps[newActiveStep].vocablo_palabra,
+          },
         ],
         consultas: steps,
         index: newActiveStep,
       });
       setSteps(newConsultas);
     }
-        
+
     setActiveStep(newActiveStep);
-    getResults({consultas: steps});
-    sendPracticaData({consultas: steps});
-    sendPracticaLogs({consultas: steps})
+    getResults({ consultas: steps });
+    sendPracticaData({ consultas: steps });
+    sendPracticaLogs({ consultas: steps });
   };
 
   // const handleBack = () => {
@@ -633,14 +650,13 @@ export default function HorizontalNonLinearStepper() {
   };
 
   const handleCancelPractica = async () => {
-    const logs = getPracticaCanceladaLogsFunc({consultas: steps});
-
+    const logs = getPracticaCanceladaLogsFunc({ consultas: steps });
 
     if (logs) {
-      sendLogs({logs});
+      sendLogs({ logs });
     }
 
-    const data = getPracticaCanceladaDataFunc({consultas: steps, vocablos});
+    const data = getPracticaCanceladaDataFunc({ consultas: steps, vocablos });
 
     if (data) {
       try {
@@ -648,34 +664,37 @@ export default function HorizontalNonLinearStepper() {
           method: "POST",
           headers: {
             "Content-type": "application/json",
-            "token": localStorage.token,
+            token: localStorage.token,
           },
           body: JSON.stringify(data),
         });
 
         if (response.status === 204) {
-          toast.success("Practica cancelada");
-          navigate(`/dashboard/practicar?grado=${grado}&tema=${tema}`)
+          const route = window.location.pathname.includes("prueba");
+          if (route) {
+            toast.success("Prueba cancelada");
+            navigate(`/dashboard/prueba?grado=${grado}&tema=${tema}`);
+          } else {
+            toast.success("Práctica cancelada");
+            navigate(`/dashboard/estudiar?grado=${grado}&tema=${tema}`);
+          }
         } else {
           toast.error("Error desconocido");
         }
-
-      } catch(err) {
+      } catch (err) {
         // code to error action
         toast.error("Error de conexion");
       }
-
     }
-  }
+  };
 
-  console.log({steps: steps.slice(0), completed, activeStep});
+  console.log({ steps: steps.slice(0), completed, activeStep });
 
   /** Logica Practica */
   const [open, setOpen] = React.useState(false);
   const [currentToastId, setCurrentToastId] = React.useState(undefined);
 
-  const setResponse = ({palabra}) => {
-
+  const setResponse = ({ palabra }) => {
     const consulta = steps[activeStep];
 
     if (!consulta.responses) {
@@ -690,82 +709,95 @@ export default function HorizontalNonLinearStepper() {
       toast.dismiss(currentToastId);
     }
 
-    if (consulta.vocablo_palabra === palabra) {      
-
+    if (consulta.vocablo_palabra === palabra) {
       let reward;
-      if (consulta.responses && consulta.responses[0] === consulta.vocablo_palabra) {
-        reward =  REWARD_GOOD_RESPONSE[(Math.floor((Math.random() * REWARD_GOOD_RESPONSE.length)))];
+      if (
+        consulta.responses &&
+        consulta.responses[0] === consulta.vocablo_palabra
+      ) {
+        reward =
+          REWARD_GOOD_RESPONSE[
+            Math.floor(Math.random() * REWARD_GOOD_RESPONSE.length)
+          ];
       } else {
-        reward =  REWARD_CORRECTED_RESPONSE[(Math.floor((Math.random() * REWARD_CORRECTED_RESPONSE.length)))];
+        reward =
+          REWARD_CORRECTED_RESPONSE[
+            Math.floor(Math.random() * REWARD_CORRECTED_RESPONSE.length)
+          ];
       }
 
-      
       addLogsToActiveStep({
         logs: [
           {
-            "log_name": "Aprendiz: Responde una consulta",
-            "timestamp": new Date().toISOString(),
-            "respuesta_es_correcta": true,
-            "respuesta_usuario": palabra,
+            log_name: "Aprendiz: Responde una consulta",
+            timestamp: new Date().toISOString(),
+            respuesta_es_correcta: true,
+            respuesta_usuario: palabra,
           },
           {
-            "log_name": "Sistema: Muestra gamificación por respuesta correcta",
-            "timestamp": new Date().toISOString(),
-            "mensaje": reward.message,
-            "image": reward.imageSrc
+            log_name: "Sistema: Muestra gamificación por respuesta correcta",
+            timestamp: new Date().toISOString(),
+            mensaje: reward.message,
+            image: reward.imageSrc,
           },
-        ]
+        ],
       });
 
       // const id = toast.success(reward.mensaje, {autoClose: 2000});
-      const id = toast(<CustomToast imageSrc={reward.imageSrc} message={reward.message} />, {autoClose: 2000});
+      const id = toast(
+        <CustomToast imageSrc={reward.imageSrc} message={reward.message} />,
+        { autoClose: 2000 }
+      );
       setCurrentToastId(id);
       handleComplete();
     } else {
-
-     const reward =  REWARD_BAD_RESPONSE[(Math.floor((Math.random() * REWARD_BAD_RESPONSE.length)))];
+      const reward =
+        REWARD_BAD_RESPONSE[
+          Math.floor(Math.random() * REWARD_BAD_RESPONSE.length)
+        ];
 
       addLogsToActiveStep({
         logs: [
           {
-            "log_name": "Aprendiz: Responde una consulta",
-            "timestamp": new Date().toISOString(),
-            "respuesta_es_correcta": false,
-            "respuesta_usuario": palabra,
+            log_name: "Aprendiz: Responde una consulta",
+            timestamp: new Date().toISOString(),
+            respuesta_es_correcta: false,
+            respuesta_usuario: palabra,
           },
           {
-            "log_name": "Sistema: Muestra gamificación por respuesta incorrecta",
-            "timestamp": new Date().toISOString(),
-            "mensaje": reward.message,
-            "image": reward.imageSrc
+            log_name: "Sistema: Muestra gamificación por respuesta incorrecta",
+            timestamp: new Date().toISOString(),
+            mensaje: reward.message,
+            image: reward.imageSrc,
           },
           {
-            "log_name": "Sistema: Muestra corrección",
-            "timestamp": new Date().toISOString(),
-            "respuesta_correcta": consulta.vocablo_palabra
+            log_name: "Sistema: Muestra corrección",
+            timestamp: new Date().toISOString(),
+            respuesta_correcta: consulta.vocablo_palabra,
           },
-        ]
+        ],
       });
 
-      const id = toast(<CustomToast imageSrc={reward.imageSrc} message={reward.message} />, {autoClose: 2000});
+      const id = toast(
+        <CustomToast imageSrc={reward.imageSrc} message={reward.message} />,
+        { autoClose: 2000 }
+      );
       setCurrentToastId(id);
       // handleOpen(); // TODO: FIXME: uncomment to show Correction Vocablo-Modal
       handleComplete(); // TODO: FIXME: Remove to show Correction Vocablo-Modal
-      
     }
-    
   };
 
-  const getResults = ({consultas}) => {
-    const resultsAux = getResultsFunc({consultas});
+  const getResults = ({ consultas }) => {
+    const resultsAux = getResultsFunc({ consultas });
 
     if (resultsAux) {
       setResults(resultsAux);
     }
-  }
+  };
 
-  const sendPracticaData = async ({consultas}) => {
-    const data = getPracticaDataFunc({consultas, vocablos});
+  const sendPracticaData = async ({ consultas }) => {
+    const data = getPracticaDataFunc({ consultas, vocablos });
 
     if (data) {
       try {
@@ -773,40 +805,36 @@ export default function HorizontalNonLinearStepper() {
           method: "POST",
           headers: {
             "Content-type": "application/json",
-            "token": localStorage.token,
+            token: localStorage.token,
           },
           body: JSON.stringify(data),
         });
 
         if (response.status === 204) {
-          toast.success("Practica terminada correctamente");
+          toast.success("Práctica terminada correctamente");
         } else {
           toast.error("Error desconocido");
-
         }
-
-      } catch(err) {
+      } catch (err) {
         // code to error action
         toast.error("Error de conexion");
       }
-
     }
-  }
+  };
 
-  const sendPracticaLogs = async ({consultas}) => {
-    const logs = getPracticaLogsFunc({consultas});
+  const sendPracticaLogs = async ({ consultas }) => {
+    const logs = getPracticaLogsFunc({ consultas });
 
-    console.log({logs});
+    console.log({ logs });
 
     if (logs) {
-      sendLogs({logs});
+      sendLogs({ logs });
     }
-  }
+  };
 
   // Manejando logs
 
-  const addLogsToConsulta = ({logs, consultas, index}) => {
-
+  const addLogsToConsulta = ({ logs, consultas, index }) => {
     if (!logs || logs.length === 0) {
       return consultas;
     }
@@ -815,7 +843,7 @@ export default function HorizontalNonLinearStepper() {
       return consultas;
     }
 
-    if (typeof index !== 'number') {
+    if (typeof index !== "number") {
       return consultas;
     }
 
@@ -830,19 +858,22 @@ export default function HorizontalNonLinearStepper() {
     const newConsultas = consultas.slice(0);
 
     return newConsultas;
-  }
+  };
 
-  const addLogsToActiveStep = ({logs}) => {
-    
+  const addLogsToActiveStep = ({ logs }) => {
     if (!logs || logs.length === 0) {
       return;
     }
 
-    const newConsultas = addLogsToConsulta({logs, consultas: steps, index: activeStep});
+    const newConsultas = addLogsToConsulta({
+      logs,
+      consultas: steps,
+      index: activeStep,
+    });
 
     setSteps(newConsultas);
-  }
-  
+  };
+
   // Vocablo modal
 
   const handleOpen = () => setOpen(true);
@@ -851,10 +882,10 @@ export default function HorizontalNonLinearStepper() {
     addLogsToActiveStep({
       logs: [
         {
-          "log_name": "Aprendiz: Cierra modal de correción",
-          "timestamp": new Date().toISOString(),
+          log_name: "Aprendiz: Cierra modal de correción",
+          timestamp: new Date().toISOString(),
         },
-      ]
+      ],
     });
   };
 
@@ -863,33 +894,36 @@ export default function HorizontalNonLinearStepper() {
     addLogsToActiveStep({
       logs: [
         {
-          "log_name": "Aprendiz: Indica que entendió corrección",
-          "timestamp": new Date().toISOString(),
+          log_name: "Aprendiz: Indica que entendió corrección",
+          timestamp: new Date().toISOString(),
         },
-      ]
+      ],
     });
   };
 
-  const VocabloModal  = ({ vocablo }) => {
-  
-    const indexImage = vocablo && vocablo.recursos ? vocablo.recursos.findIndex(elem => elem.tipo === 'image') : -1;
+  const VocabloModal = ({ vocablo }) => {
+    const indexImage =
+      vocablo && vocablo.recursos
+        ? vocablo.recursos.findIndex((elem) => elem.tipo === "image")
+        : -1;
     let imageSrc;
-    const indexVideo = vocablo && vocablo.recursos ? vocablo.recursos.findIndex(elem => elem.tipo === 'video') : -1;
+    const indexVideo =
+      vocablo && vocablo.recursos
+        ? vocablo.recursos.findIndex((elem) => elem.tipo === "video")
+        : -1;
     let videoSrc;
-  
+
     if (indexImage !== -1) {
       imageSrc = vocablo.recursos[indexImage].enlace;
     }
-  
+
     if (indexVideo !== -1) {
       videoSrc = vocablo.recursos[indexVideo].enlace;
     }
-  
-  
+
     return (
       <div>
-        {
-          vocablo ? 
+        {vocablo ? (
           <Modal
             // keepMounted
             open={open}
@@ -898,46 +932,74 @@ export default function HorizontalNonLinearStepper() {
             aria-describedby="keep-mounted-modal-description"
           >
             <Box sx={styleVocabloModal}>
-              <Grid container spacing={{ xs: 2, sm: 3, md: 3 }} columns={{ xs: 4, sm: 8, md: 8 }}>
-                <Grid item xs={4} sm={4} md={4} >
+              <Grid
+                container
+                spacing={{ xs: 2, sm: 3, md: 3 }}
+                columns={{ xs: 4, sm: 8, md: 8 }}
+              >
+                <Grid item xs={4} sm={4} md={4}>
                   <Typography id="keep-mounted-modal-title" variant="subtitle2">
                     Imagen
                   </Typography>
                   <CardMedia
                     component="img"
-                    sx={{ width: 350, height: 300, objectFit: 'contain' }}
+                    sx={{ width: 350, height: 300, objectFit: "contain" }}
                     // image={elem.tema_image_src}
                     image={imageSrc}
                     alt={`imagen del vocablo ${vocablo.vocablo_palabra}`}
                   />
                 </Grid>
-                <Grid item xs={4} sm={4} md={4} >
+                <Grid item xs={4} sm={4} md={4}>
                   <Typography id="keep-mounted-modal-title" variant="subtitle2">
-                      Video
+                    Video
                   </Typography>
                   <YoutubeEmbed embedLink={videoSrc} />
                 </Grid>
-                <Grid item xs={4} sm={4} md={4} >
-                  <Typography id="keep-mounted-modal-description" variant="subtitle2">
+                <Grid item xs={4} sm={4} md={4}>
+                  <Typography
+                    id="keep-mounted-modal-description"
+                    variant="subtitle2"
+                  >
                     Palabra
                   </Typography>
-                  <Typography id="keep-mounted-modal-title" variant="h3" component="h2" style={{backgroundColor: "yellow"}}>
+                  <Typography
+                    id="keep-mounted-modal-title"
+                    variant="h3"
+                    component="h2"
+                    style={{ backgroundColor: "yellow" }}
+                  >
                     {vocablo.vocablo_palabra}
                   </Typography>
                 </Grid>
-                <Grid item xs={4} sm={4} md={4} style={{minHeight: "150px", display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', alignSelf: "stretch"}}>
+                <Grid
+                  item
+                  xs={4}
+                  sm={4}
+                  md={4}
+                  style={{
+                    minHeight: "150px",
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    alignItems: "flex-end",
+                    alignSelf: "stretch",
+                  }}
+                >
                   {/*<Button variant="text" color="error" onClick={handleClose}>Cerrar</Button>*/}
-                  <Button variant="contained" color="success" onClick={handleCloseEntendido}>Entendido</Button>
+                  <Button
+                    variant="contained"
+                    color="success"
+                    onClick={handleCloseEntendido}
+                  >
+                    Entendido
+                  </Button>
                 </Grid>
               </Grid>
             </Box>
-          </Modal> :
-          null
-
-        }
+          </Modal>
+        ) : null}
       </div>
     );
-  }
+  };
 
   // Trofeo
 
@@ -949,44 +1011,78 @@ export default function HorizontalNonLinearStepper() {
     setOpenTrofeo(false);
     setTrofeoData(undefined);
 
-    if (trofeoAux.type === 'imparable') {
-      setResults({...results, trofeos_imparables_showed: true, trofeo_showing: false});
-    } else if (trofeoAux.type === 'agil') {
-      setResults({...results, trofeos_agil_showed: true, trofeo_showing: false});
+    if (trofeoAux.type === "imparable") {
+      setResults({
+        ...results,
+        trofeos_imparables_showed: true,
+        trofeo_showing: false,
+      });
+    } else if (trofeoAux.type === "agil") {
+      setResults({
+        ...results,
+        trofeos_agil_showed: true,
+        trofeo_showing: false,
+      });
     }
+  };
+
+  if (
+    results &&
+    results.trofeos_imparables &&
+    !results.trofeos_imparables_showed &&
+    !results.trofeo_showing
+  ) {
+    setResults({ ...results, trofeo_showing: true });
+    setTrofeoData({
+      type: "imparable",
+      title: "Ganaste una Estrella Imparable",
+      message: "",
+    });
+    setOpenTrofeo(true);
+  } else if (
+    results &&
+    results.trofeos_agil &&
+    !results.trofeos_agil_showed &&
+    !results.trofeo_showing
+  ) {
+    setResults({ ...results, trofeo_showing: true });
+    setTrofeoData({
+      type: "agil",
+      title: "Ganaste una Estrella Agil",
+      message: "",
+    });
+    setOpenTrofeo(true);
   }
 
-  if (results && results.trofeos_imparables && !results.trofeos_imparables_showed && !results.trofeo_showing) {
-    setResults({...results, trofeo_showing: true});
-    setTrofeoData({type: 'imparable', title: 'Ganaste una Estrella Imparable', message: ''});
-    setOpenTrofeo(true);
-  } else if (results && results.trofeos_agil && !results.trofeos_agil_showed && !results.trofeo_showing) {
-    setResults({...results, trofeo_showing: true});
-    setTrofeoData({type: 'agil', title: 'Ganaste una Estrella Agil', message: ''});
-    setOpenTrofeo(true);
-  }
+  console.log({ results, trofeoData });
 
-
-  console.log({results, trofeoData})
-
-
-  const TrofeoModal  = ({ trofeo }) => {
-
+  const title = window.location.pathname.includes("prueba")
+    ? "Prueba Finalizada"
+    : "Práctica Finalizada";
+  const title2 = window.location.pathname.includes("prueba")
+    ? "Comenzar otra Prueba"
+    : "Comenzar otra Práctica";
+  const title3 = window.location.pathname.includes("prueba")
+    ? "Cancelar Prueba"
+    : "Cancelar Práctica";
+  const temaTitle1 = window.location.pathname.includes("prueba")
+    ? `Prueba Exploratoria - ${gradoTitle}`
+    : `Práctica - ${gradoTitle}`;
+  const TrofeoModal = ({ trofeo }) => {
     if (!trofeo) {
       return null;
     }
-    
+
     let imageSrc;
-    if (trofeo.type === 'imparable') {
-      imageSrc = '/assets/trofeos/imparable.png';
-    } else if (trofeo.type === 'agil') {
-      imageSrc = '/assets/trofeos/agil.png';
+    if (trofeo.type === "imparable") {
+      imageSrc = "/assets/trofeos/imparable.png";
+    } else if (trofeo.type === "agil") {
+      imageSrc = "/assets/trofeos/agil.png";
     }
-  
+
     return (
       <div>
-        {
-          trofeo ? (
+        {trofeo ? (
           <Modal
             // keepMounted
             open={openTrofeo}
@@ -1001,133 +1097,240 @@ export default function HorizontalNonLinearStepper() {
                 image={imageSrc}
                 alt={`trofeo ${trofeo.type}`}
               />
-              <Typography id="keep-mounted-modal-title" variant="h5" color="success">
+              <Typography
+                id="keep-mounted-modal-title"
+                variant="h5"
+                color="success"
+              >
                 {trofeo.title}
               </Typography>
-              <Typography id="keep-mounted-modal-title" variant="subtitle2" >
+              <Typography id="keep-mounted-modal-title" variant="subtitle2">
                 {trofeo.message}
               </Typography>
-              <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
-                <Box sx={{ flex: '1 1 auto' }} />
-                <Button aria-label="close modal" onClick={handleCloseTrofeo}>Ok</Button>
+              <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+                <Box sx={{ flex: "1 1 auto" }} />
+                <Button aria-label="close modal" onClick={handleCloseTrofeo}>
+                  Ok
+                </Button>
               </Box>
             </Box>
           </Modal>
-          ): null
-        }
+        ) : null}
       </div>
     );
-  }
+  };
 
-  return (
-    loading ?
-    (<Grid container direction="row" justifyContent="center"><CircularProgress color="inherit" size={25} /></Grid>) :
-    (
-      <Box sx={{ width: '100%' }}>
-        <Box style={{display: 'flex', justifyContent: 'space-between', marginBottom: '32px'}}>
-        <Button variant="outlined" color="warning" startIcon={<ChevronLeftIcon />} onClick={() => {window.history.back()}}>Volver</Button>
-        </Box>
-        <Stepper nonLinear activeStep={activeStep}>
-          {steps.map((label, index) => (
-            <Step key={`step-${index}`} completed={completed[index]}>
-              <StepButton color="inherit" onClick={handleStep(index)}>
-                {''}
-              </StepButton>
-            </Step>
-          ))}
-        </Stepper>
-        <div>
-          {allStepsCompleted() ? (
-            <React.Fragment>
-              <Typography variant="h4" sx={{ mt: 2, mb: 1 }}>
-                Practica Finalizada
-              </Typography>
-              <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginTop: '24px'}}>
-                {/*<Box sx={{ flex: '1 1 auto' }} />*/}
-                {/*<Button onClick={handleReset}>Reset</Button>*/}
-                <Box>
-                  <List
-                    sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
-                    component="nav"
-                    aria-labelledby="nested-list-subheader"
-                    subheader={
-                      <ListSubheader component="div" id="nested-list-subheader">
-                        Resultados
-                      </ListSubheader>
-                    }
-                  >
-                    <ListItemButton key="list-1">
-                      <ListItemIcon>
-                        <SchoolIcon color="primary" />
-                      </ListItemIcon>
-                      <ListItemText primary={gradoTitle} secondary="Grado"/>
-                    </ListItemButton>
-                    <ListItemButton  key="list-2">
-                      <ListItemIcon>
-                        <CategoryIcon color="primary" />
-                      </ListItemIcon>
-                      <ListItemText primary={temaTitle} secondary="Tema"/>
-                    </ListItemButton>
-                    <ListItemButton  key="list-3">
-                      <ListItemIcon>
-                        <CheckCircleIcon color="primary" />
-                      </ListItemIcon>
-                      <ListItemText primary={`${results.totalConsultasCorrectas}/${results.totalConsultas}`} secondary="Respuestas correctas"/>
-                    </ListItemButton>
-                    <ListItemButton  key="list-4">
-                      <ListItemIcon>
-                        <ScoreIcon color="primary" />
-                      </ListItemIcon>
-                      <ListItemText primary={results.points} secondary="Puntos"/>
-                    </ListItemButton>
-                  </List>
-                </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                  <CardMedia
-                    component="img"
-                    sx={{ maxWidth: 200, maxHeight: 200 }}
-                    image="/assets/trofeos/reward-practica.png"
-                  />
-                  <Typography variant="h4" sx={{ mt: 2, mb: 1 }}>
-                    Muy bien!
-                  </Typography>
-                </Box>
+  return loading ? (
+    <Grid container direction="row" justifyContent="center">
+      <CircularProgress color="inherit" size={25} />
+    </Grid>
+  ) : (
+    <Box sx={{ width: "100%" }}>
+      <Box
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginBottom: "32px",
+        }}
+      >
+        <Button
+          variant="outlined"
+          color="warning"
+          startIcon={<ChevronLeftIcon />}
+          onClick={() => {
+            window.history.back();
+          }}
+        >
+          Volver
+        </Button>
+      </Box>
+      <Stepper nonLinear activeStep={activeStep}>
+        {steps.map((label, index) => (
+          <Step key={`step-${index}`} completed={completed[index]}>
+            <StepButton color="inherit" onClick={handleStep(index)}>
+              {""}
+            </StepButton>
+          </Step>
+        ))}
+      </Stepper>
+      <div>
+        {allStepsCompleted() ? (
+          <React.Fragment>
+            <Typography variant="h4" sx={{ mt: 2, mb: 1 }}>
+              {title}
+            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-around",
+                marginTop: "24px",
+              }}
+            >
+              {/*<Box sx={{ flex: '1 1 auto' }} />*/}
+              {/*<Button onClick={handleReset}>Reset</Button>*/}
+              <Box>
+                <List
+                  sx={{
+                    width: "100%",
+                    maxWidth: 360,
+                    bgcolor: "background.paper",
+                  }}
+                  component="nav"
+                  aria-labelledby="nested-list-subheader"
+                  subheader={
+                    <ListSubheader component="div" id="nested-list-subheader">
+                      Resultados
+                    </ListSubheader>
+                  }
+                >
+                  <ListItemButton key="list-1">
+                    <ListItemIcon>
+                      <SchoolIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary={gradoTitle} secondary="Grado" />
+                  </ListItemButton>
+                  <ListItemButton key="list-2">
+                    <ListItemIcon>
+                      <CategoryIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary={temaTitle1} secondary="Tema" />
+                  </ListItemButton>
+                  <ListItemButton key="list-3">
+                    <ListItemIcon>
+                      <CheckCircleIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText
+                      primary={`${results.totalConsultasCorrectas}/${results.totalConsultas}`}
+                      secondary="Respuestas correctas"
+                    />
+                  </ListItemButton>
+                  <ListItemButton key="list-4">
+                    <ListItemIcon>
+                      <ScoreIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary={results.points} secondary="Puntos" />
+                  </ListItemButton>
+                </List>
               </Box>
-              <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginTop: '24px'}}>
-                <Button variant="outlined" color="secondary" startIcon={<ChevronLeftIcon />} onClick={() => {navigate(`/dashboard/practicar?grado=${grado}`, {replace: true})}}>
-                  Volvar a {gradoTitle}
-                </Button>
-                <Button variant="contained" color="primary" endIcon={<RestartAltIcon />} onClick={() => {handleReset()}} style={{marginLeft: '24px'}}>
-                  Comenzar otra practica
-                </Button>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  sx={{ maxWidth: 200, maxHeight: 200 }}
+                  image="/assets/trofeos/reward-practica.png"
+                />
+                <Typography variant="h4" sx={{ mt: 2, mb: 1 }}>
+                  Muy bien!
+                </Typography>
               </Box>
-            </React.Fragment>
-          ) : (
-            <React.Fragment>
-              <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginTop: '24px'}}>
-                  {/*<Typography id="keep-mounted-modal-title" variant="subtitle2">
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "flex-end",
+                marginTop: "24px",
+              }}
+            >
+              <Button
+                variant="outlined"
+                color="secondary"
+                startIcon={<ChevronLeftIcon />}
+                onClick={() => {
+                  navigate(`/dashboard/prueba?grado=${grado}`, {
+                    replace: true,
+                  });
+                }}
+              >
+                Volvar a {gradoTitle}
+              </Button>
+              {title2.includes("Prueba") && (
+                <Button
+                  variant="contained"
+                  color="primary"
+                  endIcon={<RestartAltIcon />}
+                  onClick={() => {
+                    handleReset();
+                  }}
+                  style={{ marginLeft: "24px" }}
+                >
+                  {title2}
+                </Button>
+              )}
+            </Box>
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                  marginTop: "24px",
+                }}
+              >
+                {/*<Typography id="keep-mounted-modal-title" variant="subtitle2">
                     Imagen
                   </Typography>*/}
-                  <CardMedia
-                    component="img"
-                    sx={{ maxWidth: 350, maxHeight: 300, objectFit: 'contain' }}
-                    image={steps[activeStep].imageSrc}
-                    alt={`imagen del vocablo ${steps[activeStep].vocablo_palabra}`}
-                  />
-                </Box>
-                <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginTop: '24px'}}>
-                  {steps[activeStep].palabras_consulta.map(p => (
-                      <Button key={p} variant="outlined" color="success" onClick={() => setResponse({palabra: p})}>{p}</Button>
-                  ))}
-                </Box>
-
-                <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', marginTop: '24px'}}>
-                  <Button variant="outlined" color="error" onClick={() => handleCancelPractica()}>Cancelar practica</Button>
-                </Box>
-
+                <CardMedia
+                  component="img"
+                  sx={{ maxWidth: 350, maxHeight: 300, objectFit: "contain" }}
+                  image={steps[activeStep].imageSrc}
+                  alt={`imagen del vocablo ${steps[activeStep].vocablo_palabra}`}
+                />
               </Box>
-              {/*<Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                  marginTop: "24px",
+                }}
+              >
+                {steps[activeStep].palabras_consulta.map((p) => (
+                  <Button
+                    key={p}
+                    variant="outlined"
+                    color="success"
+                    onClick={() => setResponse({ palabra: p })}
+                  >
+                    {p}
+                  </Button>
+                ))}
+              </Box>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "flex-start",
+                  marginTop: "24px",
+                }}
+              >
+                <Button
+                  variant="outlined"
+                  color="error"
+                  onClick={() => handleCancelPractica()}
+                >
+                  {title3}
+                </Button>
+              </Box>
+            </Box>
+            {/*<Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                 <Button
                   color="inherit"
                   disabled={activeStep === 0}
@@ -1153,13 +1356,11 @@ export default function HorizontalNonLinearStepper() {
                     </Button>
                   ))}
                       </Box>*/}
-            </React.Fragment>
-          )}
-        </div>
-        <VocabloModal vocablo={steps[activeStep]} />
-        <TrofeoModal trofeo={trofeoData} />
-      </Box>
-    )
-  ) 
-  
+          </React.Fragment>
+        )}
+      </div>
+      <VocabloModal vocablo={steps[activeStep]} />
+      <TrofeoModal trofeo={trofeoData} />
+    </Box>
+  );
 }

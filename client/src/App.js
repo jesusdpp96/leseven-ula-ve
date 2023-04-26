@@ -32,12 +32,13 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Dashboard from "./components/Dashboard";
 import Practicar from "./components/Practicar";
+import Estudiar from "./components/Estudiar";
 import ExplorarVocabularioTemas from "./components/ExplorarVocabularioTemas";
 import ExplorarVocabularioCategorias from "./components/ExplorarVocabularioCategorias";
 import Practica from "./components/Practica";
 import Inicio from "./components/Inicio";
 import AprendicesMonitor from "./components/AprendicesMonitor";
-
+import Glosario from "./components/Glosario"
 // toast.configure();
 
 // const ProtectedRoute = ({
@@ -130,7 +131,10 @@ export const Body = ({ isAuthenticated, setAuth }) => (
           <Inicio />
       } />
       
-      <Route path="practicar" element={
+      <Route path="estudiar" element={
+          <Estudiar />
+      } />
+      <Route path="prueba" element={
           <Practicar />
       } />
       <Route path="explorar-vocabulario-temas" element={
@@ -142,8 +146,14 @@ export const Body = ({ isAuthenticated, setAuth }) => (
       <Route path="practica" element={
           <Practica />
       } />
+      <Route path="/dashboard/prueba/practica" element={
+          <Practica />
+      } />
       <Route path="supervisar" element={
         <AprendicesMonitor />
+      } />
+           <Route path="glosario" element={
+        <Glosario />
       } />
     </Route>
   </Routes>
