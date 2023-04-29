@@ -21,7 +21,11 @@
     "pg": "~8.7.1"
   },
   "devDependencies": {
-    "nodemon": "~2.0.20"
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "nodemon": "~2.0.20",
+    "webpack": "^5.81.0"
   },
   "keywords": [],
   "author": "jesusdpp96@gmail.com",
