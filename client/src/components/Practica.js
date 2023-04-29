@@ -29,23 +29,23 @@ import sendLogs from "../utils/sendLogs";
 import CustomToast from "./CustomToast";
 
 const consultas_por_grado = [
-  3, // preescolar
-  4, // 1er grado
-  4, // 2do grado
-  2, // tercer grado
-  4, // 4to grado
-  5, // 5to grado
-  10, // 6to grado
+  5, // preescolar
+  5, // 1er grado
+  5, // 2do grado
+  5, // tercer grado
+  10, // 4to grado
+  15, // 5to grado
+  15, // 6to grado
 ];
 
 const opciones_por_grado = [
-  5, // preescolar
-  5, // 1er grado
-  6, // 2do grado
-  4, // tercer grado
-  5, // 4to grado
-  10, // 5to grado
-  15, // 6to grado
+  8, // preescolar
+  8, // 1er grado
+  10, // 2do grado
+  5, // tercer grado
+  15, // 4to grado
+  20, // 5to grado
+  20, // 6to grado
 ];
 const REWARD_GOOD_RESPONSE = [
   {

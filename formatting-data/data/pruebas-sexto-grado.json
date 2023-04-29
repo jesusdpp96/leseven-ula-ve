@@ -65,8 +65,8 @@
   {
     "grado": "Sexto grado",
     "tema": "Prueba Exploratoria - Sexto Grado",
-    "palabra": "Papá",
-    "image": "/assets/images/papa-personas.png",
+    "palabra": "Papa",
+    "image": "/assets/images/el-papa.png",
     "video": "https://www.youtube.com/watch?v=vSAcUnQXFdM"
   },
   {
@@ -103,5 +103,40 @@
     "palabra": "Aretes",
     "image": "/assets/images/Aretes.png",
     "video": "https://www.youtube.com/watch?v=OS9Jjj58xEE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Piramides",
+    "image": "/assets/images/Piramides.png",
+    "video": "https://youtu.be/xr0W2zqEvc4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Aguacate",
+    "image": "/assets/images/aguacate.png",
+    "video": "https://youtu.be/bK4UG7d0tpI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Arvejas",
+    "image": "/assets/images/arvejas.png",
+    "video": "https://youtu.be/O2X9g7g6LRg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Hamburguesa",
+    "image": "/assets/images/hamburguesa.png",
+    "video": "https://youtu.be/OJ16Z6fTPtk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Prueba Exploratoria - Sexto Grado",
+    "palabra": "Loro",
+    "image": "/assets/images/loro.png",
+    "video": "https://youtu.be/hri0Hs6zc7Q"
   }
 ]

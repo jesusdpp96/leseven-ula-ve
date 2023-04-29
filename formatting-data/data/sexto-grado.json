@@ -20,7 +20,6 @@
     "image": "/assets/images/caujaro.png",
     "video": ""
   },
-
   {
     "grado": "Sexto grado",
     "tema": "Animales",
@@ -35,7 +34,6 @@
     "image": "/assets/images/cunaguaro.png",
     "video": ""
   },
-
   {
     "grado": "Sexto grado",
     "tema": "Articulos de uso Personal",
@@ -64,7 +62,6 @@
     "image": "/assets/images/Peine.png",
     "video": "https://youtu.be/u92CvDA3vEM"
   },
-
   {
     "grado": "Sexto grado",
     "tema": "Articulos de uso Personal",
@@ -72,8 +69,6 @@
     "image": "/assets/images/Papel-Sanitario.png",
     "video": "https://youtu.be/ZaoK9E-Zd8g"
   },
-
-
   {
     "grado": "Sexto grado",
     "tema": "Dulces/Postres/Golosinas",
@@ -102,8 +97,6 @@
     "image": "/assets/images/Batidos.png",
     "video": ""
   },
-
-
   {
     "grado": "Sexto grado",
     "tema": "Enfermedades",
@@ -132,7 +125,6 @@
     "image": "/assets/images/Apendicitis.png",
     "video": ""
   },
-  
   {
     "grado": "Sexto grado",
     "tema": "Figuras geométricas",
@@ -147,69 +139,62 @@
     "image": "/assets/images/Piramides.png",
     "video": "https://youtu.be/xr0W2zqEvc4"
   },
-
   {
-    "grado":"Sexto grado",
-    "tema":"Lugares de merida",
-    "palabra":"Momumento del Perro",
-    "image":"/assets/images/Momumento-del-Perro.png",
-    "video":""
-  },
-
-  {
-    "grado":"Sexto grado",
-    "tema":"Lugares de merida",
-    "palabra":"Tisure",
-    "image":"/assets/images/Tisure.png",
-    "video":""
-  },
-
-  {
-    "grado":"Sexto grado",
-    "tema":"Lugares de merida",
-    "palabra":"Los Nevados",
-    "image":"/assets/images/Los-Nevados.png",
-    "video":""
-  },
-
-  {
-    "grado":"Sexto grado",
-    "tema":"Lugares de merida",
-    "palabra":"La Loca Luz Caraballo",
-    "image":"/assets/images/La-Loca-Luz-Caraballo.png",
-    "video":""
+    "grado": "Sexto grado",
+    "tema": "Lugares de merida",
+    "palabra": "Momumento del Perro",
+    "image": "/assets/images/Momumento-del-Perro.png",
+    "video": ""
   },
   {
-    "grado":"Sexto grado",
-    "tema":"Lugares de merida",
-    "palabra":"La Mucuy",
-    "image":"/assets/images/La-Mucuy.png",
-    "video":""
+    "grado": "Sexto grado",
+    "tema": "Lugares de merida",
+    "palabra": "Tisure",
+    "image": "/assets/images/Tisure.png",
+    "video": ""
   },
   {
-    "grado":"Sexto grado",
-    "tema":"Lugares de merida",
-    "palabra":"La Laguna",
-    "image":"/assets/images/La-Laguna.png",
-    "video":""
+    "grado": "Sexto grado",
+    "tema": "Lugares de merida",
+    "palabra": "Los Nevados",
+    "image": "/assets/images/Los-Nevados.png",
+    "video": ""
   },
   {
-    "grado":"Sexto grado",
-    "tema":"Lugares de merida",
-    "palabra":"Lagunillas",
-    "image":"/assets/images/Lagunillas.png",
-    "video":"https://youtu.be/poyiYoiHivo"
+    "grado": "Sexto grado",
+    "tema": "Lugares de merida",
+    "palabra": "La Loca Luz Caraballo",
+    "image": "/assets/images/La-Loca-Luz-Caraballo.png",
+    "video": ""
   },
-  
-
   {
-    "grado":"Sexto grado",
-    "tema":"Numeros",
-    "palabra":"Billones",
-    "image":"/assets/images/Billones.png",
-    "video":""
+    "grado": "Sexto grado",
+    "tema": "Lugares de merida",
+    "palabra": "La Mucuy",
+    "image": "/assets/images/La-Mucuy.png",
+    "video": ""
   },
-
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares de merida",
+    "palabra": "La Laguna",
+    "image": "/assets/images/La-Laguna.png",
+    "video": ""
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares de merida",
+    "palabra": "Lagunillas",
+    "image": "/assets/images/Lagunillas.png",
+    "video": "https://youtu.be/poyiYoiHivo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Billones",
+    "image": "/assets/images/Billones.png",
+    "video": ""
+  },
   {
     "grado": "Sexto grado",
     "tema": "Personajes historicos",
@@ -245,7 +230,6 @@
     "image": "/assets/images/Jose-Leonardo-Chirinos.png",
     "video": ""
   },
-
   {
     "grado": "Sexto grado",
     "tema": "Personas",
@@ -295,7 +279,6 @@
     "image": "/assets/images/Pastor.png",
     "video": ""
   },
-
   {
     "grado": "Sexto grado",
     "tema": "Ropa",
@@ -331,8 +314,6 @@
     "image": "/assets/images/Cintillo.png",
     "video": ""
   },
-  
-  
   {
     "grado": "Sexto grado",
     "tema": "Sintomas",

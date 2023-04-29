@@ -106,5 +106,40 @@
     "palabra": "Hojas de examen",
     "image": "/assets/images/hojas-de-examen.png",
     "video": "https://www.youtube.com/watch?v=41kRvR7U-ps"
+  },
+  {
+    "grado": "Quinto grado",
+    "tema": "Prueba Exploratoria - Quinto Grado",
+    "palabra": "Delfin",
+    "image": "/assets/images/delfin.png",
+    "video": "https://youtu.be/OzuHhRaREr8"
+  },
+  {
+    "grado": "Quinto grado",
+    "tema": "Prueba Exploratoria - Quinto Grado",
+    "palabra": "Culebra",
+    "image": "/assets/images/culebra.png",
+    "video": "https://youtu.be/UduuLAZxniM"
+  },
+  {
+    "grado": "Quinto grado",
+    "tema": "Prueba Exploratoria - Quinto Grado",
+    "palabra": "Durazno",
+    "image": "/assets/images/durazno.png",
+    "video": "https://youtu.be/zhAI6uSGkCA"
+  },
+  {
+    "grado": "Quinto grado",
+    "tema": "Prueba Exploratoria - Quinto Grado",
+    "palabra": "Tamarindo",
+    "image": "/assets/images/tamarindo.png",
+    "video": "https://youtu.be/n2XwqS3UDrk"
+  },
+  {
+    "grado": "Quinto grado",
+    "tema": "Prueba Exploratoria - Quinto Grado",
+    "palabra": "Horno",
+    "image": "/assets/images/horno.png",
+    "video": "https://youtu.be/8zKhPdFae4w"
   }
 ]
