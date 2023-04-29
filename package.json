@@ -12,20 +12,13 @@
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
-    "bcrypt": "~5.0.1",
-    "cors": "~2.8.5",
-    "dotenv": "~16.0.1",
-    "express": "~4.17.1",
-    "jsonwebtoken": "~8.5.1",
-    "morgan": "~1.10.0",
-    "pg": "~8.7.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.21.5",
-    "@babel/preset-env": "^7.21.5",
-    "babel-loader": "^9.1.2",
-    "nodemon": "~2.0.20",
-    "webpack": "^5.81.0"
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1"
   },
   "keywords": [],
   "author": "jesusdpp96@gmail.com",
