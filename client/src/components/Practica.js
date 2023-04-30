@@ -39,13 +39,13 @@ const consultas_por_grado = [
 ];
 
 const opciones_por_grado = [
-  8, // preescolar
-  8, // 1er grado
-  10, // 2do grado
-  5, // tercer grado
+  9, // preescolar
+  9, // 1er grado
+  11, // 2do grado
+  6, // tercer grado
   15, // 4to grado
   20, // 5to grado
-  20, // 6to grado
+  21, // 6to grado
 ];
 const REWARD_GOOD_RESPONSE = [
   {
