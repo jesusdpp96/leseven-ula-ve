@@ -143,13 +143,13 @@ const ItemList = ({ vocablos, setQuery, updateVocablos }) => {
   }
 };
 const opciones_por_grado = [
-  9, // preescolar
-  9, // 1er grado
-  11, // 2do grado
-  6, // tercer grado
+  8, // preescolar
+  8, // 1er grado
+  10, // 2do grado
+  5, // tercer grado
   15, // 4to grado
   20, // 5to grado
-  21, // 6to grado
+  15, // 6to grado
 ];
 export default function TemaVocablosList({ grado, tema }) {
   const [query, setQuery] = useSearchParams();

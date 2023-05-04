@@ -51,7 +51,6 @@ const getAllVocablos = async (req, res, next) => {
         list.push(row);
         index += 1;
       }
-      // console.log("list", list)
       for (const row of result2.rows) {
         const id = `${row.grado_id}${row.tema_id}${row.vocablo_id}`;
         if (data[id]) {
@@ -79,7 +78,6 @@ const getAllVocablos = async (req, res, next) => {
                 itemAgregado = true;
                 list2.push(elem);
               } else {
-                // console.log("palabra", elem.vocablo_palabra);
                 if (!faltantes.includes(elem.vocablo_palabra))
                   faltantes.push(elem.vocablo_palabra);
               }
@@ -160,7 +158,6 @@ const getAllVocablos = async (req, res, next) => {
                 itemAgregado = true;
                 list2.push(elem);
               }else {
-                // console.log("palabra", elem.vocablo_palabra);
                 if (!faltantes.includes(elem.vocablo_palabra))
                   faltantes.push(elem.vocablo_palabra);
               }
@@ -198,7 +195,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
     const { grado_id, tema_id, vocablos_number } = req.params;
     let list = [];
     let list2 = [];
-    if (grado_id == 6) {
+    if (parseInt(vocablos_number) === 100) {
       const result = await pool.query(
         `
         SELECT GTV.grado_id, GTV.tema_id, GTV.vocablo_id , G.nombre AS grado_nombre, T.nombre AS tema_nombre, T.image_src as tema_image_src,
@@ -207,8 +204,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
         INNER JOIN grado G ON G.id = GTV.grado_id
         INNER JOIN tema T ON T.id = GTV.tema_id
         INNER JOIN vocablo V ON V.id = GTV.vocablo_id
-        WHERE GTV.grado_id = $1 AND GTV.tema_id = $2
-        LIMIT ${vocablos_number};
+        WHERE GTV.grado_id = $1 AND GTV.tema_id = $2;
       `,
         [grado_id, tema_id]
       );
@@ -379,13 +375,13 @@ const getVocablosByGradoTema = async (req, res, next) => {
       }
       let randomNumbers = [];
       maxVocablos =
-        result.rows.length > vocablos_number
-          ? vocablos_number
-          : result.rows.length - 1 > 0
-          ? result.rows.length - 1
+        result.rows.length >= parseInt(vocablos_number)
+          ? parseInt(vocablos_number)
+          : result.rows.length  > 0
+          ? result.rows.length
           : 1;
       while (randomNumbers.length < maxVocablos) {
-        const randomNumber = getRandomInt(result.rows.length - 1);
+        const randomNumber = getRandomInt(result.rows.length);
         if (!randomNumbers.includes(randomNumber)) {
           randomNumbers.push(randomNumber);
         }
@@ -394,7 +390,7 @@ const getVocablosByGradoTema = async (req, res, next) => {
       let data2 = {};
       for (i = 0; i < maxVocablos; i++) {
         itemAgregado = false;
-        data[`${ids[i]}`].recursos.map((item) => {
+        data?.[`${ids[i]}`]?.recursos?.map((item) => {
           if (item.tipo === "video" && !itemAgregado) {
             if (
               item.enlace !== "" &&
@@ -406,7 +402,6 @@ const getVocablosByGradoTema = async (req, res, next) => {
           }
         });
       }
-      console.log("data2", data2);
       res.json(Object.values(data2));
     }
   } catch (error) {
@@ -526,8 +521,6 @@ const getVocablosByTema = async (req, res, next) => {
     list2?.map((item) => {
       data2[item.vocablo_id] = item;
     });
-    console.log("data2", data2);
-
     res.json(Object.values(data2));
   } catch (error) {
     next(error);
