@@ -83,7 +83,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         3,
         'masculino'
@@ -131,7 +131,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         4,
         'masculino'
@@ -179,7 +179,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         5,
         'femenino'
@@ -227,7 +227,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         6,
         'femenino'
@@ -275,7 +275,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         7,
         'femenino'
@@ -323,7 +323,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         8,
         'femenino'
@@ -371,7 +371,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         9,
         'masculino'
@@ -419,7 +419,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         10,
         'femenino'
@@ -468,7 +468,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         11,
         'masculino'
@@ -516,7 +516,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         12,
         'femenino'
@@ -566,7 +566,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         13,
         'masculino'
@@ -614,7 +614,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         14,
         'masculino'
@@ -662,7 +662,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         15,
         'masculino'
@@ -710,7 +710,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         16,
         'masculino'
@@ -759,7 +759,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         17,
         'masculino'
@@ -807,7 +807,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         18,
         'femenino'
@@ -855,7 +855,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         19,
         'femenino'
@@ -904,7 +904,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         20,
         'masculino'
@@ -952,7 +952,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         21,
         'masculino'
@@ -1000,7 +1000,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         22,
         'femenino'
@@ -1048,7 +1048,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         23,
         'femenino'
@@ -1097,7 +1097,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         24,
         'masculino'
@@ -1145,7 +1145,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         25,
         'masculino'
@@ -1193,7 +1193,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         26,
         'masculino'
@@ -1241,7 +1241,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         27,
         'masculino'
@@ -1289,7 +1289,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         28,
         'masculino'
@@ -1337,7 +1337,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         29,
         'masculino'
@@ -1385,7 +1385,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         30,
         'femenino'
@@ -1434,7 +1434,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         31,
         'femenino'
@@ -1482,7 +1482,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         32,
         'femenino'
@@ -1530,7 +1530,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         33,
         'femenino'
@@ -1578,7 +1578,7 @@ VALUES (
         'aprendiz',
         'Graduado',
         '1990-03-20',
-        1,
+        2,
         '2022-05-23T13:40:20.920Z',
         34,
         'femenino'
