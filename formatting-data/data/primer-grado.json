@@ -4,28 +4,28 @@
     "tema": "Alimentos",
     "palabra": "Carne",
     "image": "/assets/images/Carne.png",
-    "video": "https://youtu.be/tZ7mMMWYJYA"
+    "video": "https://www.youtube.com/watch?v=tZ7mMMWYJYA"
   },
   {
     "grado": "Primer grado",
     "tema": "Alimentos",
     "palabra": "pasta",
     "image": "/assets/images/pasta.png",
-    "video": "https://youtu.be/oJ4Vx75KVMA"
+    "video": "https://www.youtube.com/watch?v=oJ4Vx75KVMA"
   },
   {
     "grado": "Primer grado",
     "tema": "Alimentos",
     "palabra": "Pollo",
     "image": "/assets/images/pollo-alimento.png",
-    "video": "https://youtu.be/_WlSFyCUnSo"
+    "video": "https://www.youtube.com/watch?v=_WlSFyCUnSo"
   },
   {
     "grado": "Primer grado",
     "tema": "Alimentos",
     "palabra": "Queso",
     "image": "/assets/images/Queso.png",
-    "video": "https://youtu.be/RqApDS6tFjw"
+    "video": "https://www.youtube.com/watch?v=RqApDS6tFjw"
   },
   {
     "grado": "Primer grado",
@@ -55,7 +55,7 @@
     "tema": "Animales",
     "palabra": "Gallo",
     "image": "/assets/images/Gallo.png",
-    "video": "https://youtu.be/uN0pCcnbscQ"
+    "video": "https://www.youtube.com/watch?v=uN0pCcnbscQ"
   },
   {
     "grado": "Primer grado",
@@ -76,21 +76,21 @@
     "tema": "Animales",
     "palabra": "Ratón",
     "image": "/assets/images/Ratón.png",
-    "video": "https://youtu.be/b3ySXMZSCQE"
+    "video": "https://www.youtube.com/watch?v=b3ySXMZSCQE"
   },
   {
     "grado": "Primer grado",
     "tema": "Animales",
     "palabra": "Sapo",
     "image": "/assets/images/Sapo.png",
-    "video": "https://youtu.be/8DJoI4lwM6E"
+    "video": "https://www.youtube.com/watch?v=8DJoI4lwM6E"
   },
   {
     "grado": "Primer grado",
     "tema": "Animales",
     "palabra": "Vaca",
     "image": "/assets/images/Vaca.png",
-    "video": "https://youtu.be/z_oCVzag8eE"
+    "video": "https://www.youtube.com/watch?v=z_oCVzag8eE"
   },
 
   {
@@ -107,28 +107,28 @@
     "tema": "Colores",
     "palabra": "Amarillo",
     "image": "/assets/images/Amarillo.png",
-    "video": "https://youtu.be/w6mNcISiSmg"
+    "video": "https://www.youtube.com/watch?v=w6mNcISiSmg"
   },
   {
     "grado": "Primer grado",
     "tema": "Colores",
     "palabra": "Azul",
     "image": "/assets/images/Azul.png",
-    "video": "https://youtu.be/sQP0UeO_ta8"
+    "video": "https://www.youtube.com/watch?v=sQP0UeO_ta8"
   },
   {
     "grado": "Primer grado",
     "tema": "Colores",
     "palabra": "Rojo",
     "image": "/assets/images/Rojo.png",
-    "video": "https://youtu.be/x-Ttb-CPypc"
+    "video": "https://www.youtube.com/watch?v=x-Ttb-CPypc"
   },
   {
     "grado": "Primer grado",
     "tema": "Colores",
     "palabra": "Verde",
     "image": "/assets/images/Verde.png",
-    "video": "https://youtu.be/GhLzHYXTkI8"
+    "video": "https://www.youtube.com/watch?v=GhLzHYXTkI8"
   },
 
   
@@ -137,21 +137,21 @@
     "tema": "Días de la semana",
     "palabra": "Lunes",
     "image": "/assets/images/Lunes.png",
-    "video": "https://youtu.be/ECtYYmayMK8"
+    "video": "https://www.youtube.com/watch?v=ECtYYmayMK8"
   },
   {
     "grado": "Primer grado",
     "tema": "Días de la semana",
     "palabra": "Martes",
     "image": "/assets/images/Martes.png",
-    "video": "https://youtu.be/mg3QCu3c8hA"
+    "video": "https://www.youtube.com/watch?v=mg3QCu3c8hA"
   },
   {
     "grado": "Primer grado",
     "tema": "Días de la semana",
     "palabra": "Viernes",
     "image": "/assets/images/Viernes.png",
-    "video": "https://youtu.be/hvZBmEt1gwQ"
+    "video": "https://www.youtube.com/watch?v=hvZBmEt1gwQ"
   },
 
 
@@ -208,35 +208,35 @@
     "tema": "Frutas",
     "palabra": "Cambur",
     "image": "/assets/images/Cambur.png",
-    "video": "https://youtu.be/lyypmRh4I7M"
+    "video": "https://www.youtube.com/watch?v=lyypmRh4I7M"
   },
   {
     "grado": "Primer grado",
     "tema": "Frutas",
     "palabra": "Mango",
     "image": "/assets/images/Mango.png",
-    "video": "https://youtu.be/um3OAOJ90Ec"
+    "video": "https://www.youtube.com/watch?v=um3OAOJ90Ec"
   },
   {
     "grado": "Primer grado",
     "tema": "Frutas",
     "palabra": "Mora",
     "image": "/assets/images/Mora.png",
-    "video": "https://youtu.be/p-ASmKkSYCM"
+    "video": "https://www.youtube.com/watch?v=p-ASmKkSYCM"
   },
   {
     "grado": "Primer grado",
     "tema": "Frutas",
     "palabra": "Piña",
     "image": "/assets/images/Piña.png",
-    "video": "https://youtu.be/WefyVrv5Lik"
+    "video": "https://www.youtube.com/watch?v=WefyVrv5Lik"
   },
   {
     "grado": "Primer grado",
     "tema": "Frutas",
     "palabra": "Patilla",
     "image": "/assets/images/Patilla.png",
-    "video": "https://youtu.be/SBuqrCHu42o"
+    "video": "https://www.youtube.com/watch?v=SBuqrCHu42o"
   },
 
 
@@ -275,14 +275,14 @@
     "tema": "Lugares",
     "palabra": "Cocina",
     "image": "/assets/images/Cocina.png",
-    "video": "https://youtu.be/u5Mx6pfxFMM"
+    "video": "https://www.youtube.com/watch?v=u5Mx6pfxFMM"
   },
   {
     "grado": "Primer grado",
     "tema": "Lugares",
     "palabra": "baño",
     "image": "/assets/images/baño.png",
-    "video": "https://youtu.be/Q8DCWuiuyLY"
+    "video": "https://www.youtube.com/watch?v=Q8DCWuiuyLY"
   },
   {
     "grado": "Primer grado",
@@ -337,21 +337,21 @@
     "tema": "Medios de transporte",
     "palabra": "Bicicleta",
     "image": "/assets/images/Bicicleta.png",
-    "video": "https://youtu.be/DhmMkr74JAA"
+    "video": "https://www.youtube.com/watch?v=DhmMkr74JAA"
   },
   {
     "grado": "Primer grado",
     "tema": "Medios de transporte",
     "palabra": "Cohete",
     "image": "/assets/images/Cohete.png",
-    "video": "https://youtu.be/Y5nckZDWs20"
+    "video": "https://www.youtube.com/watch?v=Y5nckZDWs20"
   },
   {
     "grado": "Primer grado",
     "tema": "Medios de transporte",
     "palabra": "Helicóptero",
     "image": "/assets/images/Helicóptero.png",
-    "video": "https://youtu.be/xDrvVHKnx-8"
+    "video": "https://www.youtube.com/watch?v=xDrvVHKnx-8"
   },
 
 
@@ -360,28 +360,28 @@
     "tema": "Meses del año",
     "palabra": "Enero",
     "image": "/assets/images/Enero.png",
-    "video": "https://youtu.be/rOQXEBThhTY"
+    "video": "https://www.youtube.com/watch?v=rOQXEBThhTY"
   },
   {
     "grado": "Primer grado",
     "tema": "Meses del año",
     "palabra": "Mayo",
     "image": "/assets/images/Mayo.png",
-    "video": "https://youtu.be/qAuxylBYKKI"
+    "video": "https://www.youtube.com/watch?v=qAuxylBYKKI"
   },
   {
     "grado": "Primer grado",
     "tema": "Meses del año",
     "palabra": "Junio",
     "image": "/assets/images/Junio.png",
-    "video": "https://youtu.be/4tCaWqUUqBE"
+    "video": "https://www.youtube.com/watch?v=4tCaWqUUqBE"
   },
   {
     "grado": "Primer grado",
     "tema": "Meses del año",
     "palabra": "Julio",
     "image": "/assets/images/Julio.png",
-    "video": "https://youtu.be/0kprNy390d0"
+    "video": "https://www.youtube.com/watch?v=0kprNy390d0"
   },
 
 
@@ -473,14 +473,14 @@
     "tema": "Noción espacial",
     "palabra": "Abajo",
     "image": "/assets/images/Abajo.png",
-    "video": "https://youtu.be/EqZJYMyH61A"
+    "video": "https://www.youtube.com/watch?v=EqZJYMyH61A"
   },
   {
     "grado": "Primer grado",
     "tema": "Noción espacial",
     "palabra": "Arriba",
     "image": "/assets/images/Arriba.png",
-    "video": "https://youtu.be/7-iZS5oU2D4"
+    "video": "https://www.youtube.com/watch?v=7-iZS5oU2D4"
   },
   {
     "grado": "Primer grado",
@@ -494,7 +494,7 @@
     "tema": "Noción espacial",
     "palabra": "Debajo",
     "image": "/assets/images/Debajo.png",
-    "video": "https://youtu.be/wQCO2CQwvno"
+    "video": "https://www.youtube.com/watch?v=wQCO2CQwvno"
   },
   {
     "grado": "Primer grado",
@@ -545,7 +545,7 @@
     "tema": "Noción temporal",
     "palabra": "Antes",
     "image": "/assets/images/Antes.png",
-    "video": "https://youtu.be/qwgdBQEIsT4"
+    "video": "https://www.youtube.com/watch?v=qwgdBQEIsT4"
   },
   {
     "grado": "Primer grado",
@@ -568,49 +568,49 @@
     "tema": "Numeros",
     "palabra": "Cuatro",
     "image": "/assets/images/Cuatro.png",
-    "video": "https://youtu.be/4rHcZ8u7_0A"
+    "video": "https://www.youtube.com/watch?v=4rHcZ8u7_0A"
   },
   {
     "grado": "Primer grado",
     "tema": "Numeros",
     "palabra": "Cinco",
     "image": "/assets/images/Cinco.png",
-    "video": "https://youtu.be/yA1oyUGvAU0"
+    "video": "https://www.youtube.com/watch?v=yA1oyUGvAU0"
   },
   {
     "grado": "Primer grado",
     "tema": "Numeros",
     "palabra": "Seis",
     "image": "/assets/images/Seis.png",
-    "video": "https://youtu.be/MgOueRLIjCc"
+    "video": "https://www.youtube.com/watch?v=MgOueRLIjCc"
   },
   {
     "grado": "Primer grado",
     "tema": "Numeros",
     "palabra": "Siete",
     "image": "/assets/images/Siete.png",
-    "video": "https://youtu.be/lHC_ChMCjx8"
+    "video": "https://www.youtube.com/watch?v=lHC_ChMCjx8"
   },
   {
     "grado": "Primer grado",
     "tema": "Numeros",
     "palabra": "Ocho",
     "image": "/assets/images/Ocho.png",
-    "video": "https://youtu.be/YYr_VIQLprM"
+    "video": "https://www.youtube.com/watch?v=YYr_VIQLprM"
   },
   {
     "grado": "Primer grado",
     "tema": "Numeros",
     "palabra": "Nueve",
     "image": "/assets/images/Nueve.png",
-    "video": "https://youtu.be/XotNlw8FaPo"
+    "video": "https://www.youtube.com/watch?v=XotNlw8FaPo"
   },
   {
     "grado": "Primer grado",
     "tema": "Numeros",
     "palabra": "Diez",
     "image": "/assets/images/Diez.png",
-    "video": "https://youtu.be/VrxquJRO20E"
+    "video": "https://www.youtube.com/watch?v=VrxquJRO20E"
   },
 
 
@@ -628,7 +628,7 @@
     "tema": "Objetos del hogar",
     "palabra": "Mueble",
     "image": "/assets/images/Mueble.png",
-    "video": "https://youtu.be/JhGL6-eRRfs"
+    "video": "https://www.youtube.com/watch?v=JhGL6-eRRfs"
   },
 
 
@@ -638,14 +638,14 @@
     "tema": "Oficios y Profesiones",
     "palabra": "Bomberos",
     "image": "/assets/images/Bomberos.png",
-    "video": "https://youtu.be/KGBrHs1DfKI"
+    "video": "https://www.youtube.com/watch?v=KGBrHs1DfKI"
   },
   {
     "grado": "Primer grado",
     "tema": "Oficios y Profesiones",
     "palabra": "Doctor",
     "image": "/assets/images/Doctor.png",
-    "video": "https://youtu.be/2oCxgkZkZog"
+    "video": "https://www.youtube.com/watch?v=2oCxgkZkZog"
   },
   {
     "grado": "Primer grado",
@@ -666,7 +666,7 @@
     "tema": "Oficios y Profesiones",
     "palabra": "Policía",
     "image": "/assets/images/Policía.png",
-    "video": "https://youtu.be/xbcpYhdbR8M"
+    "video": "https://www.youtube.com/watch?v=xbcpYhdbR8M"
   },
   {
     "grado": "Primer grado",
@@ -683,14 +683,14 @@
     "tema": "Partes del cuerpo",
     "palabra": "Brazo",
     "image": "/assets/images/Brazo.png",
-    "video": "https://youtu.be/-qAZCWbmNss"
+    "video": "https://www.youtube.com/watch?v=-qAZCWbmNss"
   },
   {
     "grado": "Primer grado",
     "tema": "Partes del cuerpo",
     "palabra": "Cabeza",
     "image": "/assets/images/Cabeza.png",
-    "video": "https://youtu.be/W2UJYoqoFRM"
+    "video": "https://www.youtube.com/watch?v=W2UJYoqoFRM"
   },
   {
     "grado": "Primer grado",
@@ -704,7 +704,7 @@
     "tema": "Partes del cuerpo",
     "palabra": "Diente",
     "image": "/assets/images/Diente.png",
-    "video": "https://youtu.be/GK-BjQaT9YA"
+    "video": "https://www.youtube.com/watch?v=GK-BjQaT9YA"
   },
   {
     "grado": "Primer grado",
@@ -718,14 +718,14 @@
     "tema": "Partes del cuerpo",
     "palabra": "Pie",
     "image": "/assets/images/Pie.png",
-    "video": "https://youtu.be/dn0BnJav_iY"
+    "video": "https://www.youtube.com/watch?v=dn0BnJav_iY"
   },
   {
     "grado": "Primer grado",
     "tema": "Partes del cuerpo",
     "palabra": "Pierna",
     "image": "/assets/images/Pierna.png",
-    "video": "https://youtu.be/qHmgCz76CRE"
+    "video": "https://www.youtube.com/watch?v=qHmgCz76CRE"
   },
 
 
@@ -759,7 +759,7 @@
     "tema": "Personas",
     "palabra": "Abuelo",
     "image": "/assets/images/Abuelo.png",
-    "video": "https://youtu.be/zDpoh9WreEc"
+    "video": "https://www.youtube.com/watch?v=zDpoh9WreEc"
   },
   {
     "grado": "Primer grado",
@@ -773,7 +773,7 @@
     "tema": "Personas",
     "palabra": "Hermano",
     "image": "/assets/images/Hermano.png",
-    "video": "https://youtu.be/QqCcPY_fo3Q"
+    "video": "https://www.youtube.com/watch?v=QqCcPY_fo3Q"
   },
   {
     "grado": "Primer grado",
@@ -787,14 +787,14 @@
     "tema": "Personas",
     "palabra": "Hombre",
     "image": "/assets/images/Hombre.png",
-    "video": "https://youtu.be/U0YkbX034Y4"
+    "video": "https://www.youtube.com/watch?v=U0YkbX034Y4"
   },
   {
     "grado": "Primer grado",
     "tema": "Personas",
     "palabra": "Mujer",
     "image": "/assets/images/Mujer.png",
-    "video": "https://youtu.be/8Tyx3qTDRIc"
+    "video": "https://www.youtube.com/watch?v=8Tyx3qTDRIc"
   },
 
 
@@ -894,7 +894,7 @@
     "tema": "Utensilios de cocina",
     "palabra": "Tenedor",
     "image": "/assets/images/Tenedor.png",
-    "video": "https://youtu.be/AMs-zTwlgc4"
+    "video": "https://www.youtube.com/watch?v=AMs-zTwlgc4"
   },
 
 
@@ -904,21 +904,21 @@
     "tema": "Utiles escolares",
     "palabra": "Borrador",
     "image": "/assets/images/Borrador.png",
-    "video": "https://youtu.be/gKOav8WpRsg"
+    "video": "https://www.youtube.com/watch?v=gKOav8WpRsg"
   },
   {
     "grado": "Primer grado",
     "tema": "Utiles escolares",
     "palabra": "Cuaderno",
     "image": "/assets/images/Cuaderno.png",
-    "video": "https://youtu.be/k9cualEeYYs"
+    "video": "https://www.youtube.com/watch?v=k9cualEeYYs"
   },
   {
     "grado": "Primer grado",
     "tema": "Utiles escolares",
     "palabra": "Lápiz",
     "image": "/assets/images/Lápiz.png",
-    "video": "https://youtu.be/eeKxuTmUoyA"
+    "video": "https://www.youtube.com/watch?v=eeKxuTmUoyA"
   },
   {
     "grado": "Primer grado",
@@ -935,7 +935,7 @@
     "tema": "Verduras y hortalizas",
     "palabra": "Papa",
     "image": "/assets/images/Papa.png",
-    "video": "https://youtu.be/7QSgXRzi0nk"
+    "video": "https://www.youtube.com/watch?v=7QSgXRzi0nk"
   },
   {
     "grado": "Primer grado",
@@ -949,6 +949,6 @@
     "tema": "Verduras y hortalizas",
     "palabra": "Apio",
     "image": "/assets/images/Apio.png",
-    "video": "https://youtu.be/WIaNDfY9bvk"
+    "video": "https://www.youtube.com/watch?v=WIaNDfY9bvk"
   }
 ]
