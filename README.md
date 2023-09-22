@@ -82,3 +82,22 @@ node index.js
 
 Node: 14.18.1
 npm: 8.11.0
+
+## Para compilar
+user node 16
+
+backend: en root directorio:
+
+docker compose up
+
+frontend: en la carpeta client
+
+yarn install 
+yarn start
+
+# Para heroku:
+
+Login: heroku login 
+
+para deployar en heroku: git push origin heroku main
+
