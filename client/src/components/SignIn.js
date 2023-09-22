@@ -157,18 +157,18 @@ export default function SignIn({ setAuth }) {
                   "Iniciar sesión"
                 )}
             </Button>
-            <Grid container>
-              {/* <Grid item xs>
+            {/* <Grid container>
+              <Grid item xs>
                 <Link href="#" variant="body2">
                   Forgot password?
                 </Link>
-              </Grid> */}
+              </Grid>
               <Grid item>
                 <Link component="button" variant="body2" onClick={() => {navigate('/register')}}>
                   {"¿No tienes una cuenta? Registrate"}
                 </Link>
               </Grid>
-            </Grid>
+            </Grid> */}
           </Box>
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
