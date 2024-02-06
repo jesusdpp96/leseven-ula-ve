@@ -3,7 +3,6 @@ require("dotenv").config();
 
 module.exports = async (req, res, next) => {
   console.log(req.header("token"));
-  console.log("hey");
   try {
     const jwtToken = req.header("token");
 

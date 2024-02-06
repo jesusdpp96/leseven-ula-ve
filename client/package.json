@@ -19,6 +19,7 @@
     "react-scripts": "4.0.3",
     "react-toastify": "9.0.1",
     "react-youtube": "^9.0.2",
+    "styled-components": "^6.1.8",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
@@ -48,5 +49,5 @@
   "resolutions": {
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   },
-  "proxy": "http://localhost:4000"
+  "proxy": "http://localhost:4000/"
 }
