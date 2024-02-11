@@ -32,7 +32,6 @@ function quitarAcentos(cadena) {
 }
 
 const ItemList = ({ temas, setQuery, showCategorias }) => {
-  // const temas2 = temas.map((elem) => ({...elem, tema_image_src: `/assets/images/image${Math.floor(Math.random() * 58)}.png` }));
   const buttonTitle = window.location.pathname.includes("prueba")
     ? "Prueba"
     : "Estudiar";
@@ -126,7 +125,6 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
 };
 
 const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
-  // const temas2 = temas.map((elem) => ({...elem, tema_image_src: `/assets/images/image${Math.floor(Math.random() * 58)}.png` }));
   return temas
     .filter(
       (elem) =>
@@ -279,7 +277,7 @@ const CircularProgressWithLabel = (props) => {
 };
 
 export default function GradoTemasList({ grado }) {
-  const [query, setQuery] = useSearchParams();
+  const [, setQuery] = useSearchParams();
   const [temas, setTemas] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [gradoTitle, setGradoTitle] = React.useState();
@@ -322,6 +320,7 @@ export default function GradoTemasList({ grado }) {
 
   React.useEffect(() => {
     getTemas();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return loading ? (

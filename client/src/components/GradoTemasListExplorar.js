@@ -7,7 +7,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import sendLogs from '../utils/sendLogs';
 
 function quitarAcentos(cadena) {
@@ -31,10 +30,8 @@ function quitarAcentos(cadena) {
 }
 
 const ItemList = ({temas, setQuery, showCategorias}) => {
-
-  // const temas2 = temas.map((elem) => ({...elem, tema_image_src: `/assets/images/image${Math.floor(Math.random() * 58)}.png` }));
-
   
+  // eslint-disable-next-line no-mixed-operators
   return temas.filter(elem => Boolean(elem.es_categoria) && Boolean(showCategorias) || !Boolean(elem.es_categoria) && !Boolean(showCategorias)).map((elem, index) => {
     const vocablos_counter = elem.vocablos_counter || 0;
     const vocablos_vistos = elem.vocablos_vistos || 0
@@ -99,13 +96,10 @@ const CircularProgressWithLabel = (props) => {
 
 export default function GradoTemasListExplorar() {
 
-  const [query, setQuery] = useSearchParams();
+  const [, setQuery] = useSearchParams();
   const [temas, setTemas] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
-  const [gradoTitle, setGradoTitle] = React.useState();
-
-
-
+  const [, setGradoTitle] = React.useState();
 
   const getTemas = async () => {
     try {

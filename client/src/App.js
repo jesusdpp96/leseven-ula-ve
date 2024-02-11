@@ -1,30 +1,7 @@
-// import TaskForm from "./components/TaskForm";
-// import TasksList from "./components/TasksList";
-// import Menu from "./components/Navbar";
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import { Container } from "@mui/material";
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <Menu />
-//       <Container>
-//         <Routes>
-//           <Route index path="/" element={<TasksList />} />
-//           <Route path="/tasks/new" element={<TaskForm />} />
-//           <Route path="/tasks/:id/edit" element={<TaskForm />} />
-//         </Routes>
-//       </Container>
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
-
 import React, { useState, useEffect } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import {
-  BrowserRouter, Route, Routes, Navigate, Outlet
+  BrowserRouter, Route, Routes, Navigate
 } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
@@ -39,19 +16,6 @@ import Practica from "./components/Practica";
 import Inicio from "./components/Inicio";
 import AprendicesMonitor from "./components/AprendicesMonitor";
 import Glosario from "./components/Glosario"
-// toast.configure();
-
-// const ProtectedRoute = ({
-//   isAllowed,
-//   redirectPath = '/login',
-//   children,
-// }) => {
-//   if (!isAllowed) {
-//     return <Navigate to={redirectPath} replace />;
-//   }
-
-//   return children ? children : <Outlet />;
-// };
 
 
 function App() {

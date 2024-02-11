@@ -6,7 +6,7 @@ import TemaVocablosListExplorar from './TemaVocablosListExplorar';
 export default function ExplorarVocabularioTemas() {
   let view = 'temas';
 
-  const [query, setQuery] = useSearchParams();
+  const [query] = useSearchParams();
 
 
   const temaQuery = query.get('tema');

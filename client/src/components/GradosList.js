@@ -37,7 +37,7 @@ const ItemList = ({grados, setQuery}) => {
 
 export default function GradosList() {
 
-  const [query, setQuery] = useSearchParams();
+  const [, setQuery] = useSearchParams();
   const [grados, setGrados] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
 

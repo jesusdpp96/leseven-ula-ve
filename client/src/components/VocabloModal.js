@@ -1,6 +1,6 @@
 import * as React from 'react';
 import YouTube from 'react-youtube';
-import {Box, Button, Modal, Typography, Grid, CardMedia} from '@mui/material';
+import {Box, Button, Modal, Typography, CardMedia} from '@mui/material';
 
 
 export function YoutubeEmbed({ embedLink }) {

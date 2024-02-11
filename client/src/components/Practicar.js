@@ -8,7 +8,7 @@ import { Typography } from "@mui/material";
 export default function Practicar() {
   let view = "grados";
 
-  const [query, setQuery] = useSearchParams();
+  const [query, ] = useSearchParams();
 
   const gradoQuery = query.get("grado");
 

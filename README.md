@@ -26,6 +26,9 @@ git clone https://github.com/FaztWeb/pern-stack
 
 to run the backend you can use docker:
 
+
+copiar el archivo .env.example con el nombre .env
+
 ```
 docker-compose up
 ```
@@ -100,4 +103,5 @@ yarn start
 Login: heroku login 
 
 para deployar en heroku: git push origin heroku main
+
 

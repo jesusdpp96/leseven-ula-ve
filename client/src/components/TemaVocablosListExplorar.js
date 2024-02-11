@@ -31,7 +31,7 @@ function quitarAcentos(cadena) {
     .toString()
 }
 
-const ItemList = ({ vocablos, setQuery, updateVocablos }) => {
+const ItemList = ({ vocablos, updateVocablos }) => {
   if (vocablos?.length > 0) {
     return vocablos?.map((elem, index) => {
       const indexImage =
@@ -143,7 +143,7 @@ const ItemList = ({ vocablos, setQuery, updateVocablos }) => {
 };
 
 export default function TemaVocablosListExplorar({ tema }) {
-  const [query, setQuery] = useSearchParams();
+  const [, setQuery] = useSearchParams();
   const [vocablos, setVocablos] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   // const [gradoTitle, setGradoTitle] = React.useState();
@@ -198,6 +198,7 @@ export default function TemaVocablosListExplorar({ tema }) {
 
   React.useEffect(() => {
     getVocablos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return loading ? (

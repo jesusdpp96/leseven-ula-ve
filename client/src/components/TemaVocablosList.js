@@ -142,17 +142,9 @@ const ItemList = ({ vocablos, setQuery, updateVocablos }) => {
     );
   }
 };
-const opciones_por_grado = [
-  8, // preescolar
-  8, // 1er grado
-  10, // 2do grado
-  5, // tercer grado
-  15, // 4to grado
-  20, // 5to grado
-  15, // 6to grado
-];
+
 export default function TemaVocablosList({ grado, tema }) {
-  const [query, setQuery] = useSearchParams();
+  const [, setQuery] = useSearchParams();
   const [vocablos, setVocablos] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [gradoTitle, setGradoTitle] = React.useState();
@@ -205,6 +197,7 @@ export default function TemaVocablosList({ grado, tema }) {
 
   React.useEffect(() => {
     getVocablos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return loading ? (

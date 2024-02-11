@@ -84,7 +84,6 @@ const REWARD_CORRECTED_RESPONSE = [
   },
 ];
 
-// const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
 export const styleTrofeoModal = {
   position: "absolute",
@@ -505,11 +504,11 @@ export default function HorizontalNonLinearStepper() {
   const [steps, setSteps] = React.useState([]);
   const [results, setResults] = React.useState({});
 
-  const [query, setQuery] = useSearchParams();
+  const [query, ] = useSearchParams();
   const [vocablos, setVocablos] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [gradoTitle, setGradoTitle] = React.useState();
-  const [temaTitle, setTemaTitle] = React.useState();
+  const [, setTemaTitle] = React.useState();
 
   const grado = query.get("grado");
   const tema = query.get("tema");
@@ -579,6 +578,7 @@ export default function HorizontalNonLinearStepper() {
 
   React.useEffect(() => {
     getVocablos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const totalSteps = () => {
@@ -876,7 +876,7 @@ export default function HorizontalNonLinearStepper() {
 
   // Vocablo modal
 
-  const handleOpen = () => setOpen(true);
+  // const handleOpen = () => setOpen(true);
   const handleClose = () => {
     setOpen(false);
     addLogsToActiveStep({

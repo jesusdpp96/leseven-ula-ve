@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {Box, Modal, Grid} from '@mui/material';
-import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
@@ -169,6 +168,7 @@ export default function UserMonitorModal({ usuarioRowData, setOpenModal }) {
 
   React.useEffect(() => {
     getUserMonitorData({usuarioTargetId: usuarioRowData.aprendiz_id, grado: gradoSelected, range: rangeSelected});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   console.log({grados, gradoSelected})
