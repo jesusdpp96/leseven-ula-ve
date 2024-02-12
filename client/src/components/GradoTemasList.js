@@ -24,11 +24,18 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
     )
     .map((elem, index) => {
       const vocablos_counter = elem.vocablos_counter || 0;
-      const vocablos_vistos = elem.vocablos_vistos || 0;
-      const percentage = Math.ceil((vocablos_vistos / vocablos_counter) * 100);
+      let vocablos_vistos = elem.vocablos_vistos || 0;
+      if (vocablos_vistos > vocablos_counter) vocablos_vistos = vocablos_counter;
+
+      let percentage = Math.ceil(vocablos_vistos / vocablos_counter * 100);
+      if (percentage > 100) percentage = 100;
+
       const backgroundImage = `linear-gradient(to right, rgba(0,128,0,${
         percentage / 200
       }) ${percentage}%, rgba(0,128,0,${percentage / 1000}))`;
+
+      const cardTextColor = percentage > 50 ? "#334d33" : "#999999";
+
       return (
         <Grid item xs={4} sm={4} md={4} key={index}>
           <Card
@@ -62,17 +69,15 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
                 </Typography>
                 <Typography
                   variant="string"
-                  color="text.secondary"
                   component="div"
-                  style={{ color: "#999999", fontSize: "12px" }}
+                  style={{ color: cardTextColor, fontSize: "12px" }}
                 >
                   {Boolean(elem.es_categoria) ? "Categoria" : "Tema"}
                 </Typography>
                 <Typography
                   variant="string"
-                  color="text.secondary"
                   component="div"
-                  style={{ color: "#999999", fontSize: "12px" }}
+                  style={{ color: cardTextColor, fontSize: "12px" }}
                 >
                   Vistos: ({vocablos_vistos}/{vocablos_counter})
                 </Typography>
