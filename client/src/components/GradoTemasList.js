@@ -9,27 +9,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import sendLogs from "../utils/sendLogs";
-
-
-function quitarAcentos(cadena) {
-  const acentos = {
-    á: "a",
-    é: "e",
-    í: "i",
-    ó: "o",
-    ú: "u",
-    Á: "A",
-    É: "E",
-    Í: "I",
-    Ó: "O",
-    Ú: "U",
-  };
-  return cadena
-    .split("")
-    .map((letra) => acentos[letra] || letra)
-    .join("")
-    .toString()
-}
+import { quitarAcentos } from "../utils/quitarAcentos";
 
 const ItemList = ({ temas, setQuery, showCategorias }) => {
   const buttonTitle = window.location.pathname.includes("prueba")
