@@ -31,8 +31,10 @@ function quitarAcentos(cadena) {
 
 const ItemList = ({temas, setQuery, showCategorias}) => {
   
+  return temas
   // eslint-disable-next-line no-mixed-operators
-  return temas.filter(elem => Boolean(elem.es_categoria) && Boolean(showCategorias) || !Boolean(elem.es_categoria) && !Boolean(showCategorias)).map((elem, index) => {
+  .filter(elem => Boolean(elem.es_categoria) && Boolean(showCategorias) || !Boolean(elem.es_categoria) && !Boolean(showCategorias))
+  .map((elem, index) => {
     const vocablos_counter = elem.vocablos_counter || 0;
     let vocablos_vistos = elem.vocablos_vistos || 0;
     if (vocablos_vistos > vocablos_counter) vocablos_vistos = vocablos_counter;
