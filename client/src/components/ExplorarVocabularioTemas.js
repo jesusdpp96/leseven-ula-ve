@@ -18,7 +18,7 @@ export default function ExplorarVocabularioTemas() {
   // console.log({gradoQuery, typeof: typeof gradoQuery});
 
   return (view === 'temas' ? 
-          <GradoTemasListExplorar /> :
+          <GradoTemasListExplorar title={"Grados"} /> :
           view === 'vocablos' ?
           <TemaVocablosListExplorar tema={Number(temaQuery)}/> :
           null)
