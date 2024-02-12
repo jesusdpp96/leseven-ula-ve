@@ -34,8 +34,12 @@ const ItemList = ({temas, setQuery, showCategorias}) => {
   // eslint-disable-next-line no-mixed-operators
   return temas.filter(elem => Boolean(elem.es_categoria) && Boolean(showCategorias) || !Boolean(elem.es_categoria) && !Boolean(showCategorias)).map((elem, index) => {
     const vocablos_counter = elem.vocablos_counter || 0;
-    const vocablos_vistos = elem.vocablos_vistos || 0
-    const percentage = Math.ceil(vocablos_vistos/vocablos_counter * 100);
+    let vocablos_vistos = elem.vocablos_vistos || 0;
+    if (vocablos_vistos > vocablos_counter) vocablos_vistos = vocablos_counter;
+
+    let percentage = Math.ceil(vocablos_vistos/vocablos_counter * 100);
+    if (percentage > 100) percentage = 100;
+
     const backgroundImage = `linear-gradient(to right, rgba(0,128,0,${percentage/200}) ${percentage}%, rgba(0,128,0,${percentage/1000}))`;
 
     return (
@@ -101,45 +105,42 @@ export default function GradoTemasListExplorar2() {
   const [loading, setLoading] = React.useState(false);
   const [, setGradoTitle] = React.useState();
 
-
-
-
-  const getTemas = async () => {
-    try {
-      setLoading(true);
-      const response = await fetch(`/temas`, {
+  React.useEffect(() => {
+    const getTemas = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`/temas`, {
           method: "GET",
           headers: {
             "Content-type": "application/json",
             "token": localStorage.token,
           },
         });
-  
-      const responseData = await response.json();
-  
-      setTemas(responseData);
-      setLoading(false);
-      const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
-      setGradoTitle(gradoTitle);
 
-      sendLogs({
-        logs: [
-          {
-            "log_name": "Aprendiz: Visualiza lista de temas",
-            "timestamp": new Date().toISOString(),
-            "grado": gradoTitle
-          },
-        ]
-      });
+        const responseData = await response.json();
 
-    } catch(err) {
-      setLoading(false);
-      console.error(err);
-      toast.error("Error de red");
-    }
-  }
+        setTemas(responseData);
+        setLoading(false);
+        const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
+        setGradoTitle(gradoTitle);
 
-  React.useEffect(() => {
+        sendLogs({
+          logs: [
+            {
+              "log_name": "Aprendiz: Visualiza lista de temas",
+              "timestamp": new Date().toISOString(),
+              "grado": gradoTitle
+            },
+          ]
+        });
+
+      } catch (err) {
+        setLoading(false);
+        console.error(err);
+        toast.error("Error de red");
+      }
+    };
+
     getTemas();
   }, []);
 
