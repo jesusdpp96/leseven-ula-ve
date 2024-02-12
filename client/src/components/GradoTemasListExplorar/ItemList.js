@@ -22,14 +22,14 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
 
       return (
         <Grid item xs={4} sm={4} md={4} key={`${index}-${Boolean(showCategorias)}`}>
-          <Card sx={{ display: 'flex', justifyContent: "space-between", backgroundImage: backgroundImage }}>
+          <Card sx={{ display: 'flex', justifyContent: "space-between", backgroundImage: backgroundImage, height: "100%" }}>
             <CardMedia
               component="img"
               sx={{ width: 130, height: 130, objectFit: 'contain' }}
               image={quitarAcentos(elem.tema_image_src)}
               alt="Live from space album cover"
             />
-            <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'space-between' }}>
               <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: "flex-start" }}>
                 <Typography variant="subtitle1" color="text.secondary" component="div">
                   {elem.tema_nombre}
