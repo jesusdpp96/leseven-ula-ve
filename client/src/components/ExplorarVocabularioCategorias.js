@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useSearchParams } from 'react-router-dom';
-import GradoTemasListExplorar2 from './GradoTemasListExplorar2';
+import GradoTemasListExplorar2 from './GradoTemasListExplorar/GradoTemasListExplorar2';
 import TemaVocablosListExplorar from './TemaVocablosListExplorar';
 
 export default function ExplorarVocabularioCategorias() {

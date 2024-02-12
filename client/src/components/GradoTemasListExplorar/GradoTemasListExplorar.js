@@ -7,7 +7,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import sendLogs from '../utils/sendLogs';
+import sendLogs from '../../utils/sendLogs';
 
 function quitarAcentos(cadena) {
   const acentos = {
@@ -30,7 +30,7 @@ function quitarAcentos(cadena) {
 }
 
 const ItemList = ({temas, setQuery, showCategorias}) => {
-
+  
   return temas
     // eslint-disable-next-line no-mixed-operators
     .filter(elem => Boolean(elem.es_categoria) && Boolean(showCategorias) || !Boolean(elem.es_categoria) && !Boolean(showCategorias))
@@ -100,49 +100,49 @@ const CircularProgressWithLabel = (props) => {
   );
 }
 
-export default function GradoTemasListExplorar2() {
+export default function GradoTemasListExplorar() {
 
   const [, setQuery] = useSearchParams();
   const [temas, setTemas] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [, setGradoTitle] = React.useState();
 
-  React.useEffect(() => {
-    const getTemas = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch(`/temas`, {
+  const getTemas = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch(`/temas`, {
           method: "GET",
           headers: {
             "Content-type": "application/json",
             "token": localStorage.token,
           },
         });
+  
+      const responseData = await response.json();
+  
+      setTemas(responseData);
+      setLoading(false);
+      const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
+      setGradoTitle(gradoTitle);
 
-        const responseData = await response.json();
+      sendLogs({
+        logs: [
+          {
+            "log_name": "Aprendiz: Visualiza lista de temas",
+            "timestamp": new Date().toISOString(),
+            "grado": gradoTitle
+          },
+        ]
+      });
 
-        setTemas(responseData);
-        setLoading(false);
-        const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
-        setGradoTitle(gradoTitle);
+    } catch(err) {
+      setLoading(false);
+      console.error(err);
+      toast.error("Error de red");
+    }
+  }
 
-        sendLogs({
-          logs: [
-            {
-              "log_name": "Aprendiz: Visualiza lista de temas",
-              "timestamp": new Date().toISOString(),
-              "grado": gradoTitle
-            },
-          ]
-        });
-
-      } catch (err) {
-        setLoading(false);
-        console.error(err);
-        toast.error("Error de red");
-      }
-    };
-
+  React.useEffect(() => {
     getTemas();
   }, []);
 
@@ -153,14 +153,14 @@ export default function GradoTemasListExplorar2() {
           <Button variant="outlined" color="warning" startIcon={<ChevronLeftIcon />} onClick={() => {setQuery({})}}>Volver</Button>
         </Box> */}
         <Typography variant="h4" sx={{ color: 'text.primary', padding: '16px' }}>
-          Categorías
+          Grados
         </Typography>
         <Grid
           container
           spacing={{ xs: 2, md: 4 }}
           columns={{ xs: 4, sm: 8, md: 8 }}
         >
-          <ItemList temas={temas} setQuery={setQuery} showCategorias={true} />
+          <ItemList temas={temas} setQuery={setQuery} />
         </Grid>
       </Box>
     )
