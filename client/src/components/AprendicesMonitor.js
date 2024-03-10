@@ -205,8 +205,6 @@ export default function AprendicesMonitor() {
                 <TableCell align="right">Prácticas{<br/>}realizadas</TableCell>
                 <TableCell align="right">Consultas{<br/>}correctas</TableCell>
                 <TableCell align="right">Consultas{<br/>}incorrectas</TableCell>
-                <TableCell align="right">Puntos</TableCell>
-                <TableCell align="right">Trofeos</TableCell>
                 <TableCell align="right">Acción</TableCell>
               </TableRow>
             </TableHead>
@@ -225,10 +223,6 @@ export default function AprendicesMonitor() {
                   <TableCell align="right">{row.practicas_realizadas}</TableCell>
                   <TableCell align="right">{row.consultas_correctas}</TableCell>
                   <TableCell align="right">{row.consultas_incorrectas}</TableCell>
-                  <TableCell align="right">{row.puntos_acumulados}</TableCell>
-                  <TableCell align="right">
-                    {`${row.trofeos_imparables} Imparables, ${row.trofeos_agil} Agil, ${row.trofeos_leal} Leal`}
-                  </TableCell>
                   <TableCell align="right">
                     {removeLoading !== row.correo ?
                      (<IconButton color="error"
