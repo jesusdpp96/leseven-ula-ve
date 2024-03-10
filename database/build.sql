@@ -309,44 +309,6 @@ CREATE TABLE public.tema (
 ALTER TABLE public.tema OWNER TO postgres;
 
 --
--- Name: trofeos; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.trofeos (
-    id integer NOT NULL,
-    usuario_id integer NOT NULL,
-    tipo character varying(20) NOT NULL,
-    fecha date NOT NULL,
-    grado_id integer NOT NULL,
-    tema_id integer NOT NULL
-);
-
-
-ALTER TABLE public.trofeos OWNER TO postgres;
-
---
--- Name: trofeos_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
---
-
-CREATE SEQUENCE public.trofeos_id_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE public.trofeos_id_seq OWNER TO postgres;
-
---
--- Name: trofeos_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
---
-
-ALTER SEQUENCE public.trofeos_id_seq OWNED BY public.trofeos.id;
-
-
---
 -- Name: usuario_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -422,10 +384,6 @@ CREATE TABLE public.usuario_metadatos (
     practicas_realizadas integer NOT NULL,
     consultas_correctas integer NOT NULL,
     consultas_incorrectas integer NOT NULL,
-    puntos_acumulados integer NOT NULL,
-    trofeos_imparables integer NOT NULL,
-    trofeos_leal integer NOT NULL,
-    trofeos_agil integer NOT NULL
 );
 
 
@@ -512,12 +470,6 @@ ALTER TABLE ONLY public.pais ALTER COLUMN id SET DEFAULT nextval('public.pais_id
 
 
 --
--- Name: trofeos id; Type: DEFAULT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.trofeos ALTER COLUMN id SET DEFAULT nextval('public.trofeos_id_seq'::regclass);
-
---
 -- Name: ciudad_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -571,13 +523,6 @@ SELECT pg_catalog.setval('public.rol_usuario_id_seq', 100, true);
 --
 
 SELECT pg_catalog.setval('public.tema_id_seq', 500, true);
-
-
---
--- Name: trofeos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.trofeos_id_seq', 24, true);
 
 
 --
@@ -706,14 +651,6 @@ ALTER TABLE ONLY public.tema
 
 
 --
--- Name: trofeos trofeos_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.trofeos
-    ADD CONSTRAINT trofeos_pkey PRIMARY KEY (id);
-
-
---
 -- Name: usuario_log usuario_log_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -810,14 +747,6 @@ ALTER TABLE ONLY public.vocablo_visto
 
 
 --
--- Name: trofeos fk_grado; Type: FK CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.trofeos
-    ADD CONSTRAINT fk_grado FOREIGN KEY (grado_id) REFERENCES public.grado(id) NOT VALID;
-
-
---
 -- Name: usuario fk_grado_actual; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -906,14 +835,6 @@ ALTER TABLE ONLY public.vocablo_correcto
 
 
 --
--- Name: trofeos fk_tema; Type: FK CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.trofeos
-    ADD CONSTRAINT fk_tema FOREIGN KEY (tema_id) REFERENCES public.tema(id) NOT VALID;
-
-
---
 -- Name: practica fk_usuario; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -943,15 +864,6 @@ ALTER TABLE ONLY public.vocablo_correcto
 
 ALTER TABLE ONLY public.usuario_log
     ADD CONSTRAINT fk_usuario FOREIGN KEY (usuario_id) REFERENCES public.usuario(id);
-
-
---
--- Name: trofeos fk_usuario; Type: FK CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.trofeos
-    ADD CONSTRAINT fk_usuario FOREIGN KEY (usuario_id) REFERENCES public.usuario(id) NOT VALID;
-
 
 --
 -- Name: usuario fk_usuario_metadatos; Type: FK CONSTRAINT; Schema: public; Owner: postgres
