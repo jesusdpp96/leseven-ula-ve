@@ -2,10 +2,6 @@ import React, { useCallback, useEffect, useState } from 'react';
 import {
   Box,
   Grid,
-  ListItem,
-  ListItemText,
-  ListItemAvatar,
-  Avatar,
   CircularProgress,
   Typography,
   IconButton,
@@ -27,16 +23,17 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { getDateDDMMYYYY, getDateYYYYMMDD } from '../../utils/dates';
-import LinearProgressWithLabel from './LinearProgressWithLabel';
 import { styleUsuarioMonitorModal } from './styles';
 import { useParams } from 'react-router-dom';
 import { getFilterQueryParams } from '../../utils/getFilterQueryParams';
+import ThemeProgressCard from './ThemeProgressCard';
 
 export default function UserMonitorIndividual() {
   const { userId } = useParams();
 
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState();
+  const [usuario, setUsuario] = useState();
 
   const [gradoSelected, setGradoSelected] = useState();
   const [grados, setGrados] = useState();
@@ -62,7 +59,7 @@ export default function UserMonitorIndividual() {
     console.log({ fromDate1, toDate1, start, end })
 
     setRangeSelected({ start, end });
-    getUserMonitorData({ usuarioTargetId: data.aprendiz_id, grado: gradoSelected, range: { start, end } });
+    getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: gradoSelected, range: { start, end } });
   };
 
   const getUserMonitorData = useCallback(async () => {
@@ -81,8 +78,8 @@ export default function UserMonitorIndividual() {
 
       const responseData = await response.json();
 
-      console.log({ responseData });
-
+      setUsuario(responseData?.usuario);
+      delete responseData.usuario;
       setData(responseData);
 
       if (responseData.grados) {
@@ -106,7 +103,7 @@ export default function UserMonitorIndividual() {
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <Box sx={styleUsuarioMonitorModal}>
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2, paddingLeft: '24px' }}>
-            <Typography variant="h4" color="primary">{`${data?.usuario?.nombre} ${data?.usuario?.apellido}`}</Typography>
+            <Typography variant="h4" color="primary">{`${usuario?.nombre} ${usuario?.apellido}`}</Typography>
             <Box sx={{ flex: '1 1 auto' }} />
           </Box>
 
@@ -153,7 +150,7 @@ export default function UserMonitorIndividual() {
                       (<Chip label="Todo" color="primary" />) :
                       (<Chip label="Todo" variant="outlined" onClick={() => {
                         setGradoSelected(undefined);
-                        getUserMonitorData({ usuarioTargetId: data.aprendiz_id, grado: undefined, range: rangeSelected });
+                        getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: undefined, range: rangeSelected });
                       }} />)
                   }
 
@@ -164,7 +161,7 @@ export default function UserMonitorIndividual() {
                           (<Chip label={elem.nombre} color="primary" />) :
                           (<Chip label={elem.nombre} variant="outlined" onClick={() => {
                             setGradoSelected(elem.id);
-                            getUserMonitorData({ usuarioTargetId: data.aprendiz_id, grado: elem.id, range: rangeSelected });
+                            getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: elem.id, range: rangeSelected });
                           }} />)
                       );
                     })
@@ -182,7 +179,7 @@ export default function UserMonitorIndividual() {
 
                       <IconButton aria-label="emove filter" onClick={() => {
                         setGradoSelected(undefined);
-                        getUserMonitorData({ usuarioTargetId: data.aprendiz_id, grado: undefined, range: rangeSelected });
+                        getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: undefined, range: rangeSelected });
                       }}>
                         <DeleteIcon sx={{ color: 'red' }} />
                       </IconButton>
@@ -198,7 +195,7 @@ export default function UserMonitorIndividual() {
 
                       <IconButton aria-label="remove filter" onClick={() => {
                         setRangeSelected(undefined);
-                        getUserMonitorData({ usuarioTargetId: data.aprendiz_id, grado: gradoSelected, range: undefined });
+                        getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: gradoSelected, range: undefined });
                       }}>
                         <DeleteIcon sx={{ color: 'red' }} />
                       </IconButton>
@@ -237,70 +234,7 @@ export default function UserMonitorIndividual() {
               Vocablos vistos y contestados de forma correcta por tema
             </Typography>
             <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
-              {(data?.temas_data ?? []).map((elem, index) => {
-                const correctos = elem.vocablos_correctos_counter || 0;
-                const vistos = elem.vocablos_vistos_counter || 0;
-                let total = elem.vocablos_counter || 0;
-                const total_consultas = elem.total_consultas || 0;
-                const total_correctas = elem.total_correctas || 0;
-                const consultas_correctas = total_correctas / total_consultas || 0;
-
-                if (total === 0) {
-                  return null;
-                }
-
-                return (
-                  <Grid item xs={4} sm={4} md={4} key={index}>
-                    <ListItem key={elem.tema_id}>
-                      <ListItemAvatar>
-                        <Avatar src={elem.data.image_src}>
-                        </Avatar>
-                      </ListItemAvatar>
-                      <ListItemText
-                        primary={elem.data.nombre}
-                        secondary={
-                          <>
-                            <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 8 }} >
-                              <Grid item xs={4} sm={4} md={4} key={index}>
-                                <Box sx={{ width: '100%' }}>
-                                  <span style={{ fontSize: '90%' }}>
-                                    Vistos ({`${vistos}/${total}`})
-                                  </span>
-                                  <LinearProgressWithLabel value={(vistos / total * 100)} color="secondary" />
-                                </Box>
-                              </Grid>
-                              <Grid item xs={4} sm={4} md={4} key={index}>
-                                <Box sx={{ width: '100%' }}>
-                                  <span style={{ fontSize: '90%' }}>
-                                    Correctos ({`${correctos}/${total}`})
-                                  </span>
-                                  <LinearProgressWithLabel value={(correctos / total * 100)} />
-
-                                </Box>
-                              </Grid>
-                              <Grid item xs={4} sm={8} md={8} key={index} style={{ paddingTop: '0px' }}>
-                                <Box sx={{ width: '100%' }}>
-                                  <span style={{ fontSize: '90%' }}>
-                                    Tasa de aciertos: ({`${total_correctas}/${total_consultas}`})
-                                  </span>
-                                  <LinearProgressWithLabel value={(consultas_correctas * 100)} />
-                                </Box>
-                              </Grid>
-                              <Grid item xs={4} sm={4} md={4} key={index} style={{ paddingTop: '0px' }}>
-                                <Box sx={{ width: '100%' }}>
-                                  <span style={{ fontSize: '90%' }}>
-                                    Prácticas: {`${elem.practicas_hechas || 0}`}
-                                  </span>
-                                </Box>
-
-                              </Grid>
-                            </Grid>
-                          </>
-                        } />
-                    </ListItem>
-                  </Grid>
-                )
-              })}
+              {(data?.temas_data ?? []).map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
             </Grid>
           </Box>
         </Box>
