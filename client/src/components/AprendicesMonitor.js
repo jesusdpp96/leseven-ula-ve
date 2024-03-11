@@ -17,7 +17,7 @@ import IconButton from '@mui/material/IconButton';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import validateEmail from '../utils/validateEmail';
 import UserMonitorModal from './UserMonitorModal';
-import { ERR_USER_NOT_EXISTS, SUCCESS_USER_ADDED, UNKNOWN_ERROR, USER_NOT_EXISTS } from '../utils/constants';
+import { ERR_USER_NOT_EXISTS, SUCCESS_USER_ADDED, SUCCESS_USER_REMOVED, UNKNOWN_ERROR, USER_NOT_EXISTS } from '../utils/constants';
 
 export const styleUsuarioMonitorModal = {
   position: 'absolute',
@@ -143,9 +143,9 @@ export default function AprendicesMonitor() {
 
             
       if (response.status === 204) {
-        toast.success("Usuario eliminado correctamente.");
+        toast.success(SUCCESS_USER_REMOVED);
       } else {
-        toast.error("Error desconocido");
+        toast.error(UNKNOWN_ERROR);
       }
 
       getUsersMonitorData();
