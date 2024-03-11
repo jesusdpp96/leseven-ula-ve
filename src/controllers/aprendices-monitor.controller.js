@@ -94,8 +94,6 @@ const getAllData = async (req, res, next) => {
 
     const { usuario_target_id } = req.params;
 
-    const {grado, start, end} = req.query;
-
     const authorizationQuery = await pool.query(
       `SELECT * FROM profesor_aprendiz WHERE profesor_id = $1 AND aprendiz_id = $2`,
       [usuario_id, usuario_target_id]
@@ -104,6 +102,8 @@ const getAllData = async (req, res, next) => {
     if (authorizationQuery.length === 0) {
       throw new Error("EAM001: Not authorized");
     }
+
+    const usuarioQuery = pool.query('SELECT * FROM usuario WHERE id = $1', [usuario_target_id]);
 
     const vocablosQuery = await pool.query(`SELECT * FROM vocablo`);
 
@@ -257,7 +257,10 @@ const getAllData = async (req, res, next) => {
       }
     }
     
+    const usuario = (await usuarioQuery).rows[0];
+
     res.json({
+      usuario,
       temas_data: Object.values(temasDataObj),
       practicas_last_7days,
       practicas_realizadas,

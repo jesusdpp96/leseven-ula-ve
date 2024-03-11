@@ -109,7 +109,7 @@ export default function UserMonitorIndividual() {
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <Box sx={styleUsuarioMonitorModal}>
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2, paddingLeft: '24px' }}>
-            <Typography variant="h4" color="primary">{`${data.nombre} ${data.apellido}`}</Typography>
+            <Typography variant="h4" color="primary">{`${data?.usuario?.nombre} ${data?.usuario?.apellido}`}</Typography>
             <Box sx={{ flex: '1 1 auto' }} />
           </Box>
 
