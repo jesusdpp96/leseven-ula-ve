@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Box,
   Grid,
@@ -9,8 +9,6 @@ import {
   CircularProgress,
   Typography,
   IconButton,
-  ClearIcon,
-  DeleteIcon,
   Table,
   TableBody,
   TableCell,
@@ -23,11 +21,12 @@ import {
   TextField,
   Button,
 } from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { getDateYYYYMMDD } from '../../utils/dates';
+import { getDateDDMMYYYY, getDateYYYYMMDD } from '../../utils/dates';
 import LinearProgressWithLabel from './LinearProgressWithLabel';
 import { styleUsuarioMonitorModal } from './styles';
 import { useParams } from 'react-router-dom';
@@ -35,15 +34,18 @@ import { useParams } from 'react-router-dom';
 export default function UserMonitorIndividual() {
   const {userId} = useParams();
   console.log(userId);
-  const [loading, setLoading] = React.useState(false);
-  const [data, setData] = React.useState();
 
-  const [gradoSelected, setGradoSelected] = React.useState();
-  const [grados, setGrados] = React.useState();
-  const [rangeSelected, setRangeSelected] = React.useState();
-  const [fromDate, setFromDate] = React.useState(new Date());
-  const [toDate, setToDate] = React.useState(new Date());
-  const [canConsult, setCanConsult] = React.useState(true);
+  const [usuarioRowData, setUsuarioRowData] = useState();
+  const [loading, setLoading] = useState(true);
+  const [loadingBase, setLoadingBase] = useState(true);
+  const [data, setData] = useState();
+
+  const [gradoSelected, setGradoSelected] = useState();
+  const [grados, setGrados] = useState();
+  const [rangeSelected, setRangeSelected] = useState();
+  const [fromDate, setFromDate] = useState(new Date());
+  const [toDate, setToDate] = useState(new Date());
+  const [canConsult, setCanConsult] = useState(true);
 
   const checkCanConsult = ({ newFromDate, newToDate }) => {
     if (!newFromDate || !newToDate) {
@@ -68,8 +70,6 @@ export default function UserMonitorIndividual() {
 
   const getUserMonitorData = async ({ usuarioTargetId, grado, range }) => {
     try {
-      setLoading(true);
-
       let route = `/aprendices-monitor/user/${usuarioTargetId}`;
 
       if (typeof grado === 'number' && !range) {
@@ -109,12 +109,38 @@ export default function UserMonitorIndividual() {
 
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
+    const getUsersMonitorData = async () => {
+
+      try {
+        const response = await fetch(`/aprendices-monitor/user/${userId}`, {
+          method: "GET",
+          headers: {
+            "Content-type": "application/json",
+            "token": localStorage.token,
+          },
+        });
+  
+        const responseData = await response.json();
+        console.log({responseData});
+        setUsuarioRowData(responseData);  
+      } catch (err) {
+        console.error(err.message);
+      } finally {
+        setLoadingBase(false);
+      }
+    }
+    getUsersMonitorData();
+  }, [userId]);
+
+  useEffect(() => {
     getUserMonitorData({ usuarioTargetId: usuarioRowData.aprendiz_id, grado: gradoSelected, range: rangeSelected });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   console.log({ grados, gradoSelected });
+
+  return loadingBase ? <div>loading</div> : <div>xd</div>;
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -122,9 +148,6 @@ export default function UserMonitorIndividual() {
         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2, paddingLeft: '24px' }}>
           <Typography variant="h4" color="primary">{`${usuarioRowData.nombre} ${usuarioRowData.apellido}`}</Typography>
           <Box sx={{ flex: '1 1 auto' }} />
-          <IconButton aria-label="close modal" onClick={handleClose}>
-            <ClearIcon />
-          </IconButton>
         </Box>
         {
           loading ?
@@ -144,9 +167,6 @@ export default function UserMonitorIndividual() {
                     onChange={(newValue) => {
                       setFromDate(newValue);
                       checkCanConsult({ newFromDate: newValue, newToDate: toDate });
-                      // setDateValue(newValue);
-                      // setInputs({...inputs, fecha_nacimiento: newValue})
-                      console.log({ newValue, typeof: typeof newValue })
                     }}
                     renderInput={(params) => <TextField {...params} />}
                   />
@@ -160,10 +180,6 @@ export default function UserMonitorIndividual() {
                     onChange={(newValue) => {
                       setToDate(newValue);
                       checkCanConsult({ newFromDate: fromDate, newToDate: newValue });
-
-                      // setDateValue(newValue);
-                      // setInputs({...inputs, fecha_nacimiento: newValue})
-                      console.log({ newValue, typeof: typeof newValue })
                     }}
                     renderInput={(params) => <TextField {...params} />}
                   />

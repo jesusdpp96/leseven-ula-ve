@@ -16,8 +16,8 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import validateEmail from '../../utils/validateEmail';
-import UserMonitorModal from '../UserMonitorModal';
 import { ERR_USER_NOT_EXISTS, SUCCESS_USER_ADDED, SUCCESS_USER_REMOVED, UNKNOWN_ERROR, USER_NOT_EXISTS } from '../../utils/constants';
+import { useNavigate } from 'react-router-dom';
 
 export const styleUsuarioMonitorModal = {
   position: 'absolute',
@@ -33,10 +33,9 @@ export const styleUsuarioMonitorModal = {
   p: 4,
 };
 
-
-
 export default function AprendicesMonitor() {
-
+  
+  const navigate = useNavigate();
   const [loading, setLoading] = React.useState(false);
   const [usersData, setUsersData] = React.useState([]);
   const [addLoading, setAddLoading] = React.useState(false);
@@ -161,12 +160,10 @@ export default function AprendicesMonitor() {
     getUsersMonitorData();
   }, []);
 
+  const goToDetails = (userId) => {
+    navigate(`/dashboard/supervisar/${userId}`);
+  }
 
-  //Usuario Monitor Modal
-
-  const [openModal, setOpenModal] = React.useState(false);
-  const [usuarioRowData, setUsuarioRowData] = React.useState();
-  
   return (
     <Box sx={{display: 'flex', flexDirection: 'column'}}>
       <Box>
@@ -225,7 +222,7 @@ export default function AprendicesMonitor() {
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
                   <TableCell component="th" scope="row">
-                    <Button variant="text" onClick={() => {setUsuarioRowData(row); setOpenModal(true);}}>
+                    <Button variant="text" onClick={() => goToDetails(row.id)}>
                       {`${row.nombre} ${row.apellido}`}
                     </Button>
                   </TableCell>
@@ -248,7 +245,6 @@ export default function AprendicesMonitor() {
           </Table>
         </TableContainer>
       </Box>
-      {openModal ? <UserMonitorModal usuarioRowData={usuarioRowData} setOpenModal={setOpenModal}/>: null}
     </Box>
   );
 }
