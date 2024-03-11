@@ -16,6 +16,7 @@ import Practica from "./components/Practica";
 import Inicio from "./components/Inicio";
 import AprendicesMonitor from "./components/UserMonitor/AprendicesMonitor";
 import Glosario from "./components/Glosario"
+import UserMonitorIndividual from "./components/UserMonitor/UserMonitorIndividual";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   }, []);
 
   const setAuth = (status) => {
-    console.log("auth changed", {status})
+    console.log("auth changed", { status })
     setIsAuthenticated(status);
   };
 
@@ -44,7 +45,7 @@ function App() {
 
       parseRes === true ? setIsAuthenticated(true) : setIsAuthenticated(false);
     } catch (err) {
-      console.log({err});
+      console.log({ err });
       console.error(err.message);
       setIsAuthenticated(false);
     }
@@ -55,7 +56,7 @@ function App() {
       <BrowserRouter>
         <div className="">
           <Body isAuthenticated={isAuthenticated} setAuth={setAuth} />
-          <ToastContainer/>
+          <ToastContainer />
         </div>
       </BrowserRouter>
     </>
@@ -68,13 +69,13 @@ export const Body = ({ isAuthenticated, setAuth }) => (
       isAuthenticated ? (
         <Navigate to="/dashboard/inicio" />
       ) : (
-        <SignIn  setAuth={setAuth} />
+        <SignIn setAuth={setAuth} />
       )
     } />
     <Route
       path="/login"
       element={!isAuthenticated ? (
-        <SignIn  setAuth={setAuth} />
+        <SignIn setAuth={setAuth} />
       ) : (
         <Navigate to="/dashboard/inicio" />
       )}
@@ -89,39 +90,42 @@ export const Body = ({ isAuthenticated, setAuth }) => (
         )
       }
     />
-    <Route path="/dashboard" element={ isAuthenticated ? (<Dashboard setAuth={setAuth}/>) : <Navigate to="/login" />}>
-      
+    <Route path="/dashboard" element={isAuthenticated ? (<Dashboard setAuth={setAuth} />) : <Navigate to="/login" />}>
+
       <Route path="inicio" element={
-          <Inicio />
+        <Inicio />
       } />
-      
+
       <Route path="estudiar" element={
-          <Estudiar />
+        <Estudiar />
       } />
       <Route path="prueba" element={
-          <Practicar />
+        <Practicar />
       } />
       <Route path="explorar-vocabulario-temas" element={
-          <ExplorarVocabularioTemas />
+        <ExplorarVocabularioTemas />
       } />
       <Route path="explorar-vocabulario-categorias" element={
-          <ExplorarVocabularioCategorias />
+        <ExplorarVocabularioCategorias />
       } />
       <Route path="practica" element={
-          <Practica />
+        <Practica />
       } />
       <Route path="/dashboard/prueba/practica" element={
-          <Practica />
+        <Practica />
+      } />
+      <Route path="supervisar/:userId" element={
+        <UserMonitorIndividual />
       } />
       <Route path="supervisar" element={
         <AprendicesMonitor />
       } />
-           <Route path="glosario" element={
+      <Route path="glosario" element={
         <Glosario />
       } />
     </Route>
   </Routes>
-  );
+);
 
 
 export default App;
