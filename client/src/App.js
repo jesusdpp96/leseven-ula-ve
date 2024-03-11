@@ -14,7 +14,7 @@ import ExplorarVocabularioTemas from "./components/ExplorarVocabularioTemas";
 import ExplorarVocabularioCategorias from "./components/ExplorarVocabularioCategorias";
 import Practica from "./components/Practica";
 import Inicio from "./components/Inicio";
-import AprendicesMonitor from "./components/AprendicesMonitor";
+import AprendicesMonitor from "./components/UserMonitor/AprendicesMonitor";
 import Glosario from "./components/Glosario"
 
 

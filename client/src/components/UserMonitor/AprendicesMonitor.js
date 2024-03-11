@@ -15,9 +15,9 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import validateEmail from '../utils/validateEmail';
-import UserMonitorModal from './UserMonitorModal';
-import { ERR_USER_NOT_EXISTS, SUCCESS_USER_ADDED, SUCCESS_USER_REMOVED, UNKNOWN_ERROR, USER_NOT_EXISTS } from '../utils/constants';
+import validateEmail from '../../utils/validateEmail';
+import UserMonitorModal from '../UserMonitorModal';
+import { ERR_USER_NOT_EXISTS, SUCCESS_USER_ADDED, SUCCESS_USER_REMOVED, UNKNOWN_ERROR, USER_NOT_EXISTS } from '../../utils/constants';
 
 export const styleUsuarioMonitorModal = {
   position: 'absolute',
