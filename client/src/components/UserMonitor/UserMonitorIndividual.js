@@ -113,7 +113,7 @@ export default function UserMonitorIndividual() {
             <Box sx={{ flex: '1 1 auto' }} />
           </Box>
 
-          <Box sx={{ width: '100%', height: '100%', overflowY: 'scroll', padding: '16px', paddingBottom: '64px' }}>
+          <Box sx={{ width: '100%', height: '100%', padding: '16px', paddingBottom: '64px' }}>
             <Typography variant="h6">
               Filtros para consultar
             </Typography>
@@ -149,7 +149,7 @@ export default function UserMonitorIndividual() {
               </Stack>
             </LocalizationProvider>
             {
-              data && data.grados ? (
+              data?.grados ? (
                 <Stack direction="row" spacing={1} sx={{ margin: '0px 24px 24px 24px' }}>
                   {
                     gradoSelected === undefined ?
@@ -221,8 +221,6 @@ export default function UserMonitorIndividual() {
                     <TableCell align="right">Prácticas{<br />}últimos 7 días</TableCell>
                     <TableCell align="right">Consultas{<br />}correctas</TableCell>
                     <TableCell align="right">Consultas{<br />}incorrectas</TableCell>
-                    <TableCell align="right">Puntos</TableCell>
-                    <TableCell align="right">Trofeos</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -234,14 +232,6 @@ export default function UserMonitorIndividual() {
                     <TableCell align="right">{data && data.practicas_last_7days ? data.practicas_last_7days : 0}</TableCell>
                     <TableCell align="right">{data && data.total_correctas ? data.total_correctas : 0}</TableCell>
                     <TableCell align="right">{data && data.total_incorrectas ? data.total_incorrectas : 0}</TableCell>
-                    <TableCell align="right">{data && data.total_correctas ? data.total_correctas * 100 : 0}</TableCell>
-                    <TableCell align="right">
-                      {
-                        (gradoSelected === undefined && data && data.trofeos) ?
-                          `${data.trofeos.imparable || 0} Imparables, ${data.trofeos.agil || 0} Agil, ${data.trofeos_leal} Leal` :
-                          (data && data.trofeos ? `${data.trofeos.imparable || 0} Imparables, ${data.trofeos.agil || 0} Agil` : '')
-                      }
-                    </TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
