@@ -155,11 +155,11 @@ export default function UserMonitorIndividual() {
                   }
 
                   {
-                    data.grados.map(elem => {
+                    data.grados.map((elem, index) => {
                       return (
                         gradoSelected === elem.id ?
-                          (<Chip label={elem.nombre} color="primary" />) :
-                          (<Chip label={elem.nombre} variant="outlined" onClick={() => {
+                          (<Chip key={index} label={elem.nombre} color="primary" />) :
+                          (<Chip key={index} label={elem.nombre} variant="outlined" onClick={() => {
                             setGradoSelected(elem.id);
                             getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: elem.id, range: rangeSelected });
                           }} />)

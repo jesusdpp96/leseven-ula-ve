@@ -6,10 +6,7 @@ import LinearProgressWithLabel from "./LinearProgressWithLabel";
 export default function ThemeProgressCard({elem}) {
   const correctos = elem.vocablos_correctos_counter || 0;
   const vistos = elem.vocablos_vistos_counter || 0;
-  let total = elem.vocablos_counter || 0;
-  const total_consultas = elem.total_consultas || 0;
-  const total_correctas = elem.total_correctas || 0;
-  const consultas_correctas = total_correctas / total_consultas || 0;
+  const total = elem.vocablos_counter || 0;
 
   if (!total) return null;
   
