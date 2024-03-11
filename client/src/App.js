@@ -114,10 +114,10 @@ export const Body = ({ isAuthenticated, setAuth }) => (
       <Route path="/dashboard/prueba/practica" element={
         <Practica />
       } />
-      <Route path="supervisar/:userId" element={
+      <Route exact path="supervisar/:userId" element={
         <UserMonitorIndividual />
       } />
-      <Route path="supervisar" element={
+      <Route exact path="supervisar" element={
         <AprendicesMonitor />
       } />
       <Route path="glosario" element={
