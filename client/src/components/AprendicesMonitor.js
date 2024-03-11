@@ -17,6 +17,7 @@ import IconButton from '@mui/material/IconButton';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import validateEmail from '../utils/validateEmail';
 import UserMonitorModal from './UserMonitorModal';
+import { ERR_USER_NOT_EXISTS, SUCCESS_USER_ADDED, UNKNOWN_ERROR, USER_NOT_EXISTS } from '../utils/constants';
 
 export const styleUsuarioMonitorModal = {
   position: 'absolute',
@@ -59,17 +60,26 @@ export default function AprendicesMonitor() {
       });
       
       if (response.status === 204) {
-        toast.success("Usuario agregado al monitor correctamente.");
+        toast.success(SUCCESS_USER_ADDED);
       } else {
-        toast.error("Error desconocido");
+
+        try {
+          const data = await response.json();
+  
+          if (data.message === ERR_USER_NOT_EXISTS) {
+            toast.error(USER_NOT_EXISTS);
+          } else {
+            toast.error(UNKNOWN_ERROR);
+          }
+
+        } catch (error) {
+          toast.error(UNKNOWN_ERROR);
+        }
       }
 
       getUsersMonitorData();
       setAddLoading(false);
       setCorreo(undefined);
-
-      // toast.success("Logged in Successfully");
-      // toast.error(parseRes);
 
     } catch (err) {
       console.error(err.message);
