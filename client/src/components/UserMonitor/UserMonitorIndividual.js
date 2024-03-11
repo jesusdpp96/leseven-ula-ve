@@ -172,7 +172,7 @@ export default function UserMonitorIndividual() {
             }
             <Box>
               {
-                grados && gradoSelected !== undefined ?
+                (grados && gradoSelected) &&  
                   (
                     <Typography variant="subtitle1"> {`Aplicando filtro por grado: `}
                       <Typography variant="string" color="primary">{grados[gradoSelected].nombre}</Typography>
@@ -184,8 +184,7 @@ export default function UserMonitorIndividual() {
                         <DeleteIcon sx={{ color: 'red' }} />
                       </IconButton>
                     </Typography>
-                  ) :
-                  (null)
+                  )
               }
               {
                 rangeSelected ?
@@ -233,7 +232,7 @@ export default function UserMonitorIndividual() {
             <Typography variant="h6">
               Vocablos vistos y contestados de forma correcta por tema
             </Typography>
-            <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
+            <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
               {(data?.temas_data ?? []).map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
             </Grid>
           </Box>
