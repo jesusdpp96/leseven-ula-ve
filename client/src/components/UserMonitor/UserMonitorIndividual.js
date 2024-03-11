@@ -94,15 +94,12 @@ export default function UserMonitorIndividual() {
     } finally {
       setLoading(false);
     }
-  }, [userId]);
+  }, [userId, gradoSelected, rangeSelected]);
 
   useEffect(() => {
     getUserMonitorData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  console.log({ grados, gradoSelected });
-
 
   return loading ?
     (<Grid container direction="row" justifyContent="center"><CircularProgress color="inherit" size={30} /></Grid>) : (
@@ -150,7 +147,7 @@ export default function UserMonitorIndividual() {
             </LocalizationProvider>
             {
               data?.grados ? (
-                <Stack direction="row" spacing={1} sx={{ margin: '0px 24px 24px 24px' }}>
+                <Stack direction="row" spacing={0} sx={{ margin: '0px 24px 24px 24px', flexWrap: 'wrap', gap: '8px' }}>
                   {
                     gradoSelected === undefined ?
                       (<Chip label="Todo" color="primary" />) :
@@ -228,10 +225,10 @@ export default function UserMonitorIndividual() {
                     key="row-x-1"
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   >
-                    <TableCell align="right">{data && data.practicas_realizadas ? data.practicas_realizadas : 0}</TableCell>
-                    <TableCell align="right">{data && data.practicas_last_7days ? data.practicas_last_7days : 0}</TableCell>
-                    <TableCell align="right">{data && data.total_correctas ? data.total_correctas : 0}</TableCell>
-                    <TableCell align="right">{data && data.total_incorrectas ? data.total_incorrectas : 0}</TableCell>
+                    <TableCell align="right">{data?.practicas_realizadas ?? 0}</TableCell>
+                    <TableCell align="right">{data?.practicas_last_7days ?? 0}</TableCell>
+                    <TableCell align="right">{data?.total_correctas ?? 0}</TableCell>
+                    <TableCell align="right">{data?.total_incorrectas ?? 0}</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -240,7 +237,7 @@ export default function UserMonitorIndividual() {
               Vocablos vistos y contestados de forma correcta por tema
             </Typography>
             <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
-              {data && data.temas_data ? data.temas_data.map((elem, index) => {
+              {(data?.temas_data ?? []).map((elem, index) => {
                 const correctos = elem.vocablos_correctos_counter || 0;
                 const vistos = elem.vocablos_vistos_counter || 0;
                 let total = elem.vocablos_counter || 0;
@@ -262,7 +259,7 @@ export default function UserMonitorIndividual() {
                       <ListItemText
                         primary={elem.data.nombre}
                         secondary={
-                          <React.Fragment>
+                          <>
                             <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 8 }} >
                               <Grid item xs={4} sm={4} md={4} key={index}>
                                 <Box sx={{ width: '100%' }}>
@@ -298,19 +295,14 @@ export default function UserMonitorIndividual() {
 
                               </Grid>
                             </Grid>
-
-
-                          </React.Fragment>
+                          </>
                         } />
                     </ListItem>
                   </Grid>
                 )
-              }) : null}
+              })}
             </Grid>
-
-
           </Box>
-
         </Box>
       </Box>
     );
