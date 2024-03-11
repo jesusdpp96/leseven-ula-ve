@@ -1,6 +1,6 @@
-import { Avatar, Box, Grid, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 import React from "react";
-import LinearProgressWithLabel from "./LinearProgressWithLabel";
+import { Avatar, Box, Grid, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
+import ProgressIndicator from "./ProgressIndicator";
 
 
 export default function ThemeProgressCard({elem}) {
@@ -14,8 +14,7 @@ export default function ThemeProgressCard({elem}) {
     <Grid item xs={4} sm={4} md={4}>
       <ListItem key={elem.tema_id}>
         <ListItemAvatar>
-          <Avatar src={elem.data.image_src}>
-          </Avatar>
+          <Avatar src={elem.data.image_src} />
         </ListItemAvatar>
         <ListItemText
           primary={elem.data.nombre}
@@ -23,19 +22,10 @@ export default function ThemeProgressCard({elem}) {
             <>
               <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 8 }} >
                 <Grid item xs={4} sm={4} md={4}>
-                  <Box sx={{ width: '100%' }}>
-                    <div style={{ fontSize: '90%' }}>Vistos</div>
-                    <div style={{ fontSize: '90%' }}>({`${vistos}/${total}`})</div>
-                    <LinearProgressWithLabel value={(vistos / total * 100)} color="secondary" />
-                  </Box>
+                  <ProgressIndicator title="Vistos" current={vistos} total={total} color="secondary" />
                 </Grid>
                 <Grid item xs={4} sm={4} md={4}>
-                  <Box sx={{ width: '100%' }}>
-                    <div style={{ fontSize: '90%' }}>Correctos</div>
-                    <div style={{ fontSize: '90%' }}>({`${correctos}/${total}`})</div>
-                    <LinearProgressWithLabel value={(correctos / total * 100)} />
-
-                  </Box>
+                  <ProgressIndicator title="Correctos" current={correctos} total={total} />
                 </Grid>
                 <Grid item xs={4} sm={4} md={4} style={{ paddingTop: '0px' }}>
                   <Box sx={{ width: '100%' }}>
@@ -49,6 +39,5 @@ export default function ThemeProgressCard({elem}) {
           } />
       </ListItem>
     </Grid>
-  )
-
+  );
 }
