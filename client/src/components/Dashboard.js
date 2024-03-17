@@ -379,7 +379,7 @@ function DashboardContent({setAuth}) {
             {
               open ? (
                 <AccountStyle>
-                  <Avatar src="/image.png" alt="photoURL" />
+                  <Avatar src="" alt="photoURL" />
                   <Box sx={{ ml: 1 }}>
                     <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
                       {`${userData.nombre} ${userData.apellido}`}

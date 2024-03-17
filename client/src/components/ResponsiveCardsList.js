@@ -33,10 +33,7 @@ export default function ResponsiveCardsList() {
       >
         {Array.from(Array(6)).map((_, index) => (
           <Grid item xs={4} sm={4} md={4} key={index}>
-            {/* <Item>xs=2 {index + 1}</Item> */}
             <AccountStyle>
-              {/* <Avatar src="/image.png" alt="photoURL" /> */}
-              {/* <Box sx={{ ml: 1 }}> */}
               <ListItemButton>
                 <ListItemAvatar>
                   <Avatar>
@@ -45,10 +42,6 @@ export default function ResponsiveCardsList() {
                 </ListItemAvatar>
                 <ListItemText primary={'Grado ' + index}/>
               </ListItemButton>
-                {/* <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
-                  Grado {index}
-                </Typography> */}
-              {/* </Box> */}
             </AccountStyle>
           </Grid>
         ))}
@@ -56,30 +49,3 @@ export default function ResponsiveCardsList() {
     </Box>
   );
 }
-
-// export default function ResponsiveCardsList() {
-//   return (
-//     <Box sx={{ flexGrow: 1 }}>
-//       <Grid
-//         container
-//         spacing={{ xs: 2, md: 3 }}
-//         columns={{ xs: 4, sm: 9, md: 12 }}
-//       >
-//         {Array.from(Array(6)).map((_, index) => (
-//           <Grid item xs={2} sm={3} md={3} key={index}>
-//             {/* <Item>xs=2 {index + 1}</Item> */}
-//             <AccountStyle>
-//               <Avatar src="/image.png" alt="photoURL" />
-//               <Box sx={{ ml: 1 }}>
-//                 <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
-//                   Grado {index}
-//                 </Typography>
-//               </Box>
-//             </AccountStyle>
-//           </Grid>
-//         ))}
-//       </Grid>
-//     </Box>
-//   );
-// }
-
