@@ -16,6 +16,8 @@ import {
   Chip,
   TextField,
   Button,
+  Tabs,
+  Tab,
 } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 
@@ -27,6 +29,7 @@ import { styleUsuarioMonitorModal } from './styles';
 import { useParams } from 'react-router-dom';
 import { getFilterQueryParams } from '../../utils/getFilterQueryParams';
 import ThemeProgressCard from './ThemeProgressCard';
+import CustomTabPanel from '../CustomTabPanel';
 
 export default function UserMonitorIndividual() {
   const { userId } = useParams();
@@ -34,6 +37,7 @@ export default function UserMonitorIndividual() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState();
   const [usuario, setUsuario] = useState();
+  const [tab, setTab] = useState(0);
 
   const [gradoSelected, setGradoSelected] = useState();
   const [grados, setGrados] = useState();
@@ -229,12 +233,29 @@ export default function UserMonitorIndividual() {
                 </TableBody>
               </Table>
             </TableContainer>
-            <Typography variant="h6">
-              Vocablos vistos y contestados de forma correcta por tema
-            </Typography>
-            <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
-              {(data?.temas_data ?? []).map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
-            </Grid>
+            
+            <Tabs value={tab} onChange={(_, newValue) => setTab(newValue)} aria-label="basic tabs example">
+              <Tab label="Estudios" />
+              <Tab label="Pruebas" />
+            </Tabs>
+
+            <CustomTabPanel value={tab} index={0}>
+              <Typography variant="h6">
+                Vocablos vistos por tema
+              </Typography>
+              <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
+                {(data?.temas_data ?? []).map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
+              </Grid>
+            </CustomTabPanel>
+    
+            <CustomTabPanel value={tab} index={1}>
+              <Typography variant="h6">
+                Vocablos contestados de forma correcta por tema
+              </Typography>
+              <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
+                {(data?.temas_data ?? []).map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
+              </Grid>
+            </CustomTabPanel>
           </Box>
         </Box>
       </Box>
