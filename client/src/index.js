@@ -3,10 +3,14 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
+import { StyleSheetManager } from "styled-components";
+import isPropValid from "@emotion/is-prop-valid";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StyleSheetManager shouldForwardProp={isPropValid}>
+      <App />
+    </StyleSheetManager>
   </React.StrictMode>,
   document.getElementById("root")
 );

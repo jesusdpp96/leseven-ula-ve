@@ -13,6 +13,7 @@ export default function ThemeProgressCard({ elem }) {
     <Grid item xs={4} marginTop={1}>
       <ListItem key={elem.tema_id} style={{ position: 'relative', flexDirection:'column' }}>
         <ListItemText
+          disableTypography
           primary={elem.data.nombre}
           secondary={
             <>

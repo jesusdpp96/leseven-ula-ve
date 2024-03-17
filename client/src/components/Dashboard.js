@@ -219,7 +219,7 @@ function PanelItems({funcionalidad_sistema}) {
     {
       funcionalidad: 'panel-practica',
       element: (
-        <ListItemButton onClick={goTo7} key="pp001">
+        <ListItemButton onClick={goTo7} key="pp007">
           <ListItemIcon>
             <LibraryBooksIcon />
           </ListItemIcon>
