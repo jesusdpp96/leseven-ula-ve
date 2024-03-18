@@ -18,7 +18,11 @@ import AprendicesMonitor from "./components/UserMonitor/AprendicesMonitor";
 import Glosario from "./components/Glosario"
 import UserMonitorIndividual from "./components/UserMonitor/UserMonitorIndividual";
 import PruebasMonitor from "./components/UserMonitor/PruebasMonitor/PruebasMonitor";
+import { QueryClient, QueryClientProvider } from "react-query";
 
+const queryClient = new QueryClient({
+  defaultOptions: { queries: { retry: false } }
+});
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -54,12 +58,14 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <div className="">
-          <Body isAuthenticated={isAuthenticated} setAuth={setAuth} />
-          <ToastContainer />
-        </div>
-      </BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <div className="">
+            <Body isAuthenticated={isAuthenticated} setAuth={setAuth} />
+            <ToastContainer />
+          </div>
+        </BrowserRouter>
+      </QueryClientProvider>
     </>
   );
 }
