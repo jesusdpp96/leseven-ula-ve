@@ -69,7 +69,7 @@ export default function UserMonitorIndividual() {
   const getUserMonitorData = useCallback(async () => {
     try {
       const queryParams = getFilterQueryParams(gradoSelected, rangeSelected);
-      
+
       const route = `/aprendices-monitor/user/${userId}${queryParams}`;
 
       const response = await fetch(route, {
@@ -176,19 +176,19 @@ export default function UserMonitorIndividual() {
             }
             <Box>
               {
-                (grados && gradoSelected) &&  
-                  (
-                    <Typography variant="subtitle1"> {`Aplicando filtro por grado: `}
-                      <Typography variant="string" color="primary">{grados[gradoSelected].nombre}</Typography>
+                (grados && gradoSelected) &&
+                (
+                  <Typography variant="subtitle1"> {`Aplicando filtro por grado: `}
+                    <Typography variant="string" color="primary">{grados[gradoSelected].nombre}</Typography>
 
-                      <IconButton aria-label="emove filter" onClick={() => {
-                        setGradoSelected(undefined);
-                        getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: undefined, range: rangeSelected });
-                      }}>
-                        <DeleteIcon sx={{ color: 'red' }} />
-                      </IconButton>
-                    </Typography>
-                  )
+                    <IconButton aria-label="emove filter" onClick={() => {
+                      setGradoSelected(undefined);
+                      getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: undefined, range: rangeSelected });
+                    }}>
+                      <DeleteIcon sx={{ color: 'red' }} />
+                    </IconButton>
+                  </Typography>
+                )
               }
               {
                 rangeSelected ?
@@ -233,7 +233,7 @@ export default function UserMonitorIndividual() {
                 </TableBody>
               </Table>
             </TableContainer>
-            
+
             <Tabs value={tab} onChange={(_, newValue) => setTab(newValue)} aria-label="basic tabs example">
               <Tab label="Estudios" />
               <Tab label="Pruebas" />
@@ -245,10 +245,19 @@ export default function UserMonitorIndividual() {
               </Typography>
               <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
                 {(data?.temas_data ?? [])
-                  .map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
+                  .map((elem, index) =>
+                    <ThemeProgressCard
+                      key={index}
+                      current={elem.vocablos_vistos_counter || 0}
+                      total={elem.vocablos_counter || 0}
+                      name={elem.data?.nombre}
+                      imageSrc={elem.data?.image_src}
+                      progressName="Estudiados"
+                      progressColor='primary'
+                    />)}
               </Grid>
             </CustomTabPanel>
-    
+
             <CustomTabPanel value={tab} index={1}>
               <Typography variant="h6">
                 Vocablos contestados de forma correcta por tema
@@ -256,7 +265,15 @@ export default function UserMonitorIndividual() {
               <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
                 {(data?.temas_data ?? [])
                   .filter(elem => !elem.data.es_categoria)
-                  .map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
+                  .map((elem, index) => <ThemeProgressCard
+                    key={index}
+                    current={elem.vocablos_correctos_counter || 0}
+                    total={elem.vocablos_counter || 0}
+                    name={elem.data?.nombre}
+                    imageSrc={elem.data?.image_src}
+                    progressName="Respondidos correctamente en pruebas"
+                    extra={`Pruebas realizadas: ${elem.practicas_hechas || 0}`}
+                  />)}
               </Grid>
             </CustomTabPanel>
           </Box>
