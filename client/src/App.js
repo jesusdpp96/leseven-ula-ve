@@ -17,7 +17,7 @@ import Inicio from "./components/Inicio";
 import AprendicesMonitor from "./components/UserMonitor/AprendicesMonitor";
 import Glosario from "./components/Glosario"
 import UserMonitorIndividual from "./components/UserMonitor/UserMonitorIndividual";
-import PruebasMonitor from "./components/PruebasMonitor/PruebasMonitor";
+import PruebasMonitor from "./components/UserMonitor/PruebasMonitor/PruebasMonitor";
 
 
 function App() {
