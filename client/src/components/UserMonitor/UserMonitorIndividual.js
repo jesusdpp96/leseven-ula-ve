@@ -244,7 +244,8 @@ export default function UserMonitorIndividual() {
                 Vocablos vistos por tema
               </Typography>
               <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
-                {(data?.temas_data ?? []).map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
+                {(data?.temas_data ?? [])
+                  .map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
               </Grid>
             </CustomTabPanel>
     
@@ -253,7 +254,9 @@ export default function UserMonitorIndividual() {
                 Vocablos contestados de forma correcta por tema
               </Typography>
               <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
-                {(data?.temas_data ?? []).map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
+                {(data?.temas_data ?? [])
+                  .filter(elem => !elem.data.es_categoria)
+                  .map((elem, index) => <ThemeProgressCard key={index} elem={elem} />)}
               </Grid>
             </CustomTabPanel>
           </Box>
