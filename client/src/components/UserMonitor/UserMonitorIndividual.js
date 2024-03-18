@@ -26,13 +26,14 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { getDateDDMMYYYY, getDateYYYYMMDD } from '../../utils/dates';
 import { styleUsuarioMonitorModal } from './styles';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { getFilterQueryParams } from '../../utils/getFilterQueryParams';
 import ThemeProgressCard from './ThemeProgressCard';
 import CustomTabPanel from '../CustomTabPanel';
 
 export default function UserMonitorIndividual() {
   const { userId } = useParams();
+  const navigate = useNavigate();
 
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState();
@@ -225,7 +226,7 @@ export default function UserMonitorIndividual() {
                     key="row-x-1"
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   >
-                    <TableCell align="right">{data?.practicas_realizadas ?? 0}</TableCell>
+                    <TableCell align="right" style={{cursor:'pointer'}} onClick={() => navigate(`pruebas/`)}>{data?.practicas_realizadas ?? 0}</TableCell>
                     <TableCell align="right">{data?.practicas_last_7days ?? 0}</TableCell>
                     <TableCell align="right">{data?.total_correctas ?? 0}</TableCell>
                     <TableCell align="right">{data?.total_incorrectas ?? 0}</TableCell>

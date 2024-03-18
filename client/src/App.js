@@ -17,6 +17,7 @@ import Inicio from "./components/Inicio";
 import AprendicesMonitor from "./components/UserMonitor/AprendicesMonitor";
 import Glosario from "./components/Glosario"
 import UserMonitorIndividual from "./components/UserMonitor/UserMonitorIndividual";
+import PruebasMonitor from "./components/PruebasMonitor/PruebasMonitor";
 
 
 function App() {
@@ -113,6 +114,9 @@ export const Body = ({ isAuthenticated, setAuth }) => (
       } />
       <Route path="/dashboard/prueba/practica" element={
         <Practica />
+      } />
+      <Route exact path="supervisar/:userId/pruebas" element={
+        <PruebasMonitor />
       } />
       <Route exact path="supervisar/:userId" element={
         <UserMonitorIndividual />
