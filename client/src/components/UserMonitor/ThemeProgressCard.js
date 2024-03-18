@@ -31,11 +31,12 @@ export default function ThemeProgressCard(props) {
     <Grid item xs={4} marginTop={1}>
       <ListItem style={{ position: 'relative', flexDirection: 'column' }}>
         <ListItemText
+          style={{ width: '100%', padding:' 0 5%' }}
           disableTypography
           primary={name}
           secondary={
             <>
-              <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8 }} >
+              <Grid container spacing={{ xs: 0, md: 0 }} columns={{ xs: 4, sm: 8 }} >
                 <Grid item xs={12}>
                   <img src={imageSrc} style={{ width: '100%', height: '120px' }} alt="" />
                 </Grid>
