@@ -10,12 +10,12 @@ import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import { useQuery } from "react-query";
-import request from "../../../utils/request";
+import customFetch from "../../../utils/request";
 
 export default function PruebasMonitor() {
 
   // const {userId} = useParams();
-  const {isLoading: loading} = useQuery('usersData', () => request('/aprendices-monitor/users'));
+  const {isLoading: loading} = useQuery('usersData', () => customFetch('/aprendices-monitor/users'));
 
   return (
     <Box sx={{display: 'flex', flexDirection: 'column'}}>

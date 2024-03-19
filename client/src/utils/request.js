@@ -10,7 +10,7 @@ const baseHeaders = {
  * @param {string} url - The URL to make the request to.
  * @param {RequestInit} options - Additional options for the request (default is an empty object).
  */
-export default async function request(url, options = {}) {
+export default async function customFetch(url, options = {}) {
   const response = await fetch(url, {
     method: 'GET',
     ...options,
