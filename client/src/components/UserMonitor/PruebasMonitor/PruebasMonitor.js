@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-// import { useParams } from "react-router-dom";
+import React from "react";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -13,29 +12,15 @@ import Typography from '@mui/material/Typography';
 import { useQuery } from "react-query";
 import request from "../../../utils/request";
 
-export const styleUsuarioMonitorModal = {
-  position: 'absolute',
-  top: '20%',
-  left: '20%',
-  transform: 'translate(-10%, -10%)',
-  width: '80%',
-  minHeight: '400px',
-  bgcolor: 'background.paper',
-  border: '1px solid #666',
-  borderRadius: '16px',
-  boxShadow: 24,
-  p: 4,
-};
-
 export default function PruebasMonitor() {
 
   // const {userId} = useParams();
-  const {isLoading: loading, data} = useQuery('usersData', () => request('/aprendices-monitor/users'));
+  const {isLoading: loading} = useQuery('usersData', () => request('/aprendices-monitor/users'));
 
   return (
     <Box sx={{display: 'flex', flexDirection: 'column'}}>
 
-      <Box sx={{marginTop: "32px"}}>
+      <Box sx={{margin: "32px 0"}}>
         <Typography component="h1"  variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
           Pruebas realizadas por el alumno {loading && (<CircularProgress color="primary" size={20} />)}
         </Typography>
@@ -45,7 +30,6 @@ export default function PruebasMonitor() {
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell>Nombre</TableCell>
                 <TableCell align="right">Fecha</TableCell>
                 <TableCell align="right">Grado</TableCell>
                 <TableCell align="right">Total de preguntas</TableCell>

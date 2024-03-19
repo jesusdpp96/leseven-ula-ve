@@ -226,7 +226,7 @@ export default function UserMonitorIndividual() {
                     key="row-x-1"
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   >
-                    <TableCell align="right" style={{cursor:'pointer'}} onClick={() => navigate(`pruebas/`)}>{data?.practicas_realizadas ?? 0}</TableCell>
+                    <TableCell align="right" style={{cursor:'pointer'}} onClick={() => navigate(`pruebas`)}>{data?.practicas_realizadas ?? 0}</TableCell>
                     <TableCell align="right">{data?.practicas_last_7days ?? 0}</TableCell>
                     <TableCell align="right">{data?.total_correctas ?? 0}</TableCell>
                     <TableCell align="right">{data?.total_incorrectas ?? 0}</TableCell>
