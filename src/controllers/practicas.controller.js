@@ -4,7 +4,6 @@ const { dbGetPracticasPorUsuario } = require("../queries");
 const getPracticasPorUsuario = async (req, res, next) => {
   try {
     const usuarioId = req.params?.user_id;
-    // console.log(req.params);
     const result = await dbGetPracticasPorUsuario(usuarioId);
     res.json(result);
   } catch (error) {
