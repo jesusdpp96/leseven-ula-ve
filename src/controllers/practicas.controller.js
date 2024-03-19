@@ -4,13 +4,13 @@ const { dbGetPracticasPorUsuario } = require("../queries");
 const getPracticasPorUsuario = async (req, res, next) => {
   try {
     const usuarioId = req.params?.user_id;
-    const result = await dbGetPracticasPorUsuario(usuarioId);
+    const filters = req.query; // This will contain all query parameters as an object
+    const result = await dbGetPracticasPorUsuario(usuarioId, filters);
     res.json(result);
   } catch (error) {
     next(error);
   }
-}
-
+};
 const postPractica = async (req, res, next) => {
   try {
     const { practica, consultas, puntos, trofeos_imparables, trofeos_agil } = req.body;
