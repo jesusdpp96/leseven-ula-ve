@@ -1,4 +1,16 @@
 const pool = require("../db");
+const { dbGetPracticasPorUsuario } = require("../queries");
+
+const getPracticasPorUsuario = async (req, res, next) => {
+  try {
+    const usuarioId = req.params?.user_id;
+    // console.log(req.params);
+    const result = await dbGetPracticasPorUsuario(usuarioId);
+    res.json(result);
+  } catch (error) {
+    next(error);
+  }
+}
 
 const postPractica = async (req, res, next) => {
   try {
@@ -122,5 +134,6 @@ const postPractica = async (req, res, next) => {
 };
 
 module.exports = {
+  getPracticasPorUsuario,
   postPractica
 };
