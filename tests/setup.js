@@ -1,12 +1,16 @@
-/**
- * Generate a function comment for the given function body.
- *
- * @param {import('@jest/types').Config.GlobalConfig} globalConfig - the global configuration object
- * @param {import('@jest/types').Config.ProjectConfig} projectConfig - the project configuration object
- * @return {Promise<void>} a Promise that resolves when the function completes
- */
-module.exports = async function (globalConfig, projectConfig) {
-  // console.log('MARCO');
+const sqlite3 = require('sqlite3').verbose();
 
+async function setup() {
+  const db = await new Promise((resolve, reject) => {
+    const db = new sqlite3.Database(':memory:', (err) => {
+      if (err) {
+        reject(err.message);
+      }
+      resolve(db);
+    });
+  });
 
+  return db;
 };
+
+module.exports = { setup };
