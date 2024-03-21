@@ -1,5 +1,18 @@
 const pool = require("../db");
-const { dbGetPracticasPorUsuario } = require("../queries");
+const {
+  dbGetPracticasPorUsuario,
+  dbGetPracticaDetails
+} = require("../queries");
+
+const getPracticaDetails = async (req, res, next) => {
+  try {
+    const practicaId = req.params?.practica_id;
+    const result = await dbGetPracticaDetails(practicaId);
+    res.json(result);
+  } catch (error) {
+    next(error);
+  }
+};
 
 const getPracticasPorUsuario = async (req, res, next) => {
   try {
@@ -16,7 +29,7 @@ const postPractica = async (req, res, next) => {
     const { practica, consultas, puntos, trofeos_imparables, trofeos_agil } = req.body;
 
     const usuario_id = req.user;
-    
+
     const result = await pool.query(
       `INSERT INTO public.practica(fecha, total_consultas, total_correctas, usuario_id, tema_id, grado_id)
         VALUES ($1, $2, $3, $4, $5, $6) RETURNING *`,
@@ -33,7 +46,7 @@ const postPractica = async (req, res, next) => {
       );
 
       const correcto = consulta.vocablo_correcto_id === consulta.vocablo_respuesta_id;
-      
+
       try {
         await pool.query(
           `INSERT INTO public.vocablo_correcto(usuario_id, grado_id, tema_id, vocablo_id, fecha, correcto)
@@ -50,7 +63,7 @@ const postPractica = async (req, res, next) => {
             [usuario_id, practica.grado_id, practica.tema_id, consulta.vocablo_correcto_id, practica.fecha, correcto]
           );
 
-          console.log({result});
+          console.log({ result });
         } catch (err2) {
           // nothing
           console.log(err2);
@@ -112,7 +125,7 @@ const postPractica = async (req, res, next) => {
         `
         INSERT INTO public.trofeos(usuario_id, tipo, fecha, grado_id, tema_id)
           VALUES ($1, $2, $3, $4, $5)
-        `, [usuario_id, 'imparable', new Date().toISOString(), practica.grado_id, practica.tema_id ]
+        `, [usuario_id, 'imparable', new Date().toISOString(), practica.grado_id, practica.tema_id]
       );
     }
 
@@ -121,7 +134,7 @@ const postPractica = async (req, res, next) => {
         `
         INSERT INTO public.trofeos(usuario_id, tipo, fecha, grado_id, tema_id)
           VALUES ($1, $2, $3, $4, $5)
-        `, [usuario_id, 'agil', new Date().toISOString(), practica.grado_id, practica.tema_id ]
+        `, [usuario_id, 'agil', new Date().toISOString(), practica.grado_id, practica.tema_id]
       );
     }
 
@@ -134,5 +147,6 @@ const postPractica = async (req, res, next) => {
 
 module.exports = {
   getPracticasPorUsuario,
-  postPractica
+  postPractica,
+  getPracticaDetails
 };
