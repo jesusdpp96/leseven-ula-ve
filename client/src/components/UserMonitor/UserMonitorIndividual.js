@@ -274,6 +274,7 @@ export default function UserMonitorIndividual() {
                     imageSrc={elem.data?.image_src}
                     progressName="Respondidos correctamente en pruebas"
                     extra={`Pruebas realizadas: ${elem.practicas_hechas || 0}`}
+                    onClick={() => navigate(`pruebas?tema_id=${elem.data?.id}`)}
                   />)}
               </Grid>
             </CustomTabPanel>

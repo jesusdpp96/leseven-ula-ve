@@ -13,6 +13,7 @@ import ProgressIndicator from "./ProgressIndicator";
  * @param {string} props.progressName - The name of the progress.
  * @param {string} props.progressColor - The color of the progress.
  * @param {string} props.extra - Extra information to be displayed.
+ * @param {function} props.onClick - The function to be called when the card is clicked.
  * @return {JSX.Element} A Grid component with the ThemeProgressCard layout.
  */
 export default function ThemeProgressCard(props) {
@@ -23,12 +24,23 @@ export default function ThemeProgressCard(props) {
     imageSrc,
     progressName,
     progressColor='secondary',
-    extra } = props;
+    extra,
+    onClick
+  } = props;
 
   if (!total) return null;
 
+  let extraProps = {};
+
+  if (onClick) {
+    extraProps = {
+      onClick,
+      style: { cursor: 'pointer' }
+    };
+  }
+
   return (
-    <Grid item xs={4} marginTop={1}>
+    <Grid item xs={4} marginTop={1} {...extraProps}>
       <ListItem style={{ position: 'relative', flexDirection: 'column' }}>
         <ListItemText
           style={{ width: '100%', padding:' 0 5%' }}
