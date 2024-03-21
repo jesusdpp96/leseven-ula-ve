@@ -70,14 +70,14 @@ export const AppRoutes = ({ isAuthenticated, setAuth }) => (
       <Route path="/dashboard/prueba/practica" element={
         <Practica />
       } />
-      <Route exact path="supervisar/:userId/pruebas/:pruebaId" element={
-        <PruebaDetalles />
-      } />
       <Route exact path="supervisar/:userId/pruebas" element={
         <PruebasMonitor />
       } />
       <Route exact path="supervisar/:userId" element={
         <UserMonitorIndividual />
+      } />
+      <Route exact path="supervisar/pruebas/:pruebaId" element={
+        <PruebaDetalles />
       } />
       <Route exact path="supervisar" element={
         <AprendicesMonitor />

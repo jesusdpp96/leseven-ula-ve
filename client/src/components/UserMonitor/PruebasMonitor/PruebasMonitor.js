@@ -9,7 +9,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import customFetch from "../../../utils/request";
 import { getDateDDMMYYYY } from "../../../utils/dates";
@@ -17,6 +17,7 @@ import { getDateDDMMYYYY } from "../../../utils/dates";
 export default function PruebasMonitor() {
 
   const { userId } = useParams();
+  const navigate = useNavigate();
   const { isLoading: loading, data: practicas } = useQuery('practicasData', () => customFetch(`/practica/${userId}`));
 
   if (loading) 
@@ -54,6 +55,7 @@ export default function PruebasMonitor() {
                         backgroundColor: '#9ccaf8',
                       } 
                     }}
+                    onClick={() => navigate(`/dashboard/supervisar/pruebas/${row.id}`)}
                   >
                     <TableCell align="left">{getDateDDMMYYYY(new Date(row.fecha))}</TableCell>
                     <TableCell align="left">{row.grado_id}</TableCell>
