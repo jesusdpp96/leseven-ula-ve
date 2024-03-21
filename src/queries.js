@@ -29,7 +29,13 @@ async function dbGetPracticaDetails(practicaId) {
   `;
   const paramsPrueba = [practicaId];
   
-  const queryConsultas = `SELECT * FROM consulta WHERE practica_id = $1`;
+  const queryConsultas = `
+    SELECT c.*, v.palabra 
+    FROM consulta c 
+    INNER JOIN vocablo v 
+    ON c.vocablo_correcto_id = v.id 
+    WHERE practica_id = $1
+  `;
   const paramsConsultas = [practicaId];
 
   const [resPrueba, resConsultas] = await Promise.all([

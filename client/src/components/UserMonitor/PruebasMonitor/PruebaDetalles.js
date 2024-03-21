@@ -64,7 +64,7 @@ export default function PruebaDetalles() {
                         '&:last-child td, &:last-child th': { border: 0 },
                       }}
                     >
-                      <TableCell align="left">{row.vocablo_correcto_id}</TableCell>
+                      <TableCell align="left">{row.palabra}</TableCell>
                       <TableCell align="left">{row.vocablo_correcto_id === row.vocablo_respuesta_id ? '✅' : '❌'}</TableCell>
                     </TableRow>
                   ))}
