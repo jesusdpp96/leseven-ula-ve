@@ -19,21 +19,28 @@ async function dbGetPracticasPorUsuario(usuarioId, filters) {
 }
 
 async function dbGetPracticaDetails(practicaId) {
-  const query = `
+  const queryPrueba = `
     SELECT p.*, 
-    JSONB_Build_Object('nombre', u.nombre, 'apellido', u.apellido) AS usuario,
-    to_jsonb(c) AS consultas
+    JSONB_Build_Object('nombre', u.nombre, 'apellido', u.apellido) AS usuario
     FROM practica p
     INNER JOIN usuario u ON p.usuario_id = u.id
-    LEFT JOIN consulta c ON p.id = c.practica_id
     WHERE p.id = $1
     ORDER BY fecha DESC;
   `;
+  const paramsPrueba = [practicaId];
+  
+  const queryConsultas = `SELECT * FROM consulta WHERE practica_id = $1`;
+  const paramsConsultas = [practicaId];
 
+  const [resPrueba, resConsultas] = await Promise.all([
+    pool.query(queryPrueba, paramsPrueba),
+    pool.query(queryConsultas, paramsConsultas),
+  ]);
 
-  const params = [practicaId];
-  const result = await pool.query(query, params);
-  return result.rows?.[0];
+  return {
+    ...resPrueba.rows?.[0],
+    consultas: resConsultas.rows
+  };
 }
 
 
