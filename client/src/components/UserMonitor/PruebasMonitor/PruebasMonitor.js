@@ -47,7 +47,13 @@ export default function PruebasMonitor() {
                 {practicas.map((row) => (
                   <TableRow
                     key={row.id}
-                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                    sx={{ 
+                      '&:last-child td, &:last-child th': { border: 0 }, 
+                      cursor: 'pointer',
+                      '&:hover': {
+                        backgroundColor: '#9ccaf8',
+                      } 
+                    }}
                   >
                     <TableCell align="left">{getDateDDMMYYYY(new Date(row.fecha))}</TableCell>
                     <TableCell align="left">{row.grado_id}</TableCell>
