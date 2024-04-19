@@ -94,8 +94,6 @@
     "image": "/assets/images/nocion-espacial.png",
     "es_categoria": true
   },
-
-
   {
     "nombre": "Noción temporal",
     "image": "/assets/images/nocion-temporal.png",
@@ -106,8 +104,6 @@
     "image": "/assets/images/numeros.png",
     "es_categoria": true
   },
-
-
   {
     "nombre": "Objetos del hogar",
     "image": "/assets/images/objetos-del-hogar.png",
@@ -123,8 +119,6 @@
     "image": "/assets/images/partes-del-cuerpo.png",
     "es_categoria": true
   },
-
-
   {
     "nombre": "Personajes historicos",
     "image": "/assets/images/personajes-historicos.png",
@@ -165,9 +159,6 @@
     "image": "/assets/images/verduras-y-hortalizas.png",
     "es_categoria": true
   },
-
-
-  
   {
     "nombre": "Prueba Exploratoria - Preescolar",
     "image": "/assets/images/prueba-exploratoria.png",

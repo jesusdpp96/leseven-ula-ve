@@ -4,7 +4,7 @@
     "tema": "Alimentos",
     "palabra": "Agua",
     "image": "/assets/images/agua.png",
-    "video": ""
+    "video": "https://youtu.be/mA2Em3u-pCE"
   },
   {
     "grado": "Preescolar",
@@ -102,7 +102,7 @@
     "tema": "Figuras Geométricas",
     "palabra": "Circulo",
     "image": "/assets/images/circulo.png",
-    "video": ""
+    "video": "https://youtu.be/sEO7-uCKZg8"
   },
   {
     "grado": "Preescolar",
@@ -144,14 +144,14 @@
     "tema": "Lugares",
     "palabra": "Casa",
     "image": "/assets/images/casa.png",
-    "video": ""
+    "video": "https://youtu.be/0gEfsylixWM"
   },
   {
     "grado": "Preescolar",
     "tema": "Lugares",
     "palabra": "Escuela",
     "image": "/assets/images/escuela.png",
-    "video": ""
+    "video": "https://youtu.be/STdNxxsQlis"
   },
   {
     "grado": "Preescolar",
@@ -228,7 +228,7 @@
     "tema": "Noción de tamaño",
     "palabra": "Grande",
     "image": "/assets/images/grande.png",
-    "video": ""
+    "video": "https://youtu.be/A5Kcl288vOo"
   },
   {
     "grado": "Preescolar",
@@ -263,14 +263,14 @@
     "tema": "Noción de tamaño",
     "palabra": "alto",
     "image": "/assets/images/alto.png",
-    "video": ""
+    "video": "https://youtu.be/2g_rPM2Ir7s"
   },
   {
     "grado": "Preescolar",
     "tema": "Noción de tamaño",
     "palabra": "Bajo",
     "image": "/assets/images/bajo.png",
-    "video": ""
+    "video": "https://youtu.be/LNXoTzSVYsM"
   },
   {
     "grado": "Preescolar",
@@ -291,7 +291,7 @@
     "tema": "Noción temporal",
     "palabra": "Ayer",
     "image": "/assets/images/ayer.png",
-    "video": ""
+    "video": "https://youtu.be/RDZcpVz1ROg"
   },
   {
     "grado": "Preescolar",
@@ -312,7 +312,7 @@
     "tema": "Numeros",
     "palabra": "Uno",
     "image": "/assets/images/uno.png",
-    "video": ""
+    "video": "https://youtu.be/tY1J669yyps"
   },
   {
     "grado": "Preescolar",
@@ -459,6 +459,6 @@
     "tema": "Simbolos",
     "palabra": "Bandera",
     "image": "/assets/images/bandera.png",
-    "video": ""
+    "video": "https://youtu.be/FwhM5wC2XhU"
   }
 ]

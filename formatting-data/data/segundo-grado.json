@@ -1,940 +1,940 @@
 [
   {
-     "grado":"Segundo grado",
-     "tema":"Alimentos",
-     "palabra":"Cafe",
-     "image":"/assets/images/cafe.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Alimentos",
+    "palabra": "Cafe",
+    "image": "/assets/images/cafe.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Alimentos",
-     "palabra":"Gelatina",
-     "image":"/assets/images/gelatina.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Alimentos",
+    "palabra": "Gelatina",
+    "image": "/assets/images/gelatina.png",
+    "video": "https://youtu.be/4vb_IaHtA2w"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Alimentos",
-     "palabra":"Ponque",
-     "image":"/assets/images/ponque.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Alimentos",
+    "palabra": "Ponque",
+    "image": "/assets/images/ponque.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Alimentos",
-     "palabra":"Sopa",
-     "image":"/assets/images/sopa.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Alimentos",
+    "palabra": "Sopa",
+    "image": "/assets/images/sopa.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Alimentos",
-     "palabra":"Te",
-     "image":"/assets/images/te.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Alimentos",
+    "palabra": "Te",
+    "image": "/assets/images/te.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Animales",
-     "palabra":"Abeja",
-     "image":"/assets/images/abeja.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Animales",
+    "palabra": "Abeja",
+    "image": "/assets/images/abeja.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Animales",
-     "palabra":"Burro",
-     "image":"/assets/images/burro.png",
-     "video":"https://www.youtube.com/watch?v=QS6Glqh-YrY"
+    "grado": "Segundo grado",
+    "tema": "Animales",
+    "palabra": "Burro",
+    "image": "/assets/images/burro.png",
+    "video": "https://www.youtube.com/watch?v=QS6Glqh-YrY"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Animales",
-     "palabra":"Cochino",
-     "image":"/assets/images/cochino.png",
-     "video":"https://www.youtube.com/watch?v=yW1DpXdIPlg"
+    "grado": "Segundo grado",
+    "tema": "Animales",
+    "palabra": "Cochino",
+    "image": "/assets/images/cochino.png",
+    "video": "https://www.youtube.com/watch?v=yW1DpXdIPlg"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Animales",
-     "palabra":"Oveja",
-     "image":"/assets/images/oveja.png",
-     "video":"https://www.youtube.com/watch?v=v9Q4XrKlKVM"
+    "grado": "Segundo grado",
+    "tema": "Animales",
+    "palabra": "Oveja",
+    "image": "/assets/images/oveja.png",
+    "video": "https://www.youtube.com/watch?v=v9Q4XrKlKVM"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Animales",
-     "palabra":"Paloma",
-     "image":"/assets/images/paloma.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Animales",
+    "palabra": "Paloma",
+    "image": "/assets/images/paloma.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Arboles",
-     "palabra":"Bucare ceibo",
-     "image":"/assets/images/bucare-ceibo.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Arboles",
+    "palabra": "Bucare ceibo",
+    "image": "/assets/images/bucare-ceibo.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Colores",
-     "palabra":"Amarillo",
-     "image":"/assets/images/amarillo.png",
-     "video":"https://www.youtube.com/watch?v=w6mNcISiSmg"
+    "grado": "Segundo grado",
+    "tema": "Colores",
+    "palabra": "Amarillo",
+    "image": "/assets/images/amarillo.png",
+    "video": "https://www.youtube.com/watch?v=w6mNcISiSmg"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Colores",
-     "palabra":"Azul",
-     "image":"/assets/images/azul.png",
-     "video":"https://www.youtube.com/watch?v=sQP0UeO_ta8"
+    "grado": "Segundo grado",
+    "tema": "Colores",
+    "palabra": "Azul",
+    "image": "/assets/images/azul.png",
+    "video": "https://www.youtube.com/watch?v=sQP0UeO_ta8"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Colores",
-     "palabra":"Morado",
-     "image":"/assets/images/morado.png",
-     "video":"https://www.youtube.com/watch?v=p-ASmKkSYCM"
+    "grado": "Segundo grado",
+    "tema": "Colores",
+    "palabra": "Morado",
+    "image": "/assets/images/morado.png",
+    "video": "https://www.youtube.com/watch?v=p-ASmKkSYCM"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Colores",
-     "palabra":"Negro",
-     "image":"/assets/images/negro.png",
-     "video":"https://www.youtube.com/watch?v=eflrccjM1DQ"
+    "grado": "Segundo grado",
+    "tema": "Colores",
+    "palabra": "Negro",
+    "image": "/assets/images/negro.png",
+    "video": "https://www.youtube.com/watch?v=eflrccjM1DQ"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Colores",
-     "palabra":"Verde",
-     "image":"/assets/images/verde.png",
-     "video":"https://www.youtube.com/watch?v=GhLzHYXTkI8"
+    "grado": "Segundo grado",
+    "tema": "Colores",
+    "palabra": "Verde",
+    "image": "/assets/images/verde.png",
+    "video": "https://www.youtube.com/watch?v=GhLzHYXTkI8"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Días de la semana",
-     "palabra":"Domingo",
-     "image":"/assets/images/domingo.png",
-     "video":"https://www.youtube.com/watch?v=IDuJh0W59cM"
+    "grado": "Segundo grado",
+    "tema": "Días de la semana",
+    "palabra": "Domingo",
+    "image": "/assets/images/domingo.png",
+    "video": "https://www.youtube.com/watch?v=IDuJh0W59cM"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Días de la semana",
-     "palabra":"Lunes",
-     "image":"/assets/images/lunes.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Días de la semana",
+    "palabra": "Lunes",
+    "image": "/assets/images/lunes.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Días de la semana",
-     "palabra":"Martes",
-     "image":"/assets/images/martes.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Días de la semana",
+    "palabra": "Martes",
+    "image": "/assets/images/martes.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Días de la semana",
-     "palabra":"Miercoles",
-     "image":"/assets/images/miercoles.png",
-     "video":"https://www.youtube.com/watch?v=JT2CsVLRnZ0"
+    "grado": "Segundo grado",
+    "tema": "Días de la semana",
+    "palabra": "Miercoles",
+    "image": "/assets/images/miercoles.png",
+    "video": "https://www.youtube.com/watch?v=JT2CsVLRnZ0"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Días de la semana",
-     "palabra":"Viernes",
-     "image":"/assets/images/viernes.png",
-     "video":"https://www.youtube.com/watch?v=hvZBmEt1gwQ"
+    "grado": "Segundo grado",
+    "tema": "Días de la semana",
+    "palabra": "Viernes",
+    "image": "/assets/images/viernes.png",
+    "video": "https://www.youtube.com/watch?v=hvZBmEt1gwQ"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Enfermedades",
-     "palabra":"Ah1n1",
-     "image":"/assets/images/ah1n1.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Enfermedades",
+    "palabra": "Ah1n1",
+    "image": "/assets/images/ah1n1.png",
+    "video": "https://youtu.be/87g_RMqcN7Y"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Enfermedades",
-     "palabra":"Chikungunya",
-     "image":"/assets/images/chikungunya.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Enfermedades",
+    "palabra": "Chikungunya",
+    "image": "/assets/images/chikungunya.png",
+    "video": "https://youtu.be/9ZRuYuXMQI0"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Enfermedades",
-     "palabra":"Otitis",
-     "image":"/assets/images/otitis.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Enfermedades",
+    "palabra": "Otitis",
+    "image": "/assets/images/otitis.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Figuras geométricas",
-     "palabra":"Circulo",
-     "image":"/assets/images/circulo.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Figuras geométricas",
+    "palabra": "Circulo",
+    "image": "/assets/images/circulo.png",
+    "video": "https://youtu.be/sEO7-uCKZg8"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Figuras geométricas",
-     "palabra":"Cuadrado",
-     "image":"/assets/images/cuadrado.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Figuras geométricas",
+    "palabra": "Cuadrado",
+    "image": "/assets/images/cuadrado.png",
+    "video": "https://youtu.be/D7EITSAf1SA"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Figuras geométricas",
-     "palabra":"Esfera",
-     "image":"/assets/images/esfera.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Figuras geométricas",
+    "palabra": "Esfera",
+    "image": "/assets/images/esfera.png",
+    "video": "https://youtu.be/jQKI8YlQstw"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Figuras geométricas",
-     "palabra":"Rectangulo",
-     "image":"/assets/images/rectangulo.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Figuras geométricas",
+    "palabra": "Rectangulo",
+    "image": "/assets/images/rectangulo.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Figuras geométricas",
-     "palabra":"Triangulo",
-     "image":"/assets/images/triangulo.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Figuras geométricas",
+    "palabra": "Triangulo",
+    "image": "/assets/images/triangulo.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Frutas",
-     "palabra":"Cambur",
-     "image":"/assets/images/cambur.png",
-     "video":"https://www.youtube.com/watch?v=lyypmRh4I7M"
+    "grado": "Segundo grado",
+    "tema": "Frutas",
+    "palabra": "Cambur",
+    "image": "/assets/images/cambur.png",
+    "video": "https://www.youtube.com/watch?v=lyypmRh4I7M"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Frutas",
-     "palabra":"Coco",
-     "image":"/assets/images/coco.png",
-     "video":"https://www.youtube.com/watch?v=KAgVXliO79o"
+    "grado": "Segundo grado",
+    "tema": "Frutas",
+    "palabra": "Coco",
+    "image": "/assets/images/coco.png",
+    "video": "https://www.youtube.com/watch?v=KAgVXliO79o"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Frutas",
-     "palabra":"Limon",
-     "image":"/assets/images/limon.png",
-     "video":"https://www.youtube.com/watch?v=1FrsnuMclN4"
+    "grado": "Segundo grado",
+    "tema": "Frutas",
+    "palabra": "Limon",
+    "image": "/assets/images/limon.png",
+    "video": "https://www.youtube.com/watch?v=1FrsnuMclN4"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Frutas",
-     "palabra":"Melon",
-     "image":"/assets/images/melon.png",
-     "video":"https://www.youtube.com/watch?v=r6HDQiHTmjE"
+    "grado": "Segundo grado",
+    "tema": "Frutas",
+    "palabra": "Melon",
+    "image": "/assets/images/melon.png",
+    "video": "https://www.youtube.com/watch?v=r6HDQiHTmjE"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Frutas",
-     "palabra":"Uva",
-     "image":"/assets/images/uva.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Frutas",
+    "palabra": "Uva",
+    "image": "/assets/images/uva.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Juguetes/Juegos/Deportes",
-     "palabra":"Bate",
-     "image":"/assets/images/bate.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Juguetes/Juegos/Deportes",
+    "palabra": "Bate",
+    "image": "/assets/images/bate.png",
+    "video": "https://youtu.be/AFaZ6sUnfFA"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Juguetes/Juegos/Deportes",
-     "palabra":"Futbol",
-     "image":"/assets/images/futbol.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Juguetes/Juegos/Deportes",
+    "palabra": "Futbol",
+    "image": "/assets/images/futbol.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Juguetes/Juegos/Deportes",
-     "palabra":"Natacion",
-     "image":"/assets/images/natacion.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Juguetes/Juegos/Deportes",
+    "palabra": "Natacion",
+    "image": "/assets/images/natacion.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Juguetes/Juegos/Deportes",
-     "palabra":"Perinola",
-     "image":"/assets/images/perinola.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Juguetes/Juegos/Deportes",
+    "palabra": "Perinola",
+    "image": "/assets/images/perinola.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Juguetes/Juegos/Deportes",
-     "palabra":"Yoyo",
-     "image":"/assets/images/yoyo.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Juguetes/Juegos/Deportes",
+    "palabra": "Yoyo",
+    "image": "/assets/images/yoyo.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Lugares",
-     "palabra":"Comedor",
-     "image":"/assets/images/comedor.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Lugares",
+    "palabra": "Comedor",
+    "image": "/assets/images/comedor.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Lugares",
-     "palabra":"Heladeria",
-     "image":"/assets/images/heladeria.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Lugares",
+    "palabra": "Heladeria",
+    "image": "/assets/images/heladeria.png",
+    "video": "https://youtu.be/HOtrXedASLw"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Lugares",
-     "palabra":"Mercado",
-     "image":"/assets/images/mercado.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Lugares",
+    "palabra": "Mercado",
+    "image": "/assets/images/mercado.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Lugares",
-     "palabra":"Patio",
-     "image":"/assets/images/patio.png",
-     "video":"https://www.youtube.com/watch?v=dlSi7ZicpPg"
+    "grado": "Segundo grado",
+    "tema": "Lugares",
+    "palabra": "Patio",
+    "image": "/assets/images/patio.png",
+    "video": "https://www.youtube.com/watch?v=dlSi7ZicpPg"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Lugares",
-     "palabra":"Salon",
-     "image":"/assets/images/salon.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Lugares",
+    "palabra": "Salon",
+    "image": "/assets/images/salon.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Lugares de merida",
-     "palabra":"Acuario",
-     "image":"/assets/images/acuario.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Lugares de merida",
+    "palabra": "Acuario",
+    "image": "/assets/images/acuario.png",
+    "video": "https://youtu.be/LZUrVjbL_II"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Lugares de merida",
-     "palabra":"Catedral",
-     "image":"/assets/images/catedral.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Lugares de merida",
+    "palabra": "Catedral",
+    "image": "/assets/images/catedral.png",
+    "video": "https://youtu.be/5Ws4lssHQR4"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Lugares de merida",
-     "palabra":"Plaza bolivar",
-     "image":"/assets/images/plaza-bolivar.png",
-     "video":"https://www.youtube.com/watch?v=JblGzPmscGU"
+    "grado": "Segundo grado",
+    "tema": "Lugares de merida",
+    "palabra": "Plaza bolivar",
+    "image": "/assets/images/plaza-bolivar.png",
+    "video": "https://www.youtube.com/watch?v=JblGzPmscGU"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Medios de transporte",
-     "palabra":"Avion",
-     "image":"/assets/images/avion.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Medios de transporte",
+    "palabra": "Avion",
+    "image": "/assets/images/avion.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Medios de transporte",
-     "palabra":"Buseta",
-     "image":"/assets/images/buseta.png",
-     "video":"https://www.youtube.com/watch?v=j0OTrptZaVQ"
+    "grado": "Segundo grado",
+    "tema": "Medios de transporte",
+    "palabra": "Buseta",
+    "image": "/assets/images/buseta.png",
+    "video": "https://www.youtube.com/watch?v=j0OTrptZaVQ"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Medios de transporte",
-     "palabra":"Camion",
-     "image":"/assets/images/camion.png",
-     "video":"https://www.youtube.com/watch?v=rFVhDBsxT5U"
+    "grado": "Segundo grado",
+    "tema": "Medios de transporte",
+    "palabra": "Camion",
+    "image": "/assets/images/camion.png",
+    "video": "https://www.youtube.com/watch?v=rFVhDBsxT5U"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Medios de transporte",
-     "palabra":"Trolcable",
-     "image":"/assets/images/trolcable.png",
-     "video":"https://www.youtube.com/watch?v=OQ7hBKuukOo"
+    "grado": "Segundo grado",
+    "tema": "Medios de transporte",
+    "palabra": "Trolcable",
+    "image": "/assets/images/trolcable.png",
+    "video": "https://www.youtube.com/watch?v=OQ7hBKuukOo"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Medios de transporte",
-     "palabra":"Trolebus",
-     "image":"/assets/images/trolebus.png",
-     "video":"https://www.youtube.com/watch?v=9JQzoLFGmHA"
+    "grado": "Segundo grado",
+    "tema": "Medios de transporte",
+    "palabra": "Trolebus",
+    "image": "/assets/images/trolebus.png",
+    "video": "https://www.youtube.com/watch?v=9JQzoLFGmHA"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Meses del año",
-     "palabra":"Agosto",
-     "image":"/assets/images/agosto.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Meses del año",
+    "palabra": "Agosto",
+    "image": "/assets/images/agosto.png",
+    "video": "https://youtu.be/ajUrqgYeLiE"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Meses del año",
-     "palabra":"Diciembre",
-     "image":"/assets/images/diciembre.png",
-     "video":"https://www.youtube.com/watch?v=uvgOVLoAxEo"
+    "grado": "Segundo grado",
+    "tema": "Meses del año",
+    "palabra": "Diciembre",
+    "image": "/assets/images/diciembre.png",
+    "video": "https://www.youtube.com/watch?v=uvgOVLoAxEo"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Meses del año",
-     "palabra":"Enero",
-     "image":"/assets/images/enero.png",
-     "video":"https://www.youtube.com/watch?v=rOQXEBThhTY"
+    "grado": "Segundo grado",
+    "tema": "Meses del año",
+    "palabra": "Enero",
+    "image": "/assets/images/enero.png",
+    "video": "https://www.youtube.com/watch?v=rOQXEBThhTY"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Meses del año",
-     "palabra":"Febrero",
-     "image":"/assets/images/febrero.png",
-     "video":"https://www.youtube.com/watch?v=MrX_vJ_H4bE"
+    "grado": "Segundo grado",
+    "tema": "Meses del año",
+    "palabra": "Febrero",
+    "image": "/assets/images/febrero.png",
+    "video": "https://www.youtube.com/watch?v=MrX_vJ_H4bE"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Meses del año",
-     "palabra":"Octubre",
-     "image":"/assets/images/octubre.png",
-     "video":"https://www.youtube.com/watch?v=WI6IjDhr9Vs"
+    "grado": "Segundo grado",
+    "tema": "Meses del año",
+    "palabra": "Octubre",
+    "image": "/assets/images/octubre.png",
+    "video": "https://www.youtube.com/watch?v=WI6IjDhr9Vs"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de cantidad",
-     "palabra":"Cantidad",
-     "image":"/assets/images/cantidad.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de cantidad",
+    "palabra": "Cantidad",
+    "image": "/assets/images/cantidad.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de cantidad",
-     "palabra":"Cifra",
-     "image":"/assets/images/cifra.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de cantidad",
+    "palabra": "Cifra",
+    "image": "/assets/images/cifra.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de cantidad",
-     "palabra":"Igual que",
-     "image":"/assets/images/igual-que.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de cantidad",
+    "palabra": "Igual que",
+    "image": "/assets/images/igual-que.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de cantidad",
-     "palabra":"Mayor que",
-     "image":"/assets/images/mayor-que.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de cantidad",
+    "palabra": "Mayor que",
+    "image": "/assets/images/mayor-que.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de cantidad",
-     "palabra":"Menos que",
-     "image":"/assets/images/menos-que.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de cantidad",
+    "palabra": "Menos que",
+    "image": "/assets/images/menos-que.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de tamaño",
-     "palabra":"Alto",
-     "image":"/assets/images/alto.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de tamaño",
+    "palabra": "Alto",
+    "image": "/assets/images/alto.png",
+    "video": "https://youtu.be/2g_rPM2Ir7s"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de tamaño",
-     "palabra":"Corto",
-     "image":"/assets/images/corto.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de tamaño",
+    "palabra": "Corto",
+    "image": "/assets/images/corto.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de tamaño",
-     "palabra":"Grande",
-     "image":"/assets/images/grande.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de tamaño",
+    "palabra": "Grande",
+    "image": "/assets/images/grande.png",
+    "video": "https://youtu.be/A5Kcl288vOo"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de tamaño",
-     "palabra":"Largo",
-     "image":"/assets/images/largo.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de tamaño",
+    "palabra": "Largo",
+    "image": "/assets/images/largo.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion de tamaño",
-     "palabra":"Pequeño",
-     "image":"/assets/images/pequeno.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion de tamaño",
+    "palabra": "Pequeño",
+    "image": "/assets/images/pequeno.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion espacial",
-     "palabra":"Fuera",
-     "image":"/assets/images/fuera.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion espacial",
+    "palabra": "Fuera",
+    "image": "/assets/images/fuera.png",
+    "video": "https://youtu.be/MQ40FfFybXk"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion espacial",
-     "palabra":"Alla",
-     "image":"/assets/images/alla.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion espacial",
+    "palabra": "Alla",
+    "image": "/assets/images/alla.png",
+    "video": "https://youtu.be/HZDPy5SnoV4"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion espacial",
-     "palabra":"Anterior",
-     "image":"/assets/images/anterior.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion espacial",
+    "palabra": "Anterior",
+    "image": "/assets/images/anterior.png",
+    "video": "https://youtu.be/nJF4rA3SBHc"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion espacial",
-     "palabra":"Aqui",
-     "image":"/assets/images/aqui.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion espacial",
+    "palabra": "Aqui",
+    "image": "/assets/images/aqui.png",
+    "video": "https://youtu.be/reTtOLANJK8"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion espacial",
-     "palabra":"Dentro",
-     "image":"/assets/images/dentro.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion espacial",
+    "palabra": "Dentro",
+    "image": "/assets/images/dentro.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion temporal",
-     "palabra":"Ayer",
-     "image":"/assets/images/ayer.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion temporal",
+    "palabra": "Ayer",
+    "image": "/assets/images/ayer.png",
+    "video": "https://youtu.be/RDZcpVz1ROg"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion temporal",
-     "palabra":"Despues",
-     "image":"/assets/images/despues.png",
-     "video":"https://www.youtube.com/watch?v=-UY25i5EQmw"
+    "grado": "Segundo grado",
+    "tema": "Nocion temporal",
+    "palabra": "Despues",
+    "image": "/assets/images/despues.png",
+    "video": "https://www.youtube.com/watch?v=-UY25i5EQmw"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion temporal",
-     "palabra":"Hoy",
-     "image":"/assets/images/hoy.png",
-     "video":"https://www.youtube.com/watch?v=d14MOlJ29Tw"
+    "grado": "Segundo grado",
+    "tema": "Nocion temporal",
+    "palabra": "Hoy",
+    "image": "/assets/images/hoy.png",
+    "video": "https://www.youtube.com/watch?v=d14MOlJ29Tw"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion temporal",
-     "palabra":"Mañana",
-     "image":"/assets/images/manana.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion temporal",
+    "palabra": "Mañana",
+    "image": "/assets/images/manana.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Nocion temporal",
-     "palabra":"Pasado mañana",
-     "image":"/assets/images/pasado-manana.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Nocion temporal",
+    "palabra": "Pasado mañana",
+    "image": "/assets/images/pasado-manana.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Numeros",
-     "palabra":"Cinco",
-     "image":"/assets/images/cinco.png",
-     "video":"https://www.youtube.com/watch?v=yA1oyUGvAU0"
+    "grado": "Segundo grado",
+    "tema": "Numeros",
+    "palabra": "Cinco",
+    "image": "/assets/images/cinco.png",
+    "video": "https://www.youtube.com/watch?v=yA1oyUGvAU0"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Numeros",
-     "palabra":"Nueve",
-     "image":"/assets/images/nueve.png",
-     "video":"https://www.youtube.com/watch?v=XotNlw8FaPo"
+    "grado": "Segundo grado",
+    "tema": "Numeros",
+    "palabra": "Nueve",
+    "image": "/assets/images/nueve.png",
+    "video": "https://www.youtube.com/watch?v=XotNlw8FaPo"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Numeros",
-     "palabra":"Ocho",
-     "image":"/assets/images/ocho.png",
-     "video":"https://www.youtube.com/watch?v=YYr_VIQLprM"
+    "grado": "Segundo grado",
+    "tema": "Numeros",
+    "palabra": "Ocho",
+    "image": "/assets/images/ocho.png",
+    "video": "https://www.youtube.com/watch?v=YYr_VIQLprM"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Numeros",
-     "palabra":"Tres",
-     "image":"/assets/images/tres.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Numeros",
+    "palabra": "Tres",
+    "image": "/assets/images/tres.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Numeros",
-     "palabra":"Uno",
-     "image":"/assets/images/uno.png",
-     "video":"https://www.youtube.com/watch?v=tY1J669yyps"
+    "grado": "Segundo grado",
+    "tema": "Numeros",
+    "palabra": "Uno",
+    "image": "/assets/images/uno.png",
+    "video": "https://www.youtube.com/watch?v=tY1J669yyps"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Objetos del hogar",
-     "palabra":"Celular",
-     "image":"/assets/images/celular.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Celular",
+    "image": "/assets/images/celular.png",
+    "video": "https://youtu.be/eW14u8Sa4_Y"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Objetos del hogar",
-     "palabra":"Lampara",
-     "image":"/assets/images/lampara.png",
-     "video":"https://www.youtube.com/watch?v=tmrIUUJy1gE"
+    "grado": "Segundo grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Lampara",
+    "image": "/assets/images/lampara.png",
+    "video": "https://www.youtube.com/watch?v=tmrIUUJy1gE"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Objetos del hogar",
-     "palabra":"Radio",
-     "image":"/assets/images/radio.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Radio",
+    "image": "/assets/images/radio.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Objetos del hogar",
-     "palabra":"Silla",
-     "image":"/assets/images/silla.png",
-     "video":"https://www.youtube.com/watch?v=sex8IV3UdBA"
+    "grado": "Segundo grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Silla",
+    "image": "/assets/images/silla.png",
+    "video": "https://www.youtube.com/watch?v=sex8IV3UdBA"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Objetos del hogar",
-     "palabra":"Televisor",
-     "image":"/assets/images/televisor.png",
-     "video":"https://www.youtube.com/watch?v=zgzaZCprR-4"
+    "grado": "Segundo grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Televisor",
+    "image": "/assets/images/televisor.png",
+    "video": "https://www.youtube.com/watch?v=zgzaZCprR-4"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Oficios y profesiones",
-     "palabra":"Albañil",
-     "image":"/assets/images/albanil.png",
-     "video":"https://www.youtube.com/watch?v=kNLfzp_lKjk"
+    "grado": "Segundo grado",
+    "tema": "Oficios y profesiones",
+    "palabra": "Albañil",
+    "image": "/assets/images/albanil.png",
+    "video": "https://www.youtube.com/watch?v=kNLfzp_lKjk"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Oficios y profesiones",
-     "palabra":"Carnicero",
-     "image":"/assets/images/carnicero.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Oficios y profesiones",
+    "palabra": "Carnicero",
+    "image": "/assets/images/carnicero.png",
+    "video": "https://youtu.be/jCLIf6ZtoKM"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Oficios y profesiones",
-     "palabra":"Enfermera",
-     "image":"/assets/images/enfermera.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Oficios y profesiones",
+    "palabra": "Enfermera",
+    "image": "/assets/images/enfermera.png",
+    "video": "https://youtu.be/FCW0_oPnRpw"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Oficios y profesiones",
-     "palabra":"Mecanico",
-     "image":"/assets/images/mecanico.png",
-     "video":"https://www.youtube.com/watch?v=R709LFAd7hQ"
+    "grado": "Segundo grado",
+    "tema": "Oficios y profesiones",
+    "palabra": "Mecanico",
+    "image": "/assets/images/mecanico.png",
+    "video": "https://www.youtube.com/watch?v=R709LFAd7hQ"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Oficios y profesiones",
-     "palabra":"Odontologo",
-     "image":"/assets/images/odontologo.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Oficios y profesiones",
+    "palabra": "Odontologo",
+    "image": "/assets/images/odontologo.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Partes del cuerpo",
-     "palabra":"Cabello",
-     "image":"/assets/images/cabello.png",
-     "video":"https://www.youtube.com/watch?v=7LWKLhC7Gvs"
+    "grado": "Segundo grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Cabello",
+    "image": "/assets/images/cabello.png",
+    "video": "https://www.youtube.com/watch?v=7LWKLhC7Gvs"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Partes del cuerpo",
-     "palabra":"Dedos",
-     "image":"/assets/images/dedos.png",
-     "video":"https://www.youtube.com/watch?v=UWua2PTe-vw"
+    "grado": "Segundo grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Dedos",
+    "image": "/assets/images/dedos.png",
+    "video": "https://www.youtube.com/watch?v=UWua2PTe-vw"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Partes del cuerpo",
-     "palabra":"Lengua",
-     "image":"/assets/images/lengua.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Lengua",
+    "image": "/assets/images/lengua.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Partes del cuerpo",
-     "palabra":"Oreja",
-     "image":"/assets/images/oreja.png",
-     "video":"https://www.youtube.com/watch?v=K0hxPGd9qik"
+    "grado": "Segundo grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Oreja",
+    "image": "/assets/images/oreja.png",
+    "video": "https://www.youtube.com/watch?v=K0hxPGd9qik"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Partes del cuerpo",
-     "palabra":"Pene",
-     "image":"/assets/images/pene.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Pene",
+    "image": "/assets/images/pene.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personajes historicos",
-     "palabra":"Andres bello",
-     "image":"/assets/images/andres-bello.png",
-     "video":"https://www.youtube.com/watch?v=mNLPOJP2xew"
+    "grado": "Segundo grado",
+    "tema": "Personajes historicos",
+    "palabra": "Andres bello",
+    "image": "/assets/images/andres-bello.png",
+    "video": "https://www.youtube.com/watch?v=mNLPOJP2xew"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personajes historicos",
-     "palabra":"Antonio jose de sucre",
-     "image":"/assets/images/antonio-jose-de-sucre.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Personajes historicos",
+    "palabra": "Antonio jose de sucre",
+    "image": "/assets/images/antonio-jose-de-sucre.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personajes historicos",
-     "palabra":"Josefa camejo",
-     "image":"/assets/images/josefa-camejo.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Personajes historicos",
+    "palabra": "Josefa camejo",
+    "image": "/assets/images/josefa-camejo.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personajes historicos",
-     "palabra":"Negro primero",
-     "image":"/assets/images/negro-primero.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Personajes historicos",
+    "palabra": "Negro primero",
+    "image": "/assets/images/negro-primero.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personajes historicos",
-     "palabra":"Simon bolivar",
-     "image":"/assets/images/simon-bolivar.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Personajes historicos",
+    "palabra": "Simon bolivar",
+    "image": "/assets/images/simon-bolivar.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personas",
-     "palabra":"Abuela",
-     "image":"/assets/images/abuela.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Personas",
+    "palabra": "Abuela",
+    "image": "/assets/images/abuela.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personas",
-     "palabra":"Hija",
-     "image":"/assets/images/hija.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Personas",
+    "palabra": "Hija",
+    "image": "/assets/images/hija.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personas",
-     "palabra":"Hijo",
-     "image":"/assets/images/hijo.png",
-     "video":"https://www.youtube.com/watch?v=X__iXqiT4qg"
+    "grado": "Segundo grado",
+    "tema": "Personas",
+    "palabra": "Hijo",
+    "image": "/assets/images/hijo.png",
+    "video": "https://www.youtube.com/watch?v=X__iXqiT4qg"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personas",
-     "palabra":"Tia",
-     "image":"/assets/images/tia.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Personas",
+    "palabra": "Tia",
+    "image": "/assets/images/tia.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Personas",
-     "palabra":"Tio",
-     "image":"/assets/images/tio.png",
-     "video":"https://www.youtube.com/watch?v=lZFhV-5_PA4"
+    "grado": "Segundo grado",
+    "tema": "Personas",
+    "palabra": "Tio",
+    "image": "/assets/images/tio.png",
+    "video": "https://www.youtube.com/watch?v=lZFhV-5_PA4"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Ropa",
-     "palabra":"Bota",
-     "image":"/assets/images/bota.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Ropa",
+    "palabra": "Bota",
+    "image": "/assets/images/bota.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Ropa",
-     "palabra":"Falda",
-     "image":"/assets/images/falda.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Ropa",
+    "palabra": "Falda",
+    "image": "/assets/images/falda.png",
+    "video": "https://youtu.be/yB2fnIrmsME"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Ropa",
-     "palabra":"Franela",
-     "image":"/assets/images/franela.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Ropa",
+    "palabra": "Franela",
+    "image": "/assets/images/franela.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Ropa",
-     "palabra":"Gorra",
-     "image":"/assets/images/gorra.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Ropa",
+    "palabra": "Gorra",
+    "image": "/assets/images/gorra.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Ropa",
-     "palabra":"Vestidos",
-     "image":"/assets/images/vestidos.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Ropa",
+    "palabra": "Vestidos",
+    "image": "/assets/images/vestidos.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Simbolos",
-     "palabra":"Araguaney",
-     "image":"/assets/images/araguaney.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Simbolos",
+    "palabra": "Araguaney",
+    "image": "/assets/images/araguaney.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Simbolos",
-     "palabra":"Bandera",
-     "image":"/assets/images/bandera.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Simbolos",
+    "palabra": "Bandera",
+    "image": "/assets/images/bandera.png",
+    "video": "https://youtu.be/FwhM5wC2XhU"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Simbolos",
-     "palabra":"Orquidea",
-     "image":"/assets/images/orquidea.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Simbolos",
+    "palabra": "Orquidea",
+    "image": "/assets/images/orquidea.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Simbolos",
-     "palabra":"Turpial",
-     "image":"/assets/images/turpial.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Simbolos",
+    "palabra": "Turpial",
+    "image": "/assets/images/turpial.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Sintomas",
-     "palabra":"Dolor de cabeza",
-     "image":"/assets/images/dolor-de-cabeza.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Sintomas",
+    "palabra": "Dolor de cabeza",
+    "image": "/assets/images/dolor-de-cabeza.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Sintomas",
-     "palabra":"Fiebre",
-     "image":"/assets/images/fiebre.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Sintomas",
+    "palabra": "Fiebre",
+    "image": "/assets/images/fiebre.png",
+    "video": "https://youtu.be/NCPFxZLlmpE"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Sintomas",
-     "palabra":"Mareo",
-     "image":"/assets/images/mareo.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Sintomas",
+    "palabra": "Mareo",
+    "image": "/assets/images/mareo.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Sintomas",
-     "palabra":"Picazon",
-     "image":"/assets/images/picazon.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Sintomas",
+    "palabra": "Picazon",
+    "image": "/assets/images/picazon.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Sintomas",
-     "palabra":"Tos",
-     "image":"/assets/images/tos.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Sintomas",
+    "palabra": "Tos",
+    "image": "/assets/images/tos.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Utensilios de  cocina",
-     "palabra":"Cuchillo",
-     "image":"/assets/images/cuchillo.png",
-     "video":"https://www.youtube.com/watch?v=I3iUc_kSzoM"
+    "grado": "Segundo grado",
+    "tema": "Utensilios de  cocina",
+    "palabra": "Cuchillo",
+    "image": "/assets/images/cuchillo.png",
+    "video": "https://www.youtube.com/watch?v=I3iUc_kSzoM"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Utensilios de  cocina",
-     "palabra":"Jarra",
-     "image":"/assets/images/jarra.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Utensilios de  cocina",
+    "palabra": "Jarra",
+    "image": "/assets/images/jarra.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Utensilios de  cocina",
-     "palabra":"Sarten",
-     "image":"/assets/images/sarten.png",
-     "video":"https://www.youtube.com/watch?v=SOiL8MFHWpU"
+    "grado": "Segundo grado",
+    "tema": "Utensilios de  cocina",
+    "palabra": "Sarten",
+    "image": "/assets/images/sarten.png",
+    "video": "https://www.youtube.com/watch?v=SOiL8MFHWpU"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Utiles escolares",
-     "palabra":"Canaima",
-     "image":"/assets/images/canaima.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Utiles escolares",
+    "palabra": "Canaima",
+    "image": "/assets/images/canaima.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Utiles escolares",
-     "palabra":"Libro",
-     "image":"/assets/images/libro.png",
-     "video":"https://www.youtube.com/watch?v=w0aMLylYsbE"
+    "grado": "Segundo grado",
+    "tema": "Utiles escolares",
+    "palabra": "Libro",
+    "image": "/assets/images/libro.png",
+    "video": "https://www.youtube.com/watch?v=w0aMLylYsbE"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Utiles escolares",
-     "palabra":"Morral",
-     "image":"/assets/images/morral.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Utiles escolares",
+    "palabra": "Morral",
+    "image": "/assets/images/morral.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Utiles escolares",
-     "palabra":"Pega",
-     "image":"/assets/images/pega.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Utiles escolares",
+    "palabra": "Pega",
+    "image": "/assets/images/pega.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Utiles escolares",
-     "palabra":"Regla",
-     "image":"/assets/images/regla.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Utiles escolares",
+    "palabra": "Regla",
+    "image": "/assets/images/regla.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Verduras y hortalizas",
-     "palabra":"Cebolla",
-     "image":"/assets/images/cebolla.png",
-     "video":"Cebolla"
+    "grado": "Segundo grado",
+    "tema": "Verduras y hortalizas",
+    "palabra": "Cebolla",
+    "image": "/assets/images/cebolla.png",
+    "video": "Cebolla"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Verduras y hortalizas",
-     "palabra":"Jojoto",
-     "image":"/assets/images/jojoto.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Verduras y hortalizas",
+    "palabra": "Jojoto",
+    "image": "/assets/images/jojoto.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Verduras y hortalizas",
-     "palabra":"Remolacha",
-     "image":"/assets/images/remolacha.png",
-     "video":"https://www.youtube.com/watch?v=CuFkrmk_sTM"
+    "grado": "Segundo grado",
+    "tema": "Verduras y hortalizas",
+    "palabra": "Remolacha",
+    "image": "/assets/images/remolacha.png",
+    "video": "https://www.youtube.com/watch?v=CuFkrmk_sTM"
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Verduras y hortalizas",
-     "palabra":"Vainita",
-     "image":"/assets/images/vainita.png",
-     "video":""
+    "grado": "Segundo grado",
+    "tema": "Verduras y hortalizas",
+    "palabra": "Vainita",
+    "image": "/assets/images/vainita.png",
+    "video": ""
   },
   {
-     "grado":"Segundo grado",
-     "tema":"Verduras y hortalizas",
-     "palabra":"Zanahoria",
-     "image":"/assets/images/zanahoria.png",
-     "video":"https://www.youtube.com/watch?v=JEuax_dE1Vc"
+    "grado": "Segundo grado",
+    "tema": "Verduras y hortalizas",
+    "palabra": "Zanahoria",
+    "image": "/assets/images/zanahoria.png",
+    "video": "https://www.youtube.com/watch?v=JEuax_dE1Vc"
   }
 ]
