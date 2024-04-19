@@ -33,6 +33,7 @@ function updateVideoUrlsOnFile(filePath, dataObject) {
     if (item.video === '') {
 
       if (dataObject[sanatizeStr(item.palabra)]) {
+        item.video = dataObject[sanatizeStr(item.palabra)];
         updateCount += 1;
       }
     }
@@ -41,15 +42,15 @@ function updateVideoUrlsOnFile(filePath, dataObject) {
 
 
   // Path to the output JSON file
-  // const outputFilePath = filePath;
+  const outputFilePath = filePath;
 
-  // // Save the modified JSON data to a new file, pretty-printed
-  // fs.writeFileSync(outputFilePath, JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
-  //   if (err) {
-  //     console.error('Error writing file:', err);
-  //     return;
-  //   }
-  // });
+  // Save the modified JSON data to a new file, pretty-printed
+  fs.writeFileSync(outputFilePath, JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
+    if (err) {
+      console.error('Error writing file:', err);
+      return;
+    }
+  });
 
 
   return updateCount;
