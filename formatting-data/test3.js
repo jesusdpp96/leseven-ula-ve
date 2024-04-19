@@ -18,6 +18,9 @@ function sanatizeStr(str) {
 }
 
 
+let used = {};
+
+
 function updateVideoUrlsOnFile(filePath, dataObject) {
   let updateCount = 0;
   // Read JSON file
@@ -30,27 +33,30 @@ function updateVideoUrlsOnFile(filePath, dataObject) {
 
   // Modify entries with empty video attributes
   jsonData = jsonData.map(item => {
-    if (item.video === '') {
+    // if (item.video === '') {
+    if (item.palabra) {
 
       if (dataObject[sanatizeStr(item.palabra)]) {
-        item.video = dataObject[sanatizeStr(item.palabra)];
+        // item.video = dataObject[sanatizeStr(item.palabra)];
+        used[sanatizeStr(item.palabra)] = true;
         updateCount += 1;
       }
     }
+    // }
     return item;
   });
 
 
   // Path to the output JSON file
-  const outputFilePath = filePath;
+  // const outputFilePath = filePath;
 
-  // Save the modified JSON data to a new file, pretty-printed
-  fs.writeFileSync(outputFilePath, JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
-    if (err) {
-      console.error('Error writing file:', err);
-      return;
-    }
-  });
+  // // Save the modified JSON data to a new file, pretty-printed
+  // fs.writeFileSync(outputFilePath, JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
+  //   if (err) {
+  //     console.error('Error writing file:', err);
+  //     return;
+  //   }
+  // });
 
 
   return updateCount;
@@ -66,6 +72,7 @@ fs.createReadStream(csvFilePath)
   .on('data', (row) => {
     // Assuming the columns are named 'key' and 'value'
     dataObject[sanatizeStr(row.vocablo)] = row.enlace;
+    used[sanatizeStr(row.vocablo)] = false;
   })
   .on('end', () => {
     // Path to the input JSON file
@@ -94,7 +101,11 @@ fs.createReadStream(csvFilePath)
       total += updateVideoUrlsOnFile(path, dataObject);
     }
 
-    console.log(`Updated ${total} records`);
+    Object.entries(used).filter(([, value]) => !value).forEach(([key]) => {
+      console.log(key)
+    })
+
+    // console.log(`Updated ${total} records`);
 
   })
   .on('error', (err) => {
