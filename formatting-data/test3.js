@@ -33,16 +33,16 @@ function updateVideoUrlsOnFile(filePath, dataObject) {
 
   // Modify entries with empty video attributes
   jsonData = jsonData.map(item => {
-    // if (item.video === '') {
-    if (item.palabra) {
+    if (item.video === '') {
 
-      if (dataObject[sanatizeStr(item.palabra)]) {
-        // item.video = dataObject[sanatizeStr(item.palabra)];
-        used[sanatizeStr(item.palabra)] = true;
+      if (dataObject[item.palabra]) {
+        item.video = dataObject[item.palabra];
+        if (used[item.palabra] === false)
+          used[item.palabra] = true;
         updateCount += 1;
       }
+
     }
-    // }
     return item;
   });
 
@@ -50,7 +50,7 @@ function updateVideoUrlsOnFile(filePath, dataObject) {
   // Path to the output JSON file
   // const outputFilePath = filePath;
 
-  // // Save the modified JSON data to a new file, pretty-printed
+  // Save the modified JSON data to a new file, pretty-printed
   // fs.writeFileSync(outputFilePath, JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
   //   if (err) {
   //     console.error('Error writing file:', err);
@@ -63,7 +63,7 @@ function updateVideoUrlsOnFile(filePath, dataObject) {
 }
 
 
-const csvFilePath = './missing.csv';
+const csvFilePath = './missing2.csv';
 
 let dataObject = {};
 
@@ -71,8 +71,8 @@ fs.createReadStream(csvFilePath)
   .pipe(csv())
   .on('data', (row) => {
     // Assuming the columns are named 'key' and 'value'
-    dataObject[sanatizeStr(row.vocablo)] = row.enlace;
-    used[sanatizeStr(row.vocablo)] = false;
+    dataObject[row.vocablo] = row.enlace;
+    used[row.vocablo] = false;
   })
   .on('end', () => {
     // Path to the input JSON file
@@ -102,7 +102,7 @@ fs.createReadStream(csvFilePath)
     }
 
     Object.entries(used).filter(([, value]) => !value).forEach(([key]) => {
-      console.log(key)
+      console.log(`${key}, ${dataObject[key]}`);
     })
 
     // console.log(`Updated ${total} records`);
