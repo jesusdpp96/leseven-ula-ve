@@ -2,13 +2,6 @@
   {
     "grado": "Primer grado",
     "tema": "Alimentos",
-    "palabra": "Carne",
-    "image": "/assets/images/Carne.png",
-    "video": "https://www.youtube.com/watch?v=tZ7mMMWYJYA"
-  },
-  {
-    "grado": "Primer grado",
-    "tema": "Alimentos",
     "palabra": "pasta",
     "image": "/assets/images/pasta.png",
     "video": "https://www.youtube.com/watch?v=oJ4Vx75KVMA"
