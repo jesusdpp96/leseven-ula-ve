@@ -1,8 +1,7 @@
 const fs = require('fs');
 const csv = require('csv-parser');
-const { Console } = require('console');
 
-function sanatizeStr(str) {
+function sanitizeStr(str) {
   return str
     .trim()
     .toLocaleLowerCase()
