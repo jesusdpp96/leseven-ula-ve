@@ -4,7 +4,7 @@
     "tema": "Alimentos",
     "palabra": "Agua",
     "image": "/assets/images/agua.png",
-    "video": "https://youtu.be/mA2Em3u-pCE"
+    "video": "https://youtube.com/watch?v=mA2Em3u-pCE"
   },
   {
     "grado": "Preescolar",
@@ -102,7 +102,7 @@
     "tema": "Figuras Geométricas",
     "palabra": "Circulo",
     "image": "/assets/images/circulo.png",
-    "video": "https://youtu.be/sEO7-uCKZg8"
+    "video": "https://youtube.com/watch?v=sEO7-uCKZg8"
   },
   {
     "grado": "Preescolar",
@@ -144,14 +144,14 @@
     "tema": "Lugares",
     "palabra": "Casa",
     "image": "/assets/images/casa.png",
-    "video": "https://youtu.be/0gEfsylixWM"
+    "video": "https://youtube.com/watch?v=0gEfsylixWM"
   },
   {
     "grado": "Preescolar",
     "tema": "Lugares",
     "palabra": "Escuela",
     "image": "/assets/images/escuela.png",
-    "video": "https://youtu.be/STdNxxsQlis"
+    "video": "https://youtube.com/watch?v=STdNxxsQlis"
   },
   {
     "grado": "Preescolar",
@@ -228,7 +228,7 @@
     "tema": "Noción de tamaño",
     "palabra": "Grande",
     "image": "/assets/images/grande.png",
-    "video": "https://youtu.be/A5Kcl288vOo"
+    "video": "https://youtube.com/watch?v=A5Kcl288vOo"
   },
   {
     "grado": "Preescolar",
@@ -263,14 +263,14 @@
     "tema": "Noción de tamaño",
     "palabra": "alto",
     "image": "/assets/images/alto.png",
-    "video": "https://youtu.be/2g_rPM2Ir7s"
+    "video": "https://youtube.com/watch?v=2g_rPM2Ir7s"
   },
   {
     "grado": "Preescolar",
     "tema": "Noción de tamaño",
     "palabra": "Bajo",
     "image": "/assets/images/bajo.png",
-    "video": "https://youtu.be/LNXoTzSVYsM"
+    "video": "https://youtube.com/watch?v=LNXoTzSVYsM"
   },
   {
     "grado": "Preescolar",
@@ -291,7 +291,7 @@
     "tema": "Noción temporal",
     "palabra": "Ayer",
     "image": "/assets/images/ayer.png",
-    "video": "https://youtu.be/RDZcpVz1ROg"
+    "video": "https://youtube.com/watch?v=RDZcpVz1ROg"
   },
   {
     "grado": "Preescolar",
@@ -312,7 +312,7 @@
     "tema": "Numeros",
     "palabra": "Uno",
     "image": "/assets/images/uno.png",
-    "video": "https://youtu.be/tY1J669yyps"
+    "video": "https://youtube.com/watch?v=tY1J669yyps"
   },
   {
     "grado": "Preescolar",
@@ -459,6 +459,6 @@
     "tema": "Simbolos",
     "palabra": "Bandera",
     "image": "/assets/images/bandera.png",
-    "video": "https://youtu.be/FwhM5wC2XhU"
+    "video": "https://youtube.com/watch?v=FwhM5wC2XhU"
   }
 ]
