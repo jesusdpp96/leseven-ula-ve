@@ -193,5 +193,20 @@
     "nombre": "Prueba Exploratoria - Sexto Grado",
     "image": "/assets/images/prueba-exploratoria.png",
     "es_categoria": false
+  },
+  {
+    "nombre": "Noción de temperatura",
+    "image": "/assets/images/nocion-temperatura.png",
+    "es_categoria": true
+  },
+  {
+    "nombre": "Metales",
+    "image": "/assets/images/metales.png",
+    "es_categoria": true
+  },
+  {
+    "nombre": "Letras",
+    "image": "/assets/images/letras.png",
+    "es_categoria": true
   }
 ]

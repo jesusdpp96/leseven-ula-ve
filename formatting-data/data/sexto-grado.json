@@ -827,7 +827,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Familia",
+    "tema": "Personas",
     "palabra": "Cuñado",
     "image": "/assets/images/cunado.png",
     "video": "https://youtu.be/Fhb-o66hilA"
@@ -904,7 +904,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Estado civil",
+    "tema": "Personas",
     "palabra": "Divorciado",
     "image": "/assets/images/divorciado.png",
     "video": "https://youtu.be/5mfhveITeKE"
@@ -1037,7 +1037,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Familia",
+    "tema": "Personas",
     "palabra": "Familia",
     "image": "/assets/images/familia.png",
     "video": "https://youtu.be/2G-NXJYlTuU"
@@ -1093,7 +1093,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Familia",
+    "tema": "Personas",
     "palabra": "Gemelo",
     "image": "/assets/images/gemelo.png",
     "video": "https://youtu.be/UWIVG-NER8w"
@@ -1170,7 +1170,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Familia",
+    "tema": "Personas",
     "palabra": "Herencia",
     "image": "/assets/images/herencia.png",
     "video": "https://youtu.be/44XlGpDSjhc"
@@ -1282,7 +1282,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Noción de velocidad",
+    "tema": "Noción espacial",
     "palabra": "Lento",
     "image": "/assets/images/lento.png",
     "video": "https://youtu.be/ZYLwAopwix4"
@@ -1324,7 +1324,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Familia",
+    "tema": "Personas",
     "palabra": "Madre",
     "image": "/assets/images/madre.png",
     "video": "https://youtu.be/vlcZGfvG09A"
@@ -1450,7 +1450,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Familia",
+    "tema": "Personas",
     "palabra": "Novio",
     "image": "/assets/images/novio.png",
     "video": "https://youtu.be/6A_0i7wRwlg"
@@ -1485,7 +1485,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Familia",
+    "tema": "Personas",
     "palabra": "Padrino",
     "image": "/assets/images/padrino.png",
     "video": "https://youtu.be/APUsAX32eJo"
@@ -1674,7 +1674,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Noción de velocidad",
+    "tema": "Noción espacial",
     "palabra": "Rápido",
     "image": "/assets/images/rapido.png",
     "video": "https://youtu.be/kqeihT6-6oQ"
@@ -1765,7 +1765,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Familia",
+    "tema": "Personas",
     "palabra": "Suegro",
     "image": "/assets/images/suegro.png",
     "video": "https://youtu.be/gzpTseWpV1g"
@@ -1940,7 +1940,7 @@
   },
   {
     "grado": "Sexto grado",
-    "tema": "Estado civil",
+    "tema": "Personas",
     "palabra": "Viudo",
     "image": "/assets/images/viudo.png",
     "video": "https://youtu.be/gjhGO6neDmM"
