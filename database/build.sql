@@ -383,7 +383,7 @@ CREATE TABLE public.usuario_metadatos (
     id integer DEFAULT nextval('public.usuario_metadatos_id_seq'::regclass) NOT NULL,
     practicas_realizadas integer NOT NULL,
     consultas_correctas integer NOT NULL,
-    consultas_incorrectas integer NOT NULL,
+    consultas_incorrectas integer NOT NULL
 );
 
 
