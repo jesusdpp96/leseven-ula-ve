@@ -341,5 +341,1846 @@
     "palabra": "Abceso",
     "image": "/assets/images/Abceso.png",
     "video": ""
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Enfermedades",
+    "palabra": "AH1N1",
+    "image": "/assets/images/ah1n1.png",
+    "video": "https://youtu.be/87g_RMqcN7Y"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Abecedario",
+    "image": "/assets/images/abecedario.png",
+    "video": "https://youtu.be/npdQeHP-TOI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Meses del año",
+    "palabra": "Abril",
+    "image": "/assets/images/abril.png",
+    "video": "https://youtu.be/b1nrBI4bijk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Aceite",
+    "image": "/assets/images/aceite.png",
+    "video": "https://youtu.be/OizaDo09Wvo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Acelgas",
+    "image": "/assets/images/acelgas.png",
+    "video": "https://youtu.be/wtj9ot2rf24"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Acondicionador",
+    "image": "/assets/images/acondicionador.png",
+    "video": "https://youtu.be/4GmTfb28gaU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción espacial",
+    "palabra": "Adelante",
+    "image": "/assets/images/adelante.png",
+    "video": "https://youtu.be/KugNbNdAkgs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Verduras y hortalizas",
+    "palabra": "Ahuyama",
+    "image": "/assets/images/ahuyama.png",
+    "video": "https://youtu.be/LN6XAVj13dU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Verduras y hortalizas",
+    "palabra": "Ají dulce",
+    "image": "/assets/images/aji-dulce.png",
+    "video": "https://youtu.be/pcTvVCxa39k"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Alcaldía",
+    "image": "/assets/images/alcaldia.png",
+    "video": "https://youtu.be/2KBmJvKjEO8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Alfombra",
+    "image": "/assets/images/alfombra.png",
+    "video": "https://youtu.be/s17wEjJ55eE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Alimentos",
+    "image": "/assets/images/alimentos.png",
+    "video": "https://youtu.be/U7ySHp5UFEg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción espacial",
+    "palabra": "Allá",
+    "image": "/assets/images/alla.png",
+    "video": "https://youtu.be/HZDPy5SnoV4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Almohada",
+    "image": "/assets/images/almohada.png",
+    "video": "https://youtu.be/F-auGudBf7U"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de tamaño",
+    "palabra": "Alto",
+    "image": "/assets/images/alto.png",
+    "video": "https://youtu.be/2g_rPM2Ir7s"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Animales acuáticos",
+    "image": "/assets/images/animales-acuaticos.png",
+    "video": "https://youtu.be/RugzJYtDbaU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Animales domésticos",
+    "image": "/assets/images/animales-domesticos.png",
+    "video": "https://youtu.be/Oq3qj4mB0eo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Animales salvajes",
+    "image": "/assets/images/animales-salvajes.png",
+    "video": "https://youtu.be/Yo1DOVQ2wEA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción espacial",
+    "palabra": "Aquí",
+    "image": "/assets/images/aqui.png",
+    "video": "https://youtu.be/reTtOLANJK8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Arroz con Leche",
+    "image": "/assets/images/arroz-con-leche.png",
+    "video": "https://youtu.be/TcfkPjs79uQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción espacial",
+    "palabra": "Atrás",
+    "image": "/assets/images/atras.png",
+    "video": "https://youtu.be/Hxam8QAR580"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Azúcar",
+    "image": "/assets/images/azucar.png",
+    "video": "https://youtu.be/nsLfTsU2ex8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Ballena",
+    "image": "/assets/images/ballena.png",
+    "video": "https://youtu.be/WLrWJ5bFazk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares de Mérida",
+    "palabra": "Bandera de Mérida",
+    "image": "/assets/images/bandera-de-merida.png",
+    "video": "https://youtu.be/Vl-0QBquf-o"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Batidor",
+    "image": "/assets/images/batidor.png",
+    "video": "https://youtu.be/FZESUFmixn4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Colores",
+    "palabra": "Blanco",
+    "image": "/assets/images/blanco.png",
+    "video": "https://youtu.be/6y0o1BJ_ASM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Bolígrafo",
+    "image": "/assets/images/boligrafo.png",
+    "video": "https://youtu.be/SK3vIkP_mIM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Colores",
+    "palabra": "Borgoña",
+    "image": "/assets/images/borgona.png",
+    "video": "https://youtu.be/tYezZ86EvKA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Brillo",
+    "image": "/assets/images/brillo.png",
+    "video": "https://youtu.be/nBglgNWtdEU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Caballo",
+    "image": "/assets/images/caballo.png",
+    "video": "https://youtu.be/q1RuEFbrLQ4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Caballo de mar",
+    "image": "/assets/images/caballo-de-mar.png",
+    "video": "https://youtu.be/Ou2-QFRGd6o"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de temperatura",
+    "palabra": "Calor",
+    "image": "/assets/images/calor.png",
+    "video": "https://youtu.be/Ce5jCBIKRgQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Cama individual",
+    "image": "/assets/images/cama-individual.png",
+    "video": "https://youtu.be/-_50wSr9iTY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Cama matrimonial",
+    "image": "/assets/images/cama-matrimonial.png",
+    "video": "https://youtu.be/ld3JW9rwikU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Medios de transporte",
+    "palabra": "Camello",
+    "image": "/assets/images/camello.png",
+    "video": "https://youtu.be/LnVn9IPyxDo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Cangrejo",
+    "image": "/assets/images/cangrejo.png",
+    "video": "https://youtu.be/Z-PEL8wGFEg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Canguro",
+    "image": "/assets/images/canguro.png",
+    "video": "https://youtu.be/eEdB0kApYB4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Carne molida",
+    "image": "/assets/images/carne-molida.png",
+    "video": "https://youtu.be/dqux49mhUjY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Días de la semana",
+    "palabra": "Casado",
+    "image": "/assets/images/casado.png",
+    "video": "https://youtu.be/DhPNgsGvPVQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Catorce",
+    "image": "/assets/images/catorce.png",
+    "video": "https://youtu.be/bniL7TnW40s"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Cebra",
+    "image": "/assets/images/cebra.png",
+    "video": "https://youtu.be/TjkZU0FvHxw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares",
+    "palabra": "Centro Comercial",
+    "image": "/assets/images/centro-comercial.png",
+    "video": "https://youtu.be/0VeHLmeBX9Y"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Cepillo dental",
+    "image": "/assets/images/cepillo-dental.png",
+    "video": "https://youtu.be/xFJ5chzSKcM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Cereza",
+    "image": "/assets/images/cereza.png",
+    "video": "https://youtu.be/0Bn4OIgFsmM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de cantidad",
+    "palabra": "Cero",
+    "image": "/assets/images/cero.png",
+    "video": "https://youtu.be/CT3-bhglo_g"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Champiñon",
+    "image": "/assets/images/champinon.png",
+    "video": "https://youtu.be/Xu0MMM2Z4ic"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Cheez Whiz",
+    "image": "/assets/images/cheez-whiz.png",
+    "video": "https://youtu.be/EaqLQS_FaZc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Chofer",
+    "image": "/assets/images/chofer.png",
+    "video": "https://youtu.be/2BCFCinycn0"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Cien míl",
+    "image": "/assets/images/cien-mil.png",
+    "video": "https://youtu.be/sXRQhSkz6Tc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Cinta plástica",
+    "image": "/assets/images/cinta-plastica.png",
+    "video": "https://youtu.be/2Rb34d3DegI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Ciruela",
+    "image": "/assets/images/ciruela.png",
+    "video": "https://youtu.be/Uwy8zbIWqew"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de temperatura",
+    "palabra": "Clima",
+    "image": "/assets/images/clima.png",
+    "video": "https://youtu.be/eusyUP-C1lU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Closet",
+    "image": "/assets/images/closet.png",
+    "video": "https://youtu.be/FngGUjU-Pdc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Cobija",
+    "image": "/assets/images/cobija.png",
+    "video": "https://youtu.be/kxqRl_54l3Q"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Cocina a gas",
+    "image": "/assets/images/cocina-a-gas.png",
+    "video": "https://youtu.be/6xiB3FtLXHM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Cocina eléctrica",
+    "image": "/assets/images/cocina-electrica.png",
+    "video": "https://youtu.be/BcrAa0ogu9Y"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Colador",
+    "image": "/assets/images/colador.png",
+    "video": "https://youtu.be/4FAhhrmVa5o"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Colador de café",
+    "image": "/assets/images/colador-de-cafe.png",
+    "video": "https://youtu.be/Yc9Xz46hwjA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción espacial",
+    "palabra": "Colgar",
+    "image": "/assets/images/colgar.png",
+    "video": "https://youtu.be/54jLhEoPfhs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Colores",
+    "palabra": "Colores",
+    "image": "/assets/images/colores.png",
+    "video": "https://youtu.be/uVZRciSabq8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Computadora",
+    "image": "/assets/images/computadora.png",
+    "video": "https://youtu.be/46bX2RI6POM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Compás",
+    "image": "/assets/images/compas.png",
+    "video": "https://youtu.be/CGwp38lYlKc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Condor",
+    "image": "/assets/images/condor.png",
+    "video": "https://youtu.be/vwqsUbb5sLQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Enfermedades",
+    "palabra": "Conjuntivitis",
+    "image": "/assets/images/conjuntivitis.png",
+    "video": "https://youtu.be/cwrjW4G43hw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Enfermedades",
+    "palabra": "Contaminación",
+    "image": "/assets/images/contaminacion.png",
+    "video": "https://youtu.be/Ldsl6kNO7BQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Cortina",
+    "image": "/assets/images/cortina.png",
+    "video": "https://youtu.be/GvcR5LrEpOM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Crema de leche",
+    "image": "/assets/images/crema-de-leche.png",
+    "video": "https://youtu.be/y1OrABgwa2M"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Cuchára",
+    "image": "/assets/images/cuchara.png",
+    "video": "https://youtu.be/3COkbX4rbcM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Cuna",
+    "image": "/assets/images/cuna.png",
+    "video": "https://youtu.be/kWR1YyKmJFo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Familia",
+    "palabra": "Cuñado",
+    "image": "/assets/images/cunado.png",
+    "video": "https://youtu.be/Fhb-o66hilA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Figuras geométricas",
+    "palabra": "Círculo",
+    "image": "/assets/images/circulo.png",
+    "video": "https://youtu.be/sEO7-uCKZg8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Juguetes/Juegos/Deportes",
+    "palabra": "Deportes Extremos",
+    "image": "/assets/images/deportes-extremos.png",
+    "video": "https://youtu.be/2M-8L6DoYvY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción espacial",
+    "palabra": "Derecha",
+    "image": "/assets/images/derecha.png",
+    "video": "https://youtu.be/TB6u6ketHo8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción temporal",
+    "palabra": "Despues",
+    "image": "/assets/images/despues.png",
+    "video": "https://youtu.be/-UY25i5EQmw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Enfermedades",
+    "palabra": "Diablito",
+    "image": "/assets/images/diablito.png",
+    "video": "https://youtu.be/Gah8GYbw_wo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Diecinueve",
+    "image": "/assets/images/diecinueve.png",
+    "video": "https://youtu.be/5iWiYxltdwc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Dieciocho",
+    "image": "/assets/images/dieciocho.png",
+    "video": "https://youtu.be/yWYbvN7oh8Q"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Diecisiete",
+    "image": "/assets/images/diecisiete.png",
+    "video": "https://youtu.be/LyscscQmAuc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Diez míl",
+    "image": "/assets/images/diez-mil.png",
+    "video": "https://youtu.be/PdD3OPHksVY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Director",
+    "image": "/assets/images/director.png",
+    "video": "https://youtu.be/YnUkf6g17pg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Estado civil",
+    "palabra": "Divorciado",
+    "image": "/assets/images/divorciado.png",
+    "video": "https://youtu.be/5mfhveITeKE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Doce",
+    "image": "/assets/images/doce.png",
+    "video": "https://youtu.be/pTBRrH3XZgQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Dos mil",
+    "image": "/assets/images/dos-mil.png",
+    "video": "https://youtu.be/Sx9BXM5_-rs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Dos millones",
+    "image": "/assets/images/dos-millones.png",
+    "video": "https://youtu.be/o6E-N_mOKrk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Doscientos",
+    "image": "/assets/images/doscientos.png",
+    "video": "https://youtu.be/HHmDRWgvGpc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Ducha",
+    "image": "/assets/images/ducha.png",
+    "video": "https://youtu.be/6RCax1YaHd4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Ducha de teléfono",
+    "image": "/assets/images/ducha-de-telefono.png",
+    "video": "https://youtu.be/Zqev3y5KUnI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Días de la semana",
+    "palabra": "Días de la semana",
+    "image": "/assets/images/dias-de-la-semana.png",
+    "video": "https://youtu.be/JMFryVTm8wg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Electricista",
+    "image": "/assets/images/electricista.png",
+    "video": "https://youtu.be/4KofJxK2os8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Empanada",
+    "image": "/assets/images/empanada.png",
+    "video": "https://youtu.be/LGSaZuM8rXo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Empresario",
+    "image": "/assets/images/empresario.png",
+    "video": "https://youtu.be/MtoZVBQ_uA0"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción espacial",
+    "palabra": "Encima",
+    "image": "/assets/images/encima.png",
+    "video": "https://youtu.be/ZJHxTfwlN4E"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Escalera",
+    "image": "/assets/images/escalera.png",
+    "video": "https://youtu.be/0u4Id_leOpQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares de Mérida",
+    "palabra": "Escuela Ofelia",
+    "image": "/assets/images/escuela-ofelia.png",
+    "video": "https://youtu.be/IRzC-j54zuA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Espejo",
+    "image": "/assets/images/espejo.png",
+    "video": "https://youtu.be/p1Dr2g7-Ggo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción temporal",
+    "palabra": "Espere un momento",
+    "image": "/assets/images/espere-un-momento.png",
+    "video": "https://youtu.be/-xA4KISKbwo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Espátula",
+    "image": "/assets/images/espatula.png",
+    "video": "https://youtu.be/O7RdPTvx73Y"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares de Mérida",
+    "palabra": "Estadio Metropolitano",
+    "image": "/assets/images/estadio-metropolitano.png",
+    "video": "https://youtu.be/zP_-R_lzguw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Estrella de mar",
+    "image": "/assets/images/estrella-de-mar.png",
+    "video": "https://youtu.be/dMOyIo9ZWTU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Familia",
+    "palabra": "Familia",
+    "image": "/assets/images/familia.png",
+    "video": "https://youtu.be/2G-NXJYlTuU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Farmacéutico",
+    "image": "/assets/images/farmaceutico.png",
+    "video": "https://youtu.be/EFlT-ADTSG8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Florero",
+    "image": "/assets/images/florero.png",
+    "video": "https://youtu.be/jn5s0tVZExE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Foca",
+    "image": "/assets/images/foca.png",
+    "video": "https://youtu.be/u2wnY1VOZxA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Fotógrafo",
+    "image": "/assets/images/fotografo.png",
+    "video": "https://youtu.be/8Ko4dpKItzs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Frambuesa",
+    "image": "/assets/images/frambuesa.png",
+    "video": "https://youtu.be/tI6Hke0AS8s"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Frutas",
+    "image": "/assets/images/frutas.png",
+    "video": "https://youtu.be/R_jZPhTJWb8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de temperatura",
+    "palabra": "Frío",
+    "image": "/assets/images/frio.png",
+    "video": "https://youtu.be/NVr-PeKMGy4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Familia",
+    "palabra": "Gemelo",
+    "image": "/assets/images/gemelo.png",
+    "video": "https://youtu.be/UWIVG-NER8w"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Juguetes/Juegos/Deportes",
+    "palabra": "Globo Aerostático",
+    "image": "/assets/images/globo-aerostatico.png",
+    "video": "https://youtu.be/eHp6uJ6O7S8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Goma de barra",
+    "image": "/assets/images/goma-de-barra.png",
+    "video": "https://youtu.be/HjYB2LvbJ60"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Goma líquida",
+    "image": "/assets/images/goma-liquida.png",
+    "video": "https://youtu.be/gE2NIU5AjnA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Gorila",
+    "image": "/assets/images/gorila.png",
+    "video": "https://youtu.be/OD27Q9REQyM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Colores",
+    "palabra": "Gris",
+    "image": "/assets/images/gris.png",
+    "video": "https://youtu.be/Od_D-4cpowE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Guayaba",
+    "image": "/assets/images/guayaba.png",
+    "video": "https://youtu.be/_ASya8ga23Y"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Guisantes",
+    "image": "/assets/images/guisantes.png",
+    "video": "https://youtu.be/Dm4xO8ZJVk0"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Habitación",
+    "image": "/assets/images/habitacion.png",
+    "video": "https://youtu.be/FxsWpTGCwpY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Harina de trigo",
+    "image": "/assets/images/harina-de-trigo.png",
+    "video": "https://youtu.be/WgLkIxf7ipY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares",
+    "palabra": "Heladería",
+    "image": "/assets/images/heladeria.png",
+    "video": "https://youtu.be/HOtrXedASLw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Familia",
+    "palabra": "Herencia",
+    "image": "/assets/images/herencia.png",
+    "video": "https://youtu.be/44XlGpDSjhc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares",
+    "palabra": "Hogar",
+    "image": "/assets/images/hogar.png",
+    "video": "https://youtu.be/Z-ev-gzxx24"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Hojas blancas",
+    "image": "/assets/images/hojas-blancas.png",
+    "video": "https://youtu.be/15y3pa2uwRs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Huevo",
+    "image": "/assets/images/huevo.png",
+    "video": "https://youtu.be/E-KbHTOJnts"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción espacial",
+    "palabra": "Izquierda",
+    "image": "/assets/images/izquierda.png",
+    "video": "https://youtu.be/Xrr8lPXmm-g"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares",
+    "palabra": "Jardín",
+    "image": "/assets/images/jardin.png",
+    "video": "https://youtu.be/FZ1ufLzK3G0"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Jengibre",
+    "image": "/assets/images/jengibre.png",
+    "video": "https://youtu.be/vInqcQQLu9Q"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Jirafa",
+    "image": "/assets/images/jirafa.png",
+    "video": "https://youtu.be/z4UpG9EAHu8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Días de la semana",
+    "palabra": "Jueves",
+    "image": "/assets/images/jueves.png",
+    "video": "https://youtu.be/QSzJfeOO2JE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Juez",
+    "image": "/assets/images/juez.png",
+    "video": "https://youtu.be/gsbHXft1kRs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Jugo Natural",
+    "image": "/assets/images/jugo-natural.png",
+    "video": "https://youtu.be/dYmHx0jppwA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Kiwi",
+    "image": "/assets/images/kiwi.png",
+    "video": "https://youtu.be/UUhx2PFYaUo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción temporal",
+    "palabra": "Lapso",
+    "image": "/assets/images/lapso.png",
+    "video": "https://youtu.be/QQpCtxUi-9I"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Lavadero",
+    "image": "/assets/images/lavadero.png",
+    "video": "https://youtu.be/gV6cRLEoOL8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Lavamanos",
+    "image": "/assets/images/lavamanos.png",
+    "video": "https://youtu.be/OI7d9j3viHQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Lechoza",
+    "image": "/assets/images/lechoza.png",
+    "video": "https://youtu.be/nKEp19iEV1I"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de velocidad",
+    "palabra": "Lento",
+    "image": "/assets/images/lento.png",
+    "video": "https://youtu.be/ZYLwAopwix4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Licuadora",
+    "image": "/assets/images/licuadora.png",
+    "video": "https://youtu.be/ehmdqx3ubsk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Sintomas",
+    "palabra": "Llegar tarde",
+    "image": "/assets/images/llegar-tarde.png",
+    "video": "https://youtu.be/Kjk9YKC7-zQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de temperatura",
+    "palabra": "Lloviendo",
+    "image": "/assets/images/lloviendo.png",
+    "video": "https://youtu.be/zBxVQ5f2y5w"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Lobo",
+    "image": "/assets/images/lobo.png",
+    "video": "https://youtu.be/KWKlTWL1nn4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Losa",
+    "image": "/assets/images/losa.png",
+    "video": "https://youtu.be/CvANXvOwN24"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Familia",
+    "palabra": "Madre",
+    "image": "/assets/images/madre.png",
+    "video": "https://youtu.be/vlcZGfvG09A"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Maestro",
+    "image": "/assets/images/maestro.png",
+    "video": "https://youtu.be/12f1l_zLqn0"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Ropa",
+    "palabra": "Manga",
+    "image": "/assets/images/manga.png",
+    "video": "https://youtu.be/esQsEplkc6A"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Marcador de pizarra",
+    "image": "/assets/images/marcador-de-pizarra.png",
+    "video": "https://youtu.be/dk8h1P1VcWc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Marcador fino",
+    "image": "/assets/images/marcador-fino.png",
+    "video": "https://youtu.be/Fa9XLRBpP4k"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Marcador permanente",
+    "image": "/assets/images/marcador-permanente.png",
+    "video": "https://youtu.be/n4um0ZRPVu4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Colores",
+    "palabra": "Marron",
+    "image": "/assets/images/marron.png",
+    "video": "https://youtu.be/cZizvlMU9Cs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Meses del año",
+    "palabra": "Marzo",
+    "image": "/assets/images/marzo.png",
+    "video": "https://youtu.be/UTdqWH9C3bI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Mayonesa",
+    "image": "/assets/images/mayonesa.png",
+    "video": "https://youtu.be/Vt7N4hvddcE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Melocotón",
+    "image": "/assets/images/melocoton.png",
+    "video": "https://youtu.be/UVxODM0LArM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Mesa comedor",
+    "image": "/assets/images/mesa-comedor.png",
+    "video": "https://youtu.be/9tOGpIyshno"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Mesa de noche",
+    "image": "/assets/images/mesa-de-noche.png",
+    "video": "https://youtu.be/E1HWDRifQCA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Meses del año",
+    "palabra": "Meses del Año",
+    "image": "/assets/images/meses-del-ano.png",
+    "video": "https://youtu.be/lqBd9ja6Oug"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de cantidad",
+    "palabra": "Mil",
+    "image": "/assets/images/mil.png",
+    "video": "https://youtu.be/PKPY8-OTFn4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de cantidad",
+    "palabra": "Minutos",
+    "image": "/assets/images/minutos.png",
+    "video": "https://youtu.be/qPys7lcwI98"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Mono",
+    "image": "/assets/images/mono.png",
+    "video": "https://youtu.be/V3_VPSccIgY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Naranja",
+    "image": "/assets/images/naranja.png",
+    "video": "https://youtu.be/cYDg0RLqPcc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Nestea",
+    "image": "/assets/images/nestea.png",
+    "video": "https://youtu.be/l0pLa6uPn3I"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Familia",
+    "palabra": "Novio",
+    "image": "/assets/images/novio.png",
+    "video": "https://youtu.be/6A_0i7wRwlg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Números",
+    "image": "/assets/images/numeros.png",
+    "video": "https://youtu.be/ae10gkt5K-0"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Olla de presión",
+    "image": "/assets/images/olla-de-presion.png",
+    "video": "https://youtu.be/6y8HaA0jlKQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Once",
+    "image": "/assets/images/once.png",
+    "video": "https://youtu.be/beWlfyR4RVU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Metales",
+    "palabra": "Oro",
+    "image": "/assets/images/oro.png",
+    "video": "https://youtu.be/_QfxSsjV9_w"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Familia",
+    "palabra": "Padrino",
+    "image": "/assets/images/padrino.png",
+    "video": "https://youtu.be/APUsAX32eJo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Panela",
+    "image": "/assets/images/panela.png",
+    "video": "https://youtu.be/CdbEvvjiKeI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Parrillera",
+    "image": "/assets/images/parrillera.png",
+    "video": "https://youtu.be/jFCyWtfsPyw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Partes del cuerpo humano",
+    "image": "/assets/images/partes-del-cuerpo-humano.png",
+    "video": "https://youtu.be/rdht5U5kDPw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Pasta Corta",
+    "image": "/assets/images/pasta-corta.png",
+    "video": "https://youtu.be/oXf9iPmUxLg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Pasta Larga",
+    "image": "/assets/images/pasta-larga.png",
+    "video": "https://youtu.be/LqFGFCN-DdU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Pasteles",
+    "image": "/assets/images/pasteles.png",
+    "video": "https://youtu.be/Q8F_eutAnFw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Peinadora",
+    "image": "/assets/images/peinadora.png",
+    "video": "https://youtu.be/TUcGGyXhoLE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Peluquero",
+    "image": "/assets/images/peluquero.png",
+    "video": "https://youtu.be/pVX5zc7NVO4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Perejíl",
+    "image": "/assets/images/perejil.png",
+    "video": "https://youtu.be/KJEwfFNnLvE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Perro caliente",
+    "image": "/assets/images/perro-caliente.png",
+    "video": "https://youtu.be/YvoPutCLIs4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Persona",
+    "image": "/assets/images/persona.png",
+    "video": "https://youtu.be/vcqGdP8mmbY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Pez",
+    "image": "/assets/images/pez.png",
+    "video": "https://youtu.be/xHazxUjEFbw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Piloto",
+    "image": "/assets/images/piloto.png",
+    "video": "https://youtu.be/WY8UnZD44ZY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Pintor",
+    "image": "/assets/images/pintor.png",
+    "video": "https://youtu.be/DSB-lX2g6NQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Pinza",
+    "image": "/assets/images/pinza.png",
+    "video": "https://youtu.be/PFXolKqS8Hk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Metales",
+    "palabra": "Plata",
+    "image": "/assets/images/plata.png",
+    "video": "https://youtu.be/Jk7e2v_LFBw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Plato",
+    "image": "/assets/images/plato.png",
+    "video": "https://youtu.be/tcdulO3yt2M"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Poceta",
+    "image": "/assets/images/poceta.png",
+    "video": "https://youtu.be/KcW1TfL_28k"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Profesiones",
+    "image": "/assets/images/profesiones.png",
+    "video": "https://youtu.be/6BuTxKCAFKE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Pulpo",
+    "image": "/assets/images/pulpo.png",
+    "video": "https://youtu.be/3IEWYyjMtPQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Puma",
+    "image": "/assets/images/puma.png",
+    "video": "https://youtu.be/prP88ajldjs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares",
+    "palabra": "Páramos",
+    "image": "/assets/images/paramos.png",
+    "video": "https://youtu.be/E_pMyKiPwoY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Quince",
+    "image": "/assets/images/quince.png",
+    "video": "https://youtu.be/bGTmeuB5WQI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Reportero",
+    "image": "/assets/images/reportero.png",
+    "video": "https://youtu.be/EqzSL6-_ELk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Repostera",
+    "image": "/assets/images/repostera.png",
+    "video": "https://youtu.be/_0KxdJe6F0M"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Rinoceronte",
+    "image": "/assets/images/rinoceronte.png",
+    "video": "https://youtu.be/pYvrS61Xpjo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de velocidad",
+    "palabra": "Rápido",
+    "image": "/assets/images/rapido.png",
+    "video": "https://youtu.be/kqeihT6-6oQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Sacapuntas",
+    "image": "/assets/images/sacapuntas.png",
+    "video": "https://youtu.be/cE5Mn8wcM2Q"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Sal",
+    "image": "/assets/images/sal.png",
+    "video": "https://youtu.be/pjwqFOtiL3E"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Salsa de ajo",
+    "image": "/assets/images/salsa-de-ajo.png",
+    "video": "https://youtu.be/9y28egZVz3I"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Salsa de soya",
+    "image": "/assets/images/salsa-de-soya.png",
+    "video": "https://youtu.be/ZWGx4KZ6HaQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Salsa de tomate",
+    "image": "/assets/images/salsa-de-tomate.png",
+    "video": "https://youtu.be/nIIyq7-S3is"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Salsa inglesa",
+    "image": "/assets/images/salsa-inglesa.png",
+    "video": "https://youtu.be/Nb3sdnmsvEY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Sandwich",
+    "image": "/assets/images/sandwich.png",
+    "video": "https://youtu.be/2IXLMaqA5lI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Sandwichera",
+    "image": "/assets/images/sandwichera.png",
+    "video": "https://youtu.be/Or6SC_ME4uA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de cantidad",
+    "palabra": "Segundos",
+    "image": "/assets/images/segundos.png",
+    "video": "https://youtu.be/ulcXNV_E0G8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Silicón líquido",
+    "image": "/assets/images/silicon-liquido.png",
+    "video": "https://youtu.be/g53pnfQc35s"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Sistemas del cuerpo humano",
+    "image": "/assets/images/sistemas-del-cuerpo-humano.png",
+    "video": "https://youtu.be/fANO2wO3d1I"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Oficios y Profesiones",
+    "palabra": "Soldado",
+    "image": "/assets/images/soldado.png",
+    "video": "https://youtu.be/nXSbtPqXnRk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Familia",
+    "palabra": "Suegro",
+    "image": "/assets/images/suegro.png",
+    "video": "https://youtu.be/gzpTseWpV1g"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Días de la semana",
+    "palabra": "Sábado",
+    "image": "/assets/images/sabado.png",
+    "video": "https://youtu.be/1ENUbJoZVkY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Sábana",
+    "image": "/assets/images/sabana.png",
+    "video": "https://youtu.be/eGtHXWi489o"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Tamarindo chino",
+    "image": "/assets/images/tamarindo-chino.png",
+    "video": "https://youtu.be/5EMv0gun3H8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Teléfono",
+    "image": "/assets/images/telefono.png",
+    "video": "https://youtu.be/PvD_fAwmgXg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Tempera",
+    "image": "/assets/images/tempera.png",
+    "video": "https://youtu.be/hOeHbH0fsnQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de temperatura",
+    "palabra": "Temperatura",
+    "image": "/assets/images/temperatura.png",
+    "video": "https://youtu.be/UhQGm2lQZyg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción temporal",
+    "palabra": "Temprano",
+    "image": "/assets/images/temprano.png",
+    "video": "https://youtu.be/RpxjzoVa8yQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Tijeras",
+    "image": "/assets/images/tijeras.png",
+    "video": "https://youtu.be/PsZIf6s0w28"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Tomáte de árbol",
+    "image": "/assets/images/tomate-de-arbol.png",
+    "video": "https://youtu.be/u-MezpAglC0"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Animales",
+    "palabra": "Toro",
+    "image": "/assets/images/toro.png",
+    "video": "https://youtu.be/51w7KNRyG8Q"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Trece",
+    "image": "/assets/images/trece.png",
+    "video": "https://youtu.be/sfdcC5mphpY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Treinta",
+    "image": "/assets/images/treinta.png",
+    "video": "https://youtu.be/r1yVkym2RhU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Tres mil",
+    "image": "/assets/images/tres-mil.png",
+    "video": "https://youtu.be/X_Q5pChHUdc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Tres millones",
+    "image": "/assets/images/tres-millones.png",
+    "video": "https://youtu.be/Huz0U-AdcfY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Trescientos",
+    "image": "/assets/images/trescientos.png",
+    "video": "https://youtu.be/pe4o2Uz8PGw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Un millón",
+    "image": "/assets/images/un-millon.png",
+    "video": "https://youtu.be/Ccsu19V0E4M"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Utiles escolares",
+    "image": "/assets/images/utiles-escolares.png",
+    "video": "https://youtu.be/qS0ppxoY7dc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Uva morada",
+    "image": "/assets/images/uva-morada.png",
+    "video": "https://youtu.be/b-3VGN-02kU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Vaso",
+    "image": "/assets/images/vaso.png",
+    "video": "https://youtu.be/D0KhcuMz7yE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Numeros",
+    "palabra": "Veinte",
+    "image": "/assets/images/veinte.png",
+    "video": "https://youtu.be/VIMIuSFlT5g"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Objetos del hogar",
+    "palabra": "Ventana",
+    "image": "/assets/images/ventana.png",
+    "video": "https://youtu.be/R15qLVRANws"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Verduras y hortalizas",
+    "palabra": "Verduras",
+    "image": "/assets/images/verduras.png",
+    "video": "https://youtu.be/5ls1dQRPlQg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción de temperatura",
+    "palabra": "Viento",
+    "image": "/assets/images/viento.png",
+    "video": "https://youtu.be/EJut6auTPa8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Colores",
+    "palabra": "Vinotinto",
+    "image": "/assets/images/vinotinto.png",
+    "video": "https://youtu.be/8fIgSVZnqP4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Estado civil",
+    "palabra": "Viudo",
+    "image": "/assets/images/viudo.png",
+    "video": "https://youtu.be/gjhGO6neDmM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Zapote",
+    "image": "/assets/images/zapote.png",
+    "video": "https://youtu.be/lhkwQal8OMg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "a",
+    "image": "/assets/images/a.png",
+    "video": "https://youtu.be/7Fo3VTzCjt4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "b",
+    "image": "/assets/images/b.png",
+    "video": "https://youtu.be/ULCyf5s1I2s"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "c",
+    "image": "/assets/images/c.png",
+    "video": "https://youtu.be/71aw6YNJVvM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Colores",
+    "palabra": "claro",
+    "image": "/assets/images/claro.png",
+    "video": "https://youtu.be/hXBFIL-YfFY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "d",
+    "image": "/assets/images/d.png",
+    "video": "https://youtu.be/c9wsGGXTjLM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "f",
+    "image": "/assets/images/f.png",
+    "video": "https://youtu.be/lyKJKiobybM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "g",
+    "image": "/assets/images/g.png",
+    "video": "https://youtu.be/i6DDN7KU8BA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "h",
+    "image": "/assets/images/h.png",
+    "video": "https://youtu.be/7eVlOs740RU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "i",
+    "image": "/assets/images/i.png",
+    "video": "https://youtu.be/Vhuke-sbzTg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "j",
+    "image": "/assets/images/j.png",
+    "video": "https://youtu.be/NIlQGfH59ug"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "k",
+    "image": "/assets/images/k.png",
+    "video": "https://youtu.be/x2KeDfdyVuU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "l",
+    "image": "/assets/images/l.png",
+    "video": "https://youtu.be/CnBtHOr6y5k"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "ll",
+    "image": "/assets/images/ll.png",
+    "video": "https://youtu.be/dRp2Q3Va_VI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "m",
+    "image": "/assets/images/m.png",
+    "video": "https://youtu.be/0KdRKcvuGQQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Sintomas",
+    "palabra": "madrugar",
+    "image": "/assets/images/madrugar.png",
+    "video": "https://youtu.be/TV-Sqi75sTw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "n",
+    "image": "/assets/images/n.png",
+    "video": "https://youtu.be/qHW4vQNffuI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Noción temporal",
+    "palabra": "noche",
+    "image": "/assets/images/noche.png",
+    "video": "https://youtu.be/LoCe7rS3M2k"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "o",
+    "image": "/assets/images/o.png",
+    "video": "https://youtu.be/XP3ChMThcCs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Colores",
+    "palabra": "oscuro",
+    "image": "/assets/images/oscuro.png",
+    "video": "https://youtu.be/JTe2sW7b624"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "p",
+    "image": "/assets/images/p.png",
+    "video": "https://youtu.be/2UGewRMpCF8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "q",
+    "image": "/assets/images/q.png",
+    "video": "https://youtu.be/A38vyVw3PCI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "r",
+    "image": "/assets/images/r.png",
+    "video": "https://youtu.be/EGaYmIkw_6M"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "regla de plástico",
+    "image": "/assets/images/regla-de-plastico.png",
+    "video": "https://youtu.be/DEuuNtCQaH8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "rr",
+    "image": "/assets/images/rr.png",
+    "video": "https://youtu.be/ty2oy7iHg4k"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "s",
+    "image": "/assets/images/s.png",
+    "video": "https://youtu.be/gBlG7AhtUDU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "t",
+    "image": "/assets/images/t.png",
+    "video": "https://youtu.be/uOS-DD8I0gk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "u",
+    "image": "/assets/images/u.png",
+    "video": "https://youtu.be/3vDvzMSYODY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "v",
+    "image": "/assets/images/v.png",
+    "video": "https://youtu.be/tFX44uuiwmQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "w",
+    "image": "/assets/images/w.png",
+    "video": "https://youtu.be/bz0zRftvxFA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "x",
+    "image": "/assets/images/x.png",
+    "video": "https://youtu.be/_dxmyKuuh10"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "y",
+    "image": "/assets/images/y.png",
+    "video": "https://youtu.be/DyavT3Ex0fw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "z",
+    "image": "/assets/images/z.png",
+    "video": "https://youtu.be/EvthZy0QQo8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "ñ",
+    "image": "/assets/images/n.png",
+    "video": "https://youtu.be/9lJ9j95ECA4"
   }
 ]
