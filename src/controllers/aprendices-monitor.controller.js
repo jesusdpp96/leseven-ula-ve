@@ -90,6 +90,7 @@ const getUsersMonitorData = async (req, res, next) => {
 const getAllData = async (req, res, next) => {
   try {
 
+    console.log("nigga");
     const usuario_id = req.user;
 
     const { usuario_target_id } = req.params;
@@ -240,22 +241,6 @@ const getAllData = async (req, res, next) => {
 
     const gradoQuery = await pool.query(`SELECT * FROM grado`);
     const grados = gradoQuery.rows;
-
-    const trofeosQuery = await pool.query(
-      `SELECT * FROM trofeos WHERE usuario_id = $1`,
-      [usuario_target_id]
-    );
-
-
-    const trofeos = {};
-
-    for (const trofeo of trofeosQuery.rows) {
-      if (trofeos[trofeo.tipo]) {
-        trofeos[trofeo.tipo] += 1;
-      } else {
-        trofeos[trofeo.tipo] = 1;
-      }
-    }
     
     const usuario = (await usuarioQuery).rows[0];
 
@@ -268,7 +253,6 @@ const getAllData = async (req, res, next) => {
       total_correctas,
       total_incorrectas: total_consultas - total_correctas,
       grados,
-      trofeos
     });
   } catch (error) {
     next(error);
@@ -445,22 +429,6 @@ const getDataByGrado = async (req, res, next) => {
 
     const gradoQuery = await pool.query(`SELECT * FROM grado`);
     const grados = gradoQuery.rows;
-
-    const trofeosQuery = await pool.query(
-      `SELECT * FROM trofeos WHERE usuario_id = $1 AND grado_id = $2`,
-      [usuario_target_id, grado_id]
-    );
-
-
-    const trofeos = {};
-
-    for (const trofeo of trofeosQuery.rows) {
-      if (trofeos[trofeo.tipo]) {
-        trofeos[trofeo.tipo] += 1;
-      } else {
-        trofeos[trofeo.tipo] = 1;
-      }
-    }
     
     res.json({
       temas_data: Object.values(temasDataObj),
@@ -469,8 +437,7 @@ const getDataByGrado = async (req, res, next) => {
       total_consultas, 
       total_correctas,
       total_incorrectas: total_consultas - total_correctas,
-      grados,
-      trofeos
+      grados
     });
     
   } catch (error) {
@@ -640,23 +607,7 @@ const getDataByRange = async (req, res, next) => {
 
     const gradoQuery = await pool.query(`SELECT * FROM grado`);
     const grados = gradoQuery.rows;
-    
-    const trofeosQuery = await pool.query(
-      `SELECT * FROM trofeos WHERE usuario_id = $1 AND '[${start}, ${end}]'::daterange @> fecha`,
-      [usuario_target_id]
-    );
 
-
-    const trofeos = {};
-
-    for (const trofeo of trofeosQuery.rows) {
-      if (trofeos[trofeo.tipo]) {
-        trofeos[trofeo.tipo] += 1;
-      } else {
-        trofeos[trofeo.tipo] = 1;
-      }
-    }
-    
     res.json({
       temas_data: Object.values(temasDataObj),
       practicas_last_7days: 'No aplica',
@@ -664,8 +615,7 @@ const getDataByRange = async (req, res, next) => {
       total_consultas, 
       total_correctas,
       total_incorrectas: total_consultas - total_correctas,
-      grados,
-      trofeos
+      grados
     });
   } catch (error) {
     next(error);
@@ -850,24 +800,6 @@ const getDataByGradoRange = async (req, res, next) => {
     const gradoQuery = await pool.query(`SELECT * FROM grado`);
     const grados = gradoQuery.rows;
 
-    const trofeosQuery = await pool.query(
-      `SELECT * FROM trofeos WHERE usuario_id = $1 AND grado_id = $2 AND '[${start}, ${end}]'::daterange @> fecha`,
-      [usuario_target_id, grado_id]
-    );
-
-
-    const trofeos = {};
-
-    for (const trofeo of trofeosQuery.rows) {
-      if (trofeos[trofeo.tipo]) {
-        trofeos[trofeo.tipo] += 1;
-      } else {
-        trofeos[trofeo.tipo] = 1;
-      }
-    }
-    
-    
-
     res.json({
       temas_data: Object.values(temasDataObj),
       practicas_last_7days: 'No aplica',
@@ -875,8 +807,7 @@ const getDataByGradoRange = async (req, res, next) => {
       total_consultas, 
       total_correctas,
       total_incorrectas: total_consultas - total_correctas,
-      grados,
-      trofeos
+      grados
     });
   } catch (error) {
     next(error);

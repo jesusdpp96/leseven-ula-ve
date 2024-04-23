@@ -45,7 +45,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (3, 0, 0, 0);
 
@@ -89,7 +89,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (4, 0, 0, 0);
 
@@ -133,7 +133,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (5, 0, 0, 0);
 
@@ -177,7 +177,7 @@ VALUES (
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (6, 0, 0, 0);
 
@@ -221,7 +221,7 @@ VALUES (
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (7, 0, 0, 0);
 
@@ -265,7 +265,7 @@ VALUES (
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (8, 0, 0, 0);
 
@@ -309,7 +309,7 @@ VALUES (
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (9, 0, 0, 0);
 
@@ -353,7 +353,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (10, 0, 0, 0);
 
@@ -398,7 +398,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (11, 0, 0, 0);
 
@@ -442,7 +442,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (12, 0, 0, 0);
 
@@ -488,7 +488,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (13, 0, 0, 0);
 
@@ -532,7 +532,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (14, 0, 0, 0);
 
@@ -576,7 +576,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (15, 0, 0, 0);
 
@@ -620,7 +620,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (16, 0, 0, 0);
 
@@ -665,7 +665,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (17, 0, 0, 0);
 
@@ -709,7 +709,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (18, 0, 0, 0);
 
@@ -753,7 +753,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (19, 0, 0, 0);
 
@@ -798,7 +798,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (20, 0, 0, 0);
 
@@ -842,7 +842,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (21, 0, 0, 0);
 
@@ -886,7 +886,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (22, 0, 0, 0);
 
@@ -930,7 +930,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (23, 0, 0, 0);
 
@@ -975,7 +975,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (24, 0, 0, 0);
 
@@ -1019,7 +1019,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (25, 0, 0, 0);
 
@@ -1063,7 +1063,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (26, 0, 0, 0);
 
@@ -1107,7 +1107,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (27, 0, 0, 0);
 
@@ -1151,7 +1151,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (28, 0, 0, 0);
 
@@ -1195,7 +1195,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (29, 0, 0, 0);
 
@@ -1239,7 +1239,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (30, 0, 0, 0);
 
@@ -1284,7 +1284,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (31, 0, 0, 0);
 
@@ -1328,7 +1328,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (32, 0, 0, 0);
 
@@ -1372,7 +1372,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (33, 0, 0, 0);
 
@@ -1416,7 +1416,7 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
+        consultas_incorrectas
     )
 VALUES (34, 0, 0, 0);
 
