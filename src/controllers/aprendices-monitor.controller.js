@@ -90,7 +90,6 @@ const getUsersMonitorData = async (req, res, next) => {
 const getAllData = async (req, res, next) => {
   try {
 
-    console.log("nigga");
     const usuario_id = req.user;
 
     const { usuario_target_id } = req.params;
