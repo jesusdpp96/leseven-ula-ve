@@ -4,7 +4,6 @@ import {
   Grid,
   CircularProgress,
   Typography,
-  IconButton,
   Table,
   TableBody,
   TableCell,
@@ -12,19 +11,10 @@ import {
   TableHead,
   TableRow,
   Paper,
-  Stack,
-  Chip,
-  TextField,
-  Button,
   Tabs,
   Tab,
 } from '@mui/material';
-import DeleteIcon from '@mui/icons-material/Delete';
 
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { getDateDDMMYYYY, getDateYYYYMMDD } from '../../utils/dates';
 import { styleUsuarioMonitorModal } from './styles';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getFilterQueryParams } from '../../utils/getFilterQueryParams';
@@ -40,32 +30,9 @@ export default function UserMonitorIndividual() {
   const [usuario, setUsuario] = useState();
   const [tab, setTab] = useState(0);
 
-  const [gradoSelected, setGradoSelected] = useState();
-  const [grados, setGrados] = useState();
-  const [rangeSelected, setRangeSelected] = useState();
-  const [fromDate, setFromDate] = useState(new Date());
-  const [toDate, setToDate] = useState(new Date());
-  const [canConsult, setCanConsult] = useState(true);
-
-  const checkCanConsult = ({ newFromDate, newToDate }) => {
-    if (!newFromDate || !newToDate) {
-      setCanConsult(false);
-    } else if (newFromDate.getTime() > newToDate.getTime()) {
-      setCanConsult(false);
-    } else {
-      setCanConsult(true);
-    }
-  }
-
-  const setConsultByRange = ({ fromDate1, toDate1 }) => {
-    const start = getDateYYYYMMDD(fromDate1);
-    const end = getDateYYYYMMDD(toDate1);
-
-    console.log({ fromDate1, toDate1, start, end })
-
-    setRangeSelected({ start, end });
-    getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: gradoSelected, range: { start, end } });
-  };
+  const [gradoSelected] = useState();
+  const [, setGrados] = useState();
+  const [rangeSelected] = useState();
 
   const getUserMonitorData = useCallback(async () => {
     try {
@@ -113,101 +80,7 @@ export default function UserMonitorIndividual() {
           </Box>
 
           <Box sx={{ width: '100%', height: '100%', padding: '16px', paddingBottom: '64px' }}>
-            <Typography variant="h6">
-              Filtros para consultar
-            </Typography>
-            <LocalizationProvider dateAdapter={AdapterDateFns}>
-              <Stack direction="row" spacing={3} sx={{ margin: '24px' }}>
-                <DatePicker
-                  disableFuture
-                  label="Desde"
-                  openTo="year"
-                  views={['year', 'month', 'day']}
-                  value={fromDate}
-                  onChange={(newValue) => {
-                    setFromDate(newValue);
-                    checkCanConsult({ newFromDate: newValue, newToDate: toDate });
-                  }}
-                  renderInput={(params) => <TextField {...params} />}
-                />
-
-                <DatePicker
-                  disableFuture
-                  label="Hasta"
-                  openTo="year"
-                  views={['year', 'month', 'day']}
-                  value={toDate}
-                  onChange={(newValue) => {
-                    setToDate(newValue);
-                    checkCanConsult({ newFromDate: fromDate, newToDate: newValue });
-                  }}
-                  renderInput={(params) => <TextField {...params} />}
-                />
-
-                <Button variant="contained" color="primary" disabled={!canConsult} onClick={() => { setConsultByRange({ fromDate1: fromDate, toDate1: toDate }) }}>Consultar</Button>
-              </Stack>
-            </LocalizationProvider>
-            {
-              data?.grados ? (
-                <Stack direction="row" spacing={0} sx={{ margin: '0px 24px 24px 24px', flexWrap: 'wrap', gap: '8px' }}>
-                  {
-                    gradoSelected === undefined ?
-                      (<Chip label="Todo" color="primary" />) :
-                      (<Chip label="Todo" variant="outlined" onClick={() => {
-                        setGradoSelected(undefined);
-                        getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: undefined, range: rangeSelected });
-                      }} />)
-                  }
-
-                  {
-                    data.grados.map((elem, index) => {
-                      return (
-                        gradoSelected === elem.id ?
-                          (<Chip key={index} label={elem.nombre} color="primary" />) :
-                          (<Chip key={index} label={elem.nombre} variant="outlined" onClick={() => {
-                            setGradoSelected(elem.id);
-                            getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: elem.id, range: rangeSelected });
-                          }} />)
-                      );
-                    })
-                  }
-
-                </Stack>
-              ) : null
-            }
-            <Box>
-              {
-                (grados && gradoSelected) &&
-                (
-                  <Typography variant="subtitle1"> {`Aplicando filtro por grado: `}
-                    <Typography variant="string" color="primary">{grados[gradoSelected].nombre}</Typography>
-
-                    <IconButton aria-label="emove filter" onClick={() => {
-                      setGradoSelected(undefined);
-                      getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: undefined, range: rangeSelected });
-                    }}>
-                      <DeleteIcon sx={{ color: 'red' }} />
-                    </IconButton>
-                  </Typography>
-                )
-              }
-              {
-                rangeSelected ?
-                  (
-                    <Typography variant="subtitle1"> {`Aplicando filtro por rango: `}
-                      Desde <Typography variant="string" color="primary">{getDateDDMMYYYY(fromDate)}</Typography> hasta <Typography variant="string" color="primary">{getDateDDMMYYYY(toDate)}</Typography>
-
-                      <IconButton aria-label="remove filter" onClick={() => {
-                        setRangeSelected(undefined);
-                        getUserMonitorData({ usuarioTargetId: usuario?.aprendiz_id, grado: gradoSelected, range: undefined });
-                      }}>
-                        <DeleteIcon sx={{ color: 'red' }} />
-                      </IconButton>
-                    </Typography>
-                  ) :
-                  (null)
-              }
-            </Box>
+          
             <Typography variant="h6">
               Estadísticas por temas
             </Typography>
