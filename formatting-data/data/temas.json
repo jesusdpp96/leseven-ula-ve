@@ -208,5 +208,10 @@
     "nombre": "Letras",
     "image": "/assets/images/letras.png",
     "es_categoria": true
+  },
+  {
+    "nombre": "Expresiones cotidianas",
+    "image": "/assets/images/expresiones-cotidianas.png",
+    "es_categoria": true
   }
 ]

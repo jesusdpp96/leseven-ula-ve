@@ -203,6 +203,10 @@
     VALUES (41, 'Letras', '/assets/images/letras.png', true);
   
   
+  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
+    VALUES (42, 'Expresiones cotidianas', '/assets/images/expresiones-cotidianas.png', true);
+  
+  
 
 
 --
@@ -8758,6 +8762,456 @@
     INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
       VALUES (1899, 'video', 'https://youtube.com/watch?v=EvthZy0QQo8', 949);
     
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (950, 'A la orden', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1900, 'image', '/assets/images/a-la-orden.png', 950);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1901, 'video', 'https://www.youtube.com/watch?v=WpqQXejk7E8', 950);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (951, 'Arveja', 0);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1902, 'image', '/assets/images/arveja.png', 951);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1903, 'video', 'https://www.youtube.com/watch?v=O2X9g7g6LRg', 951);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (952, 'Barriga', 23);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1904, 'image', '/assets/images/barriga.png', 952);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1905, 'video', 'https://www.youtube.com/watch?v=K0hxPGd9qik', 952);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (953, 'Bienvenido', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1906, 'image', '/assets/images/bienvenido.png', 953);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1907, 'video', 'https://www.youtube.com/watch?v=jRDnwDbRqrg', 953);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (954, 'Bloc de construcción', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1908, 'image', '/assets/images/bloc-de-construccion.png', 954);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1909, 'video', 'https://www.youtube.com/watch?v=z_tVcYyrOrg', 954);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (955, 'Bloc de dibujo', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1910, 'image', '/assets/images/bloc-de-dibujo.png', 955);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1911, 'video', 'https://www.youtube.com/watch?v=P4f6H-hjTgs', 955);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (956, 'Bloc de papel lustrillo', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1912, 'image', '/assets/images/bloc-de-papel-lustrillo.png', 956);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1913, 'video', 'https://www.youtube.com/watch?v=f7M6hAPyTmY', 956);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (957, 'Buenas noches', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1914, 'image', '/assets/images/buenas-noches.png', 957);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1915, 'video', 'https://www.youtube.com/watch?v=geeKL8KCQZ4', 957);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (958, 'Buenas tardes', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1916, 'image', '/assets/images/buenas-tardes.png', 958);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1917, 'video', 'https://www.youtube.com/watch?v=w0Hxzc9wbhg', 958);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (959, 'Buenos días', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1918, 'image', '/assets/images/buenos-dias.png', 959);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1919, 'video', 'https://www.youtube.com/watch?v=fCzZGR6x9qg', 959);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (960, 'Calculadora básica', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1920, 'image', '/assets/images/calculadora-basica.png', 960);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1921, 'video', 'https://www.youtube.com/watch?v=KmQdGX46im0', 960);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (961, 'Carne', 0);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1922, 'image', '/assets/images/carne.png', 961);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1923, 'video', 'https://www.youtube.com/watch?v=H74hfH5w0wc', 961);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (962, 'Carpeta de gancho', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1924, 'image', '/assets/images/carpeta-de-gancho.png', 962);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1925, 'video', 'https://www.youtube.com/watch?v=MZ-ZoDdGjCY', 962);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (963, 'Cartulina corrugada', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1926, 'image', '/assets/images/cartulina-corrugada.png', 963);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1927, 'video', 'https://www.youtube.com/watch?v=so_91zRUvpQ', 963);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (964, 'Ceja', 23);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1928, 'image', '/assets/images/ceja.png', 964);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1929, 'video', 'https://www.youtube.com/watch?v=x9PuRvf_w_o', 964);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (965, 'Chinche', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1930, 'image', '/assets/images/chinche.png', 965);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1931, 'video', 'https://www.youtube.com/watch?v=_mN_ZGE1QDY', 965);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (966, 'Clip', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1932, 'image', '/assets/images/clip.png', 966);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1933, 'video', 'https://www.youtube.com/watch?v=KkTDt05Xo9g', 966);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (967, 'Corrector', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1934, 'image', '/assets/images/corrector.png', 967);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1935, 'video', 'https://www.youtube.com/watch?v=w_0qqcHlRLs', 967);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (968, 'Corta uñas', 3);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1936, 'image', '/assets/images/corta-unas.png', 968);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1937, 'video', 'https://www.youtube.com/watch?v=agex6cTY-WU', 968);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (969, 'Creyones de cera', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1938, 'image', '/assets/images/creyones-de-cera.png', 969);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1939, 'video', 'https://www.youtube.com/watch?v=WmjsGMNayEw', 969);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (970, 'Creyones de madera', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1940, 'image', '/assets/images/creyones-de-madera.png', 970);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1941, 'video', 'https://www.youtube.com/watch?v=EbVNsiic_nk', 970);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (971, 'De nada', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1942, 'image', '/assets/images/de-nada.png', 971);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1943, 'video', 'https://www.youtube.com/watch?v=Jle7tC1MQds', 971);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (972, 'Disculpa', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1944, 'image', '/assets/images/disculpa.png', 972);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1945, 'video', 'https://www.youtube.com/watch?v=Aj5xjryn_tY', 972);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (973, 'Esposo', 25);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1946, 'image', '/assets/images/esposo.png', 973);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1947, 'video', 'https://www.youtube.com/watch?v=4I4qta8r23k', 973);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (974, 'Foami', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1948, 'image', '/assets/images/foami.png', 974);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1949, 'video', 'https://www.youtube.com/watch?v=cUdkt0US40w', 974);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (975, 'Fresa', 9);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1950, 'image', '/assets/images/fresa.png', 975);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1951, 'video', 'https://www.youtube.com/watch?v=6f7F8hKagZw', 975);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (976, 'Gracias', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1952, 'image', '/assets/images/gracias.png', 976);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1953, 'video', 'https://www.youtube.com/watch?v=u-Vz8KJDZwI', 976);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (977, 'Grapadora', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1954, 'image', '/assets/images/grapadora.png', 977);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1955, 'video', 'https://www.youtube.com/watch?v=xUKLFFtpl68', 977);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (978, 'Hojas de reciclaje', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1956, 'image', '/assets/images/hojas-de-reciclaje.png', 978);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1957, 'video', 'https://www.youtube.com/watch?v=u_tL8JjQyrY', 978);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (979, 'Hola', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1958, 'image', '/assets/images/hola.png', 979);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1959, 'video', 'https://www.youtube.com/watch?v=Y6JE6qjZd7M', 979);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (980, 'Lamina de papel bond', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1960, 'image', '/assets/images/lamina-de-papel-bond.png', 980);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1961, 'video', 'https://www.youtube.com/watch?v=3bUnW3-xt3E', 980);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (981, 'Libreta', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1962, 'image', '/assets/images/libreta.png', 981);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1963, 'video', 'https://www.youtube.com/watch?v=XxNgiCPzAZE', 981);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (982, 'Muchas gracias', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1964, 'image', '/assets/images/muchas-gracias.png', 982);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1965, 'video', 'https://www.youtube.com/watch?v=XfzwWiDEegQ', 982);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (983, 'Ojo', 23);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1966, 'image', '/assets/images/ojo.png', 983);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1967, 'video', 'https://www.youtube.com/watch?v=nJOktJJ4ZLs', 983);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (984, 'Padre', 25);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1968, 'image', '/assets/images/padre.png', 984);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1969, 'video', 'https://www.youtube.com/watch?v=vSAcUnQXFdM', 984);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (985, 'Paletas', 6);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1970, 'image', '/assets/images/paletas.png', 985);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1971, 'video', 'https://www.youtube.com/watch?v=8kT7h_UOOYY', 985);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (986, 'Papel crepé', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1972, 'image', '/assets/images/papel-crepe.png', 986);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1973, 'video', 'https://www.youtube.com/watch?v=LOAnyL8LxKo', 986);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (987, 'Perdón', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1974, 'image', '/assets/images/perdon.png', 987);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1975, 'video', 'https://www.youtube.com/watch?v=DPockimbo4M', 987);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (988, 'Perforadora de papel', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1976, 'image', '/assets/images/perforadora-de-papel.png', 988);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1977, 'video', 'https://www.youtube.com/watch?v=1kCDd6sex_4', 988);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (989, 'Permiso', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1978, 'image', '/assets/images/permiso.png', 989);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1979, 'video', 'https://www.youtube.com/watch?v=kHEyvQL3X0o', 989);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (990, 'Pescado', 0);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1980, 'image', '/assets/images/pescado.png', 990);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1981, 'video', 'https://www.youtube.com/watch?v=5rqFj4fOST4', 990);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (991, 'Pintura al frío', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1982, 'image', '/assets/images/pintura-al-frio.png', 991);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1983, 'video', 'https://www.youtube.com/watch?v=7oIGmKX7iVA', 991);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (992, 'Plastilina', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1984, 'image', '/assets/images/plastilina.png', 992);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1985, 'video', 'https://www.youtube.com/watch?v=FYNdTQoNV7E', 992);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (993, 'Plaza las Heroínas', 13);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1986, 'image', '/assets/images/plaza-las-heroinas.png', 993);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1987, 'video', 'https://www.youtube.com/watch?v=4NytdK3kDvQ', 993);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (994, 'Por favor', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1988, 'image', '/assets/images/por-favor.png', 994);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1989, 'video', 'https://www.youtube.com/watch?v=fWfmj0HDP2A', 994);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (995, 'Portarse mal', 42);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1990, 'image', '/assets/images/portarse-mal.png', 995);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1991, 'video', 'https://www.youtube.com/watch?v=t6fwpD6ANTo', 995);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (996, 'Primo', 25);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1992, 'image', '/assets/images/primo.png', 996);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1993, 'video', 'https://www.youtube.com/watch?v=zyZd4VqRduE', 996);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (997, 'Sacagrapas', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1994, 'image', '/assets/images/sacagrapas.png', 997);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1995, 'video', 'https://www.youtube.com/watch?v=yvxCS2_5W4M', 997);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (998, 'Silicón en barra', 30);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1996, 'image', '/assets/images/silicon-en-barra.png', 998);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1997, 'video', 'https://www.youtube.com/watch?v=y8mgNClkJVU', 998);
+    
+    INSERT INTO public.vocablo(id, palabra, tema_id)
+      VALUES (999, 'Uva verde', 9);
+    
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1998, 'image', '/assets/images/uva-verde.png', 999);
+
+    INSERT INTO public.recurso(id, tipo, enlace, vocablo_id)
+      VALUES (1999, 'video', 'https://www.youtube.com/watch?v=OSbIycyLy9s', 999);
+    
 
 
 --
@@ -14672,4 +15126,216 @@
 
     INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
       VALUES (6, 41, 949);
+    
+
+    INSERT INTO public.grado_tema(grado_id, tema_id)
+      VALUES (6, 42);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 950);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 0, 951);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 23, 952);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 953);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 954);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 955);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 956);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 957);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 958);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 959);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 960);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 0, 961);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 962);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 963);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 0, 307);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 23, 964);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 965);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 966);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 967);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 3, 968);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 969);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 970);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 971);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 972);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 25, 973);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 974);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 9, 975);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 976);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 977);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 978);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 979);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 980);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 3, 73);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 981);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 982);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 23, 983);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 25, 984);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 6, 985);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 986);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 987);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 988);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 989);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 0, 990);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 991);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 992);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 13, 993);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 994);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 42, 995);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 25, 996);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 997);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 30, 998);
+    
+
+    INSERT INTO public.grado_tema_vocablo(grado_id, tema_id, vocablo_id)
+      VALUES (6, 9, 999);
     

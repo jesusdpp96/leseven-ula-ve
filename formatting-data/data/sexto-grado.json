@@ -2182,5 +2182,376 @@
     "palabra": "ñ",
     "image": "/assets/images/n.png",
     "video": "https://youtube.com/watch?v=9lJ9j95ECA4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "A la orden",
+    "image": "/assets/images/a-la-orden.png",
+    "video": "https://www.youtube.com/watch?v=WpqQXejk7E8"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Arveja",
+    "image": "/assets/images/arveja.png",
+    "video": "https://www.youtube.com/watch?v=O2X9g7g6LRg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Barriga",
+    "image": "/assets/images/barriga.png",
+    "video": "https://www.youtube.com/watch?v=K0hxPGd9qik"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Bienvenido",
+    "image": "/assets/images/bienvenido.png",
+    "video": "https://www.youtube.com/watch?v=jRDnwDbRqrg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Bloc de construcción",
+    "image": "/assets/images/bloc-de-construccion.png",
+    "video": "https://www.youtube.com/watch?v=z_tVcYyrOrg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Bloc de dibujo",
+    "image": "/assets/images/bloc-de-dibujo.png",
+    "video": "https://www.youtube.com/watch?v=P4f6H-hjTgs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Bloc de papel lustrillo",
+    "image": "/assets/images/bloc-de-papel-lustrillo.png",
+    "video": "https://www.youtube.com/watch?v=f7M6hAPyTmY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Buenas noches",
+    "image": "/assets/images/buenas-noches.png",
+    "video": "https://www.youtube.com/watch?v=geeKL8KCQZ4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Buenas tardes",
+    "image": "/assets/images/buenas-tardes.png",
+    "video": "https://www.youtube.com/watch?v=w0Hxzc9wbhg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Buenos días",
+    "image": "/assets/images/buenos-dias.png",
+    "video": "https://www.youtube.com/watch?v=fCzZGR6x9qg"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Calculadora básica",
+    "image": "/assets/images/calculadora-basica.png",
+    "video": "https://www.youtube.com/watch?v=KmQdGX46im0"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Carne",
+    "image": "/assets/images/carne.png",
+    "video": "https://www.youtube.com/watch?v=H74hfH5w0wc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Carpeta de gancho",
+    "image": "/assets/images/carpeta-de-gancho.png",
+    "video": "https://www.youtube.com/watch?v=MZ-ZoDdGjCY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Cartulina corrugada",
+    "image": "/assets/images/cartulina-corrugada.png",
+    "video": "https://www.youtube.com/watch?v=so_91zRUvpQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Cebolla",
+    "image": "/assets/images/cebolla.png",
+    "video": "https://www.youtube.com/watch?v=aKbk9g0XvfA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Ceja",
+    "image": "/assets/images/ceja.png",
+    "video": "https://www.youtube.com/watch?v=x9PuRvf_w_o"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Chinche",
+    "image": "/assets/images/chinche.png",
+    "video": "https://www.youtube.com/watch?v=_mN_ZGE1QDY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Clip",
+    "image": "/assets/images/clip.png",
+    "video": "https://www.youtube.com/watch?v=KkTDt05Xo9g"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Corrector",
+    "image": "/assets/images/corrector.png",
+    "video": "https://www.youtube.com/watch?v=w_0qqcHlRLs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Corta uñas",
+    "image": "/assets/images/corta-unas.png",
+    "video": "https://www.youtube.com/watch?v=agex6cTY-WU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Creyones de cera",
+    "image": "/assets/images/creyones-de-cera.png",
+    "video": "https://www.youtube.com/watch?v=WmjsGMNayEw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Creyones de madera",
+    "image": "/assets/images/creyones-de-madera.png",
+    "video": "https://www.youtube.com/watch?v=EbVNsiic_nk"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "De nada",
+    "image": "/assets/images/de-nada.png",
+    "video": "https://www.youtube.com/watch?v=Jle7tC1MQds"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Disculpa",
+    "image": "/assets/images/disculpa.png",
+    "video": "https://www.youtube.com/watch?v=Aj5xjryn_tY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Esposo",
+    "image": "/assets/images/esposo.png",
+    "video": "https://www.youtube.com/watch?v=4I4qta8r23k"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Foami",
+    "image": "/assets/images/foami.png",
+    "video": "https://www.youtube.com/watch?v=cUdkt0US40w"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Fresa",
+    "image": "/assets/images/fresa.png",
+    "video": "https://www.youtube.com/watch?v=6f7F8hKagZw"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Gracias",
+    "image": "/assets/images/gracias.png",
+    "video": "https://www.youtube.com/watch?v=u-Vz8KJDZwI"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Grapadora",
+    "image": "/assets/images/grapadora.png",
+    "video": "https://www.youtube.com/watch?v=xUKLFFtpl68"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Hojas de reciclaje",
+    "image": "/assets/images/hojas-de-reciclaje.png",
+    "video": "https://www.youtube.com/watch?v=u_tL8JjQyrY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Hola",
+    "image": "/assets/images/hola.png",
+    "video": "https://www.youtube.com/watch?v=Y6JE6qjZd7M"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Lamina de papel bond",
+    "image": "/assets/images/lamina-de-papel-bond.png",
+    "video": "https://www.youtube.com/watch?v=3bUnW3-xt3E"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Articulos de uso Personal",
+    "palabra": "Lápiz labial",
+    "image": "/assets/images/lapiz-labial.png",
+    "video": "https://www.youtube.com/watch?v=mmuEcWXARlc"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Libreta",
+    "image": "/assets/images/libreta.png",
+    "video": "https://www.youtube.com/watch?v=XxNgiCPzAZE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Muchas gracias",
+    "image": "/assets/images/muchas-gracias.png",
+    "video": "https://www.youtube.com/watch?v=XfzwWiDEegQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Partes del cuerpo",
+    "palabra": "Ojo",
+    "image": "/assets/images/ojo.png",
+    "video": "https://www.youtube.com/watch?v=nJOktJJ4ZLs"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Padre",
+    "image": "/assets/images/padre.png",
+    "video": "https://www.youtube.com/watch?v=vSAcUnQXFdM"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Dulces/Postres/Golosinas",
+    "palabra": "Paletas",
+    "image": "/assets/images/paletas.png",
+    "video": "https://www.youtube.com/watch?v=8kT7h_UOOYY"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Papel crepé",
+    "image": "/assets/images/papel-crepe.png",
+    "video": "https://www.youtube.com/watch?v=LOAnyL8LxKo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Perdón",
+    "image": "/assets/images/perdon.png",
+    "video": "https://www.youtube.com/watch?v=DPockimbo4M"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Perforadora de papel",
+    "image": "/assets/images/perforadora-de-papel.png",
+    "video": "https://www.youtube.com/watch?v=1kCDd6sex_4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Permiso",
+    "image": "/assets/images/permiso.png",
+    "video": "https://www.youtube.com/watch?v=kHEyvQL3X0o"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Alimentos",
+    "palabra": "Pescado",
+    "image": "/assets/images/pescado.png",
+    "video": "https://www.youtube.com/watch?v=5rqFj4fOST4"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Pintura al frío",
+    "image": "/assets/images/pintura-al-frio.png",
+    "video": "https://www.youtube.com/watch?v=7oIGmKX7iVA"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Plastilina",
+    "image": "/assets/images/plastilina.png",
+    "video": "https://www.youtube.com/watch?v=FYNdTQoNV7E"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Lugares de Mérida",
+    "palabra": "Plaza las Heroínas",
+    "image": "/assets/images/plaza-las-heroinas.png",
+    "video": "https://www.youtube.com/watch?v=4NytdK3kDvQ"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Por favor",
+    "image": "/assets/images/por-favor.png",
+    "video": "https://www.youtube.com/watch?v=fWfmj0HDP2A"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Expresiones cotidianas",
+    "palabra": "Portarse mal",
+    "image": "/assets/images/portarse-mal.png",
+    "video": "https://www.youtube.com/watch?v=t6fwpD6ANTo"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Personas",
+    "palabra": "Primo",
+    "image": "/assets/images/primo.png",
+    "video": "https://www.youtube.com/watch?v=zyZd4VqRduE"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Sacagrapas",
+    "image": "/assets/images/sacagrapas.png",
+    "video": "https://www.youtube.com/watch?v=yvxCS2_5W4M"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Utiles escolares",
+    "palabra": "Silicón en barra",
+    "image": "/assets/images/silicon-en-barra.png",
+    "video": "https://www.youtube.com/watch?v=y8mgNClkJVU"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Frutas",
+    "palabra": "Uva verde",
+    "image": "/assets/images/uva-verde.png",
+    "video": "https://www.youtube.com/watch?v=OSbIycyLy9s"
+  },
+  {
+    "grado": "Sexto grado",
+    "tema": "Letras",
+    "palabra": "ñ",
+    "image": "/assets/images/n.png",
+    "video": "https://www.youtube.com/watch?v=9lJ9j95ECA4"
   }
 ]
