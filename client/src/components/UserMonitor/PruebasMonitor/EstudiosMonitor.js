@@ -9,21 +9,19 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import customFetch from "../../../utils/request";
 import { getDateDDMMYYYY } from "../../../utils/dates";
-import { gradosMap } from "./PruebaDetalles";
 import { capitalizeWords } from "../../../utils/capitalize";
 
 export default function EstudiosMonitor() {
   const { userId } = useParams();
   const [search] = useSearchParams();
-  const navigate = useNavigate();
 
-  const url = `/practica/${userId}${search.toString() ? `?${search.toString()}` : ''}`;
+  const url = `/aprendices-monitor/${userId}/estudios${search.toString() ? `?${search.toString()}` : ''}`;
 
-  const { isLoading: loading, data: practicas } = useQuery('practicasData', () => customFetch(url));
+  const { isLoading: loading, data: estudios } = useQuery('estudiosData', () => customFetch(url));
 
   if (loading) 
     return <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -34,38 +32,32 @@ export default function EstudiosMonitor() {
     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
       <Box sx={{ margin: "32px 0" }}>
         <Typography component="h1" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-          Pruebas realizadas por el alumno
+          Vocablos estudiados por el alumno
         </Typography>
       </Box>
-      {practicas?.length ?
+      {estudios?.length ?
         (<Box>
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
                   <TableCell align="left">Fecha</TableCell>
-                  <TableCell align="left">Grado</TableCell>
-                  <TableCell align="left">Total de preguntas</TableCell>
-                  <TableCell align="left">Respuestas correctas</TableCell>
+                  <TableCell align="left">Vocablo</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
-                {practicas.map((row) => (
+                {estudios.map((row) => (
                   <TableRow
                     key={row.id}
                     sx={{ 
                       '&:last-child td, &:last-child th': { border: 0 }, 
-                      cursor: 'pointer',
                       '&:hover': {
                         backgroundColor: '#9ccaf8',
                       } 
                     }}
-                    onClick={() => navigate(`/dashboard/supervisar/pruebas/${row.id}`)}
                   >
                     <TableCell align="left">{getDateDDMMYYYY(new Date(row.fecha))}</TableCell>
-                    <TableCell align="left">{capitalizeWords(gradosMap?.[row.grado_id] ?? "")}</TableCell>
-                    <TableCell align="left">{row.total_consultas}</TableCell>
-                    <TableCell align="left">{row.total_correctas}</TableCell>
+                    <TableCell align="left">{capitalizeWords(row.palabra ?? "")}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -73,7 +65,7 @@ export default function EstudiosMonitor() {
           </TableContainer>
         </Box>
         ) : (<Typography component="h3" variant="h7" color="inherit" noWrap sx={{ flexGrow: 1, textAlign: 'center' }}>
-          El alumno no ha realizado ninguna prueba
+          El alumno no ha estudiado ningún vocablo
         </Typography>)
       }
     </Box>
