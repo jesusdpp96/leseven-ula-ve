@@ -30,7 +30,7 @@ async function dbGetEstudiosPorUsuario(usuarioId, filters) {
 
   // Dynamically build query based on filters
   Object.keys(filters).forEach((key) => {
-    query += ` AND ${key} = $${filterIndex}`;
+    query += ` AND vv.${key} = $${filterIndex}`;
     params.push(filters[key]);
     filterIndex++;
   });

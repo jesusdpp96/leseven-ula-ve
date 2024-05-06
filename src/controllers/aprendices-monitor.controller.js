@@ -93,7 +93,7 @@ const getEstudiosUsuario = async (req, res, next) => {
     const { usuario_target_id } = req.params;
     const filters = req.query;
 
-    const result = dbGetEstudiosPorUsuario(usuario_target_id, filters);
+    const result = await dbGetEstudiosPorUsuario(usuario_target_id, filters);
 
     res.json(result);
   } catch (error) {
