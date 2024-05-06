@@ -17,7 +17,9 @@ import AprendicesMonitor from "./components/UserMonitor/AprendicesMonitor";
 import Glosario from "./components/Glosario"
 import UserMonitorIndividual from "./components/UserMonitor/UserMonitorIndividual";
 import PruebasMonitor from "./components/UserMonitor/PruebasMonitor/PruebasMonitor";
+import EstudioDetalles from "./components/UserMonitor/PruebasMonitor/EstudioDetalles";
 import PruebaDetalles from "./components/UserMonitor/PruebasMonitor/PruebaDetalles";
+import EstudiosMonitor from "./components/UserMonitor/PruebasMonitor/EstudiosMonitor";
 
 export const AppRoutes = ({ isAuthenticated, setAuth }) => (
   <Routes>
@@ -70,11 +72,17 @@ export const AppRoutes = ({ isAuthenticated, setAuth }) => (
       <Route path="/dashboard/prueba/practica" element={
         <Practica />
       } />
+      <Route exact path="supervisar/:userId/estudios" element={
+        <EstudiosMonitor />
+      } />
       <Route exact path="supervisar/:userId/pruebas" element={
         <PruebasMonitor />
       } />
       <Route exact path="supervisar/:userId" element={
         <UserMonitorIndividual />
+      } />
+      <Route exact path="supervisar/estudios/:temaId" element={
+        <EstudioDetalles />
       } />
       <Route exact path="supervisar/pruebas/:pruebaId" element={
         <PruebaDetalles />

@@ -126,8 +126,9 @@ export default function UserMonitorIndividual() {
                       total={elem.vocablos_counter || 0}
                       name={elem.data?.nombre}
                       imageSrc={elem.data?.image_src}
-                      progressName="Estudiados"
+                      progressName="Estudiados"                    
                       progressColor='primary'
+                      onClick={() => navigate(`estudios?tema_id=${elem.data?.id}`)}
                     />)}
               </Grid>
             </CustomTabPanel>
