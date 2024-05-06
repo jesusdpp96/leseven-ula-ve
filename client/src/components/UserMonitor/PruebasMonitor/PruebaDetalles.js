@@ -5,7 +5,7 @@ import customFetch from "../../../utils/request";
 import { Box, Card, CircularProgress, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
 import { getDateDDMMYYYY } from "../../../utils/dates";
 
-const gradosMap = {
+export const gradosMap = {
   0: "preescolar",
   1: "primer grado",
   2: "segundo grado",

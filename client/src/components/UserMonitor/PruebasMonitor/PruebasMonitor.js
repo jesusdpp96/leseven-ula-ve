@@ -13,6 +13,8 @@ import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import customFetch from "../../../utils/request";
 import { getDateDDMMYYYY } from "../../../utils/dates";
+import { gradosMap } from "./PruebaDetalles";
+import { capitalizeWords } from "../../../utils/capitalize";
 
 export default function PruebasMonitor() {
   const { userId } = useParams();
@@ -61,7 +63,7 @@ export default function PruebasMonitor() {
                     onClick={() => navigate(`/dashboard/supervisar/pruebas/${row.id}`)}
                   >
                     <TableCell align="left">{getDateDDMMYYYY(new Date(row.fecha))}</TableCell>
-                    <TableCell align="left">{row.grado_id}</TableCell>
+                    <TableCell align="left">{capitalizeWords(gradosMap?.[row.grado_id] ?? "")}</TableCell>
                     <TableCell align="left">{row.total_consultas}</TableCell>
                     <TableCell align="left">{row.total_correctas}</TableCell>
                   </TableRow>
