@@ -6,12 +6,13 @@ import { Box, Card, CircularProgress, Paper, Table, TableBody, TableCell, TableC
 import { getDateDDMMYYYY } from "../../../utils/dates";
 
 const gradosMap = {
-  1: "primer",
-  2: "segundo",
-  3: "tercer",
-  4: "cuarto",
-  5: "quinto",
-  6: "sexto",
+  0: "preescolar",
+  1: "primer grado",
+  2: "segundo grado",
+  3: "tercer grado",
+  4: "cuarto grado",
+  5: "quinto grado",
+  6: "sexto grado",
 }
 
 export default function PruebaDetalles() {
@@ -36,7 +37,7 @@ export default function PruebaDetalles() {
               Alumno: <b>{data.usuario.nombre} {data.usuario.apellido}</b>
             </Typography>
             <Typography component="h3" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-              Prueba de <b>{gradosMap[data.grado_id]}</b> grado
+              Prueba de <b>{gradosMap[data.grado_id]}</b>
             </Typography>
             <Typography component="h3" color="inherit" noWrap sx={{ flexGrow: 1 }}>
               Fecha: <b>{getDateDDMMYYYY(new Date(data.fecha))}</b>
