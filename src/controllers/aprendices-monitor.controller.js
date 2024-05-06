@@ -1,4 +1,5 @@
 const pool = require("../db");
+const { dbGetEstudiosPorUsuario } = require("../queries");
 
 const addUserToMonitor = async (req, res, next) => {
   try {
@@ -82,6 +83,19 @@ const getUsersMonitorData = async (req, res, next) => {
     `, [usuario_id]);
 
     res.json(result.rows);
+  } catch (error) {
+    next(error);
+  }
+};
+
+const getEstudiosUsuario = async (req, res, next) => {
+  try {
+    const { usuario_target_id } = req.params;
+    const filters = req.query;
+
+    const result = dbGetEstudiosPorUsuario(usuario_target_id, filters);
+
+    res.json(result);
   } catch (error) {
     next(error);
   }
@@ -850,5 +864,6 @@ module.exports = {
   addUserToMonitor,
   removeUserToMonitor,
   getUsersMonitorData,
-  getUserMonitorData
+  getUserMonitorData,
+  getEstudiosUsuario
 };

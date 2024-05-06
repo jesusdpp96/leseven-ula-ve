@@ -18,6 +18,29 @@ async function dbGetPracticasPorUsuario(usuarioId, filters) {
   return result.rows;
 }
 
+async function dbGetEstudiosPorUsuario(usuarioId, filters) {
+  let query = `
+    SELECT vv.*, v.palabra 
+    FROM vocablo_visto vv 
+    JOIN vocablo v ON vv.vocablo_id = v.id 
+    WHERE usuario_id = $1
+  `;
+  let params = [usuarioId];
+  let filterIndex = 2;
+
+  // Dynamically build query based on filters
+  Object.keys(filters).forEach((key) => {
+    query += ` AND ${key} = $${filterIndex}`;
+    params.push(filters[key]);
+    filterIndex++;
+  });
+
+  query += ` ORDER BY fecha DESC;`;
+
+  const result = await pool.query(query, params);
+  return result.rows;
+}
+
 async function dbGetPracticaDetails(practicaId) {
   const queryPrueba = `
     SELECT p.*, 
@@ -52,5 +75,6 @@ async function dbGetPracticaDetails(practicaId) {
 
 module.exports = {
   dbGetPracticasPorUsuario,
-  dbGetPracticaDetails
+  dbGetPracticaDetails,
+  dbGetEstudiosPorUsuario
 }
