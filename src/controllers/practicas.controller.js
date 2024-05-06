@@ -80,8 +80,7 @@ const postPractica = async (req, res, next) => {
 
     const usuarioMetadatosQuery = await pool.query(
       `
-        SELECT id, practicas_realizadas, consultas_correctas, consultas_incorrectas, puntos_acumulados, trofeos_imparables, trofeos_leal, trofeos_agil
-        FROM public.usuario_metadatos
+        SELECT id, practicas_realizadas, consultas_correctas, consultas_incorrectas FROM public.usuario_metadatos
         WHERE id = $1;
       `,
       [usuarioQuery.rows[0].usuario_metadatos_id]
@@ -92,51 +91,20 @@ const postPractica = async (req, res, next) => {
     usuarioMetadatos.practicas_realizadas += 1;
     usuarioMetadatos.consultas_correctas += practica.total_correctas;
     usuarioMetadatos.consultas_incorrectas += practica.total_consultas - practica.total_correctas;
-    usuarioMetadatos.puntos_acumulados += puntos;
-
-    if (trofeos_imparables) {
-      usuarioMetadatos.trofeos_imparables += trofeos_imparables;
-    }
-
-    if (trofeos_agil) {
-      usuarioMetadatos.trofeos_agil += trofeos_agil;
-    }
 
     await pool.query(
       `
         UPDATE public.usuario_metadatos
-        SET practicas_realizadas=$1, consultas_correctas=$2, consultas_incorrectas=$3, puntos_acumulados=$4, trofeos_imparables=$5, trofeos_leal=$6, trofeos_agil=$7
-        WHERE id = $8;
+        SET practicas_realizadas=$1, consultas_correctas=$2, consultas_incorrectas=$3
+        WHERE id = $4;
       `,
       [
         usuarioMetadatos.practicas_realizadas,
         usuarioMetadatos.consultas_correctas,
         usuarioMetadatos.consultas_incorrectas,
-        usuarioMetadatos.puntos_acumulados,
-        usuarioMetadatos.trofeos_imparables,
-        usuarioMetadatos.trofeos_leal,
-        usuarioMetadatos.trofeos_agil,
         usuarioQuery.rows[0].usuario_metadatos_id
       ]
     );
-
-    if (trofeos_imparables) {
-      await pool.query(
-        `
-        INSERT INTO public.trofeos(usuario_id, tipo, fecha, grado_id, tema_id)
-          VALUES ($1, $2, $3, $4, $5)
-        `, [usuario_id, 'imparable', new Date().toISOString(), practica.grado_id, practica.tema_id]
-      );
-    }
-
-    if (trofeos_agil) {
-      await pool.query(
-        `
-        INSERT INTO public.trofeos(usuario_id, tipo, fecha, grado_id, tema_id)
-          VALUES ($1, $2, $3, $4, $5)
-        `, [usuario_id, 'agil', new Date().toISOString(), practica.grado_id, practica.tema_id]
-      );
-    }
 
     // res.json(allGrados.rows);
     return res.sendStatus(204);

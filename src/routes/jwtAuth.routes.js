@@ -67,9 +67,9 @@ router.post("/auth/register", validInfo, async (req, res) => {
     const bcryptPassword = await bcrypt.hash(contrasena, salt);
 
     const usuarioMetadatos = await pool.query(
-      `INSERT INTO usuario_metadatos(practicas_realizadas, consultas_correctas, consultas_incorrectas, puntos_acumulados, trofeos_imparables, trofeos_leal, trofeos_agil)
-      VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *`,
-      [0, 0, 0, 0, 0, 0, 0]
+      `INSERT INTO usuario_metadatos(practicas_realizadas, consultas_correctas, consultas_incorrectas)
+      VALUES ($1, $2, $3) RETURNING *`,
+      [0, 0, 0]
     );
     
     const fecha_registro = new Date().toISOString();

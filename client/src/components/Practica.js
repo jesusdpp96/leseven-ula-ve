@@ -84,24 +84,6 @@ const REWARD_CORRECTED_RESPONSE = [
   },
 ];
 
-
-export const styleTrofeoModal = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "300px",
-  minHeight: "300px",
-  bgcolor: "background.paper",
-  border: "1px solid #666",
-  borderRadius: "16px",
-  boxShadow: 24,
-  p: 4,
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-};
-
 function generateConsultas({ vocablos, numeroConsultas }) {
   const palabras = vocablos.map((elem) => elem.vocablo_palabra);
 
@@ -178,45 +160,6 @@ function generateConsultas({ vocablos, numeroConsultas }) {
   return consultas;
 }
 
-function hasTrofeoAgil({ consultas, secondsByConsulta = 5 }) {
-  if (!consultas || consultas.length === 0) {
-    return false;
-  }
-
-  const totalConsultas = consultas.length;
-  let totalConsultasCorrectas = 0;
-
-  for (const consulta of consultas) {
-    if (consulta.vocablo_palabra === consulta.responses[0]) {
-      totalConsultasCorrectas += 1;
-    }
-
-    if (!consulta.responses || !consulta.logs) {
-      return false;
-    }
-  }
-
-  const firstLog = consultas[0].logs[0];
-  const lastLog =
-    consultas[consultas.length - 1].logs[
-      consultas[consultas.length - 1].logs.length - 1
-    ];
-
-  const firstTimestamp = new Date(firstLog.timestamp).getTime();
-  const lastTimestamp = new Date(lastLog.timestamp).getTime();
-  const diff = lastTimestamp - firstTimestamp;
-
-  if (
-    diff > 0 &&
-    diff <= secondsByConsulta * 1000 &&
-    totalConsultas === totalConsultasCorrectas
-  ) {
-    return true;
-  }
-
-  return false;
-}
-
 function getResultsFunc({ consultas }) {
   if (!consultas || consultas.length === 0) {
     return undefined;
@@ -225,7 +168,6 @@ function getResultsFunc({ consultas }) {
   try {
     const totalConsultas = consultas.length;
     let totalConsultasCorrectas = 0;
-    let points = 0;
 
     consultas.forEach((elem) => {
       if (elem.vocablo_palabra === elem.responses[0]) {
@@ -233,14 +175,9 @@ function getResultsFunc({ consultas }) {
       }
     });
 
-    points = totalConsultasCorrectas * 100;
-
     return {
       totalConsultas,
-      totalConsultasCorrectas,
-      points,
-      trofeos_imparables: totalConsultas === totalConsultasCorrectas ? 1 : 0,
-      trofeos_agil: hasTrofeoAgil({ consultas }) ? 1 : 0,
+      totalConsultasCorrectas
     };
   } catch (err) {
     // Las consultas no estan completas
@@ -309,10 +246,7 @@ function getPracticaDataFunc({ consultas, vocablos }) {
 
   return {
     practica: practicaData,
-    consultas: consultasData,
-    puntos: totalConsultasCorrectas * 100,
-    trofeos_imparables: totalConsultas === totalConsultasCorrectas ? 1 : 0,
-    trofeos_agil: hasTrofeoAgil({ consultas }) ? 1 : 0,
+    consultas: consultasData
   };
 }
 
@@ -435,10 +369,7 @@ function getPracticaCanceladaDataFunc({ consultas, vocablos }) {
 
   return {
     practica: practicaData,
-    consultas: consultasData,
-    puntos: 0,
-    trofeos_imparables: 0,
-    trofeos_agil: 0,
+    consultas: consultasData
   };
 }
 
@@ -1001,61 +932,6 @@ export default function HorizontalNonLinearStepper() {
     );
   };
 
-  // Trofeo
-
-  const [openTrofeo, setOpenTrofeo] = React.useState(false);
-  const [trofeoData, setTrofeoData] = React.useState();
-
-  const handleCloseTrofeo = () => {
-    const trofeoAux = trofeoData;
-    setOpenTrofeo(false);
-    setTrofeoData(undefined);
-
-    if (trofeoAux.type === "imparable") {
-      setResults({
-        ...results,
-        trofeos_imparables_showed: true,
-        trofeo_showing: false,
-      });
-    } else if (trofeoAux.type === "agil") {
-      setResults({
-        ...results,
-        trofeos_agil_showed: true,
-        trofeo_showing: false,
-      });
-    }
-  };
-
-  if (
-    results &&
-    results.trofeos_imparables &&
-    !results.trofeos_imparables_showed &&
-    !results.trofeo_showing
-  ) {
-    setResults({ ...results, trofeo_showing: true });
-    setTrofeoData({
-      type: "imparable",
-      title: "Ganaste una Estrella Imparable",
-      message: "",
-    });
-    setOpenTrofeo(true);
-  } else if (
-    results &&
-    results.trofeos_agil &&
-    !results.trofeos_agil_showed &&
-    !results.trofeo_showing
-  ) {
-    setResults({ ...results, trofeo_showing: true });
-    setTrofeoData({
-      type: "agil",
-      title: "Ganaste una Estrella Agil",
-      message: "",
-    });
-    setOpenTrofeo(true);
-  }
-
-  console.log({ results, trofeoData });
-
   const title = window.location.pathname.includes("prueba")
     ? "Prueba Finalizada"
     : "Práctica Finalizada";
@@ -1068,57 +944,6 @@ export default function HorizontalNonLinearStepper() {
   const temaTitle1 = window.location.pathname.includes("prueba")
     ? `Prueba Exploratoria - ${gradoTitle}`
     : `Práctica - ${gradoTitle}`;
-  const TrofeoModal = ({ trofeo }) => {
-    if (!trofeo) {
-      return null;
-    }
-
-    let imageSrc;
-    if (trofeo.type === "imparable") {
-      imageSrc = "/assets/trofeos/imparable.png";
-    } else if (trofeo.type === "agil") {
-      imageSrc = "/assets/trofeos/agil.png";
-    }
-
-    return (
-      <div>
-        {trofeo ? (
-          <Modal
-            // keepMounted
-            open={openTrofeo}
-            onClose={handleCloseTrofeo}
-            aria-labelledby="keep-mounted-modal-title"
-            aria-describedby="keep-mounted-modal-description"
-          >
-            <Box sx={styleTrofeoModal}>
-              <CardMedia
-                component="img"
-                sx={{ maxWidth: 300, maxHeight: 300 }}
-                image={imageSrc}
-                alt={`trofeo ${trofeo.type}`}
-              />
-              <Typography
-                id="keep-mounted-modal-title"
-                variant="h5"
-                color="success"
-              >
-                {trofeo.title}
-              </Typography>
-              <Typography id="keep-mounted-modal-title" variant="subtitle2">
-                {trofeo.message}
-              </Typography>
-              <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-                <Box sx={{ flex: "1 1 auto" }} />
-                <Button aria-label="close modal" onClick={handleCloseTrofeo}>
-                  Ok
-                </Button>
-              </Box>
-            </Box>
-          </Modal>
-        ) : null}
-      </div>
-    );
-  };
 
   return loading ? (
     <Grid container direction="row" justifyContent="center">
@@ -1360,7 +1185,6 @@ export default function HorizontalNonLinearStepper() {
         )}
       </div>
       <VocabloModal vocablo={steps[activeStep]} />
-      <TrofeoModal trofeo={trofeoData} />
     </Box>
   );
 }
