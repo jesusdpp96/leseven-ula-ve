@@ -2,14 +2,21 @@ import * as React from "react";
 import { toast } from "react-toastify";
 import { useSearchParams } from "react-router-dom";
 
-import { Box, Grid, CircularProgress, Button } from "@mui/material";
+import {
+  Box,
+  Grid,
+  CircularProgress,
+  Button,
+  IconButton,
+  Icon,
+} from "@mui/material";
+import SettingsIcon from "@mui/icons-material/Settings";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import sendLogs from "../utils/sendLogs";
-
 
 function quitarAcentos(cadena) {
   const acentos = {
@@ -28,7 +35,7 @@ function quitarAcentos(cadena) {
     .split("")
     .map((letra) => acentos[letra] || letra)
     .join("")
-    .toString()
+    .toString();
 }
 
 const ItemList = ({ temas, setQuery, showCategorias }) => {
@@ -165,7 +172,10 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
       const buttonTitle = window.location.pathname.includes("prueba")
         ? "Prueba"
         : "Estudiar";
-      console.log("quitarAcentos(elem.tema_image_src)",quitarAcentos(elem.tema_image_src))
+      console.log(
+        "quitarAcentos(elem.tema_image_src)",
+        quitarAcentos(elem.tema_image_src)
+      );
       return (
         <Grid item xs={4} sm={4} md={4} key={index}>
           <Card
@@ -199,13 +209,25 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
                     Estudiar-{gradoTitle}
                   </Typography>
                 ) : (
-                  <Typography
-                    variant="subtitle1"
-                    color="text.secondary"
-                    component="div"
+                  <Box
+                    sx={{
+                      width: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
                   >
-                    Prueba Exploratoria-{gradoTitle}
-                  </Typography>
+                    <Typography
+                      variant="subtitle1"
+                      color="text.secondary"
+                      component="div"
+                    >
+                      Prueba Exploratoria-{gradoTitle}
+                    </Typography>
+                    <IconButton>
+                      <SettingsIcon />
+                    </IconButton>
+                  </Box>
                 )}
 
                 <Typography
