@@ -24,7 +24,11 @@
 import React, { useState, useEffect } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import {
-  BrowserRouter, Route, Routes, Navigate, Outlet
+  BrowserRouter,
+  Route,
+  Routes,
+  Navigate,
+  Outlet,
 } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
@@ -38,7 +42,9 @@ import ExplorarVocabularioCategorias from "./components/ExplorarVocabularioCateg
 import Practica from "./components/Practica";
 import Inicio from "./components/Inicio";
 import AprendicesMonitor from "./components/AprendicesMonitor";
-import Glosario from "./components/Glosario"
+import Glosario from "./components/Glosario";
+import Settings from "./components/Settings";
+
 // toast.configure();
 
 // const ProtectedRoute = ({
@@ -53,7 +59,6 @@ import Glosario from "./components/Glosario"
 //   return children ? children : <Outlet />;
 // };
 
-
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -62,7 +67,7 @@ function App() {
   }, []);
 
   const setAuth = (status) => {
-    console.log("auth changed", {status})
+    console.log("auth changed", { status });
     setIsAuthenticated(status);
   };
 
@@ -80,7 +85,7 @@ function App() {
 
       parseRes === true ? setIsAuthenticated(true) : setIsAuthenticated(false);
     } catch (err) {
-      console.log({err});
+      console.log({ err });
       console.error(err.message);
       setIsAuthenticated(false);
     }
@@ -91,7 +96,7 @@ function App() {
       <BrowserRouter>
         <div className="">
           <Body isAuthenticated={isAuthenticated} setAuth={setAuth} />
-          <ToastContainer/>
+          <ToastContainer />
         </div>
       </BrowserRouter>
     </>
@@ -100,20 +105,26 @@ function App() {
 
 export const Body = ({ isAuthenticated, setAuth }) => (
   <Routes>
-    <Route index path="/" element={
-      isAuthenticated ? (
-        <Navigate to="/dashboard/inicio" />
-      ) : (
-        <SignIn  setAuth={setAuth} />
-      )
-    } />
+    <Route
+      index
+      path="/"
+      element={
+        isAuthenticated ? (
+          <Navigate to="/dashboard/inicio" />
+        ) : (
+          <SignIn setAuth={setAuth} />
+        )
+      }
+    />
     <Route
       path="/login"
-      element={!isAuthenticated ? (
-        <SignIn  setAuth={setAuth} />
-      ) : (
-        <Navigate to="/dashboard/inicio" />
-      )}
+      element={
+        !isAuthenticated ? (
+          <SignIn setAuth={setAuth} />
+        ) : (
+          <Navigate to="/dashboard/inicio" />
+        )
+      }
     />
     <Route
       path="/register"
@@ -125,39 +136,35 @@ export const Body = ({ isAuthenticated, setAuth }) => (
         )
       }
     />
-    <Route path="/dashboard" element={ isAuthenticated ? (<Dashboard setAuth={setAuth}/>) : <Navigate to="/login" />}>
-      
-      <Route path="inicio" element={
-          <Inicio />
-      } />
-      
-      <Route path="estudiar" element={
-          <Estudiar />
-      } />
-      <Route path="prueba" element={
-          <Practicar />
-      } />
-      <Route path="explorar-vocabulario-temas" element={
-          <ExplorarVocabularioTemas />
-      } />
-      <Route path="explorar-vocabulario-categorias" element={
-          <ExplorarVocabularioCategorias />
-      } />
-      <Route path="practica" element={
-          <Practica />
-      } />
-      <Route path="/dashboard/prueba/practica" element={
-          <Practica />
-      } />
-      <Route path="supervisar" element={
-        <AprendicesMonitor />
-      } />
-           <Route path="glosario" element={
-        <Glosario />
-      } />
+    <Route
+      path="/dashboard"
+      element={
+        isAuthenticated ? (
+          <Dashboard setAuth={setAuth} />
+        ) : (
+          <Navigate to="/login" />
+        )
+      }
+    >
+      <Route path="inicio" element={<Inicio />} />
+
+      <Route path="estudiar" element={<Estudiar />} />
+      <Route path="prueba" element={<Practicar />} />
+      <Route
+        path="explorar-vocabulario-temas"
+        element={<ExplorarVocabularioTemas />}
+      />
+      <Route
+        path="explorar-vocabulario-categorias"
+        element={<ExplorarVocabularioCategorias />}
+      />
+      <Route path="practica" element={<Practica />} />
+      <Route path="/dashboard/prueba/practica" element={<Practica />} />
+      <Route path="supervisar" element={<AprendicesMonitor />} />
+      <Route path="glosario" element={<Glosario />} />
+      <Route path="configuracion" element={<Settings />} />
     </Route>
   </Routes>
-  );
-
+);
 
 export default App;
