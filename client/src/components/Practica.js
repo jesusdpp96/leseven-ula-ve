@@ -1034,7 +1034,6 @@ export default function HorizontalNonLinearStepper() {
                     <ListItemIcon>
                       <ScoreIcon color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary={results.points} secondary="Puntos" />
                   </ListItemButton>
                 </List>
               </Box>

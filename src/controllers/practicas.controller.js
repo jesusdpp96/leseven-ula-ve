@@ -26,7 +26,7 @@ const getPracticasPorUsuario = async (req, res, next) => {
 };
 const postPractica = async (req, res, next) => {
   try {
-    const { practica, consultas, puntos, trofeos_imparables, trofeos_agil } = req.body;
+    const { practica, consultas } = req.body;
 
     const usuario_id = req.user;
 
