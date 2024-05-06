@@ -1030,11 +1030,7 @@ export default function HorizontalNonLinearStepper() {
                       secondary="Respuestas correctas"
                     />
                   </ListItemButton>
-                  <ListItemButton key="list-4">
-                    <ListItemIcon>
-                      <ScoreIcon color="primary" />
-                    </ListItemIcon>
-                  </ListItemButton>
+                 
                 </List>
               </Box>
               <Box
