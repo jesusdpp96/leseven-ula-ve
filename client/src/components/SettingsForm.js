@@ -1,6 +1,7 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
@@ -23,13 +24,14 @@ const Input = styled(MuiInput)`
 
 export default function SettingsForm({ grado }) {
   const [loading, setLoading] = React.useState(false);
+  const [submit, setSubmit] = React.useState(false);
   const [temas, setTemas] = React.useState([]);
   const [vocablos, setVocablos] = React.useState([]);
   const [gradoTitle, setGradoTitle] = React.useState("");
   const [wordCount, setWordCount] = React.useState(0);
   const [categories, setCategories] = React.useState([]);
-  const [questionType, setQuestionType] = React.useState("image");
-  const [responseType, setResponseType] = React.useState("text");
+  const [questionType, setQuestionType] = React.useState("");
+  const [responseType, setResponseType] = React.useState("");
 
   const handleSliderChange = (event, value) => {
     setWordCount(value);
@@ -53,6 +55,64 @@ export default function SettingsForm({ grado }) {
   const handleResponseTypeChange = (event) => {
     const value = event.target.value;
     setResponseType(value);
+  };
+
+  const handleOnClick = async (event) => {
+    event.preventDefault();
+    setSubmit(true);
+    const body = {
+      cantidad_vocablos: wordCount,
+      categorias_id: temas
+        .filter(
+          (tema) => tema.es_categoria && categories.includes(tema.tema_nombre)
+        )
+        .map((tema, index) => tema.tema_id),
+      tipo_pregunta: questionType,
+      tipo_respuesta: responseType,
+    };
+
+    try {
+      const response = await fetch(`/configuracion/${grado}`, {
+        method: "PUT",
+        headers: {
+          "Content-type": "application/json",
+          token: localStorage.token,
+        },
+        body: JSON.stringify(body),
+      });
+
+      if (response.status == 200) {
+        toast.success("Configuración actualizada");
+      } else {
+        toast.error("Error no se pudo actualizar la configuración");
+      }
+
+      setSubmit(false);
+    } catch (err) {
+      console.error(err);
+      toast.error("Error de red");
+    }
+  };
+
+  const getConfiguration = async () => {
+    try {
+      const response = await fetch(`/configuracion/${grado}`, {
+        method: "GET",
+        headers: {
+          "Content-type": "application/json",
+          token: localStorage.token,
+        },
+      });
+
+      const responseData = await response.json();
+      setWordCount(responseData.cantidad_vocablos);
+      setCategories(responseData.categorias_id);
+      setQuestionType(responseData.tipo_pregunta);
+      setResponseType(responseData.tipo_respuesta);
+    } catch (err) {
+      console.error(err);
+      toast.error("Error de red");
+    }
   };
 
   const getVocablos = async () => {
@@ -102,6 +162,7 @@ export default function SettingsForm({ grado }) {
   };
 
   React.useEffect(() => {
+    getConfiguration();
     getVocablos();
   }, []);
 
@@ -163,10 +224,7 @@ export default function SettingsForm({ grado }) {
                 .filter((tema) => tema.es_categoria)
                 .map((tema, index) => {
                   return (
-                    <MenuItem
-                      key={index}
-                      value={tema.tema_nombre.toLowerCase().replace(/\s/g, "")}
-                    >
+                    <MenuItem key={index} value={tema.tema_nombre}>
                       {tema.tema_nombre}
                     </MenuItem>
                   );
@@ -183,12 +241,12 @@ export default function SettingsForm({ grado }) {
               row
             >
               <FormControlLabel
-                value="text"
+                value="texto"
                 control={<Radio />}
                 label="Texto"
               />
               <FormControlLabel
-                value="image"
+                value="imagen"
                 control={<Radio />}
                 label="Imagen"
               />
@@ -209,12 +267,12 @@ export default function SettingsForm({ grado }) {
               row
             >
               <FormControlLabel
-                value="text"
+                value="texto"
                 control={<Radio />}
                 label="Texto"
               />
               <FormControlLabel
-                value="image"
+                value="imagen"
                 control={<Radio />}
                 label="Imagen"
               />
@@ -225,6 +283,15 @@ export default function SettingsForm({ grado }) {
               />
             </RadioGroup>
           </FormControl>
+        </Box>
+        <Box sx={{ alignSelf: "center" }}>
+          <Button variant="contained" color="primary" onClick={handleOnClick}>
+            {submit ? (
+              <CircularProgress color="inherit" size={25} />
+            ) : (
+              "Actualizar"
+            )}
+          </Button>
         </Box>
       </Paper>
     </div>

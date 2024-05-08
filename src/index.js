@@ -10,6 +10,7 @@ const logsRouter = require("./routes/logs.routes");
 const usuariosRouter = require("./routes/usuarios.routes");
 const practicasRouter = require("./routes/practicas.routes");
 const aprendicesMonitorRouter = require("./routes/aprendices-monitor.routes");
+const configuracionRouter = require("./routes/configuracion.routes");
 
 const app = express();
 
@@ -22,11 +23,11 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === "production") {
   // server static content
   // npm run build
 
-  app.use(express.static(path.join(__dirname,"../client/build")));
+  app.use(express.static(path.join(__dirname, "../client/build")));
 } else {
   // dev mode
   app.use(express.static("./client/build"));
@@ -41,6 +42,7 @@ app.use(vocablosRouter);
 app.use(logsRouter);
 app.use(practicasRouter);
 app.use(aprendicesMonitorRouter);
+app.use(configuracionRouter);
 
 // handling errors
 app.use((err, req, res, next) => {
@@ -50,7 +52,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.get("*", (req,res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
