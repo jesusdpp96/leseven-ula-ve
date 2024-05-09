@@ -21,7 +21,6 @@ import ListItemText from "@mui/material/ListItemText";
 import SchoolIcon from "@mui/icons-material/School";
 import CategoryIcon from "@mui/icons-material/Category";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import ScoreIcon from "@mui/icons-material/Score";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import { YoutubeEmbed, styleVocabloModal } from "./VocabloModal";
 import sendLogs from "../utils/sendLogs";
