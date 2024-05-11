@@ -80,7 +80,7 @@ export default function UserMonitorIndividual() {
           </Box>
 
           <Box sx={{ width: '100%', height: '100%', padding: '16px', paddingBottom: '64px' }}>
-          
+
             <Typography variant="h6">
               Estadísticas por temas
             </Typography>
@@ -88,10 +88,10 @@ export default function UserMonitorIndividual() {
               <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableHead>
                   <TableRow>
-                    <TableCell align="right">Prácticas{<br />}realizadas</TableCell>
-                    <TableCell align="right">Prácticas{<br />}últimos 7 días</TableCell>
-                    <TableCell align="right">Consultas{<br />}correctas</TableCell>
-                    <TableCell align="right">Consultas{<br />}incorrectas</TableCell>
+                    <TableCell align="right">Total de pruebas{<br />}realizadas</TableCell>
+                    <TableCell align="right">Pruebas{<br />}últimos 7 días</TableCell>
+                    <TableCell align="right">Respuestas{<br />}correctas en pruebas</TableCell>
+                    <TableCell align="right">Repuestas{<br />}incorrectas en pruebas</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -99,7 +99,16 @@ export default function UserMonitorIndividual() {
                     key="row-x-1"
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   >
-                    <TableCell align="right" style={{cursor:'pointer'}} onClick={() => navigate(`pruebas`)}>{data?.practicas_realizadas ?? 0}</TableCell>
+                    <TableCell align="right"
+                      sx={{
+                        cursor: 'pointer',
+                        '&:hover': {
+                          backgroundColor: '#9ccaf8',
+                        }
+                      }}
+                      onClick={() => navigate(`pruebas`)}
+                    >{data?.practicas_realizadas ?? 0}
+                    </TableCell>
                     <TableCell align="right">{data?.practicas_last_7days ?? 0}</TableCell>
                     <TableCell align="right">{data?.total_correctas ?? 0}</TableCell>
                     <TableCell align="right">{data?.total_incorrectas ?? 0}</TableCell>
@@ -126,7 +135,7 @@ export default function UserMonitorIndividual() {
                       total={elem.vocablos_counter || 0}
                       name={elem.data?.nombre}
                       imageSrc={elem.data?.image_src}
-                      progressName="Estudiados"                    
+                      progressName="Estudiados"
                       progressColor='primary'
                       onClick={() => navigate(`estudios?tema_id=${elem.data?.id}`)}
                     />)}

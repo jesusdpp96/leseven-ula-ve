@@ -19,6 +19,6 @@ router.post("/aprendices-monitor/remove", authorization, removeUserToMonitor);
 router.get("/aprendices-monitor/users", authorization, getUsersMonitorData);
 router.get("/aprendices-monitor/user/:usuario_target_id", authorization, getUserMonitorData);
 
-router.get("/aprendices-monitor/:usuario_target_id/estudios", authorization, getEstudiosUsuario);
+router.get("/aprendices-monitor/:usuario_target_id/estudios", getEstudiosUsuario);
 
 module.exports = router;
