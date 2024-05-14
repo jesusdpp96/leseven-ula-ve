@@ -30,8 +30,8 @@ export default function Practicar() {
     <TemaVocablosList grado={Number(gradoQuery)} tema={Number(temaQuery)} />
   ) : (
     <>
-      <Typography ml={1} mb={5}>
-        <strong>Prueba</strong>
+      <Typography variant="h4" mb={5}>
+        Pruebas
       </Typography>
       <GradosList />
     </>
