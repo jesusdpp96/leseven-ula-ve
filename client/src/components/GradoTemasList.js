@@ -1,6 +1,6 @@
 import * as React from "react";
 import { toast } from "react-toastify";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 import {
   Box,
@@ -134,6 +134,8 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
 
 const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
   // const temas2 = temas.map((elem) => ({...elem, tema_image_src: `/assets/images/image${Math.floor(Math.random() * 58)}.png` }));
+  const navigate = useNavigate();
+
   return temas
     .filter(
       (elem) =>
@@ -224,9 +226,13 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
                     >
                       Prueba Exploratoria-{gradoTitle}
                     </Typography>
-                    <IconButton>
+                    {/* <IconButton
+                      onClick={() => {
+                        navigate(`/dashboard/configuracion?grado=${grado}`);
+                      }}
+                    >
                       <SettingsIcon />
-                    </IconButton>
+                    </IconButton> */}
                   </Box>
                 )}
 
@@ -260,9 +266,14 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
                 <CircularProgressWithLabel value={percentage} />
                 <Button
                   variant="outlined"
-                  onClick={() => {
-                    setQuery({ grado: elem.grado_id, tema: elem.tema_id });
-                  }}
+                  // onClick={() => {
+                  //   setQuery({ grado: elem.grado_id, tema: elem.tema_id });
+                  // }}
+                  onClick={() =>
+                    navigate(
+                      `/dashboard/prueba/practica?grado=${elem.grado_id}&tema=${elem.tema_id}`
+                    )
+                  }
                 >
                   {buttonTitle}
                 </Button>
