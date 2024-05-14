@@ -219,7 +219,7 @@ function PanelItems({ funcionalidad_sistema }) {
           <ListItemIcon>
             <DashboardIcon />
           </ListItemIcon>
-          <ListItemText primary="Prueba" />
+          <ListItemText primary="Pruebas" />
         </ListItemButton>
       ),
     },
@@ -268,7 +268,10 @@ function PanelItems({ funcionalidad_sistema }) {
           <ListItemIcon>
             <SettingsIcon />
           </ListItemIcon>
-          <ListItemText primary={"Configuración"} />
+          <ListItemText
+            primary={"Configuración de Pruebas"}
+            sx={{ textWrap: "wrap" }}
+          />
         </ListItemButton>
       ),
     },

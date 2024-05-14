@@ -17,7 +17,7 @@ export default function Settings() {
   ) : (
     <div>
       <Typography variant="h4" mb={5}>
-        Configuración - Prueba
+        Configuración de Pruebas
       </Typography>
       <GradosList />
     </div>
