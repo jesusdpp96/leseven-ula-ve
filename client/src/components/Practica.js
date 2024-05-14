@@ -1431,17 +1431,18 @@ export default function HorizontalNonLinearStepper() {
                       )
                     )
                     .map((vocablo) => (
-                      <Button
-                        key={vocablo.vocablo_palabra}
-                        onClick={() =>
-                          setResponse({ palabra: vocablo.vocablo_palabra })
-                        }
-                        sx={{
-                          width: 360,
-                        }}
-                      >
+                      <div style={{ width: 360 }}>
                         <YoutubeEmbed embedLink={vocablo.videoSrc} />
-                      </Button>
+                        <Button
+                          key={vocablo.vocablo_palabra}
+                          onClick={() =>
+                            setResponse({ palabra: vocablo.vocablo_palabra })
+                          }
+                          fullWidth
+                        >
+                          seleccionar
+                        </Button>
+                      </div>
                     ))}
               </Box>
 
