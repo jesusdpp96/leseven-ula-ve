@@ -1398,52 +1398,70 @@ export default function HorizontalNonLinearStepper() {
                     </Button>
                   ))}
                 {responseType === "imagen" &&
-                  steps
+                  vocablos
                     .filter((vocablo) =>
                       steps[activeStep].palabras_consulta.includes(
                         vocablo.vocablo_palabra
                       )
                     )
-                    .map((vocablo) => (
-                      <Button
-                        key={vocablo.vocablo_palabra}
-                        onClick={() =>
-                          setResponse({ palabra: vocablo.vocablo_palabra })
-                        }
-                      >
-                        <CardMedia
-                          component="img"
-                          sx={{
-                            maxWidth: 200,
-                            maxHeight: 200,
-                            objectFit: "contain",
-                          }}
-                          image={vocablo.imageSrc}
-                          alt={`imagen del vocablo ${vocablo.vocablo_palabra}`}
-                        />
-                      </Button>
-                    ))}
-                {responseType === "video" &&
-                  steps
-                    .filter((vocablo) =>
-                      steps[activeStep].palabras_consulta.includes(
-                        vocablo.vocablo_palabra
-                      )
-                    )
-                    .map((vocablo) => (
-                      <div style={{ width: 360 }}>
-                        <YoutubeEmbed embedLink={vocablo.videoSrc} />
+                    .map((vocablo) => {
+                      const indexImage =
+                        vocablo && vocablo.recursos
+                          ? vocablo.recursos.findIndex(
+                              (elem) => elem.tipo === "image"
+                            )
+                          : -1;
+                      return (
                         <Button
                           key={vocablo.vocablo_palabra}
                           onClick={() =>
                             setResponse({ palabra: vocablo.vocablo_palabra })
                           }
-                          fullWidth
                         >
-                          seleccionar
+                          <CardMedia
+                            component="img"
+                            sx={{
+                              maxWidth: 200,
+                              maxHeight: 200,
+                              objectFit: "contain",
+                            }}
+                            image={vocablo.recursos[indexImage].enlace}
+                            alt={`imagen del vocablo ${vocablo.vocablo_palabra}`}
+                          />
                         </Button>
-                      </div>
-                    ))}
+                      );
+                    })}
+                {responseType === "video" &&
+                  vocablos
+                    .filter((vocablo) =>
+                      steps[activeStep].palabras_consulta.includes(
+                        vocablo.vocablo_palabra
+                      )
+                    )
+                    .map((vocablo) => {
+                      const indexVideo =
+                        vocablo && vocablo.recursos
+                          ? vocablo.recursos.findIndex(
+                              (elem) => elem.tipo === "video"
+                            )
+                          : -1;
+                      return (
+                        <div style={{ width: 360 }}>
+                          <YoutubeEmbed
+                            embedLink={vocablo.recursos[indexVideo].enlace}
+                          />
+                          <Button
+                            key={vocablo.vocablo_palabra}
+                            onClick={() =>
+                              setResponse({ palabra: vocablo.vocablo_palabra })
+                            }
+                            fullWidth
+                          >
+                            seleccionar
+                          </Button>
+                        </div>
+                      );
+                    })}
               </Box>
 
               <Box
