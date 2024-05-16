@@ -25,7 +25,7 @@ const getAllConfiguraciones = async (req, res, next) => {
   }
 };
 
-const getConfiguracion = async (req, res) => {
+const getConfiguracion = async (req, res, next) => {
   try {
     const { id } = req.params;
     const result = await pool.query(

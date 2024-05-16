@@ -56,9 +56,6 @@ export default function GradoTemasListExplorar({ title }) {
   return ( loading ?
     (<Grid container direction="row" justifyContent="center"><CircularProgress color="inherit" size={25} /></Grid>) :(
       <Box sx={{ flexGrow: 1 }}>
-        {/* <Box style={{display: 'flex', justifyContent: 'flex-start'}}>
-          <Button variant="outlined" color="warning" startIcon={<ChevronLeftIcon />} onClick={() => {setQuery({})}}>Volver</Button>
-        </Box> */}
         <Typography variant="h4" sx={{ color: 'text.primary', padding: '16px' }}>
           {title}
         </Typography>

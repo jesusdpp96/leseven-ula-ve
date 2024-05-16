@@ -30,10 +30,6 @@ export default function SettingsForm({ grado }) {
   const [questionType, setQuestionType] = React.useState("");
   const [responseType, setResponseType] = React.useState("");
 
-  const handleSliderChange = (event, value) => {
-    setWordCount(value);
-  };
-
   const handleInputChange = (event) => {
     const value = event.target.value === "" ? 0 : Number(event.target.value);
     setWordCount(value);
@@ -87,7 +83,7 @@ export default function SettingsForm({ grado }) {
         body: JSON.stringify(body),
       });
 
-      if (response.status == 200) {
+      if (response.status === 200) {
         toast.success("Configuración actualizada");
       } else {
         toast.error("Error no se pudo actualizar la configuración");
@@ -112,7 +108,10 @@ export default function SettingsForm({ grado }) {
       const responseData = await response.json();
 
       setWordCount(responseData.cantidad_vocablos);
+      console.group("CATS");
+      console.log(responseData);
       setCategories(responseData.categorias_id);
+      console.groupEnd();
       setQuestionType(responseData.tipo_pregunta);
       setResponseType(responseData.tipo_respuesta);
     } catch (err) {
@@ -170,6 +169,7 @@ export default function SettingsForm({ grado }) {
   React.useEffect(() => {
     getVocablos();
     getConfiguration();
+    //eslint-disable-next-line
   }, []);
 
   return loading ? (

@@ -19,6 +19,7 @@ import UserMonitorIndividual from "./components/UserMonitor/UserMonitorIndividua
 import PruebasMonitor from "./components/UserMonitor/PruebasMonitor/PruebasMonitor";
 import PruebaDetalles from "./components/UserMonitor/PruebasMonitor/PruebaDetalles";
 import EstudiosMonitor from "./components/UserMonitor/PruebasMonitor/EstudiosMonitor";
+import Settings from "./components/Settings";
 
 export const AppRoutes = ({ isAuthenticated, setAuth }) => (
   <Routes>
@@ -88,6 +89,9 @@ export const AppRoutes = ({ isAuthenticated, setAuth }) => (
       } />
       <Route path="glosario" element={
         <Glosario />
+      } />
+      <Route path="configuracion" element={
+        <Settings />
       } />
     </Route>
   </Routes>

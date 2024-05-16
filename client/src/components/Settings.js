@@ -5,7 +5,7 @@ import SettingsForm from "./SettingsForm";
 
 export default function Settings() {
   let view = "grados";
-  const [query, setQuery] = useSearchParams();
+  const [query] = useSearchParams();
   const gradoQuery = query.get("grado");
 
   if (typeof gradoQuery === "string") {
