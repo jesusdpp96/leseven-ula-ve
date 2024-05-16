@@ -1,8 +1,13 @@
 import * as React from "react";
 import { toast } from "react-toastify";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
-import { Box, Grid, CircularProgress, Button } from "@mui/material";
+import {
+  Box,
+  Grid,
+  CircularProgress,
+  Button
+} from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -109,7 +114,9 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
     });
 };
 
-const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
+const ItemList2 = ({ temas, showCategorias, gradoTitle }) => {
+  const navigate = useNavigate();
+
   return temas
     .filter(
       (elem) =>
@@ -132,7 +139,10 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
       const buttonTitle = window.location.pathname.includes("prueba")
         ? "Prueba"
         : "Estudiar";
-      console.log("quitarAcentos(elem.tema_image_src)",quitarAcentos(elem.tema_image_src))
+      console.log(
+        "quitarAcentos(elem.tema_image_src)",
+        quitarAcentos(elem.tema_image_src)
+      );
       return (
         <Grid item xs={4} sm={4} md={4} key={index}>
           <Card
@@ -166,13 +176,29 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
                     Estudiar-{gradoTitle}
                   </Typography>
                 ) : (
-                  <Typography
-                    variant="subtitle1"
-                    color="text.secondary"
-                    component="div"
+                  <Box
+                    sx={{
+                      width: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
                   >
-                    Prueba Exploratoria-{gradoTitle}
-                  </Typography>
+                    <Typography
+                      variant="subtitle1"
+                      color="text.secondary"
+                      component="div"
+                    >
+                      Prueba Exploratoria-{gradoTitle}
+                    </Typography>
+                    {/* <IconButton
+                      onClick={() => {
+                        navigate(`/dashboard/configuracion?grado=${grado}`);
+                      }}
+                    >
+                      <SettingsIcon />
+                    </IconButton> */}
+                  </Box>
                 )}
 
                 <Typography
@@ -205,9 +231,14 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
                 <CircularProgressWithLabel value={percentage} />
                 <Button
                   variant="outlined"
-                  onClick={() => {
-                    setQuery({ grado: elem.grado_id, tema: elem.tema_id });
-                  }}
+                  // onClick={() => {
+                  //   setQuery({ grado: elem.grado_id, tema: elem.tema_id });
+                  // }}
+                  onClick={() =>
+                    navigate(
+                      `/dashboard/prueba/practica?grado=${elem.grado_id}&tema=${elem.tema_id}`
+                    )
+                  }
                 >
                   {buttonTitle}
                 </Button>

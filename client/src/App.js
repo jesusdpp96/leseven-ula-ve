@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -17,7 +18,7 @@ function App() {
   }, []);
 
   const setAuth = (status) => {
-    console.log("auth changed", { status })
+    console.log("auth changed", { status });
     setIsAuthenticated(status);
   };
 

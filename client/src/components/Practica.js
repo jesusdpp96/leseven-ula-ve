@@ -27,25 +27,6 @@ import sendLogs from "../utils/sendLogs";
 
 import CustomToast from "./CustomToast";
 
-const consultas_por_grado = [
-  5, // preescolar
-  5, // 1er grado
-  5, // 2do grado
-  5, // tercer grado
-  10, // 4to grado
-  15, // 5to grado
-  15, // 6to grado
-];
-
-const opciones_por_grado = [
-  8, // preescolar
-  8, // 1er grado
-  10, // 2do grado
-  5, // tercer grado
-  15, // 4to grado
-  20, // 5to grado
-  20, // 6to grado
-];
 const REWARD_GOOD_RESPONSE = [
   {
     message: "Bien",
@@ -83,7 +64,44 @@ const REWARD_CORRECTED_RESPONSE = [
   },
 ];
 
+// const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+
+export const styleTrofeoModal = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "300px",
+  minHeight: "300px",
+  bgcolor: "background.paper",
+  border: "1px solid #666",
+  borderRadius: "16px",
+  boxShadow: 24,
+  p: 4,
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+};
+
+function shuffle(array) {
+  let currentIndex = array.length;
+
+  // While there remain elements to shuffle...
+  while (currentIndex !== 0) {
+    // Pick a remaining element...
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+}
+
 function generateConsultas({ vocablos, numeroConsultas }) {
+  // const numeroConsultas = configuracion.cantidad_vocablos
   const palabras = vocablos.map((elem) => elem.vocablo_palabra);
 
   const n =
@@ -143,17 +161,20 @@ function generateConsultas({ vocablos, numeroConsultas }) {
     const randomIndex2 = Math.floor(Math.random() * palabrasCopy.length);
     palabrasConsulta.push(palabrasCopy.splice(randomIndex2, 1)[0]);
 
-    const palabras_consulta = [];
+    // const palabras_consulta = [];
 
-    const randomIndex3 = Math.floor(Math.random() * palabrasConsulta.length);
-    palabras_consulta.push(palabrasConsulta.splice(randomIndex3, 1)[0]);
+    // const randomIndex3 = Math.floor(Math.random() * palabrasConsulta.length);
+    // palabras_consulta.push(palabrasConsulta.splice(randomIndex3, 1)[0]);
 
-    const randomIndex4 = Math.floor(Math.random() * palabrasConsulta.length);
-    palabras_consulta.push(palabrasConsulta.splice(randomIndex4, 1)[0]);
+    // const randomIndex4 = Math.floor(Math.random() * palabrasConsulta.length);
+    // palabras_consulta.push(palabrasConsulta.splice(randomIndex4, 1)[0]);
 
-    palabras_consulta.push(palabrasConsulta[0]);
+    // palabras_consulta.push(palabrasConsulta[0]);
 
-    consultas[i].palabras_consulta = palabras_consulta;
+    shuffle(palabrasConsulta);
+
+    // consultas[i].palabras_consulta = palabras_consulta;
+    consultas[i].palabras_consulta = palabrasConsulta;
   }
 
   return consultas;
@@ -434,11 +455,16 @@ export default function HorizontalNonLinearStepper() {
   const [steps, setSteps] = React.useState([]);
   const [results, setResults] = React.useState({});
 
-  const [query, ] = useSearchParams();
-  const [vocablos, setVocablos] = React.useState([]);
+  const [query] = useSearchParams();
   const [loading, setLoading] = React.useState(false);
   const [gradoTitle, setGradoTitle] = React.useState();
-  const [, setTemaTitle] = React.useState();
+
+  const [, setWordCount] = React.useState(0);
+  const [, setCategories] = React.useState([]);
+  const [questionType, setQuestionType] = React.useState("");
+  const [responseType, setResponseType] = React.useState("");
+  const [, setTemas] = React.useState([]);
+  const [vocablos, setVocablos] = React.useState([]);
 
   const grado = query.get("grado");
   const tema = query.get("tema");
@@ -447,32 +473,78 @@ export default function HorizontalNonLinearStepper() {
   const getVocablos = async () => {
     try {
       setLoading(true);
-      const response = await fetch(
-        `/vocablos-by-grado-tema/${grado}/${tema}/${opciones_por_grado[grado]}`,
-        {
-          method: "GET",
-          headers: {
-            "Content-type": "application/json",
-            token: localStorage.token,
-          },
-        }
-      );
+
+      // obtener configuracion
+      const response = await fetch(`/configuracion/${grado}`, {
+        method: "GET",
+        headers: {
+          "Content-type": "application/json",
+          token: localStorage.token,
+        },
+      });
 
       const responseData = await response.json();
+      setWordCount(responseData.cantidad_vocablos);
+      setCategories(responseData.categorias_id);
+      setQuestionType(responseData.tipo_pregunta);
+      setResponseType(responseData.tipo_respuesta);
 
-      setVocablos(responseData);
-      setLoading(false);
+      // obtener temas del grado
+      const response2 = await fetch(`/temas-by-grado/${grado}`, {
+        method: "GET",
+        headers: {
+          "Content-type": "application/json",
+          token: localStorage.token,
+        },
+      });
+
+      const responseData2 = await response2.json();
       const gradoTitle =
-        responseData && responseData[0] ? responseData[0].grado_nombre : null;
-      const temaTitle =
-        responseData && responseData[0] ? responseData[0].tema_nombre : null;
+        responseData2 && responseData2[0]
+          ? responseData2[0].grado_nombre
+          : null;
+
+      setTemas(responseData2);
       setGradoTitle(gradoTitle);
-      setTemaTitle(temaTitle);
+
+      // obtener vocablos de cada tema
+
+      let allVocablos = [];
+
+      for (const tema of responseData2) {
+        if (tema.es_categoria) {
+          const response = await fetch(
+            `/vocablos-by-grado-tema/${grado}/${tema.tema_id}/100`,
+            {
+              method: "GET",
+              headers: {
+                "Content-type": "application/json",
+                token: localStorage.token,
+              },
+            }
+          );
+
+          const responseData = await response.json();
+
+          allVocablos.push(...responseData);
+
+          setVocablos((prevVocablos) => [...prevVocablos, ...responseData]);
+        }
+      }
+
+      setLoading(false);
 
       const consultas = generateConsultas({
-        vocablos: responseData,
-        numeroConsultas: consultas_por_grado[grado],
+        vocablos:
+          responseData.categorias_id.length > 0
+            ? allVocablos.filter((elem) =>
+                responseData.categorias_id.includes(elem.tema_id)
+              )
+            : allVocablos,
+        numeroConsultas: responseData.cantidad_vocablos,
+        // configuracion: responseData
       });
+
       const newConsultas = addLogsToConsulta({
         logs: [
           {
@@ -500,7 +572,6 @@ export default function HorizontalNonLinearStepper() {
         ],
       });
     } catch (err) {
-      setLoading(false);
       console.error(err);
       toast.error("Error de red");
     }
@@ -603,7 +674,8 @@ export default function HorizontalNonLinearStepper() {
           const route = window.location.pathname.includes("prueba");
           if (route) {
             toast.success("Prueba cancelada");
-            navigate(`/dashboard/prueba?grado=${grado}&tema=${tema}`);
+            // navigate(`/dashboard/prueba?grado=${grado}&tema=${tema}`);
+            navigate(`/dashboard/prueba?grado=${grado}`);
           } else {
             toast.success("Práctica cancelada");
             navigate(`/dashboard/estudiar?grado=${grado}&tema=${tema}`);
@@ -1105,12 +1177,23 @@ export default function HorizontalNonLinearStepper() {
                 {/*<Typography id="keep-mounted-modal-title" variant="subtitle2">
                     Imagen
                   </Typography>*/}
-                <CardMedia
-                  component="img"
-                  sx={{ maxWidth: 350, maxHeight: 300, objectFit: "contain" }}
-                  image={steps[activeStep].imageSrc}
-                  alt={`imagen del vocablo ${steps[activeStep].vocablo_palabra}`}
-                />
+
+                {questionType === "imagen" && (
+                  <CardMedia
+                    component="img"
+                    sx={{ maxWidth: 350, maxHeight: 300, objectFit: "contain" }}
+                    image={steps[activeStep].imageSrc}
+                    alt={`imagen del vocablo ${steps[activeStep].vocablo_palabra}`}
+                  />
+                )}
+                {questionType === "video" && (
+                  <YoutubeEmbed embedLink={steps[activeStep].videoSrc} />
+                )}
+                {questionType === "texto" && (
+                  <Typography variant="h1">
+                    {steps[activeStep].vocablo_palabra}
+                  </Typography>
+                )}
               </Box>
               <Box
                 sx={{
@@ -1120,16 +1203,82 @@ export default function HorizontalNonLinearStepper() {
                   marginTop: "24px",
                 }}
               >
-                {steps[activeStep].palabras_consulta.map((p) => (
-                  <Button
-                    key={p}
-                    variant="outlined"
-                    color="success"
-                    onClick={() => setResponse({ palabra: p })}
-                  >
-                    {p}
-                  </Button>
-                ))}
+                {responseType === "texto" &&
+                  steps[activeStep].palabras_consulta.map((p) => (
+                    <Button
+                      key={p}
+                      variant="outlined"
+                      color="success"
+                      onClick={() => setResponse({ palabra: p })}
+                    >
+                      {p}
+                    </Button>
+                  ))}
+                {responseType === "imagen" &&
+                  vocablos
+                    .filter((vocablo) =>
+                      steps[activeStep].palabras_consulta.includes(
+                        vocablo.vocablo_palabra
+                      )
+                    )
+                    .map((vocablo) => {
+                      const indexImage =
+                        vocablo && vocablo.recursos
+                          ? vocablo.recursos.findIndex(
+                              (elem) => elem.tipo === "image"
+                            )
+                          : -1;
+                      return (
+                        <Button
+                          key={vocablo.vocablo_palabra}
+                          onClick={() =>
+                            setResponse({ palabra: vocablo.vocablo_palabra })
+                          }
+                        >
+                          <CardMedia
+                            component="img"
+                            sx={{
+                              maxWidth: 200,
+                              maxHeight: 200,
+                              objectFit: "contain",
+                            }}
+                            image={vocablo.recursos[indexImage].enlace}
+                            alt={`imagen del vocablo ${vocablo.vocablo_palabra}`}
+                          />
+                        </Button>
+                      );
+                    })}
+                {responseType === "video" &&
+                  vocablos
+                    .filter((vocablo) =>
+                      steps[activeStep].palabras_consulta.includes(
+                        vocablo.vocablo_palabra
+                      )
+                    )
+                    .map((vocablo) => {
+                      const indexVideo =
+                        vocablo && vocablo.recursos
+                          ? vocablo.recursos.findIndex(
+                              (elem) => elem.tipo === "video"
+                            )
+                          : -1;
+                      return (
+                        <div style={{ width: 360 }}>
+                          <YoutubeEmbed
+                            embedLink={vocablo.recursos[indexVideo].enlace}
+                          />
+                          <Button
+                            key={vocablo.vocablo_palabra}
+                            onClick={() =>
+                              setResponse({ palabra: vocablo.vocablo_palabra })
+                            }
+                            fullWidth
+                          >
+                            seleccionar
+                          </Button>
+                        </div>
+                      );
+                    })}
               </Box>
 
               <Box

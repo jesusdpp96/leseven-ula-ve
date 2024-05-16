@@ -6,8 +6,8 @@ const authorization = require("../middleware/authorization");
 
 const router = Router();
 
-router.get("/practica/details/:practica_id", authorization, getPracticaDetails);
-router.get("/practica/:user_id", authorization, getPracticasPorUsuario);
+router.get("/practica/details/:practica_id", getPracticaDetails);
+router.get("/practica/:user_id", getPracticasPorUsuario);
 router.post("/practica", authorization, postPractica);
 
 

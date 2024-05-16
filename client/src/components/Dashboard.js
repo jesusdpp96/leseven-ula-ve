@@ -14,147 +14,129 @@ import Avatar from '@mui/material/Avatar';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { toast } from "react-toastify";
-import LogoutIcon from '@mui/icons-material/Logout';
-import PeopleIcon from '@mui/icons-material/People';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import CategoryIcon from '@mui/icons-material/Category';
-import ClassIcon from '@mui/icons-material/Class';
-import HomeIcon from '@mui/icons-material/Home';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-import {
-  Outlet,
-  useNavigate
-} from "react-router-dom";
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import sendLogs from '../utils/sendLogs';
+import LogoutIcon from "@mui/icons-material/Logout";
+import PeopleIcon from "@mui/icons-material/People";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import CategoryIcon from "@mui/icons-material/Category";
+import ClassIcon from "@mui/icons-material/Class";
+import HomeIcon from "@mui/icons-material/Home";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import SettingsIcon from "@mui/icons-material/Settings";
+import { Outlet, useNavigate } from "react-router-dom";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import sendLogs from "../utils/sendLogs";
 
-
-// function Copyright(props) {
-//   return (
-//     <Typography variant="body2" color="text.secondary" align="center" {...props}>
-//       {'Copyright © '}
-//       <Link color="inherit" href="https://mui.com/">
-//         Your Website
-//       </Link>{' '}
-//       {new Date().getFullYear()}
-//       {'.'}
-//     </Typography>
-//   );
-// }
 
 const drawerWidth = 240;
 
 const AppBar = styled(MuiAppBar, {
-  shouldForwardProp: (prop) => prop !== 'open',
+  shouldForwardProp: (prop) => prop !== "open",
 })(({ theme, open }) => ({
   zIndex: theme.zIndex.drawer + 1,
-  transition: theme.transitions.create(['width', 'margin'], {
+  transition: theme.transitions.create(["width", "margin"], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
   ...(open && {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(['width', 'margin'], {
+    transition: theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
   }),
 }));
 
-const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
-  ({ theme, open }) => ({
-    '& .MuiDrawer-paper': {
-      position: 'relative',
-      whiteSpace: 'nowrap',
-      width: drawerWidth,
-      transition: theme.transitions.create('width', {
+const Drawer = styled(MuiDrawer, {
+  shouldForwardProp: (prop) => prop !== "open",
+})(({ theme, open }) => ({
+  "& .MuiDrawer-paper": {
+    position: "relative",
+    whiteSpace: "nowrap",
+    width: drawerWidth,
+    transition: theme.transitions.create("width", {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+    boxSizing: "border-box",
+    ...(!open && {
+      overflowX: "hidden",
+      transition: theme.transitions.create("width", {
         easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.enteringScreen,
+        duration: theme.transitions.duration.leavingScreen,
       }),
-      boxSizing: 'border-box',
-      ...(!open && {
-        overflowX: 'hidden',
-        transition: theme.transitions.create('width', {
-          easing: theme.transitions.easing.sharp,
-          duration: theme.transitions.duration.leavingScreen,
-        }),
-        width: theme.spacing(7),
-        [theme.breakpoints.up('sm')]: {
-          width: theme.spacing(9),
-        },
-      }),
-    },
-  }),
-);
+      width: theme.spacing(7),
+      [theme.breakpoints.up("sm")]: {
+        width: theme.spacing(9),
+      },
+    }),
+  },
+}));
 
 const mdTheme = createTheme();
 
-const AccountStyle = styled('div')(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
+const AccountStyle = styled("div")(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
   padding: theme.spacing(2, 2.5),
   borderRadius: Number(theme.shape.borderRadius) * 1.5,
-  backgroundColor: theme.palette.grey[500_12] || '#ddd',
+  backgroundColor: theme.palette.grey[500_12] || "#ddd",
 }));
 
-function PanelItems({funcionalidad_sistema}) {
-
+function PanelItems({ funcionalidad_sistema }) {
   const navigate = useNavigate();
-  
 
   if (!funcionalidad_sistema) {
     return null;
   }
 
-  
   const goTo1 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
     navigate("prueba");
-  }
+  };
 
   const goTo7 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
     navigate("estudiar");
-  }
+  };
 
   const goTo2 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
     navigate("supervisar");
-  }
+  };
 
   const goTo3 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
     navigate("explorar-vocabulario-temas");
-  }
+  };
 
   const goTo4 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
     navigate("explorar-vocabulario-categorias");
-  }
+  };
 
   const goTo5 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
     navigate("inicio");
-  }
+  };
 
   const goTo6 = () => {
     // console.log({event:e, name: e.target.name})
     // navigate(e.target.name);
     navigate("glosario");
-  }
+  };
   const elements = [
     {
-      funcionalidad: 'panel-practica',
+      funcionalidad: "panel-practica",
       element: (
         <ListItemButton onClick={goTo5} key="pp005">
           <ListItemIcon>
@@ -162,31 +144,30 @@ function PanelItems({funcionalidad_sistema}) {
           </ListItemIcon>
           <ListItemText primary={"Inicio"} />
         </ListItemButton>
-      )
+      ),
     },
     {
-      funcionalidad: 'panel-practica',
+      funcionalidad: "panel-practica",
       element: (
         <ListItemButton onClick={goTo3} key="pp003">
           <ListItemIcon>
             <ClassIcon />
           </ListItemIcon>
           <ListItemText
-            primary={"Vocabulario por Grado"} 
-            primaryTypographyProps={{ 
-              style: { 
-                whiteSpace: 'normal',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis'
-
-              }
-          }}
+            primary={"Vocabulario por Grado"}
+            primaryTypographyProps={{
+              style: {
+                whiteSpace: "normal",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              },
+            }}
           />
         </ListItemButton>
-      )
+      ),
     },
     {
-      funcionalidad: 'panel-practica',
+      funcionalidad: "panel-practica",
       element: (
         <ListItemButton onClick={goTo4} key="pp004">
           <ListItemIcon>
@@ -194,30 +175,30 @@ function PanelItems({funcionalidad_sistema}) {
           </ListItemIcon>
           <ListItemText
             primary={"Vocabulario por Categoría"}
-            primaryTypographyProps={{ 
-                style: { 
-                  whiteSpace: 'normal',
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis'
-                }
+            primaryTypographyProps={{
+              style: {
+                whiteSpace: "normal",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              },
             }}
-           />
+          />
         </ListItemButton>
-      )
+      ),
     },
     {
-      funcionalidad: 'panel-practica',
+      funcionalidad: "panel-practica",
       element: (
         <ListItemButton onClick={goTo1} key="pp001">
           <ListItemIcon>
             <DashboardIcon />
           </ListItemIcon>
-          <ListItemText primary="Prueba" />
+          <ListItemText primary="Pruebas" />
         </ListItemButton>
-      )
+      ),
     },
     {
-      funcionalidad: 'panel-practica',
+      funcionalidad: "panel-practica",
       element: (
         <ListItemButton onClick={goTo7} key="pp007">
           <ListItemIcon>
@@ -225,10 +206,10 @@ function PanelItems({funcionalidad_sistema}) {
           </ListItemIcon>
           <ListItemText primary="Estudiar" />
         </ListItemButton>
-      )
+      ),
     },
     {
-      funcionalidad: 'panel-profesor',
+      funcionalidad: "panel-profesor",
       element: (
         <ListItemButton onClick={goTo2} key="pp002">
           <ListItemIcon>
@@ -236,10 +217,10 @@ function PanelItems({funcionalidad_sistema}) {
           </ListItemIcon>
           <ListItemText primary="Supervisar" />
         </ListItemButton>
-      )
+      ),
     },
     {
-      funcionalidad: 'panel-profesor',
+      funcionalidad: "panel-profesor",
       element: (
         <ListItemButton onClick={goTo6} key="pp006">
           <ListItemIcon>
@@ -247,15 +228,35 @@ function PanelItems({funcionalidad_sistema}) {
           </ListItemIcon>
           <ListItemText primary={"Glosario"} />
         </ListItemButton>
-      )
+      ),
     },
-  ]
+    {
+      funcionalidad: "panel-profesor",
+      element: (
+        <ListItemButton
+          onClick={() => {
+            navigate("configuracion");
+          }}
+          key=""
+        >
+          <ListItemIcon>
+            <SettingsIcon />
+          </ListItemIcon>
+          <ListItemText
+            primary={"Configuración de Pruebas"}
+            sx={{ textWrap: "wrap" }}
+          />
+        </ListItemButton>
+      ),
+    },
+  ];
 
-  return elements.filter(elem => funcionalidad_sistema.includes(elem.funcionalidad)).map(elem => elem.element);
-
+  return elements
+    .filter((elem) => funcionalidad_sistema.includes(elem.funcionalidad))
+    .map((elem) => elem.element);
 }
 
-function DashboardContent({setAuth}) {
+function DashboardContent({ setAuth }) {
   const [initialized, setInitialized] = React.useState(false);
   const [open, setOpen] = React.useState(true);
   const [userData, setUserData] = React.useState({});
@@ -263,52 +264,48 @@ function DashboardContent({setAuth}) {
     setOpen(!open);
   };
 
-
   const getUserData = async () => {
     try {
       const response = await fetch("/usuario", {
-          method: "GET",
-          headers: {
-            "Content-type": "application/json",
-            "token": localStorage.token,
-          },
-        });
-  
-      const userDataRes = await response.json();
-  
-      setUserData({ ...userDataRes});
+        method: "GET",
+        headers: {
+          "Content-type": "application/json",
+          token: localStorage.token,
+        },
+      });
 
-    } catch(err) {
+      const userDataRes = await response.json();
+
+      setUserData({ ...userDataRes });
+    } catch (err) {
       console.error(err);
     }
-  }
+  };
 
-  
   const logout = async (e) => {
     e.preventDefault();
     try {
       localStorage.removeItem("token");
       // toast.success("Logout successfully");
       toast.success("Sesión cerrada");
-      setAuth(false); 
+      setAuth(false);
 
       sendLogs({
         logs: [
           {
-            "log_name": "Aprendiz: Cierra sesión",
-            "timestamp": new Date().toISOString(),
+            log_name: "Aprendiz: Cierra sesión",
+            timestamp: new Date().toISOString(),
           },
-        ]
-      })
+        ],
+      });
     } catch (err) {
       console.error(err.message);
     }
   };
 
-
   React.useEffect(() => {
     getUserData();
-  } , []);
+  }, []);
 
   const theme = useTheme();
 
@@ -321,34 +318,32 @@ function DashboardContent({setAuth}) {
 
   return (
     <ThemeProvider theme={mdTheme}>
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <AppBar position="absolute" open={open}>
           <Toolbar
             sx={{
-              pr: '24px', // keep right padding when drawer closed
+              pr: "24px", // keep right padding when drawer closed
             }}
           >
-            {
-              open ? (
-                <IconButton onClick={toggleDrawer}>
-                  <ChevronLeftIcon />
-                </IconButton>
-              ): (
-                <IconButton
-                  edge="start"
-                  color="inherit"
-                  aria-label="open drawer"
-                  onClick={toggleDrawer}
-                  sx={{
-                    marginRight: '36px',
-                    ...(open && { display: 'none' }),
-                  }}
-                >
-                  <MenuIcon />
-                </IconButton>
-              )
-            }
+            {open ? (
+              <IconButton onClick={toggleDrawer}>
+                <ChevronLeftIcon />
+              </IconButton>
+            ) : (
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="open drawer"
+                onClick={toggleDrawer}
+                sx={{
+                  marginRight: "36px",
+                  ...(open && { display: "none" }),
+                }}
+              >
+                <MenuIcon />
+              </IconButton>
+            )}
             <Typography
               component="h1"
               variant="h6"
@@ -374,41 +369,46 @@ function DashboardContent({setAuth}) {
             </IconButton>
           </Toolbar>
         </AppBar>
-        <Drawer variant="permanent" open={open} sx={{backgraundColor: '#1976d2', color: "#fff"}}>
-          <Box sx={{ mb: 2, mx: 1.5 }} style={{marginTop:"16px"}}>
-            {
-              open ? (
-                <AccountStyle>
-                  <Avatar src="" alt="photoURL" />
-                  <Box sx={{ ml: 1 }}>
-                    <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
-                      {`${userData.nombre} ${userData.apellido}`}
-                    </Typography>
-                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                      {userData.rol_usuario}
-                    </Typography>
-                  </Box>
-                  
-                </AccountStyle>
-
-              ): (null)
-            }
+        <Drawer
+          variant="permanent"
+          open={open}
+          sx={{ backgraundColor: "#1976d2", color: "#fff" }}
+        >
+          <Box sx={{ mb: 2, mx: 1.5 }} style={{ marginTop: "16px" }}>
+            {open ? (
+              <AccountStyle>
+                <Avatar src="/image.png" alt="photoURL" />
+                <Box sx={{ ml: 1 }}>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ color: "text.primary" }}
+                  >
+                    {`${userData.nombre} ${userData.apellido}`}
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                    {userData.rol_usuario}
+                  </Typography>
+                </Box>
+              </AccountStyle>
+            ) : null}
           </Box>
           <Divider sx={{ my: 1 }} />
           <List component="nav">
-            <PanelItems funcionalidad_sistema={userData.funcionalidad_sistema} />
+            <PanelItems
+              funcionalidad_sistema={userData.funcionalidad_sistema}
+            />
           </List>
         </Drawer>
         <Box
           component="main"
           sx={{
             backgroundColor: (theme) =>
-              theme.palette.mode === 'light'
+              theme.palette.mode === "light"
                 ? theme.palette.grey[100]
                 : theme.palette.grey[900],
             flexGrow: 1,
-            height: '100vh',
-            overflow: 'auto',
+            height: "100vh",
+            overflow: "auto",
           }}
         >
           <Toolbar />
@@ -422,8 +422,6 @@ function DashboardContent({setAuth}) {
   );
 }
 
-export default function Dashboard({setAuth}) {
-
-
+export default function Dashboard({ setAuth }) {
   return <DashboardContent setAuth={setAuth} />;
 }
