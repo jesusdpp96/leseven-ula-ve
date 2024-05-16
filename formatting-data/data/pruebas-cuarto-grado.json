@@ -65,20 +65,6 @@
   {
     "grado": "Cuarto grado",
     "tema": "Prueba Exploratoria - Cuarto Grado",
-    "palabra": "Metrobus",
-    "image": "/assets/images/metrobus.png",
-    "video": "https://www.youtube.com/watch?v=mipVd5veI00"
-  },
-  {
-    "grado": "Cuarto grado",
-    "tema": "Prueba Exploratoria - Cuarto Grado",
-    "palabra": "Metro",
-    "image": "/assets/images/metro.png",
-    "video": "https://www.youtube.com/watch?v=5mM--FVg0Bs"
-  },
-  {
-    "grado": "Cuarto grado",
-    "tema": "Prueba Exploratoria - Cuarto Grado",
     "palabra": "Horno",
     "image": "/assets/images/horno.png",
     "video": "https://www.youtube.com/watch?v=8zKhPdFae4w"

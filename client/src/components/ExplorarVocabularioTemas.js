@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useSearchParams } from 'react-router-dom';
-import GradoTemasListExplorar from './GradoTemasListExplorar';
+import GradoTemasListExplorar from './GradoTemasListExplorar/GradoTemasListExplorar';
 import TemaVocablosListExplorar from './TemaVocablosListExplorar';
 
 export default function ExplorarVocabularioTemas() {
   let view = 'temas';
 
-  const [query, setQuery] = useSearchParams();
+  const [query] = useSearchParams();
 
 
   const temaQuery = query.get('tema');
@@ -18,7 +18,7 @@ export default function ExplorarVocabularioTemas() {
   // console.log({gradoQuery, typeof: typeof gradoQuery});
 
   return (view === 'temas' ? 
-          <GradoTemasListExplorar /> :
+          <GradoTemasListExplorar title={"Grados"} /> :
           view === 'vocablos' ?
           <TemaVocablosListExplorar tema={Number(temaQuery)}/> :
           null)

@@ -1,12 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { StyleSheetManager } from "styled-components";
+import isPropValid from "@emotion/is-prop-valid";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StyleSheetManager shouldForwardProp={isPropValid}>
+      <App />
+    </StyleSheetManager>
   </React.StrictMode>,
   document.getElementById("root")
 );

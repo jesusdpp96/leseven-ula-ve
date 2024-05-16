@@ -6,40 +6,17 @@ import {
   Box,
   Grid,
   CircularProgress,
-  Button,
-  IconButton,
-  Icon,
+  Button
 } from "@mui/material";
-import SettingsIcon from "@mui/icons-material/Settings";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import sendLogs from "../utils/sendLogs";
-
-function quitarAcentos(cadena) {
-  const acentos = {
-    á: "a",
-    é: "e",
-    í: "i",
-    ó: "o",
-    ú: "u",
-    Á: "A",
-    É: "E",
-    Í: "I",
-    Ó: "O",
-    Ú: "U",
-  };
-  return cadena
-    .split("")
-    .map((letra) => acentos[letra] || letra)
-    .join("")
-    .toString();
-}
+import { quitarAcentos } from "../utils/quitarAcentos";
 
 const ItemList = ({ temas, setQuery, showCategorias }) => {
-  // const temas2 = temas.map((elem) => ({...elem, tema_image_src: `/assets/images/image${Math.floor(Math.random() * 58)}.png` }));
   const buttonTitle = window.location.pathname.includes("prueba")
     ? "Prueba"
     : "Estudiar";
@@ -52,11 +29,18 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
     )
     .map((elem, index) => {
       const vocablos_counter = elem.vocablos_counter || 0;
-      const vocablos_vistos = elem.vocablos_vistos || 0;
-      const percentage = Math.ceil((vocablos_vistos / vocablos_counter) * 100);
+      let vocablos_vistos = elem.vocablos_vistos || 0;
+      if (vocablos_vistos > vocablos_counter) vocablos_vistos = vocablos_counter;
+
+      let percentage = Math.ceil(vocablos_vistos / vocablos_counter * 100);
+      if (percentage > 100) percentage = 100;
+
       const backgroundImage = `linear-gradient(to right, rgba(0,128,0,${
         percentage / 200
       }) ${percentage}%, rgba(0,128,0,${percentage / 1000}))`;
+
+      const cardTextColor = percentage > 50 ? "#334d33" : "#999999";
+
       return (
         <Grid item xs={4} sm={4} md={4} key={index}>
           <Card
@@ -90,17 +74,15 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
                 </Typography>
                 <Typography
                   variant="string"
-                  color="text.secondary"
                   component="div"
-                  style={{ color: "#999999", fontSize: "12px" }}
+                  style={{ color: cardTextColor, fontSize: "12px" }}
                 >
                   {Boolean(elem.es_categoria) ? "Categoria" : "Tema"}
                 </Typography>
                 <Typography
                   variant="string"
-                  color="text.secondary"
                   component="div"
-                  style={{ color: "#999999", fontSize: "12px" }}
+                  style={{ color: cardTextColor, fontSize: "12px" }}
                 >
                   Vistos: ({vocablos_vistos}/{vocablos_counter})
                 </Typography>
@@ -132,8 +114,7 @@ const ItemList = ({ temas, setQuery, showCategorias }) => {
     });
 };
 
-const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
-  // const temas2 = temas.map((elem) => ({...elem, tema_image_src: `/assets/images/image${Math.floor(Math.random() * 58)}.png` }));
+const ItemList2 = ({ temas, showCategorias, gradoTitle }) => {
   const navigate = useNavigate();
 
   return temas
@@ -144,29 +125,13 @@ const ItemList2 = ({ temas, setQuery, showCategorias, gradoTitle }) => {
     )
     .map((elem, index) => {
       let vocablos_counter = elem.vocablos_counter || 0;
-      // if (gradoTitle.includes("Preescolar")) {
-      //   vocablos_counter = 5;
-      // }
-      // if (gradoTitle.includes("Primer")) {
-      //   vocablos_counter = 5;
-      // }
-      // if (gradoTitle.includes("Segundo")) {
-      //   vocablos_counter = 6;
-      // }
-      // if (gradoTitle.includes("Tercero")) {
-      //   vocablos_counter = 4;
-      // }
-      // if (gradoTitle.includes("Cuarto")) {
-      //   vocablos_counter = 5;
-      // }
-      // if (gradoTitle.includes("Quinto")) {
-      //   vocablos_counter = 10;
-      // }
-      // if (gradoTitle.includes("Sexto")) {
-      //   vocablos_counter = 15;
-      // }
-      const vocablos_vistos = elem.vocablos_vistos || 0;
-      const percentage = Math.ceil((vocablos_vistos / vocablos_counter) * 100);
+     
+      let vocablos_vistos = elem.vocablos_vistos || 0;
+      if (vocablos_vistos > vocablos_counter) vocablos_vistos = vocablos_counter;
+  
+      let percentage = Math.ceil(vocablos_vistos/vocablos_counter * 100);
+      if (percentage > 100) percentage = 100;
+      
       const backgroundImage = `linear-gradient(to right, rgba(0,128,0,${
         percentage / 200
       }) ${percentage}%, rgba(0,128,0,${percentage / 1000}))`;
@@ -312,7 +277,7 @@ const CircularProgressWithLabel = (props) => {
 };
 
 export default function GradoTemasList({ grado }) {
-  const [query, setQuery] = useSearchParams();
+  const [, setQuery] = useSearchParams();
   const [temas, setTemas] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [gradoTitle, setGradoTitle] = React.useState();
@@ -355,6 +320,7 @@ export default function GradoTemasList({ grado }) {
 
   React.useEffect(() => {
     getTemas();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return loading ? (

@@ -15,8 +15,9 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import validateEmail from '../utils/validateEmail';
-import UserMonitorModal from './UserMonitorModal';
+import validateEmail from '../../utils/validateEmail';
+import { ERR_USER_NOT_EXISTS, SUCCESS_USER_ADDED, SUCCESS_USER_REMOVED, UNKNOWN_ERROR, USER_NOT_EXISTS } from '../../utils/constants';
+import { useNavigate } from 'react-router-dom';
 
 export const styleUsuarioMonitorModal = {
   position: 'absolute',
@@ -32,10 +33,9 @@ export const styleUsuarioMonitorModal = {
   p: 4,
 };
 
-
-
 export default function AprendicesMonitor() {
-
+  
+  const navigate = useNavigate();
   const [loading, setLoading] = React.useState(false);
   const [usersData, setUsersData] = React.useState([]);
   const [addLoading, setAddLoading] = React.useState(false);
@@ -59,17 +59,26 @@ export default function AprendicesMonitor() {
       });
       
       if (response.status === 204) {
-        toast.success("Usuario agregado al monitor correctamente.");
+        toast.success(SUCCESS_USER_ADDED);
       } else {
-        toast.error("Error desconocido");
+
+        try {
+          const data = await response.json();
+  
+          if (data.message === ERR_USER_NOT_EXISTS) {
+            toast.error(USER_NOT_EXISTS);
+          } else {
+            toast.error(UNKNOWN_ERROR);
+          }
+
+        } catch (error) {
+          toast.error(UNKNOWN_ERROR);
+        }
       }
 
       getUsersMonitorData();
       setAddLoading(false);
       setCorreo(undefined);
-
-      // toast.success("Logged in Successfully");
-      // toast.error(parseRes);
 
     } catch (err) {
       console.error(err.message);
@@ -133,9 +142,9 @@ export default function AprendicesMonitor() {
 
             
       if (response.status === 204) {
-        toast.success("Usuario eliminado correctamente.");
+        toast.success(SUCCESS_USER_REMOVED);
       } else {
-        toast.error("Error desconocido");
+        toast.error(UNKNOWN_ERROR);
       }
 
       getUsersMonitorData();
@@ -151,12 +160,10 @@ export default function AprendicesMonitor() {
     getUsersMonitorData();
   }, []);
 
+  const goToDetails = (userId) => {
+    navigate(`/dashboard/supervisar/${userId}`);
+  }
 
-  //Usuario Monitor Modal
-
-  const [openModal, setOpenModal] = React.useState(false);
-  const [usuarioRowData, setUsuarioRowData] = React.useState();
-  
   return (
     <Box sx={{display: 'flex', flexDirection: 'column'}}>
       <Box>
@@ -205,8 +212,6 @@ export default function AprendicesMonitor() {
                 <TableCell align="right">Prácticas{<br/>}realizadas</TableCell>
                 <TableCell align="right">Consultas{<br/>}correctas</TableCell>
                 <TableCell align="right">Consultas{<br/>}incorrectas</TableCell>
-                <TableCell align="right">Puntos</TableCell>
-                <TableCell align="right">Trofeos</TableCell>
                 <TableCell align="right">Acción</TableCell>
               </TableRow>
             </TableHead>
@@ -217,7 +222,7 @@ export default function AprendicesMonitor() {
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
                   <TableCell component="th" scope="row">
-                    <Button variant="text" onClick={() => {setUsuarioRowData(row); setOpenModal(true);}}>
+                    <Button variant="text" onClick={() => goToDetails(row.id)}>
                       {`${row.nombre} ${row.apellido}`}
                     </Button>
                   </TableCell>
@@ -225,10 +230,6 @@ export default function AprendicesMonitor() {
                   <TableCell align="right">{row.practicas_realizadas}</TableCell>
                   <TableCell align="right">{row.consultas_correctas}</TableCell>
                   <TableCell align="right">{row.consultas_incorrectas}</TableCell>
-                  <TableCell align="right">{row.puntos_acumulados}</TableCell>
-                  <TableCell align="right">
-                    {`${row.trofeos_imparables} Imparables, ${row.trofeos_agil} Agil, ${row.trofeos_leal} Leal`}
-                  </TableCell>
                   <TableCell align="right">
                     {removeLoading !== row.correo ?
                      (<IconButton color="error"
@@ -244,7 +245,6 @@ export default function AprendicesMonitor() {
           </Table>
         </TableContainer>
       </Box>
-      {openModal ? <UserMonitorModal usuarioRowData={usuarioRowData} setOpenModal={setOpenModal}/>: null}
     </Box>
   );
 }

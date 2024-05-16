@@ -1,27 +1,18 @@
-import React from "react";
-import {
-  styled,
-  createTheme,
-  ThemeProvider,
-  useTheme,
-} from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import MuiDrawer from "@mui/material/Drawer";
-import Box from "@mui/material/Box";
-import MuiAppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import Container from "@mui/material/Container";
-// import Grid from '@mui/material/Grid';
-// import Paper from '@mui/material/Paper';
-import Link from "@mui/material/Link";
-import Avatar from "@mui/material/Avatar";
-import MenuIcon from "@mui/icons-material/Menu";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-// import NotificationsIcon from '@mui/icons-material/Notifications';
+import React from 'react';
+import { styled, createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import MuiDrawer from '@mui/material/Drawer';
+import Box from '@mui/material/Box';
+import MuiAppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import List from '@mui/material/List';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import Container from '@mui/material/Container';
+import Avatar from '@mui/material/Avatar';
+import MenuIcon from '@mui/icons-material/Menu';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { toast } from "react-toastify";
 import LogoutIcon from "@mui/icons-material/Logout";
 import PeopleIcon from "@mui/icons-material/People";
@@ -38,23 +29,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import sendLogs from "../utils/sendLogs";
 
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const drawerWidth = 240;
 
@@ -226,7 +200,7 @@ function PanelItems({ funcionalidad_sistema }) {
     {
       funcionalidad: "panel-practica",
       element: (
-        <ListItemButton onClick={goTo7} key="pp001">
+        <ListItemButton onClick={goTo7} key="pp007">
           <ListItemIcon>
             <LibraryBooksIcon />
           </ListItemIcon>

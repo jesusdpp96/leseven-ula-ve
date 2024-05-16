@@ -43,18 +43,13 @@
        "log_name": "Aprendiz: Responde una consulta",
        "timestamp": "2022-04-04T01:36:03.704Z",
        "respuesta_es_correcta": true,
-       "respuesta_usuario": "mano",
+       "respuesta_usuario": "mano"
      },
      {
        "log_name": "Sistema: Muestra gamificación por respuesta correcta",
        "timestamp": "2022-04-04T01:36:03.704Z",
        "mensaje": "¡Fantastico!, lo estas haciendo muy bien",
        "gif": "felicitar001.gif"
-     },
-     {
-       "log_name": "Sistema: Suma puntos a la practica",
-       "timestamp": "2022-04-04T01:36:03.704Z",
-       "puntos": 100
      },
      {
        "log_name": "Sistema: Inicia una consulta",
@@ -104,11 +99,7 @@
        "tipo_consulta": "imagen",
        "palabras": ["ojo", "boca", "nariz"],
        "respuesta_correcta": "boca"
-     },
-     {...},
-     {...},
-     {...},
-     {...}
+     }
    ]
  },
  {
@@ -124,11 +115,6 @@
    "gif": "felicitar002.gif"
  },
  {
-   "log_name": "Sistema: Suma puntos al total del aprendiz",
-   "timestamp": "2022-04-04T01:36:03.704Z",
-   "puntos": 800
- },
- {
    "log_name": "Aprendiz: OK",
    "timestamp": "2022-04-04T01:36:03.704Z"
  },
@@ -137,9 +123,6 @@
    "timestamp": "2022-04-04T01:36:03.704Z",
    "grado": "primer grado"
  },
- {...},
- {...},
- {...},
  {
    "log_name": "Aprendiz: Cierra sesión",
    "timestamp": "2022-04-04T01:36:03.704Z"

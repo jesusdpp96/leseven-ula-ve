@@ -67,7 +67,7 @@
     "tema": "Alimentos",
     "palabra": "Hallacas",
     "image": "/assets/images/hallacas.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=_Sf3Kumro2s"
   },
   {
     "grado": "Quinto grado",
@@ -123,7 +123,7 @@
     "tema": "Animales",
     "palabra": "Araña",
     "image": "/assets/images/arana.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=nasoAmq1tgY"
   },
   {
     "grado": "Quinto grado",
@@ -298,14 +298,14 @@
     "tema": "Articulos de uso Personal",
     "palabra": "Desodorante",
     "image": "/assets/images/desodorante.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=m6aUxZiL4FA"
   },
   {
     "grado": "Quinto grado",
     "tema": "Articulos de uso Personal",
     "palabra": "Enjuague",
     "image": "/assets/images/enjuague.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=zQ63Y2rwF_E"
   },
   {
     "grado": "Quinto grado",
@@ -396,7 +396,7 @@
     "tema": "Dulces/Postres/Golosinas",
     "palabra": "Arroz con leche",
     "image": "/assets/images/arroz-con-leche.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=TcfkPjs79uQ"
   },
   {
     "grado": "Quinto grado",
@@ -417,21 +417,21 @@
     "tema": "Dulces/Postres/Golosinas",
     "palabra": "Chocolate",
     "image": "/assets/images/chocolate.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=nBflbOLnXJQ"
   },
   {
     "grado": "Quinto grado",
     "tema": "Dulces/Postres/Golosinas",
     "palabra": "Chupeta",
     "image": "/assets/images/chupeta.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=toQZWKmUZhI"
   },
   {
     "grado": "Quinto grado",
     "tema": "Dulces/Postres/Golosinas",
     "palabra": "Cotufa",
     "image": "/assets/images/cotufa.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=3MANgAIZzOs"
   },
   {
     "grado": "Quinto grado",
@@ -445,7 +445,7 @@
     "tema": "Dulces/Postres/Golosinas",
     "palabra": "Pepito",
     "image": "/assets/images/pepito.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=RjyZ66Jr-Qc"
   },
   {
     "grado": "Quinto grado",
@@ -641,7 +641,7 @@
     "tema": "Juguetes/juegos/deportes",
     "palabra": "Deportes extremos",
     "image": "/assets/images/deportes-extremos.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=2M-8L6DoYvY"
   },
   {
     "grado": "Quinto grado",
@@ -676,42 +676,42 @@
     "tema": "Lugares",
     "palabra": "Apartamento",
     "image": "/assets/images/apartamento.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=VI_wrzojKgo"
   },
   {
     "grado": "Quinto grado",
     "tema": "Lugares",
     "palabra": "Bodega",
     "image": "/assets/images/bodega.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=s_bTkQylKvM"
   },
   {
     "grado": "Quinto grado",
     "tema": "Lugares",
     "palabra": "Casa",
     "image": "/assets/images/casa.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=0gEfsylixWM"
   },
   {
     "grado": "Quinto grado",
     "tema": "Lugares",
     "palabra": "Centro comercial",
     "image": "/assets/images/centro-comercial.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=0VeHLmeBX9Y"
   },
   {
     "grado": "Quinto grado",
     "tema": "Lugares",
     "palabra": "Choza",
     "image": "/assets/images/choza.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=WCcsydWoqg8"
   },
   {
     "grado": "Quinto grado",
     "tema": "Lugares",
     "palabra": "Edificio",
     "image": "/assets/images/edificio.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=6RVNi1aEQAY"
   },
   {
     "grado": "Quinto grado",
@@ -725,7 +725,7 @@
     "tema": "Lugares",
     "palabra": "Estacionamiento",
     "image": "/assets/images/estacionamiento.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=gRNdKNZhMN0"
   },
   {
     "grado": "Quinto grado",
@@ -795,7 +795,7 @@
     "tema": "Lugares de Merida",
     "palabra": "Estadio metropolitano",
     "image": "/assets/images/estadio-metropolitano.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=zP_-R_lzguw"
   },
   {
     "grado": "Quinto grado",
@@ -858,14 +858,14 @@
     "tema": "Medios de transporte",
     "palabra": "Ferry",
     "image": "/assets/images/ferry.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=f2M3IzgRFm0"
   },
   {
     "grado": "Quinto grado",
     "tema": "Medios de transporte",
     "palabra": "Globo aerostatico",
     "image": "/assets/images/globo-aerostatico.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=eHp6uJ6O7S8"
   },
   {
     "grado": "Quinto grado",
@@ -921,7 +921,7 @@
     "tema": "Objetos del hogar",
     "palabra": "Aspiradora",
     "image": "/assets/images/aspiradora.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=YBVqla606Fo"
   },
   {
     "grado": "Quinto grado",
@@ -942,14 +942,14 @@
     "tema": "Objetos del hogar",
     "palabra": "Filmadora",
     "image": "/assets/images/filmadora.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=pEbBHqNaGnU"
   },
   {
     "grado": "Quinto grado",
     "tema": "Objetos del hogar",
     "palabra": "Fotocopiadora",
     "image": "/assets/images/fotocopiadora.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=08JppRep7bk"
   },
   {
     "grado": "Quinto grado",
@@ -998,7 +998,7 @@
     "tema": "Oficios y profesiones",
     "palabra": "Abogado",
     "image": "/assets/images/abogado.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=_xOXTKdW3YI"
   },
   {
     "grado": "Quinto grado",
@@ -1012,7 +1012,7 @@
     "tema": "Oficios y profesiones",
     "palabra": "Arquitecto",
     "image": "/assets/images/arquitecto.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=Gv9vsbFaKvo"
   },
   {
     "grado": "Quinto grado",
@@ -1047,14 +1047,14 @@
     "tema": "Oficios y profesiones",
     "palabra": "Contador",
     "image": "/assets/images/contador.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=Q5XK_PaCLFw"
   },
   {
     "grado": "Quinto grado",
     "tema": "Oficios y profesiones",
     "palabra": "Farmaceutico",
     "image": "/assets/images/farmaceutico.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=EFlT-ADTSG8"
   },
   {
     "grado": "Quinto grado",
@@ -1334,7 +1334,7 @@
     "tema": "Personas",
     "palabra": "Gobernador",
     "image": "/assets/images/gobernador.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=ymiZvD6VuME"
   },
   {
     "grado": "Quinto grado",
@@ -1369,7 +1369,7 @@
     "tema": "Ropa",
     "palabra": "Blusa",
     "image": "/assets/images/blusa.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=Yd70EelK488"
   },
   {
     "grado": "Quinto grado",
@@ -1383,7 +1383,7 @@
     "tema": "Ropa",
     "palabra": "Chaqueta",
     "image": "/assets/images/chaqueta.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=wjuWiQSW7hQ"
   },
   {
     "grado": "Quinto grado",
@@ -1397,7 +1397,7 @@
     "tema": "Ropa",
     "palabra": "Franelilla",
     "image": "/assets/images/franelilla.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=HuweLqPKjtk"
   },
   {
     "grado": "Quinto grado",
@@ -1502,7 +1502,7 @@
     "tema": "Sintomas",
     "palabra": "Ardor",
     "image": "/assets/images/ardor.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=5iXXrYaESjU"
   },
   {
     "grado": "Quinto grado",
@@ -1579,7 +1579,7 @@
     "tema": "Utiles escolares",
     "palabra": "Folletos",
     "image": "/assets/images/folletos.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=73efBK00X1o"
   },
   {
     "grado": "Quinto grado",
@@ -1719,7 +1719,7 @@
     "tema": "Verduras y hortalizas",
     "palabra": "Perejil",
     "image": "/assets/images/perejil.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=KJEwfFNnLvE"
   },
   {
     "grado": "Quinto grado",

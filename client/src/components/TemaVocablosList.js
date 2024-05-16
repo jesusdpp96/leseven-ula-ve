@@ -142,17 +142,9 @@ const ItemList = ({ vocablos, setQuery, updateVocablos }) => {
     );
   }
 };
-const opciones_por_grado = [
-  8, // preescolar
-  8, // 1er grado
-  10, // 2do grado
-  5, // tercer grado
-  15, // 4to grado
-  20, // 5to grado
-  15, // 6to grado
-];
+
 export default function TemaVocablosList({ grado, tema }) {
-  const [query, setQuery] = useSearchParams();
+  const [, setQuery] = useSearchParams();
   const [vocablos, setVocablos] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [gradoTitle, setGradoTitle] = React.useState();
@@ -205,6 +197,7 @@ export default function TemaVocablosList({ grado, tema }) {
 
   React.useEffect(() => {
     getVocablos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return loading ? (
@@ -290,29 +283,3 @@ export default function TemaVocablosList({ grado, tema }) {
     </Box>
   );
 }
-
-// export default function ResponsiveCardsList() {
-//   return (
-//     <Box sx={{ flexGrow: 1 }}>
-//       <Grid
-//         container
-//         spacing={{ xs: 2, md: 3 }}
-//         columns={{ xs: 4, sm: 9, md: 12 }}
-//       >
-//         {Array.from(Array(6)).map((_, index) => (
-//           <Grid item xs={2} sm={3} md={3} key={index}>
-//             {/* <Item>xs=2 {index + 1}</Item> */}
-//             <AccountStyle>
-//               <Avatar src="/image.png" alt="photoURL" />
-//               <Box sx={{ ml: 1 }}>
-//                 <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
-//                   Grado {index}
-//                 </Typography>
-//               </Box>
-//             </AccountStyle>
-//           </Grid>
-//         ))}
-//       </Grid>
-//     </Box>
-//   );
-// }

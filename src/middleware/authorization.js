@@ -3,7 +3,6 @@ require("dotenv").config();
 
 module.exports = async (req, res, next) => {
   console.log(req.header("token"));
-  console.log("hey");
   try {
     const jwtToken = req.header("token");
 
@@ -19,6 +18,7 @@ module.exports = async (req, res, next) => {
 
     next();
   } catch (err) {
+    console.log(err);
     console.error(err.message);
     return res.status(403).json({status: 'error', message: "EA002: Not authorized" });
   }

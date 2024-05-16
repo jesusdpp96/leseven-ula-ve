@@ -1,14 +1,11 @@
 // import * as React from 'react';
 import React, { useState } from 'react';
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
-
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
@@ -35,8 +32,6 @@ const theme = createTheme();
 
 export default function SignIn({ setAuth }) {
 
-  const navigate = useNavigate();
-
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
@@ -47,11 +42,6 @@ export default function SignIn({ setAuth }) {
   
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // const data = new FormData(event.currentTarget);
-    // console.log({
-    //   email: data.get('email'),
-    //   password: data.get('password'),
-    // });
 
     try {
       setLoading(true);
@@ -71,9 +61,7 @@ export default function SignIn({ setAuth }) {
       if (parseRes.token) {
         localStorage.setItem("token", parseRes.token);
         setAuth(true);
-        // toast.success("Logged in Successfully");
         toast.success("Sesión iniciada correctamente");
-        //sesión
 
         sendLogs({
           logs: [
@@ -140,10 +128,6 @@ export default function SignIn({ setAuth }) {
               onChange={handleChange}
               autoComplete="current-password"
             />
-            {/* <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            /> */}
             <Button
               type="submit"
               fullWidth
@@ -157,18 +141,6 @@ export default function SignIn({ setAuth }) {
                   "Iniciar sesión"
                 )}
             </Button>
-            {/* <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link component="button" variant="body2" onClick={() => {navigate('/register')}}>
-                  {"¿No tienes una cuenta? Registrate"}
-                </Link>
-              </Grid>
-            </Grid> */}
           </Box>
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />

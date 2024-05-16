@@ -2,13 +2,6 @@
   {
     "grado": "Primer grado",
     "tema": "Alimentos",
-    "palabra": "Carne",
-    "image": "/assets/images/Carne.png",
-    "video": "https://www.youtube.com/watch?v=tZ7mMMWYJYA"
-  },
-  {
-    "grado": "Primer grado",
-    "tema": "Alimentos",
     "palabra": "pasta",
     "image": "/assets/images/pasta.png",
     "video": "https://www.youtube.com/watch?v=oJ4Vx75KVMA"
@@ -34,21 +27,19 @@
     "image": "/assets/images/Torta.png",
     "video": ""
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Animales",
     "palabra": "Cóndor",
     "image": "/assets/images/Cóndor.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=vwqsUbb5sLQ"
   },
   {
     "grado": "Primer grado",
     "tema": "Animales",
     "palabra": "Gallina",
     "image": "/assets/images/Gallina.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=aWabsyhsPIc"
   },
   {
     "grado": "Primer grado",
@@ -69,7 +60,7 @@
     "tema": "Animales",
     "palabra": "Pollo",
     "image": "/assets/images/pollo-animal.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=nb5iqDrk6VM"
   },
   {
     "grado": "Primer grado",
@@ -92,7 +83,6 @@
     "image": "/assets/images/Vaca.png",
     "video": "https://www.youtube.com/watch?v=z_oCVzag8eE"
   },
-
   {
     "grado": "Primer grado",
     "tema": "Arboles",
@@ -100,8 +90,6 @@
     "image": "/assets/images/Araguaney.png",
     "video": ""
   },
-
-  
   {
     "grado": "Primer grado",
     "tema": "Colores",
@@ -130,8 +118,6 @@
     "image": "/assets/images/Verde.png",
     "video": "https://www.youtube.com/watch?v=GhLzHYXTkI8"
   },
-
-  
   {
     "grado": "Primer grado",
     "tema": "Días de la semana",
@@ -153,8 +139,6 @@
     "image": "/assets/images/Viernes.png",
     "video": "https://www.youtube.com/watch?v=hvZBmEt1gwQ"
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Enfermedades",
@@ -167,7 +151,7 @@
     "tema": "Enfermedades",
     "palabra": "Dengue",
     "image": "/assets/images/Dengue.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=30ao9GNMwTI"
   },
   {
     "grado": "Primer grado",
@@ -176,15 +160,12 @@
     "image": "/assets/images/Gripe.png",
     "video": ""
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Figuras geométricas",
     "palabra": "Circulo",
     "image": "/assets/images/Circulo.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=sEO7-uCKZg8"
   },
   {
     "grado": "Primer grado",
@@ -198,11 +179,8 @@
     "tema": "Figuras geométricas",
     "palabra": "Cuadrado",
     "image": "/assets/images/Cuadrado.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=D7EITSAf1SA"
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Frutas",
@@ -238,8 +216,6 @@
     "image": "/assets/images/Patilla.png",
     "video": "https://www.youtube.com/watch?v=SBuqrCHu42o"
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Juguetes/Juegos/Deportes",
@@ -261,8 +237,6 @@
     "image": "/assets/images/Trompo.png",
     "video": ""
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Lugares",
@@ -296,12 +270,8 @@
     "tema": "Lugares",
     "palabra": "Cbit",
     "image": "/assets/images/Cbit.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=A8hs3euVqVA"
   },
-
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Lugares de Mérida",
@@ -323,14 +293,12 @@
     "image": "/assets/images/Parque La Isla.png",
     "video": ""
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Medios de transporte",
     "palabra": "Barco",
     "image": "/assets/images/Barco.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=ysM4cbGA7ls"
   },
   {
     "grado": "Primer grado",
@@ -353,8 +321,6 @@
     "image": "/assets/images/Helicóptero.png",
     "video": "https://www.youtube.com/watch?v=xDrvVHKnx-8"
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Meses del año",
@@ -383,9 +349,6 @@
     "image": "/assets/images/Julio.png",
     "video": "https://www.youtube.com/watch?v=0kprNy390d0"
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Noción de cantidad",
@@ -414,22 +377,19 @@
     "image": "/assets/images/Poco.png",
     "video": ""
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Noción de tamaño",
     "palabra": "Alto",
     "image": "/assets/images/Alto.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=2g_rPM2Ir7s"
   },
   {
     "grado": "Primer grado",
     "tema": "Noción de tamaño",
     "palabra": "Bajo",
     "image": "/assets/images/Bajo.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=LNXoTzSVYsM"
   },
   {
     "grado": "Primer grado",
@@ -443,7 +403,7 @@
     "tema": "Noción de tamaño",
     "palabra": "Grande",
     "image": "/assets/images/Grande.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=A5Kcl288vOo"
   },
   {
     "grado": "Primer grado",
@@ -466,8 +426,6 @@
     "image": "/assets/images/Pequeño.png",
     "video": ""
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Noción espacial",
@@ -487,7 +445,7 @@
     "tema": "Noción espacial",
     "palabra": "Cerca",
     "image": "/assets/images/Cerca.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=W8nbO6O2oK0"
   },
   {
     "grado": "Primer grado",
@@ -524,21 +482,19 @@
     "image": "/assets/images/Sobre.png",
     "video": ""
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Noción temporal",
     "palabra": "Ahora",
     "image": "/assets/images/Ahora.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=pvQgumALpkM"
   },
   {
     "grado": "Primer grado",
     "tema": "Noción temporal",
     "palabra": "Anteayer",
     "image": "/assets/images/Anteayer.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=GMgj-pA3TNE"
   },
   {
     "grado": "Primer grado",
@@ -552,7 +508,7 @@
     "tema": "Noción temporal",
     "palabra": "Después",
     "image": "/assets/images/Después.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=-UY25i5EQmw"
   },
   {
     "grado": "Primer grado",
@@ -561,8 +517,6 @@
     "image": "/assets/images/Pasado mañana.png",
     "video": ""
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Numeros",
@@ -612,9 +566,6 @@
     "image": "/assets/images/Diez.png",
     "video": "https://www.youtube.com/watch?v=VrxquJRO20E"
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Objetos del hogar",
@@ -622,7 +573,6 @@
     "image": "/assets/images/Cama,.png",
     "video": ""
   },
-
   {
     "grado": "Primer grado",
     "tema": "Objetos del hogar",
@@ -630,9 +580,6 @@
     "image": "/assets/images/Mueble.png",
     "video": "https://www.youtube.com/watch?v=JhGL6-eRRfs"
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Oficios y Profesiones",
@@ -675,9 +622,6 @@
     "image": "/assets/images/Panadera.png",
     "video": ""
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Partes del cuerpo",
@@ -727,9 +671,6 @@
     "image": "/assets/images/Pierna.png",
     "video": "https://www.youtube.com/watch?v=qHmgCz76CRE"
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Personajes historicos",
@@ -751,9 +692,6 @@
     "image": "/assets/images/Simón Rodriguez.png",
     "video": ""
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Personas",
@@ -796,8 +734,6 @@
     "image": "/assets/images/Mujer.png",
     "video": "https://www.youtube.com/watch?v=8Tyx3qTDRIc"
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Ropa",
@@ -826,15 +762,12 @@
     "image": "/assets/images/Zapatos.png",
     "video": ""
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Simbolos",
     "palabra": "Escudo",
     "image": "/assets/images/Escudo.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=HD3bn4-DTp8"
   },
   {
     "grado": "Primer grado",
@@ -843,14 +776,12 @@
     "image": "/assets/images/Himno Nacional.png",
     "video": ""
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Sintomas",
     "palabra": "Diarrea",
     "image": "/assets/images/Diarrea.png",
-    "video": ""
+    "video": "https://youtube.com/watch?v=REIX4wBwdg0"
   },
   {
     "grado": "Primer grado",
@@ -873,8 +804,6 @@
     "image": "/assets/images/Vómito.png",
     "video": ""
   },
-
-
   {
     "grado": "Primer grado",
     "tema": "Utensilios de cocina",
@@ -896,9 +825,6 @@
     "image": "/assets/images/Tenedor.png",
     "video": "https://www.youtube.com/watch?v=AMs-zTwlgc4"
   },
-
-
-
   {
     "grado": "Primer grado",
     "tema": "Utiles escolares",
@@ -927,9 +853,6 @@
     "image": "/assets/images/Sacapunta.png",
     "video": ""
   },
-  
-
-
   {
     "grado": "Primer grado",
     "tema": "Verduras y hortalizas",

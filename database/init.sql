@@ -24,14 +24,14 @@ INSERT INTO public.funcionalidad_sistema(id, nombre, rol_usuario_id)
 --
 -- Usuarios
 --
-INSERT INTO public.usuario_metadatos( id, practicas_realizadas, consultas_correctas, consultas_incorrectas, puntos_acumulados, trofeos_imparables, trofeos_leal, trofeos_agil)
-	VALUES (1, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO public.usuario_metadatos( id, practicas_realizadas, consultas_correctas, consultas_incorrectas)
+	VALUES (1, 0, 0, 0);
 
 INSERT INTO public.usuario( id, nombre, apellido, correo, contrasena, escuela, ciudad, pais, tipo_aprendiz, grado_instruccion_aprendiz, fecha_nacimiento, rol_usuario_id, fecha_registro, usuario_metadatos_id, genero)
 	VALUES (1, 'Maria', 'Gonzalez', 'mariagozanlez@dominio.com', '$2b$10$cI6Uv69CQSIqND6tlbkYCOyXQF6RHlrU37U8hGAtze6ftt0wz09gK', 'UEEB “Ofelia Tancredi de Corredor”', 'Mérida', 'Venezuela', 'profesor', 'Graduado', '1990-03-20', 1, '2022-05-23T13:40:20.920Z', 1, 'femenino');
 
-INSERT INTO public.usuario_metadatos( id, practicas_realizadas, consultas_correctas, consultas_incorrectas, puntos_acumulados, trofeos_imparables, trofeos_leal, trofeos_agil)
-	VALUES (2, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO public.usuario_metadatos( id, practicas_realizadas, consultas_correctas, consultas_incorrectas)
+	VALUES (2, 0, 0, 0);
 
 INSERT INTO public.usuario( id, nombre, apellido, correo, contrasena, escuela, ciudad, pais, tipo_aprendiz, grado_instruccion_aprendiz, fecha_nacimiento, rol_usuario_id, fecha_registro, usuario_metadatos_id, genero)
 	VALUES (2, 'Carlos', 'Perez', 'carlosperez@dominio.com', '$2b$10$cI6Uv69CQSIqND6tlbkYCOyXQF6RHlrU37U8hGAtze6ftt0wz09gK', 'UEEB “Ofelia Tancredi de Corredor”', 'Mérida', 'Venezuela', 'aprendiz', 'Graduado', '2005-01-10', 2, '2022-05-23T13:40:20.920Z', 2, 'masculino');
@@ -45,13 +45,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (3, 0, 0, 0, 0, 0, 0, 0);
+VALUES (3, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -93,13 +89,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (4, 0, 0, 0, 0, 0, 0, 0);
+VALUES (4, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -141,13 +133,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (5, 0, 0, 0, 0, 0, 0, 0);
+VALUES (5, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -189,13 +177,9 @@ VALUES (
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (6, 0, 0, 0, 0, 0, 0, 0);
+VALUES (6, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -237,13 +221,9 @@ VALUES (
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (7, 0, 0, 0, 0, 0, 0, 0);
+VALUES (7, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -285,13 +265,9 @@ VALUES (
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (8, 0, 0, 0, 0, 0, 0, 0);
+VALUES (8, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -333,13 +309,9 @@ VALUES (
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (9, 0, 0, 0, 0, 0, 0, 0);
+VALUES (9, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -376,18 +348,14 @@ VALUES (
         9,
         'masculino'
     );
-	INSERT INTO
+INSERT INTO
     public.usuario_metadatos(
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (10, 0, 0, 0, 0, 0, 0, 0);
+VALUES (10, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -430,13 +398,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (11, 0, 0, 0, 0, 0, 0, 0);
+VALUES (11, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -478,13 +442,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (12, 0, 0, 0, 0, 0, 0, 0);
+VALUES (12, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -528,13 +488,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (13, 0, 0, 0, 0, 0, 0, 0);
+VALUES (13, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -571,18 +527,14 @@ VALUES (
         13,
         'masculino'
     );
-	INSERT INTO
+INSERT INTO
     public.usuario_metadatos(
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (14, 0, 0, 0, 0, 0, 0, 0);
+VALUES (14, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -624,13 +576,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (15, 0, 0, 0, 0, 0, 0, 0);
+VALUES (15, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -667,18 +615,14 @@ VALUES (
         15,
         'masculino'
     );
-	INSERT INTO
+INSERT INTO
     public.usuario_metadatos(
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (16, 0, 0, 0, 0, 0, 0, 0);
+VALUES (16, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -721,13 +665,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (17, 0, 0, 0, 0, 0, 0, 0);
+VALUES (17, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -769,13 +709,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (18, 0, 0, 0, 0, 0, 0, 0);
+VALUES (18, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -812,18 +748,14 @@ VALUES (
         18,
         'femenino'
     );
-	INSERT INTO
+INSERT INTO
     public.usuario_metadatos(
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (19, 0, 0, 0, 0, 0, 0, 0);
+VALUES (19, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -866,13 +798,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (20, 0, 0, 0, 0, 0, 0, 0);
+VALUES (20, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -909,18 +837,14 @@ VALUES (
         20,
         'masculino'
     );
-	INSERT INTO
+INSERT INTO
     public.usuario_metadatos(
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (21, 0, 0, 0, 0, 0, 0, 0);
+VALUES (21, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -962,13 +886,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (22, 0, 0, 0, 0, 0, 0, 0);
+VALUES (22, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1010,13 +930,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (23, 0, 0, 0, 0, 0, 0, 0);
+VALUES (23, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1059,13 +975,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (24, 0, 0, 0, 0, 0, 0, 0);
+VALUES (24, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1107,13 +1019,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (25, 0, 0, 0, 0, 0, 0, 0);
+VALUES (25, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1150,18 +1058,14 @@ VALUES (
         25,
         'masculino'
     );
-	INSERT INTO
+INSERT INTO
     public.usuario_metadatos(
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (26, 0, 0, 0, 0, 0, 0, 0);
+VALUES (26, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1203,13 +1107,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (27, 0, 0, 0, 0, 0, 0, 0);
+VALUES (27, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1246,18 +1146,14 @@ VALUES (
         27,
         'masculino'
     );
-	INSERT INTO
+INSERT INTO
     public.usuario_metadatos(
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (28, 0, 0, 0, 0, 0, 0, 0);
+VALUES (28, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1299,13 +1195,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (29, 0, 0, 0, 0, 0, 0, 0);
+VALUES (29, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1347,13 +1239,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (30, 0, 0, 0, 0, 0, 0, 0);
+VALUES (30, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1396,13 +1284,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (31, 0, 0, 0, 0, 0, 0, 0);
+VALUES (31, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1444,13 +1328,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (32, 0, 0, 0, 0, 0, 0, 0);
+VALUES (32, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1492,13 +1372,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (33, 0, 0, 0, 0, 0, 0, 0);
+VALUES (33, 0, 0, 0);
 
 INSERT INTO
     public.usuario(
@@ -1540,13 +1416,9 @@ INSERT INTO
         id,
         practicas_realizadas,
         consultas_correctas,
-        consultas_incorrectas,
-        puntos_acumulados,
-        trofeos_imparables,
-        trofeos_leal,
-        trofeos_agil
+        consultas_incorrectas
     )
-VALUES (34, 0, 0, 0, 0, 0, 0, 0);
+VALUES (34, 0, 0, 0);
 
 INSERT INTO
     public.usuario(

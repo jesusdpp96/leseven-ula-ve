@@ -1,4 +1,3 @@
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import CardMedia from "@mui/material/CardMedia";
 import YouTube from "react-youtube";
@@ -77,7 +76,6 @@ export default function Inicio() {
           sx={{ maxHeight:400,objectFit: "contain" }}
           image={"/assets/images/nina.png"}
           alt={`ULA`}
-          F
         />
       </Grid>
       <Grid item xs={6} >
@@ -86,7 +84,6 @@ export default function Inicio() {
           sx={{maxHeight:400, objectFit: "contain" }}
           image={"/assets/images/nino.png"}
           alt={`ULA`}
-          F
         />
       </Grid>
     </Grid>

@@ -26,7 +26,7 @@
   },
   {
     "nombre": "Días de la semana",
-    "image": "/assets/images/días-de-la-semana.png",
+    "image": "/assets/images/dias-de-la-semana.png",
     "es_categoria": true
   },
   {
@@ -94,8 +94,6 @@
     "image": "/assets/images/nocion-espacial.png",
     "es_categoria": true
   },
-
-
   {
     "nombre": "Noción temporal",
     "image": "/assets/images/nocion-temporal.png",
@@ -106,8 +104,6 @@
     "image": "/assets/images/numeros.png",
     "es_categoria": true
   },
-
-
   {
     "nombre": "Objetos del hogar",
     "image": "/assets/images/objetos-del-hogar.png",
@@ -123,8 +119,6 @@
     "image": "/assets/images/partes-del-cuerpo.png",
     "es_categoria": true
   },
-
-
   {
     "nombre": "Personajes historicos",
     "image": "/assets/images/personajes-historicos.png",
@@ -165,9 +159,6 @@
     "image": "/assets/images/verduras-y-hortalizas.png",
     "es_categoria": true
   },
-
-
-  
   {
     "nombre": "Prueba Exploratoria - Preescolar",
     "image": "/assets/images/prueba-exploratoria.png",
@@ -202,5 +193,30 @@
     "nombre": "Prueba Exploratoria - Sexto Grado",
     "image": "/assets/images/prueba-exploratoria.png",
     "es_categoria": false
+  },
+  {
+    "nombre": "Noción de temperatura",
+    "image": "/assets/images/nocion-temperatura.png",
+    "es_categoria": true
+  },
+  {
+    "nombre": "Metales",
+    "image": "/assets/images/metales.png",
+    "es_categoria": true
+  },
+  {
+    "nombre": "Letras",
+    "image": "/assets/images/letras.png",
+    "es_categoria": true
+  },
+  {
+    "nombre": "Expresiones cotidianas",
+    "image": "/assets/images/expresiones-cotidianas.png",
+    "es_categoria": true
+  },
+  {
+    "nombre": "Todos los vocablos",
+    "image": "/assets/images/todos-los-vocablos.png",
+    "es_categoria": true
   }
 ]

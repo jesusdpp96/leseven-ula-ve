@@ -1,16 +1,14 @@
 const { Router } = require("express");
 const {
-  postPractica
+  postPractica, getPracticasPorUsuario, getPracticaDetails
 } = require("../controllers/practicas.controller");
 const authorization = require("../middleware/authorization");
 
 const router = Router();
 
-// create a task
-
-// router.get("/vocablos", getAllVocablos);
-
-router.post("/practica", authorization ,postPractica);
+router.get("/practica/details/:practica_id", getPracticaDetails);
+router.get("/practica/:user_id", getPracticasPorUsuario);
+router.post("/practica", authorization, postPractica);
 
 
 module.exports = router;

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Grid, CircularProgress, IconButton, Button } from "@mui/material";
+import { Box, Grid, CircularProgress, Button } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import { toast } from "react-toastify";
@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import VocabloModal from "./VocabloModal";
 import sendLogs from "../utils/sendLogs";
 
-const ItemList = ({ vocablos, setQuery, updateVocablos, searchText }) => {
+const ItemList = ({ vocablos, updateVocablos }) => {
 
   return vocablos.map((elem, index) => {
     const indexImage =
@@ -105,12 +105,10 @@ const ItemList = ({ vocablos, setQuery, updateVocablos, searchText }) => {
 };
 
 export default function Glosario() {
-  const tema = 1;
-  const [query, setQuery] = useSearchParams();
+  const [, setQuery] = useSearchParams();
   const [vocablos, setVocablos] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
-  // const [gradoTitle, setGradoTitle] = React.useState();
-  const [temaTitle, setTemaTitle] = React.useState();
+  const [, setTemaTitle] = React.useState();
   const [searchQuery, setSearchQuery] = React.useState("");
   const [page, setPage] = React.useState(1);
   const [total, setTotal] = React.useState(1);
@@ -166,6 +164,7 @@ export default function Glosario() {
 
   React.useEffect(() => {
     getVocablos("-1",1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function Search(text) {
