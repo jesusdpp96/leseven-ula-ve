@@ -15,8 +15,9 @@ const getAllTemas = async (req, res, next) => {
     }, {});
 
     const gtvQuery = await pool.query(`
-      SELECT gtv.* FROM grado_tema_vocablo gtv
-      INNER JOIN recurso r ON r.vocablo_id = gtv.vocablo_id
+      SELECT gtv.* FROM vocablo v 
+      INNER JOIN grado_tema_vocablo gtv ON gtv.vocablo_id = v.id
+      INNER JOIN recurso r ON r.vocablo_id = v.id
       WHERE r.tipo = 'video' AND r.enlace LIKE 'https%'
     `);
 
@@ -33,7 +34,7 @@ const getAllTemas = async (req, res, next) => {
 
       if (temasDataObj[vocablo.tema_id] && temasDataObj[vocablo.tema_id].vocablos_counter) {
         temasDataObj[vocablo.tema_id].vocablos_counter += 1;
-      } else if(temasDataObj[vocablo.tema_id]) {
+      } else if (temasDataObj[vocablo.tema_id]) {
         temasDataObj[vocablo.tema_id].vocablos_counter = 1;
       } else {
         temasDataObj[vocablo.tema_id] = {
@@ -41,7 +42,7 @@ const getAllTemas = async (req, res, next) => {
         }
       }
     }
-  
+
     const vocablosVistosQuery = await pool.query(`SELECT * FROM vocablo_visto WHERE usuario_id = $1`, [req.user]);
 
 
@@ -55,7 +56,7 @@ const getAllTemas = async (req, res, next) => {
 
       if (temasDataObj[vv.tema_id] && temasDataObj[vv.tema_id].vocablos_vistos) {
         temasDataObj[vv.tema_id].vocablos_vistos += 1;
-      } else if(temasDataObj[vv.tema_id]) {
+      } else if (temasDataObj[vv.tema_id]) {
         temasDataObj[vv.tema_id].vocablos_vistos = 1;
       } else {
         temasDataObj[vv.tema_id] = {
@@ -63,7 +64,7 @@ const getAllTemas = async (req, res, next) => {
         }
       }
     }
-    
+
     const ret = Object.values(temasDataObj).filter((tema) => tema?.vocablos_counter > 0);
 
     res.json(ret);
@@ -93,7 +94,7 @@ const getTemasByGrado = async (req, res, next) => {
     for (const vocablo of gtvQuery.rows) {
       if (temasDataObj[vocablo.tema_id] && temasDataObj[vocablo.tema_id].vocablos_counter) {
         temasDataObj[vocablo.tema_id].vocablos_counter += 1;
-      } else if(temasDataObj[vocablo.tema_id]) {
+      } else if (temasDataObj[vocablo.tema_id]) {
         temasDataObj[vocablo.tema_id].vocablos_counter = 1;
       } else {
         temasDataObj[vocablo.tema_id] = {
@@ -101,7 +102,7 @@ const getTemasByGrado = async (req, res, next) => {
         }
       }
     }
-    
+
 
 
     const vocablosVistosQuery = await pool.query(`SELECT * FROM vocablo_visto WHERE usuario_id = $1 AND grado_id = $2`, [req.user, grado_id]);
@@ -110,7 +111,7 @@ const getTemasByGrado = async (req, res, next) => {
     for (const vv of vocablosVistosQuery.rows) {
       if (temasDataObj[vv.tema_id] && temasDataObj[vv.tema_id].vocablos_vistos) {
         temasDataObj[vv.tema_id].vocablos_vistos += 1;
-      } else if(temasDataObj[vv.tema_id]) {
+      } else if (temasDataObj[vv.tema_id]) {
         temasDataObj[vv.tema_id].vocablos_vistos = 1;
       } else {
         temasDataObj[vv.tema_id] = {
