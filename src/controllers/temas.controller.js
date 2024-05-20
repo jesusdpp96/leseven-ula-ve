@@ -64,7 +64,9 @@ const getAllTemas = async (req, res, next) => {
       }
     }
     
-    res.json(Object.values(temasDataObj));
+    const ret = Object.values(temasDataObj).filter((tema) => tema?.vocablos_counter > 0);
+
+    res.json(ret);
   } catch (error) {
     next(error);
   }
