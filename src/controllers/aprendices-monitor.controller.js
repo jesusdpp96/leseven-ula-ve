@@ -108,7 +108,11 @@ const getAllData = async (req, res, next) => {
 
     const usuarioQuery = pool.query('SELECT * FROM usuario WHERE id = $1', [usuario_target_id]);
 
-    const vocablosQuery = await pool.query(`SELECT * FROM vocablo`);
+    const vocablosQuery = await pool.query(`
+      SELECT v.* FROM vocablo v
+      INNER JOIN recurso r ON r.vocablo_id = v.id
+      WHERE r.tipo = 'video' AND r.enlace LIKE 'https%'
+    `);
 
     const temasDataObj = {};
 
@@ -191,8 +195,6 @@ const getAllData = async (req, res, next) => {
     }
 
     const practicasQuery = await pool.query(`SELECT * FROM practica WHERE usuario_id = $1`, [usuario_target_id]);
-
-    console.dir(practicasQuery.rows);
 
     const _7Days = 1000*60*60*24*7;
     const last7DaysTime = new Date().getTime() - _7Days;
