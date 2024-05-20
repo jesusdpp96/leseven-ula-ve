@@ -14,6 +14,9 @@ import { useQuery } from "react-query";
 import customFetch from "../../../utils/request";
 import { getDateDDMMYYYY } from "../../../utils/dates";
 import { capitalizeWords } from "../../../utils/capitalize";
+import { Button } from "@mui/material";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+
 
 export default function EstudiosMonitor() {
   const { userId } = useParams();
@@ -30,6 +33,17 @@ export default function EstudiosMonitor() {
   
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+      <Button
+          variant="outlined"
+          color="warning"
+          startIcon={<ChevronLeftIcon />}
+          onClick={() => {
+            window.history.back();
+          }}
+          sx={{ width: 'fit-content' }}
+        >
+          Volver
+        </Button>
       <Box sx={{ margin: "32px 0" }}>
         <Typography component="h1" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
           Vocablos estudiados por el alumno
