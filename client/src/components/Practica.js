@@ -27,6 +27,16 @@ import sendLogs from "../utils/sendLogs";
 
 import CustomToast from "./CustomToast";
 
+const gradosMap = {
+  0: 32,
+  1: 33,
+  2: 34,
+  3: 35,
+  4: 36,
+  5: 37,
+  6: 38
+}
+
 const REWARD_GOOD_RESPONSE = [
   {
     message: "Bien",
@@ -233,7 +243,7 @@ function getPracticaDataFunc({ consultas, vocablos }) {
     total_consultas: 0,
     total_correctas: 0,
     usuario_id: null,
-    tema_id: consultas[0].tema_id,
+    tema_id: gradosMap[consultas[0].grado_id],
     grado_id: consultas[0].grado_id,
     cancelada: false,
   };
@@ -352,7 +362,7 @@ function getPracticaCanceladaDataFunc({ consultas, vocablos }) {
     total_consultas: 0,
     total_correctas: 0,
     usuario_id: null,
-    tema_id: consultas[0].tema_id,
+    tema_id: gradosMap[consultas[0].grado_id],
     grado_id: consultas[0].grado_id,
     cancelada: true,
   };

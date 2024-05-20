@@ -104,18 +104,7 @@ const getEstudiosUsuario = async (req, res, next) => {
 const getAllData = async (req, res, next) => {
   try {
 
-    const usuario_id = req.user;
-
     const { usuario_target_id } = req.params;
-
-    const authorizationQuery = await pool.query(
-      `SELECT * FROM profesor_aprendiz WHERE profesor_id = $1 AND aprendiz_id = $2`,
-      [usuario_id, usuario_target_id]
-    );
-
-    if (authorizationQuery.length === 0) {
-      throw new Error("EAM001: Not authorized");
-    }
 
     const usuarioQuery = pool.query('SELECT * FROM usuario WHERE id = $1', [usuario_target_id]);
 
@@ -203,7 +192,7 @@ const getAllData = async (req, res, next) => {
 
     const practicasQuery = await pool.query(`SELECT * FROM practica WHERE usuario_id = $1`, [usuario_target_id]);
 
-
+    console.dir(practicasQuery.rows);
 
     const _7Days = 1000*60*60*24*7;
     const last7DaysTime = new Date().getTime() - _7Days;
