@@ -2,8 +2,10 @@ import React from "react";
 import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import customFetch from "../../../utils/request";
-import { Box, Card, CircularProgress, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
+import { Box, Button, Card, CircularProgress, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
 import { getDateDDMMYYYY } from "../../../utils/dates";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+
 
 export const gradosMap = {
   0: "preescolar",
@@ -28,11 +30,22 @@ export default function PruebaDetalles() {
   return (
     <Card>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Button
+          variant="outlined"
+          color="warning"
+          startIcon={<ChevronLeftIcon />}
+          onClick={() => {
+            window.history.back();
+          }}
+          sx={{ width: 'fit-content', margin: '16px 0 0 16px' }}
+        >
+          Volver
+        </Button>
         <Box sx={{ margin: "32px 0 0 0" }}>
           <Typography component="h1" variant="h6" color="inherit" noWrap textAlign={"center"} sx={{ flexGrow: 1 }}>
             Resumen de la prueba
           </Typography>
-          <Box sx={{marginLeft: '16px'}}>
+          <Box sx={{ marginLeft: '16px' }}>
             <Typography component="h3" color="inherit" noWrap sx={{ flexGrow: 1 }}>
               Alumno: <b>{data.usuario.nombre} {data.usuario.apellido}</b>
             </Typography>
@@ -43,7 +56,7 @@ export default function PruebaDetalles() {
               Fecha: <b>{getDateDDMMYYYY(new Date(data.fecha))}</b>
             </Typography>
             <Typography component="p" color="inherit" noWrap sx={{ flexGrow: 1, margin: '16px 0 8px 0' }}>
-              Total preguntas: {data.total_consultas} <span style={{marginRight: '32px'}}/> Respuestas correctas: {data.total_correctas}
+              Total preguntas: {data.total_consultas} <span style={{ marginRight: '32px' }} /> Respuestas correctas: {data.total_correctas}
             </Typography>
           </Box>
         </Box>
