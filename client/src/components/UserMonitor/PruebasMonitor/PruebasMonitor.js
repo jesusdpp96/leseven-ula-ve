@@ -15,6 +15,9 @@ import customFetch from "../../../utils/request";
 import { getDateDDMMYYYY } from "../../../utils/dates";
 import { gradosMap } from "./PruebaDetalles";
 import { capitalizeWords } from "../../../utils/capitalize";
+import { Button } from "@mui/material";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+
 
 export default function PruebasMonitor() {
   const { userId } = useParams();
@@ -32,6 +35,17 @@ export default function PruebasMonitor() {
   
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Button
+          variant="outlined"
+          color="warning"
+          startIcon={<ChevronLeftIcon />}
+          onClick={() => {
+            window.history.back();
+          }}
+          sx={{ width: 'fit-content' }}
+        >
+          Volver
+        </Button>
       <Box sx={{ margin: "32px 0" }}>
         <Typography component="h1" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
           Pruebas realizadas por el alumno
