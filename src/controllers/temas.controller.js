@@ -14,7 +14,11 @@ const getAllTemas = async (req, res, next) => {
       return prev;
     }, {});
 
-    const gtvQuery = await pool.query(`SELECT * FROM grado_tema_vocablo`);
+    const gtvQuery = await pool.query(`
+      SELECT gtv.* FROM grado_tema_vocablo gtv
+      INNER JOIN recurso r ON r.vocablo_id = gtv.vocablo_id
+      WHERE r.tipo = 'video' AND r.enlace LIKE 'https%'
+    `);
 
     const vocabloExistsObj = {};
     const vocabloExistsObj2 = {};
