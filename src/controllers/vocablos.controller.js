@@ -67,7 +67,7 @@ const getAllVocablos = async (req, res, next) => {
         if (existsObj[elem.vocablo_id]) {
           return false;
         }
-        if (elem.recursos.length > 0) {
+        if (elem?.recursos?.length > 0) {
           itemAgregado = false;
           elem.recursos.map((item) => {
             if (item.tipo === "video" && !itemAgregado) {
@@ -88,8 +88,8 @@ const getAllVocablos = async (req, res, next) => {
 
         return true;
       });
-      console.log("Existentes", list2.length);
-      console.log("faltantes", faltantes.length);
+      // console.log("Existentes", list2.length);
+      // console.log("faltantes", faltantes.length);
 
       let total = list2.length;
       start = page_number * _limit - _limit;
@@ -184,6 +184,7 @@ const getAllVocablos = async (req, res, next) => {
       });
     }
   } catch (error) {
+    console.error(error)
     next(error);
   }
 };
