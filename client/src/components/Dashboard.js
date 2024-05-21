@@ -18,7 +18,6 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import PeopleIcon from "@mui/icons-material/People";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import CategoryIcon from "@mui/icons-material/Category";
-import ClassIcon from "@mui/icons-material/Class";
 import HomeIcon from "@mui/icons-material/Home";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
@@ -93,52 +92,35 @@ function PanelItems({ funcionalidad_sistema }) {
     return null;
   }
 
-  const goTo1 = () => {
-    // console.log({event:e, name: e.target.name})
-    // navigate(e.target.name);
+  const goToPrueba = () => {
     navigate("prueba");
   };
 
-  const goTo7 = () => {
-    // console.log({event:e, name: e.target.name})
-    // navigate(e.target.name);
+  const goToEstudiar = () => {
     navigate("estudiar");
   };
 
-  const goTo2 = () => {
-    // console.log({event:e, name: e.target.name})
-    // navigate(e.target.name);
+  const goToSupervisar = () => {
     navigate("supervisar");
   };
 
-  const goTo3 = () => {
-    // console.log({event:e, name: e.target.name})
-    // navigate(e.target.name);
-    navigate("explorar-vocabulario-temas");
-  };
-
-  const goTo4 = () => {
-    // console.log({event:e, name: e.target.name})
-    // navigate(e.target.name);
+  const goToCategorias = () => {
     navigate("explorar-vocabulario-categorias");
   };
 
-  const goTo5 = () => {
-    // console.log({event:e, name: e.target.name})
-    // navigate(e.target.name);
+  const goToInicio = () => {
     navigate("inicio");
   };
 
   const goTo6 = () => {
-    // console.log({event:e, name: e.target.name})
-    // navigate(e.target.name);
     navigate("glosario");
   };
+
   const elements = [
     {
       funcionalidad: "panel-practica",
       element: (
-        <ListItemButton onClick={goTo5} key="pp005">
+        <ListItemButton onClick={goToInicio} key="pp005">
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
@@ -149,12 +131,12 @@ function PanelItems({ funcionalidad_sistema }) {
     {
       funcionalidad: "panel-practica",
       element: (
-        <ListItemButton onClick={goTo3} key="pp003">
+        <ListItemButton onClick={goToEstudiar} key="pp007">
           <ListItemIcon>
-            <ClassIcon />
+            <LibraryBooksIcon />
           </ListItemIcon>
-          <ListItemText
-            primary={"Vocabulario por Grado"}
+          <ListItemText 
+            primary="Vocabulario por Grado"
             primaryTypographyProps={{
               style: {
                 whiteSpace: "normal",
@@ -162,14 +144,14 @@ function PanelItems({ funcionalidad_sistema }) {
                 textOverflow: "ellipsis",
               },
             }}
-          />
+           />
         </ListItemButton>
       ),
     },
     {
       funcionalidad: "panel-practica",
       element: (
-        <ListItemButton onClick={goTo4} key="pp004">
+        <ListItemButton onClick={goToCategorias} key="pp004">
           <ListItemIcon>
             <CategoryIcon />
           </ListItemIcon>
@@ -189,7 +171,7 @@ function PanelItems({ funcionalidad_sistema }) {
     {
       funcionalidad: "panel-practica",
       element: (
-        <ListItemButton onClick={goTo1} key="pp001">
+        <ListItemButton onClick={goToPrueba} key="pp001">
           <ListItemIcon>
             <DashboardIcon />
           </ListItemIcon>
@@ -198,20 +180,9 @@ function PanelItems({ funcionalidad_sistema }) {
       ),
     },
     {
-      funcionalidad: "panel-practica",
-      element: (
-        <ListItemButton onClick={goTo7} key="pp007">
-          <ListItemIcon>
-            <LibraryBooksIcon />
-          </ListItemIcon>
-          <ListItemText primary="Estudiar" />
-        </ListItemButton>
-      ),
-    },
-    {
       funcionalidad: "panel-profesor",
       element: (
-        <ListItemButton onClick={goTo2} key="pp002">
+        <ListItemButton onClick={goToSupervisar} key="pp002">
           <ListItemIcon>
             <PeopleIcon />
           </ListItemIcon>

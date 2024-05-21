@@ -31,7 +31,7 @@ export default function Practicar() {
   ) : (
     <>
       <Typography variant="h4" mb={5}>
-        Estudiar
+        Vocabulario por Grado
       </Typography>
       <GradosList />
     </>

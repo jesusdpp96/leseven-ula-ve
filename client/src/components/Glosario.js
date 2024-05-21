@@ -264,7 +264,7 @@ export default function Glosario() {
         </>
       ) : (
         <Typography spacing={{ xs: 2, md: 4 }}>
-          No se encontraron palabras que coincidan con la busqueda!
+          No se encontraron palabras que coincidan con la búsqueda!
         </Typography>
       )}
     </>
