@@ -12,8 +12,10 @@ export function quitarAcentos(cadena) {
     Ú: "U",
   };
   return cadena
-    .split("")
-    .map((letra) => acentos[letra] || letra)
-    .join("")
-    .toString()
+    ? cadena
+        .split("")
+        .map((letra) => acentos[letra] || letra)
+        .join("")
+        .toString()
+    : "";
 }
