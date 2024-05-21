@@ -144,18 +144,17 @@ export default function UserMonitorIndividual() {
 
             <CustomTabPanel value={tab} index={1}>
               <Typography variant="h6">
-                Vocablos contestados de forma correcta por tema
+                Pruebas realizadas por grado
               </Typography>
               <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
                 {(data?.temas_data ?? [])
                   .filter(elem => !elem.data.es_categoria)
                   .map((elem, index) => <ThemeProgressCard
                     key={index}
-                    current={elem.vocablos_correctos_counter || 0}
-                    total={elem.vocablos_counter || 0}
                     name={elem.data?.nombre}
                     imageSrc={elem.data?.image_src}
-                    progressName="Respondidos correctamente en pruebas"
+                    total={'simple'}
+                    // progressName="Respondidos correctamente en pruebas"
                     extra={`Pruebas realizadas: ${elem.practicas_hechas || 0}`}
                     onClick={() => navigate(`pruebas?tema_id=${elem.data?.id}`)}
                   />)}

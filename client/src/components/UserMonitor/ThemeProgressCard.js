@@ -18,12 +18,13 @@ import ProgressIndicator from "./ProgressIndicator";
  */
 export default function ThemeProgressCard(props) {
 
-  const { current,
+  const {
+    current,
     total,
     name,
     imageSrc,
     progressName,
-    progressColor='secondary',
+    progressColor = 'secondary',
     extra,
     onClick
   } = props;
@@ -43,7 +44,7 @@ export default function ThemeProgressCard(props) {
     <Grid item xs={4} marginTop={1} {...extraProps}>
       <ListItem style={{ position: 'relative', flexDirection: 'column' }}>
         <ListItemText
-          style={{ width: '100%', padding:' 0 5%' }}
+          style={{ width: '100%', padding: ' 0 5%' }}
           disableTypography
           primary={name}
           secondary={
@@ -53,7 +54,10 @@ export default function ThemeProgressCard(props) {
                   <img src={imageSrc} style={{ width: '100%', height: '120px' }} alt="" />
                 </Grid>
                 <Grid item xs={12} style={{ paddingTop: '0px' }}>
-                  <ProgressIndicator title={progressName} current={current} total={total} color={progressColor} />
+                  {total !== 'simple' &&
+
+                    <ProgressIndicator title={progressName} current={current} total={total} color={progressColor} />
+                  }
                 </Grid>
                 <Grid item xs={12} style={{ paddingTop: '0px' }}>
                   {
