@@ -46,7 +46,7 @@ export default function ThemeProgressCard(props) {
         <ListItemText
           style={{ width: '100%', padding: ' 0 5%' }}
           disableTypography
-          primary={name}
+          primary={<div style={{lineHeight: '2.5ex', height: '5ex', overflow: 'hidden'}}>{name}</div>}
           secondary={
             <>
               <Grid container spacing={{ xs: 0, md: 0 }} columns={{ xs: 4, sm: 8 }} >
@@ -55,7 +55,6 @@ export default function ThemeProgressCard(props) {
                 </Grid>
                 <Grid item xs={12} style={{ paddingTop: '0px' }}>
                   {total !== 'simple' &&
-
                     <ProgressIndicator title={progressName} current={current} total={total} color={progressColor} />
                   }
                 </Grid>

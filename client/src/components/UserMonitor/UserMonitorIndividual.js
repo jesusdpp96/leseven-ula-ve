@@ -118,8 +118,8 @@ export default function UserMonitorIndividual() {
             </TableContainer>
 
             <Tabs value={tab} onChange={(_, newValue) => setTab(newValue)} aria-label="basic tabs example">
-              <Tab label="Estudios" />
-              <Tab label="Pruebas" />
+              <Tab label="Estudios" style={{flexGrow: 1, maxWidth: '50%', fontSize: '1.2rem'}} />
+              <Tab label="Pruebas" style={{flexGrow: 1, maxWidth: '50%', fontSize: '1.2rem'}} />
             </Tabs>
 
             <CustomTabPanel value={tab} index={0}>
@@ -154,7 +154,6 @@ export default function UserMonitorIndividual() {
                     name={elem.data?.nombre}
                     imageSrc={elem.data?.image_src}
                     total={'simple'}
-                    // progressName="Respondidos correctamente en pruebas"
                     extra={`Pruebas realizadas: ${elem.practicas_hechas || 0}`}
                     onClick={() => navigate(`pruebas?tema_id=${elem.data?.id}`)}
                   />)}
