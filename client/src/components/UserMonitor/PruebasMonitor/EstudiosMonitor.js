@@ -60,9 +60,9 @@ export default function EstudiosMonitor() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {estudios.map((row) => (
+                {estudios.map((row, i) => (
                   <TableRow
-                    key={row.id}
+                    key={i}
                     sx={{ 
                       '&:last-child td, &:last-child th': { border: 0 }, 
                       '&:hover': {
