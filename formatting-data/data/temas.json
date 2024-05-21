@@ -213,10 +213,5 @@
     "nombre": "Expresiones cotidianas",
     "image": "/assets/images/expresiones-cotidianas.png",
     "es_categoria": true
-  },
-  {
-    "nombre": "Todos los vocablos",
-    "image": "/assets/images/todos-los-vocablos.png",
-    "es_categoria": true
   }
 ]

@@ -207,10 +207,6 @@
     VALUES (42, 'Expresiones cotidianas', '/assets/images/expresiones-cotidianas.png', true);
   
   
-  INSERT INTO public.tema(id, nombre, image_src, es_categoria)
-    VALUES (43, 'Todos los vocablos', '/assets/images/todos-los-vocablos.png', true);
-  
-  
 
 
 --
