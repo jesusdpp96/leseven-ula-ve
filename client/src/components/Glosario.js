@@ -10,6 +10,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import VocabloModal from "./VocabloModal";
 import sendLogs from "../utils/sendLogs";
+import { useQuery } from "react-query";
+import customFetch from "../utils/request";
 
 const ItemList = ({ vocablos, updateVocablos }) => {
 
@@ -112,11 +114,15 @@ export default function Glosario() {
   const [searchQuery, setSearchQuery] = React.useState("");
   const [page, setPage] = React.useState(1);
   const [total, setTotal] = React.useState(1);
+
+  const { data: vocablosCount } = useQuery('countData', 
+    () => customFetch("/contar-vocablos"),
+  );
   
-  const getVocablos = async (word, pageS) => {
+  const getVocablos = async (word, pages) => {
     try {
       setLoading(true);
-      let page = pageS;
+      let page = pages;
       let word = searchQuery !== "" ? searchQuery : "-1";
       const response = await fetch(`/vocablos/${page}/${word}`, {
         method: "GET",
@@ -130,21 +136,13 @@ export default function Glosario() {
       console.log('Faltantes', responseData?.faltantes)
       console.log('Numero de Faltantes', responseData?.faltantes.length)
       console.log('Palabras completadas', responseData?.total)
-      const dataFiltered = responseData?.rows?.filter((elem) => {
-        // if (existsObj[elem.vocablo_id]) {
-        //   return false;
-        // }
-        // existsObj[elem.vocablo_id] = true;
-        return true;
-      });
+      const dataFiltered = responseData?.rows ?? [];
       setVocablos(dataFiltered);
       setPage(parseInt(responseData?.page));
       setTotal(responseData?.pages);
       setLoading(false);
-      // const gradoTitle = responseData && responseData[0] ? responseData[0].grado_nombre : null;
       const temaTitle =
         responseData && responseData[0] ? responseData[0].tema_nombre : null;
-      // setGradoTitle(gradoTitle);
       setTemaTitle(temaTitle);
       sendLogs({
         logs: [
@@ -206,6 +204,20 @@ export default function Glosario() {
           >
             <SearchIcon />
           </Button>
+          <Box style={{ alignContent: "center" }}>
+            {
+              vocablosCount?.count &&
+              <Typography
+                component="h1"
+                variant="h6"
+                color="inherit"
+                noWrap
+                sx={{ flexGrow: 1 }}
+              >
+                Total de vocablos disponibles: {vocablosCount?.count}
+              </Typography>
+            }
+          </Box>
         </Grid>
       </Box>
       {vocablos?.length > 0 ? (
