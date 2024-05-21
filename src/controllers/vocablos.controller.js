@@ -528,6 +528,17 @@ const getVocablosByTema = async (req, res, next) => {
   }
 };
 
+const contarTodosLosVocablos = async (req, res, next) => {
+  try {
+   
+    const result = await pool.query(`SELECT COUNT(enlace) FROM recurso WHERE enlace LIKE 'https%';`);
+    
+    res.json(result.rows[0]);
+  } catch (error) {
+    next(error);
+  }
+};
+
 const postVocabloVisto = async (req, res, next) => {
   try {
     const { grado_id, tema_id, vocablo_id } = req.body;
@@ -564,9 +575,12 @@ const postVocabloVisto = async (req, res, next) => {
   }
 };
 
+
+
 module.exports = {
   getAllVocablos,
   getVocablosByGradoTema,
   getVocablosByTema,
   postVocabloVisto,
+  contarTodosLosVocablos
 };

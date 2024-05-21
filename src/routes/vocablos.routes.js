@@ -4,6 +4,7 @@ const {
   getVocablosByGradoTema,
   postVocabloVisto,
   getVocablosByTema,
+  contarTodosLosVocablos
 } = require("../controllers/vocablos.controller");
 const authorization = require("../middleware/authorization");
 
@@ -15,6 +16,9 @@ router.get("/vocablos/:page_number/:word_search", authorization,getAllVocablos);
 
 router.get("/vocablos-by-grado-tema/:grado_id/:tema_id/:vocablos_number", authorization, getVocablosByGradoTema);
 router.get("/vocablos-by-tema/:tema_id", authorization, getVocablosByTema);
+
+router.get("/contar-vocablos", contarTodosLosVocablos);
+
 
 
 // TODO: Vocablos vistos
