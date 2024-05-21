@@ -207,7 +207,7 @@ function getResultsFunc({ consultas }) {
 
     return {
       totalConsultas,
-      totalConsultasCorrectas
+      totalConsultasCorrectas,
     };
   } catch (err) {
     // Las consultas no estan completas
@@ -276,7 +276,7 @@ function getPracticaDataFunc({ consultas, vocablos }) {
 
   return {
     practica: practicaData,
-    consultas: consultasData
+    consultas: consultasData,
   };
 }
 
@@ -399,7 +399,7 @@ function getPracticaCanceladaDataFunc({ consultas, vocablos }) {
 
   return {
     practica: practicaData,
-    consultas: consultasData
+    consultas: consultasData,
   };
 }
 
@@ -1111,7 +1111,6 @@ export default function HorizontalNonLinearStepper() {
                       secondary="Respuestas correctas"
                     />
                   </ListItemButton>
-                 
                 </List>
               </Box>
               <Box
@@ -1231,6 +1230,7 @@ export default function HorizontalNonLinearStepper() {
                         vocablo.vocablo_palabra
                       )
                     )
+                    .slice(0, 3)
                     .map((vocablo) => {
                       const indexImage =
                         vocablo && vocablo.recursos
