@@ -65,7 +65,16 @@ export default function SettingsForm({ grado }) {
 
   const handleOnClick = async (event) => {
     event.preventDefault();
+
+    if (questionType === responseType) {
+      toast.error(
+        "Error: El tipo de pregunta no puede coincidir con el tipo de respuesta."
+      );
+      return;
+    }
+
     setSubmit(true);
+
     const body = {
       cantidad_vocablos: wordCount,
       categorias_id: categories,
