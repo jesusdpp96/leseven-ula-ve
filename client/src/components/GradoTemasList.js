@@ -123,18 +123,7 @@ const ItemList2 = ({ temas, showCategorias, gradoTitle }) => {
         (Boolean(elem.es_categoria) && Boolean(showCategorias)) ||
         (!Boolean(elem.es_categoria) && !Boolean(showCategorias))
     )
-    .map((elem, index) => {
-      let vocablos_counter = elem.vocablos_counter || 0;
-     
-      let vocablos_vistos = elem.vocablos_vistos || 0;
-      if (vocablos_vistos > vocablos_counter) vocablos_vistos = vocablos_counter;
-  
-      let percentage = Math.ceil(vocablos_vistos/vocablos_counter * 100);
-      if (percentage > 100) percentage = 100;
-      
-      const backgroundImage = `linear-gradient(to right, rgba(0,128,0,${
-        percentage / 200
-      }) ${percentage}%, rgba(0,128,0,${percentage / 1000}))`;
+    .map((elem, index) => {     
       const route = window.location.pathname === "/dashboard/prueba";
       const buttonTitle = window.location.pathname.includes("prueba")
         ? "Prueba"
@@ -149,7 +138,6 @@ const ItemList2 = ({ temas, showCategorias, gradoTitle }) => {
             sx={{
               display: "flex",
               justifyContent: "space-between",
-              backgroundImage: backgroundImage,
             }}
           >
             <CardMedia
@@ -209,14 +197,7 @@ const ItemList2 = ({ temas, showCategorias, gradoTitle }) => {
                 >
                   {Boolean(elem.es_categoria) ? "Categoria" : "Tema"}
                 </Typography>
-                <Typography
-                  variant="string"
-                  color="text.secondary"
-                  component="div"
-                  style={{ color: "#999999", fontSize: "12px" }}
-                >
-                  Vistos: ({vocablos_vistos}/{vocablos_counter})
-                </Typography>
+               
               </CardContent>
               <Box
                 sx={{
@@ -228,7 +209,6 @@ const ItemList2 = ({ temas, showCategorias, gradoTitle }) => {
                   padding: "16px",
                 }}
               >
-                <CircularProgressWithLabel value={percentage} />
                 <Button
                   variant="outlined"
                   // onClick={() => {
